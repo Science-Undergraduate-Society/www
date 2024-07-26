@@ -3,7 +3,7 @@ Website for the Science Undergraduate Society of the University of British Colum
 
 ## Getting Started
 
-First, run the development server (front the root folder):
+First, run the development server (from root folder):
 
 ```bash
 npm install
@@ -12,6 +12,8 @@ npm run dev
 # or
 yarn dev
 ```
+
+## Pages/Routes
 
 | Page | Endpoint | Description |
 | --------- | -------|------|
