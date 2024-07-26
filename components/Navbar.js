@@ -9,43 +9,43 @@ import { FaBars, FaTimes } from "react-icons/fa"; // Importing hamburger and clo
 const sections = [
   {
     name: "Join SUS",
-    href: "/getInvolved",
+    href: "/joinSus",
     items: [],
   },
   {
     name: "About Us",
     href: "",
     items: [
-      { name: "The Executives", href: "/" },
-      { name: "Budget", href: "/" },
-      { name: "Code & Procedures", href: "/" },
-      { name: "Office Hours", href: "/" }
+      { name: "The Executives", href: "/executives" },
+      { name: "Budget", href: "/budget" },
+      { name: "Code & Procedures", href: "/codeProcedures" },
+      // { name: "Office Hours", href: "/" }
     ],
   },
   {
     name: "Our Events",
     href: "",
     items: [
-      { name: "Upcoming Events", href: "/" },
-      { name: "Past Events", href: "/" },
+      { name: "Upcoming Events", href: "/events" },
+      // { name: "Past Events", href: "/" },
     ],
   },
   {
     name: "Student Services",
     href: "",
     items: [
-      { name: "Blue Card Program", href: "/" },
-      { name: "Grants", href: "/" },
-      { name: "Volunteer Portal", href: "/"},
-      { name: "Study Sphere", href: "/"},
+      { name: "Blue Card Program", href: "/bluecard" },
+      { name: "Grants", href: "/grants" },
+      // { name: "Volunteer Portal", href: "/"},
+      // { name: "Study Sphere", href: "/"},
     ],
   },
   {
     name: "Science Student Centre",
     href: "",
     items: [
-      { name: "About the ALSSC", href: "/" },
-      { name: "Book a Meeting Room", href: "/" },
+      { name: "About the ALSSC", href: "/alssc" },
+      { name: "Book a Meeting Room", href: "/alsscBooking" },
     ],
   },
   {
