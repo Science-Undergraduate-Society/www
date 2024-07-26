@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Error404Page = () => {
     return (
         <Background>
-            <Title>Naurrrrr</Title>
+            <Title>Whoops!</Title>
             <Title2>The page you're looking for is nowhere to be found.</Title2>
             <Link href="/" passHref>
                 <StyledButton>Back to Home</StyledButton>
