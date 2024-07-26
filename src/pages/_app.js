@@ -1,51 +1,28 @@
-import styled from "styled-components";
-import Link from 'next/link';
+import '../styles/globals.css'; // Import the global CSS file
+import Head from 'next/head';
 
-const Error404Page = () => {
-    return (
-        <Background>
-            <Title>Naurrrrr</Title>
-            <Title2>The page you're looking for is nowhere to be found.</Title2>
-            <Link href="/" passHref>
-                <StyledButton>Back to Home</StyledButton>
-            </Link>
-        </Background>
-    )
-}
-
-export default Error404Page;
-
-const Title = styled.div`
-    color: black;
-`
-
-const Title2 = styled.div`
-    color: black;
-`
-
-const Background = styled.div`
-    height: 100vh;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-`
-
-const StyledButton = styled.div`
-    display: inline-block;
-    width: 210px;
-    padding: 10px 20px;
-    background-color: #0070f3;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 20px;
-    cursor: pointer;
-
-    &:hover {
-        background-color: #005bb5;
-    }
-`
+export default function MyApp ({ Component, pageProps }) {
+  return (
+    <>
+      <Head>
+        <title>UBC Science Undergraduate Society</title>
+        <meta
+          name="description"
+          content="The Science Undergraduate Society is a student-led organization for science students at the University of British Columbia in Vancouver."
+        />
+        <meta property="og:title" content="UBC Science Undergraduate Society" key="ogtitle" />
+        <meta
+          property="og:description"
+          content="The Science Undergraduate Society is a student-led organization for science students at the University of British Columbia in Vancouver."
+          key="ogdescription"  ddid  tr
+          
+        />
+        {/* <meta property="og:image" content="/path/to/your/image.jpg" key="ogimage" /> */}
+        {/* <meta property="og:url" content="https://www.yourwebsite.com" key="ogurl" /> */}
+        {/* <link rel="icon" href="/faviconWhite.ico" /> */}
+        <link rel="icon" href="/images/logos/blue-logo.tif" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
+};

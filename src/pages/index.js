@@ -1,13 +1,13 @@
 import { useEffect, useRef } from "react";
 import styled, { keyframes } from "styled-components";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Alssc from "../components/Alssc";
-import GetInvolved from "../components/GetInvolved";
-import Podcast from "../components/Podcast"
-import Shop from "../components/Shop";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import Hero from "../../components/Hero";
+import About from "../../components/About";
+import Alssc from "../../components/Alssc";
+import GetInvolved from "../../components/GetInvolved";
+import Podcast from "../../components/Podcast"
+import Shop from "../../components/Shop";
 
 const Home = () => {
   const sectionRefs = useRef([]);
