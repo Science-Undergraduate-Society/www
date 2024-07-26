@@ -111,8 +111,8 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(0, 25, 97, 0.2);
-  // background-color: rgba(255, 255, 255, 0.2);
+  // background-color: #e7edf7;
+  background-color: rgba(34, 39, 85, 0.8);
   backdrop-filter: blur(15px);
   padding: 20px 40px;
   position: fixed;
@@ -132,7 +132,7 @@ const NavItems = styled.ul`
   margin: 0;
   padding: 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.9);
     position: fixed;
@@ -150,7 +150,7 @@ const NavItem = styled.li`
   position: relative;
   margin: 0 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     margin: 20px 0;
   }
 `;
@@ -164,7 +164,7 @@ const NavLink = styled.a`
   font-size: 16px;
   text-decoration: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     font-size: 24px;
     color: black;
   }
@@ -207,7 +207,7 @@ const HamburgerMenu = styled.div`
   color: white;
   cursor: pointer;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     display: block;
   }
 `;
