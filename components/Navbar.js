@@ -36,6 +36,7 @@ const sections = [
     items: [
       { name: "Blue Card Program", href: "/bluecard" },
       { name: "Grants", href: "/grants" },
+      { name: "Health & Wellness", href: "/health"}
       // { name: "Volunteer Portal", href: "/"},
       // { name: "Study Sphere", href: "/"},
     ],

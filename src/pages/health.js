@@ -1,20 +1,28 @@
 import styled from "styled-components";
 import Link from 'next/link';
+import Navbar from "../../components/Navbar";
 
 export default function HealthAndWellness() {
     return (
         <Background>
-            <Title>Health and Wellness Resources</Title>
-            <Link href="/" passHref>
-                <StyledButton>Back to Home</StyledButton>
-            </Link>
+            <BackgroundGradient />
+            <Navbar />
+            <Hero>
+                <LeftHero>
+                    <Title>Health & Wellness</Title>
+                    <Description>
+                        Services and resources to help balance physical 
+                        health, nutrition and mental well-being to keep 
+                        patients happy and healthy.
+                    </Description>
+                </LeftHero>
+                <RightHero>
+                    <Graphic src="/images/main1.jpg"/>
+                </RightHero>
+            </Hero>
         </Background>
     )
 }
-
-const Title = styled.div`
-    color: black;
-`
 
 const Background = styled.div`
     height: 100vh;
@@ -26,19 +34,56 @@ const Background = styled.div`
     text-align: center;
 `
 
-const StyledButton = styled.div`
-    display: inline-block;
-    width: 210px;
-    padding: 10px 20px;
-    background-color: #0070f3;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 20px;
-    cursor: pointer;
+const BackgroundGradient = styled.div`
+    background-color: rgb(34, 39, 85);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+`
 
-    &:hover {
-        background-color: #005bb5;
-    }
+const Hero = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+`
+
+const LeftHero = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+`
+
+const RightHero = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 50%;
+`
+
+const Graphic = styled.img`
+    width: 65%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    border: none;
+    border-radius: 0;
+    transition: opacity 1s ease-in-out;
+`
+
+const Title = styled.div`
+    color: #e7edf7;
+    font-size: 37px;
+    font-weight: bold;
+`
+
+const Description = styled.div`
+    color: #e7edf7;
+    font-size: 20px;  
+    margin-bottom: 3rem;
+    text-align: center;
 `
