@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Button } from "./Reusable"
+import { Button } from "../Reusable"
 
 export default function Alssc() {
     return (

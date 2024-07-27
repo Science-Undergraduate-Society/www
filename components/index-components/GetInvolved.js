@@ -54,7 +54,7 @@ export default function GetInvolved() {
           </DropItem>
         </DropdownMenu>
       </Content>
-      <Graphic src="/images/join-sus.webp" />
+      <Graphic src="/images/index-images/join-sus.webp" />
     </Background>
   );
 }

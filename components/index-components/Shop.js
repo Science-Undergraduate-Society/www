@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
-import { Button } from "./Reusable";
+import { Button } from "../Reusable";
 
 const images = [
-    "/images/Shop_files/Black-Crew-1.png",
-    "/images/Shop_files/Black-Hoodie-1.png",
-    "/images/Shop_files/Blue-Crew-1.png",
-    "/images/Shop_files/Blue-Hoodie-1.png",
-    "/images/Shop_files/Grey-Crew-1.png",
-    "/images/Shop_files/Grey-Hoodie-1.png",
-    "/images/Shop_files/Sand-Crew-1.png",
-    "/images/Shop_files/Sand-Hoodie-1.png",
-    "/images/Shop_files/White-Crew-1.png",
-    "/images/Shop_files/White-Hoodie-1.png",
+    "/images/shop-images/Black-Crew-1.png",
+    `/images/shop-images/Black-Hoodie-1.png`,
+    "/images/shop-images/Blue-Crew-1.png",
+    "/images/shop-images/Blue-Hoodie-1.png",
+    "/images/shop-images/Grey-Crew-1.png",
+    "/images/shop-images/Grey-Hoodie-1.png",
+    "/images/shop-images/Sand-Crew-1.png",
+    "/images/shop-images/Sand-Hoodie-1.png",
+    "/images/shop-images/White-Crew-1.png",
+    "/images/shop-images/White-Hoodie-1.png",
 ];
 
 export default function Shop() {

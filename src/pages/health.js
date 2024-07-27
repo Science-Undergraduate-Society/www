@@ -52,15 +52,18 @@ const Hero = styled.div`
 
 const LeftHero = styled.div`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 50%;
+    background-color: red;
+    padding: 30px, 0;
 `
 
 const RightHero = styled.div`
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     width: 50%;
 `
 
@@ -79,11 +82,12 @@ const Title = styled.div`
     color: #e7edf7;
     font-size: 37px;
     font-weight: bold;
+    text-align: left;
 `
 
 const Description = styled.div`
     color: #e7edf7;
     font-size: 20px;  
     margin-bottom: 3rem;
-    text-align: center;
+    text-align: left;
 `

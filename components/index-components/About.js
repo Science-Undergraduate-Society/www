@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 const images = [
-    "/images/main2.png",
-    "/images/main3.webp",
-    "/images/scigrad.webp",
-    "/images/scirxn.webp",
-    "/images/scirxn2.webp",
-    "/images/sciweek1.webp",
-    "/images/sciweek2.webp"
+    "/images/index-images/main2.png",
+    "/images/index-images/main3.webp",
+    "/images/index-images/scigrad.webp",
+    "/images/index-images/scirxn.webp",
+    "/images/index-images/scirxn2.webp",
+    "/images/index-images/sciweek1.webp",
+    "/images/index-images/sciweek2.webp"
 ];
 
 export default function About() {
