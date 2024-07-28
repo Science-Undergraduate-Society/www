@@ -2,12 +2,12 @@ import { useEffect, useRef } from "react";
 import styled, { keyframes } from "styled-components";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import Hero from "../../components/Hero";
-import About from "../../components/About";
-import Alssc from "../../components/Alssc";
-import GetInvolved from "../../components/GetInvolved";
-import Podcast from "../../components/Podcast"
-import Shop from "../../components/Shop";
+import Hero from "../../components/index-components/Hero";
+import About from "../../components/index-components/About";
+import Alssc from "../../components/index-components/Alssc";
+import GetInvolved from "../../components/index-components/GetInvolved";
+import Podcast from "../../components/index-components/Podcast"
+import Shop from "../../components/index-components/Shop";
 
 const Home = () => {
   const sectionRefs = useRef([]);
@@ -125,7 +125,7 @@ const BackgroundImage = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/images/main1.jpg');
+  background-image: url('/images/index-images/main1.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

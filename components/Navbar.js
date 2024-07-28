@@ -36,6 +36,7 @@ const sections = [
     items: [
       { name: "Blue Card Program", href: "/bluecard" },
       { name: "Grants", href: "/grants" },
+      { name: "Health & Wellness", href: "/health"}
       // { name: "Volunteer Portal", href: "/"},
       // { name: "Study Sphere", href: "/"},
     ],
@@ -63,7 +64,7 @@ const sections = [
   },
 ];
 
-function Navbar() {
+export default function Navbar() {
   const [isDropdownOpen, setDropdownOpen] = useState(Array(sections.length).fill(false));
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -104,8 +105,6 @@ function Navbar() {
     </Nav>
   );
 }
-
-export default Navbar;
 
 const Nav = styled.nav`
   display: flex;
