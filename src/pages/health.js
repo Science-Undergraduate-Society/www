@@ -34,8 +34,8 @@ const Background = styled.div`
 `
 
 const BackgroundGradient = styled.div`
-    backdrop-filter: linear-gradient(to right, #0173be, #e7edf7);
-    background-image: url('/images/index-images/main1.jpg');
+    background-image: linear-gradient(to right, #0173be, #e7edf7);
+    // background-image: url('/images/index-images/main1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
