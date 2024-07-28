@@ -60,3 +60,17 @@ const Background = styled.div`
 </Background>
 ```
 - For OG Documentation -> https://styled-components.com/
+
+### Images
+- To use images, you can created a `styled.img` element and make CSS changes as you normally would to that specific const.
+- Next.js is structured to serve static files including images in the `public` folder which can be referened in our code by starting from the base URL (/). Please see below for an example
+```
+const Graphic = styled.img`
+    width: 50%;
+    object-fit: cover;
+`
+
+<Graphic src="/images/health-images/health-main.jpg"/>
+```
+- In the example above, we access the `public` folder via (/), and within that folder we have our `images` folder.
+- If you want to add more photos, please find or add the folder within `images` titled `(your-page-name)-images`. In said folder, you can add all of your photos
