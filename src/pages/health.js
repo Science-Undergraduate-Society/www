@@ -12,14 +12,13 @@ export default function HealthAndWellness() {
                     <Title>Health & Wellness</Title>
                     <Description>
                         Services and resources to help balance physical 
-                        health, nutrition and mental well-being to keep 
-                        patients happy and healthy.
+                        health, nutrition and mental well-being.
                     </Description>
                 </LeftHero>
                 <RightHero>
                     <Graphic src="/images/health-images/health-main.jpg"/>
                 </RightHero>
-            </Hero>
+            </Hero> 
         </Background>
     )
 }
