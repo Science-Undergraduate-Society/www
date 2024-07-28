@@ -64,7 +64,7 @@ const sections = [
   },
 ];
 
-function Navbar() {
+export default function Navbar() {
   const [isDropdownOpen, setDropdownOpen] = useState(Array(sections.length).fill(false));
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -105,8 +105,6 @@ function Navbar() {
     </Nav>
   );
 }
-
-export default Navbar;
 
 const Nav = styled.nav`
   display: flex;

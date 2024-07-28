@@ -17,7 +17,7 @@ export default function HealthAndWellness() {
                     </Description>
                 </LeftHero>
                 <RightHero>
-                    <Graphic src="/images/main1.jpg"/>
+                    <Graphic src="/images/health-images/health-main.jpg"/>
                 </RightHero>
             </Hero>
         </Background>
@@ -35,7 +35,12 @@ const Background = styled.div`
 `
 
 const BackgroundGradient = styled.div`
-    background-color: rgb(34, 39, 85);
+    backdrop-filter: linear-gradient(to right, #0173be, #e7edf7);
+    background-image: url('/images/index-images/main1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     position: fixed;
     top: 0;
     left: 0;
@@ -48,6 +53,7 @@ const Hero = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 10vh;
 `
 
 const LeftHero = styled.div`
@@ -56,8 +62,7 @@ const LeftHero = styled.div`
     align-items: center;
     justify-content: center;
     width: 50%;
-    background-color: red;
-    padding: 30px, 0;
+    padding-left: 150px;
 `
 
 const RightHero = styled.div`
@@ -68,8 +73,7 @@ const RightHero = styled.div`
 `
 
 const Graphic = styled.img`
-    width: 65%;
-    height: auto;
+    width: 50%;
     object-fit: cover;
     position: relative;
     z-index: 2;
@@ -80,9 +84,11 @@ const Graphic = styled.img`
 
 const Title = styled.div`
     color: #e7edf7;
-    font-size: 37px;
+    font-size: 50px;
     font-weight: bold;
     text-align: left;
+    width: 100%;
+    margin-bottom: 2rem;
 `
 
 const Description = styled.div`
