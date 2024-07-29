@@ -2,7 +2,6 @@ import { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { FaBars, FaTimes } from "react-icons/fa"; // Importing hamburger and close icons
 
-
 // Section of the navbar
 //  - name = label of section
 //  - items belonging to dropdown
@@ -79,7 +78,6 @@ export default function Navbar() {
 
   return (
     <Nav>
-      {/* <NavLink><Logo src="./images/logos/blue-logo.tif" alt="Logo" /></NavLink> */}
       <NavLink href={"/"}><Logo src="./images/logos/white-logo.png" alt="Logo" /></NavLink>
       <HamburgerMenu onClick={toggleMenu}>
         {isMenuOpen ? <FaTimes /> : <FaBars />}
@@ -90,9 +88,10 @@ export default function Navbar() {
             key={index}
             onMouseEnter={() => section.items.length > 0 && handleDropdown(index)}
             onMouseLeave={() => section.items.length > 0 && handleDropdown(index)}
+            onClick={() => section.items.length > 0 && isMenuOpen && handleDropdown(index)}
           >
             <NavLink href={section.items.length === 0 ? section.href : "/"}>{section.name}</NavLink>
-            {section.items.length > 0 && isDropdownOpen[index] && (
+            {section.items.length > 0 && (isDropdownOpen[index] || isMenuOpen) && (
               <DropdownMenu>
                 {section.items.map((item, itemIndex) => (
                   <DropdownItem key={itemIndex} href={item.href}>{item.name}</DropdownItem>
@@ -110,7 +109,6 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // background-color: #e7edf7;
   background-color: rgba(34, 39, 85, 0.8);
   backdrop-filter: blur(15px);
   padding: 20px 40px;
@@ -157,7 +155,6 @@ const NavItem = styled.li`
 const NavLink = styled.a`
   background: none;
   border: none;
-  // color: #001961;
   color: white;
   cursor: pointer;
   font-size: 16px;
@@ -173,8 +170,8 @@ const DropdownMenu = styled.div`
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(40px);
+  background-color: rgba(34, 39, 85, 0.8);
+  backdrop-filter: blur(15px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   display: flex;
@@ -184,19 +181,32 @@ const DropdownMenu = styled.div`
   transform: translateY(-10px);
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
 
+  ${NavItem}:hover &,
   ${NavItem}:hover & {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+  }
+
+  @media (max-width: 1200px) {
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
   }
 `;
 
 const DropdownItem = styled.a`
   padding: 20px 30px;
   text-decoration: none;
-  color: #001961;
+  color: white;
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 1200px) {
+    color: black;
   }
 `;
 
