@@ -3,47 +3,32 @@ import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import NewFooter from "../../components/newFooter";
 
-export default function Budget() {
+export default function CodeProcedures() {
   return (
     <Background>
       <Navbar />
       <Content>
-        <h1>Budget</h1>
+        <h1>Code & Procedure</h1>
         <p>
-          The Science Undergraduate Society operates a $220k + budget and is
-          governed by policies evoked by the AMS and the Science Student body.
-          The following document outline how the student fees are used.
+          The following document outlines how the SUS is organized, how the
+          student fees are used, how decisions are made on behalf of Science
+          Students and the responsibilities of elected officials.
         </p>
-
         <Link
-          href="https://docs.google.com/spreadsheets/d/1gMAKiTjGMW_h-NAvXkJO8jjM-l7KqC1J0xCP1hdRW80/edit?gid=233773177#gid=233773177"
+          href="https://docs.google.com/document/d/1Wr52qSNeiVG9HrDvCftOsCW1agMMW6dC1mkieIPdWds/edit?fbclid=IwAR26HOIAjZZcquDRs91xgHSdferauKQJKtzOTJNZc4f76JXmeag5UGVi-Y8"
           passHref
         >
-          <StyledButton>2023/2024 Budget</StyledButton>
+          <StyledButton>SUS Code & Procedure Document</StyledButton>
         </Link>
 
         <SpacingDiv></SpacingDiv>
 
-        <h2>SUS Budget Feedback Form</h2>
-        <p>
-          Do you have any feedback or suggestions to the SUS budget? Please let
-          us know using this form.
-        </p>
-
-        <Link
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeivIN69w38fEwQVquDbYKhNVNQ2lcptngJBOgzS0oTgrmOtg/viewform"
-          passHref
-        >
-          <StyledButton>Budget Feedback Form</StyledButton>
-        </Link>
-
-        <SpacingDiv></SpacingDiv>
-        <SpacingDiv></SpacingDiv>
+        <p>Last Revised: March 14, 2024</p>
 
         <p>
-          For further inquires/concerns, please contact our VP Finance at&nbsp;
-          <Link href="mailto:vpfinance@sus.ubc.ca" passHref>
-            vpfinance@sus.ubc.ca
+          For further inquiries/concerns please contact our VP Admin at&nbsp;
+          <Link href="mailto:vpadministration@sus.ubc.ca" passHref>
+            vpadministration@sus.ubc.ca
           </Link>
           .
         </p>
@@ -69,7 +54,7 @@ const Background = styled.div`
 
 const StyledButton = styled.div`
   display: inline-block;
-  width: 240px;
+  width: 400px;
   padding: 10px 20px;
   background-color: #0173be;
   color: white;
@@ -102,5 +87,5 @@ const Content = styled.div`
 `;
 
 const SpacingDiv = styled.div`
-  margin-bottom: 55px; /
+  margin-bottom: 75px; /
 `;
