@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Grants() {
     return (
         <Background>
-            <Title>Grants Information page</Title>
+            <Title>Grants Information page test</Title>
             <Link href="/" passHref>
                 <StyledButton>Back to Home</StyledButton>
             </Link>
