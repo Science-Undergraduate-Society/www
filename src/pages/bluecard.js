@@ -18,15 +18,18 @@ export default function BlueCard() {
                     <StyledButton>Sign In/Up</StyledButton>
                 </Link>
             </Heading>
+            <BCInfo>
+                <Title>What is Blue Card?</Title>
+            </BCInfo>
         </Background>
     )
 }
 
 const Heading = styled.div`
     padding-top: 150px;
+    color: white;
 `
 const Title = styled.div`
-    color: white;
     font-size: 54px;
     font-weight: 700;
     position: relative;
@@ -37,7 +40,6 @@ const Title = styled.div`
 const SubInfo = styled.div`
     font-size: 24px;
     font-weight: 400;
-    color: white;
     margin-top: 12px;
     letter-spacing: 4px;
     font-style: italic;
@@ -47,14 +49,22 @@ const SecondaryMenu = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 20px;
     margin-top: 24px;
     width: 100%;
 `
 
+const BCInfo = styled.div`
+    background-color: #e7edf7;
+    color: #222755;
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+`
+
 const SmItem = styled.div`
     font-size: 18px;
-    color: white;
     text-align: center;
 `
 
