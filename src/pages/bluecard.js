@@ -43,19 +43,19 @@ const SubInfo = styled.div`
     font-style: italic;
 `
 const SecondaryMenu = styled.div`
-    display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     margin-top: 24px;
     width: 100%;
 `
 
 const SmItem = styled.div`
-    grid-coloum-start: 1;
-    font-size: 24px;
+    font-size: 18px;
     color: white;
     text-align: center;
-    padding: 20px;
 `
 
 const Background = styled.div`
