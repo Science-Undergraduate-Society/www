@@ -1,19 +1,61 @@
 import styled from "styled-components";
 import Link from 'next/link';
+import Navbar from "../../components/Navbar";
 
 export default function BlueCard() {
     return (
         <Background>
-            <Title>BlueCard Information page</Title>
-            <Link href="/" passHref>
-                <StyledButton>Back to Home</StyledButton>
-            </Link>
+            <Navbar></Navbar>
+            <Heading>
+                <Title>The Blue Card</Title>
+                <SubInfo>The UBC Student Discount Card</SubInfo>
+                <SecondaryMenu>
+                    <SmItem>Blue Card</SmItem>
+                    <SmItem>Eligibility</SmItem>
+                    <SmItem>Partners</SmItem>
+                </SecondaryMenu>
+                <Link href="">
+                    <StyledButton>Sign In/Up</StyledButton>
+                </Link>
+            </Heading>
         </Background>
     )
 }
 
+const Heading = styled.div`
+    padding-top: 150px;
+`
 const Title = styled.div`
-    color: black;
+    color: white;
+    font-size: 54px;
+    font-weight: 700;
+    position: relative;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+`
+
+const SubInfo = styled.div`
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    margin-top: 12px;
+    letter-spacing: 4px;
+    font-style: italic;
+`
+const SecondaryMenu = styled.div`
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 0px;
+    margin-top: 24px;
+    width: 100%;
+`
+
+const SmItem = styled.div`
+    grid-coloum-start: 1;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 20px;
 `
 
 const Background = styled.div`
@@ -22,8 +64,8 @@ const Background = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
+    background-color: #222755;
 `
 
 const StyledButton = styled.div`
