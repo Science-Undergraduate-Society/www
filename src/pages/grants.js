@@ -12,7 +12,18 @@ export default function Grants() {
                 <Link href="">
                     <StyledButton>Apply Now</StyledButton>
                 </Link>
+                <SubText>
+                    *Applications MUST be submitted to the Qualtrics form above to be considered
+                </SubText>
             </Heading>
+            <SciSec>
+                <SecondHeader>Science Students</SecondHeader>
+
+            </SciSec>
+            <SciSec>
+                <SecondHeader>SUS Clubs</SecondHeader>
+
+            </SciSec>
         </Background>
     )
 }
@@ -32,9 +43,9 @@ const Heading = styled.div`
     width: 100wh;
     height: 100vh; 
     padding-top: 150px;
+    color: white;
 `
 const Title = styled.div`
-    color: white;
     font-size: 54px;
     font-weight: 700;
     position: relative;
@@ -43,8 +54,26 @@ const Title = styled.div`
 const Subinfo = styled.div`
     font-size: 36px;
     font-weight: 400;
-    color: white;
-    margin-top: 24px;
+    margin-top: 12px;
+`
+
+const SubText = styled.div`
+    font-style: italic;
+    padding: 20px;
+    font-size: 12px;
+`
+
+const SecondHeader = styled.div`
+    color: #222755;
+    font-size: 36px;
+`
+
+const SciSec = styled.div`
+    height: 100vh;
+    width: 100%;
+    align-text: left;
+    background-color: white;
+    padding: 24px;
 `
 
 const Background = styled.div`
