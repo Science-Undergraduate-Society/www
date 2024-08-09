@@ -1,0 +1,157 @@
+/* Form.css */
+
+.full {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../assets/back.jpg');
+    /* background-image: url('../assets/back.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: white;
+  }
+  
+  .form-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: 500;
+  }
+  
+  .form {
+    display: grid;
+    grid-gap: 20px;
+  }
+  
+  .form-group {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+  }
+  
+  .form-label {
+    text-align: left;
+    font-weight: normal;
+    margin-bottom: 8px;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 0.8em;
+  }
+  
+/* .form-input {
+    border-color: red;
+    border-width: 0.5px;
+    }    */
+
+  .form-textarea {
+    resize: vertical;
+  }
+  
+  .form-button {
+    width: 100%;
+    border: 1px solid #0000cc; 
+    padding: 10px 20px; 
+    border-radius: 30px;
+    color: black;
+  }
+  
+  .form-button:hover {
+    background-color: #E2F7FF;
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: #0000cc;
+  }
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .success-popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .success-message {
+    text-align: center;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .error-popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .error-message {
+    text-align: center;
+    font-weight: normal;
+  }
+  
+  .error-message p {
+    margin-bottom: 10px;
+  }
+  
+  .error-message button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: normal;
+  }
+  
+  .error-message button:hover {
+    background-color: #0056b3;
+  }
+  
