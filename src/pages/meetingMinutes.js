@@ -5,7 +5,7 @@ import NewFooter from "../../components/NewFooter";
 import { useState } from "react";
 
 export default function MeetingMinutes() {
-  const [activeTab, setActiveTab] = useState("Presedential");
+  const [activeTab, setActiveTab] = useState("Presidential");
 
   const renderContent = () => {
     switch (activeTab) {
@@ -420,9 +420,9 @@ const Content = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   text-align: left;
-  padding: 200px 10px 20px;
+  padding: 500px 10px 20px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   p {
     line-height: 1.6; /* Adjust this value as needed */
   }
@@ -462,7 +462,10 @@ const TabContent = styled.div`
   }
 `;
 const TabTable = styled.div`
-  margin-top: 40px; /* Add some space above the tabs */
+  margin-top: 45px; /* Add some space above the tabs */
+  width: 100%;
+  border-collapse: collapse; /* Or use 'fixed' */
+  overflow-x: auto;
 `;
 
 const TabHeaders = styled.ul`
