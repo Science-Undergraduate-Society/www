@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer"
 
 //import images
-import BCImg from "../public/images/health-images/health-main.jpg";
+// import BCImg from "../public/images/index-images/main2.png";
 
 export default function BlueCard() {
     return (
@@ -40,7 +40,7 @@ export default function BlueCard() {
                         </InfoP>
                     </Left>
                     <Right>
-                        <BCInfoImg src={BCImg} />
+                        
                     </Right>
                 </BCInfo>
                 <Eligibility>
@@ -106,8 +106,6 @@ const BCInfo = styled.div`
     border-width: 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
 `
 
@@ -127,14 +125,13 @@ const InfoP = styled.div `
     font-size: 18px;
     color: #222755;
     text-align: left;
-    width: 100%;
     padding: 12px 0;
 `
 
 const All = styled.div`
     font-size: 36px;
     letter-spacing: 3px;
-    width: 70%;
+    width: 100%;
     font-weight: 300; 
 `
 
@@ -151,6 +148,9 @@ const MainInfo = styled.div`
 
 const PartnersBox = styled.div`
     display = flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
 `
 
 const IndivPartner = styled.div`
@@ -163,9 +163,6 @@ const Right = styled(Left)`
 `
 
 const BCInfoImg = styled.img`
-    width: 100%;
-    position: relative;
-    z-index: 0;
 `
 const Background = styled.div`
     height: 100%;
