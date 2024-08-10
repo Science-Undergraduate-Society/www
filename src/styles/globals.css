@@ -57,8 +57,12 @@ button {
 
 .event-subtitle {
     font-size: 2rem;
-    margin-bottom: 20px;
-    color: #0173be; 
+    margin-bottom: 10px;
+    color: #222755; 
+    margin: 0; 
+    padding-right: 10px;
+    text-align: center;
+    padding-left: 10px;
 }
 iframe {
     border: none;
@@ -80,3 +84,19 @@ iframe {
     width: 500px; 
     height: 300px;
 }
+
+.subtitle-container {
+    display: flex;
+    align-items: center;
+    margin-top:30px;
+    margin-bottom: 30px;
+  }
+
+  
+  .line {
+    flex-grow: 1; /* Makes the line take up remaining space */
+    border: none;
+    border-top: 3px solid #222755; /* Adjust thickness and color */
+    margin: 0;
+  }
+  

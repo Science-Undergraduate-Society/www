@@ -19,7 +19,11 @@ export default function Events() {
             />
 
             <h1 className='event-title'>Flagship Events</h1>
-            <h2 className='event-subtitle'>Science RXN</h2>
+            <div className='subtitle-container'>
+                <hr className='line' />
+                <h2 className='event-subtitle'>Science RXN</h2>
+                <hr className='line' />
+            </div>
 
             <p>Science RXN is a two day event geared toward incoming first year science students to help them build community, meet new people, and help them integrate into university. The first day includes team-building games and activities and challenges and RXN is finished off with a gala on the second day. Students will have the opportunity to participate in games and challenges with a chance to win big prizes! Students will also have the opportunity to participate in team-building activities in breakout rooms.</p>
             <div className="image-container">
@@ -36,7 +40,12 @@ export default function Events() {
             </div>
 
             
-            <h2 className='event-subtitle'>Science Week</h2>
+            <div className='subtitle-container'>
+                <hr className='line' />
+                <h2 className='event-subtitle'>Science Week</h2>
+                <hr className='line' />
+            </div>
+
             <p>Science Week is a week-long event dedicated to science pride on campus. The week is filled with fun interactive games/activities, community building events, and networking opportunities.</p>
             <div className="image-container">
             <Image 
@@ -50,7 +59,11 @@ export default function Events() {
                     className="eventimage"
                 />
             </div>
-            <h2 className='event-subtitle'>Science Graduation</h2>
+            <div className='subtitle-container'>
+                <hr className='line' />
+                <h2 className='event-subtitle'>Science Graduation</h2>
+                <hr className='line' />
+            </div>
             <p>Science Graduation is an end of the year event to celebrate the completion of another school year, but most importantly, to give a farewell party for all the graduating science students. The event offers food, alcoholic beverages, and most importantly, a good time! </p>
             <div className='image-container'>
             <Image 
