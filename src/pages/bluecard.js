@@ -3,6 +3,9 @@ import Link from 'next/link';
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer"
 
+//import images
+import BCImg from "../public/images/health-images/health-main.jpg";
+
 export default function BlueCard() {
     return (
         <Background>
@@ -11,41 +14,52 @@ export default function BlueCard() {
                 <Title>The Blue Card</Title>
                 <SubInfo>The UBC Student Discount Card</SubInfo>
                 <SecondaryMenu>
-                    <StyledLink href="#eligibility">
+                    <TopLink href="#eligibility">
                         <SmItem>Eligibility</SmItem>
-                    </StyledLink>
-                    <StyledLink href="#partners">
+                    </TopLink>
+                    <TopLink href="#partners">
                         <SmItem>Partners</SmItem>
-                    </StyledLink>
+                    </TopLink>
                 </SecondaryMenu>
                 <Link href="">
                     <StyledButton>Sign In/Up</StyledButton>
                 </Link>
             </Heading>
-            <BCInfo>
-                <Title>What is Blue Card?</Title>
-                <InfoP>
-                    Welcome to Bluecard -- Your FREE Virtual Discount Program for all UBC Science Students! 
-                    Discover exclusive benefits at local restaurants and shops by simply presenting your Blue Card.
-                    To get started, follow the register link at the top of the page. 
-                </InfoP>
-                <InfoP>
-                    Submit specific requests for places you want to enjoy discounts using the feedback function at the bottom of our page! 
-                    Our SUS student benefits team will do our best to secure the desired discount for you.
-                </InfoP>
-            </BCInfo>
-            <Eligibility>
-                <StyledLink id="eligibility"></StyledLink>
-                <Title>Eligibility</Title>
-                <All>All UBC students in the Faculty of Science are eligible for the Blue Card.</All>
-            </Eligibility>
-            <Partners>
-                <StyledLink id="partners"></StyledLink>
-                <Title>Our Partners</Title>
-                <PartnersBox>
-                    <IndivPartner></IndivPartner>
-                </PartnersBox>
-            </Partners>
+            <MainInfo>
+                <BCInfo>
+                    <Left>
+                        <Title>What is Blue Card?</Title>
+                        <InfoP>
+                            Welcome to Bluecard -- Your FREE Virtual Discount Program for all UBC Science Students! 
+                            Discover exclusive benefits at local restaurants and shops by simply presenting your Blue Card.
+                            To get started, follow the register link at the top of the page. 
+                        </InfoP>
+                        <InfoP>
+                            Submit specific requests for places you want to enjoy discounts using the feedback function at the bottom of our page! 
+                            Our SUS student benefits team will do our best to secure the desired discount for you.
+                        </InfoP>
+                    </Left>
+                    <Right>
+                        <BCInfoImg src={BCImg} />
+                    </Right>
+                </BCInfo>
+                <Eligibility>
+                    <StyledLink id="eligibility"></StyledLink>
+                    <Left>
+                    </Left>
+                    <Right>
+                        <Title>Eligibility</Title>
+                        <All>All UBC students in the Faculty of Science are eligible for the Blue Card.</All>
+                    </Right>
+                </Eligibility>
+                <Partners>
+                    <StyledLink id="partners"></StyledLink>
+                    <Title>Our Partners</Title>
+                    <PartnersBox>
+                        <IndivPartner></IndivPartner>
+                    </PartnersBox>
+                </Partners>
+            </MainInfo>
             <Footer></Footer>
         </Background>
     )
@@ -53,7 +67,9 @@ export default function BlueCard() {
 
 const Heading = styled.div`
     padding-top: 126px;
+    padding-left: 15%;
     color: white;
+    height: 400px;
 `
 const Title = styled.div`
     font-size: 54px;
@@ -63,11 +79,9 @@ const Title = styled.div`
     text-transform: uppercase;
     margin-top: 24px;
 `
-
 const SubInfo = styled.div`
     font-size: 24px;
-    font-weight: 400;
-    margin-top: 12px;
+    margin-top: 20px;
     letter-spacing: 4px;
     font-style: italic;
 `
@@ -76,8 +90,6 @@ const SecondaryMenu = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
     margin-top: 24px;
     width: 100%;
@@ -85,11 +97,25 @@ const SecondaryMenu = styled.div`
 
 const BCInfo = styled.div`
     background-color: #e7edf7;
-    color: #222755;
-    width: 100%;
+    width: 96%;
     height: auto;
-    margin-top: 24px;
+    margin: 2% 2% 0 2%;
     padding: 24px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+`
+
+const Partners = styled(BCInfo)`
+    margin: 0 2% 2% 2%;
+`
+const Eligibility = styled(BCInfo) `
+    margin: 0 2%;
 `
 
 const SmItem = styled.div`
@@ -101,35 +127,26 @@ const InfoP = styled.div `
     font-size: 18px;
     color: #222755;
     text-align: left;
-    width: 70%;
-    margin-left: 15%;
-    padding: 24px;
-`
-
-const Eligibility = styled.div`
-    color: white;
     width: 100%;
-    height: 100%;
-    padding: 24px;
+    padding: 12px 0;
 `
 
 const All = styled.div`
     font-size: 36px;
-    color: white; 
     letter-spacing: 3px;
     width: 70%;
-    margin-left: 15%;
-    margin-top: 24px;
-    font-weight: 300;
+    font-weight: 300; 
 `
 
-const Partners = styled.div`
-    background-color: #e7edf7;
+const MainInfo = styled.div`
     color: #222755;
-    width: 100%;
-    height: auto;
-    margin-top: 24px;
-    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: white;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
 `
 
 const PartnersBox = styled.div`
@@ -140,13 +157,21 @@ const IndivPartner = styled.div`
     color: #222755;
 `
 
+const Left = styled.div`
+`
+const Right = styled(Left)`
+`
+
+const BCInfoImg = styled.img`
+    width: 100%;
+    position: relative;
+    z-index: 0;
+`
 const Background = styled.div`
     height: 100%;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     background-color: #222755;
 `
 
@@ -168,6 +193,10 @@ const StyledButton = styled.div`
 `
 
 const StyledLink = styled.a`
-    text-decoration: none;
+    visibility: hidden;
+`
+
+const TopLink = styled.a`
     color: white;
+    text-decoration: none;
 `
