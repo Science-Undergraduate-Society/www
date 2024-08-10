@@ -13,7 +13,6 @@ body {
   box-sizing: border-box;
 }
 
-/* globals.css */
 
 html, body {
     margin: 0;
@@ -49,15 +48,35 @@ button {
     padding: 0 20px;
 }
 
-.title {
-    font-size: 2rem;
+.event-title {
+    font-size: 3rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #222755; 
+    /* text-align: center; */
 }
 
+.event-subtitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0173be; 
+}
 iframe {
     border: none;
     width: 100%;
     height: 600px;
     margin-top: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust gap between images as needed */
+    padding: 20px; /* Optional: add padding around the container */
+}
+
+.eventimage {
+    border-radius: 20px;
+    width: 500px; 
+    height: 300px;
 }

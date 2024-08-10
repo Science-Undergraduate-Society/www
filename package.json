@@ -16,6 +16,7 @@
     "@stripe/react-stripe-js": "^2.7.1",
     "@stripe/stripe-js": "^3.4.1",
     "babel-plugin-styled-components": "^2.1.4",
+    "bootstrap": "^5.3.3",
     "canvas-confetti": "^1.9.3",
     "fortawesome": "^0.0.1-security",
     "next": "^14.2.3",
