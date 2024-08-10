@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import Navbar from "../../components/Navbar";
-import rxnImg1 from "../../components/event-assets/rxnimg1.png";
+import rxnImg1 from "../../public/event-assets/rxnimg1.png";
 import Image from 'next/image';
-import rxn2 from "../../components/event-assets/rxn2.png"
-import sciweek1 from "../../components/event-assets/sciweek1.png"
-import sciweek2 from "../../components/event-assets/sciweek2.png"
-import grad from "../../components/event-assets/grad.png"
+import rxn2 from "../../public/event-assets/rxn2.png"
+import sciweek1 from "../../public/event-assets/sciweek1.png"
+import sciweek2 from "../../public/event-assets/sciweek2.png"
+import grad from "../../public/event-assets/grad.png"
 
 export default function Events() {
     return (
