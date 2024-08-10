@@ -96,9 +96,9 @@ iframe {
 
   
   .line {
-    flex-grow: 1; /* Makes the line take up remaining space */
+    flex-grow: 1; 
     border: none;
-    border-top: 3px solid #222755; /* Adjust thickness and color */
+    border-top: 3px solid #222755;
     margin: 0;
   }
 
@@ -128,10 +128,78 @@ iframe {
   .overlay-text {
     position: relative;
     color: #222755;
-    font-size: 5rem; /* Adjust font size as needed */
+    font-size: 5rem; 
     text-align: center;
     padding: 20px;
-    border-radius: 10px; /* Optional: rounded corners */
+    border-radius: 10px; 
+    margin-top: 90px;
   }
   
+  .carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
+  .carousel-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px; 
+  }
+  
+  .carousel .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel .control-arrow {
+    display: none; 
+  }
+  
+  .carousel .thumbs-wrapper {
+    display: none; 
+  }
+  
+  .carousel .legend {
+    text-align: center;
+  }
+  
+  .pastevent-subtitle {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #222755; 
+    margin: 0; 
+    padding-right: 10px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.past-line {
+    flex-grow: 1; 
+    border: none;
+    border-top: 3px solid #222755;
+    margin: 0;
+  }
+
+  .btn-see-all-photos {
+    background-color: #222755;
+    color: white; 
+    border: none;
+    padding: 10px 20px; 
+    font-size: 18px; 
+    border-radius: 25px; 
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-see-all-photos:hover {
+    background-color: lightblue; /* Slightly lighter blue for hover effect */
+  }
+
+  .past-subtitle-container {
+    display: flex;
+    align-items: center;
+    margin-top:60px;
+    margin-bottom: 60px;
+  }
