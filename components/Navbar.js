@@ -17,7 +17,10 @@ const sections = [
     items: [
       { name: "The Executives", href: "/executives" },
       { name: "Budget", href: "/budget" },
-      { name: "Code & Procedures", href: "/codeProcedures" },
+      { name: "Code & Procedure", href: "/codeProcedures" },
+      { name: "Office Hours", href: "/officeHours" },
+      { name: "Meeting Minutes", href: "/meetingMinutes" },
+      { name: "Clubs", href: "/clubs" },
       // { name: "Office Hours", href: "/" }
     ],
   },
@@ -35,7 +38,7 @@ const sections = [
     items: [
       { name: "Blue Card Program", href: "/bluecard" },
       { name: "Grants", href: "/grants" },
-      { name: "Health & Wellness", href: "/health"}
+      { name: "Health & Wellness", href: "/health" },
       // { name: "Volunteer Portal", href: "/"},
       // { name: "Study Sphere", href: "/"},
     ],
@@ -52,8 +55,11 @@ const sections = [
     name: "Give us Feedback",
     href: "",
     items: [
-      { name: "Feedback Form", href: "https://docs.google.com/forms/d/e/1FAIpQLSeoybfzo-4VZgMUgie-eySFPczi_ToTwugPDu8F-IPLoS04Wg/viewform" },
-      { name: "Future Improvements (for interview)", href: "/demo"}
+      {
+        name: "Feedback Form",
+        href: "https://docs.google.com/forms/d/e/1FAIpQLSeoybfzo-4VZgMUgie-eySFPczi_ToTwugPDu8F-IPLoS04Wg/viewform",
+      },
+      { name: "Future Improvements (for interview)", href: "/demo" },
     ],
   },
   {
@@ -64,11 +70,15 @@ const sections = [
 ];
 
 export default function Navbar() {
-  const [isDropdownOpen, setDropdownOpen] = useState(Array(sections.length).fill(false));
+  const [isDropdownOpen, setDropdownOpen] = useState(
+    Array(sections.length).fill(false)
+  );
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const handleDropdown = (index) => {
-    const updatedDropdownState = isDropdownOpen.map((item, idx) => idx === index ? !item : item);
+    const updatedDropdownState = isDropdownOpen.map((item, idx) =>
+      idx === index ? !item : item
+    );
     setDropdownOpen(updatedDropdownState);
   };
 
@@ -78,7 +88,9 @@ export default function Navbar() {
 
   return (
     <Nav>
-      <NavLink href={"/"}><Logo src="./images/logos/white-logo.png" alt="Logo" /></NavLink>
+      <NavLink href={"/"}>
+        <Logo src="./images/logos/white-logo.png" alt="Logo" />
+      </NavLink>
       <HamburgerMenu onClick={toggleMenu}>
         {isMenuOpen ? <FaTimes /> : <FaBars />}
       </HamburgerMenu>
@@ -86,18 +98,29 @@ export default function Navbar() {
         {sections.map((section, index) => (
           <NavItem
             key={index}
-            onMouseEnter={() => section.items.length > 0 && handleDropdown(index)}
-            onMouseLeave={() => section.items.length > 0 && handleDropdown(index)}
-            onClick={() => section.items.length > 0 && isMenuOpen && handleDropdown(index)}
+            onMouseEnter={() =>
+              section.items.length > 0 && handleDropdown(index)
+            }
+            onMouseLeave={() =>
+              section.items.length > 0 && handleDropdown(index)
+            }
+            onClick={() =>
+              section.items.length > 0 && isMenuOpen && handleDropdown(index)
+            }
           >
-            <NavLink href={section.items.length === 0 ? section.href : "/"}>{section.name}</NavLink>
-            {section.items.length > 0 && (isDropdownOpen[index] || isMenuOpen) && (
-              <DropdownMenu>
-                {section.items.map((item, itemIndex) => (
-                  <DropdownItem key={itemIndex} href={item.href}>{item.name}</DropdownItem>
-                ))}
-              </DropdownMenu>
-            )}
+            <NavLink href={section.items.length === 0 ? section.href : "/"}>
+              {section.name}
+            </NavLink>
+            {section.items.length > 0 &&
+              (isDropdownOpen[index] || isMenuOpen) && (
+                <DropdownMenu>
+                  {section.items.map((item, itemIndex) => (
+                    <DropdownItem key={itemIndex} href={item.href}>
+                      {item.name}
+                    </DropdownItem>
+                  ))}
+                </DropdownMenu>
+              )}
           </NavItem>
         ))}
       </NavItems>
@@ -109,7 +132,7 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(34, 39, 85, 0.8);
+  background-color: rgba(34, 39, 85, 1);
   backdrop-filter: blur(15px);
   padding: 20px 40px;
   position: fixed;
@@ -120,7 +143,7 @@ const Nav = styled.nav`
 `;
 
 const Logo = styled.img`
-  height: 100px;  
+  height: 100px;
 `;
 
 const NavItems = styled.ul`
@@ -134,7 +157,7 @@ const NavItems = styled.ul`
     background-color: rgba(255, 255, 255, 0.9);
     position: fixed;
     top: 0;
-    left: ${props => (props.$isMenuOpen ? '0' : '-100%')};
+    left: ${(props) => (props.$isMenuOpen ? "0" : "-100%")};
     width: 75%;
     height: 100vh;
     justify-content: center;
@@ -170,7 +193,7 @@ const DropdownMenu = styled.div`
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: rgba(34, 39, 85, 0.8);
+  background-color: rgba(34, 39, 85, 0.95);
   backdrop-filter: blur(15px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1000;
@@ -179,7 +202,10 @@ const DropdownMenu = styled.div`
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
 
   ${NavItem}:hover &,
   ${NavItem}:hover & {
