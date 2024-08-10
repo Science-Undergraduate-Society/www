@@ -83,10 +83,11 @@ iframe {
 
 .eventimage {
     border-radius: 20px;
+    border: 3px solid #4779c4; /* Blue border color */
     width: 500px; 
     height: 300px;
-}
-
+  }
+  
 .subtitle-container {
     display: flex;
     align-items: center;

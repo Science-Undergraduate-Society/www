@@ -12,16 +12,17 @@ export default function Events() {
         <div>
             <Navbar/>
         <div className="event-container">
-            <h1 className="event-title">Upcoming Events 🗓️</h1>
+            <h1 className="event-title"><b>Upcoming Events 🗓️</b></h1>
             <iframe 
                 src="https://open-web-calendar.hosted.quelltext.eu/calendar.html?url=https%3A%2F%2Fubccsss.org%2Fevents%2Findex.ics&title=UBC%20CSSS%20Calendar"
                 allowFullScreen
             />
-
-            <h1 className='event-title'>Flagship Events</h1>
+            <br></br>
+            <br></br>
+            <h1 className='event-title'><b>Flagship Events</b></h1>
             <div className='subtitle-container'>
                 <hr className='line' />
-                <h2 className='event-subtitle'>Science RXN</h2>
+                <h2 className='event-subtitle'><b>Science RXN</b></h2>
                 <hr className='line' />
             </div>
 
@@ -42,7 +43,7 @@ export default function Events() {
             
             <div className='subtitle-container'>
                 <hr className='line' />
-                <h2 className='event-subtitle'>Science Week</h2>
+                <h2 className='event-subtitle'><b>Science Week</b></h2>
                 <hr className='line' />
             </div>
 
@@ -61,7 +62,7 @@ export default function Events() {
             </div>
             <div className='subtitle-container'>
                 <hr className='line' />
-                <h2 className='event-subtitle'>Science Graduation</h2>
+                <h2 className='event-subtitle'><b>Science Graduation</b></h2>
                 <hr className='line' />
             </div>
             <p>Science Graduation is an end of the year event to celebrate the completion of another school year, but most importantly, to give a farewell party for all the graduating science students. The event offers food, alcoholic beverages, and most importantly, a good time! </p>
