@@ -29,7 +29,7 @@ const sections = [
     href: "",
     items: [
       { name: "Upcoming Events", href: "/events" },
-      // { name: "Past Events", href: "/" },
+      { name: "Past Events", href: "/pastevents" },
     ],
   },
   {
