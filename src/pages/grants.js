@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle, keyframes } from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Link from 'next/link';
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer"
@@ -117,16 +117,6 @@ export default function Grants() {
         </Background>
     )
 }
-
-const GlobalStyle = createGlobalStyle`
-    :root {
-    --susblue: #222755;
-    --logoblue: #0173be;
-    --greyblue: #e7edf7;
-    --black: #000000;
-    --white: #ffffff;
-
-}`;
 
 const Heading = styled.div`
     background-size: cover;
