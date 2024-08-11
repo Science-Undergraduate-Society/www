@@ -113,6 +113,9 @@ const BCInfo = styled.div`
 
 const Partners = styled(BCInfo)`
     margin: 0 2% 2% 2%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 `
 const Eligibility = styled(BCInfo) `
     margin: 0 2%;
@@ -187,6 +190,7 @@ const BCInfoImg = styled.img`
  `
 
 const ImgGradientRight = styled.div`
+    float: right;
     &::after {
     display: block;
     z-index: 10;
