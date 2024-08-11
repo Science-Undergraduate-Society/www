@@ -152,6 +152,7 @@ const SecondHeader = styled.div`
     padding-top: 24px;
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-weight: bold;
 `
 
 const SciSec = styled.div`
