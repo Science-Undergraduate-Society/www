@@ -3,9 +3,6 @@ import Link from 'next/link';
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer"
 
-//import images
-// import BCImg from "../public/images/index-images/main2.png";
-
 export default function BlueCard() {
     return (
         <Background>
@@ -40,12 +37,17 @@ export default function BlueCard() {
                         </InfoP>
                     </Left>
                     <Right>
-                        
+                        <ImgGradientRight>
+                            <BCInfoImg src="/images/index-images/main2.png" alt="Logo" />
+                        </ImgGradientRight>
                     </Right>
                 </BCInfo>
                 <Eligibility>
                     <StyledLink id="eligibility"></StyledLink>
                     <Left>
+                        <ImgGradientLeft>
+                            <BCInfoImg src="/images/index-images/main2.png" alt="Logo" />
+                        </ImgGradientLeft>
                     </Left>
                     <Right>
                         <Title>Eligibility</Title>
@@ -114,6 +116,8 @@ const Partners = styled(BCInfo)`
 `
 const Eligibility = styled(BCInfo) `
     margin: 0 2%;
+    justify-content: center;
+    align-items: center;
 `
 
 const SmItem = styled.div`
@@ -129,7 +133,7 @@ const InfoP = styled.div `
 `
 
 const All = styled.div`
-    font-size: 36px;
+    font-size: 30px;
     letter-spacing: 3px;
     width: 100%;
     font-weight: 300; 
@@ -158,18 +162,53 @@ const IndivPartner = styled.div`
 `
 
 const Left = styled.div`
+    width: 50%;
+    align-items: center;
+    justify-content: center;
 `
 const Right = styled(Left)`
 `
 
-const BCInfoImg = styled.img`
-`
 const Background = styled.div`
     height: 100%;
     background-size: cover;
     display: flex;
     flex-direction: column;
     background-color: #222755;
+`
+// images
+const BCInfoImg = styled.img`
+  min-width: 50%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  display: block;
+ `
+
+const ImgGradientRight = styled.div`
+    &::after {
+    display: block;
+    z-index: 10;
+    position: relative;
+    background-image: linear-gradient(to right, #e7edf7 0, transparent 100%);
+    margin-top: -375px;
+    height: 375px;
+    width: 100%;
+    content:  '';}
+`
+
+const ImgGradientLeft = styled.div`
+    &::after {
+    display: block;
+    z-index: 10;
+    position: relative;
+    background-image: linear-gradient(to right, transparent 0, #e7edf7 100%);
+    margin-top: -375px;
+    height: 375px;
+    width: 90%;
+    content:  '';}
+
 `
 
 const StyledButton = styled.div`
