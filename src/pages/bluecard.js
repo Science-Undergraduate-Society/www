@@ -38,7 +38,7 @@ export default function BlueCard() {
                     </Left>
                     <Right>
                         <ImgGradientRight>
-                            <BCInfoImg src="/images/index-images/main2.png" alt="Logo" />
+                            <BCInfoImgRight src="/images/index-images/main2.png" alt="Logo" />
                         </ImgGradientRight>
                     </Right>
                 </BCInfo>
@@ -46,7 +46,7 @@ export default function BlueCard() {
                     <StyledLink id="eligibility"></StyledLink>
                     <Left>
                         <ImgGradientLeft>
-                            <BCInfoImg src="/images/index-images/main2.png" alt="Logo" />
+                            <BCInfoImgLeft src="/images/index-images/main2.png" alt="Logo" />
                         </ImgGradientLeft>
                     </Left>
                     <Right>
@@ -67,11 +67,16 @@ export default function BlueCard() {
     )
 }
 
+const breakpoints = {
+    mobile: '768px',
+    tablet: '1024px',
+};
+
 const Heading = styled.div`
     padding-top: 126px;
     padding-left: 15%;
     color: white;
-    height: 400px;
+    min-height: 400px;
 `
 const Title = styled.div`
     font-size: 54px;
@@ -109,6 +114,12 @@ const BCInfo = styled.div`
     display: flex;
     flex-direction: row;
     gap: 10px;
+    flex-wrap: wrap;
+
+    @media (max-width: ${breakpoints.tablet}) {
+        padding: 12px;
+        flex-direction: column;
+    }
 `
 
 const Partners = styled(BCInfo)`
@@ -121,6 +132,10 @@ const Eligibility = styled(BCInfo) `
     margin: 0 2%;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: ${breakpoints.mobile}) {
+        text-align: right;
+    }
 `
 
 const SmItem = styled.div`
@@ -132,7 +147,7 @@ const InfoP = styled.div `
     font-size: 18px;
     color: #222755;
     text-align: left;
-    padding: 12px 0;
+    padding: 24px 0;
 `
 
 const All = styled.div`
@@ -165,9 +180,13 @@ const IndivPartner = styled.div`
 `
 
 const Left = styled.div`
-    width: 50%;
+    max-width: 50%;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: ${breakpoints.mobile}) {
+        min-width: 100%;
+    }
 `
 const Right = styled(Left)`
 `
@@ -180,27 +199,35 @@ const Background = styled.div`
     background-color: #222755;
 `
 // images
-const BCInfoImg = styled.img`
+const BCInfoImgRight = styled.img`
   min-width: 50%;
   height: auto;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   border-radius: 10px;
   display: block;
+
+  @media (max-width: ${breakpoints.mobile}) {
+        width: 100%;
+    }
  `
 
+ const BCInfoImgLeft = styled(BCInfoImgRight)`
+ `
+{/*
 const ImgGradientRight = styled.div`
     float: right;
     &::after {
     display: block;
-    z-index: 10;
+    z-index: 2;
     position: relative;
     background-image: linear-gradient(to right, #e7edf7 0, transparent 100%);
-    margin-top: -375px;
     height: 375px;
-    width: 100%;
+    max-width: 100%;
+    margin-top: -375px;
     content:  '';}
 `
+margin-top: -375px;
 
 const ImgGradientLeft = styled.div`
     &::after {
@@ -211,9 +238,15 @@ const ImgGradientLeft = styled.div`
     margin-top: -375px;
     height: 375px;
     width: 90%;
-    content:  '';}
+    content:  '';
+    flex-wrap: wrap;}
 
 `
+*/}
+
+const ImgGradientLeft = styled.div``
+const ImgGradientRight = styled(ImgGradientLeft)`
+    `
 
 const StyledButton = styled.div`
     display: inline-block;
@@ -224,7 +257,7 @@ const StyledButton = styled.div`
     text-align: center;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 20px;
+    margin: 20px 0;
     cursor: pointer;
 
     &:hover {
