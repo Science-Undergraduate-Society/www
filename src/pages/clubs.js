@@ -442,139 +442,373 @@ export default function Clubs() {
                   <ClubRow
                     logoSrc="path_to_ams_autism"
                     clubName="AMS Autism Associates Club"
-                    description="Astronomy Club focuses on exploring the universe through telescopes, discussions, and events."
+                    description="Welcome to the Autism Associates Club! Here, we gather and pursue our learning about the field of autism spectrum disorder, along with the current research and events related to it! We learn through seminars and presentations enacted by each member (yes, you included!) but also medical students with current research topics in regards to ASD! In junction with organizations such as AutismBC and VASS, we plan events for the ASD community, so come join now!"
+                    links={[]}
                   />
                   <ClubRow
                     logoSrc="path_to_biochem_club_logo"
                     clubName="AMS Medical Genetics"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="Welcome to the AMS Medical Genetic Club! We’re a community dedicated to staying up to date with the latest advancements in medical genetics. Our objectives include discussing current topics, presenting cutting-edge research, and fostering ethical awareness. Previous events include Science Trivia Night for Charity, National Genetics Symposium, and Genetics Career Panel. Join us as we explore the exciting world of medical genetics together!"
+                    links={[
+                      {
+                        href: "mailto:ams.medgen.ubc@gmail.com",
+                        text: "ams.medgen.ubc@gmail.com",
+                      },
+                      {
+                        href: "https://www.instagram.com/ubcmedgen",
+                        text: "Instagram",
+                      },
+                    ]}
                   />
                   <ClubRow
                     logoSrc="path_to_"
                     clubName="AMS UBC Synapse"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="AMS UBC Synapse is a club that targets neurodegenerative disease through three lenses: promoting awareness, fundraising for related research and organizations, and connecting students with the neurodegenerative disease community. Recent initiatives include hosting arts and crafts workshops at senior homes, film screening to raise awareness on dementia, and creating short video interviews that feature the individual experience of living with a neurodegenerative disease."
+                    links={[
+                      {
+                        href: "mailto:ubcsynapse@gmail.com",
+                        text: "ams.medgen.ubc@gmail.com",
+                      },
+                      {
+                        href: "https://www.instagram.com/ubcmedgen",
+                        text: "Instagram",
+                      },
+                      {
+                        href: "https://www.facebook.com/ubcsynapse/",
+                        text: "Instagram",
+                      },
+                    ]}
                   />
                   <ClubRow
                     logoSrc="path_to_"
                     clubName="AMS Vaccine Literacy Club"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="The UBC Vaccine Literacy Club (UBC VLC) disseminates accurate age-appropriate and culturally relevant information on vaccinations to communities in British Columbia, building capacity to overcome vaccine hesitancy and promote vaccine acceptance. We share information on the safety and effectiveness of vaccines to communities and groups through social media, infographics, webinars, panel events, workshops, and we are in the process of publishing a children’s book on the science behind vaccinations. We produce engaging materials to encourage vaccine confidence, the adoption of public health measures, and evidence-based decision-making."
+                    links={[
+                      {
+                        href: "mailto:ubcvaccineliteracy@gmail.com",
+                        text: "ubcvaccineliteracy@gmail.com",
+                      },
+                      {
+                        href: "https://www.instagram.com/ubcvaccineliteracy",
+                        text: "Instagram",
+                      },
+                    ]}
                   />
                   <ClubRow
                     logoSrc="path_to_"
                     clubName="Canadian Liver Foundation (CLF)"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="No Blurb Yet!"
+                    links={[]}
                   />
                   <ClubRow
                     logoSrc="path_to_"
                     clubName="Friends of Medecins Sans Frontieres (FoMSF) UBC"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="FoMSF is an official student support organization for MSF (Doctors Without Borders) and operates independently of MSF. MSF is an international medical humanitarian non-profit organization that provides free healthcare in conflict zones and in countries affected by endemic diseases or natural disasters. FoMSF supports MSF by raising funds to contribute to MSF’s programs and administration and by raising awareness of the important work that MSF does around the world through our events on UBC campus."
+                    links={[
+                      {
+                        href: "mailto:fomsfubc@gmail.com",
+                        text: "fomsfubc@gmail.com",
+                      },
+                      {
+                        href: "https://www.instagram.com/friendsofmsfubc",
+                        text: "Instagram",
+                      },
+                    ]}
                   />
                   <ClubRow
                     logoSrc="path_to_"
                     clubName="Humanities in Healthcare (HIH)"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="UBC Humanities in Healthcare (HIH) is an interdisciplinary undergraduate UBC club with interests in health care at large. Through an exploration of the humanities and social sciences, we hope to educate future healthcare professionals and foster discussion on patient-centred care. UBC HIH hopes to spark discussion on the often overlooked aspects of medicine and bring together a wide variety of backgrounds and experiences all in pursuit of healthcare as a profession."
+                    links={[
+                      { href: "https://www.ubchih.com/", text: "Website" },
+                      {
+                        href: "mailto:ubc.hih@gmail.com",
+                        text: "ubc.hih@gmail.com",
+                      },
+                      {
+                        href: "https://www.instagram.com/friendsofmsfubc",
+                        text: "Instagram",
+                      },
+                      {
+                        href: "https://www.facebook.com/HumanitiesInHealthcare",
+                        text: "Facebook",
+                      },
+                    ]}
                   />
                   <ClubRow
                     logoSrc="path_to_"
                     clubName="Neuroscience Club"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="The UBC Neuroscience Club (UNC) is a multidisciplinary group of undergraduate students striving to better understand the mysteries of the brain through research, academic and career development, and community. From basic laboratory techniques to critical analyses of data, we offer our members the chance to learn and be a part of the process behind the scientific research being done in the field through activities such as journal club, workshops, and mentorship. We create a social environment for students where they can discuss neuroscience-related topics and integrate knowledge from an array of disciplines, and simply have fun with people who share the same passion through socials such as a neuroscience formal. Lastly, we emphasize projects aimed at benefiting professional development through academic and career workshops."
+                    links={[
+                      {
+                        href: "https://ubcneuroscienceclub.wixsite.com/uncweb",
+                        text: "Website",
+                      },
+                      {
+                        href: "mailto:ubcneuroscienceclub@gmail.com",
+                        text: "ubcneuroscienceclub@gmail.com",
+                      },
+                      {
+                        href: "https://www.instagram.com/ubcneuroscienceclub",
+                        text: "Instagram",
+                      },
+                      {
+                        href: "https://www.facebook.com/UBCneuroscienceclub/",
+                        text: "Facebook",
+                      },
+                    ]}
                   />
                   <ClubRow
                     logoSrc="path_to_"
                     clubName="Operation Smile"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="Every three minutes, a child is born with a cleft lip and/or cleft palate. But you can make a difference. UBC Operation Smile is dedicated to educating the community about the importance of access to safe surgery and the basic right to healthcare while increasing awareness of the prevalence of cleft lip and cleft palate among children in lower-to-middle income countries. In partnership with the global non-profit organization, Operation Smile Canada, we organize service projects such as making smile dolls to accompany children who will be undergoing cleft lip and cleft palate surgery and hosting speaker symposiums for the community to participate and learn more about cleft palate and safe surgery while also interacting with medical and dental professionals. Join Us in Changing Lives One Smile at a Time!"
+                    links={[
+                      {
+                        href: "mailto:ubcoperationsmileclub@gmail.com",
+                        text: "ubcoperationsmileclub@gmail.com",
+                      },
+                      {
+                        href: "https://www.instagram.com/ubcopsmile",
+                        text: "Instagram",
+                      },
+                    ]}
                   />
                   <ClubRow
                     logoSrc="path_to_"
                     clubName="Pre-Dental Club"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="The UBC Pre-Dental Club hosts weekly meetings from September–April. We help provide guidance to students pursuing the dental field and provide a pre-dental network that students can rely on. Our meetings include presentations from a variety of guest speakers and information on several North American, Australian, and European dental schools. We also provide information on both the Canadian and American Dental Aptitude Test (DAT), as well as practice questions to illustrate the format of the exam. If you miss a meeting, do not fret! Our members get weekly e-mails on meeting slides and past recorded meetings, to make sure they are all caught up with our newest info! Our club strives to fortify and expand our connections with our local community by opening up volunteer and leadership positions for our members and collaborating with other UBC Clubs or local organizations. Be sure to always check our Instagram and Facebook for updates!."
+                    links={[
+                      {
+                        href: "https://ubcpredent.wixsite.com/home",
+                        text: "Website",
+                      },
+                      {
+                        href: "mailto:ubcpredent@gmail.com",
+                        text: "ubcpredent@gmail.com",
+                      },
+                      {
+                        href: "https://www.instagram.com/ubcpredent",
+                        text: "Instagram",
+                      },
+                      {
+                        href: "https://www.facebook.com/groups/5799807069/",
+                        text: "Facebook",
+                      },
+                    ]}
                   />
                   <ClubRow
                     logoSrc="path_to_"
                     clubName="Pre-Optometry Club"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="We are the group of people who LOVE eyes! Since 1994 we have been connecting students to Optometry schools across North America through info sessions"
+                    links={[]}
                   />
                   <ClubRow
                     logoSrc="path_to_"
                     clubName="STEM Fellowship"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="STEM Fellowship is a student-run, national organization that provides a platform for students interested in STEM fields to connect with one another and with professionals, engage in research and improve skills in scholarly writing. We seek to enable students to learn collaboratively, express their passion and love for science, and expand the scope of human knowledge through scientific, multidisciplinary inquiry."
+                    links={[
+                      {
+                        href: "mailto:ubc@stemfellowship.org",
+                        text: "ubc@stemfellowship.org",
+                      },
+                      {
+                        href: "https://www.instagram.com/ubcstemfellowship",
+                        text: "Instagram",
+                      },
+                    ]}
                   />
                   <ClubRow
                     logoSrc="path_to_"
                     clubName="Undergraduate Research Opportunities (URO)"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="We are a student-led club dedicated to connecting undergraduate students with multidisciplinary research opportunities. We offer programs, events, and research-related services for students of all faculties and experience levels. Some of our most popular events and programs include the Research EXperience mentorship program, Life Sciences Research Night, and Canadian Journal of Undergraduate Research. Whether it’s getting your foot in the door, finding a summer lab job, or getting a manuscript published, we’re here to help!"
+                    links={[]}
                   />
                   <ClubRow
                     logoSrc="path_to_"
                     clubName="Women in Computer Science at UBC"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="Women in Computer Science (WiCS) aims to build a strong community of women in computer science field at UBC. We provide opportunities for building lasting connections with fellow women in tech, industry professionals, and offer support to one another during our time at UBC."
+                    links={[]}
                   />
                 </Column>
                 <Column>
                   <ClubRow
-                    logoSrc="path_to_astronomy_club_logo"
+                    logoSrc="path_to_girls_in_steam_logo"
                     clubName="AMS Girls in STEAM"
-                    description="Astronomy Club focuses on exploring the universe through telescopes, discussions, and events."
+                    description="Girls in STEAM supports women and gender-diverse people in STEAM fields through education, networking, and professional development."
+                    links={[
+                      { href: "http://girlsinsteam.org/", text: "Website" },
+                      {
+                        href: "mailto:ubc@girlsinsteam.org",
+                        text: "ubc@girlsinsteam.org",
+                      },
+                      {
+                        href: "https://www.instagram.com/gis.ubc/",
+                        text: "Instagram",
+                      },
+                    ]}
                   />
                   <ClubRow
-                    logoSrc="path_to_biochem_club_logo"
+                    logoSrc="path_to_scia_logo"
                     clubName="AMS Spinal Cord Injury Association"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="AMS SCIA connects students with the spinal cord injury community through education, research, and service opportunities."
+                    links={[]}
                   />
                   <ClubRow
-                    logoSrc="path_to_"
+                    logoSrc="path_to_unbounded_logo"
                     clubName="AMS unboundED"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="AMS unboundED provides science and arts workshops to elementary schools to spark curiosity and reduce uncertainty in career paths."
+                    links={[]}
                   />
                   <ClubRow
-                    logoSrc="path_to_"
+                    logoSrc="path_to_blood_for_life_logo"
                     clubName="Blood for Life"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="Blood for Life aims to diversify and expand Canada's blood and stem cell donor registry, guiding students through the donation process."
+                    links={[
+                      {
+                        href: "mailto:info.ubcbloodforlife@gmail.com",
+                        text: "info.ubcbloodforlife@gmail.com",
+                      },
+                      {
+                        href: "https://www.instagram.com/ubcbloodforlife",
+                        text: "Instagram",
+                      },
+                      {
+                        href: "https://www.facebook.com/ubcbloodclub/",
+                        text: "Facebook",
+                      },
+                      {
+                        href: "https://www.tiktok.com/@ubcbloodforlife",
+                        text: "TikTok",
+                      },
+                    ]}
                   />
                   <ClubRow
-                    logoSrc="path_to_"
+                    logoSrc="path_to_cancer_association_logo"
                     clubName="Cancer Association"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="The Cancer Association promotes cancer awareness, organizes events, and supports those affected by cancer at UBC."
+                    links={[]}
                   />
                   <ClubRow
-                    logoSrc="path_to_"
+                    logoSrc="path_to_hsf_logo"
                     clubName="Heart and Stroke Foundation Club (HSF)"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="HSF promotes cardiovascular health and wellness through volunteering, fundraising, and awareness campaigns at UBC."
+                    links={[]}
                   />
                   <ClubRow
-                    logoSrc="path_to_"
+                    logoSrc="path_to_multiple_sclerosis_club_logo"
                     clubName="Multiple Sclerosis Club"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="The UBC Multiple Sclerosis Club raises awareness of MS through volunteering, social, and fundraising opportunities."
+                    links={[]}
                   />
                   <ClubRow
-                    logoSrc="path_to_"
+                    logoSrc="path_to_nwplus_logo"
                     clubName="nwPlus"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="nwPlus organizes UBC's largest hackathons, fostering innovation, inclusivity, and learning in the tech community."
+                    links={[
+                      { href: "https://nwplus.io/", text: "Website" },
+                      { href: "mailto:info@nwplus.io", text: "info@nwplus.io" },
+                      {
+                        href: "https://www.instagram.com/nwplusubc",
+                        text: "Instagram",
+                      },
+                      {
+                        href: "https://www.facebook.com/nwplusubc/",
+                        text: "Facebook",
+                      },
+                      {
+                        href: "https://linktr.ee/nwplusubc",
+                        text: "Linktree",
+                      },
+                      {
+                        href: "https://medium.com/nwplusubc",
+                        text: "Medium",
+                      },
+                      {
+                        href: "https://ca.linkedin.com/company/nwplus",
+                        text: "LinkedIn",
+                      },
+                      {
+                        href: "https://twitter.com/nwplusubc",
+                        text: "Twitter",
+                      },
+                      {
+                        href: "https://www.tiktok.com/@nwplusubc",
+                        text: "TikTok",
+                      },
+                      {
+                        href: "https://www.youtube.com/c/nwplusubc",
+                        text: "Youtube",
+                      },
+                    ]}
                   />
                   <ClubRow
-                    logoSrc="path_to_"
+                    logoSrc="path_to_paths_logo"
                     clubName="PATHS"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="UBC PATHS supports the Parkinson’s and Alzheimer’s community through philanthropy, outreach, and educational initiatives."
+                    links={[
+                      {
+                        href: "mailto:ubcprojectpaths@gmail.com",
+                        text: "ubcprojectpaths@gmail.com",
+                      },
+                      {
+                        href: "https://www.instagram.com/ubc_paths",
+                        text: "Instagram",
+                      },
+                      {
+                        href: "https://www.facebook.com/ubcpaths/",
+                        text: "Facebook",
+                      },
+                    ]}
                   />
                   <ClubRow
-                    logoSrc="path_to_"
+                    logoSrc="path_to_pre_medical_society_logo"
                     clubName="Pre-Medical Society"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="The UBC Pre-Medical Society supports students interested in medical school through networking, information sessions, and involvement opportunities."
+                    links={[]}
                   />
                   <ClubRow
-                    logoSrc="path_to_"
+                    logoSrc="path_to_quantum_club_logo"
                     clubName="Quantum Club"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="The UBC Quantum Club introduces students to quantum computing through seminars, workshops, and mentorship opportunities."
+                    links={[
+                      {
+                        href: "https://discord.gg/m8Z2Jwss9m",
+                        text: "Discord",
+                      },
+                      {
+                        href: "mailto:ubcquantum@gmail.com",
+                        text: "ubcquantum@gmail.com",
+                      },
+                      {
+                        href: "https://www.instagram.com/ubcquantum/",
+                        text: "Instagram",
+                      },
+                      {
+                        href: "https://www.facebook.com/ubcquantumclub",
+                        text: "https://www.facebook.com/ubcquantum/",
+                      },
+                    ]}
                   />
                   <ClubRow
-                    logoSrc="path_to_"
+                    logoSrc="path_to_twecs_logo"
                     clubName="Third World Eye Care Society"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="TWECS is a volunteer organization that collects and distributes eyeglasses to individuals in developing countries."
+                    links={[
+                      {
+                        href: "mailto:ubctwecs@gmail.com",
+                        text: "ubctwecs@gmail.com",
+                      },
+                      {
+                        href: "https://www.instagram.com/ubctwecs",
+                        text: "Instagram",
+                      },
+                    ]}
                   />
                   <ClubRow
-                    logoSrc="path_to_"
+                    logoSrc="path_to_women_in_science_logo"
                     clubName="Women in Science"
-                    description="The Biochemistry Student Association provides resources and networking for biochem students."
+                    description="The UBC Women in Science Club provides mentorship, networking, and professional development for female undergraduates in science fields."
+                    links={[]}
                   />
                 </Column>
               </ColumnContainer>
@@ -672,6 +906,7 @@ const Row = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 16px;
+  flex-shrink: 0;
 `;
 
 const Logo = styled.img`
@@ -704,13 +939,14 @@ const Description = styled.div`
 `;
 
 const Background = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow: hidden;
 `;
 
 const Content = styled.div`
@@ -718,10 +954,11 @@ const Content = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   text-align: left;
-  padding: 650px 10px 20px;
+  padding: 150px 10px 20px;
   width: 100%;
   max-width: 1100px;
   line-height: 2.6;
+  overflow-y: auto; /* Allow scrolling */
   p {
     line-height: 1.6; /* Adjust this value as needed */
   }
