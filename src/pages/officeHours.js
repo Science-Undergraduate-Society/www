@@ -1,13 +1,20 @@
 import styled from "styled-components";
 import Link from "next/link";
+import Navbar from "../../components/Navbar";
+import NewFooter from "../../components/newFooter";
 
 export default function OfficeHours() {
   return (
     <Background>
-      <Title>Office Hours page</Title>
-      <Link href="/" passHref>
-        <StyledButton>Back to Home</StyledButton>
-      </Link>
+      <Navbar />
+      <Content>
+        <h1>Office Hours</h1>
+        <p>
+          Each executive is required to sit on 2 hours of office hours every
+          week. Their office hours can be found listed below.
+        </p>
+      </Content>
+      <NewFooter />
     </Background>
   );
 }
@@ -26,19 +33,16 @@ const Background = styled.div`
   text-align: center;
 `;
 
-const StyledButton = styled.div`
-  display: inline-block;
-  width: 210px;
-  padding: 10px 20px;
-  background-color: #0070f3;
-  color: white;
-  text-align: center;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 20px;
-  cursor: pointer;
+const Content = styled.div`
+  flex: 1;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 200px 10px 20px;
+  width: 100%;
+  max-width: 1200px;
+`;
 
-  &:hover {
-    background-color: #005bb5;
-  }
+const SpacingDiv = styled.div`
+  margin-bottom: 75px; /
 `;

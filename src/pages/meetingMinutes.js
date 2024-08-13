@@ -420,7 +420,7 @@ const Content = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   text-align: left;
-  padding: 500px 10px 20px;
+  padding: 550px 10px 20px;
   width: 100%;
   max-width: 1100px;
   p {
@@ -462,6 +462,7 @@ const TabContent = styled.div`
   }
 `;
 const TabTable = styled.div`
+  min-height:50px
   margin-top: 45px; /* Add some space above the tabs */
   width: 100%;
   border-collapse: collapse; /* Or use 'fixed' */
