@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
-import NewFooter from "../../components/newFooter";
+import NewFooter from "../../components/NewFooter";
 
 export default function Budget() {
   return (
@@ -63,7 +63,7 @@ const Background = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
 `;
 

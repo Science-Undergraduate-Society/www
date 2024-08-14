@@ -394,7 +394,7 @@ const Background = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
 `;
 
@@ -420,7 +420,7 @@ const Content = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   text-align: left;
-  padding: 550px 10px 20px;
+  padding: 150px 10px 20px;
   width: 100%;
   max-width: 1100px;
   p {
