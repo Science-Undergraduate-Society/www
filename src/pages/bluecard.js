@@ -58,7 +58,12 @@ export default function BlueCard() {
                     <StyledLink id="partners"></StyledLink>
                     <Title>Our Partners</Title>
                     <PartnersBox>
-                        <IndivPartner></IndivPartner>
+                        <IndivPartner>
+                            {/*<Logo></Logo>
+                            <Headers>D</Headers>
+                            <Info></Info>*/}
+
+                        </IndivPartner>
                     </PartnersBox>
                 </Partners>
             </MainInfo>
@@ -177,6 +182,8 @@ const PartnersBox = styled.div`
 
 const IndivPartner = styled.div`
     color: #222755;
+    flex-direction: column;
+    flex-wrap: wrap;
 `
 
 const Left = styled.div`
