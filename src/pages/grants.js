@@ -203,12 +203,14 @@ const IndivInfo = styled.div`
     border-width: 0;
     border-color: none;
     padding: 2%;
-    max-width: 23%;
+    width: 23%;
     min-height: 150px;
     color: #222755;
 
     @media (max-width: ${breakpoints.mobile}) {
-        max-width: 98%;
+        width: 98%;
+        min-height: auto;
+        text-align: center;
     }
 `
 
@@ -218,11 +220,13 @@ const InfoTitle = styled.h2`
 
     @media (max-width: ${breakpoints.mobile}) {
         size: 15px;
+        padding: 15px;
     }
 `
 
 const InfoP = styled.p`
     font-size: 15px;
+    text-align: left;
 `
 
 const Rubric = styled.div`
