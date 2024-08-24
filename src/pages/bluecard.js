@@ -58,13 +58,85 @@ export default function BlueCard() {
                     <StyledLink id="partners"></StyledLink>
                     <Title>Our Partners</Title>
                     <PartnersBox>
+                        <IndivPartnerInfo
+                            partnerName="Arbutus Station Dental"
+                            logoSrc="/images/bluecard-images/arbutus station dental.png"
+                            description="Free take-home teeth whitening kit with the completion 
+                            of a new patient exam and cleaning."
+                            location="Valid only at 2184 W Broadway #560, Vancouver, BC V6K 2E1"
+                        />
                         <IndivPartner>
-                            {/*<Logo></Logo>
-                            <Headers>D</Headers>
-                            <Info></Info>*/}
-
+                            <PartnerImgThin src="/images/bluecard-images/BAKD_Cookies_Logo.webp" /> 
+                            <PartnerNameThin>Bak'd</PartnerNameThin>
+                            <Description>10% off</Description>
                         </IndivPartner>
-                    </PartnersBox>
+                        <IndivPartnerInfo
+                            partnerName="Chatime"
+                            logoSrc="/images/bluecard-images/chatime-logo.webp"
+                            description="10% off"
+                            location="Valid only at 5998 University Blvd #4, Vancouver, V6T 2A1"
+                        />
+                        <IndivPartnerInfo
+                            partnerName="Delhi 6 Indian Bistro"
+                            logoSrc="/images/bluecard-images/delhi 6 indian bistro.png"
+                            description="15% off"
+                            location="Valid only at 1766 W 7th Ave"
+                        />
+                        <IndivPartner>
+                            <PartnerImgThin src="/images/bluecard-images/EYELAB.png" /> 
+                            <PartnerNameThin>Eyelab, Doctors of Optometry</PartnerNameThin>
+                            <Description>10% discount on contacts</Description>
+                            <Location>Valid only at 2369 W 41st Ave, Vancouver, BC V6M 2A3</Location>
+                        </IndivPartner>
+                        <IndivPartnerInfo
+                            partnerName="Gold's Gym"
+                            logoSrc="/images/bluecard-images/gold_s gym logo.png"
+                            description="35% off standard rate"
+                            location="Valid only at 709 W Broadway, Vancouver, BC V5Z 1J5 2155 Allison Rd, Vancouver, BC V6T 1T5 1950 Oxford Connector, Port Coquitlam, BC V3B 4H3 19989 81a Ave, Langley Twp, BC V2Y 0C7"
+                        />
+                        <IndivPartnerInfo
+                            partnerName="Hinbor"
+                            logoSrc="/images/bluecard-images/hinbor_logo.jpeg"
+                            description="Special weekly discounts for Science students!"
+                            location="Email Rachel at info@hinbor.ca with your Hinbor app username to be included into exclusive science student discounts"
+                        />
+                        <IndivPartnerInfo
+                            partnerName="Kung Fu Tea"
+                            logoSrc="/images/bluecard-images/KUNG FU TEA [BLACK].png"
+                            description="15% discount on all items"
+                            location="Valid only at 2855 W Broadway, Vancouver, BC V6K 2G6"
+                        />
+                        <IndivPartnerInfo
+                            partnerName="Majestic Maven"
+                            logoSrc="/images/bluecard-images/majestic-maven-14.jpg"
+                            description="25% off on all services for September then 20% for the rest of the year."
+                            location=""
+                        />
+                        <IndivPartnerInfo
+                            partnerName="Milano Casa Riistorante"
+                            logoSrc="/images/bluecard-images/milano casa logo.jpg"
+                            description="10% off on the dinner menu. Note: dinner menu starts from 6 pm"
+                            location="Valid only at 4397 W 10th Ave, Vancouver, BC V6R 2H6"
+                        />
+                        <IndivPartnerInfo
+                            partnerName="Pita Pit"
+                            logoSrc="/images/bluecard-images/PitaPit_logo.jpg"
+                            description="5% off"
+                            location="Valid only at 5717 Dalhousie Rd, Vancouver, BC V6T 2H9"
+                        />
+                        <IndivPartnerInfo
+                            partnerName="Steve's Poke Bar"
+                            logoSrc="/images/bluecard-images/Steve_s Poke Bar Logo.png"
+                            description="$5 off"
+                            location="Valid at www.stevespokebar.ca"
+                        />
+                        <IndivPartnerInfo
+                            partnerName="Wizeprep"
+                            logoSrc="/images/bluecard-images/wizeprep logo.png"
+                            description="15% discount on Study Pass + Live Prep sessions + MCAT"
+                            location="Valid at wizeprep.com"
+                        />
+                        </PartnersBox>
                 </Partners>
             </MainInfo>
             <Footer></Footer>
@@ -72,10 +144,55 @@ export default function BlueCard() {
     )
 }
 
+// partner's boxes
+
+function IndivPartnerInfo({ partnerName, logoSrc, description, location }) {
+    return (
+        <>
+        <IndivPartner>
+            <PartnerImg src={logoSrc} /> 
+            <PartnerName>{partnerName}</PartnerName>
+            <Description>{description}</Description>
+            <Location>{location}</Location>
+        </IndivPartner>
+        </>
+    );
+}
+
 const breakpoints = {
     mobile: '768px',
     tablet: '1024px',
 };
+
+const PartnerName = styled.div`
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 24px;
+`
+
+const PartnerNameThin = styled(PartnerName)`
+    margin-top: 53px;
+`
+
+const PartnerImg = styled.img`
+    max-width: 75%;
+    height: auto;
+`
+
+const PartnerImgThin = styled(PartnerImg)`
+    margin-top: 24px;
+`
+
+const Description = styled.div`
+    font-size: 12px;
+    margin-top: 3%;
+`
+const Location = styled.div`
+    font-size: 10px;
+    font-style: italic;
+    margin-top: 4%;
+    color: #0173be;
+`
 
 const Heading = styled.div`
     padding-top: 126px;
@@ -132,6 +249,11 @@ const Partners = styled(BCInfo)`
     text-align: center;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: white;
+    border-color: #e7edf7;
+    border-width: 10px;
 `
 const Eligibility = styled(BCInfo) `
     margin: 0 2%;
@@ -174,16 +296,27 @@ const MainInfo = styled.div`
 `
 
 const PartnersBox = styled.div`
-    display = flex;
+    height: 100%;
+    width: 100%;
+    padding: 24px;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5px;
+    row-gap: 50px;
+    justify-content: center;
 `
-
 const IndivPartner = styled.div`
     color: #222755;
-    flex-direction: column;
-    flex-wrap: wrap;
+    padding: 2%;
+    max-width: 23%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+
+       @media (max-width: ${breakpoints.mobile}) {
+        max-width: 48%;
+    }
 `
 
 const Left = styled.div`
@@ -192,7 +325,10 @@ const Left = styled.div`
     justify-content: center;
 
     @media (max-width: ${breakpoints.mobile}) {
-        min-width: 100%;
+        max-width: 100%;
+    }
+        @media (max-width: ${breakpoints.tablet}) {
+        max-width: 100%;
     }
 `
 const Right = styled(Left)`
@@ -221,36 +357,6 @@ const BCInfoImgRight = styled.img`
 
  const BCInfoImgLeft = styled(BCInfoImgRight)`
  `
-{/*
-const ImgGradientRight = styled.div`
-    float: right;
-    &::after {
-    display: block;
-    z-index: 2;
-    position: relative;
-    background-image: linear-gradient(to right, #e7edf7 0, transparent 100%);
-    height: 375px;
-    max-width: 100%;
-    margin-top: -375px;
-    content:  '';}
-`
-margin-top: -375px;
-
-const ImgGradientLeft = styled.div`
-    &::after {
-    display: block;
-    z-index: 10;
-    position: relative;
-    background-image: linear-gradient(to right, transparent 0, #e7edf7 100%);
-    margin-top: -375px;
-    height: 375px;
-    width: 90%;
-    content:  '';
-    flex-wrap: wrap;}
-
-`
-*/}
-
 const ImgGradientLeft = styled.div``
 const ImgGradientRight = styled(ImgGradientLeft)`
     `
