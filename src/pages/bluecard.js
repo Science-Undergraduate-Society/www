@@ -42,8 +42,8 @@ export default function BlueCard() {
                         </ImgGradientRight>
                     </Right>
                 </BCInfo>
+                <StyledLink id="eligibility"></StyledLink>
                 <Eligibility>
-                    <StyledLink id="eligibility"></StyledLink>
                     <Left>
                         <ImgGradientLeft>
                             <BCInfoImgLeft src="/images/index-images/main2.png" alt="Logo" />
@@ -54,8 +54,8 @@ export default function BlueCard() {
                         <All>All UBC students in the Faculty of Science are eligible for the Blue Card.</All>
                     </Right>
                 </Eligibility>
+                <StyledLink id="partners"></StyledLink>
                 <Partners>
-                    <StyledLink id="partners"></StyledLink>
                     <Title>Our Partners</Title>
                     <PartnersBox>
                         <IndivPartnerInfo
@@ -145,7 +145,6 @@ export default function BlueCard() {
 }
 
 // partner's boxes
-
 function IndivPartnerInfo({ partnerName, logoSrc, description, location }) {
     return (
         <>
