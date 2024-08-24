@@ -22,112 +22,87 @@ export default function Grants() {
             <StuSec>
                 <SecondHeader>Science Students</SecondHeader>
                     <SciSec>
-                        <IndivInfo>
-                            <InfoTitle>Professional Development Grant</InfoTitle>
-                            <InfoP>
-                                A subsidy that students can use to attend events to further one’s professional careers 
-                                such as relevant events, conferences, seminars and all associated prices. 
-                            </InfoP>
-                            <Link href="https://docs.google.com/spreadsheets/d/1rfKh6a6ILiMv4v9qcJW-e8PSS6Pe3NTNjlTqzELsSkc/edit?usp=sharing">
-                                <Rubric>Adjudication Rubric</Rubric>
-                            </Link>
-                        </IndivInfo>
-                        <IndivInfo>
-                            <InfoTitle>Student Initiative Grant</InfoTitle>
-                            <InfoP>
-                                The grant aims to encourage students to provide demonstrable service for current 
+                        <Accordion
+                            title="Professional Development Grant"
+                            content="A subsidy that students can use to attend events to further one’s professional careers 
+                                such as relevant events, conferences, seminars and all associated prices. "
+                            link="https://docs.google.com/spreadsheets/d/1rfKh6a6ILiMv4v9qcJW-e8PSS6Pe3NTNjlTqzELsSkc/edit?usp=sharing"
+                        />
+                        <Accordion
+                            title="Student Initiative Grant"
+                            content="The grant aims to encourage students to provide demonstrable service for current 
                                 science students to fulfill unmet needs. It may also be used to support students who 
                                 require financial assistance for personal research projects. The maximum allocation of 
-                                the Student Initiatives Grant is $250.
-                            </InfoP>
-                            <Link href="https://docs.google.com/spreadsheets/d/1pAtWcwi6-aJxlEo22mb3_tbkySHxu1DQsok0hSpyKSw/edit?usp=drive_link">
-                                <Rubric>Adjudication Rubric</Rubric>
-                            </Link>
-                        </IndivInfo>
-                        <IndivInfo>
-                            <InfoTitle>AMS & Affiliates Event Subsidy</InfoTitle>
-                            <InfoP>
-                                The AMS & Affiliated clubs (AMS Clubs) Events Subsidy is intended to alleviate personal 
+                                the Student Initiatives Grant is $250."
+                            link="https://docs.google.com/spreadsheets/d/1pAtWcwi6-aJxlEo22mb3_tbkySHxu1DQsok0hSpyKSw/edit?usp=drive_link"
+                        />
+                        <Accordion
+                            title="AMS & Affiliates Event Subsidy"
+                            content="The AMS & Affiliated clubs (AMS Clubs) Events Subsidy is intended to alleviate personal 
                                 financial burdens by providing a subsidy that students can use to attend events hosted 
                                 for UBC students. This includes all ticketed events hosted by clubs with AMS club standing.
-                                A list of these clubs can be found on UBC Campus Base.  
-                            </InfoP>
-                        </IndivInfo>
-                        <IndivInfo>
-                            <InfoTitle>Course Materials Subsidy</InfoTitle>
-                            <InfoP>
-                                This is a subsidy that students can use to purchase related materials. The materials 
+                                A list of these clubs can be found on UBC Campus Base. "
+                            link=""
+                        />
+                        <Accordion
+                            title="Course Materials Subsidy"
+                            content="This is a subsidy that students can use to purchase related materials. The materials 
                                 purchased using this subsidy can be redeemed for any academic course material required 
-                                or recommended by courses taken by Faculty of Science students.  
-                            </InfoP>
-                        </IndivInfo>
-                        <IndivInfo>
-                            <InfoTitle>Events Subsidy</InfoTitle>
-                            <InfoP>
-                                The SUS Events Subsidy is intended to alleviate personal financial burdens by providing a 
+                                or recommended by courses taken by Faculty of Science students."
+                            link=""
+                        />
+                        <Accordion
+                            title="Events Subsidy"
+                            content="The SUS Events Subsidy is intended to alleviate personal financial burdens by providing a 
                                 subsidy that students can use to attend SUS events. This includes all ticketed events hosted 
-                                by the Science Undergraduate Society (SUS).   
-                            </InfoP>
-                        </IndivInfo>
-                        <IndivInfo>
-                            <InfoTitle>Club Membership Fee Subsidy</InfoTitle>
-                            <InfoP>
-                                The club membership fee subsidy hopes to increase participation of students in AMS clubs to 
+                                by the Science Undergraduate Society (SUS). "
+                            link=""
+                        />
+                        <Accordion
+                            title="Club Membership Fee Subsidy"
+                            content="The club membership fee subsidy hopes to increase participation of students in AMS clubs to 
                                 encourage participation in the UBC community. This subsidy aims to cover the baseline membership 
-                                fee to all AMS clubs and can be applied retroactively.   
-                            </InfoP>
-                        </IndivInfo>
-                        <IndivInfo>
-                            <InfoTitle>UBC Rec Events Subsidy</InfoTitle>
-                            <InfoP>
-                                UBC Recreation subsidy is intended to alleviate personal financial burdens by providing a 
+                                fee to all AMS clubs and can be applied retroactively. "
+                            link=""
+                        />
+                        <Accordion
+                            title="UBC Rec Events Subsidy"
+                            content="UBC Recreation subsidy is intended to alleviate personal financial burdens by providing a 
                                 subsidy that students can use to engage in activities that promote physical health and wellness. 
                                 This includes, but is not limited to, relevant events, competitions and recreational intramural 
-                                league costs.  
-                            </InfoP>
-                        </IndivInfo>
+                                league costs. "
+                            link=""
+                        />
                     </SciSec>
             </StuSec>
             <ClubSec>
                 <SecondHeader>SUS Clubs</SecondHeader>
                 <SciSec>
-                <IndivInfoBlue>
-                    <InfoTitle>Clubs Operations Grant</InfoTitle>
-                        <InfoP>
-                            The Club Operations Grant is meant to supplement existing club membership fees and to help 
-                            facilitate day-to-day operations of the club. The maximum allocation per Club Operations Grant
-                            is $1750.00. 
-                        </InfoP>
-                        <Link href="https://docs.google.com/spreadsheets/d/1l80bQhhRTl8o6Ylz5ihR92qE5iIdrXjYIaurQjo_EYg/edit?usp=drive_link">
-                            <Rubric>Adjudication Rubric</Rubric>
-                        </Link>
-                </IndivInfoBlue>
-                <IndivInfoBlue>
-                    <InfoTitle>Special Projects Grant</InfoTitle>
-                        <InfoP>
-                            The Special Projects Grant is intended to help facilitate any new or special projects undertaken 
-                            by SUS Clubs. The Special Project Grants can only be used towards new events/projects or new additions
-                            to annual or existing activities that benefit a sizable portion of the science student body. 
-                            The maximum allocation of the Special Projects Grant is 50% of relevant fees to a maximum of $500.
-                        </InfoP>
-                        <Link href="https://docs.google.com/spreadsheets/d/1uGe_JO6J9AP8NybmjySjf5scxKWkKvVY_pPGVX38gCk/edit?usp=drive_link">
-                            <Rubric>Adjudication Rubric</Rubric>
-                        </Link>
-                </IndivInfoBlue>
-                <IndivInfoBlue>
-                    <InfoTitle>EDI Grant</InfoTitle>
-                        <InfoP>
-                            This grant is intended to create initiatives to support and centre communities with folks who 
-                            identify as Black, Indigenous, and People of Colour, or 2SLGBTQIA+, have disabilities, or have
-                            been and continue to be systemically-made marginalized. The grant may also be used for providing 
-                            services that support communities made marginalized, or for conducting community-led research focused
-                            on these groups in ways that are respectful, non-extractive, and non-performative. 
-                            The maximum allocation of the Inclusivity Grant is 50% of relevant fees to a maximum of $500.
-                        </InfoP>
-                        <Link href="https://docs.google.com/spreadsheets/d/1MICyCxMJU4cbUFXF0_LsLN-HkXobP0EerCE-oVKfe6c/edit?usp=drive_link">
-                            <Rubric>Adjudication Rubric</Rubric>
-                        </Link>
-                </IndivInfoBlue>
+                    <Accordion 
+                        title="Clubs Operations Grant"
+                        content="The Club Operations Grant is meant to supplement existing club membership fees and to help 
+                                facilitate day-to-day operations of the club. The maximum allocation per Club Operations Grant
+                                is $1750.00."
+                        link="https://docs.google.com/spreadsheets/d/1l80bQhhRTl8o6Ylz5ihR92qE5iIdrXjYIaurQjo_EYg/edit?usp=drive_link"
+                    />
+                    <Accordion 
+                        title="Special Projects Grant"
+                        content="The Special Projects Grant is intended to help facilitate any new or special projects undertaken 
+                                by SUS Clubs. The Special Project Grants can only be used towards new events/projects or new additions
+                                to annual or existing activities that benefit a sizable portion of the science student body. 
+                                The maximum allocation of the Special Projects Grant is 50% of relevant fees to a maximum of $500."
+                        link="https://docs.google.com/spreadsheets/d/1uGe_JO6J9AP8NybmjySjf5scxKWkKvVY_pPGVX38gCk/edit?usp=drive_link"
+                    />
+                    <Accordion
+                        title="EDI Grant"
+                        content="This grant is intended to create initiatives to support and centre communities with folks who 
+                                identify as Black, Indigenous, and People of Colour, or 2SLGBTQIA+, have disabilities, or have
+                                been and continue to be systemically-made marginalized. The grant may also be used for providing 
+                                services that support communities made marginalized, or for conducting community-led research focused
+                                on these groups in ways that are respectful, non-extractive, and non-performative. 
+                                The maximum allocation of the Inclusivity Grant is 50% of relevant fees to a maximum of $500."
+                        link="https://docs.google.com/spreadsheets/d/1MICyCxMJU4cbUFXF0_LsLN-HkXobP0EerCE-oVKfe6c/edit?usp=drive_link"
+                    />
                 </SciSec>
             </ClubSec>
             <Footer />
@@ -135,10 +110,33 @@ export default function Grants() {
     )
 }
 
+function Accordion({ title, content, link }) {
+    const [isActive, setIsActive] = useState(false);
+    return (
+        <IndivInfo>
+            <TitleSec onClick={() => setIsActive(!isActive)}>
+                <InfoTitle>{title}</InfoTitle>
+                <h2>{isActive ? '-' : '+'}</h2>
+            </TitleSec>
+            {isActive && <InfoP>{content}</InfoP>}
+            {link !== "" && <Link href={link}>
+                <Rubric>Adjudication Rubric</Rubric>
+            </Link>}
+        </IndivInfo>
+    );
+}
+
 const breakpoints = {
     mobile: '768px',
     tablet: '1024px',
 };
+
+const TitleSec = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+`
 
 const Heading = styled.div`
     background-size: cover;
@@ -206,14 +204,12 @@ const IndivInfo = styled.div`
     border-color: none;
     padding: 2%;
     max-width: 23%;
-    height: auto;
+    min-height: 150px;
     color: #222755;
 
     @media (max-width: ${breakpoints.mobile}) {
         max-width: 98%;
     }
-`
-const IndivInfoBlue = styled(IndivInfo)`
 `
 
 const InfoTitle = styled.h2`
@@ -260,17 +256,5 @@ const StyledButton = styled.div`
 
     &:hover {
         background-color: #005bb5;
-    }
-`
-
-const pulse = keyframes`
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
     }
 `
