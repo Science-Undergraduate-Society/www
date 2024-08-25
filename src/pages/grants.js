@@ -12,7 +12,7 @@ export default function Grants() {
             <Heading>
                 <Title>SUS Grants & Subsidies</Title>
                 <Subinfo>$53,000 for individuals and clubs</Subinfo>
-                <Link href="">
+                <Link href="https://ubc.ca1.qualtrics.com/jfe/form/SV_8H3fBJPZNU0GTFc">
                     <StyledButton>Apply Now</StyledButton>
                 </Link>
                 <SubText>
@@ -119,7 +119,7 @@ function Accordion({ title, content, link }) {
                 <h2>{isActive ? '-' : '+'}</h2>
             </TitleSec>
             {isActive && <InfoP>{content}</InfoP>}
-            {link !== "" && <Link href={link}>
+            {isActive && link !== "" && <Link href={link}>
                 <Rubric>Adjudication Rubric</Rubric>
             </Link>}
         </IndivInfo>
@@ -184,6 +184,7 @@ const SciSec = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5px;
+    row-gap: 25px;
     justify-content: center;
 
     @media (max-width: ${breakpoints.mobile}) {
@@ -204,7 +205,7 @@ const IndivInfo = styled.div`
     border-color: none;
     padding: 2%;
     width: 23%;
-    min-height: 150px;
+    min-height: 100%;
     color: #222755;
 
     @media (max-width: ${breakpoints.mobile}) {
