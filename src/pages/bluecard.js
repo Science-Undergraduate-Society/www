@@ -23,16 +23,15 @@ export default function BlueCard() {
                 </Link>
             </Heading>
             <MainInfo>
-                <ImgSec>
-                    <ImgBackground src="/images/bluecard-images/eligibility.jpg" alt="Logo" />
+                <ColourBackground>
                     <BCTitle>What is Blue Card?</BCTitle>
                     <BCInfoP>Welcome to Bluecard -- Your FREE Virtual Discount Program for all UBC Science Students! 
                             Discover exclusive benefits at local restaurants and shops by simply presenting your Blue Card.
                             To get started, follow the register link at the top of the page. <br /> <br />
                             Submit specific requests for places you want to enjoy discounts using the feedback function at the bottom of our page! 
                             Our SUS student benefits team will do our best to secure the desired discount for you.
-                    </BCInfoP>                           
-                </ImgSec>
+                    </BCInfoP>  
+                </ColourBackground>                     
                 <StyledLink id="eligibility"></StyledLink>
                 <ImgSec>
                     <ImgBackground src="/images/bluecard-images/eligibility.jpg" alt="Logo" />
@@ -152,6 +151,10 @@ const PartnerName = styled.div`
     font-size: 20px;
     font-weight: bold;
     margin-top: 24px;
+
+    @media (max-width: ${breakpoints.mobile}) {
+        font-size: 15px;
+    }
 `
 
 const PartnerNameThin = styled(PartnerName)`
@@ -194,18 +197,27 @@ const Title = styled.div`
 `
 
 const BCTitle = styled(Title)  `
-    top: 15%;
+    top: 10%;
     padding: 2%;
+    position: relative;
 
       @media (max-width: ${breakpoints.mobile}) {
         width: 100%;
         min-height: 100%;
         top: 5%;
+        font-size: 45px;
     }
 `
 
 const PartnerTitle = styled(Title)`
     position: relative;
+
+    @media (max-width: ${breakpoints.mobile}) {
+        width: 100%;
+        min-height: 100%;
+        top: 5%;
+        font-size: 35px;
+    }
 `
 
 const MainTitle = styled(Title)`
@@ -223,6 +235,10 @@ const EligibilityTitle = styled(Title) `
     top: 30%;
     padding: 2%;
     text-align: center;
+
+    @media (max-width: ${breakpoints.mobile}) {
+        font-size: 35px;
+    }
 `
 
 const SubInfo = styled.div`
@@ -260,6 +276,10 @@ const Partners = styled.div`
     flex-direction: row;
     gap: 10px;
     flex-wrap: wrap;
+
+    @media (max-width: ${breakpoints.mobile}) {
+        margin-top: -2%;
+    }
 `
 const ImgSec = styled.div `
     justify-content: center;
@@ -270,6 +290,13 @@ const ImgSec = styled.div `
     position: relative;
     width: 96%;
     height: 500px;
+    overflow: hidden;
+
+    @media (max-width: ${breakpoints.mobile}) {
+    height: 300px;
+    margin-top: -75px;
+    margin-bottom: -75px;
+    }
 `
 
 const SmItem = styled.div`
@@ -285,17 +312,24 @@ const InfoP = styled.div`
     position: absolute;
     top: 42%;
     z-index: 100;
-    padding: 2%;    
+    padding: 2%; 
+    
+    @media (max-width: ${breakpoints.mobile}) {
+        font-size: 20px;
+    }
 
 `
 
 const BCInfoP = styled(InfoP) `
-    top: 30%;
     font-size: 25px;
     text-align: left;
+    padding: 2%;
+    position: relative;
 
     @media (max-width: ${breakpoints.mobile}) {
         font-size: 20px;
+        top: 30%;
+        padding: 1%;
     }
 `
 
@@ -346,19 +380,35 @@ const Background = styled.div`
 `
 // images
 const ImgBackground = styled.img`
-  width: 100%;
-  height: 500px;
-  position: relative;
-  border-radius: 10px;
-  display: block;
-  z-index: 2;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    border-radius: 10px;
+    display: block;
+    z-index: 2;
     opacity: 35%;
     object-fit: cover;
 
   @media (max-width: ${breakpoints.mobile}) {
         width: 100%;
+        height: 300px;
     }
  `
+
+ const ColourBackground = styled.div`
+    width: 96%;
+    height: %;
+    position: relative;
+    border-radius: 10px;
+    background-color: #e7edf7;
+    padding: 24px;
+    margin-top: 24px;
+
+
+  @media (max-width: ${breakpoints.mobile}) {
+    }
+ 
+    `
 
 const StyledButton = styled.div`
     display: inline-block;
