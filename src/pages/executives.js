@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Navbar from "../../components/Navbar";
 import { Modal } from "../../components/index-components/Modal";
 import { executiveInfo } from "../executiveInfo";
+import NewFooter from "../../components/NewFooter";
 
 const Background = styled.div`
   background-size: cover;
@@ -11,7 +12,7 @@ const Background = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
 `;
 
 const Content = styled.div`
@@ -165,6 +166,7 @@ export default function Executives() {
           })}
         </ExecuetiveContainer>
       </Content>
+      <NewFooter />
     </Background>
   );
 }
