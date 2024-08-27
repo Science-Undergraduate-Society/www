@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import styled from "styled-components";
+import { useRouter } from "next/router";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const sections = [
@@ -63,19 +64,20 @@ export default function Navbar() {
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
+  // RUN ON CLIENT
+
   useEffect(() => {
-    // Ensure this code only runs on the client
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 1200);
     };
 
-    // Set initial state and add resize listener
     handleResize();
     window.addEventListener("resize", handleResize);
 
-    // Cleanup listener on unmount
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  // DROPDOWN
 
   const handleDropdownOpen = (index) => {
     const updatedDropdownState = isDropdownOpen.map((item, idx) => idx === index);
@@ -88,6 +90,23 @@ export default function Navbar() {
 
   const toggleMenu = () => {
     setIsMobileDropdownOpen(!isMobileDropdownOpen);
+  };
+
+  // SEARCH 
+
+  const [searchQuery, setSearchQuery] = useState("");
+  const router = useRouter();
+
+  const handleSearch = () => {
+    if (searchQuery.trim()) {
+      router.push(`/search?query=${encodeURIComponent(searchQuery)}`);
+    }
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      handleSearch();
+    }
   };
 
   return (
@@ -131,9 +150,14 @@ export default function Navbar() {
 
         {!isMobile && 
           <SearchContainer>
-            <Searchbar placeholder="Search our stuff..." />
-            <SearchButton>
-              <SearchIcon src="./images/index-images/search-icon-white.svg" alt="" />
+            <Searchbar
+              placeholder="Search SUS..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              onKeyDown={handleKeyDown} 
+            />
+            <SearchButton onClick={handleSearch}> 
+              <SearchIcon src="./images/index-images/search-icon-white.svg" alt="Search" />
             </SearchButton>
           </SearchContainer>
         }
@@ -329,8 +353,13 @@ const Searchbar = styled.input`
   padding-left: 15px;
   padding-right: 30px;
   border-radius: 10px;
-  border: none;
+  border: 1px solid transparent; 
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+  outline: none;
+
+  &:focus {
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.8); 
+  }
 `;
 
 const SearchButton = styled.button`
@@ -354,15 +383,15 @@ const MobileNav = styled.div`
   flex-direction: column;
 
   width: 100%;
-  height: auto; // Full height of the viewport
-  overflow-y: auto; // Allow vertical scrolling
+  height: auto; 
+  overflow-y: auto; 
 `;
 
 const MobileNavItems = styled.div`
   display: flex;
   flex-direction: column;
-  flex-grow: 1; // Allow this to grow and take up available space
-  overflow-y: auto; // Ensure that items can scroll if they exceed the container height
+  flex-grow: 1; 
+  overflow-y: auto;
 
   height: auto;
 `;

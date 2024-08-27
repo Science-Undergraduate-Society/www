@@ -1,0 +1,1 @@
+// script to index content for search feature

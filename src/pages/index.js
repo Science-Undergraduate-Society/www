@@ -29,12 +29,16 @@ const Home = () => {
     );
 
     sectionRefs.current.forEach((section) => {
-      observer.observe(section);
+      if (section) { // Check if the section is a valid DOM element
+        observer.observe(section);
+      }
     });
 
     return () => {
       sectionRefs.current.forEach((section) => {
-        observer.unobserve(section);
+        if (section) { // Check if the section is a valid DOM element
+          observer.unobserve(section);
+        }
       });
     };
   }, []);
@@ -55,7 +59,7 @@ const Home = () => {
             <About />
           </Section>
 
-          <Section ref={(el) => (sectionRefs.current[2] = el)} >
+          <Section ref={(el) => (sectionRefs.current[2] = el)}>
             <Alssc />
           </Section>
 
@@ -67,7 +71,7 @@ const Home = () => {
             <Podcast />
           </Section>
 
-          <Section ref={(el) => (sectionRefs.current[5] = el)} style={{ backgroundColor: "rgba(255, 255, 255, 0.6" }}>
+          <Section ref={(el) => (sectionRefs.current[5] = el)} style={{ backgroundColor: "rgba(255, 255, 255, 0.6)" }}>
             <Shop /> 
           </Section>
 
@@ -132,17 +136,15 @@ const BackgroundImage = styled.div`
   background-repeat: no-repeat;
   z-index: -1;
 
-  // Add a pseudo-element to create the blur and tint effect
   &::after {
     content: '';
-    position: absolute; // Full cover over the background
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    backdrop-filter: blur(5px); // Increase blur effect
-    // background-color: rgba(0, 255, 110, 0.2); // Light blue tint with some transparency
-    pointer-events: none; // Ensure it doesn't interfere with mouse events
+    backdrop-filter: blur(5px);
+    pointer-events: none;
   }
 `;
 
