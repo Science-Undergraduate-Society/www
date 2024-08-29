@@ -7,10 +7,10 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function Footer() {
+export default function Footer({color, background}) {
     return (
-      <FooterContainer>
-        <SocialMediaIcons>
+      <FooterContainer color={color}>
+        <SocialMediaIcons color={color}>
             <a
                 href='https://www.instagram.com/susubc'
                 target='_blank'
@@ -40,7 +40,7 @@ export default function Footer() {
                 <FontAwesomeIcon icon={faYoutube} />
             </a>
         </SocialMediaIcons>
-        <Links>
+        <Links color={color}>
           <a href='mailto:vpexternal@sus.ubc.ca' target='_blank' rel='noreferrer'>
             Email Us
           </a>
@@ -51,11 +51,22 @@ export default function Footer() {
   }
 
 const FooterContainer = styled.footer`
+<<<<<<< HEAD
+  margin-top: 10vh;  
+  background-size: cover;
+  color: ${props => props.color};
+  text-align: center;
+  padding: 64px 0;
+  width: 100%;
+  
+  background-color: ${props => props.background};
+=======
     background-size: cover;
     color: #333333;
     text-align: center;
     padding: 64px 0;
     width: 100%;
+>>>>>>> main
 `;
 
 const SocialMediaIcons = styled.div`
@@ -66,7 +77,11 @@ const SocialMediaIcons = styled.div`
   justify-content: center;
 
   a {
+<<<<<<< HEAD
+    color: ${props => props.color};
+=======
     color: #333333;
+>>>>>>> main
     width: 30px;
     height: 19%;
     margin: 0 32px;
@@ -82,7 +97,11 @@ const Links = styled.div`
   margin-bottom: 32px;
 
   a {
+<<<<<<< HEAD
+    color: ${props => props.color};
+=======
     color: #333333;
+>>>>>>> main
     transition: color 200ms;
     text-decoration: underline;
   }
