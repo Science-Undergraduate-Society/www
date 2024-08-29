@@ -7,7 +7,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function Footer({color, background}) {
+export default function Footer({color="white", background="#222755"}) {
     return (
       <FooterContainer color={color}>
         <SocialMediaIcons color={color}>

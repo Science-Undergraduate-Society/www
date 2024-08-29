@@ -18,6 +18,9 @@ const sections = [
       { name: "The Executives", href: "/executives" },
       { name: "Budget", href: "/budget" },
       { name: "Code & Procedures", href: "/codeProcedures" },
+      { name: "Office Hours", href: "/officeHours" },
+      { name: "Meeting Minutes", href: "/meetingMinutes" },
+      { name: "Clubs", href: "/clubs" },
     ],
   },
   {

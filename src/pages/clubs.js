@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import Link from "next/link";
-import Navbar from "../../components/Navbar";
-import NewFooter from "../../components/NewFooter";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
 import { useState } from "react";
 
 export default function Clubs() {
@@ -816,7 +817,7 @@ export default function Clubs() {
           </TableContent>
         </ClubsTable>
       </Content>
-      <NewFooter />
+      <Footer />
     </Background>
   );
 }
@@ -945,7 +946,7 @@ const Background = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  text-align: center;
+
   overflow: hidden;
 `;
 
