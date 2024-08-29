@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function RoomBooking() {
     return (
         <Background>
-            <Title>Room Bookings Page</Title>
+            <Title>Meeting Room Bookings Page</Title>
             <Link href="/" passHref>
                 <StyledButton>Back to Home</StyledButton>
             </Link>

@@ -9,42 +9,49 @@ const sections = [
   {
     name: "Join SUS",
     href: "/joinSus",
-    items: [],
+    items: [
+      { name: "Apply", href: "/joinSus/apply" },
+      { name: "Spring Elections 2024", href: "/joinSus/elections" },
+    ],
   },
   {
     name: "About Us",
     href: "",
     items: [
-      { name: "The Executives", href: "/executives" },
-      { name: "Budget", href: "/budget" },
-      { name: "Code & Procedures", href: "/codeProcedures" },
-      { name: "Office Hours", href: "/officeHours" },
-      { name: "Meeting Minutes", href: "/meetingMinutes" },
-      { name: "Clubs", href: "/clubs" },
+      { name: "The Executives", href: "/aboutUs/executives" },
+      { name: "Budget", href: "/aboutUs/budget" },
+      { name: "Code & Procedures", href: "/aboutUs/codeProcedures" },
+      { name: "Office Hours", href: "/aboutUs/officeHours" },
+      { name: "Meeting Minutes", href: "/aboutUs/meetingMinutes" },
+      { name: "Clubs", href: "/aboutUs/clubs" },
     ],
   },
   {
     name: "Our Events",
     href: "",
     items: [
-      { name: "Upcoming Events", href: "/events" },
+      { name: "Upcoming Events", href: "/ourEvents/upcoming" },
+      { name: "Past Events", href: "/ourEvents/past" },
     ],
   },
   {
     name: "Student Services",
     href: "",
     items: [
-      { name: "Blue Card Program", href: "/bluecard" },
-      { name: "Grants", href: "/grants" },
-      { name: "Health & Wellness", href: "/health"},
+      { name: "Blue Card Program", href: "/studentServices/bluecard" },
+      { name: "Grants", href: "/studentServices/grants" },
+      { name: "Health & Wellness", href: "/studentServices/health"},
+      { name: "Volunteer Portal", href: "/studentServices/volunteerPortal"},
+      { name: "Study Sphere", href: "/studentServices/studySphere"},
     ],
   },
   {
     name: "Science Student Centre",
     href: "",
     items: [
-      { name: "About the ALSSC", href: "/alssc" },
-      { name: "Book a Meeting Room", href: "/alsscBooking" },
+      { name: "About the ALSSC", href: "/scienceStudentCentre/aboutAlssc" },
+      { name: "Book a Meeting Room", href: "/scienceStudentCentre/meetingBooking" },
+      { name: "Booking For An Event", href: "/scienceStudentCentre/eventBooking" },
     ],
   },
   {
@@ -52,7 +59,6 @@ const sections = [
     href: "",
     items: [
       { name: "Feedback Form", href: "https://docs.google.com/forms/d/e/1FAIpQLSeoybfzo-4VZgMUgie-eySFPczi_ToTwugPDu8F-IPLoS04Wg/viewform" },
-      { name: "Future Improvements (for interview)", href: "/demo"}
     ],
   },
   {
@@ -116,7 +122,7 @@ export default function Navbar() {
     <Container>
       <Nav>
         <LogoContainer href="/">
-          <Logo src="./images/logos/white-logo.png" alt="Logo" />
+          <Logo src="/images/logos/white-logo.png" alt="Logo" />
         </LogoContainer>
 
         {!isMobile &&
@@ -165,7 +171,7 @@ export default function Navbar() {
               onKeyDown={handleKeyDown} 
             />
             <SearchButton onClick={handleSearch}> 
-              <SearchIcon src="./images/index-images/search-icon-white.svg" alt="Search" />
+              <SearchIcon src="/images/index-images/search-icon-white.svg" alt="Search" />
             </SearchButton>
           </SearchContainer>
         }
