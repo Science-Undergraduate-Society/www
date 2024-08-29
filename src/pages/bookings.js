@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button } from "../../components/Reusable";
+import { Button } from "../components/Reusable";
 
 export default function Bookings() {
     return(

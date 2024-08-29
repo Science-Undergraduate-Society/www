@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
-import Navbar from "../../components/Navbar";
-import { Modal } from "../../components/index-components/Modal";
-import { executiveInfo } from "../executiveInfo";
-import NewFooter from "../../components/NewFooter";
+import { executiveInfo } from "../utility/electedExecutives";
+import Navbar from "@/components/Navbar";
+import { Modal } from "@/components/index-components/Modal";
+import Footer from "@/components/Footer";
 
 const Background = styled.div`
   background-size: cover;
@@ -13,6 +13,7 @@ const Background = styled.div`
   justify-content: center;
   text-align: center;
   min-height: 100vh;
+  filter: ${({ modalClose }) => (modalClose ? "none" : "blur(5px)")};
 `;
 
 const Content = styled.div`
@@ -53,10 +54,7 @@ const SubHeader = styled.div`
   }
 `;
 
-// need this to contain all the execuetives
-// should be a grid
-// need to make this dynamic
-const ExecuetiveContainer = styled.div`
+const ExecutiveContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
@@ -71,7 +69,6 @@ const ExecuetiveContainer = styled.div`
   }
 `;
 
-// need this to the circle that contains the imgae
 const ExecutiveCard = styled.div`
   display: flex;
   flex-direction: column;
@@ -113,6 +110,27 @@ const ExecutiveImage = styled.img`
 export const Executive = ({ name, role, imagePath, email, description }) => {
   const [modalClose, setModalClose] = useState(true);
 
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setModalClose(true);
+      }
+    };
+
+    if (!modalClose) {
+      document.body.style.overflow = "hidden";
+      window.addEventListener("keydown", handleKeyDown);
+    } else {
+      document.body.style.overflow = "auto";
+      window.removeEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [modalClose]);
+
   const setCloseModal = () => {
     setModalClose(!modalClose);
   };
@@ -140,8 +158,10 @@ export const Executive = ({ name, role, imagePath, email, description }) => {
 };
 
 export default function Executives() {
+  const [modalClose, setModalClose] = useState(true);
+
   return (
-    <Background>
+    <Background modalClose={modalClose}>
       <Navbar />
       <Content>
         <HeaderContainer>
@@ -152,21 +172,22 @@ export default function Executives() {
             executive, and you can attend them at Abdul Ladha. 
           </SubHeader>
         </HeaderContainer>
-        <ExecuetiveContainer>
-          {executiveInfo.map((executive) => {
-            return (
-              <Executive
-                name={executive.name}
-                role={executive.role}
-                email={executive.email}
-                description={executive.description}
-                imagePath={executive.imagePath}
-              />
-            );
-          })}
-        </ExecuetiveContainer>
+        <ExecutiveContainer>
+          {executiveInfo.map((executive) => (
+            <Executive
+              key={executive.name}
+              name={executive.name}
+              role={executive.role}
+              email={executive.email}
+              description={executive.description}
+              imagePath={executive.imagePath}
+              modalClose={modalClose}
+              setModalClose={setModalClose}
+            />
+          ))}
+        </ExecutiveContainer>
       </Content>
-      <NewFooter />
+      <Footer color="#333333" background="transparent" />
     </Background>
   );
 }

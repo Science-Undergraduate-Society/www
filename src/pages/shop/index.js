@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import ShopNavbar from "../../../components/shop-components/ShopNavbar";
-import { Button } from "../../../components/Reusable";
-import ShopFooter from "../../../components/shop-components/ShopFooter";
+import ShopNavbar from "../../components/shop-components/ShopNavbar";
+import { Button } from "../../components/Reusable";
+import ShopFooter from "../../components/shop-components/ShopFooter";
 
 export default function Shop() {
     return (

@@ -1,6 +1,5 @@
 import '../styles/globals.css'; // Import the global CSS file
 import Head from 'next/head';
-import Navbar from '../../components/Navbar';
 
 export default function MyApp ({ Component, pageProps }) {
   return (
@@ -19,9 +18,8 @@ export default function MyApp ({ Component, pageProps }) {
           
         />
         {/* <meta property="og:image" content="/path/to/your/image.jpg" key="ogimage" /> */}
-        {/* <meta property="og:url" content="https://www.yourwebsite.com" key="ogurl" /> */}
-        {/* <link rel="icon" href="/faviconWhite.ico" /> */}
-        <link rel="icon" href="/images/logos/blue-logo.tif" />
+        {/* <meta property="og:url" content="https://www.sus.ubc.ca" key="ogurl" /> */}
+        <link rel="icon" href="/images/logos/sus-tab-logo.svg" />
       </Head>
       <Component {...pageProps} />
     </>
