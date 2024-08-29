@@ -5,7 +5,7 @@ const Error404Page = () => {
   return (
     <Background>
       <Title>Whoops!</Title>
-      <Title2>The page you&aposre looking for is nowhere to be found.</Title2>
+      <Title2>The page you are looking for is nowhere to be found.</Title2>
       <Link href="/" passHref>
         <StyledButton>Back to Home</StyledButton>
       </Link>

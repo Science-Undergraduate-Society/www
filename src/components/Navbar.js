@@ -112,7 +112,9 @@ export default function Navbar() {
   return (
     <Container>
       <Nav>
-        <Logo src="./images/logos/white-logo.png" alt="Logo" />
+        <LogoContainer href="/">
+          <Logo src="./images/logos/white-logo.png" alt="Logo" />
+        </LogoContainer>
 
         {!isMobile &&
           // NEED TO KEEP THIS OUTER DIV TO KEEP CONTENTS FROM "OVER-SPACE-BETWEENING"
@@ -228,6 +230,10 @@ const Nav = styled.nav`
   height: 150px;
 
 `;
+
+const LogoContainer = styled.a`
+  cursor: pointer;
+`
 
 const Logo = styled.img`
   height: 100px;

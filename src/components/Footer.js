@@ -51,7 +51,7 @@ export default function Footer({color, background}) {
   }
 
 const FooterContainer = styled.footer`
-  margin-top: 30vh;  
+  margin-top: 10vh;  
   background-size: cover;
   color: ${props => props.color};
   text-align: center;

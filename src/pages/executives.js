@@ -161,33 +161,35 @@ export default function Executives() {
   const [modalClose, setModalClose] = useState(true);
 
   return (
-    <Background modalClose={modalClose}>
+    <>
       <Navbar />
-      <Content>
-        <HeaderContainer>
-          <Header>Meet the Executives</Header>
-          <SubHeader>
-            Here you can find the contact information of each executive to be
-            able to contact them. As well, office hours are held for each
-            executive, and you can attend them at Abdul Ladha. 
-          </SubHeader>
-        </HeaderContainer>
-        <ExecutiveContainer>
-          {executiveInfo.map((executive) => (
-            <Executive
-              key={executive.name}
-              name={executive.name}
-              role={executive.role}
-              email={executive.email}
-              description={executive.description}
-              imagePath={executive.imagePath}
-              modalClose={modalClose}
-              setModalClose={setModalClose}
-            />
-          ))}
-        </ExecutiveContainer>
-      </Content>
-      <Footer color="#333333" background="transparent" />
-    </Background>
+      <Background modalClose={modalClose}>
+        <Content>
+          <HeaderContainer>
+            <Header>Meet the Executives</Header>
+            <SubHeader>
+              Here you can find the contact information of each executive to be
+              able to contact them. As well, office hours are held for each
+              executive, and you can attend them at Abdul Ladha. 
+            </SubHeader>
+          </HeaderContainer>
+          <ExecutiveContainer>
+            {executiveInfo.map((executive) => (
+              <Executive
+                key={executive.name}
+                name={executive.name}
+                role={executive.role}
+                email={executive.email}
+                description={executive.description}
+                imagePath={executive.imagePath}
+                modalClose={modalClose}
+                setModalClose={setModalClose}
+              />
+            ))}
+          </ExecutiveContainer>
+        </Content>
+        <Footer color="#333333" background="transparent" />
+      </Background>
+    </>
   );
 }

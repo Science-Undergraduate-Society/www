@@ -1,40 +1,42 @@
 import styled from "styled-components";
 import Link from "next/link";
-import Navbar from "../../components/Navbar";
-import NewFooter from "../../components/NewFooter";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function CodeProcedures() {
   return (
-    <Background>
+    <>
       <Navbar />
-      <Content>
-        <h1>Code & Procedure</h1>
-        <p>
-          The following document outlines how the SUS is organized, how the
-          student fees are used, how decisions are made on behalf of Science
-          Students and the responsibilities of elected officials.
-        </p>
-        <Link
-          href="https://docs.google.com/document/d/1Wr52qSNeiVG9HrDvCftOsCW1agMMW6dC1mkieIPdWds/edit?fbclid=IwAR26HOIAjZZcquDRs91xgHSdferauKQJKtzOTJNZc4f76JXmeag5UGVi-Y8"
-          passHref
-        >
-          <StyledButton>SUS Code & Procedure Document</StyledButton>
-        </Link>
-
-        <SpacingDiv></SpacingDiv>
-
-        <p>Last Revised: March 14, 2024</p>
-
-        <p>
-          For further inquiries/concerns please contact our VP Admin at&nbsp;
-          <Link href="mailto:vpadministration@sus.ubc.ca" passHref>
-            vpadministration@sus.ubc.ca
+      <Background>
+        <Content>
+          <h1>Code & Procedure</h1>
+          <p>
+            The following document outlines how the SUS is organized, how the
+            student fees are used, how decisions are made on behalf of Science
+            Students and the responsibilities of elected officials.
+          </p>
+          <Link
+            href="https://docs.google.com/document/d/1Wr52qSNeiVG9HrDvCftOsCW1agMMW6dC1mkieIPdWds/edit?fbclid=IwAR26HOIAjZZcquDRs91xgHSdferauKQJKtzOTJNZc4f76JXmeag5UGVi-Y8"
+            passHref
+          >
+            <StyledButton>SUS Code & Procedure Document</StyledButton>
           </Link>
-          .
-        </p>
-      </Content>
-      <NewFooter />
-    </Background>
+
+          <SpacingDiv></SpacingDiv>
+
+          <p>Last Revised: March 14, 2024</p>
+
+          <p>
+            For further inquiries/concerns please contact our VP Admin at&nbsp;
+            <Link href="mailto:vpadministration@sus.ubc.ca" passHref>
+              vpadministration@sus.ubc.ca
+            </Link>
+            .
+          </p>
+        </Content>
+        <Footer color="#222755"/>
+      </Background>
+    </>
   );
 }
 
@@ -87,5 +89,5 @@ const Content = styled.div`
 `;
 
 const SpacingDiv = styled.div`
-  margin-bottom: 75px; /
+  margin-bottom: 75px;
 `;
