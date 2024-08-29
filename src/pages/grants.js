@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import Link from 'next/link';
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { useState } from "react";
 
 export default function Grants() {
@@ -105,7 +105,7 @@ export default function Grants() {
                     />
                 </SciSec>
             </ClubSec>
-            <Footer />
+            <Footer color="white" background="#222755"/>
         </Background>
     )
 }

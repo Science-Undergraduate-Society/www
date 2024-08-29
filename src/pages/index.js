@@ -1,9 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import styled, { keyframes } from "styled-components";
-<<<<<<< HEAD
-=======
 import Navbar from "../components/Navbar";
->>>>>>> main
 import Footer from "@/components/index-components/Footer";
 import {
   faSpotify,
@@ -15,10 +12,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import eventsArray from "@/utility/events";
 import clubs from "@/utility/clubs";
-<<<<<<< HEAD
-import Navbar from "@/components/Navbar";
-=======
->>>>>>> main
 
 export default function Home() {
   // SCROLL LOGIC
@@ -235,11 +228,7 @@ export default function Home() {
         </ShopSection>
         
         {/* Footer Section*/}
-<<<<<<< HEAD
-        <Footer color="white" background="#222755"/>
-=======
         <Footer color={"white"}/>
->>>>>>> main
       </Content>
     </Background>
   );
