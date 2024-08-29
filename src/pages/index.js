@@ -61,7 +61,7 @@ export default function Home() {
         <About>
           {/* don't remove or i'll hunt you down */}
           <TopColour>DL</TopColour>
-          <AboutCollage src="/images/index-images/Collage.svg" />
+          <AboutCollage src="/images/index-images/Collage.jpg" />
           <BottomColour></BottomColour>
           <AboutSection>
             <Who>
@@ -371,7 +371,7 @@ const About = styled.div`
 const AboutCollage = styled.img`
   width: 100%;
   height: auto;
-  max-height: 250px;
+  max-height: 400px;
   border: none;
   object-fit: cover;
   background-color: #F7F5F2;
@@ -471,7 +471,7 @@ const What = styled.div`
 // =============== ABOUT SECTION =============== //
 
 const Events = styled.div`
-  margin-top: 20vh;
+  margin-top: 10vh;
   width: 100%;
   padding: 70px 0px;
   display: flex;

@@ -3,7 +3,7 @@ const eventsArray =
     {
       title: "Faculty Fair / Imagine Day", 
       date: "September 3, 2024",
-      time: "10 - 4pm", 
+      time: "10am - 4pm", 
       location: "Front of Abdul Ladha",
       description: "Kick off the new school year at UBC by exploring the Faculty Fair at Lee Square! Dive into academic and extracurricular opportunities, connect with faculty, and discover clubs that match your interests. Enjoy free merch, spin for prizes, and proudly wear your UBC Science gear as you connect with fellow students and build lasting relationships.",
       image: "/images/events-images/imagine-day.jpeg",
