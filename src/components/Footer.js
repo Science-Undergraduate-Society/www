@@ -52,7 +52,7 @@ export default function Footer() {
 
 const FooterContainer = styled.footer`
     background-size: cover;
-    color: #ffffff;
+    color: #333333;
     text-align: center;
     padding: 64px 0;
     width: 100%;
@@ -66,7 +66,7 @@ const SocialMediaIcons = styled.div`
   justify-content: center;
 
   a {
-    color: white;
+    color: #333333;
     width: 30px;
     height: 19%;
     margin: 0 32px;
@@ -82,7 +82,7 @@ const Links = styled.div`
   margin-bottom: 32px;
 
   a {
-    color: white;
+    color: #333333;
     transition: color 200ms;
     text-decoration: underline;
   }

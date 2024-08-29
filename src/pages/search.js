@@ -35,8 +35,8 @@ export default function Search() {
     ];
 
     return pages.filter(page =>
-    page.title.toLowerCase().includes(searchTerm) ||
-    page.content.toLowerCase().includes(searchTerm)
+        page.title.toLowerCase().includes(searchTerm) ||
+        page.content.toLowerCase().includes(searchTerm)
     );
   };
     return (

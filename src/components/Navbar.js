@@ -115,33 +115,36 @@ export default function Navbar() {
         <Logo src="./images/logos/white-logo.png" alt="Logo" />
 
         {!isMobile &&
-          <NavItems>
-            {sections.map((section, index) => (
-              <NavItem
-                key={index}
-                onMouseEnter={() => section.items.length > 0 && handleDropdownOpen(index)}
-                onMouseLeave={() => section.items.length > 0 && handleDropdownClose()}
-                onClick={() => section.items.length > 0 && handleDropdownOpen(index)}
-              >
-                <NavLink href={section.items.length === 0 ? section.href : "/"}>
-                  {section.name}
-                </NavLink>
-                {section.items.length > 0 && isDropdownOpen[index] && (
-                  <DropdownMenu>
-                    {section.items.map((item, itemIndex) => (
-                      <DropdownItem
-                        key={itemIndex}
-                        href={item.href}
-                        isLastItem={itemIndex === section.items.length - 1}
-                      >
-                        {item.name}
-                      </DropdownItem>
-                    ))}
-                  </DropdownMenu>
-                )}
-              </NavItem>
-            ))}
-          </NavItems>
+          // NEED TO KEEP THIS OUTER DIV TO KEEP CONTENTS FROM "OVER-SPACE-BETWEENING"
+          <div>
+            <NavItems>
+              {sections.map((section, index) => (
+                <NavItem
+                  key={index}
+                  onMouseEnter={() => section.items.length > 0 && handleDropdownOpen(index)}
+                  onMouseLeave={() => section.items.length > 0 && handleDropdownClose()}
+                  onClick={() => section.items.length > 0 && handleDropdownOpen(index)}
+                >
+                  <NavLink href={section.items.length === 0 ? section.href : "/"}>
+                    {section.name}
+                  </NavLink>
+                  {section.items.length > 0 && isDropdownOpen[index] && (
+                    <DropdownMenu>
+                      {section.items.map((item, itemIndex) => (
+                        <DropdownItem
+                          key={itemIndex}
+                          href={item.href}
+                          isLastItem={itemIndex === section.items.length - 1}
+                        >
+                          {item.name}
+                        </DropdownItem>
+                      ))}
+                    </DropdownMenu>
+                  )}
+                </NavItem>
+              ))}
+            </NavItems>
+          </div>
         }
 
         <HamburgerMenu onClick={toggleMenu}>
