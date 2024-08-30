@@ -14,7 +14,7 @@ export default function Events() {
         <div className="event-container">
             <h1 className="event-title"><b>Upcoming Events 🗓️</b></h1>
             <iframe 
-                src="https://open-web-calendar.hosted.quelltext.eu/calendar.html?url=https%3A%2F%2Fubccsss.org%2Fevents%2Findex.ics&title=UBC%20CSSS%20Calendar"
+                src="https://open-web-calendar.hosted.quelltext.eu/calendar.html?url=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fical%2Fwebmaster%2540sus.ubc.ca%2Fpublic%2Fbasic.ics"
                 allowFullScreen
             />
             <br></br>
