@@ -5,22 +5,13 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-family: 'ABeeZee';
+    font-family: 'Nunito';
     scroll-behavior: smooth;
     /* background-color: #001961; */
 }
 
 * {
   box-sizing: border-box;
-}
-
-
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
 }
 
 body {
@@ -47,6 +38,7 @@ button {
     margin: 0 auto;
     margin-top: 180px;
     padding: 0 20px;
+    align-items: center;
 }
 
 .event-title {
@@ -61,9 +53,10 @@ button {
     margin-bottom: 10px;
     color: #222755; 
     margin: 0; 
-    padding-right: 10px;
+    /* padding-right: 10px; */
     text-align: center;
-    padding-left: 10px;
+    /* padding-left: 10px; */
+    align-items: center;
 }
 iframe {
     border: none;
@@ -82,7 +75,7 @@ iframe {
 
 .eventimage {
     border-radius: 20px;
-    border: 3px solid #4779c4; /* Blue border color */
+    border: 3px solid darkred; /* Blue border color */
     width: 500px; 
     height: 300px;
   }
@@ -92,6 +85,7 @@ iframe {
     align-items: center;
     margin-top:30px;
     margin-bottom: 30px;
+    align-self: center;
   }
 
   

@@ -6,32 +6,24 @@ import rxn2 from "../../public/event-assets/rxn2.png"
 import sciweek1 from "../../public/event-assets/sciweek1.png"
 import sciweek2 from "../../public/event-assets/sciweek2.png"
 import grad from "../../public/event-assets/grad.png"
-import styled, { keyframes } from "styled-components";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 
 export default function Events() {
     return (
         <div>
             <Navbar/>
         <div className="event-container">
-            <EventsTitle>
-                Upcoming Events 🗓️ 
-            </EventsTitle>
-            {/* <h1 className="event-title"><b>Upcoming Events 🗓️</b></h1> */}
+            <h1 className="event-title"><b>Upcoming Events 📕</b></h1>
             <iframe 
                 src="https://open-web-calendar.hosted.quelltext.eu/calendar.html?url=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fical%2Fwebmaster%2540sus.ubc.ca%2Fpublic%2Fbasic.ics"
                 allowFullScreen
             />
             <br></br>
             <br></br>
-            <EventsTitle>
-                Flagship Events
-            </EventsTitle>
+            <h1 className='event-title'><b>Flagship Events 🚩</b></h1>
             <div className='subtitle-container'>
-                <hr className='line' />
+                {/* <hr className='line' /> */}
                 <h2 className='event-subtitle'><b>Science RXN</b></h2>
-                <hr className='line' />
+                {/* <hr className='line' /> */}
             </div>
 
             <p>Science RXN is a two day event geared toward incoming first year science students to help them build community, meet new people, and help them integrate into university. The first day includes team-building games and activities and challenges and RXN is finished off with a gala on the second day. Students will have the opportunity to participate in games and challenges with a chance to win big prizes! Students will also have the opportunity to participate in team-building activities in breakout rooms.</p>
@@ -50,9 +42,9 @@ export default function Events() {
 
             
             <div className='subtitle-container'>
-                <hr className='line' />
+                {/* <hr className='line' /> */}
                 <h2 className='event-subtitle'><b>Science Week</b></h2>
-                <hr className='line' />
+                {/* <hr className='line' /> */}
             </div>
 
             <p>Science Week is a week-long event dedicated to science pride on campus. The week is filled with fun interactive games/activities, community building events, and networking opportunities.</p>
@@ -69,9 +61,9 @@ export default function Events() {
                 />
             </div>
             <div className='subtitle-container'>
-                <hr className='line' />
+                {/* <hr className='line' /> */}
                 <h2 className='event-subtitle'><b>Science Graduation</b></h2>
-                <hr className='line' />
+                {/* <hr className='line' /> */}
             </div>
             <p>Science Graduation is an end of the year event to celebrate the completion of another school year, but most importantly, to give a farewell party for all the graduating science students. The event offers food, alcoholic beverages, and most importantly, a good time! </p>
             <div className='image-container'>
@@ -86,17 +78,3 @@ export default function Events() {
     )
 }
 
-const EventsTitle = styled.div`
-  font-size: 35px;
-  font-weight: 700;
-  
-  @media (max-width: 1000px) {
-    padding-left: 30px;
-  }
-`
-
-const Span = styled.a`
-  color: #0052FF;
-  cursor: pointer;
-  text-decoration: none;
-`;
