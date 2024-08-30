@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { executiveInfo } from "@/utility/electedExecutives";
 import Navbar from "@/components/Navbar";
-import { Modal } from "@/components/index-components/Modal";
+import { Modal } from "@/components/aboutUs-components/Modal";
 import Footer from "@/components/Footer";
 
 const Background = styled.div`

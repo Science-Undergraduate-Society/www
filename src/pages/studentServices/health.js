@@ -4,95 +4,72 @@ import Navbar from "../../components/Navbar";
 
 export default function HealthAndWellness() {
     return (
-        <Background>
-            <BackgroundGradient />
-            <Navbar />
-            <Hero>
-                <LeftHero>
-                    <Title>Health & Wellness</Title>
-                    <Description>
-                        Services and resources to help balance physical 
-                        health, nutrition and mental well-being.
-                    </Description>
-                </LeftHero>
-                <RightHero>
-                    <Graphic src="/images/health-images/health-main.jpg"/>
-                </RightHero>
-            </Hero> 
-        </Background>
+        <>
+            <Navbar/>
+
+            <HeweContainer>
+                <HeweHeading>
+                    <SUSLogo></SUSLogo>
+                    <Title>Wellness Hub</Title>
+                </HeweHeading>
+            </HeweContainer>
+        </>
     )
 }
 
-const Background = styled.div`
-    height: 100vh;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+// ============== Heading ==============
+
+const HeweContainer = styled.div`
+    margin-top: 20vh;
+    padding: 20px;
+`;
+
+const HeweHeading = styled.div`
+
 `
 
-const BackgroundGradient = styled.div`
-    background-image: linear-gradient(to right, #0173be, #e7edf7);
-    // background-image: url('/images/index-images/main1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+const Title = styled.h1`
+  color: #222755;
+  text-align: center;
+  margin-bottom: 40px;
+`;
+
+
+// ============== Health & Wellness Resources ==============
+
+
+const SectionTitle = styled.h2`
+  color: #333333;
+  margin-top: 30px;
+  border-bottom: 2px solid grey;
+  padding-bottom: 10px;
+`;
+
+const SubSectionTitle = styled.h3`
+  color: #34495e;
+  margin-top: 20px;
+`;
+
+const ListContainer = styled.div`
+background-color: white:
+width: 100%;
 `
 
-const Hero = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10vh;
-`
+const List = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 5rem;
+`;
 
-const LeftHero = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    padding-left: 150px;
-`
+const ListItem = styled.li`
+  margin-bottom: 10px;
+`;
 
-const RightHero = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-`
+const ResourceLink = styled.a`
+  color: #0052FF;
+  text-decoration: none;
 
-const Graphic = styled.img`
-    width: 50%;
-    object-fit: cover;
-    position: relative;
-    z-index: 2;
-    border: none;
-    border-radius: 0;
-    transition: opacity 1s ease-in-out;
-`
-
-const Title = styled.div`
-    color: #e7edf7;
-    font-size: 50px;
-    font-weight: bold;
-    text-align: left;
-    width: 100%;
-    margin-bottom: 2rem;
-`
-
-const Description = styled.div`
-    color: #e7edf7;
-    font-size: 20px;  
-    margin-bottom: 3rem;
-    text-align: left;
-`
+  &:hover {
+    text-decoration: underline;
+  }
+`;

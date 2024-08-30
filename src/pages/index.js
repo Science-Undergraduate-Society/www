@@ -745,7 +745,7 @@ const Description = styled.div`
 
 const Frame = styled.iframe`
   width: 40%;
-  height: auto;
+  height: 300px;
 `
 
 const SocialMediaIcons = styled.div`

@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Footer({color="white", background="#222755"}) {
     return (
-      <FooterContainer color={color}>
+      <FooterContainer color={color} background={background}>
         <SocialMediaIcons color={color}>
             <a
                 href='https://www.instagram.com/susubc'

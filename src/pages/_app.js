@@ -19,7 +19,7 @@ export default function MyApp ({ Component, pageProps }) {
         />
         {/* <meta property="og:image" content="/path/to/your/image.jpg" key="ogimage" /> */}
         {/* <meta property="og:url" content="https://www.sus.ubc.ca" key="ogurl" /> */}
-        <link rel="icon" href="/images/logos/sus-tab-logo.svg" />
+        <link rel="icon" href="/faviconBlue.png" />
       </Head>
       <Component {...pageProps} />
     </>
