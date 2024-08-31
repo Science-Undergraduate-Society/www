@@ -53,7 +53,7 @@ export default function Search() {
                     </ResultItem>
                 ))
                 ) : (
-                <p>No results found for "{query}".</p>
+                <p>No results found for &quot;{query}&quot;.</p>
                 )}
             </SearchContainer>
             <Link href="/" passHref>
