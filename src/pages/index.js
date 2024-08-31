@@ -125,9 +125,10 @@ export default function Home() {
 
           <ClubsCollageContent>
             {clubs.map((club, index) => (
-              <Club key={index}>
+              club.image !== "" && // if club image exists
+              (<Club key={index}>
                 <ClubImage src={club.image} alt={club.name} />
-              </Club>
+              </Club>)
             ))}
           </ClubsCollageContent>
         </ClubsCollageWrapper>
@@ -477,6 +478,14 @@ const Events = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: 1050px) {
+    margin-top: 30vh;
+  }
+    
+  @media (max-width: 800px) {
+    margin-top: 40vh;
+  }
 `
 
 const EventsTopSection = styled.div`
@@ -604,12 +613,10 @@ const moveLeft = keyframes`
 const ClubsCollageWrapper = styled.div`
   width: 100%;
   // overflow: hidden; /* Hide the overflow to prevent scrollbars */
-  background-color: #333333;
+  background-color: #454545;
   margin: 50px 0;
   margin-bottom: 8rem;
   padding: 40px 0;
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;

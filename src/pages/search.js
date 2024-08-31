@@ -19,19 +19,19 @@ export default function Search() {
 
     const performSearch = (searchTerm) => {
     const pages = [
-    { title: 'Join SUS', href: '/joinSus', content: 'Information about joining SUS.' },
-    { title: 'About Us', href: '/about', content: 'Learn more about our organization.' },
-    { title: 'The Executives', href: '/executives', content: 'Meet our executive team.' },
-    { title: 'Budget', href: '/budget', content: 'Details about our budget and expenditures.' },
-    { title: 'Code & Procedures', href: '/codeProcedures', content: 'Our code of conduct and procedures.' },
-    { title: 'Upcoming Events', href: '/events', content: 'Details about our upcoming events.' },
-    { title: 'Blue Card Program', href: '/bluecard', content: 'Information about the Blue Card Program.' },
-    { title: 'Grants', href: '/grants', content: 'Grant application and information.' },
-    { title: 'Health & Wellness', href: '/health', content: 'Health and wellness resources.' },
-    { title: 'ALSSC', href: '/alssc', content: 'Information about the Science Student Centre.' },
-    { title: 'Book a Meeting Room', href: '/alsscBooking', content: 'How to book a room at ALSSC.' },
-    { title: 'Feedback Form', href: 'https://docs.google.com/forms/d/e/1FAIpQLSeoybfzo-4VZgMUgie-eySFPczi_ToTwugPDu8F-IPLoS04Wg/viewform', content: 'Give us feedback.' },
-    { title: 'Shop', href: '/shop', content: 'Visit our shop for merchandise.' },
+      { title: 'Join SUS', href: '/joinSus', content: 'Information about joining SUS.' },
+      { title: 'About Us', href: '/about', content: 'Learn more about our organization.' },
+      { title: 'The Executives', href: '/executives', content: 'Meet our executive team.' },
+      { title: 'Budget', href: '/budget', content: 'Details about our budget and expenditures.' },
+      { title: 'Code & Procedures', href: '/codeProcedures', content: 'Our code of conduct and procedures.' },
+      { title: 'Upcoming Events', href: '/events', content: 'Details about our upcoming events.' },
+      { title: 'Blue Card Program', href: '/bluecard', content: 'Information about the Blue Card Program.' },
+      { title: 'Grants', href: '/grants', content: 'Grant application and information.' },
+      { title: 'Health & Wellness', href: '/health', content: 'Health and wellness resources.' },
+      { title: 'ALSSC', href: '/alssc', content: 'Information about the Science Student Centre.' },
+      { title: 'Book a Meeting Room', href: '/alsscBooking', content: 'How to book a room at ALSSC.' },
+      { title: 'Feedback Form', href: 'https://docs.google.com/forms/d/e/1FAIpQLSeoybfzo-4VZgMUgie-eySFPczi_ToTwugPDu8F-IPLoS04Wg/viewform', content: 'Give us feedback.' },
+      { title: 'Shop', href: '/shop', content: 'Visit our shop for merchandise.' },
     ];
 
     return pages.filter(page =>
