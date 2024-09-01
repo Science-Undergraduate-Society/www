@@ -1,6 +1,6 @@
 import React from "react";
 
-export const VolunteerJobs = [
+const VolunteerJobsReverse = [
     { 
         id: 1, 
         title: 'YNOTFORTOTS Volunteer Tutor', 
@@ -290,3 +290,5 @@ export const VolunteerJobs = [
     },
     // More jobs…
     ];
+
+    export const VolunteerJobs = VolunteerJobsReverse.reverse();
