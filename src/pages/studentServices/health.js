@@ -9,7 +9,7 @@ export default function HealthAndWellness() {
 
             <HeweContainer>
                 <HeweHeading>
-                    <SUSLogo></SUSLogo>
+                    {/* <SUSLogo></SUSLogo> */}
                     <Title>Wellness Hub</Title>
                 </HeweHeading>
             </HeweContainer>

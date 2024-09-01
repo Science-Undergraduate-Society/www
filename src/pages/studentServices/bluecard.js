@@ -51,7 +51,7 @@ export default function BlueCard() {
                         />
                         <IndivPartner>
                             <PartnerImgThin src="/images/bluecard-images/partner-logos/BAKD_Cookies_Logo.webp" /> 
-                            <PartnerNameThin>Bak'd</PartnerNameThin>
+                            <PartnerNameThin>Bak&apos;d</PartnerNameThin>
                             <Description>10% off</Description>
                         </IndivPartner>
                         <IndivPartnerInfo
