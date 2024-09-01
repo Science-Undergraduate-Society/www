@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Link from 'next/link';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { SearchBar } from "@/components/volunteerPortal-components/SearchBar"
@@ -11,38 +10,12 @@ export default function VolunteerPortal() {
             <Heading>
                 <Title>Volunteer Portal</Title>
             </Heading>
-
             <SearchBar />
             <Footer />
         </Background>
     )
 }
-
-{/*
-const JobList = () => {
-    return (
-        <JobSec>
-          {VolunteerJobs.map(job => (
-            <JobItem key={job.id} job={job}>
-                <LeftSide>
-                    <JobLogo src = {job.logo} />
-                    <JobHeading>
-                        <JobTitle>{job.title}</JobTitle>
-                        <Company>{job.company}</Company>
-                    </JobHeading>
-                </LeftSide>
-                <RightSide>
-                    <Type>{job.type}</Type>
-                    <Location>{job.location}</Location>
-                </RightSide>
-            </JobItem>
-            ))}
-        </JobSec>
-        );
-    };
-*/} 
-
-
+ 
 const Title = styled.div`
     padding-top: 24px;
     font-size: 54px;
@@ -50,7 +23,6 @@ const Title = styled.div`
     text-transform: uppercase;
     letter-spacing: 3px;
 `
-
 
 const Heading = styled.div `
   color: #222755;

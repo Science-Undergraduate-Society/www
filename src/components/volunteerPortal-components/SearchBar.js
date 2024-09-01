@@ -3,27 +3,51 @@ import styled from "styled-components";
 import { VolunteerJobs } from "@/pages/studentServices/jobData";
 
 export const SearchBar = () => {
-    const [query, setQuery] = useState("");
-    
+    const [keywords, setKeywords] = useState("");
+    const [list, setList] = useState(VolunteerJobs);
+    const [location, setLocation] = useState("");
+
+
+    // filters jobs based on inputs (keywords and location)
+    function handleSearchJobs() {
+        var keywordsJob = VolunteerJobs.filter((job) => job.title.toLowerCase().includes(keywords));
+        var filteredList = keywordsJob.filter((job) => job.location.toLowerCase().includes(location));
+        setList(filteredList);
+    }
+
   return (
     <Search>
         <SearchBox>
-            <SearchInput
-            placeholder="Keywords"
-            onChange={(e) => setQuery(e.target.value.toLowerCase())}
-            />
-            {/*
-            <SearchInput
-            placeholder="Location"
-            onChange={(e) => setQuery(e.target.value.toLowerCase())}
-            />
-            <SearchButton>Search Jobs</SearchButton>
-            */}
+            <Inputs>
+                <SearchInput
+                placeholder="Keywords"
+                onChange={(e) => setKeywords(e.target.value.toLowerCase())}
+                />
+                
+                <SearchInput
+                placeholder="Location"
+                onChange={(e) => setLocation(e.target.value.toLowerCase())}
+                />
+            </Inputs>
+
+            <SearchButton onClick={handleSearchJobs}
+            title='Search Jobs'>
+                Search Jobs
+            </SearchButton>
+            <Checkboxes>
+                <label>
+                    Off Campus: <input type="checkbox" name="myCheckbox" defaultChecked={true} />
+                </label>
+                <label>
+                    On Campus: <input type="checkbox" name="myCheckbox" defaultChecked={true} />
+                </label>
+                <label>
+                    Virtual: <input type="checkbox" name="myCheckbox" defaultChecked={true} />
+                </label>
+             </Checkboxes>  
         </SearchBox>
       <JobSec>
-        {VolunteerJobs.filter((job) =>
-          job.title.toLowerCase().includes(query)
-        ).map((job) => (
+        {list.map((job) => (
         <JobItem key={job.id}>
             <LeftSide>
                 {/*
@@ -45,30 +69,38 @@ export const SearchBar = () => {
   );
 }
 
+{/* Search header */}
 const Search = styled.div`
     margin-top: 24px;
     display: flex;
     flex-direction: column;
 `
-
 const SearchBox = styled.div`
-    background-color: #DCDCDC;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    background-color: #DCDCDC;
     align-items: center;
-    gap: 2px;
+    justify-content: center;
 
     width: 82%;
     height: 100%;
     margin-left: 11%;
     padding: 10px;
+
+`
+const Inputs = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2px;
+
+    justify-content: center;
+    align-items: center;
 `
 
 const SearchInput = styled.input`
     min-height: 25px;
-    width: 30%;
+    width: 45%;
     border-style: solid;
     border-radius: 5px;
     border-width: 1px;
@@ -78,6 +110,7 @@ const SearchInput = styled.input`
 `
 
 const SearchButton = styled.button`
+    display: inline-block;
     margin-top: 24px;
     width: 50%;
     height: 100%;
@@ -87,12 +120,26 @@ const SearchButton = styled.button`
     border-radius: 10px;
     border-style: none;
     background-color: #0173be;
+
+     &:hover {
+        background-color: #005bb5;
+    }
 `
 
+const Checkboxes = styled.div`
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+`
+
+{/* Job list display */}
 const JobSec = styled.ul`
     width: 100%;
     height: 100%;
-    margin: 24px 0;
+    margin-top: 0;
 `
 
 const JobItem = styled.li`
@@ -170,5 +217,4 @@ const Type = styled.p`
     color: #0173be;
     float: right;
     font-weight: bold;
-
 `
