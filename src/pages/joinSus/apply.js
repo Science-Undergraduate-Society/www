@@ -9,6 +9,9 @@ import apply4 from "../../../public/images/apply-images/apply4.jpg"
 import apply5 from "../../../public/images/apply-images/apply5.jpg"
 import apply6 from "../../../public/images/apply-images/apply6.jpg"
 import apply7 from "../../../public/images/apply-images/apply7.jpg"
+import apply8 from "../../../public/images/apply-images/apply8.png"
+import apply9 from "../../../public/images/apply-images/apply9.png"
+import apply10 from "../../../public/images/apply-images/apply10.png"
 import fall from "../../../public/images/apply-images/fall.jpg"
 import summer from "../../../public/images/apply-images/summer.jpg"
 import Image from "next/image";
@@ -18,7 +21,7 @@ export default function JoinSus() {
         <Navbar/>
         <Background>
             <Content>
-                <JoinTitle>Apply <Span>today!</Span></JoinTitle>
+                <JoinTitle>Apply <Span>To Join Today!</Span></JoinTitle>
                 <ImageContent>
                 <Image src={apply3} width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
                 <Image src={apply1} width={350} height={233} style={{ margin: '20px'}}/> 
@@ -55,13 +58,13 @@ export default function JoinSus() {
                 </p>
 
                 <ImageContent>
-                <Image src={apply5} width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
-                <Image src={apply6} width={350} height={233} style={{ margin: '20px'}}/> 
+                <Image src={apply8} width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                <Image src={apply9} width={350} height={233} style={{ margin: '20px'}}/> 
                 {/* <Image src={apply2} width={300} height={200} style={{ margin: '10px' }}/>  */}
-                <Image src={apply7} width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                <Image src={apply10} width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
                 </ImageContent>
 
-                <h1>Join <Span>one-time-experience Positions</Span></h1>
+                <h1>Join <Span>One-time-experience Positions</Span></h1>
                 <ul>
                     <li>First week Event Volunteer (Late August - Early September)</li>
                     <li>RXN Leader or Event Volunteer (Early September - Late September)</li>
@@ -69,7 +72,43 @@ export default function JoinSus() {
                     <li>Scigrad Event Volunteer (February - March)</li>
                 </ul>
 
+                <ImageContent>
+                <Image src={apply5} width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                <Image src={apply6} width={350} height={233} style={{ margin: '20px'}}/> 
+                {/* <Image src={apply2} width={300} height={200} style={{ margin: '10px' }}/>  */}
+                <Image src={apply7} width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                </ImageContent>
 
+                <br></br>
+
+                <JoinTitle>SUS <Span>Organizational Structure</Span></JoinTitle>
+
+                <br></br>
+                <hr></hr>
+
+                <h2><Span>Presidential</Span> Portfolio</h2>
+                <p>The Presidental Portfolio is an executive team that includes the SUS Executive Committee and Projects Commission, the EDI and HR Working Groups. They have the opportunity to represent science students at several Faculty of Science meetings.</p>
+
+                <h2><Span>Administration</Span> Portfolio</h2>
+                <p>The Administration Portfolio directly communicates with and support Science Clubs, promote sustainability, oversee building management for the Abdul Ladha Science Student Centre, organize SUS documents and meeting minutes, and maintain the SUS code and policy.</p>
+
+                <h2><Span>Academic</Span> Portfolio</h2>
+                <p>The Academic Portfolio is there to enhance student academic experiences, by offering mentorship opportunities, and promoting physical and mental wellness outside of the lecture hall. They are also there to share the student perspective, and support accessibility and inclusion on the Skylight Development Grants, Teaching and Learning Enhancement Fund (TLEF), Science Curriculum, and Killam Teaching Awards Committees. </p>
+
+                <h2><Span>Communications</Span> Portfolio</h2>
+                <p>The Communications portfolio includes the following commissions: marketing, productions, sales, graphic design, visual media and webmasters.</p>
+
+                <h2><Span>External</Span> Portfolio</h2>
+                <p>The External portfolio oversees all things relating to Community Engagement, Careers and Professional Development, Corporate Relations, and Student Benefits. The team works to collaborate with external organizations and campus partners, provide networking, volunteering and career development opportunities, advocate for humanitarian causes, maintain the Blue Card science student discount program, and represent the full diversity of our student groups.</p>
+
+                <h2><Span>Finance</Span> Portfolio</h2>
+                <p>The Finance portfolio provides financial support to a variety of students and clubs across campus. They have the mission to increase grant/subsidy visibility and budget transparency.</p>
+
+                <h2><Span>Internal</Span> Portfolio</h2>
+                <p>The Internal Portfolio relates to anything and everything that concerns the inner workings of SUS and here are the following committees within the portfolio: Internal Committee, Elections, First Year Committee and Science Student Recognition Awards.</p>
+
+                <h2><Span>Student Life</Span> Portfolio</h2>
+                <p>The Student Life Portfolio is responsible for flagship events such as Science RXN, Science Week, and Science Graduation, as well as the Social and Sports Working Group events throughout the school year. The Student Life Portfolio aims to plan and execute events that get the student body excited to participate and are inclusive towards everyone.</p>
             </Content>
         </Background>
         <Footer/>
@@ -113,7 +152,7 @@ const EventCardsContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap; /* Allows the cards to wrap if screen size is too small */
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 `;
 
 const EventCard = styled.div`
