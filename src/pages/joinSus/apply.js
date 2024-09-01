@@ -61,7 +61,7 @@ export default function JoinSus() {
                 <Image src={apply7} width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
                 </ImageContent>
 
-                <h1>Join <Span>one-time-experience Positions</Span></h1>
+                <h1>Join <Span>One-time-experience Positions</Span></h1>
                 <ul>
                     <li>First week Event Volunteer (Late August - Early September)</li>
                     <li>RXN Leader or Event Volunteer (Early September - Late September)</li>
