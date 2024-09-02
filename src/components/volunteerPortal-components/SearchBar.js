@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { VolunteerJobs } from "@/pages/studentServices/jobData";
+import { VolunteerJobs } from "@/pages/studentServices/volunteerPortalFiles/jobData";
+import { checkBoxesList } from "@/pages/studentServices/volunteerPortalFiles/jobData";
+
 
 export const SearchBar = () => {
     const [keywords, setKeywords] = useState("");
@@ -10,10 +12,20 @@ export const SearchBar = () => {
 
     // filters jobs based on inputs (keywords and location)
     function handleSearchJobs() {
-        var keywordsJob = VolunteerJobs.filter((job) => job.title.toLowerCase().includes(keywords));
-        var filteredList = keywordsJob.filter((job) => job.location.toLowerCase().includes(location));
-        setList(filteredList);
+        let keywordsJob = VolunteerJobs.filter((job) => job.title.toLowerCase().includes(keywords));
+        var locationList = keywordsJob.filter((job) => job.location.toLowerCase().includes(location));
+
+        setList(locationList);
     }
+
+    //checkboxes
+    const [selectedItems, setSelectedItems] = useState([])
+	
+
+	function checkboxHandler(e){
+		let isSelected = e.target.checked;
+		let value = parseInt(e.target.value);
+	}
 
   return (
     <Search>
@@ -34,17 +46,15 @@ export const SearchBar = () => {
             title='Search Jobs'>
                 Search Jobs
             </SearchButton>
+            {/*
             <Checkboxes>
-                <label>
-                    Off Campus: <input type="checkbox" name="myCheckbox" defaultChecked={true} />
-                </label>
-                <label>
-                    On Campus: <input type="checkbox" name="myCheckbox" defaultChecked={true} />
-                </label>
-                <label>
-                    Virtual: <input type="checkbox" name="myCheckbox" defaultChecked={true} />
-                </label>
-             </Checkboxes>  
+                {checkBoxesList.map((checkbox, index) => (
+                    <label key={index}>
+                        {checkbox.name} <input type="checkbox" name={checkbox.name} value={checkbox.id} defaultChecked={true} onChange={checkboxHandler} checked={ selectedItems.includes( checkbox.id ) }  />
+                    </label>
+                ))}
+            </Checkboxes>
+            */}
         </SearchBox>
       <JobSec>
         {list.map((job) => (
@@ -69,6 +79,12 @@ export const SearchBar = () => {
   );
 }
 
+
+const breakpoints = {
+    mobile: '768px',
+    tablet: '1024px',
+};
+
 {/* Search header */}
 const Search = styled.div`
     margin-top: 24px;
@@ -82,7 +98,7 @@ const SearchBox = styled.div`
     align-items: center;
     justify-content: center;
 
-    width: 82%;
+    max-width: 82%;
     height: 100%;
     margin-left: 11%;
     padding: 10px;
@@ -130,9 +146,14 @@ const Checkboxes = styled.div`
     margin-top: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5px;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media (max-width: ${breakpoints.mobile}) {
+        flex-direction: column;
+        gap: 0;
+    }
 `
 
 {/* Job list display */}
