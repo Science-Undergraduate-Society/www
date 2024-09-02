@@ -1,21 +1,20 @@
 import styled from "styled-components";
-import ShopNavbar from "../../components/shop-components/ShopNavbar";
 import { Button } from "../../components/Reusable";
-import ShopFooter from "../../components/shop-components/ShopFooter";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 export default function Shop() {
     return (
         <>
-            <ShopNavbar />
+            <Navbar />
             <Background>
                 <Content>
                     <Title>Shop Under Construction 🔨 ...</Title>
+                    <Description>A new SUS shop will be coming soon but in the meantime, make sure to check our social media to see if we have any in-person sales!</Description>
                     <StyledButton as="a" href="/">Back Home</StyledButton>
-                    <Description>
-                    </Description>
                 </Content>
-                <ShopFooter />
             </Background>
+            <Footer color='#222755' background='transparent'/>
         </>
     );
 }
