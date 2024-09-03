@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import fees from "../../../public/images/booking-images/booking.png"
 import ancillary from "../../../public/images/booking-images/ancillary.png"
+import alssc from "../../../public/images/booking-images/alssc.jpg"
 
 
 export default function Bookings() {
@@ -21,6 +22,12 @@ export default function Bookings() {
                 <Navbar />
                 <Content>
                     <BookingTitle>Event Bookings at the <Span>ALSSC</Span></BookingTitle>
+                    <br></br>
+                    <br></br>
+                              <FullWidthImageContainer>
+            <FullWidthImage src={alssc} alt="Abdul Ladha Science Student Centre" width={1200} height={800} />
+          </FullWidthImageContainer>
+                    <br></br>
                     <IntroText>
                         The Abdul Ladha Science Student Centre (ALSSC) exists as a social space to encourage both informal and organized academic, club, and social activities and interactions.
                         See the ‘Frequently Asked Questions’ section below for answers to the most common questions about event bookings at the ALSSC. For any outstanding questions, please contact the Building Manager of Bookings at <a href="mailto:bmanager.bookings@sus.ubc.ca">bmanager.bookings@sus.ubc.ca</a>.
@@ -81,6 +88,13 @@ export default function Bookings() {
                             <AccordionTitle onClick={() => toggleSection(2)}>Building Availability Calendar</AccordionTitle>
                             <AccordionContent isOpen={openSection === 2}>
                                 <p>Click an event to determine which parts of the building are being used. We can accommodate bookings inside the building at the same time as Front Porch bookings.</p>
+                                <StyledIframe2 
+  src="https://calendar.google.com/calendar/embed?src=bmanager.bookings%40sus.ubc.ca&ctz=America%2FVancouver"
+  width="800"
+  height="600"
+//   style={{ border: "none" }}
+></StyledIframe2>
+
                             </AccordionContent>
                         </AccordionSection>
 
@@ -421,6 +435,11 @@ const StyledIframe = styled.iframe`
   max-width: 100%;
   border: none;
 `;
+
+const StyledIframe2 = styled.iframe`
+  width: 100%;
+  border: none;
+`;
 const FeesTable = styled.table`
   width: 100%;
   border-collapse: collapse;
@@ -582,4 +601,15 @@ const StepTitle = styled.h2`
   font-weight: 600;
   color: #003366;
   margin-bottom: 1rem;
+`;
+
+const FullWidthImageContainer = styled.div`
+  width: 100%;
+  overflow: hidden; 
+`;
+
+const FullWidthImage = styled(Image)`
+  width: 100%;
+  height: auto; 
+  border-radius: 20px;
 `;
