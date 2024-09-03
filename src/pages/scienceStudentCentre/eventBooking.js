@@ -3,6 +3,10 @@ import styled from "styled-components";
 import { Button } from "../../components/Reusable";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Image from "next/image";
+import fees from "../../../public/images/booking-images/booking.png"
+import ancillary from "../../../public/images/booking-images/ancillary.png"
+
 
 export default function Bookings() {
     const [openSection, setOpenSection] = useState(null);
@@ -154,11 +158,145 @@ export default function Bookings() {
                         <AccordionSection>
                             <AccordionTitle onClick={() => toggleSection(7)}>FAQs</AccordionTitle>
                             <AccordionContent isOpen={openSection === 7}>
-                                <ContentText>What is the maximum capacity for events?: Events can have no more than 133 attendees, including event organizers.</ContentText>
-                                <ContentText>...</ContentText> {/* Add remaining FAQs content here */}
+                            <p><strong>What is the maximum capacity for events?:</strong> Events can have no more than 133 attendees, including event organizers.</p>
+
+<p><strong>How do I know if the date I want is available?</strong> Please refer to the Building Availability Calendar above.</p>
+
+<p><strong>Do you have to be a UBC student to book the building?</strong> The ALSSC is available for booking by anyone. However, the building is financed by all science students at UBC, so science organizations will receive a discount. See the Fees above for details.</p>
+
+<p><strong>Is food allowed in the building?</strong> Yes, but please make sure to clean up after the event.</p>
+
+<p><strong>Is external catering allowed?</strong> Yes, but please make sure to clean up after the event. You will need to provide the contact information of your caterer in the booking request form.</p>
+
+<p><strong>Is alcohol allowed in the building?</strong> Yes, but further approval is required. Events that serve alcohol must submit a booking request by the deadlines indicated above.</p>
+
+<p><strong>Is security required?</strong> For any Events With Alcohol, SUS will provide 2+ security guards. At the discretion of the Building Manager of Bookings, security may also be required for dances/parties. In such cases, a Security Fee may apply. See the Fees above for more details.</p>
+
+<p><strong>Will there be someone to help us with setup/takedown?</strong> There will be a Building Supervisor present during the duration of your booking should you have any questions, concerns, or technical issues during your event. They will help set up the AV system, additional seating, and any other equipment provided by SUS. All other setup/takedown (including rearranging furniture, adding decorations, and sweeping up after the event) are the responsibility of the booking group.</p>
+
                             </AccordionContent>
                         </AccordionSection>
                     </AccordionContainer>
+
+                    <h1>Fees</h1>
+                    <StepTitle>Booking Fees & Damage Deposit</StepTitle>
+                    
+                    <FeesTable>
+      <thead>
+        <tr>
+          <TableHeader>Category</TableHeader>
+          <TableHeader>Main Floor (2F)</TableHeader>
+          <TableHeader>Mezzanine (3F)</TableHeader>
+          <TableHeader>Main Floor & Mezzanine (2F/3F)</TableHeader>
+          <TableHeader>Full Building (1F/2F/3F)</TableHeader>
+          <TableHeader>Front Porch (Area outside of the ALSSC)</TableHeader>
+          <TableHeader>Damage Deposit</TableHeader>
+        </tr>
+      </thead>
+      <tbody>
+        <TableRow>
+          <TableCell>SUS Internal</TableCell>
+          <TableCell>Free</TableCell>
+          <TableCell>Free</TableCell>
+          <TableCell>Free</TableCell>
+          <TableCell>Free</TableCell>
+          <TableCell>Free</TableCell>
+          <TableCell>Free (2)</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>SUS Clubs</TableCell>
+          <TableCell>Free</TableCell>
+          <TableCell>Free</TableCell>
+          <TableCell>Free</TableCell>
+          <TableCell>Free</TableCell>
+          <TableCell>Free</TableCell>
+          <TableCell>Free (2)</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>Science Clubs/Organizations</TableCell>
+          <TableCell>Free</TableCell>
+          <TableCell>Free</TableCell>
+          <TableCell>Free</TableCell>
+          <TableCell>Free</TableCell>
+          <TableCell>Free</TableCell>
+          <TableCell>$100</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>UBC Organizations</TableCell>
+          <TableCell>$50/hr</TableCell>
+          <TableCell>$30/hr</TableCell>
+          <TableCell>$70/hr</TableCell>
+          <TableCell>$80/hr</TableCell>
+          <TableCell>$30/hr</TableCell>
+          <TableCell>$100</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>External Organizations</TableCell>
+          <TableCell>$60/hr</TableCell>
+          <TableCell>$40/hr</TableCell>
+          <TableCell>$90/hr</TableCell>
+          <TableCell>$100/hr</TableCell>
+          <TableCell>$40/hr</TableCell>
+          <TableCell>$200</TableCell>
+        </TableRow>
+      </tbody>
+    </FeesTable>
+
+                    <h5>(1): All front porch (Area outside of the ALSSC) bookings include access to tables and a tent.
+                        <br/>
+                        (2): Any repairs for damages caused during bookings by these groups will be funded through a budget deduction from the offending group</h5>
+                    <p>If you are unsure which Category is applicable for your club/organization, see the Booking Group Categories above for full descriptions.</p>
+
+                    <StepTitle>Ancillary Fees</StepTitle>
+
+                    <FeesTable>
+      <thead>
+        <tr>
+          <TableHeader>Applicable Categories</TableHeader>
+          <TableHeader>Description</TableHeader>
+          <TableHeader>Fee</TableHeader>
+        </tr>
+      </thead>
+      <tbody>
+        <TableRow>
+          <TableCell>UBC Organizations, External Organizations</TableCell>
+          <TableCell>Hours After 8pm on Weekdays</TableCell>
+          <TableCell>$25/hr</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>UBC Organizations, External Organizations</TableCell>
+          <TableCell>Weekend Hours</TableCell>
+          <TableCell>$35/hr</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>UBC Organizations, External Organizations</TableCell>
+          <TableCell>Overtime Hours (3)</TableCell>
+          <TableCell>$25/hr</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>UBC Organizations, External Organizations</TableCell>
+          <TableCell>Use of Audio-Visual (AV) System</TableCell>
+          <TableCell>$30/event</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>SUS Clubs, Science Clubs/Organizations, UBC Organizations, External Organizations</TableCell>
+          <TableCell>Cleaning Fee for Dances/Parties/Large Events (4)</TableCell>
+          <TableCell>$100/event</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>SUS Clubs, Science Clubs/Organizations, UBC Organizations, External Organizations</TableCell>
+          <TableCell>Security Fee for Dances/Parties/Large Events (4)</TableCell>
+          <TableCell>$100/event</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>SUS Clubs, Science Clubs/Organizations, UBC Organizations, External Organizations</TableCell>
+          <TableCell>Service Fee for Events with Alcohol</TableCell>
+          <TableCell>$200/event</TableCell>
+        </TableRow>
+      </tbody>
+    </FeesTable>
+                <h5>(3) Overtime eligibility is at the discretion of the Building Supervisor for the event. Payment is applied at the beginning of each hour that a booking group occupies the ALSSC after the designated end time of their booking. <br/>
+(4): The Cleaning Fee and Security Fee are applied at the discretion of the Building Manager of Bookings. These fees are not applicable for Events with Alcohol – the Service Fee for Events with Alcohol is automatically applied to such events.</h5>
                 </Content>
                 <Footer />
             </Background>
@@ -166,7 +304,53 @@ export default function Bookings() {
     );
 }
 
-// Styled Components for Accordion
+const FeesTable = styled.table`
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 15px;
+  text-align: left;
+`;
+
+const TableHeader = styled.th`
+  background-color: #001961;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+`;
+
+const TableRow = styled.tr`
+  border: 1px solid #ddd;
+  &:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+`;
+
+const TableCell = styled.td`
+  padding: 13px;
+  border: 1px solid #ddd;
+`;
+
+const StyledTable = styled.table`
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+`;
 const AccordionContainer = styled.div`
   margin: 20px 0;
   border: 1px solid #ddd;
