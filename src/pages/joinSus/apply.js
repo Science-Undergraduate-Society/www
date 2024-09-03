@@ -36,7 +36,7 @@ export default function JoinSus() {
                 <EventCard>
                   <Image src={summer} alt="Description" width={500} height={300} />
                   <h3>Summer Hiring</h3>
-                  <p>Hiring is on going and applications are due May 23rd, 2024 at 11:59 PM. Click on "More Info" for a list of available positions as well as its corresponding CareerOnline links. Head to the Facebook event and Instagram post for further information and all the positions available.</p>
+                  <p>Hiring is on going and applications are due May 23rd, 2024 at 11:59 PM. Click on &quot;More Info&quot; for a list of available positions as well as its corresponding CareerOnline links. Head to the Facebook event and Instagram post for further information and all the positions available.</p>
                   
                   <p>Assistant to Vice-presidents, Committee chairs, and General Committee positions are hired in the summer, in mid to late May. Positions are posted on CareersOnline, so keep your eyes peeled around May! We also usually have a Facebook event and Instagram post that has all positions available, so look out for an event that is typically named “SUS Executive Hiring 20XX [Summer]”. No prior experience is needed, but a cover letter and resume are. </p>
                   <Span href="https://docs.google.com/document/d/1ca6Tsa4BK0e6NhS5Yq7xsYRVf0EBEm-49FTIC740XNg/edit?usp=sharing">More Info &gt;</Span>

@@ -24,7 +24,7 @@ export default function HealthAndWellness() {
           </Text>
 
           <Text>
-            If you are someone you know is at risk of self-harm, call BC's Crisis line at{' '}
+            If you are someone you know is at risk of self-harm, call BC&apos;s Crisis line at{' '}
             <Link href="tel:18007842433">1 800 784 2433</Link>.
           </Text>
 
@@ -208,7 +208,7 @@ export default function HealthAndWellness() {
           <Title>FREE RECREATION</Title>
           <SubTitle>Museums</SubTitle>
           <Text>
-            Visit UBC's free museums such as the <Link href="https://beatymuseum.ubc.ca/">Beaty Biodiversity Museum</Link>, <Link href="https://moa.ubc.ca/">Museum of Anthropology</Link>, and the <Link href="https://pacificmuseumofflight.org/">Museum of Earth</Link>.
+            Visit UBC&apos;s free museums such as the <Link href="https://beatymuseum.ubc.ca/">Beaty Biodiversity Museum</Link>, <Link href="https://moa.ubc.ca/">Museum of Anthropology</Link>, and the <Link href="https://pacificmuseumofflight.org/">Museum of Earth</Link>.
           </Text>
           <SubTitle>Art and Culture</SubTitle>
           <Text>
@@ -216,7 +216,7 @@ export default function HealthAndWellness() {
           </Text>
           <SubTitle>Nature</SubTitle>
           <Text>
-            Explore UBC's beautiful outdoor spaces such as the <Link href="https://botanicalgarden.ubc.ca/visit/nitobe-memorial-garden/">Nitobe Memorial Garden</Link>, the <Link href="https://www.ubc.ca/about/campus_landmarks/rose_garden.html">Rose Garden</Link>, and the iconic <Link href="https://www.wreckbeach.org/">Wreck Beach</Link>.
+            Explore UBC&apos;s beautiful outdoor spaces such as the <Link href="https://botanicalgarden.ubc.ca/visit/nitobe-memorial-garden/">Nitobe Memorial Garden</Link>, the <Link href="https://www.ubc.ca/about/campus_landmarks/rose_garden.html">Rose Garden</Link>, and the iconic <Link href="https://www.wreckbeach.org/">Wreck Beach</Link>.
           </Text>
         </Section>
       </Container>
