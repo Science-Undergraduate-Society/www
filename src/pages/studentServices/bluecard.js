@@ -103,6 +103,14 @@ export default function BlueCard() {
                             then 15% off until August 2025 15% off Wizepreps MCAT Elite 515 Course and Self-Paced Program"
                             location="Valid at wizeprep.com"
                         />
+                        <IndivPartnerInfo
+                            partnerName="Susgrainable"
+                            logoSrc="/images/bluecard-images/partner-logos/susgrainable.png"
+                            description="Use code BLUECARD to get 20% off their Banana Bread Mix, Chocolate Chip Cookie Mix, 
+                            Pancake & Waffle Mix, and Starter Bundle on their online store, or get $2 off the Banana Bread Mix, 
+                            Chocolate Chip Cookie Mix, and Pancake & Waffle Mix at their offline store"
+                            location="Valid at https://susgrainable.com/"
+                        />
                         </PartnersBox>
                 </Partners>
             </MainInfo>
@@ -131,7 +139,7 @@ const breakpoints = {
 };
 
 const PartnerName = styled.div`
-    font-size: 20px;
+    font-size: 25x;
     font-weight: bold;
     margin-top: 24px;
 
@@ -146,7 +154,7 @@ const PartnerNameThin = styled(PartnerName)`
 
 const PartnerImg = styled.img`
     width: 150px;
-    height: 150px;
+    height: auto;
 
     @media (max-width: ${breakpoints.mobile}) {
         width: 100px;
@@ -159,12 +167,12 @@ const PartnerImgThin = styled(PartnerImg)`
 `
 
 const Description = styled.div`
-    font-size: 12px;
+    font-size: 18px;
     margin-top: 3%;
 `
 
 const Location = styled.div`
-    font-size: 10px;
+    font-size: 18px;
     font-style: italic;
     margin-top: 4%;
     color: #0173be;
