@@ -76,40 +76,78 @@ export default function Bookings() {
                         <AccordionSection>
                             <AccordionTitle onClick={() => toggleSection(2)}>Building Availability Calendar</AccordionTitle>
                             <AccordionContent isOpen={openSection === 2}>
-                                <ContentText>Click an event to determine which parts of the building are being used. We can accommodate bookings inside the building at the same time as Front Porch bookings.</ContentText>
+                                <p>Click an event to determine which parts of the building are being used. We can accommodate bookings inside the building at the same time as Front Porch bookings.</p>
                             </AccordionContent>
                         </AccordionSection>
 
                         <AccordionSection>
                             <AccordionTitle onClick={() => toggleSection(3)}>Booking Policy & Terms</AccordionTitle>
                             <AccordionContent isOpen={openSection === 3}>
-                                <ContentText>Setup/Takedown: The booked time slot includes setup and takedown time. Setup/takedown are the responsibility of the booking organization.</ContentText>
-                                <ContentText>Printing Services: SUS does not offer printing services for any events in the ALSSC. If printing is required, booking groups can use the UBC PayForPrint system – the printer in the ALSSC is attached to the system.</ContentText>
-                                <ContentText>...</ContentText> {/* Add remaining Booking Policy & Terms content here */}
+                                <p><strong>Setup/Takedown:</strong> The booked time slot includes setup and takedown time. Setup/takedown are the responsibility of the booking organization.</p>
+                                <p><strong>Printing Services:</strong> SUS does not offer printing services for any events in the ALSSC. If printing is required, booking groups can use the UBC PayForPrint system – the printer in the ALSSC is attached to the system.</p>
+                                <p><strong>Equipment Rentals:</strong> Equipment will not be rented out to events outside of the ALSSC. All building furniture or equipment are to remain within the building unless given permission from the Building Manager.</p>
+                                <p><strong>Charity Events:</strong> Events hosted to fundraise for a charity will have relevant booking fees waived.</p>
+                                <p><strong>Payments:</strong> Payments can be made in cash, cheque, or via AMS Journal Voucher. SUS does not accept credit/debit card or e-transfer payments.</p>
+                                <p><strong>Damage Deposit:</strong> The Balance Due (i.e. booking fees) is exclusive of the Damage Deposit. The Damage Deposit (paid separate) must be received by the Building Manager at least two weeks prior to the event, unless stated otherwise by the Building Manager. This Deposit includes, but is not limited to cancellation, damages, and other penalty charges. The Deposit is refunded only when all conditions are met.</p>
+                                <p><strong>Payment Due Dates:</strong> Payment is due by the deadlines as indicated in the invoice, unless stated otherwise by the Building Manager. In the case that the Balance Due is not paid on time, the Damage Deposit will not be returned and will be considered a portion of the payment of the fees. No additional bookings can be made if fees are still outstanding. The Building Management Commission (BMC) reserves the right to cancel future events if outstanding fees are unpaid.</p>
                             </AccordionContent>
                         </AccordionSection>
 
                         <AccordionSection>
                             <AccordionTitle onClick={() => toggleSection(4)}>Booking Group Categories</AccordionTitle>
                             <AccordionContent isOpen={openSection === 4}>
-                                <ContentText>SUS Groups: internal groups in SUS, such as the Health & Wellness Working Group or the First Year Council.</ContentText>
-                                <ContentText>...</ContentText> {/* Add remaining Booking Group Categories content here */}
+                                <p><strong>SUS Groups:</strong> internal groups in SUS, such as the Health & Wellness Working Group or the First Year Council.</p>
+                                <p><strong>SUS Clubs:</strong> departmental and non-departmental clubs supported by SUS. For a complete list of SUS Clubs, see here.</p>
+                                <p><strong>Science Organizations and Science Clubs:</strong> groups which are not supported directly by SUS, but are of interest to students in the Faculty of Science (including, but not limited to SCI Team, Science Peer Academic Coaches, UBC Cancer Association). At least 60% of students contributing to the planning and execution of the event must be in the Faculty of Science in order to qualify for this rate.</p>
+                                <p><strong>UBC Organizations:</strong> groups who either have an address on the University Endowment Lands, or are affiliated in some way with UBC (including, but not limited to Regent College, UBC VP Students’ Office, groups from other UBC campuses).</p>
+                                <p><strong>External Organizations:</strong> organizations that are unaffiliated with UBC.</p>
+                                <p>The Building Management Commission (BMC) reserves the right to verification from the respective parties.</p>
                             </AccordionContent>
                         </AccordionSection>
 
                         <AccordionSection>
                             <AccordionTitle onClick={() => toggleSection(5)}>Information for Events With Alcohol</AccordionTitle>
                             <AccordionContent isOpen={openSection === 5}>
-                                <ContentText>If you are considering hosting an event at the ALSSC that serves alcohol, here are a few important details you should consider...</ContentText>
-                                <ContentText>...</ContentText> {/* Add remaining Information for Events With Alcohol content here */}
+                                <p>If you are considering hosting an event at the ALSSC that serves alcohol, here are a few important details you should consider. This list is not definitive – it is just a few key details that will help you decide whether alcohol is appropriate for your event:</p>
+                                <ul>
+    <li>Booking Requests for Events with Alcohol must be submitted at least 60 days before the event.</li>
+    <li>The maximum capacity of ALSSC is 133 people, including event organizers.</li>
+    <li>You must use a ticket system with tickets sold before the event. Tickets cannot be available at the event, and non-ticketholders cannot enter the event venue.</li>
+    <li>Minors cannot be present at Events With Alcohol.</li>
+    <li>SUS will provide 2+ professional security guards for the duration of the event.</li>
+    <li>You cannot advertise the availability of alcohol at an event, so terms like “Beer Garden” or “Wine and Cheese” are prohibited.</li>
+    <li>There are multiple deliverables required for approval of alcohol service. You should plan to put in consistent effort towards planning the event starting as soon as your Booking Request is submitted.</li>
+    <li>At least one event organizer must complete the Wellness Centre & SVPRO’s “Safer Partying Workshop,” which is offered in-person. You should make sure the course is being offered before your event.</li>
+    <li>The maximum price you can charge for alcohol is mandated by the provincial government – you should not expect to make a profit on alcohol sales.</li>
+    <li>The Faculty of Science requires that a system is in place to ensure drinks are provided at a rate not exceeding one standard drink per person per hour.</li>
+    <li>Multiple costs are associated with approval of alcohol service. You will need to cover these costs as part of your event budget. Some of the costs include:
+        <ul>
+            <li>Venue booking fees</li>
+            <li>Special Event Server exam fee (required for each event organizer)</li>
+            <li>Special Event Permit application fee</li>
+            <li>Purchasing alcohol</li>
+        </ul>
+    </li>
+</ul>
                             </AccordionContent>
                         </AccordionSection>
 
                         <AccordionSection>
                             <AccordionTitle onClick={() => toggleSection(6)}>Equipment for Events</AccordionTitle>
                             <AccordionContent isOpen={openSection === 6}>
-                                <ContentText>In addition to the equipment already located in the ALSSC, booking groups can request access to the following items for event bookings...</ContentText>
-                                <ContentText>...</ContentText> {/* Add remaining Equipment for Events content here */}
+                                <p>In addition to the equipment already located in the ALSSC, booking groups can request access to the following items for event bookings:</p>
+                                <ul>
+    <li>AV System</li>
+    <li>Portable Speakers – best used for parties or bookings on the Front Porch. The AV system includes its own speakers.</li>
+    <li>Additional Tables (4) + Chairs (80+)</li>
+    <li>Coat Racks</li>
+    <li>Utility Cart</li>
+    <li>Canopy Tents</li>
+    <li>Crowd Control Ropes</li>
+    <li>Digital Signage – displayed on TV in the ALSSC foyer before/during an event</li>
+    <li>SUS Photographer present at the event</li>
+</ul>
+
                             </AccordionContent>
                         </AccordionSection>
 
@@ -149,7 +187,7 @@ const AccordionTitle = styled.button`
   text-align: left;
   border: none;
   outline: none;
-  font-size: 16px;
+  font-size: 17px;
   transition: background-color 0.3s ease;
   &:hover {
     background-color: #e0f4ff;
@@ -159,7 +197,7 @@ const AccordionTitle = styled.button`
 const AccordionContent = styled.div`
   padding: 15px;
   display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
-  background-color: #f9f9f9;
+//   background-color: #f9f9f9;
   color: #333;
 `;
 
