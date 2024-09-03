@@ -438,11 +438,11 @@ const Who = styled.div`
     padding-bottom: 10px;
 
     h2 {
-      font-size: 14px;
+      font-size: 16px;
     }
 
     p {
-      font-size: 14px;
+      font-size: 15px;
     }
   }
 `
@@ -462,11 +462,11 @@ const What = styled.div`
     padding-top: 10px;
 
     h2 {
-      font-size: 14px;
+      font-size: 16px;
     }
 
     p {
-      font-size: 14px;
+      font-size: 15px;
     }
   }
 `
@@ -505,7 +505,7 @@ const EventsTopSection = styled.div`
 `
 
 const EventsTitle = styled.div`
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 700;
   
   @media (max-width: 1000px) {
@@ -577,8 +577,8 @@ const ProgressBar = styled.div`
 `;
 
 const EventCard = styled.div`
-  max-width: 300px;
-  min-width: 300px;
+  max-width: 330px;
+  min-width: 330px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -594,13 +594,13 @@ const EventCard = styled.div`
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 10px;
     color: #222755;
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #555;
   }
 `;
@@ -682,7 +682,7 @@ const Card = styled.div`
 
 const LeftCard = styled(Card)`
   h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #222755;
     margin-bottom: 20px;
   }

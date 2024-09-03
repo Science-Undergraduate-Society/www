@@ -2,18 +2,18 @@ import styled from "styled-components";
 import Link from 'next/link';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import apply1 from "../../../public/images/apply-images/apply.jpg"
-import apply2 from "../../../public/images/apply-images/apply2.jpg"
-import apply3 from "../../../public/images/apply-images/apply3.jpg"
-import apply4 from "../../../public/images/apply-images/apply4.jpg"
-import apply5 from "../../../public/images/apply-images/apply5.jpg"
-import apply6 from "../../../public/images/apply-images/apply6.jpg"
-import apply7 from "../../../public/images/apply-images/apply7.jpg"
-import apply8 from "../../../public/images/apply-images/apply8.png"
-import apply9 from "../../../public/images/apply-images/apply9.png"
-import apply10 from "../../../public/images/apply-images/apply10.png"
-import fall from "../../../public/images/apply-images/fall.jpg"
-import summer from "../../../public/images/apply-images/summer.jpg"
+// import apply1 from "../../../public/images/apply-images/apply.jpg"
+// // import apply2 from "../../../public/images/apply-images/apply2.jpg"
+// import apply3 from "../../../public/images/apply-images/apply3.jpg"
+// import apply4 from "../../../public/images/apply-images/apply4.jpg"
+// import apply5 from "../../../public/images/apply-images/apply5.jpg"
+// import apply6 from "../../../public/images/apply-images/apply6.jpg"
+// import apply7 from "../../../public/images/apply-images/apply7.jpg"
+// import apply8 from "../../../public/images/apply-images/apply8.png"
+// import apply9 from "../../../public/images/apply-images/apply9.png"
+// import apply10 from "../../../public/images/apply-images/apply10.png"
+// import fall from "../../../public/images/apply-images/fall.jpg"
+// import summer from "../../../public/images/apply-images/summer.jpg"
 import Image from "next/image";
 export default function JoinSus() {
     return (
@@ -23,10 +23,9 @@ export default function JoinSus() {
             <Content>
                 <JoinTitle>Apply <Span>To Join Today!</Span></JoinTitle>
                 <ImageContent>
-                <Image src={apply3} width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
-                <Image src={apply1} width={350} height={233} style={{ margin: '20px'}}/> 
-                {/* <Image src={apply2} width={300} height={200} style={{ margin: '10px' }}/>  */}
-                <Image src={apply4} width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                <Image src="/images/apply-images/apply3.jpg" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                <Image src="/images/apply-images/apply.jpg" width={350} height={233} style={{ margin: '20px'}}/> 
+                <Image src="/images/apply-images/apply4.jpg" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
                 </ImageContent>
                 <h1>Join the <Span>Society</Span></h1>
                 <p>
@@ -34,7 +33,7 @@ export default function JoinSus() {
                 </p>
                 <EventCardsContainer>
                 <EventCard>
-                  <Image src={summer} alt="Description" width={500} height={300} />
+                  <Image src="/images/apply-images/summer.jpg" alt="Description" width={500} height={300} />
                   <h3>Summer Hiring</h3>
                   <p>Hiring is on going and applications are due May 23rd, 2024 at 11:59 PM. Click on &quot;More Info&quot; for a list of available positions as well as its corresponding CareerOnline links. Head to the Facebook event and Instagram post for further information and all the positions available.</p>
                   
@@ -43,7 +42,7 @@ export default function JoinSus() {
                 </EventCard>
 
                 <EventCard>
-                  <Image src={fall} alt="Description" width={500} height={300} />
+                  <Image src="/images/apply-images/fall.jpg" alt="Description" width={500} height={300} />
                   <h3>Fall Hiring</h3>
                   <p>General committee positions are hired in the fall, in early September. To apply, look for our Facebook event typically named “SUS Fall Hiring 20XX” around early September. Again, a cover letter and resume are submitted.  No prior experience is needed!</p>
                   
@@ -58,10 +57,10 @@ export default function JoinSus() {
                 </p>
 
                 <ImageContent>
-                <Image src={apply8} width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
-                <Image src={apply9} width={350} height={233} style={{ margin: '20px'}}/> 
+                <Image src="/images/apply-images/apply8.png" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                <Image src="/images/apply-images/apply9.png" width={350} height={233} style={{ margin: '20px'}}/> 
                 {/* <Image src={apply2} width={300} height={200} style={{ margin: '10px' }}/>  */}
-                <Image src={apply10} width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                <Image src="/images/apply-images/apply10.png" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
                 </ImageContent>
 
                 <h1>Join <Span>One-time-experience Positions</Span></h1>
@@ -73,10 +72,10 @@ export default function JoinSus() {
                 </ul>
 
                 <ImageContent>
-                <Image src={apply5} width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
-                <Image src={apply6} width={350} height={233} style={{ margin: '20px'}}/> 
+                <Image src="/images/apply-images/apply5.jpg" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                <Image src="/images/apply-images/apply6.jpg" width={350} height={233} style={{ margin: '20px'}}/> 
                 {/* <Image src={apply2} width={300} height={200} style={{ margin: '10px' }}/>  */}
-                <Image src={apply7} width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                <Image src="/images/apply-images/apply7.jpg" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
                 </ImageContent>
 
                 <br></br>
