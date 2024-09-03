@@ -1,29 +1,46 @@
 import styled from "styled-components";
-import Link from 'next/link';
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { SearchBar } from "@/components/volunteerPortal-components/SearchBar"
 
 export default function VolunteerPortal() {
     return (
         <Background>
-            <Title>Volunteer Portal</Title>
-            <Link href="/" passHref>
-                <StyledButton>Back to Home</StyledButton>
-            </Link>
+            <Navbar />
+            <Heading>
+                <Title>Volunteer Portal</Title>
+            </Heading>
+            <SearchBar />
+            <Footer />
         </Background>
     )
 }
-
+ 
 const Title = styled.div`
-    color: black;
+    padding-top: 24px;
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 `
 
+const Heading = styled.div `
+  color: #222755;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  width: 100%;
+  padding: 150px 0 0 15%;
+`
+
+
 const Background = styled.div`
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 `
 
 const StyledButton = styled.div`

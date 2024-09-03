@@ -9,6 +9,7 @@ import {
   faInstagram
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from "next/image";
 
 import eventsArray from "@/utility/events";
 import clubs from "@/utility/clubs";
@@ -62,6 +63,7 @@ export default function Home() {
           {/* don't remove or i'll hunt you down */}
           <TopColour>DL</TopColour>
           <AboutCollage src="/images/index-images/Collage.jpg" />
+          {/* <Image src="/images/index-images/Collage.jpg" alt="About Collage" width={500} height={300} /> */}
           <BottomColour></BottomColour>
           <AboutSection>
             <Who>
@@ -104,11 +106,11 @@ export default function Home() {
 
               {eventsArray.map((event, index) => (
                 <EventCard key={index}>
-                  <img src={event.image} />
+                  <Image src={event.image} alt="Description" width={500} height={300} />
                   <h3>{event.title}</h3>
                   <p style={ {color: "grey", fontSize: "13px"} }>{event.date} @ {event.time}</p>
                   <p>{event.description}</p>
-                  <Span href={event.link}>More Info --</Span>
+                  <Span href={event.link}>More Info &gt;</Span>
                 </EventCard>
               ))}
             </EventsWrapper>
@@ -125,9 +127,10 @@ export default function Home() {
 
           <ClubsCollageContent>
             {clubs.map((club, index) => (
-              <Club key={index}>
+              club.image !== "" && // if club image exists
+              (<Club key={index}>
                 <ClubImage src={club.image} alt={club.name} />
-              </Club>
+              </Club>)
             ))}
           </ClubsCollageContent>
         </ClubsCollageWrapper>
@@ -145,13 +148,13 @@ export default function Home() {
               <li style={{ paddingLeft: "30px" }}>(4) Sponsored clubs</li>
             </ul>
             <p>
-              These positions are open to ALL science students, even if you haven’t
+              These positions are open to ALL science students, even if you haven&apos;t
               been a part of SUS before (this includes the elected positions).
             </p>
           </LeftCard>
 
           <RightCard>
-            <p>(1)<br/>Once a year in spring, all science students have the opportunity to vote for the next year's President and VP’s!</p>
+            <p>(1)<br/>Once a year in spring, all science students have the opportunity to vote for the next years President and VP&apos;s!</p>
             <p>(2)<br/>In June and September every year, there are multiple positions that are released on <Span href="https://ubc-csm.symplicity.com/">UBC Careers Online</Span> for those wishing to get involved for the entire school year!</p>
             <p>(3)<br/>Throughout the year, large events will require the help of external volunteers. If you want to be involved with SUS but don’t want to commit long-term, this is perfect for you! Make sure to follow our <Span href="https://instagram.com/susubc">Instagram</Span> to be made aware of any volunteering opportunities!</p>
             <p>(4)<br/>SUS supports over 50 science-related clubs at UBC. Make sure to consider getting involved with them too!</p>
@@ -178,7 +181,7 @@ export default function Home() {
           
           <PodcastContent>
             <Title>SUSpisode</Title>
-            <Description>In 2023, our productions team thought, "Why not start a podcast all about UBC and university life?" So they did! Join us, along with special guests from around UBC, as we chat about everything from school and life to the quirky moments that make university unique!</Description>
+            <Description>In 2023, our productions team thought, &quot;Why not start a podcast all about UBC and university life?&quot; So they did! Join us, along with special guests from around UBC, as we chat about everything from school and life to the quirky moments that make university unique!</Description>
             <SocialMediaIcons>
               <p>Available Platforms:</p>
               <a
@@ -340,13 +343,13 @@ const HeroText = styled.div`
 
   h1 {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
   }
 
   p {
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 0.5rem;
   }
 
@@ -405,7 +408,7 @@ const AboutSection = styled.div`
   padding: 60px;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
 
   @media (max-width: 650px) {
     padding: 20px;
@@ -428,7 +431,7 @@ const Who = styled.div`
     margin-bottom: 0;
   }
   p{
-    padding-left: 30px;
+    // padding-left: 30px;
   }
 
   @media (max-width: 650px) {
@@ -477,6 +480,14 @@ const Events = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: 1050px) {
+    margin-top: 30vh;
+  }
+    
+  @media (max-width: 800px) {
+    margin-top: 40vh;
+  }
 `
 
 const EventsTopSection = styled.div`
@@ -532,6 +543,10 @@ const EventsInfo = styled.div`
   padding: 40px 40px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 900px) {
+    width: 300px;
+  }
 `
 
 const Collage = styled.div`
@@ -604,12 +619,10 @@ const moveLeft = keyframes`
 const ClubsCollageWrapper = styled.div`
   width: 100%;
   // overflow: hidden; /* Hide the overflow to prevent scrollbars */
-  background-color: #333333;
+  background-color: #454545;
   margin: 50px 0;
   margin-bottom: 8rem;
   padding: 40px 0;
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;

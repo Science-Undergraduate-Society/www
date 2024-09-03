@@ -43,6 +43,18 @@ export default function BlueCard() {
                     <PartnerTitle>Our Partners</PartnerTitle>
                     <PartnersBox>
                         <IndivPartnerInfo
+                            partnerName="Arbutus Station Dental"
+                            logoSrc="/images/bluecard-images/partner-logos/arbutus station dental.png"
+                            description="Free take-home teeth whitening kit with the completion 
+                            of a new patient exam and cleaning."
+                            location="Valid only at 2184 W Broadway #560, Vancouver, BC V6K 2E1"
+                        />
+                        <IndivPartner>
+                            <PartnerImgThin src="/images/bluecard-images/partner-logos/BAKD_Cookies_Logo.webp" /> 
+                            <PartnerNameThin>Bak&apos;d</PartnerNameThin>
+                            <Description>10% off</Description>
+                        </IndivPartner>
+                        <IndivPartnerInfo
                             partnerName="Chatime"
                             logoSrc="/images/bluecard-images/partner-logos/chatime-logo.webp"
                             description="10% off all products"
