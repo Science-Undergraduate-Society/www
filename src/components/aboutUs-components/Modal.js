@@ -4,7 +4,7 @@ import { FaTimes } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 
 const ModalContainer = styled.div`
-  display: ${(props) => (props.modalClose ? "none" : "flex")};
+  display: ${(props) => (props.modalclose ? "none" : "flex")};
   position: fixed;
   top: 50%;
   left: 50%;
@@ -137,7 +137,7 @@ const Modal = ({
   description,
 }) => {
   return (
-    <ModalContainer modalClose={modalClose}>
+    <ModalContainer modalclose={modalClose}>
       <StyledFaTimes size={40} onClick={setCloseModal} />
       <ModalContentContainer>
         <Executive
