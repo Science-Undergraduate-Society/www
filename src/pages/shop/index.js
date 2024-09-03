@@ -30,6 +30,7 @@ const Background = styled.div`
     overflow-y: auto;
     scroll-behavior: smooth;
     position: relative;
+    margin-top: 20vh;
 `;
 
 const Content = styled.div`

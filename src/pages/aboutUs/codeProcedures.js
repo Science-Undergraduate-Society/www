@@ -34,7 +34,7 @@ export default function CodeProcedures() {
             .
           </p>
         </Content>
-        <Footer color="#222755"/>
+        <Footer/>
       </Background>
     </>
   );

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export default function Events() {
     return (
@@ -70,6 +71,7 @@ export default function Events() {
                     </ImageContainer>
                 </EventContainer>
             </Container>
+            <Footer/>
         </>
     )
 }

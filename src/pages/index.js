@@ -62,7 +62,9 @@ export default function Home() {
         <About>
           {/* don't remove or i'll hunt you down */}
           <TopColour>DL</TopColour>
-          <AboutCollage src="/images/index-images/Collage.jpg" />
+          <AboutCollageContainer>
+            <AboutCollage src="/images/index-images/Collage.jpg" />
+          </AboutCollageContainer>
           {/* <Image src="/images/index-images/Collage.jpg" alt="About Collage" width={500} height={300} /> */}
           <BottomColour></BottomColour>
           <AboutSection>
@@ -336,6 +338,12 @@ const Hero = styled.div`
   align-items: center;
   text-align: center;
   padding-top: 3rem;
+  padding: 0 1rem;
+  border: 1px solid #222755;
+
+  @media (max-width: 700px) {
+    padding-top: 7rem;
+  }
 `;
 
 const HeroText = styled.div`
@@ -369,7 +377,28 @@ const About = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  border-top: 1px solid #222755;
 `;
+
+const AboutCollageContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  background-color: #F7F5F2;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 39, 85, 0.7); /* Black tint with 40% opacity */
+    z-index: 1;
+  }
+`
 
 const AboutCollage = styled.img`
   width: 100%;
@@ -392,6 +421,7 @@ const BottomColour = styled.div`
   height: 15vh;
   background-color: #F7F5F2;
   color: #F7F5F2;
+  border-bottom: 1px solid #F7F5F2;
 `
 
 const AboutSection = styled.div`
@@ -402,7 +432,7 @@ const AboutSection = styled.div`
   z-index: 10; /* Ensure it is above other elements */
   
   background-color: white;
-  width: 100%;
+  width: 80%;
   max-width: 1000px;
   margin: 40px 0;
   padding: 60px;
@@ -410,7 +440,7 @@ const AboutSection = styled.div`
   text-align: center;
   box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
 
-  @media (max-width: 650px) {
+  @media (max-width: 1100px) {
     padding: 20px;
   }
 `;
@@ -670,6 +700,11 @@ const InvolvementContainer = styled.div`
   background-size: 100% auto; /* 100% width, auto height */
   background-position: center;
   background-repeat: no-repeat;
+
+  @media(max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Card = styled.div`
@@ -678,6 +713,10 @@ const Card = styled.div`
   border-radius: 15px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   width: 45%;
+
+  @media(max-width: 700px) {
+    width: 90%;
+  }
 `;
 
 const LeftCard = styled(Card)`
@@ -716,6 +755,11 @@ const Alssc = styled.div`
   justify-content: center;
   gap: 4rem;
   width: 90%;
+
+  @media(max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 const AlsscContent = styled.div`
@@ -725,6 +769,9 @@ const AlsscContent = styled.div`
   text-align: right;
   width: 60%;
   height: 100%;
+  @media(max-width: 700px) {
+    text-align: center;
+  }
 `
 
 const Podcast = styled.div`
@@ -733,6 +780,11 @@ const Podcast = styled.div`
   justify-content: center;
   gap: 4rem;
   width: 90%;
+
+  @media(max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 const PodcastContent = styled.div`
@@ -742,23 +794,39 @@ const PodcastContent = styled.div`
   text-align: left;
   width: 60%;
   height: 100%;
+  @media(max-width: 700px) {
+    text-align: center;
+  }
 `
 
 const Title = styled.div`
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 1.3rem;
+
+  @media(max-width: 700px) {
+    text-align: center;
+  }
 `
 
 const Description = styled.div`
   margin-bottom: 1.3rem;
   font-size: 20px;
   color: #333333
+
+  @media(max-width: 700px) {
+    text-align: center;
+  }
 `
 
 const Frame = styled.iframe`
   width: 40%;
   height: 300px;
+
+  @media(max-width: 700px) {
+    width: 90%;
+    height: 300px;
+  }
 `
 
 const SocialMediaIcons = styled.div`
@@ -798,6 +866,10 @@ const ShopSection = styled.div`
 const ShopGridContainer = styled.div`
   display: flex;
   width: 70%;
+
+  @media(max-width: 700px) {
+    width: 0%;
+  }
 `
 
 const ShopImage = styled.img`
