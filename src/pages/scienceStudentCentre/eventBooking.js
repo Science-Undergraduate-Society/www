@@ -4,8 +4,6 @@ import { Button } from "../../components/Reusable";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import fees from "../../../public/images/booking-images/booking.png"
-import ancillary from "../../../public/images/booking-images/ancillary.png"
 import alssc from "../../../public/images/booking-images/alssc.jpg"
 
 
