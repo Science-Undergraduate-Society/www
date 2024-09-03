@@ -57,67 +57,50 @@ export default function BlueCard() {
                         <IndivPartnerInfo
                             partnerName="Chatime"
                             logoSrc="/images/bluecard-images/partner-logos/chatime-logo.webp"
-                            description="10% off"
+                            description="10% off all products"
                             location="Valid only at 5998 University Blvd #4, Vancouver, V6T 2A1"
                         />
                         <IndivPartnerInfo
-                            partnerName="Delhi 6 Indian Bistro"
-                            logoSrc="/images/bluecard-images/partner-logos/delhi 6 indian bistro.png"
-                            description="15% off"
-                            location="Valid only at 1766 W 7th Ave"
-                        />
-                        <IndivPartner>
-                            <PartnerImgThin src="/images/bluecard-images/partner-logos/EYELAB.png" /> 
-                            <PartnerNameThin>Eyelab, Doctors of Optometry</PartnerNameThin>
-                            <Description>10% discount on contacts</Description>
-                            <Location>Valid only at 2369 W 41st Ave, Vancouver, BC V6M 2A3</Location>
-                        </IndivPartner>
-                        <IndivPartnerInfo
-                            partnerName="Gold's Gym"
-                            logoSrc="/images/bluecard-images/partner-logos/gold_s gym logo.png"
-                            description="35% off standard rate"
-                            location="Valid only at 709 W Broadway, Vancouver, BC V5Z 1J5 2155 Allison Rd, Vancouver, BC V6T 1T5 1950 Oxford Connector, Port Coquitlam, BC V3B 4H3 19989 81a Ave, Langley Twp, BC V2Y 0C7"
+                            partnerName="Eyelab, Doctors of Optometry"
+                            logoSrc="/images/bluecard-images/partner-logos/EYELAB.png"
+                            description="10% discount on contacts"
+                            location="Valid only at 2369 W 41st Ave, Vancouver, BC V6M 2A3"
                         />
                         <IndivPartnerInfo
-                            partnerName="Hinbor"
-                            logoSrc="/images/bluecard-images/partner-logos/hinbor_logo.jpeg"
-                            description="Special weekly discounts for Science students!"
-                            location="Email Rachel at info@hinbor.ca with your Hinbor app username to be included into exclusive science student discounts"
-                        />
-                        <IndivPartnerInfo
-                            partnerName="Kung Fu Tea"
-                            logoSrc="/images/bluecard-images/partner-logos/KUNG FU TEA [BLACK].png"
-                            description="15% discount on all items"
-                            location="Valid only at 2855 W Broadway, Vancouver, BC V6K 2G6"
+                            partnerName="Killer Ice Cream"
+                            logoSrc="/images/bluecard-images/partner-logos/Killer Ice Cream Logo.png"
+                            description="Get $2 off regular sized cones."
+                            location="Valid only at 3659 W 4th Ave, Vancouver, BC V6R 1P2"
                         />
                         <IndivPartnerInfo
                             partnerName="Majestic Maven"
                             logoSrc="/images/bluecard-images/partner-logos/majestic-maven-14.jpg"
-                            description="25% off on all services for September then 20% for the rest of the year."
-                            location=""
+                            description="25% off all services during September, then 20% discount on all services until August 2025"
+                            location="Valid only at 1236 Richards St, Vancouver, BC V6B 6M6"
                         />
                         <IndivPartnerInfo
-                            partnerName="Milano Casa Riistorante"
-                            logoSrc="/images/bluecard-images/partner-logos/milano casa logo.jpg"
-                            description="10% off on the dinner menu. Note: dinner menu starts from 6 pm"
-                            location="Valid only at 4397 W 10th Ave, Vancouver, BC V6R 2H6"
-                        />
-                        <IndivPartnerInfo
-                            partnerName="Pita Pit"
-                            logoSrc="/images/bluecard-images/partner-logos/PitaPit_logo.jpg"
-                            description="5% off"
-                            location="Valid only at 5717 Dalhousie Rd, Vancouver, BC V6T 2H9"
+                            partnerName="Mosa"
+                            logoSrc="/images/bluecard-images/partner-logos/Mosa logo.jpg"
+                            description="Use code SUS20 for 20% off all products"
+                            location="Valid only at www.wearemosa.com"
                         />
                         <IndivPartnerInfo
                             partnerName="Steve's Poke Bar"
                             logoSrc="/images/bluecard-images/partner-logos/Steve_s Poke Bar Logo.png"
-                            description="$5 off"
+                            description="Use code SCHOOLSPB for $5 off first time app purchases"
                             location="Valid at www.stevespokebar.ca"
+                        />
+                        <IndivPartnerInfo
+                            partnerName="StorageHotel"
+                            logoSrc="/images/bluecard-images/partner-logos/Storagehotel Logo - Green Small.png"
+                            description="Mention SUS when signing up for the Summer 2025 waitlist for VIP Early Booking Access, which includes an exclusive code to skip the waitlist queue and a $50 discount."
+                            location="Valid at www.storagehotel.ca"
                         />
                         <IndivPartnerInfo
                             partnerName="Wizeprep"
                             logoSrc="/images/bluecard-images/partner-logos/wizeprep logo.png"
-                            description="15% discount on Study Pass + Live Prep sessions + MCAT"
+                            description="Free access to Wizeprep's Monthly Subscription for the month of September 
+                            then 15% off until August 2025 15% off Wizepreps MCAT Elite 515 Course and Self-Paced Program"
                             location="Valid at wizeprep.com"
                         />
                         </PartnersBox>
@@ -157,19 +140,15 @@ const PartnerName = styled.div`
     }
 `
 
-const PartnerNameThin = styled(PartnerName)`
-    margin-top: 53px;
-`
-
 const PartnerImg = styled.img`
-    max-width: 75%;
-    height: auto;
-`
+    width: 150px;
+    height: 150px;
 
-const PartnerImgThin = styled(PartnerImg)`
-    margin-top: 24px;
+    @media (max-width: ${breakpoints.mobile}) {
+        width: 100px;
+        height: 100px;
+    }
 `
-
 const Description = styled.div`
     font-size: 12px;
     margin-top: 3%;

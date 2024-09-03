@@ -343,13 +343,13 @@ const HeroText = styled.div`
 
   h1 {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
   }
 
   p {
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 0.5rem;
   }
 
@@ -408,7 +408,7 @@ const AboutSection = styled.div`
   padding: 60px;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
 
   @media (max-width: 650px) {
     padding: 20px;
@@ -431,7 +431,7 @@ const Who = styled.div`
     margin-bottom: 0;
   }
   p{
-    padding-left: 30px;
+    // padding-left: 30px;
   }
 
   @media (max-width: 650px) {
@@ -543,6 +543,10 @@ const EventsInfo = styled.div`
   padding: 40px 40px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 900px) {
+    width: 300px;
+  }
 `
 
 const Collage = styled.div`
