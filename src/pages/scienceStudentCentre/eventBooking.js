@@ -158,7 +158,7 @@ export default function Bookings() {
                         <AccordionSection>
                             <AccordionTitle onClick={() => toggleSection(7)}>FAQs</AccordionTitle>
                             <AccordionContent isOpen={openSection === 7}>
-                            <p><strong>What is the maximum capacity for events?:</strong> Events can have no more than 133 attendees, including event organizers.</p>
+                            <p><strong>What is the maximum capacity for events?</strong> Events can have no more than 133 attendees, including event organizers.</p>
 
 <p><strong>How do I know if the date I want is available?</strong> Please refer to the Building Availability Calendar above.</p>
 
