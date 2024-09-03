@@ -30,15 +30,15 @@ export default function Bookings() {
 
                     <StepTitle>Before Submitting a Booking Request:</StepTitle>
                     <ul>
-                        <li>Determine if the ALSSC is a suitable venue for your event. <Link href="#">Visit the About the ALSSC page</Link> to view building amenities and floor plans.</li>
-                        <li>Check the <Link href="#">Building Availability Calendar</Link> to ensure the date and time you would like to book is available.</li>
-                        <li>See below for important details about events at the ALSSC, including Booking Policies and the Fees associated with booking.</li>
+                        <li>Determine if the ALSSC is a suitable venue for your event. Visit the <Link href="https://sus.ubc.ca/alssc/about">About the ALSSC page</Link> to view building amenities and floor plans.</li>
+                        <li>Check the <Link href="https://sus.ubc.ca/alssc/events/#booking-information">Building Availability Calendar</Link> to ensure the date and time you would like to book is available.</li>
+                        <li>See below for important details about events at the ALSSC, including <Link href="https://sus.ubc.ca/alssc/events/#booking-information">Booking Policies</Link> and the <Link href="https://sus.ubc.ca/alssc/events/#fees">Fees</Link> associated with booking.</li>
                     </ul>
 
                     <StepTitle>Submit a Booking Request:</StepTitle>
                     <ul>
-                        <li>Fill out the <Link href="#">Booking Request Form</Link>.</li>
-                        <li>Ensure your request is being submitted within the applicable Deadlines.</li>
+                        <li>Fill out the <Link href="https://sus.ubc.ca/alssc/events/#booking-request">Booking Request Form</Link>.</li>
+                        <li>Ensure your request is being submitted within the applicable <Link href="https://sus.ubc.ca/alssc/events/#booking-information">Deadlines</Link>.</li>
                         <li>Remember that the booking includes the time for setup/takedown as managed by your organization. Ensure you are requesting enough time to properly set up and take down the materials needed for your event.</li>
                     </ul>
 
@@ -297,6 +297,115 @@ export default function Bookings() {
     </FeesTable>
                 <h5>(3) Overtime eligibility is at the discretion of the Building Supervisor for the event. Payment is applied at the beginning of each hour that a booking group occupies the ALSSC after the designated end time of their booking. <br/>
 (4): The Cleaning Fee and Security Fee are applied at the discretion of the Building Manager of Bookings. These fees are not applicable for Events with Alcohol – the Service Fee for Events with Alcohol is automatically applied to such events.</h5>
+            <br></br>
+            <h1>Submit a <Span>Booking Request</Span></h1>
+<StyledIframe
+      id="JotFormIFrame-231152118073041"
+      title="Abdul Ladha Event Bookings"
+      allowtransparency="true"
+      allowfullscreen="true"
+      src="https://form.jotform.com/231152118073041"
+      scrolling="no"
+    ></StyledIframe>
+    <script type="text/javascript">
+      {`
+        var ifr = document.getElementById("JotFormIFrame-231152118073041");
+        if (ifr) {
+          var src = ifr.src;
+          var iframeParams = [];
+          if (window.location.href && window.location.href.indexOf("?") > -1) {
+            iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+          }
+          if (src && src.indexOf("?") > -1) {
+            iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+            src = src.substr(0, src.indexOf("?"));
+          }
+          iframeParams.push("isIframeEmbed=1");
+          ifr.src = src + "?" + iframeParams.join('&');
+        }
+        window.handleIFrameMessage = function(e) {
+          if (typeof e.data === 'object') {
+            return;
+          }
+          var args = e.data.split(":");
+          if (args.length > 2) {
+            iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]);
+          } else {
+            iframe = document.getElementById("JotFormIFrame");
+          }
+          if (!iframe) {
+            return;
+          }
+          switch (args[0]) {
+            case "scrollIntoView":
+              iframe.scrollIntoView();
+              break;
+            case "setHeight":
+              iframe.style.height = args[1] + "px";
+              if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+                iframe.style.minHeight = args[1] + "px";
+              }
+              break;
+            case "collapseErrorPage":
+              if (iframe.clientHeight > window.innerHeight) {
+                iframe.style.height = window.innerHeight + "px";
+              }
+              break;
+            case "reloadPage":
+              window.location.reload();
+              break;
+            case "loadScript":
+              if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) {
+                break;
+              }
+              var src = args[1];
+              if (args.length > 3) {
+                src = args[1] + ':' + args[2];
+              }
+              var script = document.createElement('script');
+              script.src = src;
+              script.type = 'text/javascript';
+              document.body.appendChild(script);
+              break;
+            case "exitFullscreen":
+              if (window.document.exitFullscreen) window.document.exitFullscreen();
+              else if (window.document.mozCancelFullScreen) window.document.mozCancelFullScreen();
+              else if (window.document.mozCancelFullscreen) window.document.mozCancelFullScreen();
+              else if (window.document.webkitExitFullscreen) window.document.webkitExitFullscreen();
+              else if (window.document.msExitFullscreen) window.document.msExitFullscreen();
+              break;
+          }
+          var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+          if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+            var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+            iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+          }
+        };
+        window.isPermitted = function(originUrl, whitelisted_domains) {
+          var url = document.createElement('a');
+          url.href = originUrl;
+          var hostname = url.hostname;
+          var result = false;
+          if( typeof hostname !== 'undefined' ) {
+            whitelisted_domains.forEach(function(element) {
+              if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) || hostname === element ) {
+                result = true;
+              }
+            });
+            return result;
+          }
+        };
+        if (window.addEventListener) {
+          window.addEventListener("message", handleIFrameMessage, false);
+        } else if (window.attachEvent) {
+          window.attachEvent("onmessage", handleIFrameMessage);
+        }
+      `}
+    </script>
+                <StepTitle>Contact Us</StepTitle>
+                <p>Booking Inquiries: <a href="mailto:manager.bookings@sus.ubc.ca"> bmanager.bookings@sus.ubc.ca</a>
+                    <br></br>
+Operations and Maintenance: <a href="mailto:bmanager.operations@sus.ubc.ca">bmanager.operations@sus.ubc.ca</a></p>
                 </Content>
                 <Footer />
             </Background>
@@ -304,6 +413,14 @@ export default function Bookings() {
     );
 }
 
+const StyledIframe = styled.iframe`
+  width: 100%;
+  height:4500px;
+  border: none;
+  min-width: 500px;
+  max-width: 100%;
+  border: none;
+`;
 const FeesTable = styled.table`
   width: 100%;
   border-collapse: collapse;
