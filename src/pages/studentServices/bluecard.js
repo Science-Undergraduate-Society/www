@@ -140,6 +140,10 @@ const PartnerName = styled.div`
     }
 `
 
+const PartnerNameThin = styled(PartnerName)`
+    margin-top: 53px;
+`
+
 const PartnerImg = styled.img`
     width: 150px;
     height: 150px;
@@ -149,10 +153,16 @@ const PartnerImg = styled.img`
         height: 100px;
     }
 `
+
+const PartnerImgThin = styled(PartnerImg)`
+    margin-top: 24px;
+`
+
 const Description = styled.div`
     font-size: 12px;
     margin-top: 3%;
 `
+
 const Location = styled.div`
     font-size: 10px;
     font-style: italic;
