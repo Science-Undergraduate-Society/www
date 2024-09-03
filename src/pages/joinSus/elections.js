@@ -2,9 +2,9 @@ import styled from "styled-components";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import elect1 from "../../../public/images/elections-images/elect1.jpg"
-import elect2 from "../../../public/images/elections-images/elect4.jpg"
-import elect3 from "../../../public/images/elections-images/3.jpg"
+// import elect1 from "../../../public/images/elections-images/elect1.jpg"
+// import elect2 from "../../../public/images/elections-images/elect4.jpg"
+// import elect3 from "../../../public/images/elections-images/3.jpg"
 
 export default function Elections() {
     return (
@@ -16,10 +16,10 @@ export default function Elections() {
                 <p>Hello candidates! Use this page as a one-stop shop for all of your documents this election.</p>
 
                 <ImageContent>
-                <Image src={elect1} width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
-                <Image src={elect2} width={350} height={233} style={{ margin: '20px'}}/> 
+                <Image src="/images/elections-images/elect1.jpg" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                <Image src="/images/elections-images/elect4.jpg" width={350} height={233} style={{ margin: '20px'}}/> 
                 {/* <Image src={apply2} width={300} height={200} style={{ margin: '10px' }}/>  */}
-                <Image src={elect3} width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                <Image src="/images/elections-images/3.jpg" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
                 </ImageContent>
 
                 <h1>Elections Documentation</h1>
