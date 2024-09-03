@@ -245,7 +245,7 @@ export default function Bookings() {
                     <h5>(1): All front porch (Area outside of the ALSSC) bookings include access to tables and a tent.
                         <br/>
                         (2): Any repairs for damages caused during bookings by these groups will be funded through a budget deduction from the offending group</h5>
-                    <p>If you are unsure which Category is applicable for your club/organization, see the Booking Group Categories above for full descriptions.</p>
+                    <p>If you are unsure which Category is applicable for your club/organization, see the <Link href="https://sus.ubc.ca/alssc/events/#booking-information">Booking Group Categories</Link> above for full descriptions.</p>
 
                     <StepTitle>Ancillary Fees</StepTitle>
 
