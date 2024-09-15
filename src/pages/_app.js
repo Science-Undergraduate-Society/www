@@ -42,25 +42,6 @@ export default function MyApp({ Component, pageProps }) {
 
         <link rel="icon" href="/faviconBlue.png" />
         <link rel="canonical" href="https://www.susubc.org" />
-
-        <script type="application/ld+json">
-        {{
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "Science Undergraduate Society",
-          "url": "https://www.susubc.org",
-          "logo": "https://www.susubc.org/faviconBlue.png",
-          "sameAs": [
-            "https://www.facebook.com/susubc",
-            "https://www.instagram.com/susubc"
-          ],
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+1-604-822-4235",
-            "contactType": "Abdul Ladha Front Desk"
-          }
-        }}
-        </script>
       </Head>
       <Component {...pageProps} />
     </>

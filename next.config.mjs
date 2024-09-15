@@ -5,7 +5,7 @@ const nextConfig = {
     return [
       {
         source: '/(.*)',
-        destination: 'https://susubc.org',
+        destination: 'https://susubc.org/',
         permanent: true,
       },
     ];
