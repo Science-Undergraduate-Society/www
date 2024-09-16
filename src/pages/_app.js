@@ -5,6 +5,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <meta name="google-site-verification" content="huE_vrajQ5EtDVhXzmGIbve5qizgvbAjt9FbSDHuke8" />
         <title>Science Undergraduate Society</title>
         <meta
           name="description"
