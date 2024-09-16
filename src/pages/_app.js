@@ -29,7 +29,7 @@ export default function MyApp({ Component, pageProps }) {
           key="ogdescription" 
         />
         <meta property="og:image" content="/faviconBlue.png" key="ogimage" />
-        <meta property="og:url" content="https://www.susubc.org" key="ogurl" />
+        <meta property="og:url" content="https://www.susubc.ca" key="ogurl" />
         <meta property="og:type" content="website" key="ogtype" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -39,10 +39,10 @@ export default function MyApp({ Component, pageProps }) {
           content="The Science Undergraduate Society (SUS) at UBC represents science students, offering resources, events, and opportunities to get involved."
         />
         <meta name="twitter:image" content="/faviconBlue.png" />
-        <meta name="twitter:url" content="https://www.susubc.org" />
+        <meta name="twitter:url" content="https://www.susubc.ca" />
 
         <link rel="icon" href="/faviconBlue.png" />
-        <link rel="canonical" href="https://www.susubc.org" />
+        <link rel="canonical" href="https://www.susubc.ca" />
       </Head>
       <Component {...pageProps} />
     </>
