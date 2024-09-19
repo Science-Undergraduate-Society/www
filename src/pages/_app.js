@@ -5,7 +5,6 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <html lang="en" />
         <meta name="google-site-verification" content="M2p1N_BbdWjYtlSgRDv4P07F_THR2ed5xD4dcESjBz4" />
         <title>Science Undergraduate Society</title>
         <meta
@@ -70,7 +69,7 @@ export default function MyApp({ Component, pageProps }) {
           ],
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "604-822-4235"
+            "telephone": "604-822-4235",
             "contactType": "Abdul Ladha Front Desk"
           }
         }`}
