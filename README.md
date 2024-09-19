@@ -19,7 +19,7 @@ yarn dev
 | --------- | -------|------|
 | Home  | /  | Home/landing page |
 | Join Sus | /joinSus | Application/position\volunteer information |
-| Executives | /executives | Executives (VP + Prez) information |
+| Executives | /executives | Executives (VP + Prez) information | 
 | Budget | /budget | Budget information |
 | Code & Procedures | /codeProcedures | SUS Code & Procedures |
 | Upcoming Events | /events | All events under SUS (calendar) |
