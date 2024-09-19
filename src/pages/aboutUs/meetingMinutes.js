@@ -9,7 +9,7 @@ export default function MeetingMinutes() {
 
   const renderContent = () => {
     switch (activeTab) {
-      case "Presidential":
+        case "Presidential":
         return (
           <TabContent>
             <ul>
@@ -291,7 +291,7 @@ export default function MeetingMinutes() {
           <p>
             The meeting minutes are being updated periodically, click&nbsp;
             <Link
-              href="https://drive.google.com/drive/folders/15BWKf35JbSQ89E5jgRA6qY0zdco-iJtU?usp=sharing"
+              href="https://drive.google.com/drive/folders/1HK903ukA3FExwNjzvZU6oV9GcpxKJKCD"
               passHref
             >
               here
