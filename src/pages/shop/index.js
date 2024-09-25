@@ -140,7 +140,7 @@ export default function Shop() {
                             Crewneck
                         </FilterButton>
                         <FilterButton onClick={() => setSelectedType("")}>
-                            Reset Type
+                            All Styles 
                         </FilterButton>
                     </FilterBar>
                     
