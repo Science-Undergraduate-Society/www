@@ -97,12 +97,12 @@ export default function Home() {
               <EventsInfo>
                 <div style={ {marginBottom: "50px"} }>
                   <p>Take a look at our events calendar!</p>
-                  <ButtonHollowBlack><Link href="/calendar">Calendar</Link></ButtonHollowBlack>
+                  <ButtonHollowBlack><Link href="/ourEvents/upcoming">Calendar</Link></ButtonHollowBlack>
                 </div>
 
                 <div>
                   <p>For events organized by other science clubs, visit our list of associated clubs to find their social media.</p>
-                  <ButtonHollowBlack href="/clubs"><Link href="/clubs">Our Clubs</Link></ButtonHollowBlack>
+                  <ButtonHollowBlack><Link href="/aboutUs/clubs">Our Clubs</Link></ButtonHollowBlack>
                 </div>
               </EventsInfo>
 
@@ -170,7 +170,7 @@ export default function Home() {
             <Title>Abdul Ladha Science Student Centre</Title>
             <Description>The Abdul Ladha Science Student Centre (ALSSC) is the home of the Science Undergraduate Society. It exists as a social space to encourage both informal and organized academic, club, and social activities and interactions for those students enrolled in the Faculty of Science at UBC Vancouver.</Description>
             <div>
-              <ButtonHollowBlack><Link href="/bookings">Room Bookings</Link></ButtonHollowBlack>
+              <ButtonHollowBlack><Link href="/scienceStudentCentre/meetingBooking">Room Bookings</Link></ButtonHollowBlack>
             </div>
           </AlsscContent>
 
@@ -224,10 +224,10 @@ export default function Home() {
 
           <ShopInfo>
             <p style={{fontSize: "15px", color: "gray"}}>Shop</p>
-            <ShopTitle>Science themed merch that lets people know you’re special</ShopTitle>
+            <ShopTitle>Unique merch to rep the Faculty of Science at UBC!</ShopTitle>
             <ShopDescription>Every year, our sales team is tasked with creating unique UBC merch that shows off the faculty of science!</ShopDescription>
             <div>
-              <ButtonHollowBlack href="/shop">Shop Now</ButtonHollowBlack>
+              <ButtonHollowBlack><Link href="/shop">Shop Now</Link></ButtonHollowBlack>
             </div>
           </ShopInfo>
         </ShopSection>
