@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import ShopNavbar from "../../components/shop-components/ShopNavbar";
 import { Button } from "../../components/Reusable";
 import ShopFooter from "../../components/shop-components/ShopFooter";
+import Navbar from "@/components/Navbar";
 
 // List of all products
 const allProducts = [
@@ -112,7 +112,7 @@ export default function Shop() {
 
     return (
         <>
-            <ShopNavbar />
+            <Navbar />
             <Content>
                 <MainInfo>
                     <h2>Merch can be bought at Abdul Ladha during the following hours: </h2>
@@ -133,13 +133,13 @@ export default function Shop() {
                             <option value="sand">Sand</option>
                             <option value="white">White</option>
                         </Dropdown>
-                        <FilterButton onClick={() => setSelectedType("hoodie")}>
+                        <FilterButton selected={selectedType === "hoodie"} onClick={() => setSelectedType("hoodie")}>
                             Hoodie
                         </FilterButton>
-                        <FilterButton onClick={() => setSelectedType("crewneck")}>
+                        <FilterButton selected={selectedType === "crewneck"} onClick={() => setSelectedType("crewneck")}>
                             Crewneck
                         </FilterButton>
-                        <FilterButton onClick={() => setSelectedType("")}>
+                        <FilterButton selected={selectedType === ""} onClick={() => setSelectedType("")}>
                             All Styles 
                         </FilterButton>
                     </FilterBar>
@@ -199,7 +199,9 @@ const Container = styled.div`
 
 const FilterBar = styled.div`
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -228,6 +230,8 @@ const FilterButton = styled.button`
   background-color: transparent;
   font-size: 16px;
   cursor: pointer;
+
+  color: ${props => props.selected ? '#0173be' : 'black'};
 
   &:hover {
     text-decoration: underline;
