@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import ShopNavbar from "../../components/shop-components/ShopNavbar";
 import { Button } from "../../components/Reusable";
 import ShopFooter from "../../components/shop-components/ShopFooter";
+import Navbar from "@/components/Navbar";
 
 // List of all products
 const allProducts = [
@@ -112,16 +112,21 @@ export default function Shop() {
 
     return (
         <>
-            <ShopNavbar />
+            <Navbar />
             <Content>
+                {/* <Hero>
+
+                </Hero> */}
                 <MainInfo>
-                    <h2>Merch can be bought at Abdul Ladha during the following hours: </h2>
-                    <p>Thursdays: 2pm - 3pm</p>
-                    <p>Fridays: 11am - 12pm</p>
-                    <Contact>
-                        For any merch related questions, please reach out to our sales team at sales@sus.ubc.ca
-                    </Contact>
-                </MainInfo>
+                        <Title>SCIENCE UNDERGRADUATE SOCIETY MERCH SHOP</Title>
+                        
+                        <h2>Merch can be bought at Abdul Ladha during the following hours: </h2>
+                        <p>Thursdays: 2pm - 3pm</p>
+                        <p>Fridays: 11am - 12pm</p>
+                        <Contact>
+                            For any merch related questions, please reach out to our sales team at sales@sus.ubc.ca
+                        </Contact>
+                    </MainInfo>
 
                 <Container>
                     <FilterBar>
@@ -133,14 +138,14 @@ export default function Shop() {
                             <option value="sand">Sand</option>
                             <option value="white">White</option>
                         </Dropdown>
-                        <FilterButton onClick={() => setSelectedType("hoodie")}>
+                        <FilterButton selected={selectedType === "hoodie"} onClick={() => setSelectedType("hoodie")}>
                             Hoodie
                         </FilterButton>
-                        <FilterButton onClick={() => setSelectedType("crewneck")}>
+                        <FilterButton selected={selectedType === "crewneck"} onClick={() => setSelectedType("crewneck")}>
                             Crewneck
                         </FilterButton>
-                        <FilterButton onClick={() => setSelectedType("")}>
-                            Reset Type
+                        <FilterButton selected={selectedType === ""} onClick={() => setSelectedType("")}>
+                            All Styles 
                         </FilterButton>
                     </FilterBar>
                     
@@ -174,6 +179,39 @@ export default function Shop() {
     );
 }
 
+const Hero = styled.div`
+    
+`;
+
+const Title = styled.h1`
+    font-size: 50px;
+    color: #222755;
+`;
+
+const ShopGridContainer = styled.div`
+  display: flex;
+  width: 70%;
+
+  @media(max-width: 700px) {
+    width: 0%;
+  }
+`
+
+const ShopImage = styled.img`
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+`
+
+const Content = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 13rem;
+`;
+
 const MainInfo = styled.div`
     display: flex;
     flex-direction: column;
@@ -191,15 +229,17 @@ const Contact = styled.div`
 `;
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 `;
 
 const FilterBar = styled.div`
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -228,6 +268,8 @@ const FilterButton = styled.button`
   background-color: transparent;
   font-size: 16px;
   cursor: pointer;
+
+  color: ${props => props.selected ? '#0173be' : 'black'};
 
   &:hover {
     text-decoration: underline;
@@ -270,28 +312,10 @@ const ProductTitle = styled.p`
   margin: 10px 0;
 `;
 
-const Quanity = styled.p`
-  font-size: 16px;
-  margin: 10px 0;
-`;
-
 const ProductPrice = styled.p`
   font-size: 16px;
   color: #555;
   font-weight: bold;
-`;
-
-const Content = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  margin-top: 13rem;
-`;
-
-const StyledButton = styled(Button)`
-  margin-top: 1rem;
 `;
 
 const Description = styled.ul`
