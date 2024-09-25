@@ -183,46 +183,6 @@ const Hero = styled.div`
     
 `;
 
-const Title = styled.h1`
-    font-size: 50px;
-    color: #222755;
-`;
-
-const ShopGridContainer = styled.div`
-  display: flex;
-  width: 70%;
-
-  @media(max-width: 700px) {
-    width: 0%;
-  }
-`
-
-const ShopImage = styled.img`
-  width: 20%;
-  height: auto;
-  object-fit: cover;
-`
-
-const Content = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  margin-top: 13rem;
-`;
-
-const MainInfo = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    width: 100%;
-    padding-left: 40px;
-
-    margin-bottom: 3rem;
-`
-
 const Contact = styled.div`
     font-weight: bold;
     margin-top: 15px;
@@ -235,87 +195,9 @@ const Container = styled.div`
     padding: 20px;
 `;
 
-const FilterBar = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    gap: 20px;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #eaeaea;
-
-    @media(max-width: 500px) {
-        font-size: 10px;
-    }
-`;
-
-const Dropdown = styled.select`
-    padding: 10px 20px;
-    font-size: 16px;
-
-    @media(max-width: 500px) {
-        font-size: 15px;
-    }
-
-    @media(max-width: 500px) {
-        padding: 6px 10px;
-    }
-`;
-
-const FilterButton = styled.button`
-  border: none;
-  background-color: transparent;
-  font-size: 16px;
-  cursor: pointer;
-
-  color: ${props => props.selected ? '#0173be' : 'black'};
-
-  &:hover {
-    text-decoration: underline;
-  }
-
-    @media(max-width: 500px) {
-        font-size: 15px;
-    }
-`;
-
-const ProductGrid = styled.div`
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-  
-    @media(max-width: 1000px) {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    @media(max-width: 600px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-`;
-
-const ProductCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  padding: 10px;
-    text-align: left;
-`;
-
 const ProductImage = styled.img`
   width: 100%;
   height: auto;
-`;
-
-const ProductTitle = styled.p`
-  font-size: 16px;
-  margin: 10px 0;
-`;
-
-const ProductPrice = styled.p`
-  font-size: 16px;
-  color: #555;
-  font-weight: bold;
 `;
 
 const Description = styled.ul`
@@ -325,10 +207,166 @@ const Description = styled.ul`
   flex-direction: column;
 `;
 
+const Title = styled.h1`
+  font-size: 50px;
+  color: #222755;
+
+  @media(max-width: 768px) {
+    font-size: 40px;
+  }
+
+  @media(max-width: 480px) {
+    font-size: 30px;
+  }
+`;
+
+const ShopGridContainer = styled.div`
+  display: flex;
+  width: 70%;
+
+  @media(max-width: 700px) {
+    width: 100%;
+    flex-direction: column;
+  }
+`;
+
+const ShopImage = styled.img`
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+
+  @media(max-width: 768px) {
+    width: 50%;
+  }
+`;
+
+const Content = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 13rem;
+
+  @media(max-width: 768px) {
+    margin-top: 8rem;
+    padding: 0 10px;
+  }
+`;
+
+const MainInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  width: 100%;
+  padding-left: 40px;
+
+  margin-bottom: 3rem;
+
+  @media(max-width: 768px) {
+    padding-left: 20px;
+  }
+`;
+
+const FilterBar = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
+
+  @media(max-width: 500px) {
+    gap: 10px;
+    font-size: 12px;
+  }
+`;
+
+const Dropdown = styled.select`
+  padding: 10px 20px;
+  font-size: 16px;
+
+  @media(max-width: 500px) {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+`;
+
+const FilterButton = styled.button`
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  color: ${props => props.selected ? '#0173be' : 'black'};
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @media(max-width: 500px) {
+    font-size: 14px;
+  }
+`;
+
+const ProductGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  @media(max-width: 1000px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media(max-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media(max-width: 400px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;
+
+const ProductCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 10px;
+  text-align: left;
+
+  @media(max-width: 500px) {
+    padding: 5px;
+  }
+`;
+
+const ProductTitle = styled.p`
+  font-size: 16px;
+  margin: 10px 0;
+
+  @media(max-width: 500px) {
+    font-size: 14px;
+  }
+`;
+
+const ProductPrice = styled.p`
+  font-size: 16px;
+  color: #555;
+  font-weight: bold;
+
+  @media(max-width: 500px) {
+    font-size: 14px;
+  }
+`;
+
 const SizeQuantities = styled.div`
   margin-top: 10px;
   font-size: 14px;
   color: #333;
   display: flex;
   gap: 5px;
+
+  @media(max-width: 500px) {
+    font-size: 12px;
+  }
 `;
