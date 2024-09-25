@@ -198,17 +198,29 @@ const Container = styled.div`
 `;
 
 const FilterBar = styled.div`
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #eaeaea;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+
+    @media(max-width: 500px) {
+        font-size: 10px;
+    }
 `;
 
 const Dropdown = styled.select`
-  padding: 10px 20px;
-  font-size: 16px;
+    padding: 10px 20px;
+    font-size: 16px;
+
+    @media(max-width: 500px) {
+        font-size: 15px;
+    }
+
+    @media(max-width: 500px) {
+        padding: 6px 10px;
+    }
 `;
 
 const FilterButton = styled.button`
@@ -220,12 +232,24 @@ const FilterButton = styled.button`
   &:hover {
     text-decoration: underline;
   }
+
+    @media(max-width: 500px) {
+        font-size: 15px;
+    }
 `;
 
 const ProductGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  
+    @media(max-width: 1000px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media(max-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 `;
 
 const ProductCard = styled.div`
