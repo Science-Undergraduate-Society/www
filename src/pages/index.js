@@ -67,6 +67,7 @@ export default function Home() {
           </AboutCollageContainer>
           {/* <Image src="/images/index-images/Collage.jpg" alt="About Collage" width={500} height={300} /> */}
           <BottomColour></BottomColour>
+
           <AboutSection>
             <Who>
               <h2>Who We Are</h2>
@@ -256,40 +257,47 @@ const Content = styled.div`
   align-items: center;
 `;
 
-const ButtonFilledWhite = styled.button`
-  background-color: white;
-  color: #222755;
-  padding: 15px 20px;
-  border-radius: 30px;
-  border: 1px solid transparent;
-  cursor: pointer;
-  font-size: 0.8rem;
-  font-weight: 600;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+// const ButtonFilledWhite = styled.button`
+//   background-color: white;
+//   color: #222755;
+//   padding: 15px 20px;
+//   border-radius: 30px;
+//   border: 1px solid transparent;
+//   cursor: pointer;
+//   font-size: 0.8rem;
+//   font-weight: 600;
+//   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 
-  &:hover {
-    background-color: #222755;
-    color: white;
-    border: 2px solid white;
-  }
-`;
+//   &:hover {
+//     background-color: #222755;
+//     color: white;
+//     border: 2px solid white;
+//   }
+// `;
 
-const ButtonHollowWhite = styled.button`
-  background-color: transparent;
-  color: white;
-  padding: 15px 20px;
-  border-radius: 30px;
-  border: 1px solid white;
-  cursor: pointer;
-  font-size: 0.8rem;
-  font-weight: 600;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+// const ButtonHollowWhite = styled.button`
+//   background-color: transparent;
+//   color: white;
+//   padding: 15px 20px;
+//   border-radius: 30px;
+//   border: 1px solid white;
+//   cursor: pointer;
+//   font-size: 0.8rem;
+//   font-weight: 600;
+//   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 
-  &:hover {
-    background-color: white;
-    color: #222755;
-  }
-`;
+//   &:hover {
+//     background-color: white;
+//     color: #222755;
+//   }
+// `;
+
+// const ButtonGroup = styled.div`
+//   margin-top: 1.5rem;
+//   display: flex;
+//   gap: 20px;
+//   justify-content: left;
+// `;
 
 const ButtonHollowBlack = styled.button`
   background-color: transparent;
@@ -319,20 +327,13 @@ const Link = styled.a`
   color: inherit;
 `
 
-const ButtonGroup = styled.div`
-  margin-top: 1.5rem;
-  display: flex;
-  gap: 20px;
-  justify-content: left;
-`;
-
 // =============== HERO =============== //
 
 const Hero = styled.div`
   background-color: #222755;
   color: white;
   width: 100%;
-  height: 65vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -384,9 +385,9 @@ const AboutCollageContainer = styled.div`
   position: relative;
   width: 100%;
   height: auto;
-  max-height: 400px;
   background-color: #F7F5F2;
   overflow: hidden;
+  border: none;
 
   &::before {
     content: '';
@@ -403,15 +404,14 @@ const AboutCollageContainer = styled.div`
 const AboutCollage = styled.img`
   width: 100%;
   height: auto;
-  max-height: 400px;
   border: none;
   object-fit: cover;
-  background-color: #F7F5F2;
+  background-color: #222755;
 `
 
 const TopColour = styled.div`
   width: 100%;
-  height: 15vh;
+  height: 20vh;
   background-color: #222755;
   color: #222755;
 `
@@ -421,7 +421,7 @@ const BottomColour = styled.div`
   height: 15vh;
   background-color: #F7F5F2;
   color: #F7F5F2;
-  border-bottom: 1px solid #F7F5F2;
+  border: none;
 `
 
 const AboutSection = styled.div`
