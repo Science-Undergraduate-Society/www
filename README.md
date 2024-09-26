@@ -12,7 +12,7 @@ npm run dev
 # or
 yarn dev
 ```
- 
+  
 ## Pages/Routes
 
 | Page | Endpoint | Description |
