@@ -42,18 +42,30 @@ export default function BlueCard() {
                 <Partners>
                     <PartnerTitle>Our Partners</PartnerTitle>
                     <PartnersBox>
-                        <IndivPartnerInfo
-                            partnerName="Arbutus Station Dental"
-                            logoSrc="/images/bluecard-images/partner-logos/arbutus station dental.png"
-                            description="Free take-home teeth whitening kit with the completion 
-                            of a new patient exam and cleaning."
-                            location="Valid only at 2184 W Broadway #560, Vancouver, BC V6K 2E1"
+                    <IndivPartnerInfo
+                            partnerName="Susgrainable"
+                            logoSrc="/images/bluecard-images/partner-logos/susgrainable.png"
+                            description=""
+                            location="Valid at https://susgrainable.com/"
                         />
-                        <IndivPartner>
-                            <PartnerImgThin src="/images/bluecard-images/partner-logos/BAKD_Cookies_Logo.webp" /> 
-                            <PartnerNameThin>Bak&apos;d</PartnerNameThin>
-                            <Description>10% off</Description>
-                        </IndivPartner>
+                        <IndivPartnerInfo
+                            partnerName="Prestige Optical"
+                            logoSrc="/images/bluecard-images/partner-logos/prestigeOptical.jpg"
+                            description="Get 10% off prescription eyeglasses and sunglasses"
+                            location="2950 West Broadway, Vancouver, BC V6K 2G8"
+                        />
+                        <IndivPartnerInfo
+                            partnerName="Pita Pit"
+                            logoSrc="/images/bluecard-images/partner-logos/pitaPit.jpeg"
+                            description="Get 10% off menu items."
+                            location="5717 Dalhousie Rd, Vancouver, BC V6T 2H9"
+                        />
+                        <IndivPartnerInfo
+                            partnerName="Sushi Nova"
+                            logoSrc="/images/bluecard-images/partner-logos/sushiNova.png"
+                            description="Get 10% off all menu items except alcohol."
+                            location="2059 W 4th Ave Vancouver, BC V6J 1N3"
+                        />
                         <IndivPartnerInfo
                             partnerName="Chatime"
                             logoSrc="/images/bluecard-images/partner-logos/chatime-logo.webp"
@@ -81,19 +93,19 @@ export default function BlueCard() {
                         <IndivPartnerInfo
                             partnerName="Mosa"
                             logoSrc="/images/bluecard-images/partner-logos/Mosa logo.jpg"
-                            description="Use code SUS20 for 20% off all products"
+                            description=""
                             location="Valid only at www.wearemosa.com"
                         />
                         <IndivPartnerInfo
                             partnerName="Steve's Poke Bar"
                             logoSrc="/images/bluecard-images/partner-logos/Steve_s Poke Bar Logo.png"
-                            description="Use code SCHOOLSPB for $5 off first time app purchases"
+                            description=""
                             location="Valid at www.stevespokebar.ca"
                         />
                         <IndivPartnerInfo
-                            partnerName="StorageHotel"
+                            partnerName="Storagehotel"
                             logoSrc="/images/bluecard-images/partner-logos/Storagehotel Logo - Green Small.png"
-                            description="Mention SUS when signing up for the Summer 2025 waitlist for VIP Early Booking Access, which includes an exclusive code to skip the waitlist queue and a $50 discount."
+                            description="Mention SUS when signing up for the Summer 2025 waitlist for VIP Early Booking Access, which lets you skip the waitlist queue and save up to $50."
                             location="Valid at www.storagehotel.ca"
                         />
                         <IndivPartnerInfo
@@ -102,14 +114,6 @@ export default function BlueCard() {
                             description="Free access to Wizeprep's Monthly Subscription for the month of September 
                             then 15% off until August 2025 15% off Wizepreps MCAT Elite 515 Course and Self-Paced Program"
                             location="Valid at wizeprep.com"
-                        />
-                        <IndivPartnerInfo
-                            partnerName="Susgrainable"
-                            logoSrc="/images/bluecard-images/partner-logos/susgrainable.png"
-                            description="Use code BLUECARD to get 20% off their Banana Bread Mix, Chocolate Chip Cookie Mix, 
-                            Pancake & Waffle Mix, and Starter Bundle on their online store, or get $2 off the Banana Bread Mix, 
-                            Chocolate Chip Cookie Mix, and Pancake & Waffle Mix at their offline store"
-                            location="Valid at https://susgrainable.com/"
                         />
                         </PartnersBox>
                 </Partners>
