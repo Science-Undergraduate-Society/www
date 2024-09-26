@@ -80,7 +80,7 @@ export default function BlueCard() {
                         />
                         <IndivPartnerInfo
                             partnerName="Killer Ice Cream"
-                            logoSrc="/images/bluecard-images/partner-logos/Killer Ice Cream Logo.png"
+                            logoSrc="/images/bluecard-images/partner-logos/Killer-ice-cream.png"
                             description="Get $2 off regular sized cones."
                             location="Valid only at 3659 W 4th Ave, Vancouver, BC V6R 1P2"
                         />
