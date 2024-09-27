@@ -18,130 +18,93 @@ export default function OfficeHours() {
             <Day>
               <DayTitle>Monday</DayTitle>
               <TimeSlot>
-                <Name>Jenny</Name>
-                <PersonTitle>VP Internal</PersonTitle>
-                <Time>11:00am - 12:00pm</Time>
+                <Name>Chloe Chan</Name>
+                <PersonTitle>VP Finance</PersonTitle>
+                <Time>11:00am - 1:00pm</Time>
               </TimeSlot>
               <TimeSlot>
-                <Name>Brandon</Name>
-                <PersonTitle>President</PersonTitle>
-                <Time>12:00pm - 1:00pm</Time>
-              </TimeSlot>
-              <TimeSlot>
-                <Name>Haolin</Name>
-                <PersonTitle>Building Supervisor</PersonTitle>
-                <Time>1:00pm - 3:30pm</Time>
-              </TimeSlot>
-              <TimeSlot>
-                <Name>Allyssa</Name>
-                <PersonTitle>VP Communications</PersonTitle>
-                <Time>3:00pm - 4:00pm</Time>
-              </TimeSlot>
-              <TimeSlot>
-                <Name>Emily L</Name>
-                <PersonTitle>VP Admin</PersonTitle>
-                <Time>4:00pm - 5:00pm</Time>
+                <Name>Rachel Dong</Name>
+                <PersonTitle>VP External</PersonTitle>
+                <Time>1:00pm - 3:00pm</Time>
               </TimeSlot>
             </Day>
             <Day>
               <DayTitle>Tuesday</DayTitle>
               <TimeSlot>
-                <Name>Grace</Name>
+                <Name>Thomas McIlwraith</Name>
                 <PersonTitle>Building Supervisor</PersonTitle>
-                <Time>10:00am - 11:00am</Time>
-              </TimeSlot>
-              <TimeSlot>
-                <Name>Emily S.</Name>
-                <PersonTitle>VP Finance</PersonTitle>
-                <Time>12:00pm - 1:00pm</Time>
-              </TimeSlot>
-              <TimeSlot>
-                <Name>Huge</Name>
-                <PersonTitle>Building Supervisor</PersonTitle>
-                <Time>1:00pm - 3:30pm</Time>
+                <Time>1:00pm - 2:00pm</Time>
               </TimeSlot>
             </Day>
 
             <Day>
               <DayTitle>Wednesday</DayTitle>
               <TimeSlot>
-                <Name>Haolin</Name>
-                <PersonTitle>Building Supervisor</PersonTitle>
-                <Time>11:00am - 12:30pm</Time>
+                <Name>Chloe Chang</Name>
+                <PersonTitle>VP Finance</PersonTitle>
+                <Time>11:00am - 12:00pm</Time>
               </TimeSlot>
               <TimeSlot>
-                <Name>Robbie</Name>
-                <PersonTitle>
-                  Building Supervisor, Bookings and Building Staff
-                </PersonTitle>
-                <Time>12:30pm - 2:00pm</Time>
+                <Name>Katie Le</Name>
+                <PersonTitle>Building Manager</PersonTitle>
+                <Time>12:00pm - 1:00pm</Time>
               </TimeSlot>
               <TimeSlot>
-                <Name>Mona</Name>
-                <PersonTitle>Building Supervisor</PersonTitle>
-                <Time>2:00pm - 5:00pm</Time>
+                <Name>Chloe Chang</Name>
+                <PersonTitle>VP Finance</PersonTitle>
+                <Time>1:00pm - 2:00pm</Time>
               </TimeSlot>
             </Day>
 
             <Day>
               <DayTitle>Thursday</DayTitle>
               <TimeSlot>
-                <Name>Yvette</Name>
-                <PersonTitle>Building Supervisor</PersonTitle>
-                <Time>10:00am - 11:00am</Time>
-              </TimeSlot>
-              <TimeSlot>
-                <Name>David</Name>
-                <PersonTitle>Building Supervisor</PersonTitle>
-                <Time>11:00am - 12:30pm</Time>
-              </TimeSlot>
-              <TimeSlot>
-                <Name>Grace</Name>
-                <PersonTitle>Building Supervisor</PersonTitle>
+                <Name>Katie Le</Name>
+                <PersonTitle>VP Finance</PersonTitle>
                 <Time>11:00am - 12:00pm</Time>
               </TimeSlot>
               <TimeSlot>
-                <Name>Grace</Name>
-                <PersonTitle>Building Supervisor</PersonTitle>
+                <Name>Robbie Yang</Name>
+                <PersonTitle>Building Manager</PersonTitle>
+                <Time>12:00pm - 2:00pm</Time>
+              </TimeSlot>
+              <TimeSlot>
+                <Name>Insha Majeed</Name>
+                <PersonTitle>VP Communications</PersonTitle>
                 <Time>2:00pm - 3:00pm</Time>
               </TimeSlot>
               <TimeSlot>
-                <Name>Simrat</Name>
-                <PersonTitle>Building Supervisor</PersonTitle>
-                <Time>3:00pm - 4:00pm</Time>
-              </TimeSlot>
-              <TimeSlot>
-                <Name>Kaitlin</Name>
-                <PersonTitle>VP Student Life</PersonTitle>
-                <Time>4:00pm - 5:00pm</Time>
+                <Name>Salva Sherif</Name>
+                <PersonTitle>Science Student Senator</PersonTitle>
+                <Time>3:00pm - 5:00pm</Time>
               </TimeSlot>
             </Day>
 
             <Day>
               <DayTitle>Friday</DayTitle>
               <TimeSlot>
-                <Name>Jessica</Name>
-                <PersonTitle>Building Supervisor</PersonTitle>
-                <Time>10:00am - 11:00am</Time>
-              </TimeSlot>
-              <TimeSlot>
-                <Name>Grace</Name>
-                <PersonTitle>Building Supervisor</PersonTitle>
+                <Name>Insha Majeed</Name>
+                <PersonTitle>VP Communications</PersonTitle>
                 <Time>11:00am - 12:00pm</Time>
               </TimeSlot>
               <TimeSlot>
-                <Name>Manik</Name>
-                <PersonTitle>VP External</PersonTitle>
+                <Name>Christinah Soneye</Name>
+                <PersonTitle>VP Academic</PersonTitle>
                 <Time>12:00pm - 1:00pm</Time>
               </TimeSlot>
               <TimeSlot>
-                <Name>Trushaan</Name>
-                <PersonTitle>Building Supervisor</PersonTitle>
-                <Time>1:00pm - 3:00pm</Time>
+                <Name>Thomas MicIlwraith</Name>
+                <PersonTitle>VP Administration</PersonTitle>
+                <Time>1:00pm - 2:00pm</Time>
               </TimeSlot>
               <TimeSlot>
-                <Name>Jessica</Name>
-                <PersonTitle>Building Supervisor</PersonTitle>
+                <Name>Robbie Yang</Name>
+                <PersonTitle>Building Manager</PersonTitle>
+                <Time>2:00pm - 3:00pm</Time>
+              </TimeSlot>
+              <TimeSlot>
+                <Name>Savreen Sohi</Name>
+                <PersonTitle>VP Student Life</PersonTitle>
                 <Time>3:00pm - 5:00pm</Time>
               </TimeSlot>
             </Day>
