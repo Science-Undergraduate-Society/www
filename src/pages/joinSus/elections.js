@@ -16,10 +16,9 @@ export default function Elections() {
                 <p>Hello candidates! Use this page as a one-stop shop for all of your documents this election.</p>
 
                 <ImageContent>
-                <Image src="/images/elections-images/elect1.jpg" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
-                <Image src="/images/elections-images/elect4.jpg" width={350} height={233} style={{ margin: '20px'}}/> 
-                {/* <Image src={apply2} width={300} height={200} style={{ margin: '10px' }}/>  */}
-                <Image src="/images/elections-images/3.jpg" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                <Image src="/images/elections-images/elect1.JPG" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                <Image src="/images/elections-images/elect4.JPG" width={350} height={233} style={{ margin: '20px'}}/> 
+                <Image src="/images/elections-images/3.JPG" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
                 </ImageContent>
 
                 <h1>Elections Documentation</h1>
