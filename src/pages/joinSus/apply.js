@@ -23,9 +23,9 @@ export default function JoinSus() {
             <Content>
                 <JoinTitle>Apply <Span>To Join Today!</Span></JoinTitle>
                 <ImageContent>
-                <Image src="/images/apply-images/apply3.jpg" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                <Image src="/images/apply-images/apply3.JPG" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
                 <Image src="/images/apply-images/apply.jpg" width={350} height={233} style={{ margin: '20px'}}/> 
-                <Image src="/images/apply-images/apply4.jpg" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                <Image src="/images/apply-images/apply4.JPG" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
                 </ImageContent>
                 <h1>Join the <Span>Society</Span></h1>
                 <p>
@@ -33,7 +33,7 @@ export default function JoinSus() {
                 </p>
                 <EventCardsContainer>
                 <EventCard>
-                  <Image src="/images/apply-images/summer.jpg" alt="Description" width={500} height={300} />
+                  <Image src="/images/apply-images/summer.JPG" alt="Description" width={500} height={300} />
                   <h3>Summer Hiring</h3>
                   <p>Hiring is on going and applications are due May 23rd, 2024 at 11:59 PM. Click on &quot;More Info&quot; for a list of available positions as well as its corresponding CareerOnline links. Head to the Facebook event and Instagram post for further information and all the positions available.</p>
                   
@@ -59,7 +59,6 @@ export default function JoinSus() {
                 <ImageContent>
                 <Image src="/images/apply-images/apply8.png" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
                 <Image src="/images/apply-images/apply9.png" width={350} height={233} style={{ margin: '20px'}}/> 
-                {/* <Image src={apply2} width={300} height={200} style={{ margin: '10px' }}/>  */}
                 <Image src="/images/apply-images/apply10.png" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
                 </ImageContent>
 
@@ -72,9 +71,8 @@ export default function JoinSus() {
                 </ul>
 
                 <ImageContent>
-                <Image src="/images/apply-images/apply5.jpg" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                <Image src="/images/apply-images/apply5.JPG" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
                 <Image src="/images/apply-images/apply6.jpg" width={350} height={233} style={{ margin: '20px'}}/> 
-                {/* <Image src={apply2} width={300} height={200} style={{ margin: '10px' }}/>  */}
                 <Image src="/images/apply-images/apply7.jpg" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
                 </ImageContent>
 
