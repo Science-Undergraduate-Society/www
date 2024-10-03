@@ -9,27 +9,27 @@ export default function MeetingMinutes() {
 
   const renderContent = () => {
     switch (activeTab) {
-      case "Presidential":
+        case "Presidential":
         return (
           <TabContent>
             <ul>
               <li>
-                <a href="https://drive.google.com/drive/folders/1iJU8EJFKXZh4y4qGg5LtjWPfsexRiQZq">
+                <a href="https://drive.google.com/drive/folders/1HcNYhfI1OzK0asF3sKdBt_B1mPFU6hDq">
                   Projects Commission (PROJ)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1G__WjNx1VGMmKAh2NBqrSLUk4Fmx5IZK?usp=drive_link">
+                <a href=" https://drive.google.com/drive/folders/1J3qhhw-F4T-i8xXDNRmUfdlPFPOEOjhR">
                   Human Resources (HR)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1mmeWUmQQOL9Mdnqpnuq1NdStPWqkpB_Z?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/14QJRaZSH7OZ-etto8JUqDrDPhASviHez">
                   Science Caucus (SCIC)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1FATV57_csp5cOiJOEiPuz3omRXMTRMKU?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/10xGyvO4SIroabNsl8SOuwu56udDatPvu">
                   Extraordinary (EDI)
                 </a>
               </li>
@@ -41,23 +41,28 @@ export default function MeetingMinutes() {
           <TabContent>
             <ul>
               <li>
-                <a href="https://drive.google.com/drive/folders/13YA3z-MVwxXzVcYKVsL8Yk7O257UvvoK?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1Tg6w_RoeTEn98e8mRyfl_IrSNzLXsyze">
                   Clubs (CC)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1lMYRaGKjcfNfwcOwjDEyDmTZZ3hw7ceI?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/172JIrvNTaBp4s1ULCNB8gO5lJLnTiXfM">
                   Sustainability (SUST)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1hAEB4VQj0aa_jSo1mklfU651n4CYmfRC?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/14JbVjI7A9s7Q3Dy87AklQlkuo7e7NaBh">
                   Building Management
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1-SX9FnLvePHHejy_YlLttuNtvC2GC3vN?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1uO7ZIzhdEakbxVtuMMlBrNwash17i6S4">
                   Code and Policy
+                </a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/drive/folders/1Ks9-ooAccyJhh5dEJoKOMYf-zJvPhaOI">
+                  Administrative Assistants
                 </a>
               </li>
             </ul>
@@ -68,27 +73,27 @@ export default function MeetingMinutes() {
           <TabContent>
             <ul>
               <li>
-                <a href="https://drive.google.com/drive/folders/1-Pqt5xs4g5bpAD8HcQ6-qkZSuIvN2kQA?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1Us_G_f8z3VKpfc3ly6YdXnXx94fk8fyQ">
                   Health and Wellness
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1BPjxYmbxrTK8GvtD-ADuOvbhYrmU7McB?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/192fVkE8z20INHv629tbGh-_MHkztpXZV">
                   Academic Experience
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1sUOyZqGTPhMIeBG0dzmKGNj_5jmisQcF?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1c5wUJB_1AqzxumwKn-kc5JP3Wprvpc3A">
                   Mental Health and Advocacy
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1LXHnwm7QN5WO5LoakzZpS7NUKE5a50VM?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1ba-oUXfjtJhpQZLH-PoP1rIXiG4w98p2">
                   Academic Standing
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/11WJ1lgX2ROe-WStSy74ptm6R9iiF0oFh?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1fkFk36QsvzupapCk0CTzNrDsERiHdfUR">
                   Mentorship
                 </a>
               </li>
@@ -99,33 +104,38 @@ export default function MeetingMinutes() {
         return (
           <TabContent>
             <ul>
+            <li>
+                <a href="https://drive.google.com/drive/folders/1mdzhIur44fABSgBLKZ37z9wEGDHJHNOq">
+                  AVP
+                </a>
+              </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1ephHmD1Fli36vS4OR-8nzupgSwSwe49e?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/19jipK9A-hA9JoVOh-bcm5eI1NtFByxVH">
                   Visual Media
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1xiGLePKChqy13RYo74zMv2168q5TR6bs?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/14wDa0OIaJXns4MG4BzGotKAaefxIEsrB">
                   Marketing
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1pu06CWB2dg4xKoCsi7HzCv0kPadyuXNC?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1TJBBUdCJ67u4v0WSmNdbC8RqgVIU9UHf">
                   Sales
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1nwx3lUw1qtMATWwiITBubIz0gwsJvHBa?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1nIbXRxf1hJG9s5KsX67G86atpNsUBG2B">
                   First Week
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1TjcwjtiX-b01f1sc3GKwlNnSmcUOZwZp?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1WjjlA3iP1IzNtnvVFYX9UEDtWSvb0-ed ">
                   Web
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/19wjb1fUCnqgt2UST0BBXEulfVSQ7IhHy?usp=drive_link">
+                <a href=" https://drive.google.com/drive/folders/1GsLp8v7GgrSpNwMZ2Pnr3xmlI_9ChgE5">
                   Productions
                 </a>
               </li>
@@ -137,27 +147,27 @@ export default function MeetingMinutes() {
           <TabContent>
             <ul>
               <li>
-                <a href="https://drive.google.com/drive/folders/1X2uYpo2EFkSEGaNg6GnNzZhho8xp39R2?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1wx9a0m0iAw0-COiQzSfTEkUo44AWTxEt">
                   Student Benefits
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1vp0pMpTt5ALhnOxLnp2HvZb4P8JJs9cH?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/113SFs8wDxcr1JdWH04riMDm3LdJLncE5">
                   Careers and Professional Development
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1jai5KaOCLdqodkVEPAupub9LiTrAmSXL?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1LfWOZ_ZAN--kbdvHsLQ4_NfgIGXVu2MM">
                   Corporate Relations
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1C2JurgKFWTfF-7IRKgwZmHs-dkvMG3To?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1Pe5_MgaEqDFM0pwluV6sQgW5CUjEhAsb">
                   Community Engagement
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1BAOHQv7sxzj7D7KdYjCuVPnVn6O5a43P?usp=drive_link">
+                <a href=" https://drive.google.com/drive/folders/10a_EcZY2U7N4zCMGyP2pizfengdMAwAj">
                   External Standing
                 </a>
               </li>
@@ -169,17 +179,12 @@ export default function MeetingMinutes() {
           <TabContent>
             <ul>
               <li>
-                <a href="https://drive.google.com/drive/folders/1aSYIntStgwzN1ePRQ8QRorBfVsEfA3bK?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1pHuDCHQHN9OFutVuses_nLCZlf6KUBQB">
                   Finance
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/167Es2bhAlxASbp-UR81qdAQS_2IQM-L2?usp=drive_link">
-                  Budget
-                </a>
-              </li>
-              <li>
-                <a href="https://drive.google.com/drive/folders/14tXQT5upSw8uYf3oXobfBSGsKuSxtR3p?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1aq6ZX97bGrpxv_nNL6empJDmot_6x4ET">
                   Grants
                 </a>
               </li>
@@ -191,8 +196,8 @@ export default function MeetingMinutes() {
           <TabContent>
             <ul>
               <li>
-                <a href="https://drive.google.com/drive/folders/1aGzeqRSq_V_z4uP20NFrm3KE6i1g1nDD?usp=drive_link">
-                  Internal
+                <a href="https://drive.google.com/drive/folders/1I_Gm7yhpvr2KwddwYAM0nV_sCH3cbNhz">
+                  Internal Committee
                 </a>
               </li>
               <li>
@@ -201,17 +206,17 @@ export default function MeetingMinutes() {
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1GjnmfvxJRt3-aUkxRD-2IYMvN5CRikm8?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1r9sAewRcWpUU6AYsV_MTZQcFOfkSfR90">
                   Elections Administration
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1EpDXMKGeNbaEZtBBk1TUAbti7B7naKXF?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1ZbWUJHPTsRUyB1aO_SLQiHaz1bbxVmUj">
                   First Year Committee
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/17wZ7A81I9_Mx8VrR33IPcMzqCkjTEhGr?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1DZwms1ujwEVvo2QY53XOKFl6aVlb7AYa">
                   Internal Coordinators
                 </a>
               </li>
@@ -223,32 +228,32 @@ export default function MeetingMinutes() {
           <TabContent>
             <ul>
               <li>
-                <a href="https://drive.google.com/drive/folders/1htL2iQRrxN9bOZSl8evegd_sMLd1Uu0B?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1z4W7MZyre3KFVP2ZDXu1oJF0ZiDVqbZU">
                   Science Graduation
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1qvzs_7T8TNCzE448F2IiqlPENG1iecTr?usp=drive_link">
+                <a href=" https://drive.google.com/drive/folders/1NMMXn60ZQygR1_9dLFjKIwijf-fxCstO">
                   Science Week
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1wh4sviWehS8eHy3ybFNFgYWm_h8YVE33?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1cYehUdzK6FY3Twg0TSbHsHTJY7PwKqoq">
                   Science RXN
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1IoRdu7CCh1Iwq_HIfZ7rEaFzTU5OosF1?usp=drive_link">
+                <a href="https://drive.google.com/drive/folders/1QesXbUK1S7xH7mfl7N4Uza0xPnUlbZA2">
                   Student Life Standing
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/19O4fmdGXoMlTctR3myNUmbkIY9fZ6v3g?usp=drive_link">
+                <a href=" https://drive.google.com/drive/folders/126UrXYrvHDqpoc2caNUajvabv4J2NYzr">
                   Social
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1813Ukgly6wyum_jU115_8BcdLFucx-ds?usp=drive_link">
+                <a href=" https://drive.google.com/drive/folders/1VF_Scvw3UQKR6is4J9cww6XdyjrMhmthk">
                   Sports
                 </a>
               </li>
@@ -291,7 +296,7 @@ export default function MeetingMinutes() {
           <p>
             The meeting minutes are being updated periodically, click&nbsp;
             <Link
-              href="https://drive.google.com/drive/folders/15BWKf35JbSQ89E5jgRA6qY0zdco-iJtU?usp=sharing"
+              href="https://drive.google.com/drive/folders/1jw4LXwj2FEeMkmXGjA96YG99n_yPsJjS"
               passHref
             >
               here
@@ -310,7 +315,7 @@ export default function MeetingMinutes() {
           <p>
             The meeting minutes are being updated periodically, click&nbsp;
             <Link
-              href="https://drive.google.com/drive/folders/1ZE8GxRhwcguAxVW3JUkaGG3XEJuwgffa?usp=drive_link"
+              href="https://drive.google.com/drive/folders/1HK903ukA3FExwNjzvZU6oV9GcpxKJKCD"
               passHref
             >
               here
