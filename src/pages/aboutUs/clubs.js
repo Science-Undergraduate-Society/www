@@ -66,7 +66,7 @@ export default function Clubs() {
                     links={[]}
                   />
                   <ClubRow
-                    // logoSrc=
+                    logoSrc="/images/club-images/BIOSOC.webp"
                     clubName="Biological Sciences Society (BIOSOC)"
                     description="The UBC Biological Sciences Society (BIOSOC) is a student run organization that has been continuously growing for decades. What started as a small group of students who wanted to hold social events has become one of the largest science societies on campus. We always strive to provide resources to students in all years of their undergraduate studies that will further their education and career paths, while holding social events that will allow both students and staff a chance to meet outside a classroom setting."
                     links={[
@@ -85,7 +85,7 @@ export default function Clubs() {
                     ]}
                   />
                   <ClubRow
-                    // logoSrc="path*to*"
+                    logoSrc="/images/club-images/bcitbiotech.webp"
                     clubName="Biotechnology Club"
                     description="The UBC Biotechnology Club supports the students of the Honours in Biotechnology program by hosting events that are catered towards networking, resume writing, and community engagement. As a team, we also collaborate with other clubs in order to bring our events to a larger audience."
                     links={[]}
@@ -146,7 +146,7 @@ export default function Clubs() {
                     ]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_"
+                    logoSrc="/images/club-images/GSA.webp"
                     clubName="Geography Students' Association"
                     description="Hello! We are the Geography Students’ Association and we run events that range from lunches with the Department Head and professors to guest presentations with professionals working in sustainability to our infamous bzzr gardens & trivia nights. We also publish the undergraduate journal “Trail Six”, run the GeoGarden, and celebrate the end of the year with a bang with our annual Geogala"
                     links={[]}
@@ -303,13 +303,13 @@ export default function Clubs() {
                     ]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_biochem_club_logo"
+                    logoSrc="/images/club-images/BPP.jpg"
                     clubName="Biochemistry Pharmacology Physiology Club (BPP)"
                     description="BPP is a student led club at UBC and is committed to informing students about the disciplines of Biochemistry, Pharmacology and Physiology, all of which are the fundamental basis of medicine. Throughout the school year, BPP hosts different events and mentorship programs to aid with informing current and prospective students in these majors. These events often focus on educating students about co-op and research opportunities, academics, as well as continuing to professional schools such as medicine, dentistry etc. Finally, BPP also collaborates with other clubs and the faculty of science to help host multiple events such as Three Minute Thesis and Life Science Research Night. Find more information in bppubc.com"
                     links={[]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_"
+                    logoSrc="/images/club-images/BPSS.png"
                     clubName="Biophysics Student Society (BPSS)"
                     description="No blurb yet!"
                     links={[]}
@@ -330,7 +330,7 @@ export default function Clubs() {
                     ]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_"
+                    logoSrc="/images/club-images/CMSSA.webp"
                     clubName="Combined Major in Science Student Association (CMSSA)"
                     description="CMSSA is a student-led organization that aims to bring together students within the Combined Major in Science department through social, academic, and research events. Our goal is to enrich the undergraduate experience of CMS students by creating a community that takes pride in their program, while also providing an avenue for students to engage with each other over the course of their studies."
                     links={[
@@ -349,7 +349,7 @@ export default function Clubs() {
                     ]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_"
+                    logoSrc="/images/club-images/ESSA.png"
                     clubName="Environmental Science Students Association (ESSA)"
                     description="The Environmental Sciences Students’ Association (ESSA) is a student club representing the Environmental Sciences program at UBC. We are dedicated to bringing together people with a passion for the environment. We organize social events for students to get to know each other, host alumni nights and career conferences with professionals, organize study sessions for the program’s core courses, and take part in events promoting public awareness of environmental issues."
                     links={[]}
@@ -393,13 +393,13 @@ export default function Clubs() {
                     ]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_"
+                    logoSrc="/images/club-images/PCSA.webp"
                     clubName="Pharmacology and CAPS Student Association"
                     description="We are a passionate group of students dedicated to supporting students who are in, wanting to get in, or just interested in learning about pharmacology and CAPS through both academic and social resources. Throughout the year, we will be hosting social, mentorship, research, and speaker events. Our diverse team consists of students from all years, so please reach out if you have any questions and we will be happy to help you answer them."
                     links={[]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_"
+                    logoSrc="/images/club-images/SCOOPS.jpg"
                     clubName="Science Co-op Students Association (SCOOPS)"
                     description="No blurb yet!"
                     links={[]}
@@ -441,13 +441,13 @@ export default function Clubs() {
               <ColumnContainer>
                 <Column>
                   <ClubRow
-                    // logoSrc="path_to_ams_autism"
+                    logoSrc="/images/club-images/AMS_AutismAssociatesClub.jpg"
                     clubName="AMS Autism Associates Club"
                     description="Welcome to the Autism Associates Club! Here, we gather and pursue our learning about the field of autism spectrum disorder, along with the current research and events related to it! We learn through seminars and presentations enacted by each member (yes, you included!) but also medical students with current research topics in regards to ASD! In junction with organizations such as AutismBC and VASS, we plan events for the ASD community, so come join now!"
                     links={[]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_biochem_club_logo"
+                    logoSrc="/images/club-images/MedicalGenetics.webp"
                     clubName="AMS Medical Genetics"
                     description="Welcome to the AMS Medical Genetic Club! We’re a community dedicated to staying up to date with the latest advancements in medical genetics. Our objectives include discussing current topics, presenting cutting-edge research, and fostering ethical awareness. Previous events include Science Trivia Night for Charity, National Genetics Symposium, and Genetics Career Panel. Join us as we explore the exciting world of medical genetics together!"
                     links={[
@@ -496,7 +496,7 @@ export default function Clubs() {
                     ]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_"
+                    logoSrc="/images/club-images/CLF.webp"
                     clubName="Canadian Liver Foundation (CLF)"
                     description="No Blurb Yet!"
                     links={[]}
@@ -560,7 +560,7 @@ export default function Clubs() {
                     ]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_"
+                    logoSrc="/images/club-images/Operation_Smile.webp"
                     clubName="Operation Smile"
                     description="Every three minutes, a child is born with a cleft lip and/or cleft palate. But you can make a difference. UBC Operation Smile is dedicated to educating the community about the importance of access to safe surgery and the basic right to healthcare while increasing awareness of the prevalence of cleft lip and cleft palate among children in lower-to-middle income countries. In partnership with the global non-profit organization, Operation Smile Canada, we organize service projects such as making smile dolls to accompany children who will be undergoing cleft lip and cleft palate surgery and hosting speaker symposiums for the community to participate and learn more about cleft palate and safe surgery while also interacting with medical and dental professionals. Join Us in Changing Lives One Smile at a Time!"
                     links={[
@@ -598,7 +598,7 @@ export default function Clubs() {
                     ]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_"
+                    logoSrc="/images/club-images/Pre-Optometry.jpg"
                     clubName="Pre-Optometry Club"
                     description="We are the group of people who LOVE eyes! Since 1994 we have been connecting students to Optometry schools across North America through info sessions"
                     links={[]}
@@ -619,7 +619,7 @@ export default function Clubs() {
                     ]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_"
+                    logoSrc="/images/club-images/URO.webp"
                     clubName="Undergraduate Research Opportunities (URO)"
                     description="We are a student-led club dedicated to connecting undergraduate students with multidisciplinary research opportunities. We offer programs, events, and research-related services for students of all faculties and experience levels. Some of our most popular events and programs include the Research EXperience mentorship program, Life Sciences Research Night, and Canadian Journal of Undergraduate Research. Whether it’s getting your foot in the door, finding a summer lab job, or getting a manuscript published, we’re here to help!"
                     links={[]}
@@ -655,7 +655,7 @@ export default function Clubs() {
                     links={[]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_unbounded_logo"
+                    logoSrc="/images/club-images/unboundED.webp"
                     clubName="AMS unboundED"
                     description="AMS unboundED provides science and arts workshops to elementary schools to spark curiosity and reduce uncertainty in career paths."
                     links={[]}
@@ -684,19 +684,19 @@ export default function Clubs() {
                     ]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_cancer_association_logo"
+                    logoSrc="/images/club-images/Cancer_Association.webp"
                     clubName="Cancer Association"
                     description="The Cancer Association promotes cancer awareness, organizes events, and supports those affected by cancer at UBC."
                     links={[]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_hsf_logo"
+                    logoSrc="/images/club-images/HSF.jpg"
                     clubName="Heart and Stroke Foundation Club (HSF)"
                     description="HSF promotes cardiovascular health and wellness through volunteering, fundraising, and awareness campaigns at UBC."
                     links={[]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_multiple_sclerosis_club_logo"
+                    logoSrc="/images/club-images/MS.png"
                     clubName="Multiple Sclerosis Club"
                     description="The UBC Multiple Sclerosis Club raises awareness of MS through volunteering, social, and fundraising opportunities."
                     links={[]}
@@ -762,7 +762,7 @@ export default function Clubs() {
                     ]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_pre_medical_society_logo"
+                    logoSrc="/images/club-images/Pre-Med.png"
                     clubName="Pre-Medical Society"
                     description="The UBC Pre-Medical Society supports students interested in medical school through networking, information sessions, and involvement opportunities."
                     links={[]}
@@ -806,7 +806,7 @@ export default function Clubs() {
                     ]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_women_in_science_logo"
+                    logoSrc="/images/club-images/WIS.webp"
                     clubName="Women in Science"
                     description="The UBC Women in Science Club provides mentorship, networking, and professional development for female undergraduates in science fields."
                     links={[]}
