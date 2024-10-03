@@ -45,14 +45,14 @@ const eventsArray =
     //   image: "/images/events-images/welcome-back-bbq.jpg",
     //   link: "https://www.instagram.com/p/C_OdMifSqwW/"
     // },
-    {
-      title: "Science RXN", 
-      date: "September 14, 2024 - September 15, 2024",
-      location: "",
-      description: "A two day event geared toward incoming first year science students to help them build community, meet new people, and help them integrate into university",
-      image: "/images/events-images/scirxn.webp",
-      link: "/events"
-    },
+    // {
+    //   title: "Science RXN", 
+    //   date: "September 14, 2024 - September 15, 2024",
+    //   location: "",
+    //   description: "A two day event geared toward incoming first year science students to help them build community, meet new people, and help them integrate into university",
+    //   image: "/images/events-images/scirxn.webp",
+    //   link: "/events"
+    // },
   ];
 
   export default eventsArray;

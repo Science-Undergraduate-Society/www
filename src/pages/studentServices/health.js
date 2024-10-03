@@ -16,7 +16,7 @@ export default function HealthAndWellness() {
           <Text>
             If you or someone you know is in imminent danger, call {' '}
             <Link href="tel:911">911</Link>.
-          </Text>x
+          </Text>
 
           <Text>
             If you or someone you know is contemplating suicide, call the{' '}

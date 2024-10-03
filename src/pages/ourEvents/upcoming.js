@@ -9,11 +9,11 @@ export default function Events() {
             <Navbar/>
             <Container>
                 <EventContainer>
-                    <EventTitle><b>Upcoming Events 📕</b></EventTitle>
+                    {/* <EventTitle><b>Upcoming Events 📕</b></EventTitle>
                     <StyledIframe 
                         src="https://open-web-calendar.hosted.quelltext.eu/calendar.html?url=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fical%2Fwebmaster%2540sus.ubc.ca%2Fpublic%2Fbasic.ics"
                         allowFullScreen
-                    />
+                    /> */}
                     <br/><br/>
                     <EventTitle><b>Flagship Events 🚩</b></EventTitle>
                     <SubtitleContainer>
