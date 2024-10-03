@@ -1,19 +1,6 @@
 import styled from "styled-components";
-import Link from 'next/link';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-// import apply1 from "../../../public/images/apply-images/apply.jpg"
-// // import apply2 from "../../../public/images/apply-images/apply2.jpg"
-// import apply3 from "../../../public/images/apply-images/apply3.jpg"
-// import apply4 from "../../../public/images/apply-images/apply4.jpg"
-// import apply5 from "../../../public/images/apply-images/apply5.jpg"
-// import apply6 from "../../../public/images/apply-images/apply6.jpg"
-// import apply7 from "../../../public/images/apply-images/apply7.jpg"
-// import apply8 from "../../../public/images/apply-images/apply8.png"
-// import apply9 from "../../../public/images/apply-images/apply9.png"
-// import apply10 from "../../../public/images/apply-images/apply10.png"
-// import fall from "../../../public/images/apply-images/fall.jpg"
-// import summer from "../../../public/images/apply-images/summer.jpg"
 import Image from "next/image";
 export default function JoinSus() {
     return (
@@ -44,7 +31,7 @@ export default function JoinSus() {
                 <EventCard>
                   <Image src="/images/apply-images/fall.jpg" alt="Description" width={500} height={300} />
                   <h3>Fall Hiring</h3>
-                  <p>General committee positions are hired in the fall, in early September. To apply, look for our Facebook event typically named “SUS Fall Hiring 20XX” around early September. Again, a cover letter and resume are submitted.  No prior experience is needed!</p>
+                  <p>General committee positions are hired in early September! To apply, follow our <Span href="https://instagram.com/susubc">Instagram </Span> and check our linktree for hiring information closer to the dates. A cover letter and resume will be required and submitted to CareersOnline. No prior experience is needed!</p>
                   
                   <Span href="https://www.facebook.com/susubc/">More Info &gt;</Span>
                 </EventCard>
@@ -53,7 +40,7 @@ export default function JoinSus() {
                 <h1>Join the <Span>Student Council</Span></h1>
                 <p>The election process is relatively simple: get signatures and become nominated, campaign for votes, and then… get voted in!</p>
                 <p>
-                    If you are interested in representing your major, click <a href="http://sus.ubc.ca/" target="_blank" rel="noopener noreferrer">here</a> to learn about each department!
+                    If you are interested in representing your major, check out the <a href="https://www.instagram.com/sus.elections/" target="_blank" rel="noopener noreferrer">SUS elections instagram </a> to learn more!
                 </p>
 
                 <ImageContent>
