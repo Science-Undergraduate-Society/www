@@ -248,12 +248,12 @@ export default function MeetingMinutes() {
                 </a>
               </li>
               <li>
-                <a href=" https://drive.google.com/drive/folders/126UrXYrvHDqpoc2caNUajvabv4J2NYzr">
+                <a href="https://drive.google.com/drive/folders/126UrXYrvHDqpoc2caNUajvabv4J2NYzr">
                   Social
                 </a>
               </li>
               <li>
-                <a href=" https://drive.google.com/drive/folders/1VF_Scvw3UQKR6is4J9cww6XdyjrMhmthk">
+                <a href="https://drive.google.com/drive/folders/1VF_Scvw3UQKR6is4J9cww6XdyjrMhmth">
                   Sports
                 </a>
               </li>
