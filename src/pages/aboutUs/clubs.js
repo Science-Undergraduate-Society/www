@@ -856,8 +856,10 @@ const ColumnContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  // height: 100vh; /* Ensure there's enough height to center items vertically */
-  // border: 1px solid #000; /* For visual debugging */
+  @media (max-width: 768px) {
+    /* Adjust breakpoint as needed */
+    flex-direction: column; /* Stack columns vertically on small screens */
+  }
 `;
 const Column = styled.div`
   flex: 1;
@@ -865,6 +867,13 @@ const Column = styled.div`
   border-left: 1px solid #ccc;
   &:first-child {
     border-left: none;
+  }
+
+  @media (max-width: 768px) {
+    /* Ensure columns take full width when stacked */
+    width: 100%; /* Set width to 100% for stacked columns */
+    border-left: none; /* Remove left border on stacked columns for better appearance */
+    margin-bottom: 8px; /* Add spacing between stacked columns */
   }
 `;
 
@@ -893,6 +902,10 @@ const Tab = styled.div`
   font-weight: bold;
   background-color: ${(props) => (props.isActive ? "#2c3e50" : "#ffffff")};
   color: ${(props) => (props.isActive ? "#ffffff" : "#333")};
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const TabActive = styled(Tab)``;
@@ -901,6 +914,10 @@ const TableContent = styled.div`
   display: flex;
   padding: 16px;
   background-color: #ffffff;
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* Stack rows vertically on small screens */
+  }
 `;
 
 const Row = styled.div`
@@ -908,6 +925,11 @@ const Row = styled.div`
   align-items: center;
   margin-bottom: 16px;
   flex-shrink: 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* Stack elements in each row vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
 `;
 
 const Logo = styled.img`
