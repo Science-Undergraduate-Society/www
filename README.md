@@ -16,7 +16,7 @@ yarn dev
 ## Pages/Routes
 
 | Page | Endpoint | Description |
-| --------- | -------|------|
+| --------- | -------|------| 
 | Home  | /  | Home/landing page |
 | Join Sus | /joinSus | Application/position\volunteer information |
 | Executives | /executives | Executives (VP + Prez) information | 
