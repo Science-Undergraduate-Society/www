@@ -152,7 +152,7 @@ export default function Clubs() {
                     links={[]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_"
+                    logoSrc="/images/club-images/iGEM-Logo.webp"
                     clubName="International Genetically Engineered Machines (iGEM)"
                     description="The International Genetically Engineered Machines (iGEM) Competition is an annual research experience in which teams dedicate themselves to the goal of producing organisms with new or unusual properties to tackle modern problems and evolve the field of synthetic biology. This experience leads students to think creatively about modern biology while gaining a wide range of technical skills. Outside of the lab, teams are also expected to assess the ethical and societal implications of their technology, network with industry professionals and engage in outreach activities with the local community. Other components of the project include hardware, software, finance and design. UBC has been participating in iGEM since 2009 and has consistently received gold medal awards for their projects."
                     links={[
@@ -420,7 +420,7 @@ export default function Clubs() {
                     ]}
                   />
                   <ClubRow
-                    // logoSrc="path_to_"
+                    logoSrc="/images/club-images/USS-Logo.webp"
                     clubName="Undergraduate Statistic Society (USS)"
                     description="The Undergraduate Statistics Society (USS) is a student-led group with a mission to actively encourage the study and application of statistics within our campus and community. Our primary objective is to enrich the academic journey of undergraduate students majoring in statistics and data science by organizing a diverse range of events. These include informative DSCI 100 Review sessions, engaging career nights, and enjoyable social gatherings such as games nights and themed events like Halloween night. Our aim is to create a supportive and vibrant environment that enhances the overall undergraduate experience for students interested in statistics and data science."
                     links={[
