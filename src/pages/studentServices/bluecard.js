@@ -87,7 +87,7 @@ export default function BlueCard() {
                         <IndivPartnerInfo
                             partnerName="Majestic Maven"
                             logoSrc="/images/bluecard-images/partner-logos/majestic-maven-14.jpg"
-                            description="25% off all services during September, then 20% discount on all services until August 2025"
+                            description=""
                             location="Valid only at 1236 Richards St, Vancouver, BC V6B 6M6"
                         />
                         <IndivPartnerInfo
@@ -111,9 +111,26 @@ export default function BlueCard() {
                         <IndivPartnerInfo
                             partnerName="Wizeprep"
                             logoSrc="/images/bluecard-images/partner-logos/wizeprep logo.png"
-                            description="Free access to Wizeprep's Monthly Subscription for the month of September 
-                            then 15% off until August 2025 15% off Wizepreps MCAT Elite 515 Course and Self-Paced Program"
+                            description=""
                             location="Valid at wizeprep.com"
+                        />
+                        <IndivPartnerInfo
+                            partnerName="Delhi 6 Indian Bistro"
+                            logoSrc="/images/bluecard-images/partner-logos/delhi.png"
+                            description="Get 15% off all food items (not applicable to drinks)."
+                            location="1766 W 7th Ave, Vancouver, BC V6J 4T3"
+                        />
+                        <IndivPartnerInfo
+                            partnerName="Pearl Fever"
+                            logoSrc="/images/bluecard-images/partner-logos/pearl.png"
+                            description="Get 10% off mobile app purchases."
+                            location="2182 Western Pkwy, Vancouver, BC V6T 1W6"
+                        />
+                        <IndivPartnerInfo
+                            partnerName="Hullo Ferries"
+                            logoSrc="/images/bluecard-images/partner-logos/hullo.svg"
+                            description="Get the corporate rate on your next trip between Vancouver and Nanaimo."
+                            location="Valid at hullo.com"
                         />
                         </PartnersBox>
                 </Partners>
