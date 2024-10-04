@@ -18,10 +18,10 @@ export default function Budget() {
           </p>
 
           <Link
-            href="https://docs.google.com/spreadsheets/d/1gMAKiTjGMW_h-NAvXkJO8jjM-l7KqC1J0xCP1hdRW80/edit?gid=233773177#gid=233773177"
+            href="https://docs.google.com/spreadsheets/d/1wG0j87hcq3qMozuOmajBFcDe5VX3q59m-PKoudzG2Gg/edit?usp=sharing"
             passHref
           >
-            <StyledButton>2023/2024 Budget</StyledButton>
+            <StyledButton>2024/2025 Budget</StyledButton>
           </Link>
 
           <SpacingDiv></SpacingDiv>
