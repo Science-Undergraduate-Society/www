@@ -15,7 +15,7 @@ yarn dev
   
 ## Pages/Routes
 
-| Page | Endpoint | Description |
+| Page | Endpoint | Description | 
 | --------- | -------|------| 
 | Home  | /  | Home/landing page |
 | Join Sus | /joinSus | Application/position\volunteer information |
