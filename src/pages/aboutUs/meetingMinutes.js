@@ -276,7 +276,8 @@ export default function MeetingMinutes() {
             All SUS meetings are open to Science students to attend unless
             otherwise stated. All meeting minutes on the present website are
             updated for the 2023/2024 academic year. If you wish to access the
-            meeting minutes of previous years, please email our VP Admin at&nbsp;
+            meeting minutes of previous years, please email our VP Admin
+            at&nbsp;
             <Link href="mailto:vpadministration@sus.ubc.ca" passHref>
               vpadministration@sus.ubc.ca
             </Link>
@@ -286,11 +287,11 @@ export default function MeetingMinutes() {
           <h3>Council Meeting Minutes</h3>
 
           <p>
-            Council normally runs every Tuesday on a bi-weekly schedule beginning
-            from 6:30 PM at the Micheal Kingsmill Forum located at the 4th floor
-            of the AMS Nest. (With the exception of the summer, where they run
-            monthly and the month of September, where no council meetings are held
-            due to elections).
+            Council normally runs every Tuesday on a bi-weekly schedule
+            beginning from 6:30 PM at the Micheal Kingsmill Forum located at the
+            4th floor of the AMS Nest. (With the exception of the summer, where
+            they run monthly and the month of September, where no council
+            meetings are held due to elections).
           </p>
 
           <p>
@@ -307,9 +308,9 @@ export default function MeetingMinutes() {
           <h3>Executive Meeting Minutes</h3>
 
           <p>
-            Executive Meetings normally run every Tuesday on a bi-weekly schedule
-            beginning from 5:00 pm in the Abdul Lahda Science Student Building,
-            Meeting Room 103.
+            Executive Meetings normally run every Tuesday on a bi-weekly
+            schedule beginning from 5:00 pm in the Abdul Lahda Science Student
+            Building, Meeting Room 103.
           </p>
 
           <p>
@@ -474,6 +475,27 @@ const TabTable = styled.div`
   width: 100%;
   border-collapse: collapse; /* Or use 'fixed' */
   overflow-x: auto;
+
+  max-width: 100%;
+  box-sizing: border-box; /* Include padding in width calculation */
+  padding: 0 10px; /* Provide some padding for better appearance */
+
+  /* Ensure that the inner table or content fits as well */
+  table {
+    width: 100%; /* Make sure the table takes full width */
+    min-width: 600px; /* Set a minimum width to avoid collapsing */
+    border-collapse: collapse; /* Keep borders clean */
+    
+    th, td {
+      padding: 10px; /* Add padding for better usability */
+      text-align: left; /* Align text to the left */
+      border: 1px solid #ccc; /* Add borders to cells */
+    }
+  }
+
+   @media (max-width: 600px) {
+    padding: 0; /* Add padding for mobile */
+  }
 `;
 
 const TabHeaders = styled.ul`
@@ -489,11 +511,26 @@ const TabHeaders = styled.ul`
     color: #333;
     border: 1px solid transparent;
     border-radius: 4px 4px 0 0;
+    transition:
+      background-color 0.3s,
+      box-shadow 0.3s; /* Smooth transitions */
 
     &.active {
       border-color: #ccc;
       border-bottom: none;
-      background-color: #f8f8f8;
+      background-color: #005bb5; /* More distinct active color */
+      color: white; /* Change text color for better contrast */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    }
+    &:hover {
+      background-color: #0073e6; /* Highlight color on hover */
+      color: white; /* Change text color on hover */
+    }
+  }
+  @media (max-width: 600px) {
+    flex-direction: column; /* Stack headers vertically on mobile */
+    li {
+      padding: 10px 10px; /* Adjust padding for mobile */
     }
   }
 `;

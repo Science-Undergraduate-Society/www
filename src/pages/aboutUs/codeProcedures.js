@@ -34,7 +34,7 @@ export default function CodeProcedures() {
             .
           </p>
         </Content>
-        <Footer/>
+        <Footer />
       </Background>
     </>
   );
@@ -56,7 +56,7 @@ const Background = styled.div`
 
 const StyledButton = styled.div`
   display: inline-block;
-  width: 400px;
+  width: 350px;
   padding: 10px 20px;
   background-color: #0173be;
   color: white;
