@@ -39,6 +39,7 @@ export default function Grants() {
                     <SciSec>
                     <Accordion 
                         title="Clubs Operations Grant"
+                        grant="https://docs.google.com/document/d/1pNsqp4S9Db460IAVU1dNPCo8V15NP_DJK8KbzX5ftww/edit?usp=drive_link"
                         for_club="for SUS Clubs"
                         content="The Club Operations Grant is meant to supplement existing club membership fees and to help 
                                 facilitate day-to-day operations of the club. The maximum allocation per Club Operations Grant
@@ -46,9 +47,10 @@ export default function Grants() {
                         link="https://docs.google.com/spreadsheets/d/1l80bQhhRTl8o6Ylz5ihR92qE5iIdrXjYIaurQjo_EYg/edit?usp=drive_link"
                     />
                     <Accordion 
-                        title="Special Operations Grant"
+                        title="Special Projects Grant"
+                        grant="https://docs.google.com/document/d/13cFYPuC1btrfxtV8FvuXfrsj4_asuWnJb-7Nb4v9N-Y/edit?usp=drive_link"
                         for_club="for SUS Clubs"
-                        content="The Special Operations Grant is intended to help facilitate any new or special projects undertaken 
+                        content="The Special Projects Grant is intended to help facilitate any new or special projects undertaken 
                                 by SUS Clubs. The Special Project Grants can only be used towards new events/projects or new additions
                                 to annual or existing activities that benefit a sizable portion of the science student body. 
                                 The maximum allocation of the Special Projects Grant is 50% of relevant fees to a maximum of $500."
@@ -56,6 +58,7 @@ export default function Grants() {
                     />
                     <Accordion
                         title="EDI Grant"
+                        grant="https://docs.google.com/document/d/1yJJLi_Tuhm4yVBvsTkHEdWRceNlD3BiwuYvdsgGTTEI/edit?usp=drive_link"
                         for_club="for SUS Clubs & Science Students"
                         content="The EDI Grant is intended to create initiatives to support and centre communities with folks who identify 
                                 as Black, Indigenous, and People of Colour, or 2SLGBTQIA+, have disabilities, or have been and continue to be systemically-made 
@@ -67,6 +70,7 @@ export default function Grants() {
                      />
                      <Accordion
                         title="Student Initiative Grant"
+                        grant="https://docs.google.com/document/d/1k0Bjzn4QqTfslWozrngnH9lqT_KPfvBebS1Wk-620LA/edit?usp=drive_link"
                         for_club="for SUS Clubs and new SUS Clubs"
                         content="The Student Initiative Grant is intended to provide financial support to encourage and promote the facilitation of projects,
                                  activities and events run by science students that are not affiliated with existing SUS Clubs. The grant aims to encourage 
@@ -77,6 +81,7 @@ export default function Grants() {
                         />
                     <Accordion
                         title="Professional Development Grant"
+                        grant="https://docs.google.com/document/d/1jrXYT4_q_xmgKc2b8e4JoF3n9Im8u8481AQVC1p1l6E/edit?usp=drive_link"
                         for_club="for Science Students"
                         content="The Professional Development Grant is intended to alleviate financial burdens relating to the attendance of events that 
                                 further one’s professional careers such as relevant events, conferences, and seminars. The maximum allocation of the Grant is 50% 
@@ -91,6 +96,7 @@ export default function Grants() {
                 <SciSec>
                     <Accordion
                         title="AMS & Affiliates Event Subsidy"
+                        grant="https://docs.google.com/document/d/15s0q0SeeM56yT4bCf6cGKYgR5WpwlKC2qgKM75-nijg/edit?usp=drive_link"
                         for_club="for Science Students"
                         content="The AMS & Affiliated clubs (AMS Clubs) Events Subsidy is intended to alleviate personal financial burdens by providing a subsidy that 
                                 students can use to attend events hosted for UBC students. This includes all ticketed events hosted by clubs with AMS club standing. A list of 
@@ -99,6 +105,7 @@ export default function Grants() {
                         />
                     <Accordion
                         title="SUS Events Subsidy"
+                        grant="https://docs.google.com/document/d/1N8NQM-SAR7O5H3SANldGNDaIl9i4--dOrxXSOEvnZKA/edit?usp=drive_link"
                         for_club="for Science Students"
                         content="The SUS Events Subsidy is intended to alleviate personal financial burdens by providing a subsidy that students can use to attend SUS events. 
                                 This includes all ticketed events hosted by the Science Undergraduate Society (SUS). The maximum allocation of the subsidy is 75% of paid ticket 
@@ -107,6 +114,7 @@ export default function Grants() {
                     />
                     <Accordion
                         title="Club Membership Fee Subsidy"
+                        grant="https://docs.google.com/document/d/1Tjr9mwroBjir2A2RtOLfj8TQv1P_vTiaia6IPc7gjtU/edit?usp=drive_link"
                         for_club="for Science Students"
                         content="The Club Membership Fee Subsidy hopes to increase participation of students in AMS clubs to encourage participation in the UBC community. 
                                 This subsidy aims to cover the baseline membership fee to all AMS clubs and can be applied retroactively. The maximum allocation of the subsidy is $5."
@@ -114,6 +122,7 @@ export default function Grants() {
                     />
                     <Accordion
                         title="Course Materials Subsidy"
+                        grant="https://docs.google.com/document/d/1a_p9JaNP0v-2pi7WxCsNHDuzj-DXlZcjXKYiCetBCAc/edit?usp=drive_link"
                         for_club="for Science Students"
                         content="The Course Materials Subsidy is intended to alleviate financial burdens related to the purchase of course-related materials. The materials purchased 
                                 using this subsidy can be redeemed for any academic course material required or recommended by courses taken by Faculty of Science students. 
@@ -121,7 +130,8 @@ export default function Grants() {
                         link=""
                     />
                     <Accordion
-                        title="UBC Rec Events Subsidy"
+                        title="UBC Recreation Subsidy"
+                        grant="https://docs.google.com/document/d/1uK4GnXh_zs2jFAZgFtf6BdKkxuSbcKK0Lh_LbUB6BRo/edit?usp=drive_link"
                         for_club="for Science Students"
                         content="The UBC Recreation Subsidy is intended to alleviate personal financial burdens by providing a subsidy that students can use to engage in activities 
                                 that promote physical health and wellness. This includes, but is not limited to, relevant events, competitions and recreational intramural league costs. 
@@ -130,18 +140,23 @@ export default function Grants() {
                     />
                 </SciSec>
             </ClubSec>
+            <ButtonContainer>
+                <StyledButton href="https://drive.google.com/open?id=10IOyK3iQT9NZMmGeMr5C6I6umKnYtuP7"><b>Grants Information 24'/25'</b></StyledButton>
+                <StyledButton href="https://drive.google.com/open?id=1qJldIJrrRcPXTXhdPitiryMFsFKS34Y6"><b>Grants Rubrics 24'/25'</b></StyledButton>
+                <StyledButton href="https://drive.google.com/open?id=1Wh8PZTiKSlZcphLSQyc1oEbir2ag-JuBxwxw"><b>Subsidies Information 24'/25'</b></StyledButton>
+            </ButtonContainer>
             <Footer color="white" background="#222755"/>
         </Background>
     )
 }
 
-function Accordion({ title, for_club, content, link }) {
+function Accordion({ title, grant, for_club, content, link }) {
     const [isActive, setIsActive] = useState(false);
     return (
         <IndivInfo>
             <TitleSec onClick={() => setIsActive(!isActive)}>
                 <BoxTitle>
-                    <InfoTitle>{title}</InfoTitle>
+                    <InfoTitle href={grant}>{title}</InfoTitle>
                     <ForTitle>{for_club}</ForTitle>
                 </BoxTitle>
                 <h2>{isActive ? '-' : '+'}</h2>
@@ -255,10 +270,11 @@ const BoxTitle = styled.div`
     flex-direction: column;
 `
 
-const InfoTitle = styled.h2`
-    font-size: 18px;
+const InfoTitle = styled.a`
+    font-size: 19px;
     font-weight: bold;
     text-align: left;
+    color: #222755;
 
     @media (max-width: ${breakpoints.mobile}) {
         size: 15px;
@@ -300,19 +316,27 @@ const Background = styled.div`
     background-color: #222755;
 `
 
-const StyledButton = styled.div`
+const StyledButton = styled.a`
     display: inline-block;
     width: 210px;
     padding: 10px 20px;
-    background-color: #046bd2;
-    color: white;
+    background-color: white;
+    color: #222755;
     text-align: center;
     border-radius: 5px;
     text-decoration: none;
     margin-top: 20px;
     cursor: pointer;
+    font-size: 18px;
 
     &:hover {
-        background-color: #005bb5;
+        background-color: #e7edf7;
     }
 `
+
+const ButtonContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjusts space between buttons */
+    margin-top: 20px; /* Space above the button container */
+`;
