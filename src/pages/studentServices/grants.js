@@ -141,9 +141,9 @@ export default function Grants() {
                 </SciSec>
             </ClubSec>
             <ButtonContainer>
-                <StyledButton href="https://drive.google.com/open?id=10IOyK3iQT9NZMmGeMr5C6I6umKnYtuP7"><b>Grants Information 24'/25'</b></StyledButton>
-                <StyledButton href="https://drive.google.com/open?id=1qJldIJrrRcPXTXhdPitiryMFsFKS34Y6"><b>Grants Rubrics 24'/25'</b></StyledButton>
-                <StyledButton href="https://drive.google.com/open?id=1Wh8PZTiKSlZcphLSQyc1oEbir2ag-JuBxwxw"><b>Subsidies Information 24'/25'</b></StyledButton>
+                <StyledButton href="https://drive.google.com/open?id=10IOyK3iQT9NZMmGeMr5C6I6umKnYtuP7"><b>Grants Information 24/25</b></StyledButton>
+                <StyledButton href="https://drive.google.com/open?id=1qJldIJrrRcPXTXhdPitiryMFsFKS34Y6"><b>Grants Rubrics 24/25</b></StyledButton>
+                <StyledButton href="https://drive.google.com/open?id=1Wh8PZTiKSlZcphLSQyc1oEbir2ag-JuBxwxw"><b>Subsidies Information 24/25</b></StyledButton>
             </ButtonContainer>
             <Footer color="white" background="#222755"/>
         </Background>
