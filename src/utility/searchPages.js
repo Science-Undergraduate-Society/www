@@ -49,6 +49,7 @@ const searchPages = [
     href: "/events",
     content: "Details about our past events.",
   },
+  {},
   {
     title: "Blue Card Program",
     href: "/studentServices/bluecard",
@@ -56,23 +57,43 @@ const searchPages = [
   },
   {
     title: "Grants",
-    href: "/grants",
+    href: "/studentServices/grants",
     content: "Grant application and information.",
   },
   {
+    title: "Subsidies",
+    href: "/studentServices/grants",
+    content: "Information about the Blue Card Program.",
+  },
+  {
     title: "Health & Wellness",
-    href: "/health",
+    href: "/studentServices/health",
     content: "Health and wellness resources.",
   },
   {
+    title: "Volunteer Portal",
+    href: "/studentServices/volunteerPortal",
+    content: "Portal for finding volunteer opportunities.",
+  },
+  {
+    title: "Study Sphere",
+    href: "/studentServices/studySphere",
+    content: "Information on our new notes sharing platform.",
+  },
+  {
     title: "ALSSC",
-    href: "/alssc",
+    href: "/scienceStudentCentre/aboutAlssc",
     content: "Information about the Science Student Centre.",
   },
   {
     title: "Book a Meeting Room",
-    href: "/alsscBooking",
+    href: "/scienceStudentCentre/meetingBooking",
     content: "How to book a room at ALSSC.",
+  },
+  {
+    title: "Event Booking",
+    href: "/scienceStudentCentre/eventBooking",
+    content: "How to book an event at ALSSC.",
   },
   {
     title: "Feedback Form",
