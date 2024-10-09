@@ -1,9 +1,10 @@
-"use client"
+"use client";
 
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useRouter } from "next/router";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Link from "next/link";
 
 const sections = [
   {
@@ -40,9 +41,9 @@ const sections = [
     items: [
       { name: "Blue Card Program", href: "/studentServices/bluecard" },
       { name: "Grants & Subsidies", href: "/studentServices/grants" },
-      { name: "Health & Wellness", href: "/studentServices/health"},
-      { name: "Volunteer Portal", href: "/studentServices/volunteerPortal"},
-      { name: "Study Sphere", href: "/studentServices/studySphere"},
+      { name: "Health & Wellness", href: "/studentServices/health" },
+      { name: "Volunteer Portal", href: "/studentServices/volunteerPortal" },
+      { name: "Study Sphere", href: "/studentServices/studySphere" },
     ],
   },
   {
@@ -50,15 +51,24 @@ const sections = [
     href: "",
     items: [
       { name: "About the ALSSC", href: "/scienceStudentCentre/aboutAlssc" },
-      { name: "Book a Meeting Room", href: "/scienceStudentCentre/meetingBooking" },
-      { name: "Booking For An Event", href: "/scienceStudentCentre/eventBooking" },
+      {
+        name: "Book a Meeting Room",
+        href: "/scienceStudentCentre/meetingBooking",
+      },
+      {
+        name: "Booking For An Event",
+        href: "/scienceStudentCentre/eventBooking",
+      },
     ],
   },
   {
     name: "Give us Feedback",
     href: "",
     items: [
-      { name: "Feedback Form", href: "https://docs.google.com/forms/d/e/1FAIpQLSeoybfzo-4VZgMUgie-eySFPczi_ToTwugPDu8F-IPLoS04Wg/viewform" },
+      {
+        name: "Feedback Form",
+        href: "https://docs.google.com/forms/d/e/1FAIpQLSeoybfzo-4VZgMUgie-eySFPczi_ToTwugPDu8F-IPLoS04Wg/viewform",
+      },
     ],
   },
   {
@@ -69,7 +79,9 @@ const sections = [
 ];
 
 export default function Navbar() {
-  const [isDropdownOpen, setDropdownOpen] = useState(Array(sections.length).fill(false));
+  const [isDropdownOpen, setDropdownOpen] = useState(
+    Array(sections.length).fill(false)
+  );
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -89,7 +101,9 @@ export default function Navbar() {
   // DROPDOWN
 
   const handleDropdownOpen = (index) => {
-    const updatedDropdownState = isDropdownOpen.map((item, idx) => idx === index);
+    const updatedDropdownState = isDropdownOpen.map(
+      (item, idx) => idx === index
+    );
     setDropdownOpen(updatedDropdownState);
   };
 
@@ -101,9 +115,78 @@ export default function Navbar() {
     setIsMobileDropdownOpen(!isMobileDropdownOpen);
   };
 
-  // SEARCH 
+  // SEARCH
+
+  const pages = [
+    {
+      title: "Join SUS",
+      href: "/joinSus",
+      content: "Information about joining SUS.",
+    },
+    {
+      title: "About Us",
+      href: "/about",
+      content: "Learn more about our organization.",
+    },
+    {
+      title: "The Executives",
+      href: "/executives",
+      content: "Meet our executive team.",
+    },
+    {
+      title: "Budget",
+      href: "/budget",
+      content: "Details about our budget and expenditures.",
+    },
+    {
+      title: "Code & Procedures",
+      href: "/aboutUs/codeProcedures",
+      content: "Our code of conduct and procedures.",
+    },
+    {
+      title: "Upcoming Events",
+      href: "/events",
+      content: "Details about our upcoming events.",
+    },
+    {
+      title: "Blue Card Program",
+      href: "/bluecard",
+      content: "Information about the Blue Card Program.",
+    },
+    {
+      title: "Grants",
+      href: "/grants",
+      content: "Grant application and information.",
+    },
+    {
+      title: "Health & Wellness",
+      href: "/health",
+      content: "Health and wellness resources.",
+    },
+    {
+      title: "ALSSC",
+      href: "/alssc",
+      content: "Information about the Science Student Centre.",
+    },
+    {
+      title: "Book a Meeting Room",
+      href: "/alsscBooking",
+      content: "How to book a room at ALSSC.",
+    },
+    {
+      title: "Feedback Form",
+      href: "https://docs.google.com/forms/d/e/1FAIpQLSeoybfzo-4VZgMUgie-eySFPczi_ToTwugPDu8F-IPLoS04Wg/viewform",
+      content: "Give us feedback.",
+    },
+    {
+      title: "Shop",
+      href: "/shop",
+      content: "Visit our shop for merchandise.",
+    },
+  ];
 
   const [searchQuery, setSearchQuery] = useState("");
+  const [results, setResults] = useState([]);
   const router = useRouter();
 
   const handleSearch = () => {
@@ -118,6 +201,27 @@ export default function Navbar() {
     }
   };
 
+  const performSearch = (searchTerm) => {
+    if (!searchTerm) {
+      return [];
+    }
+
+    const regex = new RegExp(`\\b${searchTerm}`, "i");
+
+    return pages.filter(
+      (page) => regex.test(page.title) || regex.test(page.content)
+    );
+  };
+
+  useEffect(() => {
+    if (searchQuery) {
+      const searchResults = performSearch(searchQuery);
+      setResults(searchResults);
+    } else {
+      setResults([]);
+    }
+  }, [searchQuery]);
+
   return (
     <Container>
       <Nav>
@@ -125,18 +229,26 @@ export default function Navbar() {
           <Logo src="/images/logos/white-logo.png" alt="Logo" />
         </LogoContainer>
 
-        {!isMobile &&
+        {!isMobile && (
           // NEED TO KEEP THIS OUTER DIV TO KEEP CONTENTS FROM "OVER-SPACE-BETWEENING"
           <div>
             <NavItems>
               {sections.map((section, index) => (
                 <NavItem
                   key={index}
-                  onMouseEnter={() => section.items.length > 0 && handleDropdownOpen(index)}
-                  onMouseLeave={() => section.items.length > 0 && handleDropdownClose()}
-                  onClick={() => section.items.length > 0 && handleDropdownOpen(index)}
+                  onMouseEnter={() =>
+                    section.items.length > 0 && handleDropdownOpen(index)
+                  }
+                  onMouseLeave={() =>
+                    section.items.length > 0 && handleDropdownClose()
+                  }
+                  onClick={() =>
+                    section.items.length > 0 && handleDropdownOpen(index)
+                  }
                 >
-                  <NavLink href={section.items.length === 0 ? section.href : "/"}>
+                  <NavLink
+                    href={section.items.length === 0 ? section.href : "/"}
+                  >
                     {section.name}
                   </NavLink>
                   {section.items.length > 0 && isDropdownOpen[index] && (
@@ -156,25 +268,38 @@ export default function Navbar() {
               ))}
             </NavItems>
           </div>
-        }
+        )}
 
         <HamburgerMenu onClick={toggleMenu}>
           {isMobileDropdownOpen ? <FaTimes /> : <FaBars />}
         </HamburgerMenu>
 
-        {!isMobile && 
+        {!isMobile && (
           <SearchContainer>
             <Searchbar
               placeholder="Search SUS..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              onKeyDown={handleKeyDown} 
+              onKeyDown={handleKeyDown}
             />
-            <SearchButton onClick={handleSearch}> 
-              <SearchIcon src="/images/index-images/search-icon-white.svg" alt="Search" />
+            {results.length > 0 && (
+              <SearchDropdown>
+                {results.map((result, index) => (
+                  <SearchDropdownItem key={index}>
+                    <Link href={result.href}>{result.title}</Link>
+                  </SearchDropdownItem>
+                ))}
+              </SearchDropdown>
+            )}
+
+            <SearchButton onClick={handleSearch}>
+              <SearchIcon
+                src="/images/index-images/search-icon-white.svg"
+                alt="Search"
+              />
             </SearchButton>
           </SearchContainer>
-        }
+        )}
       </Nav>
 
       {isMobileDropdownOpen && isMobile && (
@@ -183,12 +308,20 @@ export default function Navbar() {
             {sections.map((section, index) => (
               <MobileNavItem
                 key={index}
-                onMouseEnter={() => section.items.length > 0 && handleDropdownOpen(index)}
-                onMouseLeave={() => section.items.length > 0 && handleDropdownClose()}
-                onClick={() => section.items.length > 0 && handleDropdownOpen(index)}
+                onMouseEnter={() =>
+                  section.items.length > 0 && handleDropdownOpen(index)
+                }
+                onMouseLeave={() =>
+                  section.items.length > 0 && handleDropdownClose()
+                }
+                onClick={() =>
+                  section.items.length > 0 && handleDropdownOpen(index)
+                }
                 isLastItem={index === sections.length - 1}
               >
-                <MobileNavLink href={section.items.length === 0 ? section.href : null}>
+                <MobileNavLink
+                  href={section.items.length === 0 ? section.href : null}
+                >
                   {section.name}
                 </MobileNavLink>
                 {section.items.length > 0 && isDropdownOpen[index] && (
@@ -223,7 +356,7 @@ const Container = styled.div`
 
   display: flex;
   flex-direction: column;
-`
+`;
 
 //==============================================================
 
@@ -237,12 +370,11 @@ const Nav = styled.nav`
   width: 100%;
   box-sizing: border-box;
   height: 150px;
-
 `;
 
 const LogoContainer = styled.a`
   cursor: pointer;
-`
+`;
 
 const Logo = styled.img`
   height: 100px;
@@ -284,7 +416,7 @@ const NavLink = styled.a`
   @media (max-width: 1400px) {
     font-size: 14px;
   }
-  
+
   @media (max-width: 1350px) {
     font-size: 13px;
   }
@@ -328,7 +460,7 @@ const DropdownItem = styled.a`
   @media (max-width: 1400px) {
     font-size: 14px;
   }
-  
+
   @media (max-width: 1350px) {
     font-size: 13px;
   }
@@ -355,28 +487,30 @@ const HamburgerMenu = styled.div`
   }
 `;
 
-
 //==============================================================
 
 const SearchContainer = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 2rem;
+  width: fit-content;
 `;
 
 const Searchbar = styled.input`
+  width: 225px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 15px;
   padding-right: 30px;
   border-radius: 10px;
-  border: 1px solid transparent; 
+  border: 1px solid transparent;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
   outline: none;
 
   &:focus {
-    box-shadow: 0 0 10px rgba(74, 144, 226, 0.8); 
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.8);
   }
 `;
 
@@ -390,6 +524,39 @@ const SearchIcon = styled.img`
   margin-left: 5px;
 `;
 
+const SearchDropdown = styled.div`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(100% - 40px);
+  z-index: 100;
+  border-radius: 4px;
+  max-height: 250px;
+  overflow-y: auto;
+
+  a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set the color to black */
+    font-family: inherit; /* Inherit font from parent element */
+    font-size: inherit; /* Inherit font size from parent element */
+  }
+
+  a:hover {
+    background-color: #f0f0f0; /* Optional: Add hover effect if needed */
+  }
+`;
+
+const SearchDropdownItem = styled.div`
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  &:hover {
+    background-color: #f0f0f0;
+  }
+`;
+
 //==============================================================
 
 const MobileNav = styled.div`
@@ -401,14 +568,14 @@ const MobileNav = styled.div`
   flex-direction: column;
 
   width: 100%;
-  height: auto; 
-  overflow-y: auto; 
+  height: auto;
+  overflow-y: auto;
 `;
 
 const MobileNavItems = styled.div`
   display: flex;
   flex-direction: column;
-  flex-grow: 1; 
+  flex-grow: 1;
   overflow-y: auto;
 
   height: auto;
@@ -419,7 +586,7 @@ const MobileNavItem = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: left;
-  
+
   ${({ isLastItem }) =>
     !isLastItem &&
     `
@@ -432,7 +599,7 @@ const MobileNavLink = styled.a`
   text-decoration: none;
   font-size: 12px;
   font-weight: 500;
-  padding: 15px 0; 
+  padding: 15px 0;
 `;
 
 const MobileDropdownMenu = styled.div`
