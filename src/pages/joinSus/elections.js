@@ -182,7 +182,7 @@ const Content = styled.div`
 `;
 
 const Span = styled.a`
-    color: #0052FF;
+    color: #001961;
     cursor: pointer;
     text-decoration: none;
 `;
@@ -200,7 +200,7 @@ const Timeline = styled.div`
         left: 0%;
         top: 0;
         height: 100%;
-        border-left: 2px solid #0052FF;
+        border-left: 2px solid #001961;
         transform: translateX(-50%);
     }
 `;
@@ -221,7 +221,7 @@ const Circle = styled.div`
     left: -10px;
     width: 20px;
     height: 20px;
-    background-color: #0052FF;
+    background-color: #001961;
     border-radius: 50%;
     z-index: 1;
 `;
