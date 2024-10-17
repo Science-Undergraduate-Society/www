@@ -350,10 +350,13 @@ export const SearchBar = () => {
                 />
             </Inputs>
 
-            <SearchButton onClick={handleSearchJobs}
+            <br></br>
+
+            <ButtonHollowBlack onClick={handleSearchJobs}
             title='Search Jobs'>
                 Search Jobs
-            </SearchButton>
+            </ButtonHollowBlack>
+            <br></br>
             {/*
             <Checkboxes>
                 {checkBoxesList.map((checkbox, index) => (
@@ -394,6 +397,23 @@ const breakpoints = {
 };
 
 {/* Search header */}
+
+const ButtonHollowBlack = styled.button`
+    background-color: transparent;
+    color: #222755;
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: 1px solid #222755;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+        color: #0052FF;
+        border: 1px solid #0052FF;
+    }
+`;
 const Search = styled.div`
     margin-top: 24px;
     display: flex;
@@ -402,11 +422,10 @@ const Search = styled.div`
 const SearchBox = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: #DCDCDC;
+    background-color: white;
     align-items: center;
     justify-content: center;
-
-    max-width: 82%;
+    max-width: 79%;
     height: 100%;
     margin-left: 11%;
     padding: 10px;
@@ -426,11 +445,12 @@ const SearchInput = styled.input`
     min-height: 25px;
     width: 45%;
     border-style: solid;
-    border-radius: 5px;
+    border-radius: 20px;
     border-width: 1px;
-
-    font-size: 20px;
-    padding: 10px;
+    margin: 1px;
+    margin-right: 15px;
+    font-size: 15px;
+    padding: 16px;
 `
 
 const SearchButton = styled.button`

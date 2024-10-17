@@ -24,16 +24,12 @@ const Title = styled.div`
     letter-spacing: 3px;
 `
 
-const Heading = styled.div `
+const Heading = styled.div`
   color: #222755;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  text-align: left;
-  width: 100%;
-  padding: 150px 0 0 15%;
-`
+  text-align: center; /* Align text within the component */
+  margin-top: 25vh;
+`;
+
 
 
 const Background = styled.div`
