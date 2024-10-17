@@ -30,7 +30,7 @@ export default function MeetingMinutes() {
               </li>
               <li>
                 <a href="https://drive.google.com/drive/folders/10xGyvO4SIroabNsl8SOuwu56udDatPvu">
-                  Extraordinary (EDI)
+                  Equity, Diversity, and Inclusion (EDI)
                 </a>
               </li>
             </ul>

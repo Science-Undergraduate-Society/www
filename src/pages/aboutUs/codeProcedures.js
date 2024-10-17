@@ -16,7 +16,7 @@ export default function CodeProcedures() {
             Students and the responsibilities of elected officials.
           </p>
           <Link
-            href="https://docs.google.com/document/d/1Wr52qSNeiVG9HrDvCftOsCW1agMMW6dC1mkieIPdWds/edit?fbclid=IwAR26HOIAjZZcquDRs91xgHSdferauKQJKtzOTJNZc4f76JXmeag5UGVi-Y8"
+            href="https://drive.google.com/file/d/1nVFR-Y6f0pY5AbsMVOsDDDdGxrPYMoq9/view"
             passHref
           >
             <StyledButton>SUS Code & Procedure Document</StyledButton>
