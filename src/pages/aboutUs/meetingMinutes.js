@@ -271,7 +271,7 @@ export default function MeetingMinutes() {
       <Navbar />
       <Background>
         <Content>
-          <h1>Meeting Minutes</h1>
+          <StyledH1>Meeting Minutes</StyledH1>
           <p>
             All SUS meetings are open to Science students to attend unless
             otherwise stated. All meeting minutes on the present website are
@@ -284,7 +284,7 @@ export default function MeetingMinutes() {
             .
           </p>
 
-          <h3>Council Meeting Minutes</h3>
+          <StyledH3>Council Meeting Minutes</StyledH3>
 
           <p>
             Council normally runs every Tuesday on a bi-weekly schedule
@@ -305,7 +305,7 @@ export default function MeetingMinutes() {
             &nbsp;to view the meeting minutes.
           </p>
 
-          <h3>Executive Meeting Minutes</h3>
+          <StyledH3>Executive Meeting Minutes</StyledH3>
 
           <p>
             Executive Meetings normally run every Tuesday on a bi-weekly
@@ -324,7 +324,7 @@ export default function MeetingMinutes() {
             &nbsp;to view the meeting minutes.
           </p>
 
-          <h3>Working Group Meeting Minutes</h3>
+          <StyledH3>Working Group Meeting Minutes</StyledH3>
 
           <p>
             All working groups have different meeting schedules based on team
@@ -392,6 +392,13 @@ export default function MeetingMinutes() {
   );
 }
 
+const StyledH1 = styled.h1`
+  color: #222755;
+`;
+
+const StyledH3 = styled.h3`
+  color: #222755;
+`;
 const Title = styled.div`
   color: black;
 `;
@@ -518,12 +525,12 @@ const TabHeaders = styled.ul`
     &.active {
       border-color: #ccc;
       border-bottom: none;
-      background-color: #005bb5; /* More distinct active color */
+      background-color: #222755; /* More distinct active color */
       color: white; /* Change text color for better contrast */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
     }
     &:hover {
-      background-color: #0073e6; /* Highlight color on hover */
+      background-color: #222755; /* Highlight color on hover */
       color: white; /* Change text color on hover */
     }
   }
