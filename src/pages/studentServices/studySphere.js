@@ -13,10 +13,12 @@ export default function StudySphere() {
                 <Info>Share and use course specific study materials with your peers.</Info>
                 <Buttons>
                     <Link href="https://ubcca-my.sharepoint.com/:f:/g/personal/njpv02_student_ubc_ca/ElDWP5sexdVFs1c6Hdzit2oBu9tFuMKhKGQqWSV8kdpVtQ?e=EFv22E" passHref>
-                    <StyledButton>Share Your Notes</StyledButton>
+                    <ButtonHollowBlack>Share Your Notes</ButtonHollowBlack>
+                    <br></br>
+                    <br></br>
                     </Link>
                     <Link href="https://ubcca-my.sharepoint.com/:f:/g/personal/njpv02_student_ubc_ca/EgiE8oZ-X65JgP65CyeH350BzhtYdmB1PDIOuYDvwBgIUQ?e=QaTh2V" passHref>
-                    <StyledButton>View Shared Notes</StyledButton>
+                    <ButtonHollowBlack>View Shared Notes</ButtonHollowBlack>
                     </Link>
                 </Buttons>
             </Content>
@@ -24,6 +26,23 @@ export default function StudySphere() {
         </Background>
     )
 }
+
+const ButtonHollowBlack = styled.button`
+    background-color: transparent;
+    color: #222755;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: 1px solid #222755;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+        color: #0052FF;
+        border: 1px solid #0052FF;
+    }
+`;
 
 const breakpoints = {
     mobile: '768px',

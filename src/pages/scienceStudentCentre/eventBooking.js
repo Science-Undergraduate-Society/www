@@ -517,7 +517,7 @@ const NoteBox = styled.div`
 `;
 
 const Span = styled.a`
-    color: #0052FF;
+    color: #222755;
     cursor: pointer;
     text-decoration: none;
 `;
