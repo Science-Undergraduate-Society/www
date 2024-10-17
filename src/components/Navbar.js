@@ -49,6 +49,7 @@ const sections = [
     name: "Science Student Centre",
     href: "",
     items: [
+      { name: "About Abdul Ladha", href: "/scienceStudentCentre/abdulLadha" },
       { name: "About the ALSSC", href: "/scienceStudentCentre/aboutAlssc" },
       { name: "Book a Meeting Room", href: "/scienceStudentCentre/meetingBooking" },
       { name: "Booking For An Event", href: "/scienceStudentCentre/eventBooking" },
