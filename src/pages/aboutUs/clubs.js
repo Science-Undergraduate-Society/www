@@ -12,7 +12,7 @@ export default function Clubs() {
     <Background>
       <Navbar />
       <Content>
-        <h1>Our Clubs</h1>
+        <StyledH1>Our Clubs</StyledH1>
         <p>
           For the 2023/2024 academic year, the Science Undergraduate Society is
           proud to support 26 departmental and 26 non-departmental clubs.
@@ -851,6 +851,9 @@ function ClubRow({ logoSrc, clubName, description, links }) {
   );
 }
 
+const StyledH1 = styled.h1`
+  color: #222755;
+`;
 const ColumnContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -900,7 +903,7 @@ const Tab = styled.div`
   text-align: center;
   cursor: pointer;
   font-weight: bold;
-  background-color: ${(props) => (props.isActive ? "#2c3e50" : "#ffffff")};
+  background-color: ${(props) => (props.isActive ? "#222755" : "#ffffff")};
   color: ${(props) => (props.isActive ? "#ffffff" : "#333")};
 
   display: flex;
