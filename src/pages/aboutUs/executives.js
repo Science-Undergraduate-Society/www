@@ -46,7 +46,6 @@ const Header = styled.div`
 
 const SubHeader = styled.div`
   font-size: 20px;
-  color: #001961;
   width: 60%;
 
   @media only screen and (max-width: 768px) {
@@ -92,6 +91,7 @@ const ExecutiveTextContainer = styled.div`
 const ExecutiveTitle = styled.div`
   font-size: 30px;
   font-weight: bold;
+  color: #001961;
 `;
 
 const ExecutiveName = styled.div`
