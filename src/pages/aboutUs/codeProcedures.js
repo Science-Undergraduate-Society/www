@@ -1,93 +1,117 @@
 import styled from "styled-components";
-import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+export default function Alssc() {
+  
+    return (
+        <>
+            <Navbar />
+            <Content>
+                <Header>
+                <Title>CODE & PROCEDURE</Title>
+                    <HeaderDescription>
+                      The following document outlines how the SUS is organized, how the student fees are used, how decisions are made on behalf of Science Students and the responsibilities of elected officials.
+                    </HeaderDescription>
+                    <HeaderDescription>
+                      Last Revised: March 14, 2024
+                    </HeaderDescription>
+                    <ButtonGroup>
+                        <ButtonHollowBlack>
+                            <Link href="https://docs.google.com/document/d/1Wr52qSNeiVG9HrDvCftOsCW1agMMW6dC1mkieIPdWds/edit?fbclid=IwAR26HOIAjZZcquDRs91xgHSdferauKQJKtzOTJNZc4f76JXmeag5UGVi-Y8">SUS Code & Procedure Document</Link>    
+                        </ButtonHollowBlack>
+                    </ButtonGroup>
 
-export default function CodeProcedures() {
-  return (
-    <>
-      <Navbar />
-      <Background>
-        <Content>
-          <h1>Code & Procedure</h1>
-          <p>
-            The following document outlines how the SUS is organized, how the
-            student fees are used, how decisions are made on behalf of Science
-            Students and the responsibilities of elected officials.
-          </p>
-          <Link
-            href="https://drive.google.com/file/d/1nVFR-Y6f0pY5AbsMVOsDDDdGxrPYMoq9/view"
-            passHref
-          >
-            <StyledButton>SUS Code & Procedure Document</StyledButton>
-          </Link>
+                    <Divider/>
 
-          <SpacingDiv></SpacingDiv>
+                    <Title>INQUIRIES OR CONCERNS?</Title>
+                    <ExecutiveImage src="/images/executive-images/Thomas-McIlwraith.webp" />
+                    <HeaderDescription>
+                      Contact our VP Admin <b>Thomas McIlwraith</b>, at <a href="mailto:vpadministration@sus.ubc.ca">vpadministration@sus.ubc.ca</a>.
+                    </HeaderDescription>
+                </Header>
 
-          <p>Last Revised: March 14, 2024</p>
 
-          <p>
-            For further inquiries/concerns please contact our VP Admin at&nbsp;
-            <Link href="mailto:vpadministration@sus.ubc.ca" passHref>
-              vpadministration@sus.ubc.ca
-            </Link>
-            .
-          </p>
-        </Content>
-        <Footer />
-      </Background>
-    </>
-  );
+                <Footer/>
+            </Content>
+        </>
+    )
 }
 
-const Title = styled.div`
-  color: black;
+// =============== GENERAL =============== //
+const ExecutiveImage = styled.img`
+  overflow: hidden;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  margin: 2.5vh;
 `;
 
-const Background = styled.div`
-  height: 100vh;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: center;
+const Content = styled.main`
+    margin-top: 30vh;
+    width: 100%;
+    height: auto;
+    overflow-y: auto; 
+    scroll-behavior: smooth;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+`
+
+const Divider = styled.div`
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 90%;
+    border-bottom: 1px solid black;
+`
+
+const ButtonGroup = styled.div`
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 20px;
+    justify-content: left;
 `;
 
-const StyledButton = styled.div`
-  display: inline-block;
-  width: 350px;
-  padding: 10px 20px;
-  background-color: #0173be;
-  color: white;
-  text-align: center;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 20px;
-  cursor: pointer;
+const ButtonHollowBlack = styled.button`
+    background-color: transparent;
+    color: #222755;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: 1px solid #222755;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 
-  &:hover {
-    background-color: #005bb5;
-  }
+    &:hover {
+        color: #0052FF;
+        border: 1px solid #0052FF;
+    }
 `;
+const Link = styled.a`
+    text-decoration: none;
+    color: inherit;
+`
 
-// const Content = styled.div`
-//   position: relative;
-//   z-index: 1;
-//   align-items: flex-start;
-//   justify-content: flex-start;
-//   text-align: left;
-// `;
-const Content = styled.div`
-  flex: 1;
-  align-items: flex-start;
-  justify-content: flex-start;
-  text-align: left;
-  padding: 200px 10px 20px;
-  width: 100%;
-  max-width: 1200px;
-`;
+// =============== HEADER =============== //
 
-const SpacingDiv = styled.div`
-  margin-bottom: 75px;
-`;
+const Header = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+
+    width: 50%;
+    margin-bottom: 10vh;
+`
+
+const Title = styled.h2`
+    color: black;
+`
+
+const HeaderDescription = styled.p`
+    text-align: center;
+`

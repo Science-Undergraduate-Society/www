@@ -1,86 +1,8 @@
 import styled from "styled-components";
-import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 export default function Alssc() {
-    const firstFloorItems = [
-        'Printer – connected to UBCPayForPrint',
-        'Study cubicles for silent study',
-        'Meetings rooms (3) for meetings or smaller events',
-        'Large tables for silent group study',
-    ];
-    const secondFloorItems = [
-        'Large open area for studying and hosting events',
-        'Bar-style kitchenette with fridges and microwaves',
-        'Water dispenser (hot and cold water)',
-        'Rolling tables (8) and chairs (40+)',
-        'Audio Visual (AV) system with projector, speakers, and microphones',
-        'Mens/Womens/Universal washrooms (all wheelchair accessible)',
-    ];
-    const thirdFloorItems = [
-        'Couches and tables for studying and lounging',
-        'Space for smaller/relaxed events'
-    ];
-    const buildingExteriorItems = [
-        'Open space for boothing outside the front of the building',
-        'We provide tables and tents to ensure that you can booth in any weather',
-        'Microphone and speakers also available for events in this space'
-    ];
-    const accessibilityInformationItems = [
-        'All floors are wheelchair accessible via elevator access',
-        'Accessible washrooms',
-        'Automatic door openers on main entrance and side entrance'
-    ];
-    const avSystemInfoItems = [
-        'Multimedia Projector:',
-        'Audio:',
-        'Microphones:',
-        'Touchscreen AV Control System:'
-    ];
-    const MultimediaProjectorItems = [
-        'Wired Video and Audio Connection via HDMI',
-        'Wireless Video and Audio Connection via AirMedia',
-        'Retractable Screen',
-        'Single Content Only – Not Dual-Content Capable'
-    ]
-
-    const Dropdown = ({ title, items }) => {
-        const [isOpen, setIsOpen] = useState(false);
-    
-        return (
-            <DropdownContainer>
-                <DropdownHeader onClick={() => setIsOpen(!isOpen)}>
-                    {title}
-                </DropdownHeader>
-                <DropdownBody isOpen={isOpen}>
-                    {items.map((item, index) => (
-                    <DropdownItem key={index}>{item}</DropdownItem>
-                    ))}
-                </DropdownBody>
-                <br/>
-            </DropdownContainer>
-        );
-    };
-
-    const FloorPlansDropdown = ({ title, imageSource }) => {
-        const [isOpen, setIsOpen] = useState(false);
-    
-        return (
-            <DropdownContainer>
-                <DropdownHeader onClick={() => setIsOpen(!isOpen)}>
-                    {title}
-                </DropdownHeader>
-                {isOpen && <br/>}
-                <DropdownBodyAV isOpen={isOpen} src={imageSource}>
-                    <DropdownImage isOpen={isOpen} src={imageSource} />
-                </DropdownBodyAV>
-                <br/>
-            </DropdownContainer>
-        );
-    };
-
-    const [AVSystemInfoIsOpen, setAVSystemInfoIsOpen] = useState(false);
-
+  
     return (
         <>
             <Navbar />
@@ -110,10 +32,10 @@ export default function Alssc() {
 
                     <Divider/>
 
-                    <Title>QUESTIONS?</Title>
+                    <Title>INQUIRIES OR CONCERNS?</Title>
                     <ExecutiveImage src="/images/executive-images/Chloe-Chan.webp" />
                     <HeaderDescription>
-                      Please contact our VP Finance at <a href="mailto:vpfinance@sus.ubc.ca">vpfinance@sus.ubc.ca</a>.
+                      Contact our VP Finance <b>Chloe Chan</b> at <a href="mailto:vpfinance@sus.ubc.ca">vpfinance@sus.ubc.ca</a>.
                     </HeaderDescription>
                 </Header>
 
@@ -132,17 +54,8 @@ const ExecutiveImage = styled.img`
   object-fit: cover;
   width: 200px;
   height: 200px;
+  margin: 2.5vh;
 `;
-
-const ContactSection = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    width: 80%;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-`
 
 const Content = styled.main`
     margin-top: 30vh;
@@ -190,78 +103,6 @@ const ButtonHollowBlack = styled.button`
 const Link = styled.a`
     text-decoration: none;
     color: inherit;
-`
-
-const Section = styled.div`
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    width: 80%;
-
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-`
-
-// =============== DROPDOWN STYLES =============== //
-
-const DropdownContainer = styled.div`
-  width: 100%;
-  margin: 0 auto;
-`;
-
-const DropdownHeader = styled.div`
-  padding: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: #f1f1f1;
-  cursor: pointer;
-  border-bottom: 1px solid #ddd;
-
-  &:hover {
-    background-color: #ddd;
-  }
-`;
-
-const DropdownBody = styled.div`
-    max-height: ${(props) => (props.isOpen ? '500px' : '0')};
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-`;
-
-const DropdownBodyAV = styled.div`
-    max-height: ${(props) => (props.isOpen ? 'none' : '0')};
-    p {
-        margin-top: 30px;
-    }
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    width: 100%;
-    margin-left: 2rem;
-`;
-
-const DropdownItem = styled.li`
-    padding: 15px;
-    margin: 0 15px;
-    border-bottom: 1px solid #ddd;
-    font-size: 16px;
-    
-    &:last-child {
-        border-bottom: none;
-    }
-    
-    &:hover {
-        background-color: #f9f9f9;
-    }
-`;
-
-const DropdownImage = styled.img`
-    max-height: ${(props) => (props.isOpen ? '500px' : '0')};
-    object-fit: cover;
-    width: auto;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    border: 1px solid grey;
 `
 
 // =============== HEADER =============== //
