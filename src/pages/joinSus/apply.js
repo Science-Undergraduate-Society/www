@@ -248,7 +248,7 @@ const ButtonHollowBlack = styled.button`
 `;
 
 const Span = styled.a`
-  color: #0052FF;
+  color: #001961;
   cursor: pointer;
   text-decoration: none;
 `;
