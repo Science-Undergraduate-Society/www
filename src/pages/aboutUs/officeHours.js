@@ -9,14 +9,17 @@ export default function OfficeHours() {
       <Navbar />
       <Background>
         <Content>
-          <Title>Office Hours</Title>
-          <p>
-            Each executive is required to sit on 2 hours of office hours every
-            week. Their office hours can be found listed below.
-          </p>
+          <Day>
+            <Title>Office Hours</Title>
+            <p>
+              Each executive is required to sit on 2 hours of office hours every
+              week. Their office hours can be found listed below.
+            </p>
+          </Day>
+
           <Timetable>
             <Day>
-              <DayTitle>Monday</DayTitle>
+              <ButtonHollowBlack>Monday</ButtonHollowBlack>
               <TimeSlot>
                 <Name>Chloe Chan</Name>
                 <PersonTitle>VP Finance</PersonTitle>
@@ -29,7 +32,7 @@ export default function OfficeHours() {
               </TimeSlot>
             </Day>
             <Day>
-              <DayTitle>Tuesday</DayTitle>
+              <ButtonHollowBlack>Tuesday</ButtonHollowBlack>
               <TimeSlot>
                 <Name>Thomas McIlwraith</Name>
                 <PersonTitle>Building Supervisor</PersonTitle>
@@ -38,7 +41,7 @@ export default function OfficeHours() {
             </Day>
 
             <Day>
-              <DayTitle>Wednesday</DayTitle>
+              <ButtonHollowBlack>Wednesday</ButtonHollowBlack>
               <TimeSlot>
                 <Name>Chloe Chang</Name>
                 <PersonTitle>VP Finance</PersonTitle>
@@ -57,7 +60,7 @@ export default function OfficeHours() {
             </Day>
 
             <Day>
-              <DayTitle>Thursday</DayTitle>
+              <ButtonHollowBlack>Thursday</ButtonHollowBlack>
               <TimeSlot>
                 <Name>Katie Le</Name>
                 <PersonTitle>VP Finance</PersonTitle>
@@ -81,7 +84,7 @@ export default function OfficeHours() {
             </Day>
 
             <Day>
-              <DayTitle>Friday</DayTitle>
+              <ButtonHollowBlack>Friday</ButtonHollowBlack>
               <TimeSlot>
                 <Name>Insha Majeed</Name>
                 <PersonTitle>VP Communications</PersonTitle>
@@ -116,8 +119,19 @@ export default function OfficeHours() {
   );
 }
 
+const ButtonHollowBlack = styled.button`
+    background-color: transparent;
+    color: #222755;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #222755;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 180px;
+`;
 const Title = styled.h1`
-  color: black;
+  color: #222755;
 `;
 
 const Background = styled.div`
@@ -165,7 +179,7 @@ const DayTitle = styled.h2`
 `;
 
 const TimeSlot = styled.div`
-  margin: 30px 0;
+  margin: 30px;
   color: black;
   display: flex;
   flex-direction: column;
