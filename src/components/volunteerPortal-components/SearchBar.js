@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 // import { VolunteerJobs } from "@/pages/studentServices/volunteerPortalFiles/jobData";
-// import { checkBoxesList } from "@/pages/studentServices/volunteerPortalFiles/jobData";
 
 const VolunteerJobsReverse = [
     { 
@@ -292,25 +291,9 @@ const VolunteerJobsReverse = [
         type: 'Off Campus',
         logo: '',
     },
-    // More jobs…
 ];
 
 const VolunteerJobs = VolunteerJobsReverse.reverse();
-
-const checkBoxesList = [ 
-    {
-        "id": 1,
-        "name": "Off Campus"
-    },
-    {
-        "id": 2,
-        "name": "On Campus"
-    },
-    {
-        "id": 3,
-        "name": "Virtual"
-    },
-]
 
 export const SearchBar = () => {
     const [keywords, setKeywords] = useState("");
@@ -325,15 +308,6 @@ export const SearchBar = () => {
 
         setList(locationList);
     }
-
-    //checkboxes
-    const [selectedItems, setSelectedItems] = useState([])
-	
-
-	function checkboxHandler(e){
-		let isSelected = e.target.checked;
-		let value = parseInt(e.target.value);
-	}
 
   return (
     <Search>
@@ -357,15 +331,6 @@ export const SearchBar = () => {
                 Search Jobs
             </ButtonHollowBlack>
             <br></br>
-            {/*
-            <Checkboxes>
-                {checkBoxesList.map((checkbox, index) => (
-                    <label key={index}>
-                        {checkbox.name} <input type="checkbox" name={checkbox.name} value={checkbox.id} defaultChecked={true} onChange={checkboxHandler} checked={ selectedItems.includes( checkbox.id ) }  />
-                    </label>
-                ))}
-            </Checkboxes>
-            */}
         </SearchBox>
       <JobSec>
         {list.map((job) => (
