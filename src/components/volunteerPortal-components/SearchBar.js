@@ -412,8 +412,7 @@ const SearchInput = styled.input`
     border-style: solid;
     border-radius: 20px;
     border-width: 1px;
-    margin: 1px;
-    margin-right: 15px;
+    margin-top: 1px;
     font-size: 15px;
     padding: 16px;
 `
@@ -462,10 +461,9 @@ const JobItem = styled.li`
     border-style: none;
     border-radius: 5px;
     margin-top: 5px;
-    margin-left: 8%;
     padding: 0 20px;
     background-color: #e7edf7;
-
+    margin-left: 8%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -474,6 +472,10 @@ const JobItem = styled.li`
     &:hover {
         background-color: #8A8984;
     }
+
+    @media (max-width: ${breakpoints.mobile}) {
+        margin-left: 0;
+}
 `
 
 const LeftSide = styled.div`

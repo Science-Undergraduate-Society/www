@@ -186,6 +186,10 @@ const Heading = styled.div`
     height: 100%; 
     padding: 150px 0 0 15%;
     color: white;
+
+    @media (max-width: ${breakpoints.mobile}) {
+        padding-left: 10%;
+    }
 `
 const Title = styled.div`
     font-size: 54px;
@@ -339,4 +343,9 @@ const ButtonContainer = styled.div`
     justify-content: center;
     gap: 20px; /* Adjusts space between buttons */
     margin-top: 20px; /* Space above the button container */
+
+    @media (max-width: ${breakpoints.mobile}) {
+        flex-direction: column;
+        margin-left: 15%;
+    }
 `;

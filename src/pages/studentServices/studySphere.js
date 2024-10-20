@@ -89,6 +89,10 @@ const Content = styled.div `
   padding: 150px 0 0 15%;
   background-size: cover;
   flex-wrap: wrap;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding-left: 10%;
+}
 `
 
 const Background = styled.div`

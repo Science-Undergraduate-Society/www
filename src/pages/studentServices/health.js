@@ -288,7 +288,7 @@ const Text = styled.p`
 `;
 
 const HeweImage = styled.img`
-  width: 60%;
+width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 10px;

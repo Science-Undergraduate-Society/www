@@ -204,6 +204,10 @@ const Heading = styled.div`
     padding-left: 15%;
     color: white;
     min-height: 400px;
+    
+    @media (max-width: ${breakpoints.mobile}) {
+        padding-left: 10%;
+    }
 `
 const Title = styled.div`
     font-size: 54px;
