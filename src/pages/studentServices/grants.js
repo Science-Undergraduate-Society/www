@@ -22,7 +22,7 @@ export default function Grants() {
             <StuSec>
                 <SecondHeader>Application Information</SecondHeader>
                     <InfoSec>Applications for Grants & Subsidies will  <strong>open on October 7, 2024</strong> and will be reviewed on a first-submitted, first-reviewed basis. SUS will be accepting applications 
-                    <strong>until March 10, 2025, or until funds run out.</strong> Please utilize the following resources and submission link to put forth your application. 
+                    <strong> until March 10, 2025, or until funds run out.</strong> Please utilize the following resources and submission link to put forth your application. 
                     </InfoSec>
                     <InfoSec>To read more about the 2024/2025 available grants and subsidies, as well as to view the application form, 
                         see below and click on the name of the grant/subsidy you are interested in. 
