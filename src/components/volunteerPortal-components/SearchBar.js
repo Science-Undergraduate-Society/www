@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import Link from 'next/link';
+import { Checkbox, workLocations } from "@/components/volunteerPortal-components/Checkbox"; 
 // import { VolunteerJobs } from "@/pages/studentServices/volunteerPortalFiles/jobData";
 
 const VolunteerJobsReverse = [
@@ -9,6 +11,7 @@ const VolunteerJobsReverse = [
         company: 'YNOTFORTOTS', 
         location: 'Vancouver', 
         type: 'In-Person', 
+        link: 'http://ynotfortots.com/give/',
         logo: ''
         },
     { 
@@ -16,7 +19,8 @@ const VolunteerJobsReverse = [
         title: 'Wildlife Rescue Association of BC', 
         company: 'Wildlife Rescue Association of BC', 
         location: 'BC', 
-        type: 'Virtual', 
+        type: 'Virtual',
+        link: 'https://www.wildliferescue.ca/what-we-do/volunteering/', 
         logo: ''
     },
     {
@@ -25,6 +29,7 @@ const VolunteerJobsReverse = [
         company: 'Shelter Movers',
         location: 'Vancouver',
         type: 'Off Campus',
+        link: 'https://www.sheltermovers.com/volunteer/',
         logo: '',
     },
     {
@@ -33,6 +38,7 @@ const VolunteerJobsReverse = [
         company: 'Refood Food Rescue Foundation',
         location: 'Vancouver',
         type: 'Off Campus',
+        link: 'www.refood.ca',
         logo: '',
     },
     {
@@ -41,6 +47,7 @@ const VolunteerJobsReverse = [
         company: 'Vancouver Emergency Management Agency',
         location: 'Vancouver',
         type: 'Off Campus',
+        link: 'https://vancouver.ca/home-property-development/emergency-social-services.aspx',
         logo: '',
     },
     {
@@ -49,6 +56,7 @@ const VolunteerJobsReverse = [
         company: 'UBC Third World Eye Care Society',
         location: 'Vancouver',
         type: 'Off Campus',
+        link: 'https://www.instagram.com/ubctwecs/',
         logo: '',
     },
     {
@@ -57,6 +65,7 @@ const VolunteerJobsReverse = [
         company: 'UBC Students for Partners in Health Canada',
         location: 'Anywhere',
         type: 'On Campus',
+        link: 'https://www.facebook.com/ubcspihc/',
         logo: '',
     },
     {
@@ -65,14 +74,16 @@ const VolunteerJobsReverse = [
         company: 'UBC Red Cross Club',
         location: 'Vancouver',
         type: 'On Campus',
+        link: 'https://www.facebook.com/ubcredcross/',
         logo: '',
     },
     {
         id: 9,
-        title: 'UBC Music for Mentak Health',
-        company: 'UBC Music for Mentak Health',
+        title: 'UBC Music for Mental Health',
+        company: 'UBC Music for Mental Health',
         location: 'UBC',
         type: 'On Campus',
+        link: 'https://www.campusgroups.com/product/home/',
         logo: '',
     },
     {
@@ -81,6 +92,7 @@ const VolunteerJobsReverse = [
         company: 'UBC Mental Health Awareness Club',
         location: 'Vancouver',
         type: 'On Campus',
+        link: 'https://www.facebook.com/UBCMHAC',
         logo: '',
     },
     {
@@ -89,6 +101,7 @@ const VolunteerJobsReverse = [
         company: 'UBC Heart and Stroke Foundation',
         location: 'Vancouver',
         type: 'On Campus',
+        link: 'https://www.facebook.com/ubcHSFclub',
         logo: '',
     },
     {
@@ -97,6 +110,7 @@ const VolunteerJobsReverse = [
         company: 'UBC Blood for Life',
         location: 'Vancouver',
         type: 'On Campus',
+        link: 'https://www.facebook.com/ubcbloodclub/',
         logo: '',
     },
     {
@@ -105,6 +119,7 @@ const VolunteerJobsReverse = [
         company: 'The Reading Bear',
         location: 'Vancouver',
         type: 'Off Campus',
+        link: 'https://thereadingbear.ca/volunteer-info',
         logo: '',
     },
     {
@@ -113,6 +128,7 @@ const VolunteerJobsReverse = [
         company: 'Swim Drink Fish',
         location: 'Vancouver',
         type: 'Off Campus',
+        link: 'https://www.swimdrinkfish.ca/volunteer',
         logo: '',
     },
     {
@@ -121,6 +137,7 @@ const VolunteerJobsReverse = [
         company: 'Stanley Park Ecology Society',
         location: 'Vancouver',
         type: 'Off Campus',
+        link: 'https://stanleyparkecology.ca/about/volunteer/',
         logo: '',
     },
     {
@@ -129,6 +146,7 @@ const VolunteerJobsReverse = [
         company: 'Breakfast Club of Canada',
         location: 'Vancouver',
         type: 'Off Campus',
+        link: 'https://www.breakfastclubcanada.org/the-cause/volunteers/',
         logo: '',
     },
     {
@@ -137,6 +155,7 @@ const VolunteerJobsReverse = [
         company: 'Seniors First BC',
         location: 'Vancouver',
         type: 'Off Campus, Virtual',
+        link: 'https://seniorsfirstbc.ca/get-involved/volunteer/',
         logo: '',
     },
     {
@@ -145,6 +164,7 @@ const VolunteerJobsReverse = [
         company: 'MS Society of Canada',
         location: 'Anywhere',
         type: 'Virtual',
+        link: 'https://mscanada.ca/volunteer',
         logo: '',
     },
     {
@@ -153,6 +173,7 @@ const VolunteerJobsReverse = [
         company: 'Urban Native Youth Association',
         location: 'Vancouver',
         type: 'Off Campus',
+        link: 'https://unya.bc.ca/get-involved/#volunteer',
         logo: '',
     },
     {
@@ -161,14 +182,16 @@ const VolunteerJobsReverse = [
         company: 'Learning Buddies Network',
         location: 'Greater Vancouver',
         type: 'Off Campus, Virtual',
+        link: 'https://www.learningbuddiesnetwork.com/',
         logo: '',
     },
     {
         id: 21,
-        title: 'Lead Inbstructor',
+        title: 'Lead Instructor',
         company: 'Canada Learning Code',
         location: 'Vancouver',
         type: 'Off Campus, Virtual',
+        link: 'https://www.canadalearningcode.ca/volunteer/',
         logo: '',
     },
     {
@@ -177,6 +200,7 @@ const VolunteerJobsReverse = [
         company: 'KidSafe Project Society',
         location: 'Vancouver',
         type: 'Off Campus',
+        link: 'https://www.kidsafe.ca/volunteer-1',
         logo: '',
     },
     {
@@ -185,6 +209,7 @@ const VolunteerJobsReverse = [
         company: 'Habitat for Humanity Greater Vancouver',
         location: 'Vancouver',
         type: 'Off Campus',
+        link: 'https://www.habitatgv.ca/event-team-volunteer',
         logo: '',
     },
     {
@@ -193,6 +218,7 @@ const VolunteerJobsReverse = [
         company: 'Growing Chefs',
         location: 'Vancouver',
         type: 'Off Campus',
+        link: 'https://www.growingchefs.ca/volunteer-with-us/',
         logo: '',
     },
     {
@@ -201,6 +227,7 @@ const VolunteerJobsReverse = [
         company: 'Greater Vancouver Food Bank',
         location: 'Vancouver',
         type: 'Off Campus',
+        link: 'https://foodbank.bc.ca/volunteer/group-volunteers/',
         logo: '',
     },
     {
@@ -209,6 +236,7 @@ const VolunteerJobsReverse = [
         company: 'Girls to the Power of Math',
         location: 'Anywhere',
         type: 'Off Campus, Virtual',
+        link: 'https://www.girlstothepowerofmath.org/',
         logo: '',
     },
     {
@@ -217,6 +245,7 @@ const VolunteerJobsReverse = [
         company: 'Fraser Health Crisis Line',
         location: 'Surrey',
         type: 'Off Campus',
+        link: 'https://www.options.bc.ca/volunteer-at-options',
         logo: '',
     },
     {
@@ -225,6 +254,7 @@ const VolunteerJobsReverse = [
         company: 'MOSAIC',
         location: 'Anywhere',
         type: 'Off Campus, Virtual',
+        link: 'https://mosaicbc.org/volunteer/',
         logo: '',
     },
     {
@@ -233,6 +263,7 @@ const VolunteerJobsReverse = [
         company: 'CUBS',
         location: 'Vancouver',
         type: 'Off Campus, Virtual',
+        link: 'https://docs.google.com/forms/d/e/1FAIpQLSdQH9kV2WT-bGD40xpG32tH72lxc27PnxnLyfFCH1Z41que7g/viewform',
         logo: '',
     },
     {
@@ -241,6 +272,7 @@ const VolunteerJobsReverse = [
         company: 'CityReach Care Society',
         location: 'Vancouver',
         type: 'Off Campus',
+        link: 'https://app.betterimpact.com/Application?OrganizationGuid=dbf7d941-802a-4c48-a688-b582a407365b&ApplicationFormNumber=1',
         logo: '',
     },
     {
@@ -249,6 +281,7 @@ const VolunteerJobsReverse = [
         company: 'Cassie and Friends',
         location: 'Vancouver',
         type: 'Off Campus',
+        link: 'https://cassieandfriends.ca/volunteer/',
         logo: '',
     },
     {
@@ -257,6 +290,7 @@ const VolunteerJobsReverse = [
         company: 'Canuck Place',
         location: 'Vancouver',
         type: 'Off Campus',
+        link: 'https://www.canuckplace.org/how-to-give/volunteer/',
         logo: '',
     },
     {
@@ -265,6 +299,7 @@ const VolunteerJobsReverse = [
         company: 'Canadian Blood Services',
         location: 'Vancouver',
         type: 'Off Campus',
+        link: 'https://app.betterimpact.com/PublicEnterprise/EnterpriseSearch?EnterpriseGuid=0b68e364-95da-420a-891c-bda9ba835ea4&SearchType=Organization&SearchId=29387',
         logo: '',
     },
     {
@@ -273,6 +308,7 @@ const VolunteerJobsReverse = [
         company: 'Big Brothers of Greater Vancouver',
         location: 'Vancouver',
         type: 'Off Campus, Virtual',
+        link: 'https://www.bigbrothersvancouver.com/',
         logo: '',
     },
     {
@@ -281,20 +317,26 @@ const VolunteerJobsReverse = [
         company: 'Ask An Undergrad',
         location: 'Canada',
         type: 'Virtual',
+        link: 'https://www.askanundergrad.com/',
         logo: '',
     },
     {
         id: 36,
         title: 'AIDS Vancouver Volunteer',
-        company: 'AIDS Vancouver',
+        company: 'Ribbon Community',
         location: 'Vancouver',
         type: 'Off Campus',
-        logo: '',
+        link: 'https://app.betterimpact.com/Application?OrganizationGuid=f480a80e-8cec-4d3d-a1d2-a585383f00a1&ApplicationFormNumber=1',
+        logo: '', 
     },
 ];
 
 const VolunteerJobs = VolunteerJobsReverse.reverse();
 
+export const handleChecked = () => {
+    setIsChecked(!isChecked);
+
+}
 export const SearchBar = () => {
     const [keywords, setKeywords] = useState("");
     const [list, setList] = useState(VolunteerJobs);
@@ -322,6 +364,12 @@ export const SearchBar = () => {
                 placeholder="Location"
                 onChange={(e) => setLocation(e.target.value.toLowerCase())}
                 />
+                {/* 
+                DO NOT REMOVE WIP
+                <Checkbox /> 
+
+                Main problem: need a way to filter jobs based off of array of list of types/locations (off/on campus)
+                */}
             </Inputs>
 
             <br></br>
@@ -342,12 +390,16 @@ export const SearchBar = () => {
                 <JobHeading>
                     <JobTitle>{job.title}</JobTitle>
                     <Company>{job.company}</Company>
+                    <a href={job.link}>
+                        <LearnMore>Learn More</LearnMore>
+                    </a>
                 </JobHeading>
             </LeftSide>
             <RightSide>
                 <Type>{job.type}</Type>
                 <Location>{job.location}</Location>
             </RightSide>
+
         </JobItem>
         ))}
       </JobSec>
@@ -417,10 +469,9 @@ const SearchInput = styled.input`
     padding: 16px;
 `
 
-const SearchButton = styled.button`
+const LearnMore = styled.button`
     display: inline-block;
     margin-top: 24px;
-    width: 50%;
     height: 100%;
     color: #ffffff;
     font-size: 16px;
@@ -431,8 +482,10 @@ const SearchButton = styled.button`
 
      &:hover {
         background-color: #005bb5;
+        cursor: pointer;
     }
 `
+
 
 const Checkboxes = styled.div`
     margin-top: 10px;
