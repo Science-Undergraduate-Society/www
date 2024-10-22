@@ -56,3 +56,24 @@ const eventsArray =
   ];
 
   export default eventsArray;
+
+
+import React, { useEffect, useState } from "react";
+
+  const sheetLink = 'https://script.google.com/macros/s/AKfycbwDwiaqG0uwW7fyuy3K2cQmhYBqBITLxGtHIHOmRMSrHSXYGmkfQr4PFPpGaydbFUX_/exec'
+
+  export function Data() {
+    const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch(sheetLink) // Replace with your actual endpoint URL
+      .then(response => response.json())
+      .then(data => setData(data))
+      .catch(error => console.error('Error fetching data:', error));
+  }, []);
+
+    return data;
+  }
+
+
+
