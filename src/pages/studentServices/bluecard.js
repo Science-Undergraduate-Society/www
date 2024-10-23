@@ -87,7 +87,7 @@ export default function BlueCard() {
                         <IndivPartnerInfo
                             partnerName="Majestic Maven"
                             logoSrc="/images/bluecard-images/partner-logos/majestic-maven-14.jpg"
-                            description=""
+                            description="20% off all lash and brow services"
                             location="Valid only at 1236 Richards St, Vancouver, BC V6B 6M6"
                         />
                         <IndivPartnerInfo
@@ -111,7 +111,7 @@ export default function BlueCard() {
                         <IndivPartnerInfo
                             partnerName="Wizeprep"
                             logoSrc="/images/bluecard-images/partner-logos/wizeprep logo.png"
-                            description=""
+                            description="15% off UBC-specific and MCAT courses"
                             location="Valid at wizeprep.com"
                         />
                         <IndivPartnerInfo
