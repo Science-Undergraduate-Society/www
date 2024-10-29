@@ -11,7 +11,7 @@ export default function HealthAndWellness() {
           <HeweImage src="/images/health-images/wellness_hub_logo.png" />
         </MainTitleContainer>
         <Section>
-          <SubTitle>CRISIS SUPPORT</SubTitle>
+          <Title>CRISIS SUPPORT</Title>
 
           <Text>
             If you or someone you know is in imminent danger, call {' '}
@@ -33,7 +33,7 @@ export default function HealthAndWellness() {
             <Link href="tel:18778207444">1 877 820 7444</Link>.
           </Text>
 
-          <SubTitle>OTHER IMMEDIATE RESOURCES</SubTitle>
+          <Title>OTHER IMMEDIATE RESOURCES</Title>
 
           <Text>
             Here2Talk: Accessible 24/7 to all students in BC who are registered in a post-secondary institution{' '}
@@ -54,7 +54,7 @@ export default function HealthAndWellness() {
         </Section>
 
         <Section>
-          <SubTitle>UBC SERVICES & RESOURCES</SubTitle>
+          <Title>UBC SERVICES & RESOURCES</Title>
           <Text>
             Student Services Health and Wellbeing: <Link href="https://students.ubc.ca/health">https://students.ubc.ca/health</Link>
           </Text>
@@ -82,7 +82,6 @@ export default function HealthAndWellness() {
 
         <Section>
           <Title>VANCOUVER/BC SERVICES & RESOURCES</Title>
-          <HeweImage />
           <SubTitle>Health-Link BC Well-being</SubTitle>
           <Text>
             Visit <Link href="https://www.healthlinkbc.ca/mental-health-substance-use/well-being">Health-Link BC</Link> for information and resources on well-being and mental health.

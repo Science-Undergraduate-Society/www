@@ -42,9 +42,6 @@ export default function MeetingRoomBookings() {
                             <ButtonHollowBlack>
                                 <Link href="https://alsscroom103.youcanbook.me/">Book Room 103</Link>    
                             </ButtonHollowBlack>
-                            <ButtonHollowBlack>
-                                <Link href="https://alsscroom103.youcanbook.me/">Check Availability for Room 103</Link>    
-                            </ButtonHollowBlack>
                         </ButtonGroup>
 
                         <ButtonGroup>
@@ -52,18 +49,12 @@ export default function MeetingRoomBookings() {
                             <ButtonHollowBlack>
                                 <Link href="https://alsscroom104.youcanbook.me/">Book Room 104</Link>    
                             </ButtonHollowBlack>
-                            <ButtonHollowBlack>
-                                <Link href="https://alsscroom103.youcanbook.me/">Check Availability for Room 104</Link>    
-                            </ButtonHollowBlack>
                         </ButtonGroup>
 
                         <ButtonGroup>
                             <H3>Room 105</H3>   
                             <ButtonHollowBlack>
                                 <Link href="https://alsscroom105.youcanbook.me/">Book Room 105</Link>    
-                            </ButtonHollowBlack>
-                            <ButtonHollowBlack>
-                                <Link href="https://alsscroom103.youcanbook.me/">Check Availability for Room 105</Link>    
                             </ButtonHollowBlack>
                         </ButtonGroup> 
                     </ButtonsContainer> 
@@ -231,7 +222,7 @@ const ButtonGroup = styled.div`
 const ButtonHollowBlack = styled.button`
     background-color: transparent;
     color: #222755;
-    padding: 15px 35px;
+    padding: 15px 50px;
     border-radius: 30px;
     border: 1px solid #222755;
     cursor: pointer;
@@ -245,7 +236,7 @@ const ButtonHollowBlack = styled.button`
     }
 
     @media (max-width: 768px) {
-        padding: 10px 20px;
+        padding: 10px 30px;
         font-size: 0.7rem;
     }
 `;

@@ -101,8 +101,8 @@ export default function OfficeHours() {
                 <Time>1:00pm - 2:00pm</Time>
               </TimeSlot>
               <TimeSlot>
-                <Name>Robbie Yang</Name>
-                <PersonTitle>Building Manager</PersonTitle>
+                <Name>Christinah Soneye</Name>
+                <PersonTitle>VP Academic</PersonTitle>
                 <Time>2:00pm - 3:00pm</Time>
               </TimeSlot>
               <TimeSlot>
