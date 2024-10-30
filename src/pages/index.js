@@ -551,7 +551,6 @@ const Arrow = styled.img`
 
 const EventsWrapper = styled.div`
   display: flex;
-  overflow-x: scroll;
   gap: 2.5rem;
   padding: 20px;
   scroll-behavior: smooth;
@@ -566,8 +565,6 @@ const EventsInfo = styled.div`
   flex-direction: column;
   justify-content: center;
   min-width: 500px;
-  margin-right: 3rem;
-  margin-left: 5rem;
 
   background-color: white;
   padding: 40px 40px;
@@ -575,7 +572,7 @@ const EventsInfo = styled.div`
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
   @media (max-width: 900px) {
-    width: 300px;
+    min-width: 80%;
   }
 `
 
