@@ -293,9 +293,10 @@ const HeweImage = styled.img`
   height: auto;
   object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 40px;
+  margin: 40px auto;
 
   @media (max-width: 768px) {
-    height: 150px;
+    height: auto;
+    width: 90%;
   }
 `;
