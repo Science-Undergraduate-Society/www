@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: 'Nunito';
     scroll-behavior: smooth;
+    overflow-x: hidden;
     /* background-color: #001961; */
 }
 
