@@ -6,9 +6,9 @@ import {
   faSpotify,
   faYoutube,
   faFacebook,
-  faInstagram
-} from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
 import eventsArray from "@/utility/events";
@@ -33,9 +33,9 @@ export default function Home() {
   useEffect(() => {
     const scrollElement = scrollRef.current;
     if (scrollElement) {
-      scrollElement.addEventListener('scroll', handleScroll);
+      scrollElement.addEventListener("scroll", handleScroll);
       return () => {
-        scrollElement.removeEventListener('scroll', handleScroll);
+        scrollElement.removeEventListener("scroll", handleScroll);
       };
     }
   }, []);
@@ -44,13 +44,16 @@ export default function Home() {
     <Background>
       <Navbar />
       <Content>
-
         {/* Hero Section */}
         <Hero>
           <HeroText>
             <h1>SCIENCE UNDERGRADUATE SOCIETY</h1>
-            <p>Representing 9,900+ UBC Science undergrads and 50 Science clubs.</p>
-            <p><em>~est. 1961~</em></p>
+            <p>
+              Representing 9,900+ UBC Science undergrads and 50 Science clubs.
+            </p>
+            <p>
+              <em>~est. 1961~</em>
+            </p>
             {/* <ButtonGroup>
               <ButtonFilledWhite>Who We Are</ButtonFilledWhite>
               <ButtonHollowWhite>Events Calendar</ButtonHollowWhite>
@@ -72,13 +75,20 @@ export default function Home() {
             <Who>
               <h2>Who We Are</h2>
               <p>
-                Founded in 1961, the Science Undergraduate Society (or SUS) aims to promote the academic, physical, & social well-being of Science Students. Supporting over 9700+ Science Students and over 50 Science clubs, every science student is a member of SUS.
+                Founded in 1961, the Science Undergraduate Society (or SUS) aims
+                to promote the academic, physical, & social well-being of
+                Science Students. Supporting over 9700+ Science Students and
+                over 50 Science clubs, every science student is a member of SUS.
               </p>
             </Who>
             <What>
               <h2>What We Do</h2>
               <p>
-                Through SUS, we aim to create and foster a sense of science community and continually promote good relations with other communities on campus. Throughout the year, dozens of <Span href="/events">events</Span> are run to in an effort to support our peers here at UBC.
+                Through SUS, we aim to create and foster a sense of science
+                community and continually promote good relations with other
+                communities on campus. Throughout the year, dozens of{" "}
+                <Span href="/events">events</Span> are run to in an effort to
+                support our peers here at UBC.
               </p>
             </What>
           </AboutSection>
@@ -88,30 +98,45 @@ export default function Home() {
         <Events>
           <EventsTopSection>
             <EventsTitle>
-              Check out our <Span href="/events">upcoming events</Span> hosted by the <br/> Science Undergraduate Society
+              Check out our <Span href="/events">upcoming events</Span> hosted
+              by the <br /> Science Undergraduate Society
             </EventsTitle>
-            <Arrow src="images/index-images/(scroll).svg"/>
+            <Arrow src="images/index-images/(scroll).svg" />
           </EventsTopSection>
 
           <Collage>
             <EventsWrapper ref={scrollRef}>
               <EventsInfo>
-                <div style={ {marginBottom: "50px"} }>
+                <div style={{ marginBottom: "50px" }}>
                   <p>Take a look at our events calendar!</p>
-                  <ButtonHollowBlack><Link href="/ourEvents/upcoming">Calendar</Link></ButtonHollowBlack>
+                  <ButtonHollowBlack>
+                    <Link href="/ourEvents/upcoming">Calendar</Link>
+                  </ButtonHollowBlack>
                 </div>
 
                 <div>
-                  <p>For events organized by other science clubs, visit our list of associated clubs to find their social media.</p>
-                  <ButtonHollowBlack><Link href="/aboutUs/clubs">Our Clubs</Link></ButtonHollowBlack>
+                  <p>
+                    For events organized by other science clubs, visit our list
+                    of associated clubs to find their social media.
+                  </p>
+                  <ButtonHollowBlack>
+                    <Link href="/aboutUs/clubs">Our Clubs</Link>
+                  </ButtonHollowBlack>
                 </div>
               </EventsInfo>
 
               {eventsArray.map((event, index) => (
                 <EventCard key={index}>
-                  <Image src={event.image} alt="Description" width={500} height={300} />
+                  <Image
+                    src={event.image}
+                    alt="Description"
+                    width={500}
+                    height={300}
+                  />
                   <h3>{event.title}</h3>
-                  <p style={ {color: "grey", fontSize: "13px"} }>{event.date} @ {event.time}</p>
+                  <p style={{ color: "grey", fontSize: "13px" }}>
+                    {event.date} @ {event.time}
+                  </p>
                   <p>{event.description}</p>
                   <Span href={event.link}>More Info &gt;</Span>
                 </EventCard>
@@ -126,24 +151,36 @@ export default function Home() {
 
         {/* Clubs Collage */}
         <ClubsCollageWrapper>
-          <ClubsTitle>Science Undergraduate Society is proud to support 26 departmental and 26 non-departmental clubs. </ClubsTitle>
+          <ClubsTitle>
+            Science Undergraduate Society is proud to support 26 departmental
+            and 26 non-departmental clubs. 
+          </ClubsTitle>
 
           <ClubsCollageContent>
-            {clubs.map((club, index) => (
-              club.image !== "" && // if club image exists
-              (<Club key={index}>
-                <ClubImage src={club.image} alt={club.name} />
-              </Club>)
-            ))}
+            {clubs.map(
+              (club, index) =>
+                club.image !== "" && ( // if club image exists
+                  <Club key={index}>
+                    <a
+                      href={club.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <ClubImage src={club.image} alt={club.name} />
+                    </a>
+                  </Club>
+                )
+            )}
           </ClubsCollageContent>
         </ClubsCollageWrapper>
 
         {/* Get Involved Section */}
         <InvolvementContainer>
-
           <LeftCard>
             <h2>How to Get involved</h2>
-            <p>There are four different ways you can get involved with (s)us.</p>
+            <p>
+              There are four different ways you can get involved with (s)us.
+            </p>
             <ul>
               <li style={{ paddingLeft: "30px" }}>(1) Elected executive</li>
               <li style={{ paddingLeft: "30px" }}>(2) Year-round executive</li>
@@ -151,63 +188,119 @@ export default function Home() {
               <li style={{ paddingLeft: "30px" }}>(4) Sponsored clubs</li>
             </ul>
             <p>
-              These positions are open to ALL science students, even if you haven&apos;t
-              been a part of SUS before (this includes the elected positions).
+              These positions are open to ALL science students, even if you
+              haven&apos;t been a part of SUS before (this includes the elected
+              positions).
             </p>
           </LeftCard>
 
           <RightCard>
-            <p>(1)<br/>Once a year in spring, all science students have the opportunity to vote for the next years President and VP&apos;s!</p>
-            <p>(2)<br/>In June and September every year, there are multiple positions that are released on <Span href="https://ubc-csm.symplicity.com/">UBC Careers Online</Span> for those wishing to get involved for the entire school year!</p>
-            <p>(3)<br/>Throughout the year, large events will require the help of external volunteers. If you want to be involved with SUS but don’t want to commit long-term, this is perfect for you! Make sure to follow our <Span href="https://instagram.com/susubc">Instagram</Span> to be made aware of any volunteering opportunities!</p>
-            <p>(4)<br/>SUS supports over 50 science-related clubs at UBC. Make sure to consider getting involved with them too!</p>
+            <p>
+              (1)
+              <br />
+              Once a year in spring, all science students have the opportunity
+              to vote for the next years President and VP&apos;s!
+            </p>
+            <p>
+              (2)
+              <br />
+              In June and September every year, there are multiple positions
+              that are released on{" "}
+              <Span href="https://ubc-csm.symplicity.com/">
+                UBC Careers Online
+              </Span>{" "}
+              for those wishing to get involved for the entire school year!
+            </p>
+            <p>
+              (3)
+              <br />
+              Throughout the year, large events will require the help of
+              external volunteers. If you want to be involved with SUS but don’t
+              want to commit long-term, this is perfect for you! Make sure to
+              follow our{" "}
+              <Span href="https://instagram.com/susubc">Instagram</Span> to be
+              made aware of any volunteering opportunities!
+            </p>
+            <p>
+              (4)
+              <br />
+              SUS supports over 50 science-related clubs at UBC. Make sure to
+              consider getting involved with them too!
+            </p>
           </RightCard>
-
         </InvolvementContainer>
 
         {/* Abdul Ladha Section */}
         <Alssc>
           <AlsscContent>
             <Title>Abdul Ladha Science Student Centre</Title>
-            <Description>The Abdul Ladha Science Student Centre (ALSSC) is the home of the Science Undergraduate Society. It exists as a social space to encourage both informal and organized academic, club, and social activities and interactions for those students enrolled in the Faculty of Science at UBC Vancouver.</Description>
+            <Description>
+              The Abdul Ladha Science Student Centre (ALSSC) is the home of the
+              Science Undergraduate Society. It exists as a social space to
+              encourage both informal and organized academic, club, and social
+              activities and interactions for those students enrolled in the
+              Faculty of Science at UBC Vancouver.
+            </Description>
             <div>
-              <ButtonHollowBlack><Link href="/scienceStudentCentre/meetingBooking">Room Bookings</Link></ButtonHollowBlack>
+              <ButtonHollowBlack>
+                <Link href="/scienceStudentCentre/meetingBooking">
+                  Room Bookings
+                </Link>
+              </ButtonHollowBlack>
             </div>
           </AlsscContent>
 
-          <Frame src="https://www.youtube.com/embed/t-kc4Bppv2I?si=8kjHKUHZ9ZZhmQMy" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></Frame>
+          <Frame
+            src="https://www.youtube.com/embed/t-kc4Bppv2I?si=8kjHKUHZ9ZZhmQMy"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></Frame>
         </Alssc>
 
         {/* Podcast Section */}
         <Podcast>
-          <Frame src="https://open.spotify.com/embed/show/6LvV59dTsORiXSn4z28Zon/video?utm_source=generator" title="YouTube video player"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></Frame>
-          
+          <Frame
+            src="https://open.spotify.com/embed/show/6LvV59dTsORiXSn4z28Zon/video?utm_source=generator"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></Frame>
+
           <PodcastContent>
             <Title>SUSpisode</Title>
-            <Description>In 2023, our productions team thought, &quot;Why not start a podcast all about UBC and university life?&quot; So they did! Join us, along with special guests from around UBC, as we chat about everything from school and life to the quirky moments that make university unique!</Description>
+            <Description>
+              In 2023, our productions team thought, &quot;Why not start a
+              podcast all about UBC and university life?&quot; So they did! Join
+              us, along with special guests from around UBC, as we chat about
+              everything from school and life to the quirky moments that make
+              university unique!
+            </Description>
             <SocialMediaIcons>
               <p>Available Platforms:</p>
               <a
-                  href='https://www.instagram.com/reel/CzMXIVKA-Wk/'
-                  target='_blank'
-                  rel='noreferrer'
-                  style={{marginLeft: "20px"}}
+                href="https://www.instagram.com/reel/CzMXIVKA-Wk/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ marginLeft: "20px" }}
               >
-                  <FontAwesomeIcon icon={faInstagram} />
+                <FontAwesomeIcon icon={faInstagram} />
               </a>
               <a
-                  href='https://open.spotify.com/show/6LvV59dTsORiXSn4z28Zon?si=0f45da7172b94df9'
-                  target='_blank'
-                  rel='noreferrer'
+                href="https://open.spotify.com/show/6LvV59dTsORiXSn4z28Zon?si=0f45da7172b94df9"
+                target="_blank"
+                rel="noreferrer"
               >
-                  <FontAwesomeIcon icon={faSpotify} />
+                <FontAwesomeIcon icon={faSpotify} />
               </a>
               <a
-                  href='https://www.youtube.com/watch?v=uklHoSMsSsY&list=PLb42V8mv92mbcVMyJma3LylkHLciwCMsn'
-                  target='_blank'
-                  rel='noreferrer'
+                href="https://www.youtube.com/watch?v=uklHoSMsSsY&list=PLb42V8mv92mbcVMyJma3LylkHLciwCMsn"
+                target="_blank"
+                rel="noreferrer"
               >
-                  <FontAwesomeIcon icon={faYoutube} />
+                <FontAwesomeIcon icon={faYoutube} />
               </a>
             </SocialMediaIcons>
           </PodcastContent>
@@ -216,25 +309,32 @@ export default function Home() {
         {/* Shop Section */}
         <ShopSection>
           <ShopGridContainer>
-            <ShopImage src="/images/shop-images/Sand-Hoodie-1.png"/>
-            <ShopImage src="/images/shop-images/Black-Hoodie-1.png"/>
-            <ShopImage src="/images/shop-images/Blue-Hoodie-1.png"/>
-            <ShopImage src="/images/shop-images/Grey-Crew-1.png"/>
-            <ShopImage src="/images/shop-images/White-Crew-1.png"/>
+            <ShopImage src="/images/shop-images/Sand-Hoodie-1.png" />
+            <ShopImage src="/images/shop-images/Black-Hoodie-1.png" />
+            <ShopImage src="/images/shop-images/Blue-Hoodie-1.png" />
+            <ShopImage src="/images/shop-images/Grey-Crew-1.png" />
+            <ShopImage src="/images/shop-images/White-Crew-1.png" />
           </ShopGridContainer>
 
           <ShopInfo>
-            <p style={{fontSize: "15px", color: "gray"}}>Shop</p>
-            <ShopTitle>Unique merch to rep the Faculty of Science at UBC!</ShopTitle>
-            <ShopDescription>Every year, our sales team is tasked with creating unique UBC merch that shows off the faculty of science!</ShopDescription>
+            <p style={{ fontSize: "15px", color: "gray" }}>Shop</p>
+            <ShopTitle>
+              Unique merch to rep the Faculty of Science at UBC!
+            </ShopTitle>
+            <ShopDescription>
+              Every year, our sales team is tasked with creating unique UBC
+              merch that shows off the faculty of science!
+            </ShopDescription>
             <div>
-              <ButtonHollowBlack><Link href="/shop">Shop Now</Link></ButtonHollowBlack>
+              <ButtonHollowBlack>
+                <Link href="/shop">Shop Now</Link>
+              </ButtonHollowBlack>
             </div>
           </ShopInfo>
         </ShopSection>
-        
+
         {/* Footer Section*/}
-        <Footer color={"white"}/>
+        <Footer color={"white"} />
       </Content>
     </Background>
   );
@@ -245,10 +345,10 @@ export default function Home() {
 const Background = styled.main`
   width: 100%;
   height: auto;
-  overflow-y: auto; 
+  overflow-y: auto;
   scroll-behavior: smooth;
-  position: relative; 
-  background-color: #F7F5F2;
+  position: relative;
+  background-color: #f7f5f2;
 `;
 
 const Content = styled.div`
@@ -308,16 +408,19 @@ const ButtonHollowBlack = styled.button`
   cursor: pointer;
   font-size: 0.8rem;
   font-weight: 600;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
 
   &:hover {
-    color: #0052FF;
-    border: 1px solid #0052FF;
+    color: #0052ff;
+    border: 1px solid #0052ff;
   }
 `;
 
 const Span = styled.a`
-  color: #0052FF;
+  color: #0052ff;
   cursor: pointer;
   text-decoration: none;
 `;
@@ -325,7 +428,7 @@ const Span = styled.a`
 const Link = styled.a`
   text-decoration: none;
   color: inherit;
-`
+`;
 
 // =============== HERO =============== //
 
@@ -385,12 +488,12 @@ const AboutCollageContainer = styled.div`
   position: relative;
   width: 100%;
   height: auto;
-  background-color: #F7F5F2;
+  background-color: #f7f5f2;
   overflow: hidden;
   border: none;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -399,7 +502,7 @@ const AboutCollageContainer = styled.div`
     background-color: rgba(34, 39, 85, 0.7); /* Black tint with 40% opacity */
     z-index: 1;
   }
-`
+`;
 
 const AboutCollage = styled.img`
   width: 100%;
@@ -407,22 +510,22 @@ const AboutCollage = styled.img`
   border: none;
   object-fit: cover;
   background-color: #222755;
-`
+`;
 
 const TopColour = styled.div`
   width: 100%;
   height: 20vh;
   background-color: #222755;
   color: #222755;
-`
+`;
 
 const BottomColour = styled.div`
   width: 100%;
   height: 15vh;
-  background-color: #F7F5F2;
-  color: #F7F5F2;
+  background-color: #f7f5f2;
+  color: #f7f5f2;
   border: none;
-`
+`;
 
 const AboutSection = styled.div`
   position: absolute;
@@ -430,7 +533,7 @@ const AboutSection = styled.div`
   left: 50%;
   transform: translateX(-50%);
   z-index: 10; /* Ensure it is above other elements */
-  
+
   background-color: white;
   width: 80%;
   max-width: 1000px;
@@ -450,7 +553,7 @@ const Who = styled.div`
   flex-direction: column;
   align-items: left;
   text-align: left;
-  
+
   border-bottom: 1px solid #808080;
   border-right: 1px solid #808080;
 
@@ -460,7 +563,7 @@ const Who = styled.div`
   h2 {
     margin-bottom: 0;
   }
-  p{
+  p {
     // padding-left: 30px;
   }
 
@@ -475,14 +578,14 @@ const Who = styled.div`
       font-size: 15px;
     }
   }
-`
+`;
 
 const What = styled.div`
   display: flex;
   flex-direction: column;
   align-items: right;
   text-align: right;
-  
+
   border-left: 1px solid #808080;
 
   padding-left: 50px;
@@ -499,7 +602,7 @@ const What = styled.div`
       font-size: 15px;
     }
   }
-`
+`;
 
 // =============== ABOUT SECTION =============== //
 
@@ -514,17 +617,17 @@ const Events = styled.div`
   @media (max-width: 1050px) {
     margin-top: 30vh;
   }
-    
+
   @media (max-width: 800px) {
     margin-top: 40vh;
   }
-`
+`;
 
 const EventsTopSection = styled.div`
   margin-bottom: 1rem;
   padding-left: 4rem;
   width: 100%;
-  
+
   display: flex;
   align-items: center;
 
@@ -532,22 +635,22 @@ const EventsTopSection = styled.div`
     flex-direction: column;
     padding-left: 0;
   }
-`
+`;
 
 const EventsTitle = styled.div`
   font-size: 40px;
   font-weight: 700;
-  
+
   @media (max-width: 1000px) {
     padding-left: 30px;
   }
-`
+`;
 
 const Arrow = styled.img`
-    width: 200px;
-    height: 100%;
-    object-fit: cover;
-`
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+`;
 
 const EventsWrapper = styled.div`
   display: flex;
@@ -574,7 +677,7 @@ const EventsInfo = styled.div`
   @media (max-width: 900px) {
     min-width: 80%;
   }
-`
+`;
 
 const Collage = styled.div`
   margin-bottom: 4rem;
@@ -586,19 +689,19 @@ const Collage = styled.div`
   ::-webkit-scrollbar {
     display: none;
   }
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
-`
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+`;
 
 const ProgressBarContainer = styled.div`
   width: 100%;
   padding: 0 50px;
-`
+`;
 
 const ProgressBar = styled.div`
   border-radius: 5px;
   height: 4px;
-  width: ${props => props.progress}%;
+  width: ${(props) => props.progress}%;
   background-color: grey;
   transition: width 0.2s ease;
 `;
@@ -667,9 +770,9 @@ const ClubsCollageContent = styled.div`
 `;
 
 const ClubsTitle = styled.p`
-  color: #F7F5F2;
+  color: #f7f5f2;
   text-align: center;
-`
+`;
 
 const Club = styled.div`
   display: flex;
@@ -693,12 +796,12 @@ const InvolvementContainer = styled.div`
   gap: 50px;
   padding: 50px;
 
-  background-image: url('/images/index-images/get-involved-background.svg');
+  background-image: url("/images/index-images/get-involved-background.svg");
   background-size: 100% auto; /* 100% width, auto height */
   background-position: center;
   background-repeat: no-repeat;
 
-  @media(max-width: 700px) {
+  @media (max-width: 700px) {
     flex-direction: column;
     align-items: center;
   }
@@ -711,7 +814,7 @@ const Card = styled.div`
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   width: 45%;
 
-  @media(max-width: 700px) {
+  @media (max-width: 700px) {
     width: 90%;
   }
 `;
@@ -736,7 +839,7 @@ const RightCard = styled(Card)`
     margin-bottom: 15px;
   }
   a {
-    color: #0052FF;
+    color: #0052ff;
     text-decoration: none;
   }
   strong {
@@ -753,11 +856,11 @@ const Alssc = styled.div`
   gap: 4rem;
   width: 90%;
 
-  @media(max-width: 700px) {
+  @media (max-width: 700px) {
     flex-direction: column;
     align-items: center;
   }
-`
+`;
 
 const AlsscContent = styled.div`
   display: flex;
@@ -766,10 +869,10 @@ const AlsscContent = styled.div`
   text-align: right;
   width: 60%;
   height: 100%;
-  @media(max-width: 700px) {
+  @media (max-width: 700px) {
     text-align: center;
   }
-`
+`;
 
 const Podcast = styled.div`
   margin-top: 15vh;
@@ -778,11 +881,11 @@ const Podcast = styled.div`
   gap: 4rem;
   width: 90%;
 
-  @media(max-width: 700px) {
+  @media (max-width: 700px) {
     flex-direction: column;
     align-items: center;
   }
-`
+`;
 
 const PodcastContent = styled.div`
   display: flex;
@@ -791,40 +894,38 @@ const PodcastContent = styled.div`
   text-align: left;
   width: 60%;
   height: 100%;
-  @media(max-width: 700px) {
+  @media (max-width: 700px) {
     text-align: center;
   }
-`
+`;
 
 const Title = styled.div`
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 1.3rem;
 
-  @media(max-width: 700px) {
+  @media (max-width: 700px) {
     text-align: center;
   }
-`
+`;
 
 const Description = styled.div`
   margin-bottom: 1.3rem;
   font-size: 20px;
-  color: #333333
-
-  @media(max-width: 700px) {
+  color: #333333 @media (max-width: 700px) {
     text-align: center;
   }
-`
+`;
 
 const Frame = styled.iframe`
   width: 40%;
   height: 300px;
 
-  @media(max-width: 700px) {
+  @media (max-width: 700px) {
     width: 90%;
     height: 300px;
   }
-`
+`;
 
 const SocialMediaIcons = styled.div`
   margin-bottom: 32px;
@@ -837,10 +938,13 @@ const SocialMediaIcons = styled.div`
     height: 19%;
     transition: color 200ms;
     margin-left: 15px;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease,
+      border-color 0.3s ease;
 
     :hover {
-      color: #0052FF;
+      color: #0052ff;
     }
   }
 `;
@@ -858,37 +962,37 @@ const ShopSection = styled.div`
 
   display: flex;
   gap: 2rem;
-`
+`;
 
 const ShopGridContainer = styled.div`
   display: flex;
   width: 70%;
 
-  @media(max-width: 700px) {
+  @media (max-width: 700px) {
     width: 0%;
   }
-`
+`;
 
 const ShopImage = styled.img`
   width: 20%;
   height: auto;
   object-fit: cover;
-`
+`;
 
 const ShopInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: left;
   margin: 60px 0;
-`
+`;
 
 const ShopTitle = styled.div`
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
-`
+`;
 
 const ShopDescription = styled.div`
   font-size: 16px;
   margin-bottom: 20px;
-`
+`;
