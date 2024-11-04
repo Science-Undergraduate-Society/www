@@ -63,7 +63,6 @@ export default function Home() {
 
         {/* About Section */}
         <About>
-          {/* don't remove or i'll hunt you down */}
           <TopColour>DL</TopColour>
           <AboutCollageContainer>
             <AboutCollage src="/images/index-images/Collage.jpg" />
