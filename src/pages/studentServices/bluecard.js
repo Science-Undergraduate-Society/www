@@ -3,6 +3,75 @@ import Link from 'next/link';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+// const partnerData = [
+//     {
+//         partnerName: "Arbutus Station Dental",
+//         logoSrc: "/images/bluecard-images/partner-logos/arbutus station dental.png",
+//         description: "Free take-home teeth whitening kit with the completion of a new patient exam and cleaning.",
+//         location: "Valid only at 2184 W Broadway #560, Vancouver, BC V6K 2E1"
+//     },
+//     {
+//         partnerName: "Bak'd",
+//         logoSrc: "/images/bluecard-images/partner-logos/BAKD_Cookies_Logo.webp",
+//         description: "10% off",
+//         location: "" // No location specified in original
+//     },
+//     {
+//         partnerName: "Chatime",
+//         logoSrc: "/images/bluecard-images/partner-logos/chatime-logo.webp",
+//         description: "10% off all products",
+//         location: "Valid only at 5998 University Blvd #4, Vancouver, V6T 2A1"
+//     },
+//     {
+//         partnerName: "Eyelab, Doctors of Optometry",
+//         logoSrc: "/images/bluecard-images/partner-logos/EYELAB.png",
+//         description: "10% discount on contacts",
+//         location: "Valid only at 2369 W 41st Ave, Vancouver, BC V6M 2A3"
+//     },
+//     {
+//         partnerName: "Killer Ice Cream",
+//         logoSrc: "/images/bluecard-images/partner-logos/Killer Ice Cream Logo.png",
+//         description: "$2 off regular sized cones",
+//         location: "Valid only at 3659 W 4th Ave, Vancouver, BC V6R 1P2"
+//     },
+//     {
+//         partnerName: "Majestic Maven",
+//         logoSrc: "/images/bluecard-images/partner-logos/majestic-maven-14.jpg",
+//         description: "25% off all services during September, then 20% discount on all services until August 2025",
+//         location: "Valid only at 1236 Richards St, Vancouver, BC V6B 6M6"
+//     },
+//     {
+//         partnerName: "Mosa",
+//         logoSrc: "/images/bluecard-images/partner-logos/Mosa logo.jpg",
+//         description: "Use code SUS20 for 20% off all products",
+//         location: "Valid only at www.wearemosa.com"
+//     },
+//     {
+//         partnerName: "Steve's Poke Bar",
+//         logoSrc: "/images/bluecard-images/partner-logos/Steve_s Poke Bar Logo.png",
+//         description: "Use code SCHOOLSPB for $5 off first time app purchases",
+//         location: "Valid at www.stevespokebar.ca"
+//     },
+//     {
+//         partnerName: "StorageHotel",
+//         logoSrc: "/images/bluecard-images/partner-logos/Storagehotel Logo - Green Small.png",
+//         description: "Mention SUS when signing up for the Summer 2025 waitlist for VIP Early Booking Access, including a code to skip the waitlist queue and a $50 discount.",
+//         location: "Valid at www.storagehotel.ca"
+//     },
+//     {
+//         partnerName: "Wizeprep",
+//         logoSrc: "/images/bluecard-images/partner-logos/wizeprep logo.png",
+//         description: "Free access to Wizeprep's Monthly Subscription for September, then 15% off until August 2025. 15% off Wizeprep's MCAT Elite 515 Course and Self-Paced Program.",
+//         location: "Valid at wizeprep.com"
+//     },
+//     {
+//         partnerName: "Susgrainable",
+//         logoSrc: "/images/bluecard-images/partner-logos/susgrainable.png",
+//         description: "Use code BLUECARD to get 20% off their Banana Bread Mix, Chocolate Chip Cookie Mix, Pancake & Waffle Mix, and Starter Bundle on their online store, or get $2 off the Banana Bread Mix, Chocolate Chip Cookie Mix, and Pancake & Waffle Mix at their offline store",
+//         location: "Valid at https://susgrainable.com/"
+//     }
+// ];
+
 export default function BlueCard() {
     return (
         <Background>
@@ -110,6 +179,13 @@ export default function BlueCard() {
                             Pancake & Waffle Mix, and Starter Bundle on their online store, or get $2 off the Banana Bread Mix, 
                             Chocolate Chip Cookie Mix, and Pancake & Waffle Mix at their offline store"
                             location="Valid at https://susgrainable.com/"
+                        />
+                        <IndivPartnerInfo
+                            partnerName="MYST Asian Fusion"
+                            logoSrc="/images/bluecard-images/partner-logos/myst-asian-fusion-logo.jpg"
+                            description="10% off for all in-store purchases, 15% off for event food orders of 50+ meals 
+                                        and 20% off for event food orders of 100+ meals."
+                            location="6400 Kingsway, Burnaby"
                         />
                         </PartnersBox>
                 </Partners>
