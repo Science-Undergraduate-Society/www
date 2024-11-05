@@ -1,3 +1,4 @@
+import { CartProvider } from '@/shop-components/CartContext';
 import '../styles/globals.css'; // Import the global CSS file
 import Head from 'next/head';
 
@@ -75,7 +76,9 @@ export default function MyApp({ Component, pageProps }) {
         }`}
         </script>
       </Head>
-      <Component {...pageProps} />
+      <CartProvider>
+        <Component {...pageProps} />
+      </CartProvider>
     </>
   );
 };

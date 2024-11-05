@@ -4,12 +4,15 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { Button } from "../../../components/Reusable";
-import Navbar from "@/components/Navbar";
+import ShopNavbar from "@/shop-components/ShopNavbar";
 
+import { useCart } from "@/shop-components/CartContext";
+
+
+// List of all products
 const allProducts = [
     {
-        id: 1,
-        name: "Black Crewneck",
+        id: "crewneck-black",
         type: "crewneck",
         color: "black",
         price: 45,
@@ -17,8 +20,7 @@ const allProducts = [
         quantities: { S: 2, M: 1, L: 8, XL: 8 }
     },
     {
-        id: 2,
-        name: "Black Hoodie",
+        id: "hoodie-black",
         type: "hoodie",
         color: "black",
         price: 55,
@@ -26,26 +28,23 @@ const allProducts = [
         quantities: { S: 4, M: 1, L: 0, XL: 0 }
     },
     {
-        id: 3,
-        name: "Light Blue Crewneck",
+        id: "crewneck-blue",
         type: "crewneck",
-        color: "blue",
+        color: "light_blue",
         price: 45,
         image: "/images/shop-images/Blue-Crew-1.png",
         quantities: { S: 0, M: 0, L: 1, XL: 0 }
     },
     {
-        id: 4,
-        name: "Light Blue Hoodie",
+        id: "hoodie-light_blue",
         type: "hoodie",
-        color: "blue",
+        color: "light_blue",
         price: 55,
         image: "/images/shop-images/Blue-Hoodie-1.png",
         quantities: { S: 0, M: 0, L: 0, XL: 2 }
     },
     {
-        id: 5,
-        name: "Grey Crewneck",
+        id: "crewneck-grey",
         type: "crewneck",
         color: "grey",
         price: 45,
@@ -53,8 +52,7 @@ const allProducts = [
         quantities: { S: 3, M: 2, L: 12, XL: 7 }
     },
     {
-        id: 6,
-        name: "Grey Hoodie",
+        id: "hoodie-grey",
         type: "hoodie",
         color: "grey",
         price: 55,
@@ -62,8 +60,7 @@ const allProducts = [
         quantities: { S: 5, M: 2, L: 8, XL: 5 }
     },
     {
-        id: 7,
-        name: "Sand Crewneck",
+        id: "crewneck-sand",
         type: "crewneck",
         color: "sand",
         price: 45,
@@ -71,8 +68,7 @@ const allProducts = [
         quantities: { S: 0, M: 0, L: 2, XL: 2 }
     },
     {
-        id: 8,
-        name: "Sand Hoodie",
+        id: "hoodie-sand",
         type: "hoodie",
         color: "sand",
         price: 55,
@@ -80,8 +76,7 @@ const allProducts = [
         quantities: { S: 4, M: 2, L: 0, XL: 0 }
     },
     {
-        id: 9,
-        name: "White Crewneck",
+        id: "crewneck-white",
         type: "crewneck",
         color: "white",
         price: 45,
@@ -89,8 +84,7 @@ const allProducts = [
         quantities: { S: 4, M: 9, L: 17, XL: 9 }
     },
     {
-        id: 10,
-        name: "White Hoodie",
+        id: "hoodie-white",
         type: "hoodie",
         color: "white",
         price: 55,
@@ -101,42 +95,38 @@ const allProducts = [
 
 export default function ProductPage() {
     const router = useRouter();
-    const { id } = router.query;
-    const product = allProducts.find((p) => p.id === parseInt(id));
-    const [cart, setCart] = useState([]);
+    const { product_id } = router.query;
+    const product = allProducts.find((p) => p.id === product_id);
+    const { dispatch } = useCart();
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const savedCart = localStorage.getItem("cart");
-        if (savedCart) {
-            setCart(JSON.parse(savedCart));
+        if (product) {
+            setLoading(false);
         }
-    }, []);
+    }, [product]);
 
     const addToCart = () => {
-        setCart((prevCart) => {
-            const itemInCart = prevCart.find(item => item.id === product.id);
-            if (itemInCart) {
-                return prevCart.map(item => 
-                    item.id === product.id 
-                        ? { ...item, quantity: item.quantity + 1 } 
-                        : item
-                );
-            } else {
-                return [...prevCart, { ...product, quantity: 1 }];
-            }
-        });
-        localStorage.setItem("cart", JSON.stringify(cart));
+        if (product) {
+            dispatch({ type: "ADD_TO_CART", payload: { ...product, quantity: 1 } });
+        }
     };
 
-    if (!product) return <p>Loading...</p>;
+    if (loading) {
+        return <div>Loading...</div>; // Show a loading state
+    }
+
+    if (!product) {
+        return <div>Product not found.</div>; // Handle case when product is not found
+    }
 
     return (
-        <>
-            <Navbar />
-            <h1>{product.name}</h1>
-            <img src={product.image} alt={product.name} />
-            <p>${product.price}</p>
+        <div>
+            <ShopNavbar />
+            <h1>{`${product.type.toUpperCase()} - ${product.color.toUpperCase()}`}</h1>
+            <img src={product.image} alt={product.type} />
+            <p>Price: ${product.price}</p>
             <Button onClick={addToCart}>Add to Cart</Button>
-        </>
+        </div>
     );
 }
