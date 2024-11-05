@@ -123,6 +123,7 @@ export default function ProductPage() {
     return (
         <div>
             <ShopNavbar />
+            
             <h1>{`${product.type.toUpperCase()} - ${product.color.toUpperCase()}`}</h1>
             <img src={product.image} alt={product.type} />
             <p>Price: ${product.price}</p>

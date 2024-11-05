@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useReducer, useEffect } from 'react';
+import React, { createContext, useContext, useReducer, useEffect, useState } from 'react';
 
 // Create your context
 const CartContext = createContext();
@@ -12,7 +12,6 @@ const initialState = {
 const cartReducer = (state, action) => {
     switch (action.type) {
         case "ADD_TO_CART":
-            // Check if item is already in the cart
             const existingItem = state.items.find(item => item.id === action.payload.id);
             if (existingItem) {
                 return {
@@ -28,11 +27,35 @@ const cartReducer = (state, action) => {
                 ...state,
                 items: [...state.items, { ...action.payload, quantity: 1 }],
             };
+
         case "REMOVE_FROM_CART":
+            const itemToRemove = state.items.find(item => item.id === action.payload.id);
+            if (itemToRemove) {
+                if (itemToRemove.quantity > 1) {
+                    return {
+                        ...state,
+                        items: state.items.map(item =>
+                            item.id === action.payload.id
+                                ? { ...item, quantity: item.quantity - 1 }
+                                : item
+                        ),
+                    };
+                } else {
+                    return {
+                        ...state,
+                        items: state.items.filter(item => item.id !== action.payload.id),
+                    };
+                }
+            }
+            return state;
+
+        // Load cart from local storage
+        case "LOAD_CART":
             return {
                 ...state,
-                items: state.items.filter(item => item.id !== action.payload.id),
+                items: action.payload,
             };
+
         default:
             return state;
     }
@@ -41,19 +64,25 @@ const cartReducer = (state, action) => {
 // CartProvider component
 export const CartProvider = ({ children }) => {
     const [state, dispatch] = useReducer(cartReducer, initialState);
+    const [cartLoaded, setCartLoaded] = useState(false); // To track if the cart has been loaded
 
     useEffect(() => {
         // Load cart from local storage on mount
         const savedCart = localStorage.getItem("cart");
         if (savedCart) {
+            console.log("Loading cart on mount:", savedCart);
             dispatch({ type: "LOAD_CART", payload: JSON.parse(savedCart) });
         }
+        setCartLoaded(true); // Indicate that the cart has been loaded
     }, []);
 
     useEffect(() => {
-        // Save cart to local storage whenever it changes
-        localStorage.setItem("cart", JSON.stringify(state.items));
-    }, [state.items]);
+        if (cartLoaded) {
+            // Only save the cart if it has been loaded
+            console.log("Saving cart to local storage:", state.items);
+            localStorage.setItem("cart", JSON.stringify(state.items));
+        }
+    }, [state.items, cartLoaded]);
 
     return (
         <CartContext.Provider value={{ state, dispatch }}>

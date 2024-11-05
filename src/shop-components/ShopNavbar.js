@@ -13,7 +13,7 @@ export default function ShopNavbar() {
     return (
         <Nav>
             <NavLink href={"/"}>HOME</NavLink>
-            <Logo src="./images/logos/white-logo.png" alt="Logo" />
+            {/* <Logo src="./images/logos/white-logo.png" alt="Logo" /> */}
             {/* <a><FontAwesomeIcon icon={faOpencart} /></a> */}
             {/* <NavLink href={"/"}>CART</NavLink> */}
             <div>
