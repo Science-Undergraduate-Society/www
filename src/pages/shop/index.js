@@ -2,310 +2,426 @@
 
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Button } from "../../components/Reusable";
+import Link from 'next/link';
 import ShopFooter from "../../components/shop-components/ShopFooter";
 import Navbar from "@/components/Navbar";
 
 import CheckoutPage from "@/shop-components/CheckoutPage";
-import convertToSubcurrenct from "@/utility/ulilFunctions";
+import convertToSubcurrency from "@/utility/ulilFunctions";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
 
-export default function Shop() {
-  const test_amount = 1.00;
+// export default function Shop() {
+//   const test_amount = 1.23;
 
-  return (
-    <>
-      <h1>Next Stripe</h1>
-      <div className="flex h-screen justify-center items-center">
-        <Elements 
-          stripe={stripePromise}
-          options={{
-            mode: "payment",
-            amount: convertToSubcurrenct(test_amount),
-            currency: "cad"}}
-          >
-          <CheckoutPage amount={test_amount} /> 
-        </Elements>
-      </div>
-    </>
-  );
+//   return (
+//     <>
+//       <h1>Next Stripe</h1>
+//       <div className="flex h-screen justify-center items-center">
+//         <Elements 
+//           stripe={stripePromise}
+//           options={{
+//             mode: "payment",
+//             amount: convertToSubcurrency(test_amount),
+//             currency: "cad"}}
+//           >
+//           <CheckoutPage amount={test_amount} /> 
+//         </Elements>
+//       </div>
+//     </>
+//   );
+// }
+
+// List of all products
+const allProducts = [
+    {
+        id: 1,
+        type: "crewneck",
+        color: "black",
+        price: 45,
+        image: "/images/shop-images/Black-Crew-1.png",
+        quantities: { S: 2, M: 1, L: 8, XL: 8 }
+    },
+    {
+        id: 2,
+        type: "hoodie",
+        color: "black",
+        price: 55,
+        image: "/images/shop-images/Black-Hoodie-1.png",
+        quantities: { S: 4, M: 1, L: 0, XL: 0 }
+    },
+    {
+        id: 3,
+        type: "crewneck",
+        color: "light_blue",
+        price: 45,
+        image: "/images/shop-images/Blue-Crew-1.png",
+        quantities: { S: 0, M: 0, L: 1, XL: 0 }
+    },
+    {
+        id: 4,
+        type: "hoodie",
+        color: "light_blue",
+        price: 55,
+        image: "/images/shop-images/Blue-Hoodie-1.png",
+        quantities: { S: 0, M: 0, L: 0, XL: 2 }
+    },
+    {
+        id: 5,
+        type: "crewneck",
+        color: "grey",
+        price: 45,
+        image: "/images/shop-images/Grey-Crew-1.png",
+        quantities: { S: 3, M: 2, L: 12, XL: 7 }
+    },
+    {
+        id: 6,
+        type: "hoodie",
+        color: "grey",
+        price: 55,
+        image: "/images/shop-images/Grey-Hoodie-1.png",
+        quantities: { S: 5, M: 2, L: 8, XL: 5 }
+    },
+    {
+        id: 7,
+        type: "crewneck",
+        color: "sand",
+        price: 45,
+        image: "/images/shop-images/Sand-Crew-1.png",
+        quantities: { S: 0, M: 0, L: 2, XL: 2 }
+    },
+    {
+        id: 8,
+        type: "hoodie",
+        color: "sand",
+        price: 55,
+        image: "/images/shop-images/Sand-Hoodie-1.png",
+        quantities: { S: 4, M: 2, L: 0, XL: 0 }
+    },
+    {
+        id: 9,
+        type: "crewneck",
+        color: "white",
+        price: 45,
+        image: "/images/shop-images/White-Crew-1.png",
+        quantities: { S: 4, M: 9, L: 17, XL: 9 }
+    },
+    {
+        id: 10,
+        type: "hoodie",
+        color: "white",
+        price: 55,
+        image: "/images/shop-images/White-Hoodie-1.png",
+        quantities: { S: 9, M: 7, L: 14, XL: 6 }
+    },
+];
+
+export default function Shop() {
+    const [selectedColor, setSelectedColor] = useState("");
+    const [selectedType, setSelectedType] = useState("all");
+    const [cart, setCart] = useState([]);
+
+    // Filter products based on selected color and type
+    const filteredProducts = (selectedType === "all") ? 
+    allProducts
+    : 
+    allProducts.filter(product => {
+        const colorMatch = selectedColor === "" || product.color === selectedColor;
+        const typeMatch = selectedType === "" || product.type === selectedType;
+        return colorMatch && typeMatch;
+    });
+
+    const addToCart = (product) => {
+      setCart((prevCart) => {
+        const itemInCart = prevCart.find(item => item.id === product.id);
+        if (itemInCart) {
+            return prevCart.map(item => 
+                item.id === product.id 
+                    ? { ...item, quantity: item.quantity + 1 } 
+                    : item
+            );
+        } else {
+            return [...prevCart, { ...product, quantity: 1 }];
+        }
+      });
+    };
+
+    const totalAmount = cart.reduce((total, item) => total + item.price * item.quantity, 0);
+
+    function getFilterTitle(type) {
+      if (type === "hoodie") {
+        return "HOODIES";
+      }
+      if (type === "crewneck") {
+        return "CREWNECKS";
+      }
+      return "SHOP ALL";
+    }
+
+    return (
+        <>
+          <Navbar />
+          <Content>
+            <FilterTitle>{getFilterTitle(selectedType)}</FilterTitle>
+            <Container>
+              <FilterBar>
+                <Dropdown onChange={(e) => setSelectedColor(e.target.value)}>
+                    <option value="">ALL COLOURS</option>
+                    <option value="black">BLACK</option>
+                    <option value="blue">BLUE</option>
+                    <option value="grey">GREY</option>
+                    <option value="sand">SAND</option>
+                    <option value="white">WHITE</option>
+                </Dropdown>
+                <FilterButton selected={selectedType === "hoodie"} onClick={() => setSelectedType("hoodie")}>
+                    HOODIES
+                </FilterButton>
+                <FilterButton selected={selectedType === "crewneck"} onClick={() => setSelectedType("crewneck")}>
+                    CREWNECKS
+                </FilterButton>
+                <FilterButton selected={selectedType === "all"} onClick={() => setSelectedType("all")}>
+                    SHOP ALL 
+                </FilterButton>
+              </FilterBar>
+              
+              <ProductGrid>
+                {filteredProducts.map(product => (
+                  <Link href={`/shop/product/${product.id}`} key={product.id} passHref>
+                    <ProductCard>
+                        <ProductImage src={product.image} alt={product.name} />
+                        <ProductTitle>
+                            {`${product.type.toUpperCase().replace(/_/g, ' ')} - ${product.color.toUpperCase().replace(/_/g, ' ')}`}
+                        </ProductTitle>
+                        <ProductPrice>${product.price}</ProductPrice>
+                    </ProductCard>
+                  </Link>
+                ))}
+              </ProductGrid>
+            </Container>
+            <Cart>
+              {cart.length === 0 ? (
+                      <p>Your cart is empty.</p>
+                  ) : (
+                      cart.map(item => (
+                          <div key={item.id}>
+                              <p>{item.name} - Quantity: {item.quantity}</p>
+                          </div>
+                      ))
+                  )}
+                  <p>Total Amount: ${totalAmount.toFixed(2)}</p>
+            </Cart>
+            {cart.length > 0 && (
+                <div className="checkout">
+                    <h2>Checkout</h2>
+                    <div className="flex h-screen justify-center items-center">
+                        <Elements 
+                            stripe={stripePromise}
+                            options={{
+                                mode: "payment",
+                                amount: convertToSubcurrency(totalAmount),
+                                currency: "cad"
+                            }}
+                        >
+                            <CheckoutPage amount={totalAmount} />
+                        </Elements>
+                    </div>
+                </div>
+            )}
+          </Content>
+          <ShopFooter />
+        </>
+    );
 }
 
-// // List of all products
-// const allProducts = [
-//     {
-//         id: 1,
-//         name: "Black Crewneck",
-//         type: "crewneck",
-//         color: "black",
-//         price: 45,
-//         image: "/images/shop-images/Black-Crew-1.png",
-//         quantities: { S: 2, M: 1, L: 8, XL: 8 }
-//     },
-//     {
-//         id: 2,
-//         name: "Black Hoodie",
-//         type: "hoodie",
-//         color: "black",
-//         price: 55,
-//         image: "/images/shop-images/Black-Hoodie-1.png",
-//         quantities: { S: 4, M: 1, L: 0, XL: 0 }
-//     },
-//     {
-//         id: 3,
-//         name: "Light Blue Crewneck",
-//         type: "crewneck",
-//         color: "blue",
-//         price: 45,
-//         image: "/images/shop-images/Blue-Crew-1.png",
-//         quantities: { S: 0, M: 0, L: 1, XL: 0 }
-//     },
-//     {
-//         id: 4,
-//         name: "Light Blue Hoodie",
-//         type: "hoodie",
-//         color: "blue",
-//         price: 55,
-//         image: "/images/shop-images/Blue-Hoodie-1.png",
-//         quantities: { S: 0, M: 0, L: 0, XL: 2 }
-//     },
-//     {
-//         id: 5,
-//         name: "Grey Crewneck",
-//         type: "crewneck",
-//         color: "grey",
-//         price: 45,
-//         image: "/images/shop-images/Grey-Crew-1.png",
-//         quantities: { S: 3, M: 2, L: 12, XL: 7 }
-//     },
-//     {
-//         id: 6,
-//         name: "Grey Hoodie",
-//         type: "hoodie",
-//         color: "grey",
-//         price: 55,
-//         image: "/images/shop-images/Grey-Hoodie-1.png",
-//         quantities: { S: 5, M: 2, L: 8, XL: 5 }
-//     },
-//     {
-//         id: 7,
-//         name: "Sand Crewneck",
-//         type: "crewneck",
-//         color: "sand",
-//         price: 45,
-//         image: "/images/shop-images/Sand-Crew-1.png",
-//         quantities: { S: 0, M: 0, L: 2, XL: 2 }
-//     },
-//     {
-//         id: 8,
-//         name: "Sand Hoodie",
-//         type: "hoodie",
-//         color: "sand",
-//         price: 55,
-//         image: "/images/shop-images/Sand-Hoodie-1.png",
-//         quantities: { S: 4, M: 2, L: 0, XL: 0 }
-//     },
-//     {
-//         id: 9,
-//         name: "White Crewneck",
-//         type: "crewneck",
-//         color: "white",
-//         price: 45,
-//         image: "/images/shop-images/White-Crew-1.png",
-//         quantities: { S: 4, M: 9, L: 17, XL: 9 }
-//     },
-//     {
-//         id: 10,
-//         name: "White Hoodie",
-//         type: "hoodie",
-//         color: "white",
-//         price: 55,
-//         image: "/images/shop-images/White-Hoodie-1.png",
-//         quantities: { S: 9, M: 7, L: 14, XL: 6 }
-//     },
-// ];
+const FilterTitle = styled.h1`
 
+`;
 
-// // Stripe
-// import { loadStripe } from "@stripe/stripe-js";
+const Cart = styled.div`
+    
+`;
 
-// // Load Stripe outside of a component to avoid re-initializing it on re-render
-// const stripePromise = loadStripe("your-public-stripe-key-here"); // Replace with your Stripe public key
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+`;
 
+const ProductImage = styled.img`
+  width: 100%;
+  height: auto;
+`;
 
+const Description = styled.ul`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
 
-// export default function Shop() {
-//     const [selectedColor, setSelectedColor] = useState("");
-//     const [selectedType, setSelectedType] = useState("");
-//     const [cartItems, setCartItems] = useState([]);
+const Title = styled.h1`
+  font-size: 50px;
+  color: #222755;
 
-//     // Filter products based on selected color and type
-//     const filteredProducts = allProducts.filter(product => {
-//         const colorMatch = selectedColor === "" || product.color === selectedColor;
-//         const typeMatch = selectedType === "" || product.type === selectedType;
-//         return colorMatch && typeMatch;
-//     });
+  @media(max-width: 768px) {
+    font-size: 40px;
+  }
 
-//     const addToCart = (product) => {
-//       const itemExists = cartItems.find(item => item.id === product.id);
-//       if (itemExists) {
-//         setCartItems(
-//           cartItems.map(item => 
-//             item.id === product.id ? {...item, quantity: item.quantity + 1} : item
-//           )
-//         );
-//       } else {
-//         setCartItems([...cartItems, {...product, quantity: 1}]);
-//       }
-//     }
+  @media(max-width: 480px) {
+    font-size: 30px;
+  }
+`;
 
-//     // Remove product from cart
-//     const removeFromCart = (productId) => {
-//       setCartItems(cartItems.filter(item => items.id !== productId));
-//     }
+const ShopGridContainer = styled.div`
+  display: flex;
+  width: 70%;
 
-//     // Calculate total price
-//     const totalPrice = cartItems.reduce(
-//       (acc, item) => acc + item.price * item.quantity, 0
-//     );
+  @media(max-width: 700px) {
+    width: 100%;
+    flex-direction: column;
+  }
+`;
 
-//     // Stripe checkout
-//     const handleCheckout = async () => {
-//       const stripe = await stripePromise;
-//       const response = await fetch("/api/checkout", {
-//           method: "POST",
-//           headers: {
-//             "Content-Type": "application/json",
-//           },
-//           body: JSON.stringify(cartItems),
-//       });
+const ShopImage = styled.img`
+  width: 20%;
+  height: auto;
+  object-fit: cover;
 
-//       const session = await response.json();
-//       const result = await stripe.redirectToCheckout({
-//         sessonId: session.id,
-//       });
+  @media(max-width: 768px) {
+    width: 50%;
+  }
+`;
 
-//       if (result.error) {
-//         alert(result.error.message);
-//       }
-//     }
+const Content = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 13rem;
 
-//     return (
-//       <Container>
-//       <Navbar />
-//       <Filters>
-//           <Filter>
-//               <label htmlFor="color">Filter by color:</label>
-//               <select
-//                   id="color"
-//                   value={selectedColor}
-//                   onChange={(e) => setSelectedColor(e.target.value)}
-//               >
-//                   <option value="">All</option>
-//                   <option value="black">Black</option>
-//                   <option value="blue">Blue</option>
-//                   <option value="grey">Grey</option>
-//                   <option value="sand">Sand</option>
-//                   <option value="white">White</option>
-//               </select>
-//           </Filter>
+  @media(max-width: 768px) {
+    margin-top: 8rem;
+    padding: 0 10px;
+  }
+`;
 
-//           <Filter>
-//               <label htmlFor="type">Filter by type:</label>
-//               <select
-//                   id="type"
-//                   value={selectedType}
-//                   onChange={(e) => setSelectedType(e.target.value)}
-//               >
-//                   <option value="">All</option>
-//                   <option value="crewneck">Crewneck</option>
-//                   <option value="hoodie">Hoodie</option>
-//               </select>
-//           </Filter>
-//       </Filters>
+const MainInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  width: 100%;
+  padding-left: 40px;
 
-//       <ProductList>
-//           {filteredProducts.map(product => (
-//               <Product key={product.id}>
-//                   <img src={product.image} alt={product.name} />
-//                   <h3>{product.name}</h3>
-//                   <p>{`$${product.price}`}</p>
-//                   <Button onClick={() => addToCart(product)}>Add to Cart</Button>
-//               </Product>
-//           ))}
-//       </ProductList>
+  margin-bottom: 3rem;
 
-//       <Cart>
-//           <h2>Your Cart</h2>
-//           {cartItems.length > 0 ? (
-//               <>
-//                   {cartItems.map(item => (
-//                       <CartItem key={item.id}>
-//                           <img src={item.image} alt={item.name} />
-//                           <div>
-//                               <h3>{item.name}</h3>
-//                               <p>Price: ${item.price}</p>
-//                               <p>Quantity: {item.quantity}</p>
-//                               <Button onClick={() => removeFromCart(item.id)}>Remove</Button>
-//                           </div>
-//                       </CartItem>
-//                   ))}
-//                   <h3>Total: ${totalPrice}</h3>
-//                   <Button onClick={handleCheckout}>Checkout</Button>
-//               </>
-//           ) : (
-//               <p>Your cart is empty.</p>
-//           )}
-//       </Cart>
+  @media(max-width: 768px) {
+    padding-left: 20px;
+  }
+`;
 
-//       <ShopFooter />
-//   </Container>
-// );
-// }
+const FilterBar = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
 
-// // Styled components for cart, products, etc.
-// const Container = styled.div`
-// padding: 20px;
-// `;
+  @media(max-width: 500px) {
+    gap: 10px;
+    font-size: 12px;
+  }
+`;
 
-// const Filters = styled.div`
-// display: flex;
-// margin: 20px 0;
-// `;
+const Dropdown = styled.select`
+  padding: 10px 20px;
+  font-size: 16px;
 
-// const Filter = styled.div`
-// margin-right: 20px;
-// `;
+  @media(max-width: 500px) {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+`;
 
-// const ProductList = styled.div`
-// display: grid;
-// grid-template-columns: repeat(3, 1fr);
-// gap: 20px;
-// `;
+const FilterButton = styled.button`
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  color: ${props => props.selected ? '#0173be' : 'black'};
 
-// const Product = styled.div`
-// display: flex;
-// flex-direction: column;
-// align-items: center;
-// `;
+  &:hover {
+    text-decoration: underline;
+  }
 
-// const Cart = styled.div`
-// margin-top: 40px;
-// `;
+  @media(max-width: 500px) {
+    font-size: 14px;
+  }
+`;
 
-// const CartItem = styled.div`
-// display: flex;
-// align-items: center;
+const ProductGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 
-// img {
-//   width: 100px;
-//   height: 100px;
-// }
+  @media(max-width: 1000px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-// div {
-//   margin-left: 20px;
-// }
-// `;
+  @media(max-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media(max-width: 400px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;
+
+const ProductCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 10px;
+  text-align: left;
+
+  @media(max-width: 500px) {
+    padding: 5px;
+  }
+`;
+
+const ProductTitle = styled.p`
+  font-size: 16px;
+  margin: 10px 0;
+
+  @media(max-width: 500px) {
+    font-size: 14px;
+  }
+`;
+
+const ProductPrice = styled.p`
+  font-size: 16px;
+  color: #555;
+  font-weight: bold;
+
+  @media(max-width: 500px) {
+    font-size: 14px;
+  }
+`;
+
+const SizeQuantities = styled.div`
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  gap: 5px;
+
+  @media(max-width: 500px) {
+    font-size: 12px;
+  }
+`;
