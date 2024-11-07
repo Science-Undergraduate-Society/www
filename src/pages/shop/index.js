@@ -24,15 +24,15 @@ const allProducts = [
         image: "/images/shop-images/Black-Hoodie-1.png",
         quantities: { S: 4, M: 1, L: 0, XL: 0 }
     },
-    {
-        id: 3,
-        name: "Light Blue Crewneck",
-        type: "crewneck",
-        color: "blue",
-        price: 45,
-        image: "/images/shop-images/Blue-Crew-1.png",
-        quantities: { S: 0, M: 0, L: 1, XL: 0 }
-    },
+    // {
+    //     id: 3,
+    //     name: "Light Blue Crewneck",
+    //     type: "crewneck",
+    //     color: "blue",
+    //     price: 45,
+    //     image: "/images/shop-images/Blue-Crew-1.png",
+    //     quantities: { S: 0, M: 0, L: 1, XL: 0 }
+    // },
     {
         id: 4,
         name: "Light Blue Hoodie",
