@@ -1,17 +1,8 @@
-"use client"
-
 import React, { useState } from "react";
 import styled from "styled-components";
 import Link from 'next/link';
 import ShopFooter from "@/shop-components/ShopFooter";
-import ShopNavbar from "@/shop-components/ShopNavbar";
-
-import CheckoutPage from "@/shop-components/CheckoutPage";
-import convertToSubcurrency from "@/utility/ulilFunctions";
-import { Elements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
-
-const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
+import ShopNavbar from "@/shop-components/ShopNavbarIndex";
 
 // export default function Shop() {
 //   const test_amount = 1.23;
@@ -149,9 +140,18 @@ export default function Shop() {
   return (
       <>
         <ShopNavbar />
+
         <Content>
-          <FilterTitle>{getFilterTitle(selectedType)}</FilterTitle>
-          <Container>
+          <ShopHero>
+            <HeroImage src="/images/shop-images/temp-hero-img.png" alt="Hero Image"/>
+            <HeroText>
+              <h1>SCIENCE UNDERGRADUATE SOCIETY MERCH</h1>
+              <p>Represent science or sumting hfalsdfhaskdlf.</p>
+            </HeroText>
+          </ShopHero>
+
+          <ShopContainer>
+            <FilterTitle>{getFilterTitle(selectedType)}</FilterTitle>
             <FilterBar>
               <Dropdown onChange={(e) => setSelectedColor(e.target.value)}>
                   <option value="">ALL COLOURS</option>
@@ -185,41 +185,47 @@ export default function Shop() {
                 </Link>
               ))}
             </ProductGrid>
-          </Container>
-          <Cart>
-            {cart.length === 0 ? (
-                    <p>Your cart is empty.</p>
-                ) : (
-                    cart.map(item => (
-                        <div key={item.id}>
-                            <p>{item.name} - Quantity: {item.quantity}</p>
-                        </div>
-                    ))
-                )}
-                <p>Total Amount: ${totalAmount.toFixed(2)}</p>
-          </Cart>
-          {cart.length > 0 && (
-              <div className="checkout">
-                  <h2>Checkout</h2>
-                  <div className="flex h-screen justify-center items-center">
-                      <Elements 
-                          stripe={stripePromise}
-                          options={{
-                              mode: "payment",
-                              amount: convertToSubcurrency(totalAmount),
-                              currency: "cad"
-                          }}
-                      >
-                          <CheckoutPage amount={totalAmount} />
-                      </Elements>
-                  </div>
-              </div>
-          )}
+          </ShopContainer>
         </Content>
+
         <ShopFooter />
       </>
   );
 }
+
+// ------------------------------------------------------------------------------
+
+const ShopHero = styled.div`
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+`
+
+const HeroImage = styled.img`
+  width: 100vw;
+  object-fit: cover;
+  filter: brightness(60%)
+`
+
+const HeroText = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+`
+
+// ------------------------------------------------------------------------------
 
 const FilterTitle = styled.h1`
 
@@ -229,7 +235,7 @@ const Cart = styled.div`
     
 `;
 
-const Container = styled.div`
+const ShopContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -246,7 +252,6 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 13rem;
 
   @media(max-width: 768px) {
     margin-top: 8rem;

@@ -1,32 +1,14 @@
+"use client"
+
 import React from 'react';
 import { useCart } from './CartContext';
 import styled from 'styled-components';
+import { FaShoppingBasket } from "react-icons/fa";
 
-const Modal = styled.div`
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 400px;  /* Set the width to one-third of the viewport width */
-    height: 100vh;   /* Set the height to the full height of the viewport */
-    background: white;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    display: ${props => (props.visible ? 'block' : 'none')};
-    overflow-y: auto; /* Add scrolling for overflowing content */
-    transition: transform 0.3s ease; /* Optional: Smooth transition */
-    z-index: 1000; /* Make sure it appears above other content */
-`;
-
-const Overlay = styled.div`
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    display: ${props => (props.visible ? 'block' : 'none')};
-    z-index: 999; /* Make sure overlay appears below the modal */
-`;
+import CheckoutPage from "@/shop-components/CheckoutPage";
+import convertToSubcurrency from "@/utility/ulilFunctions";
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
 
 const allProducts = [
     {
@@ -111,6 +93,21 @@ const allProducts = [
     },
 ];
 
+{/* <Cart>
+    {cart.length === 0 ? (
+        <p>Your cart is empty.</p>
+    ) : (
+        cart.map(item => (
+            <div key={item.id}>
+                <p>{item.name} - Quantity: {item.quantity}</p>
+            </div>
+        ))
+    )}
+    <p>Total Amount: ${totalAmount.toFixed(2)}</p>
+</Cart> */}
+
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
+
 const CartModal = ({ visible, onClose }) => {
     const { state, dispatch } = useCart();
 
@@ -124,27 +121,33 @@ const CartModal = ({ visible, onClose }) => {
         dispatch({ type: "REMOVE_FROM_CART", payload: { ...product, quantity: 1 } });
     };
 
+    const totalPrice = state.items.reduce((total, item) => total + item.price * item.quantity, 0)
+
     return (
         <>
             <Overlay visible={visible} onClick={onClose} /> {/* Close modal when overlay is clicked */}
             <Modal visible={visible}>
                 <Top>
-                    <h2>Cart - {state.items.length}</h2>
+                    <h2>Cart - {state.items.reduce((total, item) => total + item.quantity, 0)}</h2>
                     <CloseButton onClick={onClose}>x</CloseButton>
                 </Top>
+
                 <CartItems>
                     {state.items.map(item => (
                         <Item key={item.id}>
                             <ItemImage src={item.image} alt={item.id} />
                             <ItemInfo>
                                 <ItemName>{`${item.type.toUpperCase().replace(/_/g, ' ')} - ${item.color.toUpperCase().replace(/_/g, ' ')}`}</ItemName>
-                                {/* <ItemSize>{item.size}</ItemSize> */}
-                                <ItemPrice>CAD ${item.price}</ItemPrice>
+                                <ItemSize>{item.size}</ItemSize>
+                                <ItemPrice>
+                                    <p>CAD ${item.price * item.quantity}</p>
+                                    <p>({item.price} ea)</p>
+                                </ItemPrice>
                                 <ItemQuantity>
                                     <QuantitySubtract onClick={() => handleSubtractQuantity(item.id)}>
                                         -
                                     </QuantitySubtract>
-                                    Quantity: {item.quantity}
+                                    <QuantityValue>{item.quantity}</QuantityValue>
                                     <QuantityAdd onClick={() => handleAddQuantity(item.id)}>
                                         +
                                     </QuantityAdd>
@@ -153,6 +156,33 @@ const CartModal = ({ visible, onClose }) => {
                         </Item>
                     ))}
                 </CartItems>
+                
+                <LineTop />
+                <Cost>  
+                    <p>Total (tax included):</p>
+                    <p>${totalPrice.toFixed(2)}</p>
+                </Cost>
+                <CheckoutButton href="/shop/checkout">
+                    <FaShoppingBasket/>Checkout
+                </CheckoutButton>
+
+                {/* {state.items.length > 0 && (
+                    <div className="checkout">
+                        <h2>Checkout</h2>
+                        <div className="flex h-screen justify-center items-center">
+                            <Elements 
+                                stripe={stripePromise}
+                                options={{
+                                    mode: "payment",
+                                    amount: convertToSubcurrency(totalPrice),
+                                    currency: "cad"
+                                }}
+                            >
+                                <CheckoutPage amount={totalPrice} />
+                            </Elements>
+                        </div>
+                    </div>
+                )}  */}
             </Modal>
         </>
     );
@@ -160,16 +190,44 @@ const CartModal = ({ visible, onClose }) => {
 
 export default CartModal;
 
+const CheckoutButton = styled.button`
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    gap: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: #222755;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.4s ease;
+
+    &:hover{
+        background-color: #3d96c2;
+    }
+`
+
 // ------------------------------------------------------------------------
 
-const QuantitySubtract = styled.button`
+const Cost = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
 `
 
-const QuantityAdd = styled.button`
+const LineTop = styled.div`
+    border-top: 1px solid #ccc; /* This adds the line between items */
+    padding-top: 20px;
 `
 
-const Line = styled.div`
-    border-top: solid 1px black;
+const LineBottom = styled.div`
+    border-bottom: 1px solid #ccc; /* This adds the line between items */
+    padding-bottom: 20px;
 `
 
 const Top = styled.div`
@@ -202,26 +260,101 @@ const Item = styled.div`
     display: flex;
     padding: 10px 0;
     width: 100%;
-    height: 100%;
+    height: 250px;
     
     border-top: 1px solid #ccc; /* This adds the line between items */
+
+    padding: 30px 0;
 `;
 
 const ItemImage = styled.img`
-    height: 100px;    
+    height: 150px;    
 `;
 
 const ItemInfo = styled.div`
-    padding-left: 10px;
+    padding-left: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
 `
 
 const ItemName = styled.div`
 `
-const ItemPrice = styled.div`
-`
-const ItemQuantity = styled.div`
-`
+
 const ItemSize = styled.div`
 `
+
+const ItemPrice = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+`
+
+const ItemQuantity = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(180,180,180);
+    width: 150px;
+`
+
+const QuantityValue = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+const QuantitySubtract = styled.button`
+    border: none;
+    background-color: transparent;
+    padding: 15px 20px;
+    border-right: 1px solid rgb(180,180,180);
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(240,240,240);
+    }
+`
+
+const QuantityAdd = styled.button`
+    border: none;
+    background-color: transparent;
+    padding: 15px 20px;
+    border-left: 1px solid rgb(180,180,180);
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(240,240,240);
+    }
+`
+
+const Modal = styled.div`
+    position: fixed;
+    right: ${props => (props.visible ? '0' : '-500px')};  /* Modal slides in and out */
+    top: 0;
+    width: 500px;
+    height: 100vh;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: block;
+    overflow-y: auto;
+    transition: right 0.3s ease-in-out;  /* Animate the right position for sliding effect */
+    z-index: 1001;  /* Modal stays above the overlay */
+`;
+
+const Overlay = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: ${props => (props.visible ? 'block' : 'none')};
+    opacity: ${props => (props.visible ? 1 : 0)};  /* Fade in/out effect */
+    transition: opacity 0.3s ease-in-out;  /* Fade in/out animation */
+    z-index: 1000;  /* Overlay appears just below the modal */
+`;

@@ -3,11 +3,10 @@
 
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { Button } from "../../../components/Reusable";
-import ShopNavbar from "@/shop-components/ShopNavbar";
-
+import ShopNavbar from "@/shop-components/ShopNavbarAlt";
+import styled from "styled-components";
 import { useCart } from "@/shop-components/CartContext";
-
+import { FaArrowLeft } from "react-icons/fa";
 
 // List of all products
 const allProducts = [
@@ -24,7 +23,12 @@ const allProducts = [
         type: "hoodie",
         color: "black",
         price: 55,
-        image: "/images/shop-images/Black-Hoodie-1.png",
+        image: [
+            "/images/shop-images/Black-Hoodie-1.png",
+            "/images/shop-images/Sand-Hoodie-1.png",
+            "/images/shop-images/Black-Hoodie-1.png",
+            "/images/shop-images/Sand-Hoodie-1.png"
+        ],
         quantities: { S: 4, M: 1, L: 0, XL: 0 }
     },
     {
@@ -99,17 +103,36 @@ export default function ProductPage() {
     const product = allProducts.find((p) => p.id === product_id);
     const { dispatch } = useCart();
     const [loading, setLoading] = useState(true);
-
+    const [selectedSize, setSelectedSize] = useState();
+    const [isCartOpen, setIsCartOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState("");
+    
+    // wait until product is retrieved
     useEffect(() => {
         if (product) {
             setLoading(false);
         }
     }, [product]);
 
-    const addToCart = () => {
-        if (product) {
-            dispatch({ type: "ADD_TO_CART", payload: { ...product, quantity: 1 } });
+    // wait until product is retrieved to render
+    useEffect(() => {
+        if (product && product.image && product.image.length > 0) {
+            setSelectedImage(product.image[0]);
         }
+    }, [product]);
+
+    const handleSizeSelection = (size) => {
+        setSelectedSize(size); // Update the selected size
+    };
+
+    const addToCart = () => {
+        if (selectedSize && product) {
+            dispatch({ type: "ADD_TO_CART", payload: { ...product, quantity: 1, size: selectedSize } });
+            alert("Added " + `${selectedSize} ${product.color} ${product.type}` + " to cart!");
+        } else {
+            alert("Please select a size.");
+        }
+        setIsCartOpen(true);
     };
 
     if (loading) {
@@ -121,13 +144,170 @@ export default function ProductPage() {
     }
 
     return (
-        <div>
-            <ShopNavbar />
+        <>
+            <ShopNavbar onCartOpen={() => setIsCartOpen(true)} />
             
-            <h1>{`${product.type.toUpperCase()} - ${product.color.toUpperCase()}`}</h1>
-            <img src={product.image} alt={product.type} />
-            <p>Price: ${product.price}</p>
-            <Button onClick={addToCart}>Add to Cart</Button>
-        </div>
+            <BackToShop>
+                <a href="/shop"><FaArrowLeft/>Back to Shop</a>
+            </BackToShop>
+
+            <Content>
+                <ImageContainer>
+                    <ProductImage src={selectedImage} />
+
+                    <ImageOptions>
+                        {product.image.map((imgSrc) => (
+                            <ImgLink onClick={() => setSelectedImage(imgSrc)}>   
+                                <ProductImageOption src={imgSrc}/>
+                            </ImgLink>
+                        ))}
+                    </ImageOptions>
+                </ImageContainer>
+
+                <ProductContent>
+                    <ProductName>{`${product.type.toUpperCase()} - ${product.color.toUpperCase()}`}</ProductName>
+                    <Price>${product.price} CAD</Price>
+                    <SizeContainer>
+                        {Object.keys(product.quantities).map((size) => (
+                            <SizeButton
+                                key={size}
+                                disabled={product.quantities[size] === 0}
+                                onClick={() => handleSizeSelection(size)}
+                                isSelected={selectedSize === size}
+                            >
+                                {/* {size} ({product.quantities[size]}) */}
+                                {size}
+                            </SizeButton>
+                        ))}
+                    </SizeContainer>
+                    <AddButton onClick={addToCart}>ADD TO CART</AddButton>
+                </ProductContent>
+            </Content>
+        </>
     );
 }
+
+const BackToShop = styled.div`
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 30px;
+    text-decoration: none; 
+
+    & a {
+        text-decoration: none; /* No underline on anchor tag */
+        color: inherit; /* Inherit text color */
+        display: flex; /* Ensure contents inside the anchor are aligned */
+        flex-direction: row;
+        align-items: center; /* Vertically center the contents */
+        justify-content: left; /* Horizontally center the contents */
+        gap: 10px;
+    }
+
+    &:hover{
+        color: grey;
+    }
+`;
+
+const Content = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+    height: 100vh;
+    width: 100wh;
+`
+
+// ----------------------------------------------------------------
+
+const ImageContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    gap: 30px;
+`
+
+const ImageOptions = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-right: 40px;
+`
+
+const ImgLink = styled.a`
+    cursor: pointer;
+`
+
+const ProductImageOption = styled.img`
+    width: 100px;
+    height: 100px;
+`
+
+const ProductImage = styled.img`
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+`
+
+// ----------------------------------------------------------------
+
+const ProductContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+`
+
+const ProductName = styled.h1`
+
+`
+
+const Price = styled.p`
+`
+
+const AddButton = styled.button`
+    font-size: 15px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    background-color: #046bd2;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    &:hover {
+        background-color: #0357a9;
+    }
+    cursor: pointer;
+`
+
+const SizeContainer = styled.div`
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    gap: 5px;
+    // border: 1px solid rgb(210,210,210);
+    margin-bottom: 30px;
+`
+
+const SizeButton = styled.button`
+    font-size: 20px;
+    color: black;
+    background-color: transparent;
+    padding: 15px 25px;
+    border: ${({ isSelected }) => (isSelected ? "2px solid rgb(20,20,20)" : "1px solid rgb(150,150,150)")};
+    transition: background-color 0.3s, border 0.3s;
+    cursor: pointer;
+
+    &:disabled {
+        text-decoration: line-through;
+        opacity: 0.25;
+        cursor: not-allowed;
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+`
