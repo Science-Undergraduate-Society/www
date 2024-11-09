@@ -111,14 +111,14 @@ const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
 const CartModal = ({ visible, onClose }) => {
     const { state, dispatch } = useCart();
 
-    const handleAddQuantity = (product_id) => {
+    const handleAddQuantity = (product_id, item_size) => {
         const product = allProducts.find((p) => p.id === product_id);
-        dispatch({ type: "ADD_TO_CART", payload: { ...product, quantity: 1 } });
+        dispatch({ type: "ADD_TO_CART", payload: { ...product, quantity: 1, size: item_size} });
     };
 
-    const handleSubtractQuantity = (product_id) => {
+    const handleSubtractQuantity = (product_id, item_size) => {
         const product = allProducts.find((p) => p.id === product_id);
-        dispatch({ type: "REMOVE_FROM_CART", payload: { ...product, quantity: 1 } });
+        dispatch({ type: "REMOVE_FROM_CART", payload: { ...product, quantity: 1, size: item_size} });
     };
 
     const totalPrice = state.items.reduce((total, item) => total + item.price * item.quantity, 0)
@@ -138,17 +138,17 @@ const CartModal = ({ visible, onClose }) => {
                             <ItemImage src={item.image} alt={item.id} />
                             <ItemInfo>
                                 <ItemName>{`${item.type.toUpperCase().replace(/_/g, ' ')} - ${item.color.toUpperCase().replace(/_/g, ' ')}`}</ItemName>
-                                <ItemSize>{item.size}</ItemSize>
+                                <ItemSize>Size: {item.size}</ItemSize>
                                 <ItemPrice>
                                     <p>CAD ${item.price * item.quantity}</p>
                                     <p>({item.price} ea)</p>
                                 </ItemPrice>
                                 <ItemQuantity>
-                                    <QuantitySubtract onClick={() => handleSubtractQuantity(item.id)}>
+                                    <QuantitySubtract onClick={() => handleSubtractQuantity(item.id, item.size)}>
                                         -
                                     </QuantitySubtract>
                                     <QuantityValue>{item.quantity}</QuantityValue>
-                                    <QuantityAdd onClick={() => handleAddQuantity(item.id)}>
+                                    <QuantityAdd onClick={() => handleAddQuantity(item.id, item.size)}>
                                         +
                                     </QuantityAdd>
                                 </ItemQuantity>

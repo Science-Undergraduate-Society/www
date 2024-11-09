@@ -29,7 +29,8 @@ const allProducts = [
             "/images/shop-images/Black-Hoodie-1.png",
             "/images/shop-images/Sand-Hoodie-1.png"
         ],
-        quantities: { S: 4, M: 1, L: 0, XL: 0 }
+        quantities: { S: 4, M: 1, L: 0, XL: 0 },
+        productDescription: "This description is not real piece a touch of UBC- im trying to fill this description with as many words as I can, in an attempt to mimic the style of another e-commerce webiste, based in Vancouver. I love the intricate detailing that goes into a bouncy castle. Consider the implications of a rock.",
     },
     {
         id: "crewneck-blue",
@@ -153,8 +154,6 @@ export default function ProductPage() {
 
             <Content>
                 <ImageContainer>
-                    <ProductImage src={selectedImage} />
-
                     <ImageOptions>
                         {product.image.map((imgSrc) => (
                             <ImgLink onClick={() => setSelectedImage(imgSrc)}>   
@@ -162,11 +161,13 @@ export default function ProductPage() {
                             </ImgLink>
                         ))}
                     </ImageOptions>
+                    <ProductImage src={selectedImage} />
                 </ImageContainer>
 
                 <ProductContent>
                     <ProductName>{`${product.type.toUpperCase()} - ${product.color.toUpperCase()}`}</ProductName>
                     <Price>${product.price} CAD</Price>
+                    <p>SIZE</p>
                     <SizeContainer>
                         {Object.keys(product.quantities).map((size) => (
                             <SizeButton
@@ -180,6 +181,7 @@ export default function ProductPage() {
                             </SizeButton>
                         ))}
                     </SizeContainer>
+                    <ProductDescription>{product.productDescription}</ProductDescription>
                     <AddButton onClick={addToCart}>ADD TO CART</AddButton>
                 </ProductContent>
             </Content>
@@ -191,6 +193,7 @@ const BackToShop = styled.div`
     font-size: 20px;
     margin-left: 50px;
     margin-top: 30px;
+    margin-bottom: 100px;
     text-decoration: none; 
 
     & a {
@@ -210,27 +213,25 @@ const BackToShop = styled.div`
 
 const Content = styled.div`
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     gap: 60px;
-
-    height: 100vh;
-    width: 100wh;
 `
 
 // ----------------------------------------------------------------
 
 const ImageContainer = styled.div`
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 50%;
     gap: 30px;
+    width: 40%;
 `
 
 const ImageOptions = styled.div`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 15px;
@@ -258,7 +259,7 @@ const ProductContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content: space-between;
+    width: 40%;
 `
 
 const ProductName = styled.h1`
@@ -266,6 +267,10 @@ const ProductName = styled.h1`
 `
 
 const Price = styled.p`
+`
+
+const ProductDescription = styled.p`
+    font-size: 20px;
 `
 
 const AddButton = styled.button`
@@ -285,10 +290,7 @@ const AddButton = styled.button`
 
 const SizeContainer = styled.div`
     display: flex;
-    align-items: left;
-    justify-content: center;
     gap: 5px;
-    // border: 1px solid rgb(210,210,210);
     margin-bottom: 30px;
 `
 

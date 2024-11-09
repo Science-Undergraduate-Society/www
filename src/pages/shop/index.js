@@ -116,12 +116,10 @@ export default function Shop() {
   const [cart, setCart] = useState([]);
 
   // Filter products based on selected color and type
-  const filteredProducts = (selectedType === "all") ? 
-  allProducts
-  : 
+  const filteredProducts = (selectedType === "all" && selectedColor === "") ? allProducts : 
   allProducts.filter(product => {
-      const colorMatch = selectedColor === "" || product.color === selectedColor;
-      const typeMatch = selectedType === "" || product.type === selectedType;
+      const colorMatch = product.color === selectedColor;
+      const typeMatch = product.type === selectedType;
       return colorMatch && typeMatch;
   });
 
@@ -174,15 +172,15 @@ export default function Shop() {
             
             <ProductGrid>
               {filteredProducts.map(product => (
-                <Link href={`/shop/product/${product.id}`} key={product.id} passHref>
+                <StyledLink href={`/shop/product/${product.id}`} key={product.id} passHref>
                   <ProductCard>
                       <ProductImage src={product.image} alt={product.name} />
                       <ProductTitle>
                           {`${product.type.toUpperCase().replace(/_/g, ' ')} - ${product.color.toUpperCase().replace(/_/g, ' ')}`}
                       </ProductTitle>
-                      <ProductPrice>${product.price}</ProductPrice>
+                      <ProductPrice>$ {product.price}</ProductPrice>
                   </ProductCard>
-                </Link>
+                </StyledLink>
               ))}
             </ProductGrid>
           </ShopContainer>
@@ -192,6 +190,18 @@ export default function Shop() {
       </>
   );
 }
+
+const StyledLink = styled.a`
+  color: blue;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+
+  &:hover{
+    filter: brightness(80%)
+  }
+`;
 
 // ------------------------------------------------------------------------------
 
@@ -221,7 +231,6 @@ const HeroText = styled.div`
 
   p {
     font-size: 1.5rem;
-    margin-top: 10px;
   }
 `
 
@@ -236,10 +245,10 @@ const Cart = styled.div`
 `;
 
 const ShopContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 `;
 
 const ProductImage = styled.img`
@@ -304,7 +313,7 @@ const FilterButton = styled.button`
 const ProductGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 20px;
 
   @media(max-width: 1000px) {
     grid-template-columns: repeat(3, 1fr);
@@ -323,7 +332,6 @@ const ProductCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: left;
-  padding: 10px;
   text-align: left;
 
   @media(max-width: 500px) {
@@ -332,8 +340,12 @@ const ProductCard = styled.div`
 `;
 
 const ProductTitle = styled.p`
+  color: black;
   font-size: 16px;
-  margin: 10px 0;
+  text-decoration: none !important;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
 
   @media(max-width: 500px) {
     font-size: 14px;
@@ -344,20 +356,11 @@ const ProductPrice = styled.p`
   font-size: 16px;
   color: #555;
   font-weight: bold;
+  text-decoration: none !important; 
+  padding: 0;
+  margin: 0;
 
   @media(max-width: 500px) {
     font-size: 14px;
-  }
-`;
-
-const SizeQuantities = styled.div`
-  margin-top: 10px;
-  font-size: 14px;
-  color: #333;
-  display: flex;
-  gap: 5px;
-
-  @media(max-width: 500px) {
-    font-size: 12px;
   }
 `;
