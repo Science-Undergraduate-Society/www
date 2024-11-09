@@ -208,6 +208,14 @@ export default function BlueCard() {
                                         and 20% off for event food orders of 100+ meals."
                             location="6400 Kingsway, Burnaby"
                         />
+                        <IndivPartnerInfo
+                            partnerName="Freshslice UBC Nest"
+                            logoSrc="/images/bluecard-images/partner-logos/freshslice.png"
+                            description="7.00 CAD$ (10% off) for 2 XL Classic Slices and a pop combo,
+                            7.90 CAD$ (10% off) for 2 XL Feast Slices and a pop combo,
+                            4.90 CAD$ (30% off) for Cheesy Breads"
+                            location="UBC AMS Student Nest"
+                        />
                         </PartnersBox>
                 </Partners>
             </MainInfo>
