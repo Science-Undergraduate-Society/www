@@ -4,6 +4,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import ShopNavbar from "@/shop-components/ShopNavbarAlt";
+import ShopFooter from "@/shop-components/ShopFooter";
 import styled from "styled-components";
 import { useCart } from "@/shop-components/CartContext";
 import { FaArrowLeft } from "react-icons/fa";
@@ -105,7 +106,9 @@ export default function ProductPage() {
     const { dispatch } = useCart();
     const [loading, setLoading] = useState(true);
     const [selectedSize, setSelectedSize] = useState();
+    const [showSuccessPopup, setShowSuccessPopup] = useState(false); 
     const [isCartOpen, setIsCartOpen] = useState(false);
+    const [showFailPopup, setShowFailPopup] = useState(false); 
     const [selectedImage, setSelectedImage] = useState("");
     
     // wait until product is retrieved
@@ -129,12 +132,15 @@ export default function ProductPage() {
     const addToCart = () => {
         if (selectedSize && product) {
             dispatch({ type: "ADD_TO_CART", payload: { ...product, quantity: 1, size: selectedSize } });
-            alert("Added " + `${selectedSize} ${product.color} ${product.type}` + " to cart!");
+            setShowSuccessPopup(true); // Show the success message
+            setTimeout(() => setShowSuccessPopup(false), 2000); 
         } else {
-            alert("Please select a size.");
+            setShowFailPopup(true); // Show the fail message
+            setTimeout(() => setShowFailPopup(false), 2000);
         }
         setIsCartOpen(true);
     };
+
 
     if (loading) {
         return <div>Loading...</div>; // Show a loading state
@@ -147,6 +153,18 @@ export default function ProductPage() {
     return (
         <>
             <ShopNavbar onCartOpen={() => setIsCartOpen(true)} />
+
+            {showSuccessPopup && (
+                <SuccessPopupMessage>
+                    Added {selectedSize} {product.color} {product.type} to cart!
+                </SuccessPopupMessage>
+            )}
+
+            {showFailPopup && (
+                <FailPopupMessage>
+                    Please select a size!
+                </FailPopupMessage>
+            )}
             
             <BackToShop>
                 <a href="/shop"><FaArrowLeft/>Back to Shop</a>
@@ -185,15 +203,49 @@ export default function ProductPage() {
                     <AddButton onClick={addToCart}>ADD TO CART</AddButton>
                 </ProductContent>
             </Content>
+
+            <ShopFooter />
         </>
     );
 }
 
+
+// ----------------------------------------------------------------
+
+const FailPopupMessage = styled.div`
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: red;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    z-index: 1000;
+    opacity: 0; // Start hidden
+    animation: fadeInOut 2s ease forwards; 
+
+    @keyframes fadeInOut {
+        0% { opacity: 0; }
+        10% { opacity: 0.7; }
+        90% { opacity: 0.7; }
+        100% { opacity: 0; }
+    }
+`;
+
+const SuccessPopupMessage = styled(FailPopupMessage)`
+    background-color: green;
+`;
+
+// ----------------------------------------------------------------
+
 const BackToShop = styled.div`
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 50px;
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     text-decoration: none; 
 
     & a {
@@ -211,11 +263,14 @@ const BackToShop = styled.div`
     }
 `;
 
+// ----------------------------------------------------------------
+
 const Content = styled.div`
     display: flex;
     align-items: top;
     justify-content: center;
     gap: 60px;
+    margin-bottom: 3rem;
 `
 
 // ----------------------------------------------------------------
@@ -224,7 +279,6 @@ const ImageContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50%;
     gap: 30px;
     width: 40%;
 `
@@ -270,7 +324,7 @@ const Price = styled.p`
 `
 
 const ProductDescription = styled.p`
-    font-size: 20px;
+    font-size: 15px;
 `
 
 const AddButton = styled.button`
@@ -291,14 +345,14 @@ const AddButton = styled.button`
 const SizeContainer = styled.div`
     display: flex;
     gap: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 `
 
 const SizeButton = styled.button`
-    font-size: 20px;
+    font-size: 16px;
     color: black;
     background-color: transparent;
-    padding: 15px 25px;
+    padding: 10px 20px;
     border: ${({ isSelected }) => (isSelected ? "2px solid rgb(20,20,20)" : "1px solid rgb(150,150,150)")};
     transition: background-color 0.3s, border 0.3s;
     cursor: pointer;

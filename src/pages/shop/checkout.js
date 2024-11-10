@@ -2,6 +2,9 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import { useCart } from "@/shop-components/CartContext";
+
+// stripe-relevant imports
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import CheckoutPage from "@/shop-components/CheckoutPage";
@@ -10,6 +13,8 @@ import convertToSubcurrency from "@/utility/ulilFunctions";
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
 
 export default function Checkout() {
+    const { state, dispatch } = useCart();
+
     const [cart, setCart] = useState([]);
     const [totalAmount, setTotalAmount] = useState(0);
 

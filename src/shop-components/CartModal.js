@@ -1,14 +1,11 @@
-"use client"
-
 import React from 'react';
 import { useCart } from './CartContext';
 import styled from 'styled-components';
 import { FaShoppingBasket } from "react-icons/fa";
-
-import CheckoutPage from "@/shop-components/CheckoutPage";
-import convertToSubcurrency from "@/utility/ulilFunctions";
-import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
+
+// import convertToSubcurrency from "@/utility/ulilFunctions";
+// import { Elements } from "@stripe/react-stripe-js";
 
 const allProducts = [
     {
@@ -93,21 +90,6 @@ const allProducts = [
     },
 ];
 
-{/* <Cart>
-    {cart.length === 0 ? (
-        <p>Your cart is empty.</p>
-    ) : (
-        cart.map(item => (
-            <div key={item.id}>
-                <p>{item.name} - Quantity: {item.quantity}</p>
-            </div>
-        ))
-    )}
-    <p>Total Amount: ${totalAmount.toFixed(2)}</p>
-</Cart> */}
-
-const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
-
 const CartModal = ({ visible, onClose }) => {
     const { state, dispatch } = useCart();
 
@@ -135,7 +117,7 @@ const CartModal = ({ visible, onClose }) => {
                 <CartItems>
                     {state.items.map(item => (
                         <Item key={item.id}>
-                            <ItemImage src={item.image} alt={item.id} />
+                            <ItemImage src={item.image[0]} alt={item.id} />
                             <ItemInfo>
                                 <ItemName>{`${item.type.toUpperCase().replace(/_/g, ' ')} - ${item.color.toUpperCase().replace(/_/g, ' ')}`}</ItemName>
                                 <ItemSize>Size: {item.size}</ItemSize>
@@ -162,27 +144,9 @@ const CartModal = ({ visible, onClose }) => {
                     <p>Total (tax included):</p>
                     <p>${totalPrice.toFixed(2)}</p>
                 </Cost>
-                <CheckoutButton href="/shop/checkout">
+                <CheckoutLink href="/shop/checkout">
                     <FaShoppingBasket/>Checkout
-                </CheckoutButton>
-
-                {/* {state.items.length > 0 && (
-                    <div className="checkout">
-                        <h2>Checkout</h2>
-                        <div className="flex h-screen justify-center items-center">
-                            <Elements 
-                                stripe={stripePromise}
-                                options={{
-                                    mode: "payment",
-                                    amount: convertToSubcurrency(totalPrice),
-                                    currency: "cad"
-                                }}
-                            >
-                                <CheckoutPage amount={totalPrice} />
-                            </Elements>
-                        </div>
-                    </div>
-                )}  */}
+                </CheckoutLink>
             </Modal>
         </>
     );
@@ -190,7 +154,7 @@ const CartModal = ({ visible, onClose }) => {
 
 export default CartModal;
 
-const CheckoutButton = styled.button`
+const CheckoutLink = styled.a`
     width: 100%;
     padding: 20px 0;
     margin-top: 20px;
@@ -205,6 +169,7 @@ const CheckoutButton = styled.button`
     justify-content: center;
     align-items: center;
     transition: background-color 0.4s ease;
+    text-decoration: none;
 
     &:hover{
         background-color: #3d96c2;
