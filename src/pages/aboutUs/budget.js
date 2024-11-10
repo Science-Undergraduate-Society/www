@@ -8,9 +8,9 @@ export default function Alssc() {
             <Navbar />
             <Content>
                 <Header>
-                <Title>BUDGET</Title>
+                <Title>BUDGET SPREADSHEETS</Title>
                     <HeaderDescription>
-                      The Science Undergraduate Society operates a $220k + budget and is governed by policies evoked by the AMS and the Science Student body. The following document outline how the student fees are used.
+                    The Science Undergraduate Society operates a $275k+ budget and is governed by policies evoked by the AMS and the Science Student body. The following document outline how the student fees are used.
                     </HeaderDescription>
                     <ButtonGroup>
                         <ButtonHollowBlack>
@@ -20,21 +20,9 @@ export default function Alssc() {
 
                     <Divider/>
 
-                    <Title>SUS BUDGET FEEDBACK FORM</Title>
-                    <HeaderDescription>
-                      Do you have any feedback or suggestions to the SUS budget? Please let us know using this form.
-                    </HeaderDescription>
-                    <ButtonGroup>
-                        <ButtonHollowBlack>
-                            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeivIN69w38fEwQVquDbYKhNVNQ2lcptngJBOgzS0oTgrmOtg/viewform">Budget Feedback Form</Link>    
-                        </ButtonHollowBlack>
-                    </ButtonGroup>
-
-                    <Divider/>
-
                     <Title>BUDGET PRESENTATIONS</Title>
                     <HeaderDescription>
-                      Do you have any feedback or suggestions to the SUS budget? Please let us know using this form.
+                    Below are links to all SUS Budget presentations made during council throughout the year.
                     </HeaderDescription>
                     <ButtonGroup>
                         <ButtonHollowBlack>
@@ -49,6 +37,18 @@ export default function Alssc() {
                         <ButtonHollow>
                             <Link href="https://drive.google.com/drive/folders/1SJYSaMw0CyQRvq2aU-vOFAesdk3cdaW8?usp=share_link">Budget Presentations 2024/2025</Link>    
                         </ButtonHollow>
+                    </ButtonGroup>
+
+                    <Divider/>
+
+                    <Title>SUS BUDGET FEEDBACK FORM</Title>
+                    <HeaderDescription>
+                      Do you have any feedback or suggestions to the SUS budget? Please let us know using this form.
+                    </HeaderDescription>
+                    <ButtonGroup>
+                        <ButtonHollowBlack>
+                            <Link href="https://forms.gle/pGkj4oqNR1VCQEjWA">Budget Feedback Form</Link>    
+                        </ButtonHollowBlack>
                     </ButtonGroup>
 
                     <Divider/>
