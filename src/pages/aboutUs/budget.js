@@ -32,6 +32,27 @@ export default function Alssc() {
 
                     <Divider/>
 
+                    <Title>BUDGET PRESENTATIONS</Title>
+                    <HeaderDescription>
+                      Do you have any feedback or suggestions to the SUS budget? Please let us know using this form.
+                    </HeaderDescription>
+                    <ButtonGroup>
+                        <ButtonHollowBlack>
+                            <Link href="https://drive.google.com/file/d/1qGn0VRMykNaHZi2ISfwJfx_bftQr3OXN/view?usp=share_link">SUS Budget Overview ‘24/’25</Link>    
+                        </ButtonHollowBlack>
+                        <ButtonHollowBlack>
+                            <Link href="https://drive.google.com/file/d/1gL7NNiNntsW-ks-ul1FB9QNSRknCPuhC/view?usp=share_link">SUS Operational Surplus Request ‘24/’25</Link>    
+                        </ButtonHollowBlack>
+                    </ButtonGroup>
+
+                    <ButtonGroup>
+                        <ButtonHollow>
+                            <Link href="https://drive.google.com/drive/folders/1SJYSaMw0CyQRvq2aU-vOFAesdk3cdaW8?usp=share_link">Budget Presentations 2024/2025</Link>    
+                        </ButtonHollow>
+                    </ButtonGroup>
+
+                    <Divider/>
+
                     <Title>INQUIRIES OR CONCERNS?</Title>
                     <ExecutiveImage src="/images/executive-images/Chloe-Chan.webp" />
                     <HeaderDescription>
@@ -87,6 +108,23 @@ const ButtonGroup = styled.div`
 const ButtonHollowBlack = styled.button`
     background-color: transparent;
     color: #222755;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: 1px solid #222755;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+        color: #0052FF;
+        border: 1px solid #0052FF;
+    }
+`;
+
+const ButtonHollow = styled.button`
+    background-color: #222755;
+    color: white;
     padding: 15px 35px;
     border-radius: 30px;
     border: 1px solid #222755;
