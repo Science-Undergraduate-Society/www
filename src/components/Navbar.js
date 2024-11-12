@@ -535,6 +535,10 @@ const MobileNavLink = styled.a`
   font-size: 12px;
   font-weight: 500;
   padding: 15px 0;
+
+  @media (max-height: 1000px) {
+    padding: 13px 0;
+  }
 `;
 
 const MobileDropdownMenu = styled.div`
@@ -560,4 +564,8 @@ const MobileDropdownItem = styled.a`
     `
     border-bottom: 1px dashed #7076A7;
   `}
+
+  @media (max-height: 1000px) {
+    padding: 13px 0;
+  }
 `;
