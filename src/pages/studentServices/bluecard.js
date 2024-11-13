@@ -114,107 +114,125 @@ export default function BlueCard() {
                     <IndivPartnerInfo
                             partnerName="Susgrainable"
                             logoSrc="/images/bluecard-images/partner-logos/susgrainable.png"
-                            description=""
+                            description="Use code BLUECARD for 20% off online orders."
                             location="Valid at https://susgrainable.com/"
+                            website="https://susgrainable.com/"
                         />
                         <IndivPartnerInfo
                             partnerName="Prestige Optical"
                             logoSrc="/images/bluecard-images/partner-logos/prestigeOptical.jpg"
-                            description="Get 10% off prescription eyeglasses and sunglasses"
+                            description="Get 10% off prescription eyeglasses and sunglasses."
                             location="2950 West Broadway, Vancouver, BC V6K 2G8"
+                            website="https://www.prestigeoptical.ca/"
                         />
                         <IndivPartnerInfo
                             partnerName="Pita Pit"
                             logoSrc="/images/bluecard-images/partner-logos/pitaPit.jpeg"
                             description="Get 10% off menu items."
                             location="5717 Dalhousie Rd, Vancouver, BC V6T 2H9"
+                            website="https://pitapit.ca/"
                         />
                         <IndivPartnerInfo
                             partnerName="Sushi Nova"
                             logoSrc="/images/bluecard-images/partner-logos/sushiNova.png"
                             description="Get 10% off all menu items except alcohol."
                             location="2059 W 4th Ave Vancouver, BC V6J 1N3"
+                            website="https://sushinova.ca/"
                         />
                         <IndivPartnerInfo
                             partnerName="Chatime"
                             logoSrc="/images/bluecard-images/partner-logos/chatime-logo.webp"
-                            description="10% off all products"
+                            description="Get 10% off all products."
                             location="Valid only at 5998 University Blvd #4, Vancouver, V6T 2A1"
+                            website="https://chatime.ca/"
                         />
                         <IndivPartnerInfo
                             partnerName="Eyelab, Doctors of Optometry"
                             logoSrc="/images/bluecard-images/partner-logos/EYELAB.png"
-                            description="10% discount on contacts"
+                            description="Get 10% off all products."
                             location="Valid only at 2369 W 41st Ave, Vancouver, BC V6M 2A3"
+                            website="https://helloeyelab.com/"
                         />
                         <IndivPartnerInfo
                             partnerName="Killer Ice Cream"
                             logoSrc="/images/bluecard-images/partner-logos/Killer-ice-cream.png"
                             description="Get $2 off regular sized cones."
                             location="Valid only at 3659 W 4th Ave, Vancouver, BC V6R 1P2"
+                            website="https://killericecream.ca/"
                         />
                         <IndivPartnerInfo
                             partnerName="Majestic Maven"
                             logoSrc="/images/bluecard-images/partner-logos/majestic-maven-14.jpg"
-                            description="20% off all lash and brow services"
+                            description="Get 20% off all lash and brow services."
                             location="Valid only at 1236 Richards St, Vancouver, BC V6B 6M6"
+                            website="https://majesticmaven.ca/"
                         />
                         <IndivPartnerInfo
                             partnerName="Mosa"
                             logoSrc="/images/bluecard-images/partner-logos/Mosa logo.jpg"
-                            description=""
+                            description="Use code SUS20 for 20% off all products."
                             location="Valid only at www.wearemosa.com"
+                            website="https://wearemosa.com/?srsltid=AfmBOorLe6OPrpA1PMSqzv8JKXdnSz_OIz_n3xuQXFg5vdn7TyR-1viq"
                         />
                         <IndivPartnerInfo
                             partnerName="Steve's Poke Bar"
                             logoSrc="/images/bluecard-images/partner-logos/Steve_s Poke Bar Logo.png"
-                            description=""
+                            description="Use code SCHOOLSPB for $5 off first time mobile app orders."
                             location="Valid at www.stevespokebar.ca"
+                            website="https://www.stevespokebar.ca/"
                         />
                         <IndivPartnerInfo
                             partnerName="Storagehotel"
                             logoSrc="/images/bluecard-images/partner-logos/Storagehotel Logo - Green Small.png"
-                            description="Mention SUS when signing up for the Summer 2025 waitlist for VIP Early Booking Access, which lets you skip the waitlist queue and save up to $50."
+                            description="Use code SUS to save $50 and skip the Summer 2025 waitlist."
                             location="Valid at www.storagehotel.ca"
+                            website="https://www.storagehotel.ca/"
                         />
                         <IndivPartnerInfo
                             partnerName="Wizeprep"
                             logoSrc="/images/bluecard-images/partner-logos/wizeprep logo.png"
-                            description="15% off UBC-specific and MCAT courses"
+                            description="Get 15% off UBC-specific and MCAT courses."
                             location="Valid at wizeprep.com"
+                            website="https://www.wizeprep.com/"
                         />
                         <IndivPartnerInfo
                             partnerName="Delhi 6 Indian Bistro"
                             logoSrc="/images/bluecard-images/partner-logos/delhi.png"
                             description="Get 15% off all food items (not applicable to drinks)."
                             location="1766 W 7th Ave, Vancouver, BC V6J 4T3"
+                            website="https://www.delhi6.ca/"
                         />
                         <IndivPartnerInfo
                             partnerName="Pearl Fever"
                             logoSrc="/images/bluecard-images/partner-logos/pearl.png"
-                            description="Get 10% off mobile app purchases."
+                            description="Get 10% off mobile app purchases using their mailing list: https://forms.gle/osEaqy5TrsLAKKiT7."
                             location="2182 Western Pkwy, Vancouver, BC V6T 1W6"
+                            website="https://pearlfever.ca/"
                         />
                         <IndivPartnerInfo
                             partnerName="Hullo Ferries"
                             logoSrc="/images/bluecard-images/partner-logos/hullo.svg"
-                            description="Get the corporate rate on your next trip between Vancouver and Nanaimo."
+                            description="Use code UBCSUS10 for 10% off regular fare sailings."
                             location="Valid at hullo.com"
+                            website="https://hullo.com/"
                         />
                         <IndivPartnerInfo
                             partnerName="MYST Asian Fusion"
                             logoSrc="/images/bluecard-images/partner-logos/myst-asian-fusion-logo.jpg"
-                            description="10% off for all in-store purchases, 15% off for event food orders of 50+ meals 
-                                        and 20% off for event food orders of 100+ meals."
+                            description="Get 10% off all in-person store purchases,
+                            15% off event orders (50+), and 
+                            20% off event orders (100+)."
                             location="6400 Kingsway, Burnaby"
+                            website="https://myst6400.com/"
                         />
                         <IndivPartnerInfo
                             partnerName="Freshslice UBC Nest"
                             logoSrc="/images/bluecard-images/partner-logos/freshslice.png"
-                            description="7.00 CAD$ (10% off) for 2 XL Classic Slices and a pop combo,
-                            7.90 CAD$ (10% off) for 2 XL Feast Slices and a pop combo,
-                            4.90 CAD$ (30% off) for Cheesy Breads"
+                            description="$7.00 for 2XL Classic & Pop Combo,
+                            $7.90 for 2XL Feast & Pop Combo
+                            $4.90 for Cheesy Breads."
                             location="UBC AMS Student Nest"
+                            website="https://www.freshslice.com/"
                         />
                         </PartnersBox>
                 </Partners>
@@ -225,16 +243,22 @@ export default function BlueCard() {
 }
 
 // partner's boxes
-function IndivPartnerInfo({ partnerName, logoSrc, description, location }) {
+function IndivPartnerInfo({ partnerName, logoSrc, description, location, website }) {
     return (
-        <>
         <IndivPartner>
-            <PartnerImg src={logoSrc} /> 
+            <a href={website}><PartnerImg src={logoSrc} /></a>
             <PartnerName>{partnerName}</PartnerName>
-            <Description>{description}</Description>
+            <Description>
+                {partnerName === "Pearl Fever" ? (
+                    <>
+                        Get 10% off mobile app purchases using their <StyledLink href="https://forms.gle/osEaqy5TrsLAKKiT7">mailing list</StyledLink>.
+                    </>
+                ) : (
+                    description
+                )}
+            </Description>
             <Location>{location}</Location>
         </IndivPartner>
-        </>
     );
 }
 
@@ -242,46 +266,6 @@ const breakpoints = {
     mobile: '768px',
     tablet: '1024px',
 };
-
-const PartnerName = styled.div`
-    font-size: 25x;
-    font-weight: bold;
-    margin-top: 24px;
-
-    @media (max-width: ${breakpoints.mobile}) {
-        font-size: 15px;
-    }
-`
-
-const PartnerNameThin = styled(PartnerName)`
-    margin-top: 53px;
-`
-
-const PartnerImg = styled.img`
-    width: 150px;
-    height: auto;
-
-    @media (max-width: ${breakpoints.mobile}) {
-        width: 100px;
-        height: 100px;
-    }
-`
-
-const PartnerImgThin = styled(PartnerImg)`
-    margin-top: 24px;
-`
-
-const Description = styled.div`
-    font-size: 18px;
-    margin-top: 3%;
-`
-
-const Location = styled.div`
-    font-size: 18px;
-    font-style: italic;
-    margin-top: 4%;
-    color: #0173be;
-`
 
 const Heading = styled.div`
     padding-top: 126px;
@@ -448,30 +432,20 @@ const MainInfo = styled.div`
         gap: 50px;
     }
 `
-
-const PartnersBox = styled.div`
-    height: 100%;
-    width: 100%;
-    padding: 24px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 5px;
-    row-gap: 50px;
-    justify-content: center;
-`
 const IndivPartner = styled.div`
-    color: #222755;
-    padding: 2%;
-    max-width: 23%;
-    height: auto;
-    justify-content: center;
+    width: 250px; // Fixed width for consistency
+    height: 350px; // Fixed height to ensure boxes are the same size
+    display: flex;
+    flex-direction: column;
     align-items: center;
-
-       @media (max-width: ${breakpoints.mobile}) {
-        max-width: 48%;
-    }
-`
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px;
+`;
 
 const Background = styled.div`
     height: 100%;
@@ -530,10 +504,47 @@ const StyledButton = styled.div`
 `
 
 const StyledLink = styled.a`
-    visibility: hidden;
-`
+    color: #0070f3;
+    text-decoration: underline;
+    &:hover {
+        color: #0050c3;
+    }
+`;
+
 
 const TopLink = styled.a`
     color: white;
     text-decoration: none;
 `
+
+const PartnerImg = styled.img`
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+`;
+
+const PartnerName = styled.div`
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+`;
+
+const Description = styled.div`
+    font-size: 16px;
+    margin-top: 10px;
+`;
+
+const Location = styled.div`
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+`;
+
+// Add a flex container for all partner boxes to wrap and align them
+const PartnersBox = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+`;
