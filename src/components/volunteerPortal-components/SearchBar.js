@@ -273,6 +273,7 @@ export const SearchBar = () => {
                 </ButtonHollowBlack>
             </SearchBox>
 
+            <br></br>
             <JobSec>
                 {list.map((job) => (
                     <JobItem key={job.id} onClick={() => openJobDetails(job)}>
@@ -373,7 +374,7 @@ const SearchInput = styled.input`
     margin: 1px;
     margin-right: 15px;
     font-size: 15px;
-    padding: 16px;
+    padding: 13px;
 `;
 
 const JobSec = styled.ul`
