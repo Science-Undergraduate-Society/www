@@ -3,9 +3,10 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useRouter } from "next/router";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaHouseUser, FaTimes } from "react-icons/fa";
 import Link from "next/link";
 import searchPages from "@/utility/searchPages";
+import Fuse from "fuse.js";
 
 const sections = [
   {
@@ -135,16 +136,20 @@ export default function Navbar() {
     }
   };
 
+  const fuseOptions = {
+    keys: ["title", "content"],
+    threshold: 0.3, // will adjust later
+  };
+
+  const fuse = new Fuse(searchPages, fuseOptions);
+
   const performSearch = (searchTerm) => {
     if (!searchTerm) {
       return [];
     }
 
-    const regex = new RegExp(`\\b${searchTerm}`, "i");
-
-    return searchPages.filter(
-      (page) => regex.test(page.title) || regex.test(page.content)
-    );
+    const results = fuse.search(searchTerm);
+    return results.map((result) => result.item);
   };
 
   useEffect(() => {
@@ -220,9 +225,12 @@ export default function Navbar() {
             {results.length > 0 && (
               <SearchDropdown>
                 {results.map((result, index) => (
-                  <SearchDropdownItem key={index}>
-                    <Link href={result.href}>{result.title}</Link>
-                  </SearchDropdownItem>
+                  // <SearchDropdownItem key={index}>
+                  //   <Link href={result.href}>{result.title}</Link>
+                  // </SearchDropdownItem>
+                  <Link href={result.href} key={index} passHref>
+                    <SearchDropdownItem>{result.title}</SearchDropdownItem>
+                  </Link>
                 ))}
               </SearchDropdown>
             )}

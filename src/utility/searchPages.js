@@ -1,3 +1,4 @@
+// Search Bar uses title and content to query through
 const searchPages = [
   {
     title: "Apply",

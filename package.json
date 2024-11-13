@@ -17,9 +17,12 @@
     "@sanity/vision": "^3.44.0",
     "@stripe/react-stripe-js": "^2.7.1",
     "@stripe/stripe-js": "^3.4.1",
+    "axios": "^1.7.7",
     "babel-plugin-styled-components": "^2.1.4",
     "canvas-confetti": "^1.9.3",
+    "cheerio": "^1.0.0",
     "fortawesome": "^0.0.1-security",
+    "fuse.js": "^7.0.0",
     "next": "^14.2.11",
     "next-sanity": "^9.3.10",
     "next-sitemap": "^4.2.3",
@@ -38,5 +41,4 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.5"
   }
-  
 }
