@@ -225,11 +225,18 @@ export default function Navbar() {
             {results.length > 0 && (
               <SearchDropdown>
                 {results.map((result, index) => (
-                  // <SearchDropdownItem key={index}>
-                  //   <Link href={result.href}>{result.title}</Link>
-                  // </SearchDropdownItem>
                   <Link href={result.href} key={index} passHref>
-                    <SearchDropdownItem>{result.title}</SearchDropdownItem>
+                    <SearchDropdownItem
+                      onClick={(e) => {
+                        // Check if the link's href matches the current path
+                        if (result.href === window.location.pathname) {
+                          e.preventDefault(); // Prevent default behavior
+                          window.location.reload(); // Reload the page
+                        }
+                      }}
+                    >
+                      {result.title}
+                    </SearchDropdownItem>
                   </Link>
                 ))}
               </SearchDropdown>

@@ -42,15 +42,15 @@ const searchPages = [
   },
   {
     title: "Upcoming Events",
-    href: "/events/upcoming",
+    href: "/ourEvents/upcoming",
     content: "Details about our upcoming events.",
   },
   {
     title: "Past Events",
-    href: "/events",
+    href: "/ourEvents/past",
     content: "Details about our past events.",
   },
-  {},
+
   {
     title: "Blue Card Program",
     href: "/studentServices/bluecard",
@@ -101,7 +101,89 @@ const searchPages = [
     href: "https://docs.google.com/forms/d/e/1FAIpQLSeoybfzo-4VZgMUgie-eySFPczi_ToTwugPDu8F-IPLoS04Wg/viewform",
     content: "Give us feedback.",
   },
-  { title: "Shop", href: "/shop", content: "Visit our shop for merchandise." },
+  {
+    title: "Shop",
+    href: "/shop",
+    content:
+      "Visit our shop for merchandise. Merch such as hoodies and crewnecks. Hoodie. Crewneck",
+  },
+  {
+    title: "Hoodie",
+    href: "/shop",
+    content:
+      "Visit our shop for merchandise. Merch such as hoodies and crewnecks. Hoodie. Crewneck",
+  },
+  {
+    title: "Crewneck",
+    href: "/shop",
+    content:
+      "Visit our shop for merchandise. Merch such as hoodies and crewnecks. Hoodie. Crewneck",
+  },
+  {
+    title: "Abdul Ladha",
+    href: "/scienceStudentCentre/abdulLadha",
+    content: "about the abdul ladha",
+  },
+  {
+    title: "Vancouver/BC Services & Resources",
+    href: "/studentServices/health",
+    content: "Vancouver/BC Services & Resources",
+  },
+  {
+    title: "Physical Wellness",
+    href: "/studentServices/health",
+    content: "Physical Wellness",
+  },
+  {
+    title: "Nutrition",
+    href: "/studentServices/health",
+    content: "Nutrition",
+  },
+  {
+    title: "Mental Wellness",
+    href: "/studentServices/health",
+    content: "Mental Wellness",
+  },
+  {
+    title: "Support For Indigenous People",
+    href: "/studentServices/health",
+    content: "Support For Indigenous People",
+  },
+  {
+    title: "Support For 2SLGBTQ+ People",
+    href: "/studentServices/health",
+    content: "Support For 2SLGBTQ+ People",
+  },
+  {
+    title: "Free Recreation",
+    href: "/studentServices/health",
+    content: "Free Recreation",
+  },
+  {
+    title: "Science RXN",
+    href: "/ourEvents/upcoming",
+    content: "Science RXN",
+  },
+  {
+    title: "Science Week",
+    href: "/ourEvents/upcoming",
+    content: "Science Week",
+  },
+  {
+    title: "Science Graduation",
+    href: "/ourEvents/upcoming",
+    content: "Science Graduation",
+  },
+  {
+    title: "Welcome Back BBQ",
+    href: "/ourEvents/past",
+    content: "Welcome Back BBQ",
+  },
+  {
+    title: "Student Recognition Awards Night",
+    href: "/ourEvents/past",
+    content: "Student Recognition Awards Night",
+  },
 ];
 
 export default searchPages;
