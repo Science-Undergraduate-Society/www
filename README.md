@@ -2,33 +2,44 @@
 Website for the Science Undergraduate Society of the University of British Columbia in Vancouver, Canada.
 
 ## Getting Started 
- 
+   
 First, run the development server (from root folder):
 
-```bash 
-npm install
+```bash  
+npm install  
   
 npm run dev 
 # or
-yarn dev 
+yarn dev  
 ```
   
 ## Pages/Routes
 
+### Pages are routed based on the Navbar, with each heading corresponding to a sub-route for its associated page. For example, the "Join Us" heading in the Navbar has a dropdown that includes sub-routes like "Apply."
+
 | Page | Endpoint | Description | 
 | --------- | -------|------| 
 | Home  | /  | Home/landing page |
-| Join Sus | /joinSus | Application/position\volunteer information |
-| Executives | /executives | Executives (VP + Prez) information | 
-| Budget | /budget | Budget information |
-| Code & Procedures | /codeProcedures | SUS Code & Procedures |
-| Upcoming Events | /events | All events under SUS (calendar) |
-| Blue Card | /bluecard | BlueCard information and download link |
-| Grants | /grants | Science grants information |
-| ALSSC | /alssc | Abdul Ladha Science Student Center information |
-| Book Room | /roomBooking | ALSSC room booking page |
+| Apply | /joinSus/apply | Application Info |
+| Elections | /joinSus/elections | Spring and Fall Election Info |
+| Budget | /aboutUs/budget | Budget Info |
+| Clubs | /aboutUs/clubs | Club Info |
+| Code & Procedures | /aboutUs/codeProcedures | SUS Code & Procedures |
+| Executives | /aboutUs/executives | Executives (VP + Prez) information | 
+| Meeting Minutes | /aboutUs/meetingMinutes | Meeting Minutes for Current Year |
+| Office Hours | /aboutUs/officeHours | Elected Executives and Building Manager Hours |
+| Past Events | /ourEvents/past | Past Events |
+| Upcoming Events | /ourEvents/upcoming | Upcoming Events |
+| About Abdul Ladha | /scienceStudentCentre/abdulLadha | About Abdul Ladha |
+| About ALSSC | /scienceStudentCentre/aboutALssca | Abdul Ladha Science Student Center Info |
+| Event Bookings | /scienceStudentCentre/eventBooking | ALSSC Event Bookings |
+| Meeting Bookings | /scienceStudentCentre/meetingBooking | ALSSC Meeting Room Bookings |
 | Shop | /shop | SUS merch page |
-| Health & Wellness | /health | Health and wellness resources and information |
+| Bluecard | /studentServices/bluecard | Bluecard Info |
+| Grants | /studentServices/grants | Grants Info |
+| Health & Wellness | /studentServices/health | Health and wellness resources and information |
+| Study Sphere | /studentServices/studySphere | Study Sphere |
+| Volunteer Portal | /studentServices/volunteerPortal | Volunteer Portal |
 
 ## Development Processes
 

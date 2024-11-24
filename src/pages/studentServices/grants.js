@@ -71,7 +71,7 @@ export default function Grants() {
                      <Accordion
                         title="Student Initiative Grant"
                         grant="https://docs.google.com/document/d/1k0Bjzn4QqTfslWozrngnH9lqT_KPfvBebS1Wk-620LA/edit?usp=drive_link"
-                        for_club="for SUS Clubs and new SUS Clubs"
+                        for_club="for Science Students & new SUS clubs"
                         content="The Student Initiative Grant is intended to provide financial support to encourage and promote the facilitation of projects,
                                  activities and events run by science students that are not affiliated with existing SUS Clubs. The grant aims to encourage 
                                  students to provide demonstrable service for current science students or new SUS Clubs to fulfill unmet needs. The Student 
@@ -143,7 +143,7 @@ export default function Grants() {
             <ButtonContainer>
                 <StyledButton href="https://drive.google.com/open?id=10IOyK3iQT9NZMmGeMr5C6I6umKnYtuP7"><b>Grants Information 24/25</b></StyledButton>
                 <StyledButton href="https://drive.google.com/open?id=1qJldIJrrRcPXTXhdPitiryMFsFKS34Y6"><b>Grants Rubrics 24/25</b></StyledButton>
-                <StyledButton href="https://drive.google.com/open?id=1Wh8PZTiKSlZcphLSQyc1oEbir2ag-JuBxwxw"><b>Subsidies Information 24/25</b></StyledButton>
+                <StyledButton href="https://drive.google.com/drive/folders/1Wh8PZTiKSlZcphLSQyc1oEbir2ag-JuB?usp=share_link"><b>Subsidies Information 24/25</b></StyledButton>
             </ButtonContainer>
             <Footer color="white" background="#222755"/>
         </Background>

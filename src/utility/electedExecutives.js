@@ -23,7 +23,7 @@ export const executiveInfo = [
   {
     name: "Christianah Soneye",
     role: "VP Academic",
-    imagePath: "/images/executive-images/Christianah-Soneye.webp",
+    imagePath: "/images/executive-images/Christianah-Soneye.jpg",
     description: `Hi UBC Science! My name is Christianah Soneye (she/her), and I’m a fifth-year Integrated Science student (Human Physiology & Public Health). I am honoured to serve as your 2023-2024 Science Undergraduate Society (SUS) Vice-President Academic.
     \nAs the SUS VP Academic, I am here to help ensure that you get the most out of your time here at UBC Science by enhancing your academic experience, offering mentorship opportunities, and promoting physical and mental wellness outside of the lecture hall. I also have the privilege of representing you at the Faculty level, advocating for your concerns, sharing the student perspective, and supporting accessibility and inclusion on the Skylight Development Grants, Teaching and Learning Enhancement Fund (TLEF), Science Curriculum, Dean Advisory and Killam Teaching Awards Committees.
     \nIf you have any concerns about your academic experiences, suggestions for points of advocacy at the Faculty level, or thoughts on how SUS could further support your academic, physical and mental wellbeing, please feel free to reach out to me via email at vpacademic@sus.ubc.ca.`,

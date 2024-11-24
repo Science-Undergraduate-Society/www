@@ -8,7 +8,7 @@ export default function VolunteerPortal() {
         <Background>
             <Navbar />
             <Heading>
-                <Title>Volunteer Portal</Title>
+                <SecondHeader>Volunteer Portal</SecondHeader>
             </Heading>
             <SearchBar />
             <Footer />
@@ -30,7 +30,16 @@ const Heading = styled.div`
   margin-top: 25vh;
 `;
 
-
+const SecondHeader = styled.div`
+    color: #222755;
+    font-size: 40px;
+    text-align: center;
+    background-color: #fff;
+    padding-top: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+`
 
 const Background = styled.div`
     height: 100%;

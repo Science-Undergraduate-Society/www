@@ -17,7 +17,7 @@ export default function Alssc() {
                     </HeaderDescription>
                     <ButtonGroup>
                         <ButtonHollowBlack>
-                            <Link href="https://docs.google.com/document/d/1Wr52qSNeiVG9HrDvCftOsCW1agMMW6dC1mkieIPdWds/edit?fbclid=IwAR26HOIAjZZcquDRs91xgHSdferauKQJKtzOTJNZc4f76JXmeag5UGVi-Y8">SUS Code & Procedure Document</Link>    
+                            <Link href="https://drive.google.com/drive/folders/16Tw9wtai_6c_poGPKkapX1JowegFBGBm?fbclid=IwZXh0bgNhZW0CMTEAAR2oRPQVmvC3lMXr_noJuyco0dbt-a3nZNpgILKzqG-z5EkqQ63U3GNl4aY_aem_yqAf1MSQoM23YGrK0ReiKQ">SUS Code & Procedure Document</Link>    
                         </ButtonHollowBlack>
                     </ButtonGroup>
 
