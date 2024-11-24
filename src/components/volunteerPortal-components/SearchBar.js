@@ -248,27 +248,6 @@ export const SearchBar = () => {
         setList(locationList);
     }
 
-  return (
-    <Search>
-        <SearchBox>
-            <Inputs>
-                <SearchInput
-                placeholder="Keywords"
-                onChange={(e) => setKeywords(e.target.value.toLowerCase())}
-                />
-                
-                <SearchInput
-                placeholder="Location"
-                onChange={(e) => setLocation(e.target.value.toLowerCase())}
-                />
-                {/* 
-                DO NOT REMOVE WIP
-                <Checkbox /> 
-
-                Main problem: need a way to filter jobs based off of array of list of types/locations (off/on campus)
-                */}
-            </Inputs>
-
     {/*// Open the modal when a job is clicked */}
     function openJobDetails(job) {
         setSelectedJob(job);
@@ -280,53 +259,67 @@ export const SearchBar = () => {
     }
 
     return (
-        <Search>
-            <SearchBox>
-                <Inputs>
-                    <SearchInput
-                        placeholder="Keywords"
-                        onChange={(e) => setKeywords(e.target.value.toLowerCase())}
-                    />
+      <Search>
+          <SearchBox>
+              <Inputs>
+                  <SearchInput
+                      placeholder="Keywords"
+                      onChange={(e) => setKeywords(e.target.value.toLowerCase())}
+                  />
 
-                    <SearchInput
-                        placeholder="Location"
-                        onChange={(e) => setLocation(e.target.value.toLowerCase())}
-                    />
-                </Inputs>
+                  <SearchInput
+                      placeholder="Location"
+                      onChange={(e) => setLocation(e.target.value.toLowerCase())}
+                  />
+              </Inputs>
 
-                <br></br>
+              <br></br>
 
-                <ButtonHollowBlack onClick={handleSearchJobs} title="Search Jobs">
-                    Search Jobs
-                </ButtonHollowBlack>
-            </SearchBox>
+              <ButtonHollowBlack onClick={handleSearchJobs} title="Search Jobs">
+                  Search Jobs
+              </ButtonHollowBlack>
+          </SearchBox>
 
-            <br></br>
-        </SearchBox>
-      <JobSec>
-        {list.map((job) => (
-        <JobItem key={job.id}>
-            <LeftSide>
-                {/*
-                <JobLogo src = {job.logo} />
-                */}
-                <JobHeading>
-                    <JobTitle>{job.title}</JobTitle>
-                    <Company>{job.company}</Company>
-                    <a href={job.link}>
-                        <LearnMore>Learn More</LearnMore>
-                    </a>
-                </JobHeading>
-            </LeftSide>
-            <RightSide>
-                <Type>{job.type}</Type>
-                <Location>{job.location}</Location>
-            </RightSide>
+          <br></br>
+          <JobSec>
+              {list.map((job) => (
+                  <JobItem key={job.id} onClick={() => openJobDetails(job)}>
+                      
+                      <LeftSide>
+                          <JobLogo src={job.logo} />
+                          <JobHeading>
+                              <JobTitle>{job.title}</JobTitle>
+                              <Company>{job.company}</Company>
+                          </JobHeading>
+                      </LeftSide>
+                      <RightSide>
+                          <Type>{job.type}</Type>
+                          <Location>{job.location}</Location>
+                          <Industry>{job.industry}</Industry>
+                          <br></br>
+                      </RightSide>
+                  </JobItem>
+              ))}
+          </JobSec>
 
-        </JobItem>
-        ))}
-      </JobSec>
-    </Search>
+          {/* Modal to show job details */}
+          {selectedJob && (
+              <ModalOverlay onClick={closeModal}>
+                  <ModalContent onClick={(e) => e.stopPropagation()}>
+                      <ModalHeader>
+                          <JobTitle>{selectedJob.title}</JobTitle>
+                          <button onClick={closeModal}>Close</button>
+                      </ModalHeader>
+                      <ModalBody>
+                          <p>{selectedJob.description}</p>
+                          <a href={selectedJob.website} target="_blank" rel="noopener noreferrer">
+                              Visit Website
+                          </a>
+                      </ModalBody>
+                  </ModalContent>
+              </ModalOverlay>
+          )}
+      </Search>
   );
 }
 

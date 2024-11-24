@@ -267,46 +267,6 @@ const breakpoints = {
     tablet: '1024px',
 };
 
-const PartnerName = styled.div`
-    font-size: 25x;
-    font-weight: bold;
-    margin-top: 24px;
-
-    @media (max-width: ${breakpoints.mobile}) {
-        font-size: 15px;
-    }
-`
-
-const PartnerNameThin = styled(PartnerName)`
-    margin-top: 53px;
-`
-
-const PartnerImg = styled.img`
-    width: 150px;
-    height: auto;
-
-    @media (max-width: ${breakpoints.mobile}) {
-        width: 100px;
-        height: 100px;
-    }
-`
-
-const PartnerImgThin = styled(PartnerImg)`
-    margin-top: 24px;
-`
-
-const Description = styled.div`
-    font-size: 18px;
-    margin-top: 3%;
-`
-
-const Location = styled.div`
-    font-size: 18px;
-    font-style: italic;
-    margin-top: 4%;
-    color: #0173be;
-`
-
 const Heading = styled.div`
     padding-top: 126px;
     padding-left: 15%;
