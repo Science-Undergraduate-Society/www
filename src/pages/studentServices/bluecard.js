@@ -169,10 +169,6 @@ const PartnerName = styled.div`
     }
 `
 
-const PartnerNameThin = styled(PartnerName)`
-    margin-top: 53px;
-`
-
 const PartnerImg = styled.img`
     width: 150px;
     height: auto;
