@@ -330,6 +330,13 @@ const clubs = [
     description:
       "A club dedicated to supporting women in computer science through mentorship, events, and resources.",
   },
+  {
+    name: "Canadian Journal of Undergraduate Research",
+    image: "/images/club-images/cjur_logo.jpeg",
+    link: "https://cjur.ca/",
+    description:
+      "CJUR is a student-led, peer-reviewed journal that aims to provide undergraduate students of all disciplines the opportunity to publish their research.",
+  },
 ];
 
 export default clubs;
