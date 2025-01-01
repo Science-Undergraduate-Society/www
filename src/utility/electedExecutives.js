@@ -95,18 +95,19 @@ export const executiveInfo = [
     link: "",
   },
   {
-    name: "Vedin Schimmack",
-    role: "Science Rep",
-    imagePath: "/images/executive-images/Vedin-Schimmack.webp",
-    description: `Hi, my name is Vedin (any/all)! I’m a 3rd year Combined Major in Computer Science and Biology student who’s also doing Science Co-op. Currently, I’m one of the Science Representatives to AMS Council as well as a coordinator and treasurer for Climate Justice UBC. I have a history and strong passion for environmental and social justice advocacy and am hoping to improve sustainability in the AMS.
-    \nFeel free to message me anytime at vedinrs.ubc@gmail.com or on instagram at vedin4ams about any ideas you may have for SUS or the AMS or any questions (especially ones on how to get involved)!
+    name: "Alex Chui",
+    role: "Science Representative",
+    imagePath: "/images/executive-images/alex-chui.jpg",
+    description: `Hi UBC Science! I’m Alex Chui (he/him), I’m in my 3rd year in Microbiology and Immunology and I’m honoured to be serving as one of your Science AMS Representatives for the 2024/2025 school year!
+\nAs one of your 3 AMS Representatives, my goal is to ensure that the AMS and wider student community can understand the unique perspective we bring as science students, and to effectively advocate and champion your goals on AMS Council and Committees. AMS has a direct and indirect influence on all aspects of your student experience and community while you’re here, so I’d love to hear from you or even chat about how to get involved! 
+\nFeel free to email myself or the other AMS Representatives at amsrep@sus.ubc.ca or send me a message on instagram @alex.chuii. Excited to hear from you and work with you all!
     `,
-    email: "vedinrs.ubc@gmail.com",
+    email: "amsrep@sus.ubc.ca",
     link: "",
   },
   {
     name: "Yuki Ichikawa",
-    role: "Science Rep",
+    role: "Science Representative",
     imagePath: "/images/executive-images/Yuki-Ichikawa.webp",
     description: `Hi UBC Science! My name is Yuki Ichikawa (she/her) and I’m in my 4th year in the Cellular, Anatomical and Physiological Sciences. I am excited and honoured to be serving as one of the AMS representatives for the 2024/2025 year!
     \nAs an AMS representative it is my primary responsibility to actively advocate and work for all science students on AMS council and committees. AMS council is the highest decision making body in the AMS. It is crucial that our diverse experiences and needs are reflected in all the decisions that the AMS makes, how our student fees are spent, and how these decisions might impact our time at UBC. As such, I would love to hear from you! Whether it’s questions about how the AMS works, ideas and opinions you think are underrepresented at the AMS, or concerns around specific decisions being made, you can reach myself and the other AMS representatives at amsrep@sus.ubc.ca.

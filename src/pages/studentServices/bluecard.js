@@ -212,7 +212,7 @@ export default function BlueCard() {
                         <IndivPartnerInfo
                             partnerName="Hullo Ferries"
                             logoSrc="/images/bluecard-images/partner-logos/hullo.svg"
-                            description="Use code UBCSUS10 for 10% off regular fare sailings."
+                            description="Use code UBCSUS10 for corporate rate."
                             location="Valid at hullo.com"
                             website="https://hullo.com/"
                         />
@@ -222,7 +222,7 @@ export default function BlueCard() {
                             description="Get 10% off all in-person store purchases,
                             15% off event orders (50+), and 
                             20% off event orders (100+)."
-                            location="6400 Kingsway, Burnaby"
+                            location="MYST Asian Fusion @ 6400 Kingsway, Burnaby / MYST Asian Bistro @ 2028 W 41st Ave, Vancouver"
                             website="https://myst6400.com/"
                         />
                         <IndivPartnerInfo
