@@ -3,8 +3,7 @@ import {
     faSpotify,
     faYoutube,
     faFacebook,
-    faInstagram,
-    faTikTok
+    faInstagram
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -39,13 +38,6 @@ export default function Footer({color="white", background="#222755"}) {
                 rel='noreferrer'
             >
                 <FontAwesomeIcon icon={faYoutube} />
-            </a>
-            <a
-                href='https://www.tiktok.com/@sus_ubc'
-                target='_blank'
-                rel='noreferrer'
-            >
-                <FontAwesomeIcon icon={faTikTok} />
             </a>
         </SocialMediaIcons>
         <Links color={color}>

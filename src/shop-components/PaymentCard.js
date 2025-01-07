@@ -183,7 +183,7 @@ const PaymentCard = ({ amount }) => {
                     lastName,
                     phone,
                     amount,
-                    paymentId,
+                    paymentId, 
                 }),
             });
 

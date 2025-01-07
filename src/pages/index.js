@@ -98,10 +98,10 @@ export default function Home() {
         <Events>
           <EventsTopSection>
             <EventsTitle>
-              Check out our <Span href="/events">upcoming events</Span> hosted
+              Check out our <Span href="/ourEvents/events">upcoming events</Span> hosted
               by the <br /> Science Undergraduate Society
             </EventsTitle>
-            <Arrow src="images/index-images/(scroll).svg" />
+            {/* <Arrow src="images/index-images/(scroll).svg" /> */}
           </EventsTopSection>
 
           <Collage>
@@ -110,7 +110,7 @@ export default function Home() {
                 <div style={{ marginBottom: "50px" }}>
                   <p>Take a look at our events calendar!</p>
                   <ButtonHollowBlack>
-                    <Link href="/ourEvents/upcoming">Calendar</Link>
+                    <Link href="/ourEvents/upcoming">Upcoming Events</Link>
                   </ButtonHollowBlack>
                 </div>
 
@@ -125,7 +125,7 @@ export default function Home() {
                 </div>
               </EventsInfo>
 
-              {eventsArray.map((event, index) => (
+              {[].map((event, index) => (
                 <EventCard key={index}>
                   <Image
                     src={event.image}
@@ -145,7 +145,7 @@ export default function Home() {
           </Collage>
 
           <ProgressBarContainer>
-            <ProgressBar progress={scrollProgress}></ProgressBar>
+            <ProgressBar $progress={scrollProgress}></ProgressBar>
           </ProgressBarContainer>
         </Events>
 

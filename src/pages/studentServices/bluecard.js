@@ -219,7 +219,7 @@ export default function BlueCard() {
                         <IndivPartnerInfo
                             partnerName="MYST Asian Fusion"
                             logoSrc="/images/bluecard-images/partner-logos/myst-asian-fusion-logo.jpg"
-                            description="Get 10% off all in-person store purchases,
+                            description="10% off all in-person store purchases,
                             15% off event orders (50+), and 
                             20% off event orders (100+)."
                             location="MYST Asian Fusion @ 6400 Kingsway, Burnaby / MYST Asian Bistro @ 2028 W 41st Ave, Vancouver"

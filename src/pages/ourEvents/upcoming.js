@@ -1,19 +1,55 @@
+import { useEffect, useState, useRef } from "react";
+
 import styled from 'styled-components';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
+import eventsArray from "@/utility/events";
+
 export default function Events() {
+
+
     return (
         <>
             <Navbar/>
-            <Container>
-                <EventContainer>
-                    {/* <EventTitle><b>Upcoming Events 📕</b></EventTitle>
-                    <StyledIframe 
-                        src="https://open-web-calendar.hosted.quelltext.eu/calendar.html?url=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fical%2Fwebmaster%2540sus.ubc.ca%2Fpublic%2Fbasic.ics"
-                        allowFullScreen
-                    /> */}
+            <TopContainer>
+                <EventsTopSection>
+                    <EventsTitle>
+                    Check out our <Span href="/ourEvents/events">upcoming events</Span> hosted
+                    by the <br /> Science Undergraduate Society
+                    </EventsTitle>
+                    {/* <Arrow src="/images/index-images/scroll.svg" /> */}
+                </EventsTopSection>
+                <br></br>
+                <Collage>
+                    <EventsWrapper>
+                    {eventsArray.map((event, index) => (
+                        <EventCard key={index}>
+                        <Image
+                            src={event.image}
+                            alt="Description"
+                            width={500}
+                            height={300}
+                        />
+                        <h3>{event.title}</h3>
+                        <h4 style={{ color: "grey", fontSize: "13px" }}>
+                            {event.date} @ {event.time}
+                        </h4>
+
+                        <h3 style={{ color: "grey", fontSize: "13px" }}>
+                            Location: {event.location}
+                        </h3>
+                        <p>{event.description}</p>
+                        <Span href={event.link}>RSVP &gt;</Span>
+                        </EventCard>
+                    ))}
+                    </EventsWrapper>
+                </Collage>
+            </TopContainer>
+
+            <BottomContainer>
+                <FlagshipEventsContainer>
                     <br/><br/>
                     <EventTitle><b>Flagship Events 🚩</b></EventTitle>
                     <SubtitleContainer>
@@ -69,14 +105,63 @@ export default function Events() {
                             height={300}
                         />
                     </ImageContainer>
-                </EventContainer>
-            </Container>
+                </FlagshipEventsContainer>
+            </BottomContainer>
             <Footer/>
         </>
     )
 }
 
-const Container = styled.div`
+// ====== MISC ====== //
+
+const ButtonHollowBlack = styled.button`
+  background-color: transparent;
+  color: #222755;
+  padding: 15px 35px;
+  border-radius: 30px;
+  border: 1px solid #222755;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+
+  &:hover {
+    color: #0052ff;
+    border: 1px solid #0052ff;
+  }
+`;
+
+const Span = styled.a`
+  color: #0052ff;
+  cursor: pointer;
+  text-decoration: none;
+`;
+
+// ====== COLLAGE STYLING =======
+
+const EventsTopSection = styled.div`
+    margin-bottom: 1rem;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        padding-left: 0;
+    }
+`;
+
+const Arrow = styled.img`
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+`;
+
+const TopContainer = styled.div`
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 180px;
@@ -84,8 +169,78 @@ const Container = styled.div`
     align-items: center;
 `;
 
-const EventContainer = styled.div`
+const EventsTitle = styled.div`
+  font-size: 40px;
+  font-weight: 700;
+
+  @media (max-width: 1000px) {
+    padding-left: 30px;
+  }
+`;
+
+const EventsWrapper = styled.div`
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 800px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+`;
+
+const Collage = styled.div`
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+`;
+
+const EventCard = styled.div`
+  max-width: 330px;
+  min-width: 330px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+
+  img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-bottom: 2px solid #222755;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #222755;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+`;
+
+// ====== FLAGSHIP EVENTS ======
+
+const BottomContainer = styled.div`
+    max-width: 1200px;
+    margin: 0 auto;
     margin-top: 180px;
+    padding: 0 20px;
+    align-items: center;
+`;
+
+const FlagshipEventsContainer = styled.div`
+    margin-top: 1rem;
 `;
 
 const EventTitle = styled.h1`
@@ -114,17 +269,16 @@ const ImageContainer = styled.div`
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 20px;
+    width: 100%;
+
+    @media (max-width: 1100px) {
+        flex-direction: column;
+    }
 `;
 
 const StyledImage = styled(Image)`
-    border-radius: 20px;
-    border: 3px solid darkred; 
-`;
-
-const StyledIframe = styled.iframe`
-    border: none;
-    width: 100%;
-    height: 600px;
-    margin-top: 20px;
+    border-radius: 5px;
+    border: none; 
+    width: 100%
+    height: auto;
 `;
