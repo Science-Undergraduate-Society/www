@@ -5,7 +5,7 @@ Website for the Science Undergraduate Society of the University of British Colum
    
 First, run the development server (from root folder): 
 
-```bash   
+```bash    
 npm install    
   
 npm run dev 
