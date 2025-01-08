@@ -87,7 +87,7 @@ export default function BlueCard() {
                         <SmItem>Partners</SmItem>
                     </TopLink>
                 </SecondaryMenu>
-                <Link href="https://susbluecard.firebaseapp.com/auth">
+                <Link href="https://campus.hellorubric.com/?tab=memberships&s=10357">
                     <StyledButton>Sign In/Up</StyledButton>
                 </Link>
             </Heading>
@@ -199,14 +199,14 @@ export default function BlueCard() {
                             partnerName="Delhi 6 Indian Bistro"
                             logoSrc="/images/bluecard-images/partner-logos/delhi.png"
                             description="Get 15% off all food items (not applicable to drinks)."
-                            location="1766 W 7th Ave, Vancouver, BC V6J 4T3"
+                            location="Valid at 1766 W 7th Ave, Vancouver, BC V6J 4T3"
                             website="https://www.delhi6.ca/"
                         />
                         <IndivPartnerInfo
                             partnerName="Pearl Fever"
                             logoSrc="/images/bluecard-images/partner-logos/pearl.png"
                             description="Get 10% off mobile app purchases using their mailing list: https://forms.gle/osEaqy5TrsLAKKiT7."
-                            location="2182 Western Pkwy, Vancouver, BC V6T 1W6"
+                            location="Valid at 2182 Western Pkwy, Vancouver, BC V6T 1W6"
                             website="https://pearlfever.ca/"
                         />
                         <IndivPartnerInfo
@@ -222,7 +222,7 @@ export default function BlueCard() {
                             description="10% off all in-person store purchases,
                             15% off event orders (50+), and 
                             20% off event orders (100+)."
-                            location="MYST Asian Fusion @ 6400 Kingsway, Burnaby / MYST Asian Bistro @ 2028 W 41st Ave, Vancouver"
+                            location="Valid at MYST Asian Fusion @ 6400 Kingsway, Burnaby / MYST Asian Bistro @ 2028 W 41st Ave, Vancouver"
                             website="https://myst6400.com/"
                         />
                         <IndivPartnerInfo
@@ -231,8 +231,37 @@ export default function BlueCard() {
                             description="$7.00 for 2XL Classic & Pop Combo,
                             $7.90 for 2XL Feast & Pop Combo
                             $4.90 for Cheesy Breads."
-                            location="UBC AMS Student Nest"
+                            location="Valid at UBC AMS Student Nest"
                             website="https://www.freshslice.com/"
+                        />
+                        <IndivPartnerInfo
+                            partnerName="Chickasta Bar"
+                            logoSrc="/images/bluecard-images/partner-logos/chickasta.png"
+                            description="Get 10% off at Chickasta Grill.
+                            Get 15% off at House of Parantha."
+                            location="4443 W 10th Ave, Vancouver, BC V6R 2H8"
+                            website="https://chickasta.com/"
+                        />
+                        <IndivPartnerInfo
+                            partnerName="Wren Cafe"
+                            logoSrc="/images/bluecard-images/partner-logos/wrenCafe.jpeg"
+                            description="Get 15% off all in-store orders."
+                            location="Valid at 280 Nelson St, Vancouver, BC V6B 2E2"
+                            website="https://wrencafe.ca/"
+                        />
+                        <IndivPartnerInfo
+                            partnerName="Hakumori"
+                            logoSrc="/images/bluecard-images/partner-logos/hakumori.webp"
+                            description="Use code UBCSUS10 for 10% off storewide."
+                            location="Valid at www.hakumori.shop/"
+                            website="http://www.hakumori.shop/"
+                        />
+                        <IndivPartnerInfo
+                            partnerName="Convivial Jewelry"
+                            logoSrc="/images/bluecard-images/partner-logos/convivial.png"
+                            description="Use code SUS for 10% off online orders."
+                            location="Valid at www.convivial.ca/ "
+                            website="http://www.convivial.ca/"
                         />
                         </PartnersBox>
                 </Partners>
