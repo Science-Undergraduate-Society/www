@@ -120,9 +120,10 @@ export default function Shop() {
                 <MainInfo>
                         <Title>SCIENCE UNDERGRADUATE SOCIETY MERCH SHOP</Title>
                         
-                        <h2>Merch can be bought at Abdul Ladha during the following hours: </h2>
-                        <p>Thursdays: 2pm - 3pm</p>
-                        <p>Fridays: 11am - 12pm</p>
+                        <h2>Merch can be purchased at Abdul Ladha during the following hours: </h2>
+                        <p>Mondays: 12pm - 1pm</p>
+                        <p>Wednesdays: 12pm - 1pm</p>
+
                         <Contact>
                             For any merch related questions, please reach out to our sales team at sales@sus.ubc.ca
                         </Contact>

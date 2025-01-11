@@ -26,6 +26,11 @@ export default function OfficeHours() {
                 <Time>11:00am - 1:00pm</Time>
               </TimeSlot>
               <TimeSlot>
+                <Name>Insha Majeed</Name>
+                <PersonTitle>VP Communications</PersonTitle>
+                <Time>12:00pm - 1:00pm</Time>
+              </TimeSlot>
+              <TimeSlot>
                 <Name>Rachel Dong</Name>
                 <PersonTitle>VP External</PersonTitle>
                 <Time>1:00pm - 3:00pm</Time>
@@ -53,6 +58,11 @@ export default function OfficeHours() {
                 <Time>12:00pm - 1:00pm</Time>
               </TimeSlot>
               <TimeSlot>
+                <Name>Insha Majeed</Name>
+                <PersonTitle>VP Communications</PersonTitle>
+                <Time>12:00pm - 1:00pm</Time>
+              </TimeSlot>
+              <TimeSlot>
                 <Name>Chloe Chang</Name>
                 <PersonTitle>VP Finance</PersonTitle>
                 <Time>1:00pm - 2:00pm</Time>
@@ -72,11 +82,6 @@ export default function OfficeHours() {
                 <Time>12:00pm - 2:00pm</Time>
               </TimeSlot>
               <TimeSlot>
-                <Name>Insha Majeed</Name>
-                <PersonTitle>VP Communications</PersonTitle>
-                <Time>2:00pm - 3:00pm</Time>
-              </TimeSlot>
-              <TimeSlot>
                 <Name>Salva Sherif</Name>
                 <PersonTitle>Science Student Senator</PersonTitle>
                 <Time>3:00pm - 5:00pm</Time>
@@ -85,11 +90,6 @@ export default function OfficeHours() {
 
             <Day>
               <ButtonHollowBlack>Friday</ButtonHollowBlack>
-              <TimeSlot>
-                <Name>Insha Majeed</Name>
-                <PersonTitle>VP Communications</PersonTitle>
-                <Time>11:00am - 12:00pm</Time>
-              </TimeSlot>
               <TimeSlot>
                 <Name>Christinah Soneye</Name>
                 <PersonTitle>VP Academic</PersonTitle>
