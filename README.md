@@ -9,7 +9,7 @@ First, run the development server (from root folder):
 npm install    
   
 npm run dev 
-# or
+# or 
 yarn dev  
 ```
   
