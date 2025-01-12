@@ -21,9 +21,9 @@ export default function OfficeHours() {
             <Day>
               <ButtonHollowBlack>Monday</ButtonHollowBlack>
               <TimeSlot>
-                <Name>Chloe Chan</Name>
-                <PersonTitle>VP Finance</PersonTitle>
-                <Time>11:00am - 1:00pm</Time>
+                <Name>Kaitlin Law</Name>
+                <PersonTitle>President</PersonTitle>
+                <Time>11:00am - 12:00pm</Time>
               </TimeSlot>
               <TimeSlot>
                 <Name>Insha Majeed</Name>
@@ -33,15 +33,36 @@ export default function OfficeHours() {
               <TimeSlot>
                 <Name>Rachel Dong</Name>
                 <PersonTitle>VP External</PersonTitle>
-                <Time>1:00pm - 3:00pm</Time>
+                <Time>1:00pm - 2:00pm</Time>
+              </TimeSlot>
+              <TimeSlot>
+                <Name>Thomas McIlwraith</Name>
+                <PersonTitle>VP Admin</PersonTitle>
+                <Time>2:00pm - 3:00pm</Time>
+              </TimeSlot>
+              <TimeSlot>
+                <Name>Katie</Name>
+                <PersonTitle>Building Supervisor</PersonTitle>
+                <Time>3:00pm - 4:00pm</Time>
+              </TimeSlot>
+              <TimeSlot>
+                <Name>Salva Sherif</Name>
+                <PersonTitle>Science Senator</PersonTitle>
+                <Time>4:00pm - 5:00pm</Time>
               </TimeSlot>
             </Day>
+
             <Day>
               <ButtonHollowBlack>Tuesday</ButtonHollowBlack>
               <TimeSlot>
-                <Name>Thomas McIlwraith</Name>
+                <Name>Chloe Chan</Name>
+                <PersonTitle>VP Finance</PersonTitle>
+                <Time>11:00am - 12:00pm</Time>
+              </TimeSlot>
+              <TimeSlot>
+                <Name>Robbie Yang</Name>
                 <PersonTitle>Building Supervisor</PersonTitle>
-                <Time>1:00pm - 2:00pm</Time>
+                <Time>2:30pm - 4:30pm</Time>
               </TimeSlot>
             </Day>
 
@@ -53,62 +74,47 @@ export default function OfficeHours() {
                 <Time>11:00am - 12:00pm</Time>
               </TimeSlot>
               <TimeSlot>
-                <Name>Katie Le</Name>
-                <PersonTitle>Building Manager</PersonTitle>
-                <Time>12:00pm - 1:00pm</Time>
-              </TimeSlot>
-              <TimeSlot>
                 <Name>Insha Majeed</Name>
                 <PersonTitle>VP Communications</PersonTitle>
                 <Time>12:00pm - 1:00pm</Time>
               </TimeSlot>
               <TimeSlot>
-                <Name>Chloe Chang</Name>
-                <PersonTitle>VP Finance</PersonTitle>
+                <Name>Rachel Dong</Name>
+                <PersonTitle>VP External</PersonTitle>
                 <Time>1:00pm - 2:00pm</Time>
+              </TimeSlot>
+              <TimeSlot>
+                <Name>Thomas McIlwraith</Name>
+                <PersonTitle>VP Admin</PersonTitle>
+                <Time>2:00pm - 3:00pm</Time>
+              </TimeSlot>
+              <TimeSlot>
+                <Name>Savreen Sohi</Name>
+                <PersonTitle>VP Student Life</PersonTitle>
+                <Time>3:00pm - 4:00pm</Time>
               </TimeSlot>
             </Day>
 
             <Day>
               <ButtonHollowBlack>Thursday</ButtonHollowBlack>
               <TimeSlot>
-                <Name>Katie Le</Name>
-                <PersonTitle>VP Finance</PersonTitle>
-                <Time>11:00am - 12:00pm</Time>
-              </TimeSlot>
-              <TimeSlot>
-                <Name>Robbie Yang</Name>
-                <PersonTitle>Building Manager</PersonTitle>
-                <Time>12:00pm - 2:00pm</Time>
-              </TimeSlot>
-              <TimeSlot>
-                <Name>Salva Sherif</Name>
-                <PersonTitle>Science Student Senator</PersonTitle>
-                <Time>3:00pm - 5:00pm</Time>
+                <Name>Katie</Name>
+                <PersonTitle>Building Supervisor</PersonTitle>
+                <Time>12:30pm - 1:30pm</Time>
               </TimeSlot>
             </Day>
 
             <Day>
               <ButtonHollowBlack>Friday</ButtonHollowBlack>
               <TimeSlot>
-                <Name>Christinah Soneye</Name>
-                <PersonTitle>VP Academic</PersonTitle>
-                <Time>12:00pm - 1:00pm</Time>
-              </TimeSlot>
-              <TimeSlot>
-                <Name>Thomas MicIlwraith</Name>
-                <PersonTitle>VP Administration</PersonTitle>
+                <Name>Sarveen Sohi</Name>
+                <PersonTitle>VP Student Life</PersonTitle>
                 <Time>1:00pm - 2:00pm</Time>
               </TimeSlot>
               <TimeSlot>
-                <Name>Christinah Soneye</Name>
+                <Name>Christianah Soneye</Name>
                 <PersonTitle>VP Academic</PersonTitle>
-                <Time>2:00pm - 3:00pm</Time>
-              </TimeSlot>
-              <TimeSlot>
-                <Name>Savreen Sohi</Name>
-                <PersonTitle>VP Student Life</PersonTitle>
-                <Time>3:00pm - 5:00pm</Time>
+                <Time>2:00pm - 4:00pm</Time>
               </TimeSlot>
             </Day>
           </Timetable>
