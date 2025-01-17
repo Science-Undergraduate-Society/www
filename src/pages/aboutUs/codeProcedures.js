@@ -13,7 +13,7 @@ export default function Alssc() {
                       The following document outlines how the SUS is organized, how the student fees are used, how decisions are made on behalf of Science Students and the responsibilities of elected officials.
                     </HeaderDescription>
                     <HeaderDescription>
-                      Last Revised: March 14, 2024
+                      Last Revised: January 11, 2025
                     </HeaderDescription>
                     <ButtonGroup>
                         <ButtonHollowBlack>
