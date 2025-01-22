@@ -10,7 +10,7 @@ npm install
   
 npm run dev 
 # or 
-yarn dev  
+yarn dev   
 ```
   
 ## Pages/Routes
