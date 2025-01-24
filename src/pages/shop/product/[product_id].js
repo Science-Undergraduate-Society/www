@@ -38,7 +38,7 @@ const allProducts = [
         type: "crewneck",
         color: "light_blue",
         price: 45,
-        image: "/images/shop-images/Blue-Crew-1.png",
+        image: ["/images/shop-images/Blue-Crew-1.png"],
         quantities: { S: 0, M: 0, L: 1, XL: 0 }
     },
     {
@@ -46,7 +46,7 @@ const allProducts = [
         type: "hoodie",
         color: "light_blue",
         price: 55,
-        image: "/images/shop-images/Blue-Hoodie-1.png",
+        image: ["/images/shop-images/Blue-Hoodie-1.png"],
         quantities: { S: 0, M: 0, L: 0, XL: 2 }
     },
     {
@@ -54,7 +54,7 @@ const allProducts = [
         type: "crewneck",
         color: "grey",
         price: 45,
-        image: "/images/shop-images/Grey-Crew-1.png",
+        image: ["/images/shop-images/Grey-Crew-1.png"],
         quantities: { S: 3, M: 2, L: 12, XL: 7 }
     },
     {
@@ -62,7 +62,7 @@ const allProducts = [
         type: "hoodie",
         color: "grey",
         price: 55,
-        image: "/images/shop-images/Grey-Hoodie-1.png",
+        image: ["/images/shop-images/Grey-Hoodie-1.png"],
         quantities: { S: 5, M: 2, L: 8, XL: 5 }
     },
     {
@@ -70,7 +70,7 @@ const allProducts = [
         type: "crewneck",
         color: "sand",
         price: 45,
-        image: "/images/shop-images/Sand-Crew-1.png",
+        image: ["/images/shop-images/Sand-Crew-1.png"],
         quantities: { S: 0, M: 0, L: 2, XL: 2 }
     },
     {
@@ -78,7 +78,7 @@ const allProducts = [
         type: "hoodie",
         color: "sand",
         price: 55,
-        image: "/images/shop-images/Sand-Hoodie-1.png",
+        image: ["/images/shop-images/Sand-Hoodie-1.png"],
         quantities: { S: 4, M: 2, L: 0, XL: 0 }
     },
     {
@@ -86,7 +86,7 @@ const allProducts = [
         type: "crewneck",
         color: "white",
         price: 45,
-        image: "/images/shop-images/White-Crew-1.png",
+        image: ["/images/shop-images/White-Crew-1.png"],
         quantities: { S: 4, M: 9, L: 17, XL: 9 }
     },
     {
@@ -94,7 +94,7 @@ const allProducts = [
         type: "hoodie",
         color: "white",
         price: 55,
-        image: "/images/shop-images/White-Hoodie-1.png",
+        image: ["/images/shop-images/White-Hoodie-1.png"],
         quantities: { S: 9, M: 7, L: 14, XL: 6 }
     },
 ];
@@ -208,7 +208,6 @@ export default function ProductPage() {
         </>
     );
 }
-
 
 // ----------------------------------------------------------------
 
