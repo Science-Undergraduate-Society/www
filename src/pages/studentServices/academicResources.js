@@ -2,6 +2,69 @@ import styled from "styled-components";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+const tutors = [
+    {
+        name: "Isabella Byrne",
+        image: "/images/tutors/Isabella Byrne.jpeg",
+        description: "Hey I'm Isabella! I'm currently studying Microbiology and Immunology. I'm tutoring for SUS because I love finding the new ways to explain concepts and help students better understand their course material. A fun fact about myself is that I did a Study Abroad program in Sweden!"
+    },
+    {
+        name: "Alexi Manning",
+        image: "/images/tutors/Alexi Manning.jpg",
+        description: "I am a Cognitive Systems (Computational Intelligence and Design) major who enjoys crocheting and listening to music. I want to help other students maximize their academic potential by tutoring with SUS!"
+    },
+    {
+        name: "Andy Wang",
+        image: "/images/tutors/IMG 0065 from Andy Wang.jpg",
+        description: "Hi, my name is Andy and I am currently a 3rd year in the microbiology and immunology program. I'm tutoring for SUS because I think it's a great way for me to go over old material and keep it fresh in my mind while also being able to help others. A fun fact about me is I have 4 titanium screws in my shoulders."
+    },
+    {
+        name: "Bardia Mohammadizadeh",
+        image: "/images/tutors/Bardia M.jpeg",
+        description: "I'm currently a second-year Neuroscience student. I wanted to become a tutor not just to help others, but also to deepen my own understanding of the material. Outside of school, I like to play the piano, exercise, and watch films and TV."
+    },
+    {
+        name: "Felix Chan",
+        image: "/images/tutors/IMG 1317 from Felix Chan.jpeg",
+        description: "Hi everyone! I'm Felix and I'm currently a second-year in Honours Chemical Physics. I decided to tutor for SUS because I wanted to support struggling undergraduate students in their learning and provide a resource for the SUS community. Fun fact about me: I love to bake and make music in my spare time :)"
+    },
+    {
+        name: "Hope Luo",
+        image: "/images/tutors/Hope Luo IMG 0598.jpeg",
+        description: "Hope is currently studying Cellular and Physiological Sciences. As a SUS tutor, she hopes to expand her passion for teaching by supporting students with different learning styles. She is excited to share her experiences, both inside and outside of school. A fun fact about Hope is that her nickname is hopeless!"
+    },
+    {
+        name: "Mehdi Naami",
+        image: "/images/tutors/Mehdi N.jpeg",
+        description: "Hello! My name is Mehdi, and I'm currently studying mathematics. I chose to be a tutor for SUS to aid students like my past self who needed help but couldn't access it due to inconvenient office hours. On the weekends, I love to play soccer with my friends after work."
+    },
+    {
+        name: "Nicholas Jeremy",
+        image: "/images/tutors/Nicholas Jeremy.JPG",
+        description: "Hi! I'm a second-year student majoring in computer science. I'm a tutor for SUS because I enjoy teaching math to other students and I want to help other students succeed in their math courses. I enjoy listening to classical music and playing the piano :)"
+    },
+    {
+        name: "Nitya Goel",
+        image: "/images/tutors/Nitya Goel Headshot.png",
+        description: "My name is Nitya Goel and I'm a second-year Microbiology and Immunology student. I joined SUS Tutoring because I love to share knowledge and am excited to support anyone struggling with their courses. I am passionate about life sciences, teaching, and learning! Outside of university, I enjoy doing anything creative, like dance and crochet."
+    },
+    {
+        name: "Norinne",
+        image: "/images/tutors/Norinne.jpg",
+        description: "Hello! I'm Norinne, I'm a second-year student studying computer science and data science. I became a SUS tutor to help people understand complex concepts and gain confidence in their learning. When I'm not deep in code, you’ll probably find me drawing or painting—getting creative is my favourite way to unwind!"
+    },
+    {
+        name: "Kyle Yeung",
+        image: "/images/tutors/kyle.png",
+        description: "Hi! My name is Kyle Yeung, and I'm a second-year Microbiology and Immunology student. I became a tutor for SUS because I love helping students build confidence in their learning. A fun fact about me is that I recently started training for a marathon—I’d love to hear any tips you have!"
+    },
+    {
+        name: "Jane Shu",
+        image: "/images/tutors/Jane Shu.jpg",
+        description: "Hello!! I'm currently a second year majoring in Biochemistry and Forensic Science. I tutor for SUS because it's a great way to get involved and meet new people :D In my free time, you'll usually find me drawing, reading, or baking."
+    }
+];
+
 export default function MeetingRoomBookings() {
     return(
         <>
@@ -67,128 +130,15 @@ export default function MeetingRoomBookings() {
 
                     <DividerSmall></DividerSmall>
 
-                    <ExecutiveCard>
-                        <ExecutiveImage src="/images/tutors/Isabella Byrne.jpeg" />
-                        <ExecutiveTextContainer>
-                            <ExecutiveTitle>Isabella Byrne</ExecutiveTitle>
-                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
-                            <ExecutiveDescription>
-                            Hey I’m Isabella! I’m currently studying Microbiology and Immunology. I’m tutoring for SUS because I love finding the new ways to explain concepts and help students better understand their course material. A fun fact about myself is that I did a Study Abroad program in Sweden!
-                            </ExecutiveDescription>
-                        </ExecutiveTextContainer>
-                    </ExecutiveCard>
-
-                    <ExecutiveCard>
-                        <ExecutiveImage src="/images/tutors/Alexi Manning.jpg" />
-                        <ExecutiveTextContainer>
-                            <ExecutiveTitle>Alexi Manning</ExecutiveTitle>
-                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
-                            <ExecutiveDescription>
-                            I am a Cognitive Systems (Computational Intelligence and Design) major who enjoys crocheting and listening to music. I want to help other students maximize their academic potential by tutoring with SUS!  
-                            </ExecutiveDescription>             
+                    {tutors.map((tutor, index) => (
+                        <ExecutiveCard key={index}>
+                            <ExecutiveImage src={tutor.image} alt={tutor.name} />
+                            <ExecutiveTextContainer>
+                                <ExecutiveTitle>{tutor.name}</ExecutiveTitle>
+                                <ExecutiveDescription>{tutor.description}</ExecutiveDescription>
                             </ExecutiveTextContainer>
-                    </ExecutiveCard>
-
-                    <ExecutiveCard>
-                        <ExecutiveImage src="/images/tutors/IMG 0065 from Andy Wang.jpg" />
-                        <ExecutiveTextContainer>
-                            <ExecutiveTitle>Andy Wang</ExecutiveTitle>
-                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
-                            <ExecutiveDescription>
-                            Hi, my name is Andy and I am currently a 3rd year in the microbiology and immunology program. I'm tutoring for SUS because I think it's a great way for me to go over old material and keep it fresh in my mind while also being able to help others. A fun fact about me is I have 4 titanium screws in my shoulders.                            </ExecutiveDescription>
-                        </ExecutiveTextContainer>
-                    </ExecutiveCard>
-
-                    <ExecutiveCard>
-                        <ExecutiveImage src="/images/tutors/Bardia M.jpeg" />
-                        <ExecutiveTextContainer>
-                            <ExecutiveTitle>Bardia Mohammadizadeh</ExecutiveTitle>
-                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
-                            <ExecutiveDescription>
-                            I’m currently a second year Neuroscience student. I wanted to become a tutor not just to help others, but also to deepen my own understanding of the material. Outside of school, I like to play the piano, exercise and watch films and tv.                            </ExecutiveDescription>
-                        </ExecutiveTextContainer>
-                    </ExecutiveCard>
-
-                    <ExecutiveCard>
-                        <ExecutiveImage src="/images/tutors/IMG 1317 from Felix Chan.jpeg" />
-                        <ExecutiveTextContainer>
-                            <ExecutiveTitle>Felix Chan</ExecutiveTitle>
-                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
-                            <ExecutiveDescription>
-                            Hi everyone! I’m Felix and I’m currently a second year in Honours Chemical Physics. I decided to tutor for SUS because I wanted to support struggling undergraduate students in their learning and provide a resource for the SUS community. Fun fact about me: I love to bake and make music in my spare time :)                            </ExecutiveDescription>
-                        </ExecutiveTextContainer>
-                    </ExecutiveCard>
-
-                    <ExecutiveCard>
-                        <ExecutiveImage src="/images/tutors/Hope Luo IMG 0598.jpeg" />
-                        <ExecutiveTextContainer>
-                            <ExecutiveTitle>Hope Luo</ExecutiveTitle>
-                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
-                            <ExecutiveDescription>
-                            Hope is currently studying Cellular and Physiological Sciences. As a SUS tutor, she hopes to expand her passion for teaching by supporting students with different learning styles. She is excited to share her experiences, both inside and outside of school. A fun fact about Hope is that her nickname is hopeless!                             </ExecutiveDescription>
-                        </ExecutiveTextContainer>
-                    </ExecutiveCard>
-
-                    <ExecutiveCard>
-                        <ExecutiveImage src="/images/tutors/Mehdi N.jpeg" />
-                        <ExecutiveTextContainer>
-                            <ExecutiveTitle>Mehdi Naami</ExecutiveTitle>
-                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
-                            <ExecutiveDescription>
-                            Hello! My name is Mehdi, and I’m currently studying mathematics. I chose to be a tutor for SUS to aid students like my past self who needed help but couldn’t access it due to inconvenient office hours. On the weekends, I love to play soccer with my friends after work.                             </ExecutiveDescription>
-                        </ExecutiveTextContainer>
-                    </ExecutiveCard>
-
-                    <ExecutiveCard>
-                        <ExecutiveImage src="/images/tutors/Nicholas Jeremy.JPG" />
-                        <ExecutiveTextContainer>
-                            <ExecutiveTitle>Nicholas Jeremy</ExecutiveTitle>
-                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
-                            <ExecutiveDescription>
-                            Hi! I'm a second year student majoring in computer science. I'm a tutor for SUS because I enjoy teaching math to other students and I want to help other students succeed in their math courses. I enjoy listening to classical music and playing the piano :)                            </ExecutiveDescription>
-                        </ExecutiveTextContainer>
-                    </ExecutiveCard>
-
-                    <ExecutiveCard>
-                        <ExecutiveImage src="/images/tutors/Nitya Goel Headshot.png" />
-                        <ExecutiveTextContainer>
-                            <ExecutiveTitle>Nitya Goel</ExecutiveTitle>
-                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
-                            <ExecutiveDescription>
-                            My name is Nitya Goel and I’m a second-year Microbiology and Immunology student. I joined SUS Tutoring because I love to share knowledge and am excited to support anyone struggling with their courses. I am passionate about life sciences, teaching, and learning! Outside of university, I enjoy doing anything creative, like dance and crochet.                            </ExecutiveDescription>
-                        </ExecutiveTextContainer>
-                    </ExecutiveCard>
-
-                    <ExecutiveCard>
-                        <ExecutiveImage src="/images/tutors/Norinne.jpg" />
-                        <ExecutiveTextContainer>
-                            <ExecutiveTitle>Norinne</ExecutiveTitle>
-                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
-                            <ExecutiveDescription>
-                            Hello! I’m Norinne, I’m a second-year student studying computer science and data science. I became a SUS tutor to help people understand complex concepts and gain confidence in their learning. When I'm not deep in code, you’ll probably find me drawing or painting —getting creative is my favourite way to unwind!                            </ExecutiveDescription>
-                        </ExecutiveTextContainer>
-                    </ExecutiveCard>
-
-                    <ExecutiveCard>
-                        <ExecutiveImage src="/images/tutors/kyle.png" />
-                        <ExecutiveTextContainer>
-                            <ExecutiveTitle>Kyle Yeung</ExecutiveTitle>
-                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
-                            <ExecutiveDescription>
-                            Hi! My name is Kyle Yeung, and I’m a second-year Microbiology and Immunology student. I became a tutor for SUS because I love helping students build confidence in their learning. A fun fact about me is that I recently started training for a marathon—I’d love to hear any tips you have!                            </ExecutiveDescription>
-                        </ExecutiveTextContainer>
-                    </ExecutiveCard>
-
-                    <ExecutiveCard>
-                        <ExecutiveImage src="/images/tutors/Jane Shu.jpg" />
-                        <ExecutiveTextContainer>
-                            <ExecutiveTitle>Jane Shu</ExecutiveTitle>
-                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
-                            <ExecutiveDescription>
-                            Hello!! I'm currently a second year majoring in Biochemistry and Forensic Science. I tutor for SUS because it's a great way to get involved and meet new people :D In my free time, you'll usually find me drawing, reading, or baking.                            </ExecutiveDescription>
-                        </ExecutiveTextContainer>
-                    </ExecutiveCard>
-
+                        </ExecutiveCard>
+                    ))}
                 <Footer/>
             </Content>
         </>
