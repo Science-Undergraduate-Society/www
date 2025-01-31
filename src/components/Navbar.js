@@ -41,11 +41,12 @@ const sections = [
     name: "Student Services",
     href: "",
     items: [
+      { name: "Academic Resources", href: "/studentServices/academicResources" },
       { name: "Blue Card Program", href: "/studentServices/bluecard" },
       { name: "Grants & Subsidies", href: "/studentServices/grants" },
       { name: "Health & Wellness", href: "/studentServices/health" },
-      { name: "Volunteer Portal", href: "/studentServices/volunteerPortal" },
       { name: "Study Sphere", href: "/studentServices/studySphere" },
+      { name: "Volunteer Portal", href: "/studentServices/volunteerPortal" },
     ],
   },
   {

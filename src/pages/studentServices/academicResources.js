@@ -1,0 +1,442 @@
+import styled from "styled-components";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
+export default function MeetingRoomBookings() {
+    return(
+        <>
+            <Navbar />
+            <Content>
+                <ContactSection>
+                    <TitleBig>SUS Drop-in Tutoring Program</TitleBig>
+                    <Description>
+                        Free online and in-person tutoring sessions led by upper-year science students. Sign-up or drop-in today.
+                    </Description>
+                </ContactSection>   
+
+                <ButtonsContainer>
+                        <ButtonGroup>
+                            <ButtonHollowBlack>
+                                <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdYp_R2zjCXjJt6QllqJlAp-e93V92bcnHcdqnoZBnAu9wB_Q/viewform?usp=header">Sign-up for a Session</Link>    
+                            </ButtonHollowBlack>
+                        </ButtonGroup>
+
+                        <ButtonGroup>
+                            <ButtonHollowBlack>
+                                <Link href="https://ubc.ca1.qualtrics.com/jfe/form/SV_819lrEKFVQYxxwW">Session Feedback Form</Link>    
+                            </ButtonHollowBlack>
+                        </ButtonGroup>
+
+                        <ButtonGroup>
+                            <ButtonHollowBlack>
+                                <Link href="https://ubc.ca1.qualtrics.com/jfe/form/SV_42Pc5f3nlXgEch8">Request a Course</Link>    
+                            </ButtonHollowBlack>
+                        </ButtonGroup> 
+
+                        <ButtonGroup>
+                            <ButtonHollowBlack>
+                                <Link href="#meet-the-tutors">Meet the Tutors</Link>    
+                            </ButtonHollowBlack>
+                        </ButtonGroup>
+
+
+                        <ButtonGroup> 
+                            <ButtonHollowBlack>
+                                <Link href="https://ubc.ca1.qualtrics.com/jfe/form/SV_08p8gd08sSBVuWq">Apply to be a Tutor</Link>    
+                            </ButtonHollowBlack>
+                        </ButtonGroup> 
+                    </ButtonsContainer> 
+
+                    <ContactSection>
+                        <Title>Interested in attending one of our sessions? Check out the monthly schedule:</Title>
+                    </ContactSection>
+
+                    <iframe 
+                        src="https://calendar.google.com/calendar/embed?src=c_32f20f05029df4d6db2492274c65cc2a479da5ff5efb2850444ed8db87b139eb%40group.calendar.google.com&ctz=America%2FVancouver" 
+                        style={{ border: '0', width: '100%', maxWidth: '1030px' }} 
+                        height="600" 
+                        frameBorder="0" 
+                        scrolling="no">
+                    </iframe>
+
+                    <Divider></Divider>
+
+                    <ContactSection id="meet-the-tutors">
+                        <TitleBig>Meet our tutors:</TitleBig>
+                    </ContactSection>
+
+                    <DividerSmall></DividerSmall>
+
+                    <ExecutiveCard>
+                        <ExecutiveImage src="/images/tutors/Isabella Byrne.jpeg" />
+                        <ExecutiveTextContainer>
+                            <ExecutiveTitle>Isabella Byrne</ExecutiveTitle>
+                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
+                            <ExecutiveDescription>
+                            Hey I’m Isabella! I’m currently studying Microbiology and Immunology. I’m tutoring for SUS because I love finding the new ways to explain concepts and help students better understand their course material. A fun fact about myself is that I did a Study Abroad program in Sweden!
+                            </ExecutiveDescription>
+                        </ExecutiveTextContainer>
+                    </ExecutiveCard>
+
+                    <ExecutiveCard>
+                        <ExecutiveImage src="/images/tutors/Alexi Manning.jpg" />
+                        <ExecutiveTextContainer>
+                            <ExecutiveTitle>Alexi Manning</ExecutiveTitle>
+                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
+                            <ExecutiveDescription>
+                            I am a Cognitive Systems (Computational Intelligence and Design) major who enjoys crocheting and listening to music. I want to help other students maximize their academic potential by tutoring with SUS!  
+                            </ExecutiveDescription>             
+                            </ExecutiveTextContainer>
+                    </ExecutiveCard>
+
+                    <ExecutiveCard>
+                        <ExecutiveImage src="/images/tutors/IMG 0065 from Andy Wang.jpg" />
+                        <ExecutiveTextContainer>
+                            <ExecutiveTitle>Andy Wang</ExecutiveTitle>
+                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
+                            <ExecutiveDescription>
+                            Hi, my name is Andy and I am currently a 3rd year in the microbiology and immunology program. I'm tutoring for SUS because I think it's a great way for me to go over old material and keep it fresh in my mind while also being able to help others. A fun fact about me is I have 4 titanium screws in my shoulders.                            </ExecutiveDescription>
+                        </ExecutiveTextContainer>
+                    </ExecutiveCard>
+
+                    <ExecutiveCard>
+                        <ExecutiveImage src="/images/tutors/Bardia M.jpeg" />
+                        <ExecutiveTextContainer>
+                            <ExecutiveTitle>Bardia Mohammadizadeh</ExecutiveTitle>
+                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
+                            <ExecutiveDescription>
+                            I’m currently a second year Neuroscience student. I wanted to become a tutor not just to help others, but also to deepen my own understanding of the material. Outside of school, I like to play the piano, exercise and watch films and tv.                            </ExecutiveDescription>
+                        </ExecutiveTextContainer>
+                    </ExecutiveCard>
+
+                    <ExecutiveCard>
+                        <ExecutiveImage src="/images/tutors/IMG 1317 from Felix Chan.jpeg" />
+                        <ExecutiveTextContainer>
+                            <ExecutiveTitle>Felix Chan</ExecutiveTitle>
+                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
+                            <ExecutiveDescription>
+                            Hi everyone! I’m Felix and I’m currently a second year in Honours Chemical Physics. I decided to tutor for SUS because I wanted to support struggling undergraduate students in their learning and provide a resource for the SUS community. Fun fact about me: I love to bake and make music in my spare time :)                            </ExecutiveDescription>
+                        </ExecutiveTextContainer>
+                    </ExecutiveCard>
+
+                    <ExecutiveCard>
+                        <ExecutiveImage src="/images/tutors/Hope Luo IMG 0598.jpeg" />
+                        <ExecutiveTextContainer>
+                            <ExecutiveTitle>Hope Luo</ExecutiveTitle>
+                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
+                            <ExecutiveDescription>
+                            Hope is currently studying Cellular and Physiological Sciences. As a SUS tutor, she hopes to expand her passion for teaching by supporting students with different learning styles. She is excited to share her experiences, both inside and outside of school. A fun fact about Hope is that her nickname is hopeless!                             </ExecutiveDescription>
+                        </ExecutiveTextContainer>
+                    </ExecutiveCard>
+
+                    <ExecutiveCard>
+                        <ExecutiveImage src="/images/tutors/Mehdi N.jpeg" />
+                        <ExecutiveTextContainer>
+                            <ExecutiveTitle>Mehdi Naami</ExecutiveTitle>
+                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
+                            <ExecutiveDescription>
+                            Hello! My name is Mehdi, and I’m currently studying mathematics. I chose to be a tutor for SUS to aid students like my past self who needed help but couldn’t access it due to inconvenient office hours. On the weekends, I love to play soccer with my friends after work.                             </ExecutiveDescription>
+                        </ExecutiveTextContainer>
+                    </ExecutiveCard>
+
+                    <ExecutiveCard>
+                        <ExecutiveImage src="/images/tutors/Nicholas Jeremy.JPG" />
+                        <ExecutiveTextContainer>
+                            <ExecutiveTitle>Nicholas Jeremy</ExecutiveTitle>
+                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
+                            <ExecutiveDescription>
+                            Hi! I'm a second year student majoring in computer science. I'm a tutor for SUS because I enjoy teaching math to other students and I want to help other students succeed in their math courses. I enjoy listening to classical music and playing the piano :)                            </ExecutiveDescription>
+                        </ExecutiveTextContainer>
+                    </ExecutiveCard>
+
+                    <ExecutiveCard>
+                        <ExecutiveImage src="/images/tutors/Nitya Goel Headshot.png" />
+                        <ExecutiveTextContainer>
+                            <ExecutiveTitle>Nitya Goel</ExecutiveTitle>
+                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
+                            <ExecutiveDescription>
+                            My name is Nitya Goel and I’m a second-year Microbiology and Immunology student. I joined SUS Tutoring because I love to share knowledge and am excited to support anyone struggling with their courses. I am passionate about life sciences, teaching, and learning! Outside of university, I enjoy doing anything creative, like dance and crochet.                            </ExecutiveDescription>
+                        </ExecutiveTextContainer>
+                    </ExecutiveCard>
+
+                    <ExecutiveCard>
+                        <ExecutiveImage src="/images/tutors/Norinne.jpg" />
+                        <ExecutiveTextContainer>
+                            <ExecutiveTitle>Norinne</ExecutiveTitle>
+                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
+                            <ExecutiveDescription>
+                            Hello! I’m Norinne, I’m a second-year student studying computer science and data science. I became a SUS tutor to help people understand complex concepts and gain confidence in their learning. When I'm not deep in code, you’ll probably find me drawing or painting —getting creative is my favourite way to unwind!                            </ExecutiveDescription>
+                        </ExecutiveTextContainer>
+                    </ExecutiveCard>
+
+                    <ExecutiveCard>
+                        <ExecutiveImage src="/images/tutors/kyle.png" />
+                        <ExecutiveTextContainer>
+                            <ExecutiveTitle>Kyle Yeung</ExecutiveTitle>
+                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
+                            <ExecutiveDescription>
+                            Hi! My name is Kyle Yeung, and I’m a second-year Microbiology and Immunology student. I became a tutor for SUS because I love helping students build confidence in their learning. A fun fact about me is that I recently started training for a marathon—I’d love to hear any tips you have!                            </ExecutiveDescription>
+                        </ExecutiveTextContainer>
+                    </ExecutiveCard>
+
+                    <ExecutiveCard>
+                        <ExecutiveImage src="/images/tutors/Jane Shu.jpg" />
+                        <ExecutiveTextContainer>
+                            <ExecutiveTitle>Jane Shu</ExecutiveTitle>
+                            {/* <ExecutiveName>Position: Program Coordinator</ExecutiveName>  */}
+                            <ExecutiveDescription>
+                            Hello!! I'm currently a second year majoring in Biochemistry and Forensic Science. I tutor for SUS because it's a great way to get involved and meet new people :D In my free time, you'll usually find me drawing, reading, or baking.                            </ExecutiveDescription>
+                        </ExecutiveTextContainer>
+                    </ExecutiveCard>
+
+                <Footer/>
+            </Content>
+        </>
+    )
+}
+
+const ExecutiveCard = styled.div`
+  display: flex;
+  flex-direction: row;  // Change to row layout
+  justify-content: center;
+  align-items: center;
+  text-align: left;  // Align text to the left for the description
+  gap: 30px;  // Space between image and text
+  height: 350px;
+  margin-top: -15px;
+  margin-bottom: -60px;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+const ExecutiveTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 55%; 
+`;
+
+
+
+const ExecutiveTitle = styled.div`
+  font-size: 30px;
+  font-weight: bold;
+  color: #001961;
+`;
+
+const ExecutiveName = styled.div`
+  font-size: 16px;
+`;
+
+const ExecutiveDescription = styled.p`
+  font-size: 15px;  
+  margin-top: 10px;
+`;
+
+const ExecutiveImage = styled.img`
+  overflow: hidden;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+`;
+
+
+// =============== GENERAL =============== //
+
+const Content = styled.main`
+    margin-top: 24vh;
+    width: 100%;
+    height: auto;
+    overflow-y: auto; 
+    scroll-behavior: smooth;
+    // position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    // justify-content: center;
+`
+
+const Title = styled.h2`
+    color: #222755;
+`;
+
+const TitleBig = styled.h1`
+    color: #222755;
+`;
+
+
+const Description = styled.p`
+    text-align: left;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    margin-top: -1vh;
+`
+
+const Divider = styled.div`
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    width: 90%;
+    // border-bottom: 1px solid black;
+`
+const DividerSmall = styled.div`
+    margin-bottom: -2vh;
+`
+
+const Link = styled.a`
+    text-decoration: none;
+    color: inherit;
+`
+
+const H3 = styled.h3`
+    text-align: center;
+`
+
+const Section = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+    @media (max-width: 768px) {
+        width: 95%;
+    }
+`
+
+const Image = styled.img`
+    height: auto;
+    width: 400px;
+    object-fit: cover;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+`
+
+
+// =============== HEADER =============== //
+
+const Header = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+
+    width: 50%;
+
+    @media (max-width: 768px) {
+        width: 80%;
+    }
+`
+
+const PoliciesContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 70%;
+
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+`;
+
+// =============== MAKE A BOOKING =============== //
+
+const ButtonsContainer = styled.div`    
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7vh;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 10px;
+    }
+`
+
+const ButtonGroup = styled.div`
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: left;
+`;
+
+const ButtonHollowBlack = styled.button`
+    background-color: #d4ebf2;
+    color: #222755;
+    padding: 12px 30px; /* Adjusted for a more consistent size */
+    width: 180px; /* Fixed width */
+    height: 60px; /* Fixed height */
+    border-radius: 30px;
+    border: 1px solid #222755;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+        color: #0052FF;
+        border: 1px solid #0052FF;
+    }
+
+    @media (max-width: 768px) {
+        width: 150px; /* Smaller width on mobile */
+        height: 60px; /* Adjusted height for smaller screen */
+        font-size: 0.7rem;
+    }
+`;
+
+// =============== ROOM FEATURES ============= //
+
+const RoomDescriptionContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 2rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 1rem;
+    }
+`
+
+const Room = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`
+
+// =============== Contact Us ============= //
+
+const ContactSection = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 70%;
+
+    // margin-top: 5vh;
+    // margin-bottom: 5vh;
+
+    @media (max-width: 768px) {
+        width: 95%;
+    }
+
+    @media (max-width: 1300px) {
+        width: 80%;
+    }
+`
