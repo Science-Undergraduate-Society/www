@@ -40,21 +40,30 @@ export default function MeetingRoomBookings() {
                         <ButtonGroup>
                             <H3>Room 103</H3>
                             <ButtonHollowBlack>
-                                <Link href="https://alsscroom103.youcanbook.me/">Book Room 103</Link>    
+                                <Link href="https://alsscroom103.youcanbook.me/">Book Room 103</Link>  
+                            </ButtonHollowBlack> 
+                            <ButtonHollowBlack> 
+                                <Link href="https://calendar.google.com/calendar/u/0/embed?src=sus.ubc.ca_uftrmmskndipsbndg151dtl5b8@group.calendar.google.com&ctz=America/Vancouver">Check Availability</Link>
                             </ButtonHollowBlack>
                         </ButtonGroup>
 
                         <ButtonGroup>
                             <H3>Room 104</H3>
                             <ButtonHollowBlack>
-                                <Link href="https://alsscroom104.youcanbook.me/">Book Room 104</Link>    
+                                <Link href="https://alsscroom104.youcanbook.me/">Book Room 104</Link> 
+                            </ButtonHollowBlack>
+                            <ButtonHollowBlack>
+                                <Link href="https://calendar.google.com/calendar/u/0/embed?src=sus.ubc.ca_5s71t4b60qmlfll20ktfp5a78g@group.calendar.google.com&ctz=America/Vancouver">Check Availability</Link>   
                             </ButtonHollowBlack>
                         </ButtonGroup>
 
                         <ButtonGroup>
                             <H3>Room 105</H3>   
                             <ButtonHollowBlack>
-                                <Link href="https://alsscroom105.youcanbook.me/">Book Room 105</Link>    
+                                <Link href="https://alsscroom105.youcanbook.me/">Book Room 105</Link> 
+                            </ButtonHollowBlack>
+                            <ButtonHollowBlack>
+                                <Link href="https://calendar.google.com/calendar/u/0/embed?src=sus.ubc.ca_5ml80mepktclmrihpjugh4g8k8@group.calendar.google.com&ctz=America/Vancouver">Check Availability</Link>   
                             </ButtonHollowBlack>
                         </ButtonGroup> 
                     </ButtonsContainer> 
