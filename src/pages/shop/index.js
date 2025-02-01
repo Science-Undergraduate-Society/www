@@ -96,7 +96,25 @@ const allProducts = [
         image: "/images/shop-images/White-Hoodie-1.png",
         quantities: { S: 9, M: 7, L: 14, XL: 6 }
     },
-];
+    {
+        id: 12,
+        name: "Pink Crew",
+        type: "crew",
+        color: "pink",
+        price: 45,
+        image: "/images/shop-images/Pink-Crew-1.jpg",
+        quantities: { S: 5, M: 8, L: 8, XL: 2 }
+    },
+    {
+        id: 13,
+        name: "Pink Hoodie",
+        type: "hoodie",
+        color: "pink",
+        price: 55,
+        image: "/images/shop-images/Pink-Hoodie-1.jpg",
+        quantities: { S: 5, M: 8, L: 8, XL: 2 }
+    },
+  ];
 
 
 export default function Shop() {
