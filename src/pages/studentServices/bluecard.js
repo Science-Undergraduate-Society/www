@@ -263,6 +263,13 @@ export default function BlueCard() {
                             location="Valid at www.convivial.ca/ "
                             website="http://www.convivial.ca/"
                         />
+                        <IndivPartnerInfo
+                            partnerName="DVS"
+                            logoSrc="/images/logos/DVS Black Logo (1).png"
+                            description="Use code UBCBLUECARD25 to get 25% off 1-month unlimited membership, ongoing memberships, and Class Passes."
+                            location="Valid at Friday Party only and redeemable at the front desk."
+                            website="https://www.dancevancouver.ca/"
+                        />
                         </PartnersBox>
                 </Partners>
             </MainInfo>
