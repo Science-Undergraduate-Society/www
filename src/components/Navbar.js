@@ -41,7 +41,7 @@ const sections = [
     name: "Student Services",
     href: "",
     items: [
-      { name: "Academic Resources", href: "/studentServices/academicResources" },
+      { name: "Drop In Tutoring", href: "/studentServices/tutoring" },
       { name: "Blue Card Program", href: "/studentServices/bluecard" },
       { name: "Grants & Subsidies", href: "/studentServices/grants" },
       { name: "Health & Wellness", href: "/studentServices/health" },

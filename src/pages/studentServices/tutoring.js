@@ -147,17 +147,24 @@ export default function MeetingRoomBookings() {
 
 const ExecutiveCard = styled.div`
   display: flex;
-  flex-direction: row;  // Change to row layout
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: left;  // Align text to the left for the description
-  gap: 30px;  // Space between image and text
+  text-align: left;
+  gap: 30px;
   height: 350px;
   margin-top: -15px;
   margin-bottom: -60px;
 
   &:hover {
     cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    height: auto;  // Set height to auto for smaller screens
+    padding: 20px; // Add some padding to space things out a bit on small screens
+    flex-direction: column;  // Stack the image and text vertically
+    gap: 20px; // Adjust space between image and text on small screens
   }
 `;
 
@@ -166,8 +173,26 @@ const ExecutiveTextContainer = styled.div`
   flex-direction: column;
   gap: 10px;
   width: 55%; 
+
+  @media (max-width: 768px) {
+    width: 100%; 
+    margin-bottom: 50px;
+  }
 `;
 
+const ExecutiveImage = styled.img`
+  overflow: hidden;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 150px;
+  }
+`;
 
 
 const ExecutiveTitle = styled.div`
@@ -185,14 +210,14 @@ const ExecutiveDescription = styled.p`
   margin-top: 10px;
 `;
 
-const ExecutiveImage = styled.img`
-  overflow: hidden;
-  border-radius: 50%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  width: 200px;
-  height: 200px;
-`;
+// const ExecutiveImage = styled.img`
+//   overflow: hidden;
+//   border-radius: 50%;
+//   aspect-ratio: 1 / 1;
+//   object-fit: cover;
+//   width: 200px;
+//   height: 200px;
+// `;
 
 
 // =============== GENERAL =============== //
