@@ -114,10 +114,14 @@ export default function ProductPage() {
     // wait until product is retrieved
     useEffect(() => {
         if (product) {
+            if (!Array.isArray(product.image)) {
+                product.image = [product.image]; // Convert to array if it's a string
+            }
+            setSelectedImage(product.image[0]);
             setLoading(false);
         }
     }, [product]);
-
+    
     // wait until product is retrieved to render
     useEffect(() => {
         if (product && product.image && product.image.length > 0) {
