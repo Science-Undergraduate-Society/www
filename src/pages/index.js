@@ -100,7 +100,7 @@ export default function Home() {
             Science Undergraduate Society would like to acknowledge UBC’s Vancouver Point Grey 
             campus is located on the unceded, traditional and ancestral territories of the 
             hən̓q̓əmin̓əm̓ speaking Musqueam peoples. We also recognize that the area commonly 
-            known as "Vancouver" is the traditional territory of the Tsleil-Waututh and Squamish peoples. 
+            known as &quot;Vancouver&quot; is the traditional territory of the Tsleil-Waututh and Squamish peoples. 
             These nations have cared for the land, waters, and environment with deep knowledge and resilience 
             for generations. We recognize the impacts of colonization on Indigenous communities, such as the displacement, marginalization, and exploitation of Indigenous communities across Turtle Island. As members of the Science Undergraduate Society, we acknowledge our responsibility to listen, learn, and take meaningful action toward reconciliation. This includes fostering awareness, supporting Indigenous students, and respecting Indigenous knowledge.
           </p>
