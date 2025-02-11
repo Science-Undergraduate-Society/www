@@ -2,16 +2,16 @@
 import React, {useEffect, useState} from "react";
 import { useRouter } from "next/router";
 import styled, { keyframes } from "styled-components";
-import {
-    useStripe,
-    useElements,
-    PaymentElement,
-} from '@stripe/react-stripe-js'
+// import {
+//     useStripe,
+//     useElements,
+//     PaymentElement,
+// } from '@stripe/react-stripe-js'
 import convertToSubcurrency from "@/utility/ulilFunctions";
 
 const CheckoutPage = ({ amount }) => {
-    const stripe = useStripe();
-    const elements = useElements();
+    // const stripe = useStripe();
+    // const elements = useElements();
 
     const [errorMessage, setErrorMessage] = useState("");
     const [clientSecret, setClientSecret] = useState("");
@@ -81,7 +81,7 @@ const CheckoutPage = ({ amount }) => {
         <>
             <form onSubmit={handleSubmit}>
                 Amount: $ {amount}
-                {clientSecret && <PaymentElement />}
+                {/* {clientSecret && <PaymentElement />}
 
                 {errorMessage && <div>{errorMessage}</div>}
 
@@ -89,7 +89,7 @@ const CheckoutPage = ({ amount }) => {
                     disabled={!stripe || loading}
                 >
                     {!loading ? `Pay $ ${amount}` : "Processing..."}
-                </PaymentButton>
+                </PaymentButton> */}
             </form>
         </>
     )

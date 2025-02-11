@@ -2,7 +2,7 @@ import React from 'react';
 import { useCart } from './CartContext';
 import styled from 'styled-components';
 import { FaShoppingBasket } from "react-icons/fa";
-import { loadStripe } from "@stripe/stripe-js";
+// import { loadStripe } from "@stripe/stripe-js";
 
 // import convertToSubcurrency from "@/utility/ulilFunctions";
 // import { Elements } from "@stripe/react-stripe-js";
@@ -141,7 +141,7 @@ const CartModal = ({ visible, onClose }) => {
                 
                 <LineTop />
                 <Cost>  
-                    <p>Total (tax included):</p>
+                    <p>Subtotal:</p>
                     <p>${totalPrice.toFixed(2)}</p>
                 </Cost>
                 <CheckoutLink href="/shop/checkout">

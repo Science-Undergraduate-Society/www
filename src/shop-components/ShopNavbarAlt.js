@@ -7,7 +7,7 @@ import { FaShoppingCart } from "react-icons/fa";
 //  - name = label of section
 //  - items belonging to dropdown
 
-export default function ShopNavbar({ onCartOpen }) {
+export default function ShopNavbar({ onCartOpen, showShopIcon }) {
     const [cartVisible, setCartVisible] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     
@@ -29,10 +29,12 @@ export default function ShopNavbar({ onCartOpen }) {
             <NavLink href={"/"}> 
                 <Logo src="/images/logos/white-logo.png" alt="Logo" />
             </NavLink>
-            <div>
-                <CartIcon onClick={handleOpenCart}/>
-                <CartModal visible={cartVisible} onClose={closeCartModal} />
-            </div>
+            {showShopIcon &&
+                <div>
+                    <CartIcon onClick={handleOpenCart}/>
+                    <CartModal visible={cartVisible} onClose={closeCartModal} />
+                </div>
+            }
         </Nav>
     );
 }

@@ -156,7 +156,7 @@ export default function ProductPage() {
 
     return (
         <>
-            <ShopNavbar onCartOpen={() => setIsCartOpen(true)} />
+            <ShopNavbar onCartOpen={() => setIsCartOpen(true)} showShopIcon={true} />
 
             {showSuccessPopup && (
                 <SuccessPopupMessage>
