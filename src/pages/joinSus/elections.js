@@ -11,7 +11,7 @@ export default function Elections() {
         <Background>
             <Navbar />
             <Content>
-                <Title>Spring Elections <Span>2024</Span></Title>
+                <Title>Spring Elections <Span>2025</Span></Title>
 
                 <p>Hello candidates! Use this page as a one-stop shop for all of your documents this election.</p>
 
@@ -27,19 +27,19 @@ export default function Elections() {
                 <ul>
                     <li>
                         <strong>
-                            <a href="https://ubc.ca1.qualtrics.com/jfe/form/SV_bvYsMUVO0KdGwl0" target="_blank" rel="noopener noreferrer">Nomination Form</a>
+                            <a href="https://ubc.ca1.qualtrics.com/jfe/form/SV_9HPKY4dJEkXyQB0" target="_blank" rel="noopener noreferrer">Nomination Form</a>
                         </strong>: The official form to nominate a candidate for an executive position.
                     </li>
                     <HalfBreak/>
                     <li>
                         <strong>
-                            <a href="https://docs.google.com/document/d/1FQIJmYlEyOBjlpwinYJuzeSwblD1ihj-rA1XuJ-N1zI/edit" target="_blank" rel="noopener noreferrer">Penalty Document</a>
+                            <a href="https://docs.google.com/document/d/1nZQO15ZUPUvvWgaWa9kcIuwDhDc8G-4dtZTcKDbTNzs/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Campaign Violations & Penalties Document</a>
                         </strong>: Must be read in full prior to promoting your platform.
                     </li>
                     <HalfBreak/>
                     <li>
                         <strong>
-                            <a href="https://docs.google.com/document/d/1Dx0jhylC4tG0je4QvGFyHaglWVOOY9yfj23LNTJI1TU/edit" target="_blank" rel="noopener noreferrer">Campaign Guidelines</a>
+                            <a href="https://docs.google.com/document/d/1qj7fmKhLpuGcvk1MUApgeDasohl71NjwB9-k_dhR2F4/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Campaign Guidelines</a>
                         </strong>: Must be read in full once we have confirmed you have met the minimum cut-off for nominations. All of the important dates and deadlines are laid out in this document.
                     </li>
                     <HalfBreak/>
@@ -47,12 +47,6 @@ export default function Elections() {
                         <strong>
                             <a href="https://docs.google.com/document/d/18vAnNcWOyUHim9kp-Tey2EBFPENLhuqHVgBeeSkbLd0/edit" target="_blank" rel="noopener noreferrer">Executive Brochure</a>
                         </strong>: Use this visually stimulating aid to learn more about the history of SUS and the roles of its executive members.
-                    </li>
-                    <HalfBreak/>
-                    <li>
-                        <strong>
-                            <a href="https://sus-spring-elections-2024.carrd.co/" target="_blank" rel="noopener noreferrer">Additional Info</a>
-                        </strong>: See here for further information.
                     </li>
                 </ul>
                 
@@ -62,7 +56,7 @@ export default function Elections() {
                     <TimelineItem>
                         <Circle />
                         <TimelineContent>
-                            <Date>Monday, February 26th</Date>
+                            <Date>Friday, February 14th</Date>
                             <Time>12:00 AM</Time>
                             <Description>Nomination submissions open with Qualtrics survey</Description>
                         </TimelineContent>
@@ -70,7 +64,7 @@ export default function Elections() {
                     <TimelineItem>
                         <Circle />
                         <TimelineContent>
-                            <Date>Monday, March 4th</Date>
+                            <Date>Sunday, March 2nd</Date>
                             <Time>11:59 PM</Time>
                             <Description>Deadline for completed nomination submissions</Description>
                         </TimelineContent>
@@ -78,15 +72,15 @@ export default function Elections() {
                     <TimelineItem>
                         <Circle />
                         <TimelineContent>
-                            <Date>Thursday, March 7th</Date>
-                            <Time>TIME TBD</Time>
+                            <Date>Tentative: Wednesday, March 5th</Date>
+                            <Time>[6:00 PM]</Time>
                             <Description>MANDATORY All Candidates Meeting (via Zoom)</Description>
                         </TimelineContent>
                     </TimelineItem>
                     <TimelineItem>
                         <Circle />
                         <TimelineContent>
-                            <Date>Friday, March 8th</Date>
+                            <Date>Sunday, March 8th</Date>
                             <Time>11:59 PM</Time>
                             <Description>Deadline for headshot/blurb submissions</Description>
                         </TimelineContent>
@@ -94,7 +88,7 @@ export default function Elections() {
                     <TimelineItem>
                         <Circle />
                         <TimelineContent>
-                            <Date>Monday, March 11th</Date>
+                            <Date>Monday, March 10th</Date>
                             <Time>12:00 AM</Time>
                             <Description>Campaigning Begins</Description>
                         </TimelineContent>
@@ -102,25 +96,33 @@ export default function Elections() {
                     <TimelineItem>
                         <Circle />
                         <TimelineContent>
-                            <Date>Friday, March 15th</Date>
-                            <Time>TIME TBD</Time>
+                            <Date>Thursday, March 13th</Date>
+                            <Time>[12 PM - 6 PM]</Time>
                             <Description>All Candidates Forum</Description>
                         </TimelineContent>
                     </TimelineItem>
                     <TimelineItem>
                         <Circle />
                         <TimelineContent>
-                            <Date>Monday, March 18th</Date>
+                            <Date>Monday, March 17th</Date>
                             <Time>12:00 AM</Time>
-                            <Description>Voting opens</Description>
+                            <Description>Voting opens (https://amsvoting.as.it.ubc.ca)</Description>
                         </TimelineContent>
                     </TimelineItem>
                     <TimelineItem>
                         <Circle />
                         <TimelineContent>
-                            <Date>Monday, March 25th</Date>
+                            <Date>Wednesday, March 26th</Date>
                             <Time>11:59 PM</Time>
                             <Description>Campaign ends AND voting closes</Description>
+                        </TimelineContent>
+                    </TimelineItem>
+                    <TimelineItem>
+                        <Circle />
+                        <TimelineContent>
+                            <Date>Tentative: Friday, March 28th</Date>
+                            <Time>[Time TBD]</Time>
+                            <Description>Elections Viewing Party</Description>
                         </TimelineContent>
                     </TimelineItem>
                 </Timeline>
