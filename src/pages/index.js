@@ -94,6 +94,18 @@ export default function Home() {
           </AboutSection>
         </About>
 
+        <LandAcknowledgement>
+          <LandAckTitle>Land Acknowledgement</LandAckTitle>
+          <p>
+            Science Undergraduate Society would like to acknowledge UBC’s Vancouver Point Grey 
+            campus is located on the unceded, traditional and ancestral territories of the 
+            hən̓q̓əmin̓əm̓ speaking Musqueam peoples. We also recognize that the area commonly 
+            known as &quot;Vancouver&quot; is the traditional territory of the Tsleil-Waututh and Squamish peoples. 
+            These nations have cared for the land, waters, and environment with deep knowledge and resilience 
+            for generations. We recognize the impacts of colonization on Indigenous communities, such as the displacement, marginalization, and exploitation of Indigenous communities across Turtle Island. As members of the Science Undergraduate Society, we acknowledge our responsibility to listen, learn, and take meaningful action toward reconciliation. This includes fostering awareness, supporting Indigenous students, and respecting Indigenous knowledge.
+          </p>
+        </LandAcknowledgement>
+
         {/* Events Section */}
         <Events>
           <EventsTopSection>
@@ -604,7 +616,7 @@ const What = styled.div`
   }
 `;
 
-// =============== ABOUT SECTION =============== //
+// =============== EVENTS SECTION =============== //
 
 const Events = styled.div`
   margin-top: 10vh;
@@ -614,13 +626,13 @@ const Events = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media (max-width: 1050px) {
-    margin-top: 30vh;
-  }
+  // @media (max-width: 1050px) {
+  //   margin-top: 30vh;
+  // }
 
-  @media (max-width: 800px) {
-    margin-top: 40vh;
-  }
+  // @media (max-width: 800px) {
+  //   margin-top: 40vh;
+  // }
 `;
 
 const EventsTopSection = styled.div`
@@ -735,21 +747,29 @@ const EventCard = styled.div`
   }
 `;
 
-// =============== CLUBS COLLAGE =============== //
+// =============== LAND ACKNOWLEDGEMENT COLLAGE =============== //
 
-const moveLeft = keyframes`
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+const LandAcknowledgement = styled.div`
+  width: 100%;
+  background-color: #204569;
+  color: white;
+  text-align: center;
+  margin-top: 10rem;
+  padding: 100px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
+
+const LandAckTitle = styled.h1`
+`
+
+// =============== CLUBS COLLAGE =============== //
 
 const ClubsCollageWrapper = styled.div`
   width: 100%;
-  // overflow: hidden; /* Hide the overflow to prevent scrollbars */
-  background-color: #454545;
+  background-color: #222755;
   margin: 50px 0;
   margin-bottom: 8rem;
   padding: 40px 0;
@@ -766,12 +786,12 @@ const ClubsCollageContent = styled.div`
   flex-wrap: wrap; /* Allows wrapping to the next row */
   gap: 10px; /* Adjust the spacing between images */
   margin-top: 1rem;
-  // animation: ${moveLeft} 60s linear infinite; /* Adjust the duration (30s) to control speed */
 `;
 
 const ClubsTitle = styled.p`
   color: #f7f5f2;
   text-align: center;
+  padding: 0 15px;
 `;
 
 const Club = styled.div`
@@ -782,12 +802,13 @@ const Club = styled.div`
 `;
 
 const ClubImage = styled.img`
-  width: 40px;
+  width: 50px;
   height: auto;
   object-fit: cover;
+  background-color: white;
 `;
 
-// =============== CLUBS COLLAGE =============== //
+// =============== HOW TO GET INVOLVED =============== //
 
 const InvolvementContainer = styled.div`
   display: flex;
@@ -847,7 +868,7 @@ const RightCard = styled(Card)`
   }
 `;
 
-// =============== CLUBS & PODCAST =============== //
+// =============== ALSSC & PODCAST =============== //
 
 const Alssc = styled.div`
   margin-top: 20vh;
@@ -962,6 +983,7 @@ const ShopSection = styled.div`
 
   display: flex;
   gap: 2rem;
+  padding-right: 20px;
 `;
 
 const ShopGridContainer = styled.div`
