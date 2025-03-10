@@ -39,6 +39,15 @@ export default function Alssc() {
                         </ButtonHollow>
                     </ButtonGroup>
 
+                    <ButtonGroup>
+                        <ButtonHollowBlack>
+                            <Link href="https://drive.google.com/open?id=1m9kDYcPFfXetmu2rkol_H2BWtLix0PcY">Semi-Annual Budget Changes ‘24/’25</Link>    
+                        </ButtonHollowBlack>
+                        <ButtonHollowBlack>
+                            <Link href="https://drive.google.com/open?id=1qGn0VRMykNaHZi2ISfwJfx_bftQr3OXN">Semi-Annual Spending Summary ‘24/’25</Link>    
+                        </ButtonHollowBlack>
+                    </ButtonGroup>
+
                     <Divider/>
 
                     <Title>SUS BUDGET FEEDBACK FORM</Title>
