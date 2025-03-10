@@ -133,13 +133,6 @@ export default function BlueCard() {
                             website="https://pitapit.ca/"
                         />
                         <IndivPartnerInfo
-                            partnerName="Sushi Nova"
-                            logoSrc="/images/bluecard-images/partner-logos/sushiNova.png"
-                            description="Get 10% off all menu items except alcohol."
-                            location="2059 W 4th Ave Vancouver, BC V6J 1N3"
-                            website="https://sushinova.ca/"
-                        />
-                        <IndivPartnerInfo
                             partnerName="Chatime"
                             logoSrc="/images/bluecard-images/partner-logos/chatime-logo.webp"
                             description="Get 10% off all products."
@@ -205,7 +198,7 @@ export default function BlueCard() {
                         <IndivPartnerInfo
                             partnerName="Pearl Fever"
                             logoSrc="/images/bluecard-images/partner-logos/pearl.png"
-                            description="Get 10% off mobile app purchases using their mailing list: https://forms.gle/osEaqy5TrsLAKKiT7."
+                            description="Get 10% off mobile app purchases using their mailing list: https://forms.gle/osEaqy5TrsLAKKiT7. Use SUSPF2025 for 10% off and milktea99 for $4.99 milk tea."
                             location="Valid at 2182 Western Pkwy, Vancouver, BC V6T 1W6"
                             website="https://pearlfever.ca/"
                         />
@@ -219,9 +212,9 @@ export default function BlueCard() {
                         <IndivPartnerInfo
                             partnerName="MYST Asian Fusion"
                             logoSrc="/images/bluecard-images/partner-logos/myst-asian-fusion-logo.jpg"
-                            description="10% off all in-person store purchases,
-                            15% off event orders (50+), and 
-                            20% off event orders (100+)."
+                            description="10% off all in-person meals,
+                            15% off event orders (50+ meals), and 
+                            20% off event orders (100+ meals)."
                             location="Valid at MYST Asian Fusion @ 6400 Kingsway, Burnaby / MYST Asian Bistro @ 2028 W 41st Ave, Vancouver"
                             website="https://myst6400.com/"
                         />
@@ -245,7 +238,7 @@ export default function BlueCard() {
                         <IndivPartnerInfo
                             partnerName="Wren Cafe"
                             logoSrc="/images/bluecard-images/partner-logos/wrenCafe.jpeg"
-                            description="Get 15% off all in-store orders."
+                            description="Use code WREN15 to get 15% off all in-store orders."
                             location="Valid at 280 Nelson St, Vancouver, BC V6B 2E2"
                             website="https://wrencafe.ca/"
                         />
@@ -287,7 +280,7 @@ function IndivPartnerInfo({ partnerName, logoSrc, description, location, website
             <Description>
                 {partnerName === "Pearl Fever" ? (
                     <>
-                        Get 10% off mobile app purchases using their <StyledLink href="https://forms.gle/osEaqy5TrsLAKKiT7">mailing list</StyledLink>.
+                        Get 10% off mobile app purchases using their <StyledLink href="https://forms.gle/osEaqy5TrsLAKKiT7">mailing list</StyledLink>. Use SUSPF2025 for 10% off and milktea99 for $4.99 milk tea.
                     </>
                 ) : (
                     description
