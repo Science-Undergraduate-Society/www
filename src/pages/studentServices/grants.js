@@ -21,7 +21,9 @@ export default function Grants() {
             </Heading>
             <StuSec>
                 <SecondHeader>Application Information</SecondHeader>
-                    <InfoSec>Applications for Grants & Subsidies will  <strong>open on October 7, 2024</strong> and will be reviewed on a first-submitted, first-reviewed basis. SUS will be accepting applications 
+                    <ThirdHeader>GRANT AND SUBSIDY APPLICATIONS FOR THE ‘24/’25 ACADEMIC YEAR ARE NOW CLOSED</ThirdHeader>
+                    <ForthHeader>Applications for ‘25/’26 Grant and Subsidies will open in Early October 2025!</ForthHeader>
+                    <InfoSec>Applications for Grants & Subsidies will  <strong>open on October 7, 2024</strong> and will be reviewed on a first-submitted, first-reviewed basis. SUS will be accepting applications
                     <strong>until March 10, 2025, or until funds run out.</strong> Please utilize the following resources and submission link to put forth your application. 
                     </InfoSec>
                     <InfoSec>To read more about the 2024/2025 available grants and subsidies, as well as to view the application form, 
@@ -216,6 +218,23 @@ const SecondHeader = styled.div`
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: bold;
+`
+
+const ThirdHeader = styled.div`
+    font-size: 24px;
+    text-align: center;
+    background-color: #fff;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+`
+
+const ForthHeader = styled.div`
+    font-size: 18px;
+    text-align: center;
+    background-color: #fff;
+    padding-bottom: 24px;
 `
 
 const SciSec = styled.div`
