@@ -192,7 +192,7 @@ export default function Elections() {
                 <h3><Span>Voting instructions</Span></h3>
                 <p>To vote, click the login button after clicking the link and login with your CWL. The ballot will appear as the top item under “Current Ballots” and click “Vote now!” To cast your ballot. Note you are only able to vote for candidates that apply to you (eg you can only vote for candidates that represent the current major you’re in, or if you’re in First Year, you will only be able to vote for First Year Reps and not the specialization reps. This does not apply to the role of AMS representative).</p>
 
-                <ButtonHollowBlack><Link href="https://amsvoting.as.it.ubc.ca/">Vote Here</Link></ButtonHollowBlack>
+                <ButtonHollowBlack><Link href="https://ams.simplyvoting.com/">Vote Here</Link></ButtonHollowBlack>
 
                 <HalfBreak></HalfBreak>
                 <HalfBreak></HalfBreak>
