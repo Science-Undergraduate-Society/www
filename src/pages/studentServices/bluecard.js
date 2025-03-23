@@ -121,7 +121,7 @@ export default function BlueCard() {
                         <IndivPartnerInfo
                             partnerName="Prestige Optical"
                             logoSrc="/images/bluecard-images/partner-logos/prestigeOptical.jpg"
-                            description="Get 10% off prescription eyeglasses and sunglasses."
+                            description="10% discount for all contact lenses."
                             location="2950 West Broadway, Vancouver, BC V6K 2G8"
                             website="https://www.prestigeoptical.ca/"
                         />
