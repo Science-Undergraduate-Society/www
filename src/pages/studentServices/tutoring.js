@@ -92,6 +92,12 @@ const tutors = [
         courses: "BIOL 112, CHEM 123, BIOL 200, CHEM 233",
         image: "/images/tutors/Image from Claire Li.jpg",
         description: "Hi! My name is Claire, and I am a 3rd year Biology Honours student. I became a tutor for SUS because I enjoy tutoring and helping other students. Outside of school I enjoy yoga and binge watching my favorite shows!"
+    },
+    {
+        name: "Caroline Ruus",
+        courses: "CHEM 205, MICB 211, CHEM 123, BIOL 112, BIOL 201",
+        image: "/images/tutors/Caroline Ruus.jpg",
+        description: "Hi! I'm in my fourth year of Integrated Sciences, studying physiology and genetics. As a tutor for SUS, I enjoy helping students build confidence in science through collaborative learning. Outside of school, I love to bake, ski, and dance!"
     }
 ];
 
