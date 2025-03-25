@@ -29,12 +29,12 @@ export default function ShopNavbar({ onCartOpen, showShopIcon }) {
             <NavLink href={"/"}> 
                 <Logo src="/images/logos/white-logo.png" alt="Logo" />
             </NavLink>
-            {showShopIcon &&
+            {/* {showShopIcon &&
                 <div>
                     <CartIcon onClick={handleOpenCart}/>
                     <CartModal visible={cartVisible} onClose={closeCartModal} />
                 </div>
-            }
+            } */}
         </Nav>
     );
 }

@@ -129,6 +129,25 @@ export default function Checkout() {
     };    
     
 
+    function showCheckoutWindow(e) {
+      e.preventDefault();
+      const url = "https://square.link/u/VspVw70x?src=embed";
+      const title = "Square Payment Links";
+      const topWindow = window.top ? window.top : window;
+      const dualScreenLeft = topWindow.screenLeft !== undefined ? topWindow.screenLeft : topWindow.screenX;
+      const dualScreenTop = topWindow.screenTop !== undefined ? topWindow.screenTop : topWindow.screenY;
+      const width = topWindow.innerWidth || document.documentElement.clientWidth || screen.width;
+      const height = topWindow.innerHeight || document.documentElement.clientHeight || screen.height;
+      const h = height * 0.75;
+      const w = 500;
+      const systemZoom = width / topWindow.screen.availWidth;
+      const left = (width - w) / 2 / systemZoom + dualScreenLeft;
+      const top = (height - h) / 2 / systemZoom + dualScreenTop;
+      const newWindow = window.open(url, title, `scrollbars=yes, width=${w / systemZoom}, height=${h / systemZoom}, top=${top}, left=${left}`);
+      if (window.focus) newWindow.focus();
+  }
+
+
     return (
         <div>
            <ShopNavbar showShopIcon={false} />
@@ -159,7 +178,7 @@ export default function Checkout() {
                     <SummaryContainer>
                     <h3>Order Summary</h3>
                     <p>Subtotal: <strong>${totalAmount.toFixed(2)}</strong></p>
-                    <CheckoutButton>Proceed to Payment</CheckoutButton>
+                    <CheckoutButton onClick={showCheckoutWindow}>Proceed to Payment</CheckoutButton>
                     </SummaryContainer>
                 </CheckoutContainer>
                 )}
