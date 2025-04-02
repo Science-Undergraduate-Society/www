@@ -8,7 +8,7 @@ First, run the development server (from root folder):
 ```bash    
 npm install
  
-npm run dev  
+npm run dev   
 # or 
 yarn dev   
 ```
