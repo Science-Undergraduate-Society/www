@@ -52,6 +52,12 @@ const candidates = [
         image: "/images/2025-elections/bardia.png",
         description: "Hey Science Students! I’m Bardia, studying second-year Neuroscience. For the past two years, I’ve been advocating for Science representation in student government, and I hope to now represent you as your next AMS representative!\n\nI have previously campaigned for various positions within the AMS, such as the SLFS, UBC Senate, and UBC Board of Governors, with the primary goal of addressing the underrepresentation of Science students and standing up for our needs.\n\nWithin AMS council, I will focus on initiatives like more workshops and support for students looking for undergraduate research opportunities and financial aid. Additionally, to combat the $5-6m that is left unused in financial aid every year, I will be advocating for the creation of a brand new easy-to-use financial aid portal, making those resources more accessible to us students.\n\nI run on a platform of transparency and communication. I will post regular updates on AMS Council activities, including summaries and more, accessible for all to see on social media.\n\nI have made sure to make our voices heard, and will continue to do so! Vote Bardia for AMS rep!\n\nFollow me on IG to learn more, @votebardia"
     },
+    {
+        name: "Yolanda Yang",
+        courses: "AMS Representative",
+        image: "/images/2025-elections/yolanda.png",
+        description: ""
+    },
 ];
 
 export default function Elections() {
