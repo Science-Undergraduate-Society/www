@@ -1,14 +1,14 @@
 # susubc.ca
 Website for the Science Undergraduate Society of the University of British Columbia in Vancouver, Canada.
 
-## Getting Started  
+## Getting Started   
    
 First, run the development server (from root folder): 
   
 ```bash    
 npm install
  
-npm run dev  
+npm run dev   
 # or 
 yarn dev   
 ```

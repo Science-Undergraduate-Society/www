@@ -2,10 +2,8 @@ import styled from "styled-components";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-// import elect1 from "../../../public/images/elections-images/elect1.jpg"
-// import elect2 from "../../../public/images/elections-images/elect4.jpg"
-// import elect3 from "../../../public/images/elections-images/3.jpg"
-const tutors = [
+
+const candidates = [
     {
         name: "Rachel Dong",
         courses: "SUS President",
@@ -19,28 +17,10 @@ const tutors = [
         description: "Hi UBC Science! My name is Carmen and I am so excited to be running for your next VP Communications. As the current Associate Vice President Communications and former Visual Media Chair, I’m ready to streamline Communications and bring new ideas to our Community.\n\nHere’s my plan:\n● Feature more clubs on our platforms by collaborating on filming initiatives, merchandise, and create a new 'all clubs' newsletter\n● Host SUS’ first Hackathon open to all experience levels\n● Increase funding efforts for more giveaways and to subsidize merchandise costs\n● Strengthen website resources by featuring more career development, research opportunities and club events\n● Reduce the number of posting and increase visual standards on our platforms by introducing stricter marketing guidelines\n\nFor more details on my platform please feel free to email me at carm01@student.ubc.ca. Thank you so much for your support!"
     },
     {
-        name: "Renee Hui",
-        courses: "VP Academics",
-        image: "/images/2025-elections/renee.png",
-        description: "As your next VP Academics, I got it all covered!\n\n● Course support: Mentorship, peer-tutor, office-hours\n● Course materials: Free textbook, second-hand supplies\n● Study sphere: Platform for science students to share course materials, practice questions, review sheets\n● Research and career opportunities: Website for PIs across UBC to connect with students, LinkedIn UBC version\n● Open to listen to YOUR needs\n● Support you in making the most out of your academic journey\n\nHeyyyy thanks for dropping by! If you are here, why not vote for Renee as VP Academics? I am reliable (don’t worry, I will make your dream uni-life turn into reality), enthusiastic (come talk to me, I’m nice, I don’t bite), and responsible (I will get work done, trust!). I am committed to enhancing your UBC life and making your academic life easier!!\n\nEver struggled to find the right resource to help with a specific course? Ever forced to buy the textbook that cost at least 10 big way runs? Ever tried to cram for the final exam that allows a review-sheet but couldn’t find one online? I gotchu. Vote for Renee and have all these resources available to you! Make your dream uni life become reality by voting for RENEE!!"
-    },
-    {
         name: "Nicholas Samuelson",
         courses: "VP Academics",
         image: "/images/2025-elections/nick.png",
         description: "Hey, UBC Science! I'm Nick, a 4th-year CAPS student and your current Associate Vice-President Academic; I'm excited and honoured to be running to be your next VP Academic. This year, our portfolio has made significant strides to support science students at UBC, including:\n\n● Lobbying for hiring a faculty-embedded counsellor to enhance student mental and physical well-being.\n● Launching the SUS Tutoring Program, providing free, accessible support for popular science courses.\n● Collaborating with multiple constituencies to distribute a survey to gather student feedback on Workday, driving our advocacy efforts.\n\nNext year, I’m committed to building on these initiatives by continuing to push for meaningful change at the faculty level, while creating events and programs that truly enhance your academic experience at UBC.\n\nKey Focus Areas of My Platform:\n● Informed Advocacy: Using student survey data to guide and amplify advocacy efforts.\n● Expanded Access: Connecting students to more research opportunities and academic resources.\n● Policy Improvement: Strengthening the exam hardship policy and developing a progressive AI-use policy.\n● Better Facilities & Recorded Lectures: Securing 24-hour student access to faculty buildings and pushing for universal recorded lectures.\n\nFor a full breakdown of my campaign, visit https://nickvpacademic.my.canva.site/. I appreciate your consideration!"
-    },
-    {
-        name: "Bardia Mohammadizadeh",
-        courses: "AMS Representative",
-        image: "/images/2025-elections/bardia.png",
-        description: "Hey Science Students! I’m Bardia, studying second-year Neuroscience. For the past two years, I’ve been advocating for Science representation in student government, and I hope to now represent you as your next AMS representative!\n\nI have previously campaigned for various positions within the AMS, such as the SLFS, UBC Senate, and UBC Board of Governors, with the primary goal of addressing the underrepresentation of Science students and standing up for our needs.\n\nWithin AMS council, I will focus on initiatives like more workshops and support for students looking for undergraduate research opportunities and financial aid. Additionally, to combat the $5-6m that is left unused in financial aid every year, I will be advocating for the creation of a brand new easy-to-use financial aid portal, making those resources more accessible to us students.\n\nI run on a platform of transparency and communication. I will post regular updates on AMS Council activities, including summaries and more, accessible for all to see on social media.\n\nI have made sure to make our voices heard, and will continue to do so! Vote Bardia for AMS rep!\n\nFollow me on IG to learn more, @votebardia"
-    },
-    {
-        name: "Pri Cooner",
-        courses: "VP Administration",
-        image: "/images/2025-elections/pri.png",
-        description: "Hey UBC Science! My name is Pri Cooner (He/Him) and I am currently a third-year Neuroscience student. I am super excited to be running to be your next Vice President Administration! As someone who has been involved in SUS previously as a member of the First Year Committee, I feel I have experienced firsthand the great culture that is fostered through many events and programs, helping students garner new connections whilst developing professionally. However, we can do more to strengthen our community and ensure every student has a meaningful and positive experience. As a former Sustainability Chair passionate about environmental justice, I will push for stronger sustainable event planning and greater transparency in code and policy, promoting accessibility and student-driven policy. Additionally, I will work with other portfolios and working groups to make the Abdul Ladha Science Student Centre a space for everyone, for any vibe, whether you want to chill and eat with friends or seriously lock in. I hope you too can join me on this journey to create a fun, inclusive, and hard working community for all!"
     },
     {
         name: "Alan Wei",
@@ -66,25 +46,43 @@ const tutors = [
         image: "/images/2025-elections/anika.png",
         description: "Hey UBC Science! I’m Anika Lee, a third-year neuroscience student, and I’m running to be your next VP Finance! With 3 years of experience in SUS - as First Year Committee Coordinator, Internal Committee Co-Chair and Associate Vice President Internal - I’ve gained a thorough understanding of the importance of an organized, transparent budgeting system to support science students. Following this, I aim to strengthen the finance portfolio by increasing financial literacy, expanding access to grants and making SUS spending transparent.\n\nPlatform Highlights:\n\n● INCREASE FINANCIAL LITERACY: Our education system does not equip us with the financial knowledge needed to survive as adults. I will host frequent workshops and events to help students navigate taxes and budgeting.\n● INCREASE ACCESS TO GRANTS: How much do you know about the grants and bursaries available to you? Through an online metric, I will compile funding resources for science students and increase awareness of both SUS and non-SUS funding opportunities through informative posts and events. I will also ensure grants are distributed fairly and equitably.\n● MAKE SUS SPENDING TRANSPARENT: I’ll implement bi-termly budget updates and spreadsheets breaking down SUS spending to the specific events funds are being used for.\n\nFollow @vote.anikalee to learn more about my plans!"
     },
+    {
+        name: "Bardia Mohammadizadeh",
+        courses: "AMS Representative",
+        image: "/images/2025-elections/bardia.png",
+        description: "Hey Science Students! I’m Bardia, studying second-year Neuroscience. For the past two years, I’ve been advocating for Science representation in student government, and I hope to now represent you as your next AMS representative!\n\nI have previously campaigned for various positions within the AMS, such as the SLFS, UBC Senate, and UBC Board of Governors, with the primary goal of addressing the underrepresentation of Science students and standing up for our needs.\n\nWithin AMS council, I will focus on initiatives like more workshops and support for students looking for undergraduate research opportunities and financial aid. Additionally, to combat the $5-6m that is left unused in financial aid every year, I will be advocating for the creation of a brand new easy-to-use financial aid portal, making those resources more accessible to us students.\n\nI run on a platform of transparency and communication. I will post regular updates on AMS Council activities, including summaries and more, accessible for all to see on social media.\n\nI have made sure to make our voices heard, and will continue to do so! Vote Bardia for AMS rep!\n\nFollow me on IG to learn more, @votebardia"
+    },
+    {
+        name: "Yolanda Yang",
+        courses: "AMS Representative",
+        image: "/images/2025-elections/yolanda.png",
+        description: ""
+    },
 ];
+
 export default function Elections() {
     return (
         <Background>
             <Navbar />
             <Content>
-                <Title>Spring Elections <Span>2025</Span></Title>
+                <Title>Spring Elections Results <Span>2025</Span></Title>
+                <CandidateGrid>
+                    {candidates.map((candidate, index) => (
+                        <CandidateCard key={index}>
+                            <CandidateImage src={candidate.image} alt={candidate.name} />
+                            <CandidateInfo>
+                                <CandidateTitle>{candidate.name}</CandidateTitle>
+                                <CandidatePosition><b>Position:</b> {candidate.courses}</CandidatePosition>
+                                {/* Uncomment below to include descriptions */}
+                                {/* <CandidateDescription>{candidate.description}</CandidateDescription> */}
+                            </CandidateInfo>
+                        </CandidateCard>
+                    ))}
+                </CandidateGrid>
 
-                <p>Hello candidates! Use this page as a one-stop shop for all of your documents this election.</p>
-
-                <ImageContent>
-                <Image src="/images/elections-images/elect1.JPG" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
-                <Image src="/images/elections-images/elect4.JPG" width={350} height={233} style={{ margin: '20px'}}/> 
-                <Image src="/images/elections-images/3.JPG" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
-                </ImageContent>
-
+                {/* The rest of your code for Elections Documentation, links, etc. */}
                 <h1>Elections Documentation</h1>
                 <p>Click the links below to learn more:</p>
-
                 <ul>
                     <li>
                         <strong>
@@ -111,196 +109,13 @@ export default function Elections() {
                     </li>
                 </ul>
                 
-                <h1>Elections Timeline</h1>
-
-                <Timeline>
-                    <TimelineItem>
-                        <Circle />
-                        <TimelineContent>
-                            <Date>Friday, February 14th</Date>
-                            <Time>12:00 AM</Time>
-                            <Description>Nomination submissions open with Qualtrics survey</Description>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <Circle />
-                        <TimelineContent>
-                            <Date>Sunday, March 2nd</Date>
-                            <Time>11:59 PM</Time>
-                            <Description>Deadline for completed nomination submissions</Description>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <Circle />
-                        <TimelineContent>
-                            <Date>Tentative: Wednesday, March 5th</Date>
-                            <Time>[6:00 PM]</Time>
-                            <Description>MANDATORY All Candidates Meeting (via Zoom)</Description>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <Circle />
-                        <TimelineContent>
-                            <Date>Sunday, March 8th</Date>
-                            <Time>11:59 PM</Time>
-                            <Description>Deadline for headshot/blurb submissions</Description>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <Circle />
-                        <TimelineContent>
-                            <Date>Monday, March 10th</Date>
-                            <Time>12:00 AM</Time>
-                            <Description>Campaigning Begins</Description>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <Circle />
-                        <TimelineContent>
-                            <Date>Thursday, March 13th</Date>
-                            <Time>[12 PM - 6 PM]</Time>
-                            <Description>All Candidates Forum</Description>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <Circle />
-                        <TimelineContent>
-                            <Date>Monday, March 17th</Date>
-                            <Time>12:00 AM</Time>
-                            <Description>Voting opens (https://amsvoting.as.it.ubc.ca)</Description>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <Circle />
-                        <TimelineContent>
-                            <Date>Wednesday, March 26th</Date>
-                            <Time>11:59 PM</Time>
-                            <Description>Campaign ends AND voting closes</Description>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <Circle />
-                        <TimelineContent>
-                            <Date>Tentative: Friday, March 28th</Date>
-                            <Time>[Time TBD]</Time>
-                            <Description>Elections Viewing Party</Description>
-                        </TimelineContent>
-                    </TimelineItem>
-                </Timeline>
-
-                <h1>Voting</h1>
-                <h3><Span>Voting instructions</Span></h3>
-                <p>To vote, click the login button after clicking the link and login with your CWL. The ballot will appear as the top item under “Current Ballots” and click “Vote now!” To cast your ballot. Note you are only able to vote for candidates that apply to you (eg you can only vote for candidates that represent the current major you’re in, or if you’re in First Year, you will only be able to vote for First Year Reps and not the specialization reps. This does not apply to the role of AMS representative).</p>
-
-                <ButtonHollowBlack><Link href="https://ams.simplyvoting.com/">Vote Here</Link></ButtonHollowBlack>
-
-                <HalfBreak></HalfBreak>
-                <HalfBreak></HalfBreak>
                 <h1>Candidates Descriptions</h1>
-
-                {tutors.map((tutor, index) => (
-                        <ExecutiveCard key={index}>
-                            <ExecutiveImage src={tutor.image} alt={tutor.name} />
-                            <ExecutiveTextContainer>
-                                <ExecutiveTitle>{tutor.name}</ExecutiveTitle>
-                                <ExecutiveName><b>Position:</b> {tutor.courses}</ExecutiveName>
-                                <ExecutiveDescription>{tutor.description}</ExecutiveDescription>
-                            </ExecutiveTextContainer>
-                        </ExecutiveCard>
-                    ))}
-                {/* <p>See information in this <a href="https://suselections.carrd.co/">link</a></p> */}
-            
-                <p>The SUS Elections are independently administered by the Elections Administrators. For any questions regarding the Spring 2025 Elections, contact them at <a href="mailto:elections@sus.ubc.ca">elections@sus.ubc.ca</a>
-</p>
+                <p>The SUS Elections are independently administered by the Elections Administrators. For any questions regarding the Spring 2025 Elections, contact them at <a href="mailto:elections@sus.ubc.ca">elections@sus.ubc.ca</a></p>
             </Content>
             <Footer />
         </Background>
-    )
+    );
 }
-
-const ExecutiveCard = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  gap: 60px;
-  margin-bottom: 40px;
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  @media (max-width: 768px) {
-    height: auto;  // Set height to auto for smaller screens
-    padding: 20px; // Add some padding to space things out a bit on small screens
-    flex-direction: column;  // Stack the image and text vertically
-    gap: 20px; // Adjust space between image and text on small screens
-  }
-`;
-
-const ExecutiveTextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 55%; 
-
-  @media (max-width: 768px) {
-    width: 100%; 
-    margin-bottom: 50px;
-  }
-`;
-
-const ExecutiveImage = styled.img`
-  overflow: hidden;
-  border-radius: 50%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  width: 200px;
-  height: 200px;
-
-  @media (max-width: 768px) {
-    width: 150px;
-    height: 150px;
-  }
-`;
-
-
-const ExecutiveTitle = styled.div`
-  font-size: 30px;
-  font-weight: bold;
-  color: #001961;
-`;
-
-const ExecutiveName = styled.div`
-  font-size: 16px;
-`;
-
-const ExecutiveDescription = styled.p`
-  font-size: 15px;  
-  margin-top: 10px;
-  white-space: pre-line;  // This will handle newlines
-`;
-
-const HalfBreak = styled.div`
-    height: 0.5em; /* Adjust the height to your desired size */
-    margin: 0; /* Remove any default margins */
-`;
-
-const Title = styled.div`
-    font-size: 35px;
-    font-weight: 700;
-`
-
-const ImageContent = styled.div`
-  font-size: 35px;
-  font-weight: 700;
-  align-self: center;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 25px; 
-`
 
 const Background = styled.div`
     background-size: cover;
@@ -309,16 +124,22 @@ const Background = styled.div`
     align-items: center;
     justify-content: center;
     text-align: center;
-`
+`;
 
 const Content = styled.div`
-  flex: 1;
-  align-items: flex-start;
-  justify-content: flex-start;
-  text-align: left;
-  padding: 200px 10px 20px;
-  width: 100%;
-  max-width: 1200px;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 200px 10px 20px;
+    width: 100%;
+    max-width: 1200px;
+`;
+
+const Title = styled.div`
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 3rem;
 `;
 
 const Span = styled.a`
@@ -327,85 +148,63 @@ const Span = styled.a`
     text-decoration: none;
 `;
 
-const Timeline = styled.div`
-    position: relative;
-    padding: 0px 0;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 800px;
-
-    &:before {
-        content: '';
-        position: absolute;
-        left: 0%;
-        top: 0;
-        height: 100%;
-        border-left: 2px solid #001961;
-        transform: translateX(-50%);
-    }
+// New Grid Container for candidate cards
+const CandidateGrid = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 3rem;
 `;
 
-const TimelineItem = styled.div`
-    position: relative;
-    padding: 20px 0;
+// Updated candidate card styling for grid display
+const CandidateCard = styled.div`
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
     
-    &:not(:last-child) {
-        margin-bottom: 0px;
+    &:hover {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
     }
 `;
 
-const Circle = styled.div`
-    position: absolute;
-    left: -10px;
-    width: 20px;
-    height: 20px;
-    background-color: #001961;
+const CandidateImage = styled.img`
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    z-index: 1;
+    object-fit: cover;
+    margin-bottom: 20px;
 `;
 
-const TimelineContent = styled.div`
-    margin-left: 40px;
-    width: calc(100% - 40px);
+const CandidateInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 `;
 
-const Date = styled.div`
-    font-size: 18px;
+const CandidateTitle = styled.div`
+    font-size: 24px;
     font-weight: bold;
-    color: #222755;
+    color: #001961;
+    margin-bottom: 10px;
 `;
 
-const Time = styled.div`
+const CandidatePosition = styled.div`
     font-size: 16px;
-    color: #555;
+    margin-bottom: 10px;
 `;
 
-const Description = styled.div`
-    margin-top: 5px;
-    font-size: 16px;
-    color: #333;
+const CandidateDescription = styled.p`
+    font-size: 15px;
+    white-space: pre-line;
 `;
 
-const ButtonHollowBlack = styled.button`
-  background-color: transparent;
-  color: #222755;
-  padding: 15px 35px;
-  border-radius: 30px;
-  border: 1px solid #222755;
-  cursor: pointer;
-  font-size: 0.8rem;
-  font-weight: 600;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-
-  &:hover {
-    color: #0052FF;
-    border: 1px solid #0052FF;
-  }
+const HalfBreak = styled.div`
+    height: 0.5em;
+    margin: 0;
 `;
-
-const Link = styled.a`
-  text-decoration: none;
-  color: inherit;
-`
