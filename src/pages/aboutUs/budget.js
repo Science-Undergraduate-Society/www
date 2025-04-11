@@ -16,6 +16,9 @@ export default function Alssc() {
                         <ButtonHollowBlack>
                             <Link href="https://docs.google.com/spreadsheets/d/1wG0j87hcq3qMozuOmajBFcDe5VX3q59m-PKoudzG2Gg/edit?usp=sharing">2024/2025 Budget</Link>    
                         </ButtonHollowBlack>
+                        <ButtonHollowBlack>
+                            <Link href="https://docs.google.com/spreadsheets/d/1mTV5qEMztb5FDoOYDqMI97Zs_CXli-7742ceRT7fyuI/edit?usp=sharing">Itemized Spending Spreadsheet ‘24/’25</Link>    
+                        </ButtonHollowBlack>
                     </ButtonGroup>
 
                     <Divider/>
@@ -48,6 +51,11 @@ export default function Alssc() {
                         </ButtonHollowBlack>
                     </ButtonGroup>
 
+                    <ButtonGroup>
+                        <ButtonHollow>
+                            <Link href="https://drive.google.com/open?id=1XYdHZ77qgEBapMH3RTNnyPMc75X-TVE_">AGM Budget Updates ‘24/’25</Link>    
+                        </ButtonHollow>
+                    </ButtonGroup>
                     <Divider/>
 
                     <Title>SUS BUDGET FEEDBACK FORM</Title>
