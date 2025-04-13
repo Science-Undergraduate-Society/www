@@ -27,7 +27,7 @@ yarn dev
 | Code & Procedures | /aboutUs/codeProcedures | SUS Code & Procedures |
 | Executives | /aboutUs/executives | Executives (VP + Prez) information | 
 | Meeting Minutes | /aboutUs/meetingMinutes | Meeting Minutes for Current Year |
-| Office Hours | /aboutUs/officeHours | Elected Executives and Building Manager Hours |
+| Office Hours | /aboutUs/officeHours | Elected Executives and Building Manager Hours | 
 | Past Events | /ourEvents/past | Past Events |
 | Upcoming Events | /ourEvents/upcoming | Upcoming Events |
 | About Abdul Ladha | /scienceStudentCentre/abdulLadha | About Abdul Ladha |
