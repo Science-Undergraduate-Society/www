@@ -8,21 +8,32 @@ export default function JoinSus() {
         <Navbar/>
         <Background>
             <Content>
-                <JoinTitle>Apply <Span>To Join Today!</Span></JoinTitle>
-                <ImageContent>
-                <Image src="/images/apply-images/apply3.JPG" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
-                <Image src="/images/apply-images/apply.jpg" width={350} height={233} style={{ margin: '20px'}}/> 
-                <Image src="/images/apply-images/apply4.JPG" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
-                </ImageContent>
+                <JoinTitle>SUS Summer 2025 Hiring is Open!</JoinTitle>
+                {/* <ImageContent>
+                  <Image src="/images/apply-images/apply3.JPG" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                  <Image src="/images/apply-images/apply.jpg" width={350} height={233} style={{ margin: '20px'}}/> 
+                  <Image src="/images/apply-images/apply4.JPG" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                </ImageContent> */}
                 <h1>Join the <Span>Society</Span></h1>
+                <h3>Apply today on UBC <a href="https://ubc-csm.symplicity.com/">CareerOnline!</a></h3>
                 <p>
-                 Click <a href="https://docs.google.com/document/d/1ca6Tsa4BK0e6NhS5Yq7xsYRVf0EBEm-49FTIC740XNg/edit" target="_blank" rel="noopener noreferrer">here</a> to learn about all the portfolios, committees, and positions!
+                  Click <a href="https://docs.google.com/document/d/1x5a8yTuR2oakSCWZM-cklZ0uwkt2foglk88KW5d1Zc0/edit?tab=t.0" target="_blank" rel="noopener noreferrer">here</a> to learn about all the portfolios, committees, and positions!
                 </p>
+
+                <HiringTimelineList>
+                  <h3>Hiring Timeline:</h3>
+                  <div>(1) Applications Open: May 15, 2025 00:00 PDT</div>
+                  <div>(2) Applications Close: May 24, 2025 23:59 PDT</div>
+                  <div>(3) Interview Offers: May 28, 2025</div>
+                  <div>(4) Interview Period: May 29, 2025 - June 5, 2025</div>
+                  <div>(5) Position Offers: June 11, 2025</div>
+                </HiringTimelineList>
+
                 <EventCardsContainer>
                 <EventCard>
                   <Image src="/images/apply-images/summer.JPG" alt="Description" width={500} height={300} />
                   <h3>Summer Hiring</h3>
-                  <p>Hiring is on going and applications are due May 23rd, 2024 at 11:59 PM. Click on &quot;More Info&quot; for a list of available positions as well as its corresponding CareerOnline links. Head to the Facebook event and Instagram post for further information and all the positions available.</p>
+                  <p>The UBC Science Undergraduate Society encourages Science students from all abilities, experiences, and backgrounds to apply. We are committed to fair and equitable hiring processes. No experience in SUS is required! Fresh perspectives are encouraged and highly welcome.</p>
                   
                   <p>Assistant to Vice-presidents, Committee chairs, and General Committee positions are hired in the summer, in mid to late May. Positions are posted on CareersOnline, so keep your eyes peeled around May! We also usually have a Facebook event and Instagram post that has all positions available, so look out for an event that is typically named “SUS Executive Hiring 20XX [Summer]”. No prior experience is needed, but a cover letter and resume are. </p>
                   <Span href="https://docs.google.com/document/d/1ca6Tsa4BK0e6NhS5Yq7xsYRVf0EBEm-49FTIC740XNg/edit?usp=sharing">More Info &gt;</Span>
@@ -99,6 +110,14 @@ export default function JoinSus() {
         </>
     )
 }
+
+
+const HiringTimelineList = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+`
 
 const Title = styled.div`
     color: black;

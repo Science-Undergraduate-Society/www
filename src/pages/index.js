@@ -5,7 +5,6 @@ import Footer from "@/components/index-components/Footer";
 import {
   faSpotify,
   faYoutube,
-  faFacebook,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -54,10 +53,9 @@ export default function Home() {
             <p>
               <em>~est. 1961~</em>
             </p>
-            {/* <ButtonGroup>
-              <ButtonFilledWhite>Who We Are</ButtonFilledWhite>
-              <ButtonHollowWhite>Events Calendar</ButtonHollowWhite>
-            </ButtonGroup> */}
+              <ButtonHollowWhite>
+                <Link href="/joinSus/apply">Summer 2025 Hiring is Open!</Link>
+              </ButtonHollowWhite>
           </HeroText>
         </Hero>
 
@@ -387,22 +385,23 @@ const Content = styled.div`
 //   }
 // `;
 
-// const ButtonHollowWhite = styled.button`
-//   background-color: transparent;
-//   color: white;
-//   padding: 15px 20px;
-//   border-radius: 30px;
-//   border: 1px solid white;
-//   cursor: pointer;
-//   font-size: 0.8rem;
-//   font-weight: 600;
-//   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+const ButtonHollowWhite = styled.button`
+  background-color: transparent;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  margin-top: 30px;
 
-//   &:hover {
-//     background-color: white;
-//     color: #222755;
-//   }
-// `;
+  &:hover {
+    background-color: white;
+    color: #222755;
+  }
+`;
 
 // const ButtonGroup = styled.div`
 //   margin-top: 1.5rem;
