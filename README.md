@@ -21,7 +21,6 @@ yarn dev
 | --------- | -------|------| 
 | Home  | /  | Home/landing page |
 | Apply | /joinSus/apply | Application Info |
-| Elections | /joinSus/elections | Spring and Fall Election Info |
 | Budget | /aboutUs/budget | Budget Info |
 | Clubs | /aboutUs/clubs | Club Info |
 | Code & Procedures | /aboutUs/codeProcedures | SUS Code & Procedures |
