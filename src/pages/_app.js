@@ -1,7 +1,27 @@
 import '../styles/globals.css'; // Import the global CSS file
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
+import Script from 'next/script';
+
+const GA_ID = 'G-FM5Z3YL0EX';
 
 export default function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      if (window.gtag) {
+        window.gtag('config', GA_ID, {
+          page_path: url,
+        });
+      }
+    };
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => router.events.off('routeChangeComplete', handleRouteChange);
+  }, [router.events]);
+
   return (
     <>
       <Head>
@@ -75,6 +95,26 @@ export default function MyApp({ Component, pageProps }) {
         }`}
         </script>
       </Head>
+      
+      {/* Load gtag.js asynchronously */}
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+      />
+
+      {/* Initialize gtag */}
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `,
+        }}
+      />
       <Component {...pageProps} />
     </>
   );
