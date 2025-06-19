@@ -8,26 +8,23 @@ export default function JoinSus() {
         <Navbar/>
         <Background>
             <Content>
-                <JoinTitle>SUS Summer 2025 Hiring is Open!</JoinTitle>
-                {/* <ImageContent>
-                  <Image src="/images/apply-images/apply3.JPG" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
-                  <Image src="/images/apply-images/apply.jpg" width={350} height={233} style={{ margin: '20px'}}/> 
-                  <Image src="/images/apply-images/apply4.JPG" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
-                </ImageContent> */}
+                <JoinTitle>Summer 2025 hiring is closed!</JoinTitle>
+                <h3>Thank you to everyone who applied this summer! If you missed this round, stay tuned—more opportunities will open during Fall 2025 hiring!.</h3>
                 <h1>Join the <Span>Society</Span></h1>
-                <h3>Apply today on UBC <a href="https://ubc-csm.symplicity.com/">CareerOnline!</a></h3>
+
+                {/* <h3>Apply today on UBC <a href="https://ubc-csm.symplicity.com/">CareerOnline!</a></h3>
                 <p>
                   Click <a href="https://docs.google.com/document/d/1x5a8yTuR2oakSCWZM-cklZ0uwkt2foglk88KW5d1Zc0/edit?tab=t.0" target="_blank" rel="noopener noreferrer">here</a> to learn about all the portfolios, committees, and positions!
-                </p>
+                </p> */}
 
-                <HiringTimelineList>
+                {/* <HiringTimelineList>
                   <h3>Hiring Timeline:</h3>
                   <div>(1) Applications Open: May 15, 2025 00:00 PDT</div>
                   <div>(2) Applications Close: May 24, 2025 23:59 PDT</div>
                   <div>(3) Interview Offers: May 28, 2025</div>
                   <div>(4) Interview Period: May 29, 2025 - June 5, 2025</div>
                   <div>(5) Position Offers: June 11, 2025</div>
-                </HiringTimelineList>
+                </HiringTimelineList> */}
 
                 <EventCardsContainer>
                 <EventCard>

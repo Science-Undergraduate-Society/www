@@ -53,9 +53,9 @@ export default function Home() {
             <p>
               <em>~est. 1961~</em>
             </p>
-              <ButtonHollowWhite>
+              {/* <ButtonHollowWhite>
                 <Link href="/joinSus/apply">Summer 2025 Hiring is Open!</Link>
-              </ButtonHollowWhite>
+              </ButtonHollowWhite> */}
           </HeroText>
         </Hero>
 
@@ -750,18 +750,19 @@ const EventCard = styled.div`
 
 const LandAcknowledgement = styled.div`
   width: 100%;
-  background-color: #204569;
-  color: white;
+  color: black;
   text-align: center;
-  margin-top: 10rem;
   padding: 100px 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: white;
+  margin-top: 6rem;
 `;
 
 const LandAckTitle = styled.h1`
+
 `
 
 // =============== CLUBS COLLAGE =============== //
