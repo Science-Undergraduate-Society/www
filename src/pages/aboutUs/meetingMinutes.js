@@ -297,7 +297,7 @@ export default function MeetingMinutes() {
           <p>
             The meeting minutes are being updated periodically, click&nbsp;
             <Link
-              href="https://drive.google.com/drive/folders/1jw4LXwj2FEeMkmXGjA96YG99n_yPsJjS"
+              href="https://drive.google.com/drive/folders/1-PVBSWfZlZPP7NPNQT3oZn8dIP7jsXa1"
               passHref
             >
               here
@@ -316,7 +316,7 @@ export default function MeetingMinutes() {
           <p>
             The meeting minutes are being updated periodically, click&nbsp;
             <Link
-              href="https://drive.google.com/drive/folders/1HK903ukA3FExwNjzvZU6oV9GcpxKJKCD"
+              href="https://drive.google.com/drive/folders/1lJJ4gWDYDzz1B4FDpwPFL5Jo10TjwFKR"
               passHref
             >
               here
