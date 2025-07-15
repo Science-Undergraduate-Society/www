@@ -105,13 +105,12 @@ export default function Home() {
         </LandAcknowledgement>
 
         {/* Events Section */}
-        <Events>
+        {/* <Events>
           <EventsTopSection>
             <EventsTitle>
               Check out our <Span href="/ourEvents/events">upcoming events</Span> hosted
               by the <br /> Science Undergraduate Society
             </EventsTitle>
-            {/* <Arrow src="images/index-images/(scroll).svg" /> */}
           </EventsTopSection>
 
           <Collage>
@@ -157,7 +156,7 @@ export default function Home() {
           <ProgressBarContainer>
             <ProgressBar $progress={scrollProgress}></ProgressBar>
           </ProgressBarContainer>
-        </Events>
+        </Events> */}
 
         {/* Clubs Collage */}
         <ClubsCollageWrapper>
@@ -757,8 +756,8 @@ const LandAcknowledgement = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
-  margin-top: 6rem;
+  // background-color: white;
+  margin-top: 4rem;
 `;
 
 const LandAckTitle = styled.h1`
@@ -768,15 +767,17 @@ const LandAckTitle = styled.h1`
 // =============== CLUBS COLLAGE =============== //
 
 const ClubsCollageWrapper = styled.div`
-  width: 100%;
-  background-color: #222755;
+  width: 95%;
+  background-color: rgba(34, 39, 85, 0.8);;
   margin: 50px 0;
   margin-bottom: 8rem;
-  padding: 40px 0;
+  padding: 30px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 `;
 
 const ClubsCollageContent = styled.div`
@@ -802,10 +803,13 @@ const Club = styled.div`
 `;
 
 const ClubImage = styled.img`
-  width: 50px;
+  padding: 5px;
+  width: 45px;
   height: auto;
   object-fit: cover;
   background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 `;
 
 // =============== HOW TO GET INVOLVED =============== //
@@ -817,7 +821,7 @@ const InvolvementContainer = styled.div`
   gap: 50px;
   padding: 50px;
 
-  background-image: url("/images/index-images/get-involved-background.svg");
+  // background-image: url("/images/index-images/get-involved-background.svg");
   background-size: 100% auto; /* 100% width, auto height */
   background-position: center;
   background-repeat: no-repeat;
@@ -876,6 +880,7 @@ const Alssc = styled.div`
   justify-content: center;
   gap: 4rem;
   width: 90%;
+  max-width: 1100px;
 
   @media (max-width: 700px) {
     flex-direction: column;
@@ -890,6 +895,7 @@ const AlsscContent = styled.div`
   text-align: right;
   width: 60%;
   height: 100%;
+
   @media (max-width: 700px) {
     text-align: center;
   }
@@ -901,6 +907,7 @@ const Podcast = styled.div`
   justify-content: center;
   gap: 4rem;
   width: 90%;
+  max-width: 1100px;
 
   @media (max-width: 700px) {
     flex-direction: column;
@@ -921,7 +928,7 @@ const PodcastContent = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   margin-bottom: 1.3rem;
 
@@ -932,7 +939,7 @@ const Title = styled.div`
 
 const Description = styled.div`
   margin-bottom: 1.3rem;
-  font-size: 20px;
+  font-size: 17px;
   color: #333333 @media (max-width: 700px) {
     text-align: center;
   }
@@ -977,7 +984,7 @@ const ShopSection = styled.div`
 
   background-color: white;
   width: 90%;
-  max-width: 1400px;
+  max-width: 1000px;
   border-radius: 8px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 
