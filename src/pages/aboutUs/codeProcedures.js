@@ -13,7 +13,7 @@ export default function Alssc() {
             The following document outlines how the SUS is organized, how the student fees are used, how decisions are made on behalf of Science Students and the responsibilities of elected officials.
           </HeaderDescription>
           <HeaderDescription>
-            Last Revised: January 11, 2025
+            Last Revised: February 12, 2025
           </HeaderDescription>
           <ButtonGroup>
             <ButtonHollowBlack>
@@ -24,9 +24,9 @@ export default function Alssc() {
           <Divider/>
 
           <Title>INQUIRIES OR CONCERNS?</Title>
-          <ExecutiveImage src="/images/executive-images/Thomas-McIlwraith.webp" />
+          <ExecutiveImage src="/images/executive-images/alan-wei.jpg" />
           <HeaderDescription>
-            Contact our VP Admin <b>Thomas McIlwraith</b>, at <a href="mailto:vpadministration@sus.ubc.ca">vpadministration@sus.ubc.ca</a>.
+            Contact our VP Admin <b>Alan Wei</b>, at <a href="mailto:vpadministration@sus.ubc.ca">vpadministration@sus.ubc.ca</a>.
           </HeaderDescription>
         </Header>
 
