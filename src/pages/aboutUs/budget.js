@@ -76,8 +76,6 @@ export default function Alssc() {
                       Contact our VP Finance <b>Chloe Chan</b> at <a href="mailto:vpfinance@sus.ubc.ca">vpfinance@sus.ubc.ca</a>.
                     </HeaderDescription>
                 </Header>
-
-
                 <Footer/>
             </Content>
         </>

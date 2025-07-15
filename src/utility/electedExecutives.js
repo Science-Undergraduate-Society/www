@@ -1,119 +1,104 @@
 export const executiveInfo = [
-  {
-    name: "Kaitlin Law",
+    {
+    name: "Rachel Dong",
     role: "President",
-    imagePath: "/images/executive-images/Kaitlin-Law.webp",
-    description: `Hello UBC Science! My name is Kaitlin (she/her) and I’m a 5th year in Biotechnology! I am honoured to serve as your 2024-2025 Science Undergraduate Society (SUS) 
-      President. As SUS President, I focus on supporting the executive team with their specific portfolios, 
-      chair the SUS Executive Committee, and oversee the Projects, EDI and HR Working Groups. I am also tasked with thinking about the big picture for SUS and guiding our overall efforts at various levels of the university. 
-      I hope to best represent our diverse Science students this year through events, advocacy, and change! \n \n If you are interested in learning more about SUS, 
-      have any ideas or suggestions, or would like to set up a coffee chat, please feel free to contact me via email at president@sus.ubc.ca.`,
+    imagePath: "/images/executive-images/rachel-dong.png",
+    description: `Hi UBC Science! My name is Rachel (she/her) and I’m a 4th year majoring in Integrated Sciences! I am honoured to serve as your 2025-2026 Science Undergraduate Society (SUS) President. 
+    \nAs President, my role is to support the executive team with their portfolios, chair the SUS Executive Committee, and oversee the EDI, Elections, and HR Working Groups. I also coordinate advocacy at the Faculty level and guide the overall efforts of SUS. This year, I hope to best represent our diverse Science students through meaningful events, resources, and advocacy!
+    \nIf you are interested in learning more about SUS, have any ideas or suggestions, or would like to set up a coffee chat, please feel free to contact me via email at president@sus.ubc.ca.
+`,
     email: "president@sus.ubc.ca",
     link: "",
   },
   {
-    name: "Thomas McIlwraith",
+    name: "Alan Wei",
     role: "VP Administration",
-    imagePath: "/images/executive-images/Thomas-McIlwraith.webp",
-    description: `Hey UBC Science! I’m Thomas, I’m in my 3rd year of Environmental Sciences, and I am so excited and honoured to be your VP Administration for this year! The admin portfolio helps run lots of behind-the-scenes work in SUS, including managing the Abdul Ladha Science Student Centre (ALSSC), organizing SUS documents and meeting minutes, promoting sustainability,
-      and supporting SUS Clubs. \n\nIf you have any questions, suggestions, or thoughts about anything above, including how to become a SUS club, SUS governance documents, meeting minutes, ideas for the ALSSC, sustainability initiatives, or anything else within the portfolio, please don’t hesitate to reach out! You can contact me at vpadministration@sus.ubc.ca.`,
+    imagePath: "/images/executive-images/alan-wei.jpg",
+    description: `Hi UBC Science! My name is Alan Wei, and I’m a 3rd year Integrated Sciences student. I am honored to serve as VP Administration for the 2025/26 academic year! 
+    \nAs part of the Administration portfolio, I take on supporting building management (ALSSC), SUS Clubs, governance documents and our SUStainability committee. I also organize SUS’ meeting minutes, transition reports and bookings. This year, I hope to maximize resources provided to students for organizational clarity and assistance!
+    \nIf you have any questions or suggestions about these aspects of SUS, feel free to reach out via email at vpadministration@sus.ubc.ca!
+
+`,
     email: "vpadministration@sus.ubc.ca",
     link: "",
   },
   {
-    name: "Christianah Soneye",
-    role: "VP Academic",
-    imagePath: "/images/executive-images/Christianah-Soneye.jpg",
-    description: `Hi UBC Science! My name is Christianah Soneye (she/her), and I’m a fifth-year Integrated Science student (Human Physiology & Public Health). I am honoured to serve as your 2023-2024 Science Undergraduate Society (SUS) Vice-President Academic.
-    \nAs the SUS VP Academic, I am here to help ensure that you get the most out of your time here at UBC Science by enhancing your academic experience, offering mentorship opportunities, and promoting physical and mental wellness outside of the lecture hall. I also have the privilege of representing you at the Faculty level, advocating for your concerns, sharing the student perspective, and supporting accessibility and inclusion on the Skylight Development Grants, Teaching and Learning Enhancement Fund (TLEF), Science Curriculum, Dean Advisory and Killam Teaching Awards Committees.
-    \nIf you have any concerns about your academic experiences, suggestions for points of advocacy at the Faculty level, or thoughts on how SUS could further support your academic, physical and mental wellbeing, please feel free to reach out to me via email at vpacademic@sus.ubc.ca.`,
+    name: "Anika Lee",
+    role: "Interim VP Academic",
+    imagePath: "/images/executive-images/anika-lee.png",
+    description: `Hey UBC Science! I’m Anika Lee, a 4th-year Neuroscience Student, and I’m excited to be your interim VP Academic for SUS!
+    \nWithin the Academic Portfolio, my responsibility is to support the Wellness, Academic Experience, SUS Tutoring and Mentorship committees. I am also excited to advocate for the academic needs of Science Students in university-wide and faculty-level committees such as the AMS Academic Caucus and the Dean’s Advisory Committee.
+    \nI welcome any suggestions or feedback regarding SUS Academic and the resources/events we provide. Have any concerns about your academic experience at UBC as a science student? Contact me at vpacademic@sus.ubc.ca!`,
     email: "vpacademic@sus.ubc.ca",
     link: "",
   },
   {
-    name: "Insha Majeed",
+    name: "Carmen Choo",
     role: "VP Communications",
-    imagePath: "/images/executive-images/Insha-Majeed.webp",
-    description: `Hi UBC Science! My name is Insha Majeed (she/her), and I am a third year in Microbiology and Immunology. It is both an honour and a privilege to serve you as your VP Communications for the 2024/25 school year! As VP Communications, I oversee and support the following working groups: Marketing, Productions, Sales, Visual media, First Week and Webmasters.
-      \nTogether with my team, I strive to ensure that SUS has an impactful and inclusive presence across all communication platforms. Our goal is to provide you with relevant information promptly, fostering a culture of accessibility, creativity, and engagement within the science student body.
-      \nIf you have any questions about the communications portfolio, including event marketing, videography/photography, or ideas for SUS social media platforms and the website, feel free to reach out to me at vpcommunications@sus.ubc.ca. I’m here to help!
-      `,
+    imagePath: "/images/executive-images/carmen-choo.png",
+    description: `Hi UBC Science! My name is Carmen Choo (she/her), and I’m a 5th year Biochemistry student. I’m thrilled to be serving as your VP Communications this year!
+    \nI have the incredible opportunity to support our talented teams across Marketing, Web Developing, Productions, Sales, and First Week Events. Together, we’re committed to keeping SUS connected, creative, and accessible– to ensure you’re informed and inspired to get involved! 
+    \nIf you want to share a new idea, highlight an initiative to the UBC Science community, or chat about Hackathon, feel free to reach out to me at vpcommunications@sus.ubc.ca!`,
     email: "vpcommunications@sus.ubc.ca",
     link: "",
   },
   {
-    name: "Rachel Dong",
+    name: "Catherine Jiang",
     role: "VP External",
-    imagePath: "/images/executive-images/Rachel-Dong.webp",
-    description: ` Hi UBC Science! My name is Rachel (she/her) and I’m a 3rd year majoring in Integrated Sciences! I am honoured to serve as your 2024-2025 Science Undergraduate Society (SUS) Vice President External. 
-    \nAs VP External, I oversee and support the following working groups: Careers & Professional Development, Community Engagement, Corporate Relations, and Student Benefits. Our portfolio collaborates with external organizations to connect science students to career development and volunteer opportunities, raise awareness of humanitarian causes, obtain sponsorships for SUS portfolios, and provide discounts through the Blue Card program.  
-    \nIf you are interested in learning more about the External Portfolio, have any ideas or suggestions, or would like to partner with SUS, please feel free to contact me at vpexternal@sus.ubc.ca. 
-    `,
+    imagePath: "/images/executive-images/catherine-jiang.jpg",
+    description: `Hi UBC Science! My name is Catherine Jiang (she/her), and I am a 3rd year student in the Integrated Sciences program. 
+    I’m excited to support a range of initiatives under the External portfolio, including working groups in Careers and Professional Development, Community Engagement, Sponsorships, and the Science Student Recognition Awards Night. From the annual Career Conference Ignite, the SUS Pantry and the SUS Blue Card program, I am super passionate about expanding resource availability and accessibility for the Science student body while fostering a strong and supportive community. 
+    \nI welcome your input and any suggestions/feedback you have for the External portfolio. Feel free to reach out at vpexternal@sus.ubc.ca!`,
     email: "vpexternal@sus.ubc.ca",
     link: "",
   },
   {
-    name: "Chloe Chan",
+    name: "Anika Lee",
     role: "VP Finance",
-    imagePath: "/images/executive-images/Chloe-Chan.webp",
-    description: `Hi UBC Science! My name is Chloe Chan (she/her) and I am a fifth year Biotechnology student. I am super excited to be serving as your VP Finance for the upcoming year! 
-    \nThe Finance Portfolio provides financial support to a variety of students and clubs across campus. This year, I’m hoping to bring the Finance portfolio closer to the students by holding some financial literacy events, as well as by increasing budget transparency. I also hope to increase grant accessibility by holding grant application writing workshops, so make sure to keep your eyes peeled for updates on our socials!
-    \nIf you have any questions or concerns, or if you have any ideas for some financial literacy workshops, or even if you just wanna chat — please feel free to reach out to me via vpfinance@sus.ubc.ca!
-     `,
+    imagePath: "/images/executive-images/anika-lee.png",
+    description: `Hey UBC Science! I’m Anika Lee, a fourth-year Neuroscience Student and your VP Finance for SUS.
+    \nThis year, I aim to connect science students with accessible financial resources, organize high-impact financial literacy events in collaboration with professionals and experts, and increase transparency regarding the allocation of funds for science students.
+    \nFeel free to contact me at vpfinance@sus.ubc.ca if you have any questions, ideas for the portfolio, or if you just want to chat about finances in general! I’d love to hear your suggestions.`,
     email: "vpfinance@sus.ubc.ca",
     link: "",
   },
   {
-    name: "Chloe Chang",
-    role: "VP Internal",
-    imagePath: "/images/executive-images/Chloe-Chang.webp",
-    description: `Hey UBC Science! My name is Chloe Chang (she/her) and I am a 3rd-year Integrated Science student specializing in Immunology, Public Health, and Environmental Sciences. I am honored to be serving as your Vice President Internal for this academic year. The Internal Portfolio relates to anything and everything that concerns the inner workings of SUS and here are the following committees within the portfolio: Internal Committee, Elections Administration, First Year Committee and Science Student Recognition Awards.
-    \nWith the help of my team, I plan to improve community engagement, expand the impact of the Science Student Recognition Awards Night and improve inter and intra-portfolio relations. I hope that student’s feel welcomed and appreciated when they join the team or get involved with SUS.
-    \nIf you want to learn more about running for Elections or have general questions about SUS, feel free to contact me via email (vpinternal@sus.ubc.ca).
-    `,
-    email: "vpinternal@sus.ubc.ca",
-    link: "",
-  },
-  {
-    name: "Sarveen Sohi",
+    name: "Jenevieve Lee",
     role: "VP Student Life",
-    imagePath: "/images/executive-images/Sarveen-Sohi.webp",
-    description: `Hello UBC Science! I am Savreen Sohi (she/her) and I am currently a fifth-year Integrated Science student. I am excited to be your VP Student Life for the 2024/2025 school year!
-    \nThe Student Life Portfolio is responsible for flagship events such as Science RXN, Science Week, and Science Celebration (formerly known as Science Graduation), as well as the Social and Sports Working Group events throughout the school year. The Student Life Portfolio aims to plan and execute events that get the student body excited to participate and are inclusive towards everyone.
-    \nFeel free to reach out to me at vpstudentlife@sus.ubc.ca to share event ideas, to learn more about SUS and Student Life, or answer any questions you may have!
-    `,
+    imagePath: "/images/executive-images/jenevieve-lee.png",
+    description: `Hi UBC Science! I’m Jenevieve Lee, a fourth year Biology Student and the VP Student Life for SUS this year!
+    \nThe Student Life Portfolio is responsible for flagship events such as Science RXN, Science Week, and Science Celebration, as well as the Social, Sports, and First Year Committee events held throughout the school year. We aim to maximize student engagement through planning and executing events that are both FUN and INCLUSIVE for Science students. 
+    \nContact me at vpstudentlife@sus.ubc.ca anytime to share event ideas, provide event feedback, or to learn more about the Student Life Portfolio and SUS!`,
     email: "vpstudentlife@sus.ubc.ca",
     link: "",
   },
   {
-    name: "Salva Sherif",
+    name: "Alex Chui",
     role: "Science Senator",
-    imagePath: "/images/executive-images/Salva-Sherif.webp",
-    description: `Hey! I’m Salva, your Science Senator for the year. I’m super excited to represent our amazing Science community at UBC! My mission is to make UBC Senate and our university’s general academic direction more representative of what students in our Faculty need. Whether you’re facing academic policy-related challenges or have specific priorities you would like me to advocate for, I’m here to help. Let’s work together to make this year incredible.
-    \nFeel free to reach out anytime at senator@sus.ubc.ca :))`,
+    imagePath: "/images/executive-images/alex-chui.jpg",
+    description: `Hi UBC Science! I’m Alex, a fourth-year Microbiology and Immunology student and happy to serve as your Science Student Senator this year!
+    \nMy role focuses on academic policy, research opportunities, and supporting Science student voices in Senate decisions since I serve as the liaison between SUS and the Senate. If you have concerns about course structures, grading policy, research equity, or governance transparency, I’m here to help. 
+    \nContact me at senator@sus.ubc.ca I’m always open to feedback, policy ideas, or advocacy requests or just to chat on any issue or questions impacting Science students.`,
     email: "senator@sus.ubc.ca",
     link: "",
   },
   {
-    name: "Alex Chui",
-    role: "Science Representative",
-    imagePath: "/images/executive-images/alex-chui.jpg",
-    description: `Hi UBC Science! I’m Alex Chui (he/him), I’m in my 3rd year in Microbiology and Immunology and I’m honoured to be serving as one of your Science AMS Representatives for the 2024/2025 school year!
-\nAs one of your 3 AMS Representatives, my goal is to ensure that the AMS and wider student community can understand the unique perspective we bring as science students, and to effectively advocate and champion your goals on AMS Council and Committees. AMS has a direct and indirect influence on all aspects of your student experience and community while you’re here, so I’d love to hear from you or even chat about how to get involved! 
-\nFeel free to email myself or the other AMS Representatives at amsrep@sus.ubc.ca or send me a message on instagram @alex.chuii. Excited to hear from you and work with you all!
-    `,
+    name: "Bardia Mohammadizadeh",
+    role: "AMS Representative",
+    imagePath: "/images/executive-images/bardia-mohammadizadeh.png",
+    description: `Hey Science! I’m Bardia, a third-year Neuroscience student and one of your AMS representatives for 25/26.
+    \nThe AMS representatives sit on both the SUS and AMS councils and bridge the two to further advocate for you and your needs. We are in a unique position to be your voice to the SUS and the AMS executives, and to shape your student experience to the very best it could be. 
+    \nYour input is very important to us. Feel free to reach out to me, my contact methods can be found on amsrep@sus.ubc.ca`,
     email: "amsrep@sus.ubc.ca",
     link: "",
   },
-  {
-    name: "Yuki Ichikawa",
-    role: "Science Representative",
-    imagePath: "/images/executive-images/Yuki-Ichikawa.webp",
-    description: `Hi UBC Science! My name is Yuki Ichikawa (she/her) and I’m in my 4th year in the Cellular, Anatomical and Physiological Sciences. I am excited and honoured to be serving as one of the AMS representatives for the 2024/2025 year!
-    \nAs an AMS representative it is my primary responsibility to actively advocate and work for all science students on AMS council and committees. AMS council is the highest decision making body in the AMS. It is crucial that our diverse experiences and needs are reflected in all the decisions that the AMS makes, how our student fees are spent, and how these decisions might impact our time at UBC. As such, I would love to hear from you! Whether it’s questions about how the AMS works, ideas and opinions you think are underrepresented at the AMS, or concerns around specific decisions being made, you can reach myself and the other AMS representatives at amsrep@sus.ubc.ca.
-    \nThis summer I will be serving on the AMS Operations and HR committees, more informationabout these committees and be found at ams.ubc.ca.
-    `,
-    email: "amsrep@sus.ubc.ca",
-    link: "",
-  },
+  // {
+  //   name: "Yolanda Yang",
+  //   role: "AMS Representative",
+  //   imagePath: "/images/executive-images/Yuki-Ichikawa.webp",
+  //   description: ``,
+  //   email: "amsrep@sus.ubc.ca",
+  //   link: "",
+  // }
+
 ];
