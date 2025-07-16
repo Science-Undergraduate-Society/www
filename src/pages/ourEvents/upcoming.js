@@ -13,6 +13,41 @@ export default function Events() {
     return (
         <>
             <Navbar/>
+            {/* Upcoming Events Section: Commented out until we have upcoming events to add*/}
+            {/*<TopContainer>*/}
+            {/*    <EventsTopSection>*/}
+            {/*        <EventsTitle>*/}
+            {/*            Check out our <Span href="/ourEvents/events">upcoming events</Span> hosted*/}
+            {/*            by the <br /> Science Undergraduate Society*/}
+            {/*        </EventsTitle>*/}
+            {/*        /!* <Arrow src="/images/index-images/scroll.svg" /> *!/*/}
+            {/*    </EventsTopSection>*/}
+            {/*    <br></br>*/}
+            {/*    <Collage>*/}
+            {/*        <EventsWrapper>*/}
+            {/*            {eventsArray.map((event, index) => (*/}
+            {/*                <EventCard key={index}>*/}
+            {/*                    <Image*/}
+            {/*                        src={event.image}*/}
+            {/*                        alt="Description"*/}
+            {/*                        width={500}*/}
+            {/*                        height={300}*/}
+            {/*                    />*/}
+            {/*                    <h3>{event.title}</h3>*/}
+            {/*                    <h4 style={{ color: "grey", fontSize: "13px" }}>*/}
+            {/*                        {event.date} @ {event.time}*/}
+            {/*                    </h4>*/}
+
+            {/*                    <h3 style={{ color: "grey", fontSize: "13px" }}>*/}
+            {/*                        Location: {event.location}*/}
+            {/*                    </h3>*/}
+            {/*                    <p>{event.description}</p>*/}
+            {/*                    <Span href={event.link}>RSVP &gt;</Span>*/}
+            {/*                </EventCard>*/}
+            {/*            ))}*/}
+            {/*        </EventsWrapper>*/}
+            {/*    </Collage>*/}
+            {/*</TopContainer>*/}
             <TopContainer>
                 <FlagshipEventsContainer>
                     <br/><br/>
