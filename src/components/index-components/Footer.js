@@ -4,7 +4,8 @@ import {
     faYoutube,
     faFacebook,
     faInstagram,
-    faTiktok
+    faTiktok,
+    faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -19,13 +20,15 @@ export default function Footer({color}) {
             >
                 <FontAwesomeIcon icon={faInstagram} />
             </a>
+
             <a
-                href='https://www.facebook.com/susubc'
+                href='https://www.linkedin.com/company/susubc/posts/?feedView=all'
                 target='_blank'
                 rel='noreferrer'
             >
-                <FontAwesomeIcon icon={faFacebook} />
+                <FontAwesomeIcon icon={faLinkedin} />
             </a>
+            
             <a
                 href='https://open.spotify.com/show/6LvV59dTsORiXSn4z28Zon?si=0f45da7172b94df9'
                 target='_blank'
@@ -46,6 +49,14 @@ export default function Footer({color}) {
                 rel='noreferrer'
             >
                 <FontAwesomeIcon icon={faTiktok} />
+            </a>
+
+            <a
+                href='https://www.facebook.com/susubc'
+                target='_blank'
+                rel='noreferrer'
+            >
+                <FontAwesomeIcon icon={faFacebook} />
             </a>
         </SocialMediaIcons>
         <Links color={color}>
