@@ -46,7 +46,7 @@ const sections = [
       { name: "Grants & Subsidies", href: "/studentServices/grants" },
       { name: "Health & Wellness", href: "/studentServices/health" },
       { name: "Study Sphere", href: "/studentServices/studySphere" },
-      { name: "Volunteer Portal", href: "/studentServices/volunteerPortal" },
+      { name: "Volunteer Portal", href: "https://docs.google.com/spreadsheets/d/1YGBJ_KcH5-JMz1qmiEuG-FLKYj4xkskDCp9VY9GJU7E/edit?usp=sharing" },
     ],
   },
   {
