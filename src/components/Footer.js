@@ -41,7 +41,7 @@ export default function Footer({color="white", background="#222755"}) {
             </a>
         </SocialMediaIcons>
         <Links color={color}>
-          <a href='mailto:president@sus.ubc.ca'  target='_blank' rel='noreferrer'>
+          <a href='mailto:president@sus.ubc.ca' target='_blank' rel='noreferrer'>
             Email Us
           </a>
         </Links>
