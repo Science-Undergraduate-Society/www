@@ -757,7 +757,11 @@ const LandAcknowledgement = styled.div`
   align-items: center;
   justify-content: center;
   // background-color: white;
-  margin-top: 4rem;
+  margin-top: 3rem;
+  
+  @media (max-width: 1000px) {
+    margin-top: 12rem;
+  }
 `;
 
 const LandAckTitle = styled.h1`
@@ -803,7 +807,7 @@ const Club = styled.div`
 `;
 
 const ClubImage = styled.img`
-  padding: 5px;
+  padding: 10px;
   width: 45px;
   height: auto;
   object-fit: cover;
