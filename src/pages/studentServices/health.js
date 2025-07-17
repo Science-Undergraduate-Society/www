@@ -139,6 +139,55 @@ export default function HealthAndWellness() {
         </Section>
 
         <Section>
+          <Title>NUTRITION</Title>
+          <SubTitle>Healthy Meal Recipes for College Students</SubTitle>
+          <Text>
+            Explore budget-friendly and meal-prep friendly recipes on{' '}
+            <Link href="https://fitfoodiefinds.com/best-healthy-recipes-for-college-kids-budget-friendly-and-meal-prep/">Fit Foodie Finds</Link>.
+          </Text>
+          <SubTitle>UBC Campus Nutrition</SubTitle>
+          <Text>
+            Access campus nutrition resources at <Link href="https://campusnutrition.ca">campusnutrition.ca</Link>.
+          </Text>
+          <Text>
+            For students living in residence, contact the residence dietician at <Link href="https://food.ubc.ca/contact-the-dietitian/">UBC Food Services</Link>. Non-residents can connect with a dietician by calling 811 or visiting the{' '}
+            <Link href="https://www.healthlinkbc.ca/">BC Dieticians website</Link>.
+          </Text>
+          <SubTitle>Affordable Food on Campus</SubTitle>
+          <Text>
+            Check out Sprouts in the Life Building basement, the AMS Food Bank in Life 0023, and The Delly after 5 pm for half-off meals.
+          </Text>
+        </Section>
+
+        <Section>
+          <Title>FOOD INSECURITY</Title>
+          <SubTitle>UBC Food Hub Event Calendar</SubTitle>
+          <Text>
+            Check out UBC Food Hub's {' '}
+            <Link href="https://foodhub.ubc.ca/take-action/workshop-and-events/?page=1&campus=5">upcoming events</Link>.
+          </Text>
+          <SubTitle>Food Access Support</SubTitle>
+          <Text>
+            Get help accessing healthy food at low or no cost <Link href="https://foodhub.ubc.ca/resources/?campus=5&support-resource-type=7">through these resources</Link>.
+          </Text>
+          <Text>
+            Visit the  <Link href="https://foodhub.ubc.ca/resources/?campus=5&support-resource-type=7">Sprouts produce market</Link> Tuesdays from 12pm - 2:30pm in the Nest and Wednesdays 
+            from 4:30pm to 6:30pm at Sprouts Cafe for pay-what-you-can produce.
+          </Text>
+          <Text>
+            Check out the  <Link href="https://foodhub.ubc.ca/resources/?campus=5&support-resource-type=7">Sprouts community fridge</Link> at the basement of the Life Building for free groceries.
+          </Text>
+          <SubTitle>Community Meal</SubTitle>
+          <Text>
+            Through Monday - Thursday, watch out for <Link href="https://www.ubcsprouts.ca/free-meal-program"> free meal coupons </Link> at Sprouts in the Life Building basement.
+          </Text>
+          <Text>
+            Check out Sprouts in the Life Building basement for <Link href="https://www.ubcsprouts.ca/community-eats"> free meals on Friday lunchtimes </Link>.
+          </Text>
+          
+        </Section>
+
+        <Section>
           <Title>MENTAL WELLNESS</Title>
           <SubTitle>AMS/GSS Student Health</SubTitle>
           <Text>
