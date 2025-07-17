@@ -139,32 +139,10 @@ export default function HealthAndWellness() {
         </Section>
 
         <Section>
-          <Title>NUTRITION</Title>
-          <SubTitle>Healthy Meal Recipes for College Students</SubTitle>
-          <Text>
-            Explore budget-friendly and meal-prep friendly recipes on{' '}
-            <Link href="https://fitfoodiefinds.com/best-healthy-recipes-for-college-kids-budget-friendly-and-meal-prep/">Fit Foodie Finds</Link>.
-          </Text>
-          <SubTitle>UBC Campus Nutrition</SubTitle>
-          <Text>
-            Access campus nutrition resources at <Link href="https://campusnutrition.ca">campusnutrition.ca</Link>.
-          </Text>
-          <Text>
-            For students living in residence, contact the residence dietician at <Link href="https://food.ubc.ca/contact-the-dietitian/">UBC Food Services</Link>. Non-residents can connect with a dietician by calling 811 or visiting the{' '}
-            <Link href="https://www.healthlinkbc.ca/">BC Dieticians website</Link>.
-          </Text>
-          <SubTitle>Affordable Food on Campus</SubTitle>
-          <Text>
-            Check out Sprouts in the Life Building basement, the AMS Food Bank in Life 0023, and The Delly after 5 pm for half-off meals.
-          </Text>
-        </Section>
-
-        <Section>
           <Title>FOOD INSECURITY</Title>
-          <SubTitle>UBC Food Hub Event Calendar</SubTitle>
+          <SubTitle>UBC Food Hub Events</SubTitle>
           <Text>
-            Check out UBC Food Hub's {' '}
-            <Link href="https://foodhub.ubc.ca/take-action/workshop-and-events/?page=1&campus=5">upcoming events</Link>.
+            Check out UBC Food Hub's <Link href="https://foodhub.ubc.ca/take-action/workshop-and-events/?page=1&campus=5">upcoming events</Link>.
           </Text>
           <SubTitle>Food Access Support</SubTitle>
           <Text>
