@@ -1,5 +1,5 @@
 # susubc.ca
-Website for the Science Undergraduate Society of the University of British Columbia in Vancouver, Canada.
+Website for the Science Undergraduate Society of the University of British Columbia in Vancouver, Canada. 
 
 ## Getting Started   
    
