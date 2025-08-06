@@ -77,7 +77,7 @@ const sections = [
   },
   {
     name: "Shop",
-    href: "/shop",
+    href: "shop.susubc.ca",
     items: [],
   },
 ];
