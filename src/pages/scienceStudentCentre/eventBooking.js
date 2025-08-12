@@ -3,8 +3,6 @@ import styled from "styled-components";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-// import fees from "../../../public/images/booking-images/booking.png"
-// import ancillary from "../../../public/images/booking-images/ancillary.png"
 
 
 export default function Bookings() {
@@ -119,15 +117,15 @@ export default function Bookings() {
 
                   <StepTitle>Before Submitting a Booking Request:</StepTitle>
                   <ul>
-                      <li>Determine if the ALSSC is a suitable venue for your event. Visit the <Link href="https://sus.ubc.ca/alssc/about">About the ALSSC page</Link> to view building amenities and floor plans.</li>
-                      <li>Check the <Link href="https://sus.ubc.ca/alssc/events/#booking-information">Building Availability Calendar</Link> to ensure the date and time you would like to book is available.</li>
-                      <li>See below for important details about events at the ALSSC, including <Link href="https://sus.ubc.ca/alssc/events/#booking-information">Booking Policies</Link> and the <Link href="https://sus.ubc.ca/alssc/events/#fees">Fees</Link> associated with booking.</li>
+                      <li>Determine if the ALSSC is a suitable venue for your event. Visit the <Link href="https://susubc.ca/scienceStudentCentre/aboutAlssc">About the ALSSC page</Link> to view building amenities and floor plans.</li>
+                      <li>Check the building availability calendar below to ensure the date and time you would like to book is available.</li>
+                      <li>See below for important details about events at the ALSSC, including booking policies and the fees associated with booking.</li>
                   </ul>
 
                   <StepTitle>Submit a Booking Request:</StepTitle>
                   <ul>
-                      <li>Fill out the <Link href="https://sus.ubc.ca/alssc/events/#booking-request">Booking Request Form</Link>.</li>
-                      <li>Ensure your request is being submitted within the applicable <Link href="https://sus.ubc.ca/alssc/events/#booking-information">Deadlines</Link>.</li>
+                      <li>Fill out the <strong>booking request Jotform below</strong>.</li>
+                      <li>Ensure your request is being submitted within the applicable deadlines (see below).</li>
                       <li>Remember that the booking includes the time for setup/takedown as managed by your organization. Ensure you are requesting enough time to properly set up and take down the materials needed for your event.</li>
                   </ul>
 
@@ -339,7 +337,7 @@ export default function Bookings() {
                   <h5>(1): All front porch (Area outside of the ALSSC) bookings include access to tables and a tent.
                       <br/>
                       (2): Any repairs for damages caused during bookings by these groups will be funded through a budget deduction from the offending group</h5>
-                  <p>If you are unsure which Category is applicable for your club/organization, see the <Link href="https://sus.ubc.ca/alssc/events/#booking-information">Booking Group Categories</Link> above for full descriptions.</p>
+                  <p>If you are unsure which Category is applicable for your club/organization, see the booking group categories above for full descriptions.</p>
                   <StepTitle>Ancillary Fees</StepTitle>
                   <FeesTable>
                       <thead>
