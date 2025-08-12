@@ -53,20 +53,14 @@ export default function Home() {
             <p>
               <em>~est. 1961~</em>
             </p>
-              {/* <ButtonHollowWhite>
-                <Link href="/joinSus/apply">Summer 2025 Hiring is Open!</Link>
-              </ButtonHollowWhite> */}
           </HeroText>
         </Hero>
 
         {/* About Section */}
         <About>
-          {/* don't remove or i'll hunt you down */}
-          <TopColour>DL</TopColour>
           <AboutCollageContainer>
             <AboutCollage src="/images/index-images/Collage.jpg" />
           </AboutCollageContainer>
-          {/* <Image src="/images/index-images/Collage.jpg" alt="About Collage" width={500} height={300} /> */}
           <BottomColour></BottomColour>
 
           <AboutSection>
@@ -104,59 +98,20 @@ export default function Home() {
           </p>
         </LandAcknowledgement>
 
-        {/* Events Section */}
-        {/* <Events>
-          <EventsTopSection>
-            <EventsTitle>
-              Check out our <Span href="/ourEvents/events">upcoming events</Span> hosted
-              by the <br /> Science Undergraduate Society
-            </EventsTitle>
-          </EventsTopSection>
+        {/* Google Calendar */}
+        <EventsGoogleCalendar>
+          <GoogleCalendarTitle>
+            SUS 2025-2026 Events
+          </GoogleCalendarTitle>
 
-          <Collage>
-            <EventsWrapper ref={scrollRef}>
-              <EventsInfo>
-                <div style={{ marginBottom: "50px" }}>
-                  <p>Take a look at our events calendar!</p>
-                  <ButtonHollowBlack>
-                    <Link href="/ourEvents/upcoming">Upcoming Events</Link>
-                  </ButtonHollowBlack>
-                </div>
-
-                <div>
-                  <p>
-                    For events organized by other science clubs, visit our list
-                    of associated clubs to find their social media.
-                  </p>
-                  <ButtonHollowBlack>
-                    <Link href="/aboutUs/clubs">Our Clubs</Link>
-                  </ButtonHollowBlack>
-                </div>
-              </EventsInfo>
-
-              {[].map((event, index) => (
-                <EventCard key={index}>
-                  <Image
-                    src={event.image}
-                    alt="Description"
-                    width={500}
-                    height={300}
-                  />
-                  <h3>{event.title}</h3>
-                  <p style={{ color: "grey", fontSize: "13px" }}>
-                    {event.date} @ {event.time}
-                  </p>
-                  <p>{event.description}</p>
-                  <Span href={event.link}>More Info &gt;</Span>
-                </EventCard>
-              ))}
-            </EventsWrapper>
-          </Collage>
-
-          <ProgressBarContainer>
-            <ProgressBar $progress={scrollProgress}></ProgressBar>
-          </ProgressBarContainer>
-        </Events> */}
+          <CalendarFrame
+            src="https://calendar.google.com/calendar/embed?src=c_d4a570600fdaa112f1ac7be82285135369cdeb870a16b32a4b68df61fdad7dd5%40group.calendar.google.com&ctz=America%2FVancouver" 
+            title = "SUS Events Google Calendar"
+            width="800" 
+            height="600" 
+            frameborder="0">
+          </CalendarFrame> 
+        </EventsGoogleCalendar>
 
         {/* Clubs Collage */}
         <ClubsCollageWrapper>
@@ -366,23 +321,6 @@ const Content = styled.div`
   align-items: center;
 `;
 
-// const ButtonFilledWhite = styled.button`
-//   background-color: white;
-//   color: #222755;
-//   padding: 15px 20px;
-//   border-radius: 30px;
-//   border: 1px solid transparent;
-//   cursor: pointer;
-//   font-size: 0.8rem;
-//   font-weight: 600;
-//   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-
-//   &:hover {
-//     background-color: #222755;
-//     color: white;
-//     border: 2px solid white;
-//   }
-// `;
 
 const ButtonHollowWhite = styled.button`
   background-color: transparent;
@@ -401,13 +339,6 @@ const ButtonHollowWhite = styled.button`
     color: #222755;
   }
 `;
-
-// const ButtonGroup = styled.div`
-//   margin-top: 1.5rem;
-//   display: flex;
-//   gap: 20px;
-//   justify-content: left;
-// `;
 
 const ButtonHollowBlack = styled.button`
   background-color: transparent;
@@ -614,134 +545,33 @@ const What = styled.div`
   }
 `;
 
-// =============== EVENTS SECTION =============== //
+// =============== GOOGLE CALENDAR SECTION =============== //
 
-const Events = styled.div`
-  margin-top: 10vh;
-  width: 100%;
-  padding: 70px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  // @media (max-width: 1050px) {
-  //   margin-top: 30vh;
-  // }
-
-  // @media (max-width: 800px) {
-  //   margin-top: 40vh;
-  // }
-`;
-
-const EventsTopSection = styled.div`
-  margin-bottom: 1rem;
-  padding-left: 4rem;
-  width: 100%;
-
+const EventsGoogleCalendar = styled.div`
+  width: 95%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 28px;
 
-  @media (max-width: 1000px) {
-    flex-direction: column;
-    padding-left: 0;
-  }
+  background-color: rgba(255,255,255, 0.8);;
+  margin: 50px 0;
+  margin-bottom: 8rem;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 `;
 
-const EventsTitle = styled.div`
+const CalendarFrame = styled.iframe`
+`;
+
+const GoogleCalendarTitle = styled.div`
   font-size: 40px;
   font-weight: 700;
 
   @media (max-width: 1000px) {
     padding-left: 30px;
-  }
-`;
-
-const Arrow = styled.img`
-  width: 200px;
-  height: 100%;
-  object-fit: cover;
-`;
-
-const EventsWrapper = styled.div`
-  display: flex;
-  gap: 2.5rem;
-  padding: 20px;
-  scroll-behavior: smooth;
-
-  &::-webkit-scrollbar {z
-    display: none;
-  }
-`;
-
-const EventsInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-width: 500px;
-
-  background-color: white;
-  padding: 40px 40px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-
-  @media (max-width: 900px) {
-    min-width: 80%;
-  }
-`;
-
-const Collage = styled.div`
-  margin-bottom: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scrollbar-width: none; /* Firefox */
-`;
-
-const ProgressBarContainer = styled.div`
-  width: 100%;
-  padding: 0 50px;
-`;
-
-const ProgressBar = styled.div`
-  border-radius: 5px;
-  height: 4px;
-  width: ${(props) => props.progress}%;
-  background-color: grey;
-  transition: width 0.2s ease;
-`;
-
-const EventCard = styled.div`
-  max-width: 330px;
-  min-width: 330px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  padding: 20px;
-
-  img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-bottom: 2px solid #222755;
-    margin-bottom: 15px;
-  }
-
-  h3 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    color: #222755;
-  }
-
-  p {
-    font-size: 1.1rem;
-    color: #555;
   }
 `;
 
@@ -757,7 +587,7 @@ const LandAcknowledgement = styled.div`
   align-items: center;
   justify-content: center;
   // background-color: white;
-  margin-top: 3rem;
+  margin-top: 10rem;
   
   @media (max-width: 1000px) {
     margin-top: 12rem;
