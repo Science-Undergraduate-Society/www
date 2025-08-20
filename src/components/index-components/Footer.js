@@ -8,8 +8,9 @@ import {
     faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import sponsors from "@/utility/sponsors";
 
-export default function Footer({color}) {
+export default function Footer({color}) { // TODO
     return (
       <FooterContainer color={color}>
         <SocialMediaIcons color={color}>
@@ -65,9 +66,34 @@ export default function Footer({color}) {
           </a>
         </Links>
         <div>Copyright &copy; 2024 UBC Science Undergraduate Society</div>
+        <SponsorSectionWrapper>
+          <div>Thank you to our amazing sponsors!</div>
+          <SponsorSectionContent>
+            {sponsors.map((sponsor, index) =>
+              sponsor.logo !== "" ? (
+              <SponsorIcon
+                key={index}
+                sponsorName={sponsor.name}
+                link={sponsor.link}
+                logo={sponsor.logo}
+                index={index}
+              />
+              ) : null
+            )}
+          </SponsorSectionContent>
+        </SponsorSectionWrapper>
       </FooterContainer>
     );
   }
+
+const SponsorIcon = ({ sponsorName, link, logo }) => (
+  <Sponsor>
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      <SponsorImage src={logo} alt={sponsorName} />
+    </a>
+  </Sponsor>
+);
+
 
 const FooterContainer = styled.footer`
   margin-top: 30vh;  
@@ -108,4 +134,43 @@ const Links = styled.div`
     transition: color 200ms;
     text-decoration: underline;
   }
+`;
+
+const Sponsor = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 20px;
+`;
+
+const SponsorImage = styled.img`
+  padding: 10px;
+  width: 45px;
+  height: auto;
+  object-fit: cover;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+`;
+
+const SponsorSectionContent = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping to the next row */
+  gap: 10px; /* Adjust the spacing between images */
+  margin-top: 1rem;
+`;
+
+const SponsorSectionWrapper = styled.div`
+  width: 100%;
+  background-color: rgba(34, 39, 85, 0.8);;
+  margin: 50px 0;
+  margin-bottom: 4rem;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 `;
