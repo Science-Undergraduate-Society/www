@@ -45,8 +45,8 @@ const sections = [
       { name: "Drop In Tutoring", href: "/studentServices/tutoring" },
       { name: "Grants & Subsidies", href: "/studentServices/grants" },
       { name: "Health & Wellness", href: "/studentServices/health" },
-      { name: "Study Sphere", href: "/studentServices/studySphere" },
-      { name: "Volunteer Portal", href: "/studentServices/volunteerPortal" },
+      { name: "Study Sphere", href: "/studentServices/studySphere" }, // are we sure that we want to replace the volunteer portal with a sheet?
+      { name: "Volunteer Portal", href: "https://docs.google.com/spreadsheets/d/1YGBJ_KcH5-JMz1qmiEuG-FLKYj4xkskDCp9VY9GJU7E/edit?usp=sharing" },
     ],
   },
   {
