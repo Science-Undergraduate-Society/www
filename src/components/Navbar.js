@@ -80,6 +80,11 @@ const sections = [
     href: "https://shop.susubc.ca",
     items: [],
   },
+  {
+    name: "Hackathon",
+    href: "https://shop.susubc.ca",
+    items: [],
+  },
 ];
 
 export default function Navbar() {

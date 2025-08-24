@@ -9,157 +9,124 @@ import eventsArray from "@/utility/events";
 
 export default function Events() {
 
+    const events = [
+        {
+            title: "SUS",
+            hightlight: "First Week",
+            date: "September 2-5, 2025",
+            description: "Get ready for an unforgettable start to the school year with the Science Undergraduate Society (SUS) First Week! Join us for four days of fun, September 2-5. Kick things off at Imagine Day & Faculty Fair on September 2nd to grab some free merch. On September 3rd, unwind at Sips and Swirls at Abdul Ladha from 6-8 p.m., where you can enjoy mocktails and paint while getting a hand or scalp massage from Lush Spa or even creating your own custom bubble bar! Show off your competitive side at Squidlympics on the Macinnes Field from 5:30-7:30 p.m. on September 4th, with a chance to win prizes. We'll end the week with our Welcome Back BBQ on September 5th outside Abdul Ladha from 5-8 p.m., featuring free food, a dunk tank, and a raffle full of exciting prizes. We can't wait to see you there!",
+            images: [
+                "/images/events-images/welcome/fw_main2.jpg",
+                "/images/events-images/welcome/fw_main1.png",
+                "/images/events-images/welcome/fw_main3.JPG",
+            ]
+        },
+        {
+            title: "Science",
+            hightlight: "RXN",
+            date: "September 13-14, 2025",
+            description: "Science RXN is the ultimate kickoff flagship event for first-year science students at UBC! Happening September 13-14, this two-day experience is designed to help you make lasting friendships and dive into campus life. Day one is packed with fun indoor and outdoor activities where you’npm ll bond with peers through games, challenges, and team-building. On day two, dress up in blue for our signature dinner and dance, a chance to celebrate the start of your university journey with new friends and unforgettable memories. Don’t miss this exciting opportunity to connect, celebrate, and start your UBC Science adventure on the right foot!",
+            images: [
+                "/images/events-images/rxn/rxn1_main.JPG",
+                "/images/events-images/rxn/rxn2_main.JPG",
+                "/images/events-images/rxn/rxn3_main.JPG"
+            ]
+        }
+    ]
 
     return (
         <>
             <Navbar/>
-            {/* Upcoming Events Section: Commented out until we have upcoming events to add*/}
-            {/*<TopContainer>*/}
-            {/*    <EventsTopSection>*/}
-            {/*        <EventsTitle>*/}
-            {/*            Check out our <Span href="/ourEvents/events">upcoming events</Span> hosted*/}
-            {/*            by the <br /> Science Undergraduate Society*/}
-            {/*        </EventsTitle>*/}
-            {/*        /!* <Arrow src="/images/index-images/scroll.svg" /> *!/*/}
-            {/*    </EventsTopSection>*/}
-            {/*    <br></br>*/}
-            {/*    <Collage>*/}
-            {/*        <EventsWrapper>*/}
-            {/*            {eventsArray.map((event, index) => (*/}
-            {/*                <EventCard key={index}>*/}
-            {/*                    <Image*/}
-            {/*                        src={event.image}*/}
-            {/*                        alt="Description"*/}
-            {/*                        width={500}*/}
-            {/*                        height={300}*/}
-            {/*                    />*/}
-            {/*                    <h3>{event.title}</h3>*/}
-            {/*                    <h4 style={{ color: "grey", fontSize: "13px" }}>*/}
-            {/*                        {event.date} @ {event.time}*/}
-            {/*                    </h4>*/}
 
-            {/*                    <h3 style={{ color: "grey", fontSize: "13px" }}>*/}
-            {/*                        Location: {event.location}*/}
-            {/*                    </h3>*/}
-            {/*                    <p>{event.description}</p>*/}
-            {/*                    <Span href={event.link}>RSVP &gt;</Span>*/}
-            {/*                </EventCard>*/}
-            {/*            ))}*/}
-            {/*        </EventsWrapper>*/}
-            {/*    </Collage>*/}
-            {/*</TopContainer>*/}
             <TopContainer>
                 <FlagshipEventsContainer>
                     <br/><br/>
-                    <EventTitle><b>Flagship Events 🚩</b></EventTitle>
-                    <SubtitleContainer>
-                        <EventSubtitle><b>Science RXN</b></EventSubtitle>
-                    </SubtitleContainer>
+                    <Title><b>Welcome back! Here's some upcoming events in September 🥳</b></Title>
+                    <br/><br/>
 
-                    <p>Science RXN is a two-day event geared toward incoming first-year science students to help them build community, meet new people, and integrate into university. The first day includes team-building games and activities and challenges, and RXN is finished off with a gala on the second day. Students will have the opportunity to participate in games and challenges with a chance to win big prizes! Students will also have the opportunity to participate in team-building activities in breakout rooms.</p>
-                    <ImageContainer>
-                        <StyledImage 
-                            src="/images/events-images/rxn/rxnMain1.png" 
-                            alt="Science RXN Event"
-                            width={500} 
-                            height={300}
-                        />
-                        <StyledImage 
-                            src="/images/events-images/rxn/rxnMain2.png" 
-                            alt="Science RXN Event" 
-                            width={500} 
-                            height={300}
-                        />
-                    </ImageContainer>
+                    {events.map((event, index) => (
+                        <EventContainer key={index}>
+                            <EventTitle><b>{event.title} <Highlight>{event.hightlight}</Highlight></b></EventTitle>
+                            <EventSubtitle><b>{event.date}</b></EventSubtitle>
 
-                    <SubtitleContainer>
-                        <EventSubtitle><b>Science Week</b></EventSubtitle>
-                    </SubtitleContainer>
+                            <p>{event.description}</p>
 
-                    <p>Science Week is a week-long event dedicated to science pride on campus. The week is filled with fun interactive games/activities, community-building events, and networking opportunities.</p>
-                    <ImageContainer>
-                        <StyledImage 
-                            src="/images/events-images/sciweek1.png" 
-                            alt="Science Week Event"
-                            width={500} 
-                            height={300} 
-                        />
-                        <StyledImage 
-                            src="/images/events-images/sciweek2.png" 
-                            alt="Science Week Event"
-                            width={500} 
-                            height={300} 
-                        />
-                    </ImageContainer>
-                    
-                    <SubtitleContainer>
-                        <EventSubtitle><b>Science Graduation</b></EventSubtitle>
-                    </SubtitleContainer>
-
-                    <p>Science Graduation is an end-of-the-year event to celebrate the completion of another school year, but most importantly, to give a farewell party for all the graduating science students. The event offers food, alcoholic beverages, and most importantly, a good time!</p>
-                    <ImageContainer>
-                        <StyledImage 
-                            src="/images/events-images/grad.png" 
-                            alt="Science Graduation Event" 
-                            width={500} 
-                            height={300}
-                        />
-                    </ImageContainer>
+                            <CollageContainer>
+                                {event.images.map((src, idx) => (
+                                    <CollageImage 
+                                        key={idx}
+                                        src={src}
+                                        alt={`${event.title} Event`}
+                                        width={500} 
+                                        height={300}
+                                        $span={2}
+                                    />
+                                ))}
+                            </CollageContainer>
+                        </EventContainer>
+                    ))}
                 </FlagshipEventsContainer>
+
+                
+                <EventsGoogleCalendar>
+                    <GoogleCalendarTitle>
+                        SUS 2025-2026 Events
+                    </GoogleCalendarTitle>
+
+                    <CalendarFrame
+                        src="https://calendar.google.com/calendar/embed?src=c_d4a570600fdaa112f1ac7be82285135369cdeb870a16b32a4b68df61fdad7dd5%40group.calendar.google.com&ctz=America%2FVancouver" 
+                        title = "SUS Events Google Calendar"
+                        width="800" 
+                        height="600" 
+                        frameborder="0">
+                    </CalendarFrame> 
+                </EventsGoogleCalendar>
             </TopContainer>
             <Footer/>
         </>
     )
 }
 
-// ====== MISC ====== //
 
-const ButtonHollowBlack = styled.button`
-  background-color: transparent;
-  color: #222755;
-  padding: 15px 35px;
-  border-radius: 30px;
-  border: 1px solid #222755;
-  cursor: pointer;
-  font-size: 0.8rem;
-  font-weight: 600;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease,
-    border-color 0.3s ease;
-
-  &:hover {
-    color: #0052ff;
-    border: 1px solid #0052ff;
-  }
-`;
-
-const Span = styled.a`
-  color: #0052ff;
-  cursor: pointer;
-  text-decoration: none;
-`;
-
-// ====== COLLAGE STYLING =======
-
-const EventsTopSection = styled.div`
-    margin-bottom: 1rem;
-    width: 100%;
-
+const EventContainer = styled.div`
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin-bottom: 50px;
+`;
 
-    @media (max-width: 1000px) {
-        flex-direction: column;
-        padding-left: 0;
+// ====== COLLAGE STYLES ====== //
+
+const CollageContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: masonry;
+    gap: 15px;
+    margin: 20px 0;
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
     }
 `;
 
-const Arrow = styled.img`
-  width: 200px;
-  height: 100%;
-  object-fit: cover;
+const CollageImage = styled(Image)`
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    grid-column: span ${(props) => props.$span || 3};
+    transform: rotate(${() => Math.random() * 4 - 2}deg);
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05) rotate(0deg);
+        z-index: 10;
+    }
 `;
+
+// ====== MISC ====== //
 
 const TopContainer = styled.div`
     max-width: 1200px;
@@ -169,116 +136,64 @@ const TopContainer = styled.div`
     align-items: center;
 `;
 
-const EventsTitle = styled.div`
-  font-size: 40px;
-  font-weight: 700;
-
-  @media (max-width: 1000px) {
-    padding-left: 30px;
-  }
-`;
-
-const EventsWrapper = styled.div`
-    display: grid;
-    gap: 2.5rem;
-    grid-template-columns: repeat(3, 1fr);
-
-    @media (max-width: 1200px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media (max-width: 800px) {
-        grid-template-columns: repeat(1, 1fr);
-    }
-`;
-
-const Collage = styled.div`
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-`;
-
-const EventCard = styled.div`
-  max-width: 330px;
-  min-width: 330px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  padding: 20px;
-
-  img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-bottom: 2px solid #222755;
-    margin-bottom: 15px;
-  }
-
-  h3 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    color: #222755;
-  }
-
-  p {
-    font-size: 1.1rem;
-    color: #555;
-  }
+const Highlight = styled.span`
+    color: #0173BE;
 `;
 
 // ====== FLAGSHIP EVENTS ======
 
-const BottomContainer = styled.div`
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 180px;
-    padding: 0 20px;
-    align-items: center;
-`;
-
 const FlagshipEventsContainer = styled.div`
     margin-top: 1rem;
+    margin-bottom: 10rem;
+`;
+
+const Title = styled.h1`
+    font-size: 3rem;
+    color: #222755; 
 `;
 
 const EventTitle = styled.h1`
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
     color: #222755; 
 `;
 
 const EventSubtitle = styled.h2`
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
     color: #222755; 
-    text-align: center;
 `;
 
-const SubtitleContainer = styled.div`
+
+// =============== GOOGLE CALENDAR SECTION =============== //
+
+const EventsGoogleCalendar = styled.div`
+    width: 95%;
     display: flex;
     align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    align-self: center;
-`;
-
-const ImageContainer = styled.div`
-    display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
+    flex-direction: column;
+    gap: 28px;
 
-    @media (max-width: 1100px) {
-        flex-direction: column;
-    }
+    background-color: rgba(255,255,255, 0.8);
+    margin-bottom: 4rem;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 `;
 
-const StyledImage = styled(Image)`
-    border-radius: 5px;
-    border: none; 
+const CalendarFrame = styled.iframe`
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     width: 100%;
-    height: auto;
+    max-width: 800px;
+    height: 600px;
+`;
+
+const GoogleCalendarTitle = styled.h1`
+    font-size: 3rem;
+    color: #222755; 
+
+    @media (max-width: 1000px) {
+        padding-left: 30px;
+    }
 `;
