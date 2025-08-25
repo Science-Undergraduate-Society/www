@@ -1,66 +1,211 @@
-import { useEffect, useState } from 'react';
-import styled from 'styled-components';
+import styled from "styled-components";
 import Navbar from "../../components/Navbar";
-import Footer from '@/components/Footer';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-import pastEvents from "@/utility/pastEvents";
+import Footer from "@/components/Footer";
+import Image from "next/image";
 
-const BackgroundContainer = styled.div`
+// Local images list
+const pastEvents = [
+  {
+    title: "Science RXN",
+    description: "Our flagship welcome event for first year students!",
+    images: [
+      { src: "/images/events-images/rxn/5.JPG", alt: "Science RXN 1" },
+      { src: "/images/events-images/rxn/4.JPG", alt: "Science RXN 2" },
+      { src: "/images/events-images/rxn/rxn3_main.JPG", alt: "Science RXN 3" },
+      { src: "/images/events-images/rxn/rxn2_main.JPG", alt: "Science RXN 4" },
+      { src: "/images/events-images/rxn/3.JPG", alt: "Science RXN 5" },
+      { src: "/images/events-images/rxn/rxn1_main.JPG", alt: "Science RXN 6" },
+      
+    ],
+  },
+  {
+    title: "SUS First Week Events",
+    description: "An annual week long series of events to kickoff the first week of classes!",
+    images: [
+      { src: "/images/events-images/welcome/fw_main1.png", alt: "First Week 1" },
+      { src: "/images/events-images/welcome/fw_main5.png", alt: "First Week 2" },
+      { src: "/images/events-images/welcome/fw_main6.png", alt: "First Week 6" },
+      { src: "/images/events-images/welcome/fw_main3.JPG", alt: "First Week 3" },
+      { src: "/images/events-images/welcome/fw_main4.png", alt: "First Week 4" },
+      { src: "/images/events-images/welcome/fw_main2.jpg", alt: "First Week 2" },
+    ],
+  },
+  {
+    title: "Student Recognition Awards Night",
+    description: "A formal evening to celebrate the achievements of our amazing science students!",
+    images: [
+      { src: "/images/events-images/ssran/8.JPG", alt: "Awards Night 8" },
+      { src: "/images/events-images/ssran/9.JPG", alt: "Awards Night 9" },
+      { src: "/images/events-images/ssran/10.JPG", alt: "Awards Night 10" },
+      { src: "/images/events-images/ssran/11.JPG", alt: "Awards Night 11" },
+      { src: "/images/events-images/ssran/7.JPG", alt: "Awards Night 7" },
+      { src: "/images/events-images/ssran/ssran1.jpg", alt: "Awards Night 1" },
+      
+    ],
+  },
+];
+
+// Reusable Event Section
+const EventSection = ({ title, description, images }) => (
+  <Section>
+    <SectionHeader>
+      <EventTitle>{title}</EventTitle>
+      <EventDescription>{description}</EventDescription>
+    </SectionHeader>
+
+  <CollageContainer>
+    {images.map((image, idx) => (
+      <CollageImage 
+        key={idx}
+        src={image.src}
+        alt={image.alt}
+        width={500} 
+        height={300}
+        $span={2}
+      />
+    ))};
+  
+  </CollageContainer>
+    
+  </Section>
+);
+
+export default function PastEvents() {
+  return (
+    <div>
+      <Navbar />
+
+      <Hero>
+        <Overlay />
+        <HeroContent>
+          <HeroTitle>Our Past Events</HeroTitle>
+          <HeroSubtitle>
+            Moments that brought us together, made us laugh, and created lasting memories.
+          </HeroSubtitle>
+        </HeroContent>
+      </Hero>
+
+      <Main>
+        {pastEvents.map((event, i) => (
+          <EventSection
+            key={i}
+            title={event.title}
+            description={event.description}
+            images={event.images}
+          />
+        ))}
+
+        <PhotosWrapper>
+          <ButtonSeeAllPhotos
+            href="https://drive.google.com/drive/folders/13uokLlZpCwrf1Ow0q93_MgGnRhKnoiO5"
+          >
+            🌟 See All Photos
+          </ButtonSeeAllPhotos>
+        </PhotosWrapper>
+      </Main>
+
+      <Footer color="#ffffff" background="#222755" />
+    </div>
+  );
+}
+
+//
+// Styled Components
+//
+
+const CollageContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: masonry;
+    gap: 15px;
+    margin: 20px 0;
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+`;
+
+const CollageImage = styled(Image)`
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    grid-column: span ${(props) => props.$span || 3};
+    transform: rotate(${() => Math.random() * 4 - 2}deg);
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05) rotate(0deg);
+        z-index: 10;
+    }
+`;
+
+const Hero = styled.div`
   position: relative;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/images/events-images/past.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5;
-    z-index: -1;
-  }
+  background-image: url('/images/events-images/past.jpg');
+  background-size: cover;
+  background-position: center;
 `;
 
-const OverlayText = styled.div`
+const Overlay = styled.div`
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(34, 39, 85, 0.6),
+    rgba(34, 39, 85, 0.8)
+  );
+`;
+
+const HeroContent = styled.div`
   position: relative;
-  color: #222755;
-  font-size: 5rem;
   text-align: center;
+  color: white;
+  max-width: 800px;
   padding: 20px;
-  border-radius: 10px;
-  margin-top: 90px;
 `;
 
-const SubtitleContainer = styled.div`
-  display: flex;
-  align-items: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
+const HeroTitle = styled.h1`
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
 `;
 
-const Line = styled.hr`
-  flex-grow: 1;
-  border: none;
-  border-top: 3px solid #222755;
-  margin: 0;
+const HeroSubtitle = styled.p`
+  font-size: 1.3rem;
+  line-height: 1.6;
+  opacity: 0.9;
 `;
 
-const EventSubtitle = styled.h2`
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-  color: #222755;
-  margin: 0;
-  padding-right: 10px;
+const Main = styled.div`
+  background: #f8f9fc;
+  padding: 60px 20px;
+`;
+
+const Section = styled.div`
+  margin-bottom: 80px;
+`;
+
+const SectionHeader = styled.div`
   text-align: center;
-  padding-left: 10px;
+  margin-bottom: 30px;
+`;
+
+const EventTitle = styled.h2`
+  font-size: 2.5rem;
+  color: #222755;
+  margin-bottom: 10px;
+`;
+
+const EventDescription = styled.p`
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 600px;
+  margin: 0 auto;
 `;
 
 const CarouselSlide = styled.div`
@@ -71,9 +216,15 @@ const CarouselSlide = styled.div`
 
 const CarouselImage = styled.img`
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
   height: auto;
   border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+`;
+
+const PhotosWrapper = styled.div`
+  text-align: center;
+  margin-top: 40px;
 `;
 
 const ButtonSeeAllPhotos = styled.a`
@@ -81,118 +232,14 @@ const ButtonSeeAllPhotos = styled.a`
   text-decoration: none;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 28px;
   font-size: 18px;
-  border-radius: 25px;
-  transition: background-color 0.3s ease;
-  margin-left: 4rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  display: inline-block;
 
   &:hover {
-    background-color: #222890;
+    background-color: #2f35a0;
+    transform: translateY(-2px);
   }
 `;
-  
-export default function PastEvents() {
-    const [images, setImages] = useState(pastEvents);
-
-    return (
-        <div>
-            <Navbar />
-
-            <BackgroundContainer>
-                <OverlayText><b>Our Past Events</b></OverlayText>
-            </BackgroundContainer>
-
-            {/* Science RXN */}
-            <SubtitleContainer>
-                <Line />
-                <EventSubtitle><b>Science RXN</b></EventSubtitle>
-                <Line />
-            </SubtitleContainer>
-
-            <Carousel
-                showThumbs={false}
-                showStatus={false}
-                infiniteLoop={true}
-                emulateTouch={true}
-                centerMode={true}
-                centerSlidePercentage={30}
-                swipeable={true}
-            >
-                {images.slice(0, 7).map((image, index) => (
-                <CarouselSlide key={index}>
-                    <CarouselImage
-                    src={image.src}
-                    alt={image.alt}
-                    />
-                </CarouselSlide>
-                ))}
-            </Carousel>
-
-            {/* Welcome Back BBQ */}
-            <SubtitleContainer>
-                <Line />
-                <EventSubtitle><b>Welcome Back BBQ</b></EventSubtitle>
-                <Line />
-            </SubtitleContainer>
-
-            <Carousel
-                showThumbs={false}
-                showStatus={false}
-                infiniteLoop={true}
-                emulateTouch={true}
-                centerMode={true}
-                centerSlidePercentage={30}
-                swipeable={true}
-            >
-                {images.slice(7, 14).map((image, index) => (
-                <CarouselSlide key={index}>
-                    <CarouselImage
-                    src={image.src}
-                    alt={image.alt}
-                    />
-                </CarouselSlide>
-                ))}
-            </Carousel>
-
-            {/* Student Recognition Awards Night */}
-            <SubtitleContainer>
-                <Line />
-                <EventSubtitle><b>Student Recognition Awards Night</b></EventSubtitle>
-                <Line />
-            </SubtitleContainer>
-
-            <Carousel
-                showThumbs={false}
-                showStatus={false}
-                infiniteLoop={true}
-                emulateTouch={true}
-                centerMode={true}
-                centerSlidePercentage={30}
-                swipeable={true}
-            >
-                {images.slice(15, 21).map((image, index) => (
-                <CarouselSlide key={index}>
-                    <CarouselImage
-                    src={image.src}
-                    alt={image.alt}
-                    />
-                </CarouselSlide>
-                ))}
-            </Carousel>
-
-            <br />
-            <br />
-            <br />
-
-            <div className="text-center mt-4">
-                <ButtonSeeAllPhotos
-                href="https://drive.google.com/drive/folders/13uokLlZpCwrf1Ow0q93_MgGnRhKnoiO5"
-                >
-                See all photos
-                </ButtonSeeAllPhotos>
-            </div>
-            <Footer color="#ffffff" background="#222755"/>
-        </div>
-  );
-}
