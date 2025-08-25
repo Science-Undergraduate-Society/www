@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
-import NewFooter from "../../components/NewFooter";
 import { useState } from "react";
+import Footer from "@/components/Footer";
 
 export default function Clubs() {
   // State to manage the selected tab
@@ -817,7 +817,7 @@ export default function Clubs() {
           </TableContent>
         </ClubsTable>
       </Content>
-      <NewFooter />
+      <Footer />
     </Background>
   );
 }

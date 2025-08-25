@@ -45,7 +45,24 @@ export default function Footer({color="white", background="#222755"}) {
             Email Us
           </a>
         </Links>
-        <div>Copyright &copy; 2024 UBC Science Undergraduate TESTINGNGJSJSJSJSJSJ</div>
+        <div>Copyright &copy; 2025 UBC Science Undergraduate</div>
+
+        {/* <SponsorSectionWrapper>
+          <div>Thank you to our amazing sponsors!</div>
+          <SponsorSectionContent>
+            {sponsors.map((sponsor, index) =>
+              sponsor.logo !== "" ? (
+              <SponsorIcon
+                key={index}
+                sponsorName={sponsor.name}
+                link={sponsor.link}
+                logo={sponsor.logo}
+                index={index}
+              />
+              ) : null
+            )}
+          </SponsorSectionContent>
+        </SponsorSectionWrapper> */}
       </FooterContainer>
     );
   }

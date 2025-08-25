@@ -1,21 +1,24 @@
+// STYLES
 import { useEffect, useRef, useState } from "react";
-import styled, { keyframes } from "styled-components";
-import Navbar from "../components/Navbar";
-import Footer from "@/components/index-components/Footer";
+import styled from "styled-components";
 import {
   faSpotify,
   faYoutube,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
 
-import eventsArray from "@/utility/events";
+// COMPONENTS
+import Navbar from "../components/Navbar";
+import Footer from "@/components/Footer";
 import clubs from "@/utility/clubs";
 
+/**
+ * 
+ * @returns the homepage of the SUS website
+ */
 export default function Home() {
-  // SCROLL LOGIC
-
+  // SCROLL LOGIC FOR HORIZONTAL SCROLL INDICATOR
   const [scrollProgress, setScrollProgress] = useState(0);
   const scrollRef = useRef(null);
 
@@ -298,7 +301,7 @@ export default function Home() {
         </ShopSection>
 
         {/* Footer Section*/}
-        <Footer color={"white"} />
+        <Footer />
       </Content>
     </Background>
   );
