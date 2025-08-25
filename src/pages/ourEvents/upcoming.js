@@ -41,7 +41,7 @@ export default function Events() {
             <TopContainer>
                 <FlagshipEventsContainer>
                     <br/><br/>
-                    <Title><b>Welcome back! Here's some upcoming events in September 🥳</b></Title>
+                    <Title><b>Welcome back! Here are some upcoming events in September 🥳</b></Title>
                     <br/><br/>
 
                     {events.map((event, index) => (

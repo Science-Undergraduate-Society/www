@@ -75,7 +75,7 @@ export default function MeetingRoomBookings() {
                     <Title>Meeting Room Features</Title>
                     <RoomDescriptionContainer>
                         <Room>
-                            <Image src="/images/meetingBookingImages/room-103-2.jpg"></Image>
+                            <Image src="/images/meetingBookingImages/room-103-2.jpg" alt="room 103"></Image>
                             <h3>Rooms 103 & 104</h3>
                             <ul>
                                 <li>8 Chairs</li>
@@ -86,7 +86,7 @@ export default function MeetingRoomBookings() {
                             </ul>
                         </Room>
                         <Room>
-                            <Image src="/images/meetingBookingImages/room-105-2.jpg"></Image>
+                            <Image src="/images/meetingBookingImages/room-105-2.jpg" alt="room 105"></Image>
                             <h3>Room 105</h3>
                             <ul>
                                 <li>5 Chairs</li>

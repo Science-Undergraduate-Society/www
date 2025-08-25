@@ -106,7 +106,7 @@ export default function HealthAndWellness() {
           <SubTitle>UBC Recreation</SubTitle>
           <Text>
             Visit <Link href="https://recreation.ubc.ca/get-moving/">UBC Recreation</Link> for numerous drop-in options for fitness and sports. Check out their{' '}
-            <Link href="https://recreation.ubc.ca/2020/12/01/recorded-virtual-fitness-classes/">virtual fitness classes</Link> if you’re on a tight schedule.
+            <Link href="https://recreation.ubc.ca/2020/12/01/recorded-virtual-fitness-classes/">virtual fitness classes</Link> if you are on a tight schedule.
           </Text>
           <Text>
             The <Link href="https://sportfacilities.ubc.ca/src/">Student Recreation Centre (SRC)</Link> offers various gyms and free drop-in programs like basketball, badminton, volleyball, swimming, and skating.
@@ -142,7 +142,7 @@ export default function HealthAndWellness() {
           <Title>FOOD INSECURITY</Title>
           <SubTitle>UBC Food Hub Events</SubTitle>
           <Text>
-            Check out UBC Food Hub's <Link href="https://foodhub.ubc.ca/take-action/workshop-and-events/?page=1&campus=5">upcoming events</Link>.
+            Check out UBC Food Hub&apos;s <Link href="https://foodhub.ubc.ca/take-action/workshop-and-events/?page=1&campus=5">upcoming events</Link>.
           </Text>
           <SubTitle>Food Access Support</SubTitle>
           <Text>

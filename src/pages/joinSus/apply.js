@@ -52,9 +52,9 @@ export default function JoinSus() {
                 </p>
 
                 <ImageContent>
-                <Image src="/images/apply-images/apply8.png" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
-                <Image src="/images/apply-images/apply9.png" width={350} height={233} style={{ margin: '20px'}}/> 
-                <Image src="/images/apply-images/apply10.png" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                  <Image alt="Council Photos 1" src="/images/apply-images/apply8.png" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                  <Image alt="Council Photos 2" src="/images/apply-images/apply9.png" width={350} height={233} style={{ margin: '20px'}}/> 
+                  <Image alt="Council Photos 3" src="/images/apply-images/apply10.png" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
                 </ImageContent>
 
                 <h1>Join <Span>One-time-experience Positions</Span></h1>
@@ -66,9 +66,9 @@ export default function JoinSus() {
                 </ul>
 
                 <ImageContent>
-                <Image src="/images/apply-images/apply5.JPG" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
-                <Image src="/images/apply-images/apply6.jpg" width={350} height={233} style={{ margin: '20px'}}/> 
-                <Image src="/images/apply-images/apply7.jpg" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                  <Image alt="volunteer 1" src="/images/apply-images/apply5.JPG" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
+                  <Image alt="volunteer 2" src="/images/apply-images/apply6.jpg" width={350} height={233} style={{ margin: '20px'}}/> 
+                  <Image alt="volunteer 3" src="/images/apply-images/apply7.jpg" width={350} height={233} style={{ margin: '20px', borderRadius: '20px' }}/> 
                 </ImageContent>
 
                 <br></br>
