@@ -35,6 +35,7 @@ const sections = [
     items: [
       { name: "Upcoming Events", href: "/ourEvents/upcoming" },
       { name: "Past Events", href: "/ourEvents/past" },
+      { name: "Hackathon 2026", href: "https://hackathon.susubc.ca" },
     ],
   },
   {
@@ -77,11 +78,6 @@ const sections = [
   },
   {
     name: "Shop",
-    href: "https://shop.susubc.ca",
-    items: [],
-  },
-  {
-    name: "Hackathon",
     href: "https://shop.susubc.ca",
     items: [],
   },
