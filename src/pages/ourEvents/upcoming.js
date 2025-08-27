@@ -42,7 +42,7 @@ export default function Events() {
                 {/* Flagship Events */}
                 <FlagshipEventsContainer>
                     <br/>
-                    <Title><b>Welcome back! Here are some upcoming events and initiatives in September 🥳</b></Title>
+                    <Title><b>Fall 2025 has arrived, UBC 👀! Check out what&apos;s coming up this September—exciting events and initiatives you won&apos;t want to miss 🥳”</b></Title>
                     <h2>
                         To keep up to date on all our events, please check out our{" "}
                         <HighlightLink
