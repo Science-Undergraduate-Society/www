@@ -76,13 +76,14 @@ export default function Home() {
                 over 50 Science clubs, every science student is a member of SUS.
               </p>
             </Who>
+
             <What>
               <h2>What We Do</h2>
               <p>
                 Through SUS, we aim to create and foster a sense of science
                 community and continually promote good relations with other
                 communities on campus. Throughout the year, dozens of{" "}
-                <Span href="/events">events</Span> are run to in an effort to
+                <Span href="/ourEvents/upcoming">events</Span> are run to in an effort to
                 support our peers here at UBC.
               </p>
             </What>

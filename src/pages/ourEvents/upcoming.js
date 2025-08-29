@@ -1,13 +1,25 @@
-import { useEffect, useState, useRef } from "react";
-
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
+
 import Image from 'next/image';
+
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-import eventsArray from "@/utility/events";
-
 export default function Events() {
+    useEffect(() => {
+        // Load Instagram embed script if not already loaded
+        if (!document.getElementById("instagram-embed-script")) {
+            const script = document.createElement("script");
+            script.id = "instagram-embed-script";
+            script.src = "https://www.instagram.com/embed.js";
+            script.async = true;
+            document.body.appendChild(script);
+        } else {
+        // If already loaded, reprocess embeds
+        window.instgrm?.Embeds.process();
+        }
+    }, []);
 
     const events = [
         {
@@ -61,6 +73,26 @@ export default function Events() {
                         !
                     </h2>
                     <br/>
+
+                    {/* External Sources */}
+
+                    <ExternalSourcesContainer>
+                        <CalendarSection>
+                            <CalendarFrame
+                            src="https://calendar.google.com/calendar/embed?src=c_d4a570600fdaa112f1ac7be82285135369cdeb870a16b32a4b68df61fdad7dd5%40group.calendar.google.com&ctz=America%2FVancouver" 
+                            title="SUS Events Google Calendar"
+                            />
+                        </CalendarSection>
+
+                        <InstagramSection>
+                            <InstagramFrame
+                            src="https://www.instagram.com/p/DN6OHmvEiAf/embed" 
+                            title="SUSUBC Instagram Post"
+                            allowTransparency
+                            />
+                        </InstagramSection>
+                    </ExternalSourcesContainer>
+
                     <br/>
 
                     {events.map((event, index) => (
@@ -87,8 +119,6 @@ export default function Events() {
                 </FlagshipEventsContainer>
                 
                 {/* Back to School Survey */}
-                
-                {/* Mentorship Program */}
 
                 <EventContainer>
                     <EventTitle><b>SUS <Highlight>Mentorship Program</Highlight></b></EventTitle>
@@ -99,28 +129,31 @@ export default function Events() {
 
                     <MentorshipButtonsContainer>
                         <a href="https://ubc.ca1.qualtrics.com/jfe/form/SV_51rDLgpIDVTciTY" target="_blank" rel="noopener noreferrer">
-                            <MentorshipButton><strong>Mentee</strong> Sign Up</MentorshipButton>
+                            <InitiativeButton><strong>Mentee</strong> Sign Up</InitiativeButton>
                         </a>
                         <a href="https://ubc.ca1.qualtrics.com/jfe/form/SV_6XqYDjMPrFCHsZE" target="_blank" rel="noopener noreferrer">
-                            <MentorshipButton><strong>Mentor</strong> Sign Up</MentorshipButton>
+                            <InitiativeButton><strong>Mentor</strong> Sign Up</InitiativeButton>
                         </a>
                     </MentorshipButtonsContainer>
-                </EventContainer>                
+                </EventContainer>    
+                
+                {/* Mentorship Program */}
 
-                {/* Google Calendar */}
-                {/* <EventsGoogleCalendar>
-                    <GoogleCalendarTitle>
-                        SUS 2025-2026 Events
-                    </GoogleCalendarTitle>
+                <EventContainer>
+                    <EventTitle><b>SUS <Highlight>Back2School Survey</Highlight></b></EventTitle>
 
-                    <CalendarFrame
-                        src="https://calendar.google.com/calendar/embed?src=c_d4a570600fdaa112f1ac7be82285135369cdeb870a16b32a4b68df61fdad7dd5%40group.calendar.google.com&ctz=America%2FVancouver" 
-                        title = "SUS Events Google Calendar"
-                        width="800" 
-                        height="600" 
-                        frameborder="0">
-                    </CalendarFrame> 
-                </EventsGoogleCalendar> */}
+                    <p>
+                        The SUS Back2School Survey is an annual initiative led by the Academic Portfolio to gather meaningful feedback from UBC Science students. Open to students across all years and majors, it provides critical insights that guide advocacy efforts and help enhance the student experience. This year, our goal is to collect more than <strong>1,750 responses</strong>, ensuring the broadest representation of the science student body. By sharing their perspectives, students help shape programs, resources, and support systems tailored to their needs. To encourage participation, everyone who completes the survey will be entered into a raffle for a variety of exciting prizes.
+                    </p>
+
+                    <p>NOTE: the form will be published on September 13, 2025</p>
+
+                    {/* TODO ADD LINK WHEN WE GET */}
+                    {/* <a href="" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>Survey</InitiativeButton>
+                    </a> */}
+                </EventContainer>    
+        
             </TopContainer>
             <Footer/>
         </>
@@ -153,7 +186,7 @@ const InstagramLink = styled(HighlightLink)`
     }
 `;
 
-// ===== MENTORSHIP STYLES ===== //
+// ===== INITIATIVES STYLES ===== //
 
 const MentorshipButtonsContainer = styled.div`
     display: flex;
@@ -161,7 +194,7 @@ const MentorshipButtonsContainer = styled.div`
     margin-top: 20px; 
 `;
 
-const MentorshipButton = styled.button`
+const InitiativeButton = styled.button`
     background-color: transparent;
     color: #222755;
     padding: 15px 35px;
@@ -216,7 +249,7 @@ const CollageImage = styled(Image)`
 
 const FlagshipEventsContainer = styled.div`
     margin-top: 1rem;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
 `;
 
 const Title = styled.h1`
@@ -242,40 +275,56 @@ const EventContainer = styled.div`
     margin-bottom: 3rem;
 `;
 
-// =============== GOOGLE CALENDAR SECTION =============== //
+// =============== EXTERNAL SOURCES =============== //
 
-// const EventsGoogleCalendar = styled.div`
-//     width: 95%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     flex-direction: column;
-//     gap: 28px;
+const ExternalSourcesContainer = styled.div`
+    width: 95%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
 
-//     background-color: rgba(255,255,255, 0.8);
-//     margin-bottom: 4rem;
-//     padding: 30px 20px;
-//     border-radius: 10px;
-//     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-// `;
+    background-color: rgba(255,255,255, 0.8);
+    margin-bottom: 4rem;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 
-// const CalendarFrame = styled.iframe`
-//     border: none;
-//     border-radius: 10px;
-//     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-//     width: 100%;
-//     max-width: 800px;
-//     height: 600px;
-// `;
+    @media (max-width: 768px) {
+        display: none; /* Hide on screens smaller than 768px */
+    }
+`;
 
-// const GoogleCalendarTitle = styled.h1`
-//     font-size: 3rem;
-//     color: #222755; 
+const CalendarSection = styled.div`
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
 
-//     @media (max-width: 1000px) {
-//         padding-left: 30px;
-//     }
-// `;
+const InstagramSection = styled.div`
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+`;
+
+const CalendarFrame = styled.iframe`
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+`;
+
+const InstagramFrame = styled.iframe`
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 600px;
+`;
 
 // ====== MISC ====== //
 
@@ -290,3 +339,4 @@ const TopContainer = styled.div`
 const Highlight = styled.span`
     color: #0173BE;
 `;
+
