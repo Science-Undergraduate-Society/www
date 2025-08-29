@@ -2,53 +2,51 @@ import styled from "styled-components";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+
 export default function JoinSus() {
     return (
         <>
         <Navbar/>
         <Background>
             <Content>
-                <JoinTitle>Summer 2025 hiring is closed!</JoinTitle>
-                <h3>Thank you to everyone who applied this summer! If you missed this round, stay tuned—more opportunities will open during Fall 2025 hiring!.</h3>
+                <JoinTitle>Fall 2025/2026 Hiring is Opening!</JoinTitle>
+                <h3>
+                  Join SUS through applying in our Fall 2025/2026 application cycle! 
+                  We are now recruiting in all portfolios, available to all UBC Science students. 
+                  This is your chance to get involved in an exciting team where you can positively impact our community!
+                </h3>
+                <p>
+                  *First Week and Tutoring Working Groups allow a candidate to hold 2 positions concurrently.
+                  For available positions and application links: Check back on September 4th!
+                </p>
+
                 <h1>Join the <Span>Society</Span></h1>
 
-                {/* <h3>Apply today on UBC <a href="https://ubc-csm.symplicity.com/">CareerOnline!</a></h3>
-                <p>
-                  Click <a href="https://docs.google.com/document/d/1x5a8yTuR2oakSCWZM-cklZ0uwkt2foglk88KW5d1Zc0/edit?tab=t.0" target="_blank" rel="noopener noreferrer">here</a> to learn about all the portfolios, committees, and positions!
-                </p> */}
-
-                {/* <HiringTimelineList>
-                  <h3>Hiring Timeline:</h3>
-                  <div>(1) Applications Open: May 15, 2025 00:00 PDT</div>
-                  <div>(2) Applications Close: May 24, 2025 23:59 PDT</div>
-                  <div>(3) Interview Offers: May 28, 2025</div>
-                  <div>(4) Interview Period: May 29, 2025 - June 5, 2025</div>
-                  <div>(5) Position Offers: June 11, 2025</div>
-                </HiringTimelineList> */}
-
+                {/* Example EventCards for Fall */}
                 <EventCardsContainer>
-                <EventCard>
-                  <Image src="/images/apply-images/summer.JPG" alt="Description" width={500} height={300} />
-                  <h3>Summer Hiring</h3>
-                  <p>The UBC Science Undergraduate Society encourages Science students from all abilities, experiences, and backgrounds to apply. We are committed to fair and equitable hiring processes. No experience in SUS is required! Fresh perspectives are encouraged and highly welcome.</p>
-                  
-                  <p>Assistant to Vice-presidents, Committee chairs, and General Committee positions are hired in the summer, in mid to late May. Positions are posted on CareersOnline, so keep your eyes peeled around May! We also usually have a Facebook event and Instagram post that has all positions available, so look out for an event that is typically named “SUS Executive Hiring 20XX [Summer]”. No prior experience is needed, but a cover letter and resume are. </p>
-                  <Span href="https://docs.google.com/document/d/1ca6Tsa4BK0e6NhS5Yq7xsYRVf0EBEm-49FTIC740XNg/edit?usp=sharing">More Info &gt;</Span>
-                </EventCard>
-
-                <EventCard>
-                  <Image src="/images/apply-images/fall.jpg" alt="Description" width={500} height={300} />
-                  <h3>Fall Hiring</h3>
-                  <p>General committee positions are hired in early September! To apply, follow our <Span href="https://instagram.com/susubc">Instagram </Span> and check our linktree for hiring information closer to the dates. A cover letter and resume will be required and submitted to CareersOnline. No prior experience is needed!</p>
-                  
-                  <Span href="https://www.facebook.com/susubc/">More Info &gt;</Span>
-                </EventCard>
+                  <EventCard>
+                    <Image src="/images/apply-images/fall.jpg" alt="Description" width={500} height={300} />
+                    <h3>Fall Hiring</h3>
+                    <p>
+                      General committee positions are hired in early September! To apply, follow our <Span href="https://instagram.com/susubc">Instagram</Span> and check our linktree for hiring info closer to the dates. A cover letter and resume will be required. No prior experience is needed!
+                    </p>
+                    <Span href="https://www.facebook.com/susubc/">More Info &gt;</Span>
+                  </EventCard>
                 </EventCardsContainer>
+
+                <HiringTimelineList>
+                  <h3>Hiring Timeline:</h3>
+                  <div>(1) Applications Open: September 4th 00:00 PDT</div>
+                  <div>(2) Applications Close: September 14th 23:59 PDT</div>
+                  <div>(3) Interview Offers: September 17th</div>
+                  <div>(4) Interview Period: September 18th - September 27th</div>
+                  <div>(5) Position Offers: October 1st</div>
+                </HiringTimelineList>
 
                 <h1>Join the <Span>Student Council</Span></h1>
                 <p>The election process is relatively simple: get signatures and become nominated, campaign for votes, and then… get voted in!</p>
                 <p>
-                    If you are interested in representing your major, check out the <a href="https://www.instagram.com/sus.elections/" target="_blank" rel="noopener noreferrer">SUS elections instagram </a> to learn more!
+                    If you are interested in representing your major, check out the <a href="https://www.instagram.com/sus.elections/" target="_blank" rel="noopener noreferrer">SUS elections Instagram </a> to learn more!
                 </p>
 
                 <ImageContent>
@@ -79,28 +77,28 @@ export default function JoinSus() {
                 <hr></hr>
 
                 <h2><Span>Presidential</Span> Portfolio</h2>
-                <p>The Presidental Portfolio is an executive team that includes the SUS Executive Committee and Projects Commission, the EDI and HR Working Groups. They have the opportunity to represent science students at several Faculty of Science meetings.</p>
+                <p>The Presidential Portfolio is an executive team that includes the SUS Executive Committee and Projects Commission, the EDI and HR Working Groups. They have the opportunity to represent science students at several Faculty of Science meetings.</p>
 
                 <h2><Span>Administration</Span> Portfolio</h2>
-                <p>The Administration Portfolio directly communicates with and support Science Clubs, promote sustainability, oversee building management for the Abdul Ladha Science Student Centre, organize SUS documents and meeting minutes, and maintain the SUS code and policy.</p>
+                <p>The Administration Portfolio directly communicates with and supports Science Clubs, promotes sustainability, oversees building management for the Abdul Ladha Science Student Centre, organizes SUS documents and meeting minutes, and maintains the SUS code and policy.</p>
 
                 <h2><Span>Academic</Span> Portfolio</h2>
-                <p>The Academic Portfolio is there to enhance student academic experiences, by offering mentorship opportunities, and promoting physical and mental wellness outside of the lecture hall. They are also there to share the student perspective, and support accessibility and inclusion on the Skylight Development Grants, Teaching and Learning Enhancement Fund (TLEF), Science Curriculum, and Killam Teaching Awards Committees. </p>
+                <p>The Academic Portfolio enhances student academic experiences, offering mentorship opportunities, promoting wellness, supporting accessibility and inclusion, and contributing to various committees like Skylight Development Grants, TLEF, Science Curriculum, and Killam Teaching Awards.</p>
 
                 <h2><Span>Communications</Span> Portfolio</h2>
-                <p>The Communications portfolio includes the following commissions: marketing, productions, sales, graphic design, visual media and webmasters.</p>
+                <p>The Communications portfolio includes marketing, productions, sales, graphic design, visual media, and webmasters.</p>
 
                 <h2><Span>External</Span> Portfolio</h2>
-                <p>The External portfolio oversees all things relating to Community Engagement, Careers and Professional Development, Corporate Relations, and Student Benefits. The team works to collaborate with external organizations and campus partners, provide networking, volunteering and career development opportunities, advocate for humanitarian causes, maintain the Blue Card science student discount program, and represent the full diversity of our student groups.</p>
+                <p>The External portfolio oversees Community Engagement, Careers and Professional Development, Corporate Relations, and Student Benefits. The team collaborates with external organizations, provides networking and volunteering opportunities, advocates for humanitarian causes, and represents the diversity of our student groups.</p>
 
                 <h2><Span>Finance</Span> Portfolio</h2>
-                <p>The Finance portfolio provides financial support to a variety of students and clubs across campus. They have the mission to increase grant/subsidy visibility and budget transparency.</p>
+                <p>The Finance portfolio provides financial support to students and clubs, aiming to increase grant visibility and budget transparency.</p>
 
                 <h2><Span>Internal</Span> Portfolio</h2>
-                <p>The Internal Portfolio relates to anything and everything that concerns the inner workings of SUS and here are the following committees within the portfolio: Internal Committee, Elections, First Year Committee and Science Student Recognition Awards.</p>
+                <p>The Internal Portfolio handles the inner workings of SUS, including the Internal Committee, Elections, First Year Committee, and Science Student Recognition Awards.</p>
 
                 <h2><Span>Student Life</Span> Portfolio</h2>
-                <p>The Student Life Portfolio is responsible for flagship events such as Science RXN, Science Week, and Science Graduation, as well as the Social and Sports Working Group events throughout the school year. The Student Life Portfolio aims to plan and execute events that get the student body excited to participate and are inclusive towards everyone.</p>
+                <p>The Student Life Portfolio organizes flagship events such as Science RXN, Science Week, and Science Graduation, as well as social and sports events, aiming for inclusive participation and student engagement.</p>
             </Content>
         </Background>
         <Footer/>
