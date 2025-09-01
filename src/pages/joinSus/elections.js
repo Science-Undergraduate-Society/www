@@ -30,6 +30,13 @@ export default function Elections() {
                             <a href="https://docs.google.com/document/d/1xevZu2TWQ6xp8ykssXN2Gg0D6EnncT8smAmX5whFoaw/edit?tab=t.0" target="_blank" rel="noopener noreferrer">Fall 2025 Elections Guidelines</a>
                         </strong>: For elections guidelines.
                     </li>
+                    <HalfBreak />
+                    <li>
+                        <strong>
+                            <a href="https://docs.google.com/document/d/1nZQO15ZUPUvvWgaWa9kcIuwDhDc8G-4dtZTcKDbTNzs/edit?tab=t.0" target="_blank" rel="noopener noreferrer">Fall 2025 Elections Rules</a>
+                        </strong>: Campaign violations and penalties 
+                    </li>
+
                 </ul>
 
                 <br/>
