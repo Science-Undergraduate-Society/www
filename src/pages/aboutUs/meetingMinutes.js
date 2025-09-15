@@ -14,22 +14,22 @@ export default function MeetingMinutes() {
           <TabContent>
             <ul>
               <li>
-                <a href="https://drive.google.com/drive/folders/1HcNYhfI1OzK0asF3sKdBt_B1mPFU6hDq">
-                  Projects Commission (PROJ)
+                <a href="https://drive.google.com/drive/folders/1NWWoe0UXD0zE-mXYW-AfSBlT6vtf75dy?usp=drive_link">
+                  Advocacy 
                 </a>
               </li>
               <li>
-                <a href=" https://drive.google.com/drive/folders/1J3qhhw-F4T-i8xXDNRmUfdlPFPOEOjhR">
+                <a href="https://drive.google.com/drive/folders/1kxPtQSeZ0BNpae69Oah4S_gx9huksmnB?usp=drive_link">
                   Human Resources (HR)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/14QJRaZSH7OZ-etto8JUqDrDPhASviHez">
-                  Science Caucus (SCIC)
+                <a href="https://drive.google.com/drive/folders/13mhYgFKqPjShS8grRed0U6ISzUJ_hvRj?usp=drive_link">
+                  Elections 
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/10xGyvO4SIroabNsl8SOuwu56udDatPvu">
+                <a href="https://drive.google.com/drive/folders/1caFd8f5YL6OLw_Dhf0j6Xezit13UdaSu?usp=drive_link">
                   Equity, Diversity, and Inclusion (EDI)
                 </a>
               </li>
@@ -41,28 +41,23 @@ export default function MeetingMinutes() {
           <TabContent>
             <ul>
               <li>
-                <a href="https://drive.google.com/drive/folders/1Tg6w_RoeTEn98e8mRyfl_IrSNzLXsyze">
+                <a href="https://drive.google.com/drive/folders/1Cs9fzS754LZcplRK4TFI8o29YF7zPFMM?usp=drive_link">
                   Clubs (CC)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/172JIrvNTaBp4s1ULCNB8gO5lJLnTiXfM">
+                <a href="https://drive.google.com/drive/folders/1xue3ghZBw9cMighT5Xwv6Vhg-x6cLwyk?usp=drive_link">
                   Sustainability (SUST)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/14JbVjI7A9s7Q3Dy87AklQlkuo7e7NaBh">
-                  Building Management
+                <a href="https://drive.google.com/drive/folders/12t--jSzaJFEIWl2tFx_7uimrErb6N7vl?usp=drive_link">
+                  Building Management (BMC)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1uO7ZIzhdEakbxVtuMMlBrNwash17i6S4">
-                  Code and Policy
-                </a>
-              </li>
-              <li>
-                <a href="https://drive.google.com/drive/folders/1Ks9-ooAccyJhh5dEJoKOMYf-zJvPhaOI">
-                  Administrative Assistants
+                <a href="https://drive.google.com/drive/folders/1A2MMlncfqT9rwXkrekflQuH2wL2707um?usp=drive_link">
+                  Code and Policy (CAPC)
                 </a>
               </li>
             </ul>
@@ -73,70 +68,60 @@ export default function MeetingMinutes() {
           <TabContent>
             <ul>
               <li>
-                <a href="https://drive.google.com/drive/folders/1Us_G_f8z3VKpfc3ly6YdXnXx94fk8fyQ">
-                  Health and Wellness
+                <a href="https://drive.google.com/drive/folders/1BQPuxGW_VskKu9jKnfX0YaMonWF-S-KB?usp=drive_link">
+                  Wellness (WELL)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/192fVkE8z20INHv629tbGh-_MHkztpXZV">
-                  Academic Experience
+                <a href="https://drive.google.com/drive/folders/1MP8v-wb172vjBglYsgR7tnprOBlH6y0z?usp=drive_link">
+                  Academic Experience (ACAX)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1c5wUJB_1AqzxumwKn-kc5JP3Wprvpc3A">
-                  Mental Health and Advocacy
+                <a href="https://drive.google.com/drive/folders/1f6yToHgYx9p3h5ebMaX89ikKAa-BaIjW?usp=drive_link">
+                  Tutoring (T)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1ba-oUXfjtJhpQZLH-PoP1rIXiG4w98p2">
-                  Academic Standing
-                </a>
-              </li>
-              <li>
-                <a href="https://drive.google.com/drive/folders/1fkFk36QsvzupapCk0CTzNrDsERiHdfUR">
-                  Mentorship
+                <a href="https://drive.google.com/drive/folders/1FR3NqZ1vrHoWdmMF4nn4zwy9kHHJVgtG?usp=drive_link">
+                  Mentorship (MENT)
                 </a>
               </li>
             </ul>
           </TabContent>
         );
-      case "Communication":
+      case "Communications":
         return (
           <TabContent>
             <ul>
-            <li>
-                <a href="https://drive.google.com/drive/folders/1mdzhIur44fABSgBLKZ37z9wEGDHJHNOq">
-                  AVP
+              <li>
+                <a href="https://drive.google.com/drive/folders/1C6D100bM86sqWnR8ZNe_ofpZxsZt0ZIe?usp=drive_link">
+                  First Week (FW)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/19jipK9A-hA9JoVOh-bcm5eI1NtFByxVH">
-                  Visual Media
+                <a href="https://drive.google.com/drive/folders/1H6e0B1qx5Qmrcyq8yt1uUYdfsVDabxRz?usp=drive_link">
+                  Marketing (MKTG)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/14wDa0OIaJXns4MG4BzGotKAaefxIEsrB">
-                  Marketing
+                <a href="https://drive.google.com/drive/folders/19xEJrWYceRueUfb2tMZoiX23WYG07McC?usp=drive_link">
+                  Productions (PRODS)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1TJBBUdCJ67u4v0WSmNdbC8RqgVIU9UHf">
-                  Sales
+                <a href="https://drive.google.com/drive/folders/1LcplWcstEOvq0Anli69ILa-s1VU77COZ?usp=drive_link">
+                  Sales (SALE)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1nIbXRxf1hJG9s5KsX67G86atpNsUBG2B">
-                  First Week
+                <a href="https://drive.google.com/drive/folders/1BI2v-tmlZPgS-K9B0fmFKT0DckdFNE5k?usp=drive_link">
+                  Web Developer (WEB)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1WjjlA3iP1IzNtnvVFYX9UEDtWSvb0-ed ">
-                  Web
-                </a>
-              </li>
-              <li>
-                <a href=" https://drive.google.com/drive/folders/1GsLp8v7GgrSpNwMZ2Pnr3xmlI_9ChgE5">
-                  Productions
+                <a href="https://drive.google.com/drive/folders/1G5d6RKz5-xy5BTQ-fHDGbbh-cA0tof43?usp=drive_link">
+                  Hackathon (HACK)
                 </a>
               </li>
             </ul>
@@ -147,28 +132,23 @@ export default function MeetingMinutes() {
           <TabContent>
             <ul>
               <li>
-                <a href="https://drive.google.com/drive/folders/1wx9a0m0iAw0-COiQzSfTEkUo44AWTxEt">
-                  Student Benefits
+                <a href="https://drive.google.com/drive/folders/1aCOtwl6-C7LnYfYqn5UwLAY8AGXrK9-N?usp=drive_link">
+                  Careers and Professional Development (CAPD)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/113SFs8wDxcr1JdWH04riMDm3LdJLncE5">
-                  Careers and Professional Development
+                <a href="https://drive.google.com/drive/folders/1eAU4FpLzgoL7CjbNYNwaIqdal85h6qxI?usp=drive_link">
+                  Community Engagement (COMME)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1LfWOZ_ZAN--kbdvHsLQ4_NfgIGXVu2MM">
-                  Corporate Relations
+                <a href="https://drive.google.com/drive/folders/11Ro-DKKInsmtZpfzLlYREWnMQxkSbzxP?usp=drive_link">
+                  Sponsorship (SPSR)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1Pe5_MgaEqDFM0pwluV6sQgW5CUjEhAsb">
-                  Community Engagement
-                </a>
-              </li>
-              <li>
-                <a href=" https://drive.google.com/drive/folders/10a_EcZY2U7N4zCMGyP2pizfengdMAwAj">
-                  External Standing
+                <a href="https://drive.google.com/drive/folders/10vGkIVnb4vC3qNZ1bk4c2beumnNS-dhm?usp=drive_link">
+                Science Student Recognition Award Night (SSRAN)
                 </a>
               </li>
             </ul>
@@ -179,45 +159,13 @@ export default function MeetingMinutes() {
           <TabContent>
             <ul>
               <li>
-                <a href="https://drive.google.com/drive/folders/1pHuDCHQHN9OFutVuses_nLCZlf6KUBQB">
+                <a href="https://drive.google.com/drive/folders/1LT6arf73onq1gkb6AQ7DNxXU7ANmmabd?usp=drive_link">
                   Finance
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1aq6ZX97bGrpxv_nNL6empJDmot_6x4ET">
+                <a href="https://drive.google.com/drive/folders/1xk0eNmW0DnVa2UtYtzx0Rpd73R0e1FJ-?usp=drive_link">
                   Grants
-                </a>
-              </li>
-            </ul>
-          </TabContent>
-        );
-      case "Internal":
-        return (
-          <TabContent>
-            <ul>
-              <li>
-                <a href="https://drive.google.com/drive/folders/1I_Gm7yhpvr2KwddwYAM0nV_sCH3cbNhz">
-                  Internal Committee
-                </a>
-              </li>
-              <li>
-                <a href="https://drive.google.com/drive/folders/1lGrbjU0j2SGOxKliUvuQBHUh87Z2cZK0?usp=drive_link">
-                  SSRAN
-                </a>
-              </li>
-              <li>
-                <a href="https://drive.google.com/drive/folders/1r9sAewRcWpUU6AYsV_MTZQcFOfkSfR90">
-                  Elections Administration
-                </a>
-              </li>
-              <li>
-                <a href="https://drive.google.com/drive/folders/1ZbWUJHPTsRUyB1aO_SLQiHaz1bbxVmUj">
-                  First Year Committee
-                </a>
-              </li>
-              <li>
-                <a href="https://drive.google.com/drive/folders/1DZwms1ujwEVvo2QY53XOKFl6aVlb7AYa">
-                  Internal Coordinators
                 </a>
               </li>
             </ul>
@@ -228,33 +176,28 @@ export default function MeetingMinutes() {
           <TabContent>
             <ul>
               <li>
-                <a href="https://drive.google.com/drive/folders/1z4W7MZyre3KFVP2ZDXu1oJF0ZiDVqbZU">
-                  Science Graduation
+                <a href="https://drive.google.com/drive/folders/1zHz9y0guoXjDGGl_y8wJOMuYtX1yn5k4?usp=drive_link">
+                  First Year Committee (FYC)
                 </a>
               </li>
               <li>
-                <a href=" https://drive.google.com/drive/folders/1NMMXn60ZQygR1_9dLFjKIwijf-fxCstO">
-                  Science Week
+                <a href="https://drive.google.com/drive/folders/1IMGF8f0fmIWhgThPdLhHqXKOvFN-8Uwf?usp=drive_link">
+                  Flagship Experience (FLEX)
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1cYehUdzK6FY3Twg0TSbHsHTJY7PwKqoq">
-                  Science RXN
-                </a>
-              </li>
-              <li>
-                <a href="https://drive.google.com/drive/folders/1QesXbUK1S7xH7mfl7N4Uza0xPnUlbZA2">
-                  Student Life Standing
-                </a>
-              </li>
-              <li>
-                <a href="https://drive.google.com/drive/folders/126UrXYrvHDqpoc2caNUajvabv4J2NYzr">
+                <a href="https://drive.google.com/drive/folders/1Yaev7HKCXH9zOrMDg88Y3M-rGOd-SkOh?usp=drive_link">
                   Social
                 </a>
               </li>
               <li>
-                <a href="https://drive.google.com/drive/folders/1VF_Scvw3UQKR6is4J9cww6XdyjrMhmth">
+                <a href="https://drive.google.com/drive/folders/1ZAFdbO30q7dJcDgVH3U_4Ca7kyAmEU46?usp=drive_link">
                   Sports
+                </a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/drive/folders/1o_eTQTh4jBmP1STxMf8c7qdHOkjCpK8S?usp=drive_link">
+                  Science Celebration Committee 
                 </a>
               </li>
             </ul>
@@ -275,7 +218,7 @@ export default function MeetingMinutes() {
           <p>
             All SUS meetings are open to Science students to attend unless
             otherwise stated. All meeting minutes on the present website are
-            updated for the 2023/2024 academic year. If you wish to access the
+            updated for the 2025/2026 academic year. If you wish to access the
             meeting minutes of previous years, please email our VP Admin
             at&nbsp;
             <Link href="mailto:vpadministration@sus.ubc.ca" passHref>
@@ -285,19 +228,10 @@ export default function MeetingMinutes() {
           </p>
 
           <StyledH3>Council Meeting Minutes</StyledH3>
-
-          <p>
-            Council normally runs every Tuesday on a bi-weekly schedule
-            beginning from 6:30 PM at the Micheal Kingsmill Forum located at the
-            4th floor of the AMS Nest. (With the exception of the summer, where
-            they run monthly and the month of September, where no council
-            meetings are held due to elections).
-          </p>
-
           <p>
             The meeting minutes are being updated periodically, click&nbsp;
             <Link
-              href="https://drive.google.com/drive/folders/1-PVBSWfZlZPP7NPNQT3oZn8dIP7jsXa1"
+              href="https://drive.google.com/drive/folders/1-PVBSWfZlZPP7NPNQT3oZn8dIP7jsXa1?usp=sharing"
               passHref
             >
               here
@@ -308,15 +242,13 @@ export default function MeetingMinutes() {
           <StyledH3>Executive Meeting Minutes</StyledH3>
 
           <p>
-            Executive Meetings normally run every Tuesday on a bi-weekly
-            schedule beginning from 5:00 pm in the Abdul Lahda Science Student
-            Building, Meeting Room 103.
+          Executive Meetings run every Thursday on a weekly schedule from 5:00 pm in the Abdul Lahda Science Student Building, Meeting Room 103.
           </p>
 
           <p>
             The meeting minutes are being updated periodically, click&nbsp;
             <Link
-              href="https://drive.google.com/drive/folders/1lJJ4gWDYDzz1B4FDpwPFL5Jo10TjwFKR"
+              href="https://drive.google.com/drive/folders/1lJJ4gWDYDzz1B4FDpwPFL5Jo10TjwFKR?usp=sharing"
               passHref
             >
               here
@@ -353,10 +285,10 @@ export default function MeetingMinutes() {
                 Academic
               </li>
               <li
-                className={activeTab === "Communication" ? "active" : ""}
-                onClick={() => setActiveTab("Communication")}
+                className={activeTab === "Communications" ? "active" : ""}
+                onClick={() => setActiveTab("Communications")}
               >
-                Communication
+                Communications
               </li>
               <li
                 className={activeTab === "External" ? "active" : ""}
@@ -369,12 +301,6 @@ export default function MeetingMinutes() {
                 onClick={() => setActiveTab("Finance")}
               >
                 Finance
-              </li>
-              <li
-                className={activeTab === "Internal" ? "active" : ""}
-                onClick={() => setActiveTab("Internal")}
-              >
-                Internal
               </li>
               <li
                 className={activeTab === "Student Life" ? "active" : ""}
