@@ -146,12 +146,9 @@ export default function Events() {
                         The SUS Back2School Survey is an annual initiative led by the Academic Portfolio to gather meaningful feedback from UBC Science students. Open to students across all years and majors, it provides critical insights that guide advocacy efforts and help enhance the student experience. This year, our goal is to collect more than <strong>1,750 responses</strong>, ensuring the broadest representation of the science student body. By sharing their perspectives, students help shape programs, resources, and support systems tailored to their needs. To encourage participation, everyone who completes the survey will be entered into a raffle for a variety of exciting prizes.
                     </p>
 
-                    <p>NOTE: the form will be published on September 13, 2025</p>
-
-                    {/* TODO ADD LINK WHEN WE GET */}
-                    {/* <a href="" target="_blank" rel="noopener noreferrer">
-                        <InitiativeButton><strong>Survey</InitiativeButton>
-                    </a> */}
+                    <a href="https://ubc.ca1.qualtrics.com/jfe/form/SV_4JwuVlyeHp1BMdo" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>Take Survey</strong></InitiativeButton>
+                    </a>
                 </EventContainer>    
         
             </TopContainer>
