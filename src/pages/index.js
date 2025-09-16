@@ -227,53 +227,6 @@ export default function Home() {
           ></Frame>
         </Alssc>
 
-        {/* Podcast Section */}
-        <Podcast>
-          <Frame
-            src="https://open.spotify.com/embed/show/6LvV59dTsORiXSn4z28Zon/video?utm_source=generator"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></Frame>
-
-          <PodcastContent>
-            <Title>SUSpisode</Title>
-            <Description>
-              In 2023, our productions team thought, &quot;Why not start a
-              podcast all about UBC and university life?&quot; So they did! Join
-              us, along with special guests from around UBC, as we chat about
-              everything from school and life to the quirky moments that make
-              university unique!
-            </Description>
-            <SocialMediaIcons>
-              <p>Available Platforms:</p>
-              <a
-                href="https://www.instagram.com/reel/CzMXIVKA-Wk/"
-                target="_blank"
-                rel="noreferrer"
-                style={{ marginLeft: "20px" }}
-              >
-                <FontAwesomeIcon icon={faInstagram} />
-              </a>
-              <a
-                href="https://open.spotify.com/show/6LvV59dTsORiXSn4z28Zon?si=0f45da7172b94df9"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon icon={faSpotify} />
-              </a>
-              <a
-                href="https://www.youtube.com/watch?v=uklHoSMsSsY&list=PLb42V8mv92mbcVMyJma3LylkHLciwCMsn"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon icon={faYoutube} />
-              </a>
-            </SocialMediaIcons>
-          </PodcastContent>
-        </Podcast>
-
         {/* Shop Section */}
         <ShopSection>
           <ShopGridContainer>
@@ -295,7 +248,7 @@ export default function Home() {
             </ShopDescription>
             <div>
               <ButtonHollowBlack>
-                <Link href="/shop">Shop Now</Link>
+                <a href="https://shop.susubc.ca/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>Shop Now</a>
               </ButtonHollowBlack>
             </div>
           </ShopInfo>
