@@ -295,7 +295,7 @@ export default function Home() {
             </ShopDescription>
             <div>
               <ButtonHollowBlack>
-                <Link href="/shop">Shop Now</Link>
+                <a href="https://shop.susubc.ca/">Shop Now</a>
               </ButtonHollowBlack>
             </div>
           </ShopInfo>
@@ -361,6 +361,10 @@ const ButtonHollowBlack = styled.button`
   &:hover {
     color: #0052ff;
     border: 1px solid #0052ff;
+  }
+
+  a {
+    text-decoration: none;
   }
 `;
 
