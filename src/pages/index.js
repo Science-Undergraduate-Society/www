@@ -226,7 +226,7 @@ export default function Home() {
             </div>
           </AlsscContent>
         </Alssc>
-
+        
         {/* PODCAST DEPRECATED */}
         {/* Podcast Section
         <Podcast>
@@ -295,7 +295,7 @@ export default function Home() {
             </ShopDescription>
             <div>
               <ButtonHollowBlack>
-                <a href="https://shop.susubc.ca/">Shop Now</a>
+                <a href="https://shop.susubc.ca/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>Shop Now</a>
               </ButtonHollowBlack>
             </div>
           </ShopInfo>
