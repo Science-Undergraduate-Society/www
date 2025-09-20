@@ -200,6 +200,14 @@ export default function Home() {
 
         {/* Abdul Ladha Section */}
         <Alssc>
+          <Frame
+            src="https://www.youtube.com/embed/t-kc4Bppv2I?si=8kjHKUHZ9ZZhmQMy"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></Frame>
+
           <AlsscContent>
             <Title>Abdul Ladha Science Student Centre</Title>
             <Description>
@@ -217,17 +225,10 @@ export default function Home() {
               </ButtonHollowBlack>
             </div>
           </AlsscContent>
-
-          <Frame
-            src="https://www.youtube.com/embed/t-kc4Bppv2I?si=8kjHKUHZ9ZZhmQMy"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></Frame>
         </Alssc>
 
-        {/* Podcast Section */}
+        {/* PODCAST DEPRECATED */}
+        {/* Podcast Section
         <Podcast>
           <Frame
             src="https://open.spotify.com/embed/show/6LvV59dTsORiXSn4z28Zon/video?utm_source=generator"
@@ -272,7 +273,7 @@ export default function Home() {
               </a>
             </SocialMediaIcons>
           </PodcastContent>
-        </Podcast>
+        </Podcast> */}
 
         {/* Shop Section */}
         <ShopSection>
@@ -281,7 +282,6 @@ export default function Home() {
             <ShopImage src="/images/shop-images/Black-Hoodie-1.png" />
             <ShopImage src="/images/shop-images/Blue-Hoodie-1.png" />
             <ShopImage src="/images/shop-images/Grey-Crew-1.png" />
-            <ShopImage src="/images/shop-images/White-Crew-1.png" />
           </ShopGridContainer>
 
           <ShopInfo>
@@ -716,8 +716,8 @@ const Alssc = styled.div`
   margin-top: 20vh;
   display: flex;
   justify-content: center;
-  gap: 4rem;
-  width: 90%;
+  gap: 3rem;
+  width: 95%;
   max-width: 1100px;
 
   @media (max-width: 700px) {
@@ -730,7 +730,7 @@ const AlsscContent = styled.div`
   display: flex;
   flex-direction: column;
   color: #222755;
-  text-align: right;
+  text-align: left;
   width: 60%;
   height: 100%;
 
@@ -784,7 +784,7 @@ const Description = styled.div`
 `;
 
 const Frame = styled.iframe`
-  width: 40%;
+  width: 50%;
   height: 300px;
 
   @media (max-width: 700px) {
