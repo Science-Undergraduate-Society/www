@@ -200,6 +200,14 @@ export default function Home() {
 
         {/* Abdul Ladha Section */}
         <Alssc>
+          <Frame
+            src="https://www.youtube.com/embed/t-kc4Bppv2I?si=8kjHKUHZ9ZZhmQMy"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></Frame>
+
           <AlsscContent>
             <Title>Abdul Ladha Science Student Centre</Title>
             <Description>
@@ -217,15 +225,55 @@ export default function Home() {
               </ButtonHollowBlack>
             </div>
           </AlsscContent>
-
+        </Alssc>
+        
+        {/* PODCAST DEPRECATED */}
+        {/* Podcast Section
+        <Podcast>
           <Frame
-            src="https://www.youtube.com/embed/t-kc4Bppv2I?si=8kjHKUHZ9ZZhmQMy"
+            src="https://open.spotify.com/embed/show/6LvV59dTsORiXSn4z28Zon/video?utm_source=generator"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></Frame>
-        </Alssc>
+
+          <PodcastContent>
+            <Title>SUSpisode</Title>
+            <Description>
+              In 2023, our productions team thought, &quot;Why not start a
+              podcast all about UBC and university life?&quot; So they did! Join
+              us, along with special guests from around UBC, as we chat about
+              everything from school and life to the quirky moments that make
+              university unique!
+            </Description>
+            <SocialMediaIcons>
+              <p>Available Platforms:</p>
+              <a
+                href="https://www.instagram.com/reel/CzMXIVKA-Wk/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ marginLeft: "20px" }}
+              >
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+              <a
+                href="https://open.spotify.com/show/6LvV59dTsORiXSn4z28Zon?si=0f45da7172b94df9"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faSpotify} />
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=uklHoSMsSsY&list=PLb42V8mv92mbcVMyJma3LylkHLciwCMsn"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faYoutube} />
+              </a>
+            </SocialMediaIcons>
+          </PodcastContent>
+        </Podcast> */}
 
         {/* Shop Section */}
         <ShopSection>
@@ -234,7 +282,6 @@ export default function Home() {
             <ShopImage src="/images/shop-images/Black-Hoodie-1.png" />
             <ShopImage src="/images/shop-images/Blue-Hoodie-1.png" />
             <ShopImage src="/images/shop-images/Grey-Crew-1.png" />
-            <ShopImage src="/images/shop-images/White-Crew-1.png" />
           </ShopGridContainer>
 
           <ShopInfo>
@@ -314,6 +361,10 @@ const ButtonHollowBlack = styled.button`
   &:hover {
     color: #0052ff;
     border: 1px solid #0052ff;
+  }
+
+  a {
+    text-decoration: none;
   }
 `;
 
@@ -669,8 +720,8 @@ const Alssc = styled.div`
   margin-top: 20vh;
   display: flex;
   justify-content: center;
-  gap: 4rem;
-  width: 90%;
+  gap: 3rem;
+  width: 95%;
   max-width: 1100px;
 
   @media (max-width: 700px) {
@@ -683,7 +734,7 @@ const AlsscContent = styled.div`
   display: flex;
   flex-direction: column;
   color: #222755;
-  text-align: right;
+  text-align: left;
   width: 60%;
   height: 100%;
 
@@ -737,7 +788,7 @@ const Description = styled.div`
 `;
 
 const Frame = styled.iframe`
-  width: 40%;
+  width: 50%;
   height: 300px;
 
   @media (max-width: 700px) {
