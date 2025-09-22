@@ -55,7 +55,7 @@ const tutors = [
     {
         name: "William Lee",
         courses: "CHEM 121, CHEM 123",
-        image: "/images/tutors/William Lee.JPG",
+        image: "/images/tutors/William Lee.jpg",
         description: "Hi, my name is William, and I am a second-year pharmacology student. I became a SUS tutor because I like sharing my knowledge and helping other students. Outside of school, I enjoy playing soccer.",
         koalaLink: "https://koalendar.com/e/william-lee-sus-tutoring"
     },
