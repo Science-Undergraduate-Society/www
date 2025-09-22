@@ -137,7 +137,7 @@ export default function Events() {
                     </MentorshipButtonsContainer>
                 </EventContainer>    
                 
-                {/* Mentorship Program */}
+                {/* Back2School Survey */}
 
                 <EventContainer>
                     <EventTitle><b>SUS <Highlight>Back2School Survey</Highlight></b></EventTitle>
@@ -148,6 +148,20 @@ export default function Events() {
 
                     <a href="https://ubc.ca1.qualtrics.com/jfe/form/SV_4JwuVlyeHp1BMdo" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Take Survey</strong></InitiativeButton>
+                    </a>
+                </EventContainer>    
+
+                {/* Survival Guide */}
+
+                <EventContainer>
+                    <EventTitle><b>SUS <Highlight>Survival Guide</Highlight></b></EventTitle>
+
+                    <p>
+                    <strong>The SUS Science Survival Guide</strong> is a comprehensive resource for everything a UBC Science student needs! Inside are practical tips for navigating university life, study strategies for popular courses, advice on getting involved in research, and guidance on how to make the most of campus life. Plus, this year the guide features a puzzle! Solve it for a chance to win any gift card of choice.
+                    </p>
+
+                    <a href="https://drive.google.com/file/d/1L8lPDrr3br4f3HeoBoeRuQkFWJEtnrZy/view" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>See the Guide</strong></InitiativeButton>
                     </a>
                 </EventContainer>    
         
