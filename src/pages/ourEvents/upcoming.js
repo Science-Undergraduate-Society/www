@@ -163,7 +163,21 @@ export default function Events() {
                     <a href="https://drive.google.com/file/d/1L8lPDrr3br4f3HeoBoeRuQkFWJEtnrZy/view" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>See the Guide</strong></InitiativeButton>
                     </a>
-                </EventContainer>    
+                </EventContainer>   
+
+                {/* Brunch */}
+
+                <EventContainer>
+                    <EventTitle><b>Come out for<Highlight> Brunch</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>October 10, 9-12pm</strong></EventSubtitle>
+                    <p>
+                    Join us for brunch to celebrate National Coming Out Day! Hosted by SUS EDI, KUS Pride, and LFSUS, this event is a space to connect with others and enjoy good food. Everyone is welcome! Abdul Ladha Science Student Centre, <strong>October 10th, 9-12PM (drop-in)</strong> For questions, please contact edi@sus.ubc.ca.
+                    </p>
+
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3QcCV1IR-gurgwHY-9WFi3B7lckYXlBxQ3L7pBVyWAfzVPw/viewform" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>Event RSVP Form</strong></InitiativeButton>
+                    </a>
+                </EventContainer>     
         
             </TopContainer>
             <Footer/>
