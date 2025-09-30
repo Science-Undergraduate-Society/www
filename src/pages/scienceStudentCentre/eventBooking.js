@@ -371,12 +371,12 @@ export default function Bookings() {
                         <TableRow>
                           <TableCell>SUS Clubs, Science Clubs/Organizations, UBC Organizations, External Organizations</TableCell>
                           <TableCell>Cleaning Fee for Dances/Parties/Large Events (4)</TableCell>
-                          <TableCell>$100/event</TableCell>
+                          <TableCell>$100/hr</TableCell>
                         </TableRow>
                         <TableRow>
                           <TableCell>SUS Clubs, Science Clubs/Organizations, UBC Organizations, External Organizations</TableCell>
                           <TableCell>Security Fee for Dances/Parties/Large Events (4)</TableCell>
-                          <TableCell>$100/event</TableCell>
+                          <TableCell>$100/hr</TableCell>
                         </TableRow>
                         <TableRow>
                           <TableCell>SUS Clubs, Science Clubs/Organizations, UBC Organizations, External Organizations</TableCell>

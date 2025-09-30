@@ -124,6 +124,11 @@ export default function MeetingMinutes() {
                   Hackathon (HACK)
                 </a>
               </li>
+              <li>
+                <a href="https://drive.google.com/drive/folders/1p2W5XkpUDJdc0rHwdfJDbu0HD0y1ehdG?usp=sharing">
+                  Monthly Chair Meetings
+                </a>
+              </li>
             </ul>
           </TabContent>
         );
@@ -256,12 +261,12 @@ export default function MeetingMinutes() {
             &nbsp;to view the meeting minutes.
           </p>
 
-          <StyledH3>Working Group Meeting Minutes</StyledH3>
+          <StyledH3>Committee Meeting Minutes</StyledH3>
 
           <p>
-            All working groups have different meeting schedules based on team
+            All committees have different meeting schedules based on team
             members’ availability. The meeting time and location can be found on
-            the meeting minutes.
+            the meeting minutes. The meeting minutes are being updated periodically.
           </p>
 
           <TabTable>
