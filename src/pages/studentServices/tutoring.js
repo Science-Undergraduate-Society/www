@@ -109,7 +109,7 @@ export default function MeetingRoomBookings() {
             <Navbar />
             <Content>
                 <ContactSection>
-                    <TitleBig>SUS Drop-in Tutoring Program</TitleBig>
+                    <TitleBig>SUS Tutoring Program</TitleBig>
                     <Description>
                         Free online and in-person tutoring sessions led by upper-year science students. Sign-up or drop-in today.
                     </Description>
@@ -172,11 +172,11 @@ export default function MeetingRoomBookings() {
                         <ScheduleList>
                             <ScheduleItem>
                                 <strong>Mondays: 4-6 PM, BIOL 1001</strong>
-                                <CourseList>For courses: BIOL 112, BIOL 121, CHEM 121, PHYS 131, PHYS 117, CHEM 233, and BIOL 200</CourseList>
+                                <CourseList>For courses: BIOL 112/121, BIOL 200, and CHEM 233</CourseList>
                             </ScheduleItem>
                             <ScheduleItem>
                                 <strong>Wednesdays: 4-6 PM, Abdul Ladha Science Student Centre, Room 105</strong>
-                                <CourseList>For courses: CHEM 203/233, CHEM 121, PHYS 117/118, BIOL 112, BIOL 121</CourseList>
+                                <CourseList>For courses: CHEM 121, PHYS 117/131</CourseList>
                             </ScheduleItem>
                         </ScheduleList>
                     </TutoringOption>
