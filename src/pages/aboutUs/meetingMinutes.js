@@ -5,11 +5,43 @@ import Footer from "@/components/Footer";
 import { useState } from "react";
 
 export default function MeetingMinutes() {
-  const [activeTab, setActiveTab] = useState("Presidential");
+  const [activeTab, setActiveTab] = useState("Council");
 
   const renderContent = () => {
     switch (activeTab) {
-        case "Presidential":
+      case "Council":
+        return (
+          <TabContent>
+            <ul>
+              <li>
+                <a href="https://drive.google.com/drive/folders/13s-xCcU-f-IgGdQk5a1qzQ3oTTJvE46M?usp=drive_link">
+                  Academic Affairs 
+                </a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/drive/folders/1URaRYfN1WSK5Ljm1hawfLOW8xGKYgUrP?usp=drive_link">
+                  External Relations
+                </a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/drive/folders/1jCeDAEESwhReqX9MwUMJrNp8HYiRVPTI?usp=drive_link">
+                  Joint Policy and Advocacy
+                </a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/drive/folders/12cRLHp0SYPIcyGRr3jJNIl35ls4-pYUQ?usp=drive_link">
+                  President&apos;s Advisory
+                </a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/drive/folders/1w6mksIxf9dzr0FKfWfAIi_FUgt9kbMUk?usp=drive_link">
+                  Student Life and Events
+                </a>
+              </li>
+            </ul>
+          </TabContent>
+        );
+      case "Presidential":
         return (
           <TabContent>
             <ul>
@@ -271,6 +303,12 @@ export default function MeetingMinutes() {
 
           <TabTable>
             <TabHeaders>
+              <li
+                className={activeTab === "Council" ? "active" : ""}
+                onClick={() => setActiveTab("Council")}
+              >
+                Council
+              </li>
               <li
                 className={activeTab === "Presidential" ? "active" : ""}
                 onClick={() => setActiveTab("Presidential")}
