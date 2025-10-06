@@ -115,14 +115,16 @@ export const Executive = ({ name, role, imagePath, email }) => {
         <ExecutiveTitle>{role}</ExecutiveTitle>
         <ExecutiveName>{name}</ExecutiveName>
       </ExecutiveTextContainer>
-      <StyledCiMail
-        size={30}
-        onClick={() => {
-          window.open(
-            "mailto:" + email + "?subject=Subject&body=Body%20goes%20here"
-          );
-        }}
-      />
+      {email && (
+        <StyledCiMail
+          size={30}
+          onClick={() => {
+            window.open(
+              "mailto:" + email + "?subject=Subject&body=Body%20goes%20here"
+            );
+          }}
+        />
+      )}
     </ExecutiveCard>
   );
 };
