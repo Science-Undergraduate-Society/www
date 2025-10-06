@@ -1,8 +1,61 @@
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import ElectionsTimeline from "@/components/ElectionsTimeline";
+import { fallCandidates2025 } from "@/utility/electionsCandidates";
+import { Modal } from "@/components/aboutUs-components/Modal";
+
+// Candidate Component (similar to Executive component)
+const Candidate = ({ name, position, imagePath, blurb }) => {
+  const [modalClose, setModalClose] = useState(true);
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setModalClose(true);
+      }
+    };
+
+    if (!modalClose) {
+      document.body.style.overflow = "hidden";
+      window.addEventListener("keydown", handleKeyDown);
+    } else {
+      document.body.style.overflow = "auto";
+      window.removeEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [modalClose]);
+
+  const setCloseModal = () => {
+    setModalClose(!modalClose);
+  };
+
+  return (
+    <>
+      <Modal
+        modalClose={modalClose}
+        setCloseModal={setCloseModal}
+        name={name}
+        role={position}
+        imagePath={imagePath}
+        description={blurb}
+      />
+      <CandidateCard onClick={setCloseModal}>
+        <CandidateImage src={imagePath} />
+        <CandidateTextContainer>
+          <CandidatePosition>{position}</CandidatePosition>
+          <CandidateName>{name}</CandidateName>
+        </CandidateTextContainer>
+      </CandidateCard>
+    </>
+  );
+};
 
 export default function Elections() {
     return (
@@ -11,8 +64,8 @@ export default function Elections() {
             <Content>
                 <Title>Fall Elections 2025</Title>
                 <Subtitle>SUS is made up of <strong>7 portfolios</strong> and over <strong>200+ volunteers</strong> working together to build an amazing student experience for all science students.</Subtitle>
-                <MiniTitle>🌟 Run in the SUS Elections! 🌟</MiniTitle>
-                <Paragraph>Want to make a difference and shape the student experience in UBC Science? Right now, we’re looking for passionate students to join our team! Open positions include Department Representatives, First-Year Representatives, VP Academic, VP Finance, and AMS Representative. Whether you want to represent your department, your year, or the entire science community, now’s your chance, run in the elections today!</Paragraph>
+                {/* <MiniTitle>🌟 Run in the SUS Elections! 🌟</MiniTitle>
+                <Paragraph>Want to make a difference and shape the student experience in UBC Science? Right now, we're looking for passionate students to join our team! Open positions include Department Representatives, First-Year Representatives, VP Academic, VP Finance, and AMS Representative. Whether you want to represent your department, your year, or the entire science community, now's your chance, run in the elections today!</Paragraph> */}
 
                 <br/>
 
@@ -41,7 +94,76 @@ export default function Elections() {
 
                 <br/>
 
-                <CollageContainer>
+                <Title>Fall Elections 2025 Candidates</Title>
+                
+                <Subtitle>See the timeline below for the <strong>link to vote</strong>!</Subtitle>
+
+                <ElectionsTimeline/>
+
+
+                {/* VP Positions Section */}
+                <SectionTitle>Running for VP Positions</SectionTitle>
+                <CandidatesContainer>
+                    {fallCandidates2025.vpPositions.map((candidate) => (
+                        <Candidate
+                            key={candidate.name}
+                            name={candidate.name}
+                            position={candidate.position}
+                            imagePath={candidate.imagePath}
+                            blurb={candidate.blurb}
+                        />
+                    ))}
+                </CandidatesContainer>
+
+                <br/>
+
+                {/* AMS Representative Section */}
+                <SectionTitle>Running for AMS Representative</SectionTitle>
+                <CandidatesContainer>
+                    {fallCandidates2025.amsRepresentative.map((candidate) => (
+                        <Candidate
+                            key={candidate.name}
+                            name={candidate.name}
+                            position={candidate.position}
+                            imagePath={candidate.imagePath}
+                            blurb={candidate.blurb}
+                        />
+                    ))}
+                </CandidatesContainer>
+
+                <br/>
+
+                {/* Departmental Representatives Section */}
+                <SectionTitle>Running for Departmental Representatives</SectionTitle>
+                <CandidatesContainer>
+                    {fallCandidates2025.departmentalReps.map((candidate) => (
+                        <Candidate
+                            key={candidate.name}
+                            name={candidate.name}
+                            position={candidate.position}
+                            imagePath={candidate.imagePath}
+                            blurb={candidate.blurb}
+                        />
+                    ))}
+                </CandidatesContainer>
+
+                <br/>
+
+                {/* First-Year Representatives Section */}
+                <SectionTitle>Running for First-Year Representatives</SectionTitle>
+                <CandidatesContainer>
+                    {fallCandidates2025.firstYearReps.map((candidate) => (
+                        <Candidate
+                            key={candidate.name}
+                            name={candidate.name}
+                            position={candidate.position}
+                            imagePath={candidate.imagePath}
+                            blurb={candidate.blurb}
+                        />
+                    ))}
+                </CandidatesContainer>
+
+                {/* <CollageContainer>
                     <CollageImage
                     src="/images/elections-images/1.JPG"
                     alt="Students campaigning"
@@ -63,11 +185,7 @@ export default function Elections() {
                     height={400}
                     $span={2}
                     />
-                </CollageContainer>
-
-                <br/>
-                
-                <ElectionsTimeline/>
+                </CollageContainer> */}
             </Content>
             <Footer />
         </Background>
@@ -173,4 +291,70 @@ const CollageImage = styled(Image)`
     transform: scale(1.05) rotate(0deg);
     z-index: 10;
   }
+`;
+
+// Candidate-specific styled components
+const SectionTitle = styled.h2`
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: #001961;
+  text-align: center;
+`;
+
+const CandidatesContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 20px;
+
+  @media only screen and (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+const CandidateCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 350px;
+  gap: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+const CandidateTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+
+const CandidatePosition = styled.div`
+  font-size: 20px;
+  font-weight: bold;
+  color: #001961;
+`;
+
+const CandidateName = styled.div`
+  font-size: 18px;
+  color: #333;
+`;
+
+const CandidateImage = styled.img`
+  overflow: hidden;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
 `;
