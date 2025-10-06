@@ -33,6 +33,9 @@ const ModalContentContainer = styled.div`
   display: flex;
   padding: 100px;
   gap: 30px;
+  overflow-y: auto;
+  max-height: 90vh;
+  width: 100%;
 
   @media only screen and (max-width: 768px) {
     padding: 40px;
@@ -43,9 +46,11 @@ const ModalContentContainer = styled.div`
 const Description = styled.div`
   font-size: 18px;
   white-space: pre-line;
+  overflow-y: auto;
+  flex: 1;
 
   @media only screen and (max-width: 1024px) {
-    overflow: auto;
+    overflow-y: auto;
   }
 
   @media only screen and (max-width: 768px) {
@@ -60,6 +65,8 @@ const ExecutiveCard = styled.div`
   align-items: center;
   text-align: center;
   gap: 20px;
+  flex-shrink: 0;
+  min-width: 250px;
 `;
 
 const StyledFaTimes = styled(FaTimes)`
