@@ -148,12 +148,6 @@ I'm James, a fourth-year student in CAPS, and I'm running to be your CAPS Depart
 Having served as the CAPS Department Representative for the past 2 years and establishing and leading a dedicated CAPS department club (The CAPS Student Association), I'm excited to continue to build the CAPS community as our program grows! As your CAPS Department Representative, I will continue to work with SUS, faculty, and other departments to create and grow initiatives to promote academic and social well-being amongst CAPS students. From drinks with profs to cozy study socials to big collaborations with SUS, I look forward to helping build community between CAPS students and the Science community as a whole!`,
     },
     {
-      name: "Mina Lander",
-      position: "Earth, Ocean and Atmospheric Sciences Representative",
-      imagePath: "/images/2025-fall-elections/default.jpg",
-      blurb: "No blurb",
-    },
-    {
       name: "Benjamin Bradley",
       position: "Physics, Biophysics and Astronomy Representative",
       imagePath: "/images/2025-fall-elections/default.jpg",
