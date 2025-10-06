@@ -30,7 +30,7 @@ export default function MeetingMinutes() {
               </li>
               <li>
                 <a href="https://drive.google.com/drive/folders/12cRLHp0SYPIcyGRr3jJNIl35ls4-pYUQ?usp=drive_link">
-                  President's Advisory
+                  President&apos;s Advisory
                 </a>
               </li>
               <li>
