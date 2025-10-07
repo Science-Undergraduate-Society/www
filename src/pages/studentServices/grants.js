@@ -21,12 +21,11 @@ export default function Grants() {
             </Heading>
             <StuSec>
                 <SecondHeader>Application Information</SecondHeader>
-                    <ThirdHeader>GRANT AND SUBSIDY APPLICATIONS FOR THE ‘24/’25 ACADEMIC YEAR ARE NOW CLOSED</ThirdHeader>
-                    <ForthHeader>Applications for ‘25/’26 Grant and Subsidies will open in Early October 2025!</ForthHeader>
-                    <InfoSec>Applications for Grants & Subsidies will  <strong>open on October 7, 2024</strong> and will be reviewed on a first-submitted, first-reviewed basis. SUS will be accepting applications
-                    <strong>until March 10, 2025, or until funds run out.</strong> Please utilize the following resources and submission link to put forth your application. 
+                    <ThirdHeader>GRANT AND SUBSIDY APPLICATIONS FOR THE ‘25/’26 ACADEMIC YEAR ARE NOW OPEN</ThirdHeader>
+                    <InfoSec>Applications for Grants & Subsidies will  <strong>open on September 15, 2025</strong> and will be reviewed on a first-submitted, first-reviewed basis. SUS will be accepting applications
+                    <strong> until April 10, 2026, or until funds run out.</strong> Please utilize the following resources and submission link to put forth your application. 
                     </InfoSec>
-                    <InfoSec>To read more about the 2024/2025 available grants and subsidies, as well as to view the application form, 
+                    <InfoSec>To read more about the 2025/2026 available grants and subsidies, as well as to view the application form, 
                         see below and click on the name of the grant/subsidy you are interested in. 
                     </InfoSec>
                     <InfoSec>
@@ -41,26 +40,26 @@ export default function Grants() {
                     <SciSec>
                     <Accordion 
                         title="Clubs Operations Grant"
-                        grant="https://docs.google.com/document/d/1pNsqp4S9Db460IAVU1dNPCo8V15NP_DJK8KbzX5ftww/edit?usp=drive_link"
+                        grant="https://docs.google.com/document/d/1pNsqp4S9Db460IAVU1dNPCo8V15NP_DJK8KbzX5ftww/edit?tab=t.0"
                         for_club="for SUS Clubs"
                         content="The Club Operations Grant is meant to supplement existing club membership fees and to help 
                                 facilitate day-to-day operations of the club. The maximum allocation per Club Operations Grant
                                 is $1750.00."
-                        link="https://docs.google.com/spreadsheets/d/1l80bQhhRTl8o6Ylz5ihR92qE5iIdrXjYIaurQjo_EYg/edit?usp=drive_link"
+                        link="https://docs.google.com/spreadsheets/d/1MhKecU7KR7MUg2Rm3Gznfr9mKssaAcNB9nwh0KjY5tA/edit?gid=1799316805#gid=1799316805"
                     />
                     <Accordion 
                         title="Special Projects Grant"
-                        grant="https://docs.google.com/document/d/13cFYPuC1btrfxtV8FvuXfrsj4_asuWnJb-7Nb4v9N-Y/edit?usp=drive_link"
+                        grant="https://docs.google.com/document/d/1DHc12Pe6HAZRI8iVe_fHsIzv2D84BCFALrHRJtH01_s/edit?tab=t.0"
                         for_club="for SUS Clubs"
                         content="The Special Projects Grant is intended to help facilitate any new or special projects undertaken 
                                 by SUS Clubs. The Special Project Grants can only be used towards new events/projects or new additions
                                 to annual or existing activities that benefit a sizable portion of the science student body. 
                                 The maximum allocation of the Special Projects Grant is 50% of relevant fees to a maximum of $500."
-                        link="https://docs.google.com/spreadsheets/d/1uGe_JO6J9AP8NybmjySjf5scxKWkKvVY_pPGVX38gCk/edit?usp=drive_link"
+                        link="https://docs.google.com/spreadsheets/d/10fODHdeq-thBic3hN665RkV1_3ih8Soe3KVRa_nmztI/edit?gid=926503017#gid=926503017"
                     />
                     <Accordion
                         title="EDI Grant"
-                        grant="https://docs.google.com/document/d/1yJJLi_Tuhm4yVBvsTkHEdWRceNlD3BiwuYvdsgGTTEI/edit?usp=drive_link"
+                        grant="https://docs.google.com/document/d/1-9UknGs3hrJkmq1RbIqMdryhk7uKog9ZGUL2dGpjn7c/edit?tab=t.0"
                         for_club="for SUS Clubs & Science Students"
                         content="The EDI Grant is intended to create initiatives to support and centre communities with folks who identify 
                                 as Black, Indigenous, and People of Colour, or 2SLGBTQIA+, have disabilities, or have been and continue to be systemically-made 
@@ -68,27 +67,27 @@ export default function Grants() {
                                 conducting community-led research focused on these groups in ways that are respectful, non-extractive, and non-performative. 
                                 The maximum allocation of the Grant is 50% of relevant fees with a limit of $500. 
 "
-                        link="https://docs.google.com/spreadsheets/d/1MICyCxMJU4cbUFXF0_LsLN-HkXobP0EerCE-oVKfe6c/edit?usp=drive_link"
+                        link="https://docs.google.com/spreadsheets/d/1W4Zi_-1ApnC7KNHJjqjYvkh2xcPj0x5UbwQnahXVAUg/edit?gid=412394174#gid=412394174"
                      />
                      <Accordion
                         title="Student Initiative Grant"
-                        grant="https://docs.google.com/document/d/1k0Bjzn4QqTfslWozrngnH9lqT_KPfvBebS1Wk-620LA/edit?usp=drive_link"
+                        grant="https://docs.google.com/document/d/1ylz3C7z2u2tafAmsP3r1zXTekMFFRVC0qYRlxDP3BRI/edit?tab=t.0"
                         for_club="for Science Students & new SUS clubs"
                         content="The Student Initiative Grant is intended to provide financial support to encourage and promote the facilitation of projects,
                                  activities and events run by science students that are not affiliated with existing SUS Clubs. The grant aims to encourage 
                                  students to provide demonstrable service for current science students or new SUS Clubs to fulfill unmet needs. The Student 
                                  Initiative Grant may also be used to support students who require financial assistance for personal research projects. 
                                  The maximum allocation of the Grant is 50% of relevant fees with a limit of $250."
-                        link="https://docs.google.com/spreadsheets/d/1pAtWcwi6-aJxlEo22mb3_tbkySHxu1DQsok0hSpyKSw/edit?usp=drive_link"
+                        link="https://docs.google.com/spreadsheets/d/1DxN16yQNulmoypCd7lDS-QlWPhk1vhP2wWQai82B2cc/edit?gid=1252977325#gid=1252977325"
                         />
                     <Accordion
                         title="Professional Development Grant"
-                        grant="https://docs.google.com/document/d/1jrXYT4_q_xmgKc2b8e4JoF3n9Im8u8481AQVC1p1l6E/edit?usp=drive_link"
+                        grant="https://docs.google.com/document/d/1599wRShfoET_PHkxoGlXg957_Tpas8CS1f0-teI3RLo/edit?tab=t.0"
                         for_club="for Science Students"
                         content="The Professional Development Grant is intended to alleviate financial burdens relating to the attendance of events that 
                                 further one’s professional careers such as relevant events, conferences, and seminars. The maximum allocation of the Grant is 50% 
                                 of related fees with a limit of $300."
-                        link="https://docs.google.com/spreadsheets/d/1rfKh6a6ILiMv4v9qcJW-e8PSS6Pe3NTNjlTqzELsSkc/edit?usp=sharing"
+                        link="https://docs.google.com/spreadsheets/d/14jhbinrysdPb1IP8FQ-8RCPMrADLcb6WzCdng-SN2Fg/edit?gid=1221951184#gid=1221951184"
                     />
                        
                     </SciSec>
@@ -98,7 +97,7 @@ export default function Grants() {
                 <SciSec>
                     <Accordion
                         title="AMS & Affiliates Event Subsidy"
-                        grant="https://docs.google.com/document/d/15s0q0SeeM56yT4bCf6cGKYgR5WpwlKC2qgKM75-nijg/edit?usp=drive_link"
+                        grant="https://docs.google.com/document/d/1KSE14OHty4GN5pKbYz-YtmooGTZigLWBNttOsb-ZxhM/edit?tab=t.0"
                         for_club="for Science Students"
                         content="The AMS & Affiliated clubs (AMS Clubs) Events Subsidy is intended to alleviate personal financial burdens by providing a subsidy that 
                                 students can use to attend events hosted for UBC students. This includes all ticketed events hosted by clubs with AMS club standing. A list of 
@@ -107,7 +106,7 @@ export default function Grants() {
                         />
                     <Accordion
                         title="SUS Events Subsidy"
-                        grant="https://docs.google.com/document/d/1N8NQM-SAR7O5H3SANldGNDaIl9i4--dOrxXSOEvnZKA/edit?usp=drive_link"
+                        grant="https://docs.google.com/document/d/1qLG6F8AYCfGI0-XJmh5FtZsyGGTKzji-iGsx6950Nu0/edit?tab=t.0"
                         for_club="for Science Students"
                         content="The SUS Events Subsidy is intended to alleviate personal financial burdens by providing a subsidy that students can use to attend SUS events. 
                                 This includes all ticketed events hosted by the Science Undergraduate Society (SUS). The maximum allocation of the subsidy is 75% of paid ticket 
@@ -116,7 +115,7 @@ export default function Grants() {
                     />
                     <Accordion
                         title="Club Membership Fee Subsidy"
-                        grant="https://docs.google.com/document/d/1Tjr9mwroBjir2A2RtOLfj8TQv1P_vTiaia6IPc7gjtU/edit?usp=drive_link"
+                        grant="https://docs.google.com/document/d/1LSIFrd2-x-I2TuiDriF0GWrs9GLNT1cUG17N85bkWcU/edit?tab=t.0"
                         for_club="for Science Students"
                         content="The Club Membership Fee Subsidy hopes to increase participation of students in AMS clubs to encourage participation in the UBC community. 
                                 This subsidy aims to cover the baseline membership fee to all AMS clubs and can be applied retroactively. The maximum allocation of the subsidy is $5."
@@ -124,7 +123,7 @@ export default function Grants() {
                     />
                     <Accordion
                         title="Course Materials Subsidy"
-                        grant="https://docs.google.com/document/d/1a_p9JaNP0v-2pi7WxCsNHDuzj-DXlZcjXKYiCetBCAc/edit?usp=drive_link"
+                        grant="https://docs.google.com/document/d/1xVvrvBrVI5nc3mmWjC2atFk4Dh0NLZn2kBzocS1ZWXs/edit?tab=t.0"
                         for_club="for Science Students"
                         content="The Course Materials Subsidy is intended to alleviate financial burdens related to the purchase of course-related materials. The materials purchased 
                                 using this subsidy can be redeemed for any academic course material required or recommended by courses taken by Faculty of Science students. 
@@ -133,19 +132,26 @@ export default function Grants() {
                     />
                     <Accordion
                         title="UBC Recreation Subsidy"
-                        grant="https://docs.google.com/document/d/1uK4GnXh_zs2jFAZgFtf6BdKkxuSbcKK0Lh_LbUB6BRo/edit?usp=drive_link"
+                        grant="https://docs.google.com/document/d/1ZkimQHAG0A3pRou50WMhYvXVLnn9Tga8z9GT5oGJFJw/edit?tab=t.0"
                         for_club="for Science Students"
                         content="The UBC Recreation Subsidy is intended to alleviate personal financial burdens by providing a subsidy that students can use to engage in activities 
                                 that promote physical health and wellness. This includes, but is not limited to, relevant events, competitions and recreational intramural league costs. 
                                 The maximum allocation of the subsidy is 50% of the cost with a limit of $250."
                         link=""
                     />
+                    <Accordion
+                        title="SUS Merchandise Subsidy"
+                        grant="https://docs.google.com/document/d/1VxyYbJXULQ27IW2_BU4fu7C48XMhjyMHIc16UV3H7Fs/edit?tab=t.0"
+                        for_club="for Science Students"
+                        content="The SUS Merchandise Subsidy is intended to alleviate personal financial burdens and encourage as many students to proudly represent UBC Science! This encompasses all merchandise produced by the SUS Sales Commission exclusively (must be featured on our website)."
+                        link=""
+                    />
                 </SciSec>
             </ClubSec>
             <ButtonContainer>
-                <StyledButton href="https://drive.google.com/open?id=10IOyK3iQT9NZMmGeMr5C6I6umKnYtuP7"><b>Grants Information 24/25</b></StyledButton>
-                <StyledButton href="https://drive.google.com/open?id=1qJldIJrrRcPXTXhdPitiryMFsFKS34Y6"><b>Grants Rubrics 24/25</b></StyledButton>
-                <StyledButton href="https://drive.google.com/drive/folders/1Wh8PZTiKSlZcphLSQyc1oEbir2ag-JuB?usp=share_link"><b>Subsidies Information 24/25</b></StyledButton>
+                <StyledButton href="https://drive.google.com/drive/folders/1d0mxkbiAJdmBTKzFV6f1ivdidA06xVzB"><b>Grants Information 25/26</b></StyledButton>
+                <StyledButton href="https://drive.google.com/drive/folders/1PdZWwoA1Uo-bHLF-5V6cS8mTHfREl1X6"><b>Grants Rubrics 25/26</b></StyledButton>
+                <StyledButton href="https://drive.google.com/drive/folders/1J3bbOK8aKQxwcRqgaws7Oy0JFecNrBQh"><b>Subsidies Information 25/26</b></StyledButton>
             </ButtonContainer>
             <Footer color="white" background="#222755"/>
         </Background>
