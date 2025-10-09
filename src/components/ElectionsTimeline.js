@@ -85,13 +85,13 @@ export default function ElectionsTimeline() {
       </TimelineItem>
 
       <TimelineItem>
-        <DateText>Thursday, Oct 23, 5:00 PM</DateText>
+        <DateText>Thursday, Oct 16, 5:00 PM</DateText>
         <EventText>Councillor Orientation (in-person) – 5-7 PM</EventText>
       </TimelineItem>
       
       <TimelineItem>
         <DateText>Thursday, Nov 27, 5:00 PM</DateText>
-        <EventText>Councillor Orientation (in-person) – 5-7 PM</EventText>
+        <EventText>Councillor Meeting (in-person) – 5-7 PM</EventText>
       </TimelineItem>
     </Timeline>
   );
