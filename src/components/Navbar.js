@@ -46,7 +46,7 @@ const sections = [
       { name: "Drop In Tutoring", href: "/studentServices/tutoring" },
       { name: "Grants & Subsidies", href: "/studentServices/grants" },
       { name: "Health & Wellness", href: "/studentServices/health" },
-      { name: "Study Sphere", href: "/studentServices/studySphere" }, // are we sure that we want to replace the volunteer portal with a sheet?
+      // { name: "Study Sphere", href: "/studentServices/studySphere" }, // are we sure that we want to replace the volunteer portal with a sheet?
       { name: "Volunteer Portal", href: "/studentServices/volunteerPortal" },
     ],
   },
