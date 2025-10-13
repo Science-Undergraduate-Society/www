@@ -13,9 +13,15 @@ export default function susPantry() {
                     <Information>In September 2024, the Community Engagement and Student Benefits working groups founded SUStainable Eats and SUStenance Food Pantry. Averaging 90+ attendees at each event in 2024-25, the SUS Community Engagement team hopes to emphasize the importance of nutrition and student wellness while bringing more opportunities to bridge the gap in food resources on-campus.</Information>
                 </InformationBox>
                 <StatsGrid>
+                <a href="https://foodhub.ubc.ca/food-security/#:~:text=Research%20has%20consistently%20shown%20between,of%20the%20Food%20Security%20Initiative" target="_blank" rel="noopener noreferrer">
                     <StatItem>30-40% of UBC students face challenges of food insecurity</StatItem>
+                </a>
+                <a href="https://foodbank.bc.ca/whats-new/food-insecurity-among-university-students/" target="_blank" rel="noopener noreferrer">
                     <StatItem>24% of new Greater Vancouver Food Bank registrants in 2022 were post-secondary students, and this number is expected to grow</StatItem>
+                </a>
+                <a href="https://campusnutrition.ca/about" target="_blank" rel="noopener noreferrer">
                     <StatItem>According to Campus Nutrition, a shocking 40 per cent of UBC students are food insecure</StatItem>
+                </a>
                 </StatsGrid>
 
                 <InfoSection>
