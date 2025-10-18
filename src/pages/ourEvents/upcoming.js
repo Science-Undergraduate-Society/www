@@ -177,7 +177,16 @@ export default function Events() {
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3QcCV1IR-gurgwHY-9WFi3B7lckYXlBxQ3L7pBVyWAfzVPw/viewform" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP Form</strong></InitiativeButton>
                     </a>
-                </EventContainer>     
+                </EventContainer>    
+
+                {/* FYC Haunted Carnival */}
+                <EventContainer>
+                    <EventTitle><b>FYC<Highlight> Haunted Carnival</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>October 30, 5-9 PM</strong></EventSubtitle>
+                    <p>
+                    First years, do you have any plans this Halloween? Join the FYC at Abdul Ladha on October 30 from 5-9 PM for a spooky series of events! Bring your friends, dress up, and participate to win prizes!
+                    </p>
+                </EventContainer>   
         
             </TopContainer>
             <Footer/>
