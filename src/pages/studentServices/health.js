@@ -10,13 +10,17 @@ export default function HealthAndWellness() {
       <Container>
         <MainTitleContainer>
           <HeweImage src="/images/health-images/wellness_hub_logo.png" />
+          <SubTitle>Feeling stuck? It doesn’t have to be this way. Prioritize your mental health today!</SubTitle>
         </MainTitleContainer>
         <Section>
-          <Title>CRISIS SUPPORT</Title>
-
+          <Title>If you are in danger of hurting yourself or others:</Title>
           <Text>
             If you or someone you know is in imminent danger, call {' '}
             <Link href="tel:911">911</Link>.
+          </Text>
+
+          <Text>
+            Visit the <Link href="https://www.vch.ca/your-care/emergency-care">nearest emergency room</Link> at the nearest hospital.
           </Text>
 
           <Text>
@@ -33,219 +37,112 @@ export default function HealthAndWellness() {
             If you need immediate, free and confidential emtional support, crisis intervention, or community resource information, call the Fraser Health Crisis Line at{' '}
             <Link href="tel:18778207444">1 877 820 7444</Link>.
           </Text>
-
-          <Title>OTHER IMMEDIATE RESOURCES</Title>
-
-          <Text>
-            Here2Talk: Accessible 24/7 to all students in BC who are registered in a post-secondary institution{' '}
-            <Link href="tel:18778573397">1 877 857 3397</Link>.
-          </Text>
-
-          <Text>
-            Call{' '}
-            <Link href="tel:3106789">310-6789 </Link>
-            for emotional support, information and resources specific to mental health.
-          </Text>
-
-          <Text>
-            For the Alcohol, Drug Information and Referral Services call{' '}
-            <Link href="tel:18006631441">1-800-663-1441 </Link>
-            to find resources and support.
-          </Text>
-        </Section>
-
-        <Section>
-          <Title>UBC SERVICES & RESOURCES</Title>
-          <Text>
-            Student Services Health and Wellbeing: <Link href="https://students.ubc.ca/health">https://students.ubc.ca/health</Link>
-          </Text>
-
-          <Text>
-            UBC Human Resources Health and Wellbeing: <Link href="https://hr.ubc.ca/health-and-wellbeing">https://hr.ubc.ca/health-and-wellbeing</Link>
-          </Text>
-
-          <Text>
-            AMS/GSS Health & Dental: <Link href="https://www.ams.ubc.ca/support-services/health-dental">https://www.ams.ubc.ca/support-services/health-dental/</Link>
-          </Text>
-
-          <Text>
-            AMS Peer Support: <Link href="https://www.ams.ubc.ca/support-services/student-services/peer-support/">https://www.ams.ubc.ca/support-services/student-services/peer-support/</Link>
-          </Text>
-
-          <Text>
-            UBC Counseling Services: <Link href="https://students.ubc.ca/health/counselling-services#:~:text=Call%20Counselling%20Services%20at%20604,come%2C%20first%2Dserved%20basis">https://students.ubc.ca/health/counselling-services</Link>
-          </Text>
-
-          <Text>
-            UBC Wellness Centre: <Link href="https://students.ubc.ca/health/wellness-centre">https://students.ubc.ca/health/wellness-centre</Link>
-          </Text>
-        </Section>
-
-        <Section>
-          <Title>VANCOUVER/BC SERVICES & RESOURCES</Title>
-          <SubTitle>Health-Link BC Well-being</SubTitle>
-          <Text>
-            Visit <Link href="https://www.healthlinkbc.ca/mental-health-substance-use/well-being">Health-Link BC</Link> for information and resources on well-being and mental health.
-          </Text>
-          <SubTitle>Vancouver Coastal Health Wellness</SubTitle>
-          <Text>
-            Access resources and support through the <Link href="https://www.vch.ca/en/health-topics/health-wellness">Vancouver Coastal Health Wellness</Link> program.
-          </Text>
-          <SubTitle>Local Therapists/Organizations</SubTitle>
-          <Text>
-            Search for registered psychologists, counsellors, and therapists in Vancouver through{' '}
-            <Link href="https://www.counsellingbc.com/">Counseling BC</Link>.
-          </Text>
-          <Text>
-            Use the <Link href="https://www.psychologists.bc.ca/">BC Psychological Association</Link> to find a psychologist by city, client type, area of practice, therapy method, and language.
-          </Text>
-        </Section>
-
-        <Section>
-          <Title>PHYSICAL WELLNESS</Title>
-          <SubTitle>UBC Recreation</SubTitle>
-          <Text>
-            Visit <Link href="https://recreation.ubc.ca/get-moving/">UBC Recreation</Link> for numerous drop-in options for fitness and sports. Check out their{' '}
-            <Link href="https://recreation.ubc.ca/2020/12/01/recorded-virtual-fitness-classes/">virtual fitness classes</Link> if you are on a tight schedule.
-          </Text>
-          <Text>
-            The <Link href="https://sportfacilities.ubc.ca/src/">Student Recreation Centre (SRC)</Link> offers various gyms and free drop-in programs like basketball, badminton, volleyball, swimming, and skating.
-          </Text>
-          <SubTitle>Free Physical Wellness Apps</SubTitle>
-          <Text>
-            Download the <Link href="https://www.nike.com/ntc-app">Nike Train Club App</Link> for free guided workouts and fitness plans.
-          </Text>
-        </Section>
-
-        <Section>
-          <Title>NUTRITION</Title>
-          <SubTitle>Healthy Meal Recipes for College Students</SubTitle>
-          <Text>
-            Explore budget-friendly and meal-prep friendly recipes on{' '}
-            <Link href="https://fitfoodiefinds.com/best-healthy-recipes-for-college-kids-budget-friendly-and-meal-prep/">Fit Foodie Finds</Link>.
-          </Text>
-          <SubTitle>UBC Campus Nutrition</SubTitle>
-          <Text>
-            Access campus nutrition resources at <Link href="https://campusnutrition.ca">campusnutrition.ca</Link>.
-          </Text>
-          <Text>
-            For students living in residence, contact the residence dietician at <Link href="https://food.ubc.ca/contact-the-dietitian/">UBC Food Services</Link>. Non-residents can connect with a dietician by calling 811 or visiting the{' '}
-            <Link href="https://www.healthlinkbc.ca/">BC Dieticians website</Link>.
-          </Text>
-          <SubTitle>Affordable Food on Campus</SubTitle>
-          <Text>
-            Check out Sprouts in the Life Building basement, the AMS Food Bank in Life 0023, and The Delly after 5 pm for half-off meals.
-          </Text>
-        </Section>
-
-        <Section>
-          <Title>FOOD INSECURITY</Title>
-          <SubTitle>UBC Food Hub Events</SubTitle>
-          <Text>
-            Check out UBC Food Hub&apos;s <Link href="https://foodhub.ubc.ca/take-action/workshop-and-events/?page=1&campus=5">upcoming events</Link>.
-          </Text>
-          <SubTitle>Food Access Support</SubTitle>
-          <Text>
-            Get help accessing healthy food at low or no cost <Link href="https://foodhub.ubc.ca/resources/?campus=5&support-resource-type=7">through these resources</Link>.
-          </Text>
-          <Text>
-            Visit the  <Link href="https://foodhub.ubc.ca/resources/?campus=5&support-resource-type=7">Sprouts produce market</Link> Tuesdays from 12pm - 2:30pm in the Nest and Wednesdays 
-            from 4:30pm to 6:30pm at Sprouts Cafe for pay-what-you-can produce.
-          </Text>
-          <Text>
-            Check out the  <Link href="https://foodhub.ubc.ca/resources/?campus=5&support-resource-type=7">Sprouts community fridge</Link> at the basement of the Life Building for free groceries.
-          </Text>
-          <SubTitle>Community Meal</SubTitle>
-          <Text>
-            Through Monday - Thursday, watch out for <Link href="https://www.ubcsprouts.ca/free-meal-program"> free meal coupons </Link> at Sprouts in the Life Building basement.
-          </Text>
-          <Text>
-            Check out Sprouts in the Life Building basement for <Link href="https://www.ubcsprouts.ca/community-eats"> free meals on Friday lunchtimes </Link>.
-          </Text>
           
-        </Section>
-
-        <Section>
-          <Title>MENTAL WELLNESS</Title>
-          <SubTitle>AMS/GSS Student Health</SubTitle>
           <Text>
-            Students can get up to 80% coverage of psychotherapy services from licensed professionals through the AMS/GSS Student Health plan.
-          </Text>
-          <SubTitle>Virtual Resources</SubTitle>
-          <Text>
-            Explore apps like <Link href="https://insighttimer.com/">Insight Timer</Link>, <Link href="https://medito.app/">Medito Meditation</Link>, and <Link href="https://www.zenapp.org/">Zen: Guided Meditation and Sleep</Link> for mental wellness support.
-          </Text>
-          <SubTitle>Counseling</SubTitle>
-          <Text>
-            Use <Link href="https://www.7cups.com/">7 Cups</Link> for free emotional support with trained counselors and listeners. Access the{' '}
-            <Link href="https://foundrybc.ca/virtual/">Foundry Provincial Virtual Service</Link> for various support services.
-          </Text>
-          <SubTitle>Interactive Mental Health Programs</SubTitle>
-          <Text>
-            <Link href="https://bouncebackbc.ca/">BounceBack</Link> is a free skill-building program designed to help adults and youth manage low mood, mild to moderate depression, anxiety, stress, or worry.
-          </Text>
-          <Text>
-            <Link href="https://livinglifetothefull.ca/">Life to the Full</Link> is an interactive course to help you understand and manage your feelings, thoughts, and behaviors.
+            You can connect with the <Link href="https://www.vch.ca/en/location-service/access-and-assessment-centre-aac-vancouver-general-hospital">Access and Assessment Centre</Link> between 7:30 am and 9:30 pm for walk-in services, or call 604-675-3700 between 7:30 am and 10:00 pm. If you live outside of Vancouver but in British Columbia, you can visit a <Link href="https://www.fraserhealth.ca/Service-Directory/Services/mental-health-and-substance-use/mental-health---community-services/rapid-access-clinic">Rapid Access Clinic</Link>.
           </Text>
         </Section>
 
         <Section>
-          <Title>SUPPORT FOR INDIGENOUS PEOPLE</Title>
-          <SubTitle>Hope for Wellness Helpline</SubTitle>
-          <Text>
-            Call <Link href="tel:1-855-242-3310">1-855-242-3310</Link> for 24/7 support for Indigenous people across Canada.
-          </Text>
-          <SubTitle>Indian Residential School Crisis Line</SubTitle>
-          <Text>
-            Call <Link href="tel:1-866-925-4419">1-866-925-4419</Link> for support for anyone experiencing distress due to their residential school experience.
-          </Text>
-          <SubTitle>KUU-US Crisis Response Service</SubTitle>
-          <Text>
-            Call <Link href="tel:1-800-588-8717">1-800-588-8717</Link> for culturally-aware crisis support for Indigenous peoples in B.C.
-          </Text>
-          <SubTitle>Métis Crisis Line</SubTitle>
-          <Text>
-            Call <Link href="tel:1-833-638-4722">1-833-638-4722</Link> for Métis-specific crisis support available 24/7 in B.C.
-          </Text>
-          <SubTitle>Other Resources</SubTitle>
-          <Text>
-            Explore the <Link href="https://www.fnha.ca/">First Nations Health Authority</Link> and the <Link href="https://www.irsss.ca/">Indian Residential School Survivors Society (IRSSS)</Link> for more support services.
-          </Text>
+          <Title>When & why would you seek support?</Title>
+          <SubSub>You may feel anxious, overwhelmed, or notice your mental health declining. Counselling Services can help with:</SubSub>
+
+          <ul>
+            <li>Decision-making and relationship challenges</li>
+            <li>Coping with grief, loss, or life changes</li>
+            <li>Adjusting to new cultures, understanding identity, or managing discrimination</li>
+            <li>Struggling with focus, organization, or test anxiety</li>
+            <li>Recovering from burnout</li>
+            <li>Tangible wellness strategies for preventing burnout</li>          
+          </ul>
+        </Section>
+
+        <br/>
+
+        <SubTitle>Short-Term Counselling</SubTitle>
+
+        <Section>
+          <Title>UBC Counselling Services</Title>
+          <SubSub>In-person, online, or over the phone. Call 604-822-3811 to book – no walk-ins available.</SubSub>
+          <ul>
+            <li>Opening hours:</li>
+            <ul>
+              <li>Monday: 8:30 am to 4:30 pm</li>
+              <li>Tuesday: 8:30 am to 4:30 pm</li>
+              <li>Wednesday: 8:30 am to 6:30 pm</li>
+              <li>Thursday: 8:30 am to 4:30 pm</li>
+              <li>Friday: 8:30 am to 4:30 pm</li>
+            </ul>
+            <br/>
+            <li>Check <Link href="https://students.ubc.ca/health/counselling-services/">here</Link> for up-to-date clinic locations & closures</li>
+            <li>You will be asked to choose from two types of same-day, single session drop-in appointments:</li>
+            <ol>
+              <li>Mental health counselling (therapy appointment)</li>
+              <li>Wellness advising session (wellness resources, creating a plan of support, triaging to other support services)</li>
+            </ol>
+          </ul>
+
+          <SubSub>Specialized services</SubSub>
+          <ul>
+            <li><Link href="https://students.ubc.ca/health/counselling-services/indigenous-mental-health-wellbeing-program/">Indigenous Mental Health and Wellbeing Program</Link></li>
+            <li><Link href="https://students.ubc.ca/health/counselling-services/meet-counselling-services-team/#dia">Queer and Gender Affirming Counselling Program</Link></li>
+            <li><Link href="https://students.ubc.ca/health/counselling-services/group-counselling-programs/">Group Counselling Programs</Link></li>
+          </ul>
         </Section>
 
         <Section>
-          <Title>SUPPORT FOR 2SLGBTQ+ PEOPLE</Title>
-          <SubTitle>Qmunity Counselling Program</SubTitle>
-          <Text>
-            Access low-cost counselling with trained professionals through the <Link href="https://qmunity.ca/services/counselling/">
-              Qmunity Counselling Program
-            </Link>.
-          </Text>
-          <SubTitle>QMUNITY’s Trans ID Clinic</SubTitle>
-          <Text>
-            Get support with name and gender marker changes through the <Link href="https://qmunity.ca/services/trans-id-clinic/">QMUNITY Trans ID Clinic</Link>.
-          </Text>
-          <SubTitle>Trans Care BC</SubTitle>
-          <Text>
-            Connect with Trans Care BC for information, education, training, and support for trans people and their loved ones.
-          </Text>
+          <Title>Science Embedded Counsellor (New!)</Title>
+          <ul>
+            <li>Science embedded counselling tailors wellbeing support specifically targeting concerns that science students experience</li>
+            <li>Book a drop-in appointment with UBC Counselling Services at 604-822-3811 and ask about embedded counselling</li>
+            <li>New offering as of 2025!</li>
+          </ul>
         </Section>
 
         <Section>
-          <Title>FREE RECREATION</Title>
-          <SubTitle>Museums</SubTitle>
-          <Text>
-            Visit UBC&apos;s free museums such as the <Link href="https://beatymuseum.ubc.ca/">Beaty Biodiversity Museum</Link>, <Link href="https://moa.ubc.ca/">Museum of Anthropology</Link>, and the <Link href="https://pacificmuseumofflight.org/">Museum of Earth</Link>.
-          </Text>
-          <SubTitle>Art and Culture</SubTitle>
-          <Text>
-            Enjoy free art exhibits at the <Link href="https://belkin.ubc.ca/">Morris and Helen Belkin Art Gallery</Link>, the <Link href="https://ahva.ubc.ca/galleries/ahva-gallery/">AHVA Gallery</Link>, and performances at the <Link href="https://chancentre.com/">Chan Centre for the Performing Arts</Link>.
-          </Text>
-          <SubTitle>Nature</SubTitle>
-          <Text>
-            Explore UBC&apos;s beautiful outdoor spaces such as the <Link href="https://botanicalgarden.ubc.ca/visit/nitobe-memorial-garden/">Nitobe Memorial Garden</Link>, the <Link href="https://www.ubc.ca/about/campus_landmarks/rose_garden.html">Rose Garden</Link>, and the iconic <Link href="https://www.wreckbeach.org/">Wreck Beach</Link>.
-          </Text>
+          <Title>Here2Talk</Title>
+          <ul>
+            <li>Free, confidential 24/7 support line in over 200 languages</li>
+            <li>Call or chat online with experienced professionals</li>
+            <li>Download the Here2Talk app for texting options</li>
+            <li>No appointment needed: <Link href="https://here2talk.ca/home">Here to Talk</Link> or call: 604-642-5212</li>
+          </ul>
         </Section>
+
+        <br/>
+
+        <SubTitle>Private Counselling</SubTitle>
+
+        <Section>
+          <Title>Private Counsellors</Title>
+            <li>$1250.00 covered by the AMS/GSS Health and Dental Plan!</li>
+            <li>This covers appointments with a private mental health practitioner, such as a licensed psychologist, registered clinical counsellor, or therapist with a Master’s degree in Social Work</li>
+            <li>Find a counsellor for your specific needs - filter by specialty, availability, and in-person/virtual options</li>
+            <li>Search with BC Association of Clinical Counsellors or PsychologyToday</li>
+            <li>More on how to find a <Link href="https://students.ubc.ca/health/counselling-services/finding-private-counsellor/">private mental health professional here</Link>.</li>
+        </Section>
+
+        <Section>
+          <Title>Tips for finding the right private counsellor</Title>
+          <ul>
+            <li>Request a 15 minute consultation</li>
+            <li>Make a list of many possible counsellors</li>
+            <li>Ensure it is financially feasible - do they accept your insurance or offer a sliding scale or students?</li>
+          </ul>
+        </Section>
+        
+        <Section>
+          <Title>UBC AMS/GSS Health and Dental Plan</Title>
+          <ul>
+            <li>Unless you opted out, the <Link href="https://www.ams.ubc.ca/support-services/health-dental/">AMS/GSS Health and Dental plan</Link> covers all UBC students!</li>
+            <li>Covers <strong>$1250.00</strong> in counselling services (100% of the cost for each session!) for the 2025/2026 academic year for these practitioners:  <Link href="https://studentcare.ca/rte/en/UniversityofBritishColumbiaAMSGSS_Health_HealthCoverage_HealthPractitioners_Psychologists">Mental Health Practitioners</Link></li>
+          </ul>
+        </Section>
+
+        <br/>
+
+        <SubTitle>Find more information here: <Link href="https://science.ubc.ca/students/wellbeing">Mental Health and Wellbeing</Link>, or call 604-822-3811</SubTitle>
+
       </Container>
       <Footer/>
     </>
@@ -259,9 +156,12 @@ const Container = styled.div`
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-
   margin-top: 20vh;
 `;
+
+const SubSub = styled.p`
+  font-weight: bold
+`
 
 const Section = styled.div`
   margin-bottom: 40px;
@@ -279,6 +179,7 @@ const Section = styled.div`
 const MainTitleContainer = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 `
@@ -295,9 +196,11 @@ const Title = styled.h2`
 `;
 
 const SubTitle = styled.h3`
-  font-size: 20px;
+  font-size: 26px;
   color: #222755;
   margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
 
   @media (max-width: 768px) {
     font-size: 18px;
