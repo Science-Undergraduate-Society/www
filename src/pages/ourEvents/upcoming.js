@@ -187,6 +187,16 @@ export default function Events() {
                     First years, do you have any plans this Halloween? Join the FYC at Abdul Ladha on October 30 from 5-9 PM for a spooky series of events! Bring your friends, dress up, and participate to win prizes!
                     </p>
                 </EventContainer>   
+                {/* Pizza N' Profs */}
+                <EventContainer>
+                    <EventTitle><b>Pizza N' <Highlight>Profs</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>November 17, 5:30 - 7:30 PM</strong></EventSubtitle>
+                    <p>Join Pizza 'N Profs on November 17th, 5:30 to 7:30 PM at Abdul Ladha! Hear professors share their journeys, research, and advice during an interactive panel and Q&A, followed by small-group networking over pizza. Gain insights, ask questions, and connect with professors. RSVP now!</p>
+                
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUQaMu9Kacy2ZQyyosdNY5rJGiGUZbbiVW4cqRRnf5F4Mqig/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>Event RSVP Form</strong></InitiativeButton>
+                    </a>
+                </EventContainer>  
         
             </TopContainer>
             <Footer/>
