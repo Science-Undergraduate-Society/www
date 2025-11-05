@@ -103,7 +103,7 @@ const ExecutiveImage = styled.img`
   height: 200px;
 `;
 
-export const Executive = ({ name, role, imagePath, email, description }) => {
+export const Executive = ({ name, role, imagePath, email, description, link, officeHours }) => {
   const [modalClose, setModalClose] = useState(true);
 
   useEffect(() => {
@@ -138,6 +138,8 @@ export const Executive = ({ name, role, imagePath, email, description }) => {
         setCloseModal={setCloseModal}
         name={name}
         role={role}
+        link={link}
+        officeHours={officeHours}
         imagePath={imagePath}
         email={email}
         description={description}
@@ -174,6 +176,8 @@ export default function Executives() {
                 name={executive.name}
                 role={executive.role}
                 email={executive.email}
+                link={executive.link}
+                officeHours={executive.officeHours}
                 description={executive.description}
                 imagePath={executive.imagePath}
                 modalClose={modalClose}

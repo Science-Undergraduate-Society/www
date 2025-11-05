@@ -1,3 +1,5 @@
+import OfficeHours from "@/pages/aboutUs/officeHours";
+
 export const executiveInfo = [
     {
     name: "Rachel Dong",
@@ -9,6 +11,7 @@ export const executiveInfo = [
 `,
     email: "president@sus.ubc.ca",
     link: "",
+    officeHours: ""
   },
   {
     name: "Alan Wei",
@@ -21,6 +24,7 @@ export const executiveInfo = [
 `,
     email: "vpadministration@sus.ubc.ca",
     link: "",
+    officeHours: ""
   },
   {
     name: "Anika Lee",
@@ -31,6 +35,7 @@ export const executiveInfo = [
     \nI welcome any suggestions or feedback regarding SUS Academic and the resources/events we provide. Have any concerns about your academic experience at UBC as a science student? Contact me at vpacademic@sus.ubc.ca!`,
     email: "vpacademic@sus.ubc.ca",
     link: "",
+    officeHours: ""
   },
   {
     name: "Carmen Choo",
@@ -40,7 +45,8 @@ export const executiveInfo = [
     \nI have the incredible opportunity to support our talented teams across Marketing, Web Developing, Productions, Sales, and First Week Events. Together, we’re committed to keeping SUS connected, creative, and accessible– to ensure you’re informed and inspired to get involved! 
     \nIf you want to share a new idea, highlight an initiative to the UBC Science community, or chat about Hackathon, feel free to reach out to me at vpcommunications@sus.ubc.ca!`,
     email: "vpcommunications@sus.ubc.ca",
-    link: "",
+    link: "https://google.com",
+    officeHours: "Wednesday 5:00 PM - 7:00 PM"
   },
   {
     name: "Catherine Jiang",
@@ -51,6 +57,7 @@ export const executiveInfo = [
     \nI welcome your input and any suggestions/feedback you have for the External portfolio. Feel free to reach out at vpexternal@sus.ubc.ca!`,
     email: "vpexternal@sus.ubc.ca",
     link: "",
+    officeHours: ""
   },
   {
     name: "Anika Lee",
@@ -61,6 +68,7 @@ export const executiveInfo = [
     \nFeel free to contact me at vpfinance@sus.ubc.ca if you have any questions, ideas for the portfolio, or if you just want to chat about finances in general! I’d love to hear your suggestions.`,
     email: "vpfinance@sus.ubc.ca",
     link: "",
+    officeHours: ""
   },
   {
     name: "Jenevieve Lee",
@@ -71,34 +79,6 @@ export const executiveInfo = [
     \nContact me at vpstudentlife@sus.ubc.ca anytime to share event ideas, provide event feedback, or to learn more about the Student Life Portfolio and SUS!`,
     email: "vpstudentlife@sus.ubc.ca",
     link: "",
-  },
-  {
-    name: "Alex Chui",
-    role: "Science Senator",
-    imagePath: "/images/executive-images/alex-chui.jpg",
-    description: `Hi UBC Science! I’m Alex, a fourth-year Microbiology and Immunology student and happy to serve as your Science Student Senator this year!
-    \nMy role focuses on academic policy, research opportunities, and supporting Science student voices in Senate decisions since I serve as the liaison between SUS and the Senate. If you have concerns about course structures, grading policy, research equity, or governance transparency, I’m here to help. 
-    \nContact me at senator@sus.ubc.ca I’m always open to feedback, policy ideas, or advocacy requests or just to chat on any issue or questions impacting Science students.`,
-    email: "senator@sus.ubc.ca",
-    link: "",
-  },
-  {
-    name: "Bardia Mohammadizadeh",
-    role: "AMS Representative",
-    imagePath: "/images/executive-images/bardia-mohammadizadeh.png",
-    description: `Hey Science! I’m Bardia, a third-year Neuroscience student and one of your AMS representatives for 25/26.
-    \nThe AMS representatives sit on both the SUS and AMS councils and bridge the two to further advocate for you and your needs. We are in a unique position to be your voice to the SUS and the AMS executives, and to shape your student experience to the very best it could be. 
-    \nYour input is very important to us. Feel free to reach out to me, my contact methods can be found on amsrep@sus.ubc.ca`,
-    email: "amsrep@sus.ubc.ca",
-    link: "",
-  },
-  // {
-  //   name: "Yolanda Yang",
-  //   role: "AMS Representative",
-  //   imagePath: "/images/executive-images/Yuki-Ichikawa.webp",
-  //   description: ``,
-  //   email: "amsrep@sus.ubc.ca",
-  //   link: "",
-  // }
-
+    officeHours: ""
+  }
 ];
