@@ -21,8 +21,6 @@ export default function Abdul() {
                 </Header>
 
                 <Image src="/images/abdulLadha/abdul.jpg" alt="Abdul Ladha" />
-
-                <Divider/>
                 
                 <Footer/>
             </Content>
