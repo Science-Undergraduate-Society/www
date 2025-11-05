@@ -46,11 +46,7 @@ const Header = styled.div`
 
 const SubHeader = styled.div`
   font-size: 20px;
-  width: 60%;
-
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-  }
+  width: 100%;
 `;
 
 const ExecutiveContainer = styled.div`
@@ -168,9 +164,7 @@ export default function Executives() {
           <HeaderContainer>
             <Header>Meet the Executives</Header>
             <SubHeader>
-              Here you can find the contact information of each executive to be
-              able to contact them. As well, office hours are held for each
-              executive, and you can attend them at Abdul Ladha. 
+              Here you can find the contact information of each executive to be able to contact them. As well, office hours are held for each executive, and you can attend them at Abdul Ladha. 
             </SubHeader>
           </HeaderContainer>
           <ExecutiveContainer>
