@@ -24,7 +24,7 @@ const sections = [
       { name: "The Executives", href: "/aboutUs/executives" },
       { name: "Budget", href: "/aboutUs/budget" },
       { name: "Code & Procedures", href: "/aboutUs/codeProcedures" },
-      { name: "Office Hours", href: "/aboutUs/officeHours" },
+      // { name: "Office Hours", href: "/aboutUs/officeHours" },
       { name: "Meeting Minutes", href: "/aboutUs/meetingMinutes" },
       { name: "Clubs", href: "/aboutUs/clubs" },
     ],

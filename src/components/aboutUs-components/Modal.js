@@ -114,7 +114,27 @@ const ExecutiveImage = styled.img`
   height: 200px;
 `;
 
-export const Executive = ({ name, role, imagePath, email }) => {
+const OfficeHoursContainer = styled.div`
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  text-align: center;
+`;
+
+const ModalLink = styled.a`
+  color: #001961;
+  text-decoration: none;
+  font-weight: 600;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const Executive = ({ name, role, imagePath, email, officeHours, link }) => {
   return (
     <ExecutiveCard>
       <ExecutiveImage src={imagePath} />
@@ -132,6 +152,19 @@ export const Executive = ({ name, role, imagePath, email }) => {
           }}
         />
       )}
+      {officeHours && (
+        <OfficeHoursContainer>
+          <strong>Office Hours:</strong> {officeHours}
+          {link && (
+            <>
+              <br />
+              <ModalLink href={link} target="_blank" rel="noopener noreferrer">
+                Book Appointment
+              </ModalLink>
+            </>
+          )}
+        </OfficeHoursContainer>
+      )}
     </ExecutiveCard>
   );
 };
@@ -144,6 +177,8 @@ const Modal = ({
   email,
   imagePath,
   description,
+  officeHours,
+  link
 }) => {
   return (
     <ModalContainer modalclose={modalClose}>
@@ -154,6 +189,8 @@ const Modal = ({
           role={role}
           email={email}
           imagePath={imagePath}
+          officeHours={officeHours}
+          link={link}
         />
         <Description>{description}</Description>
       </ModalContentContainer>
