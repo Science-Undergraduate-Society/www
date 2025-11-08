@@ -25,17 +25,6 @@ export const executiveInfo = [
     officeHours: "Monday 12:00 PM - 2:00 PM, Wednesday 12:00 PM - 2:00 PM"
   },
   {
-    name: "Anika Lee",
-    role: "Interim VP Academic",
-    imagePath: "/images/executive-images/anika-lee.png",
-    description: `Hey UBC Science! I’m Anika Lee, a 4th-year Neuroscience Student, and I’m excited to be your interim VP Academic for SUS!
-    \nWithin the Academic Portfolio, my responsibility is to support the Wellness, Academic Experience, SUS Tutoring and Mentorship committees. I am also excited to advocate for the academic needs of Science Students in university-wide and faculty-level committees such as the AMS Academic Caucus and the Dean’s Advisory Committee.
-    \nI welcome any suggestions or feedback regarding SUS Academic and the resources/events we provide. Have any concerns about your academic experience at UBC as a science student? Contact me at vpacademic@sus.ubc.ca!`,
-    email: "vpacademic@sus.ubc.ca",
-    link: "https://calendly.com/anikalaylee/vp-academic-office-hours",
-    officeHours: "Monday 5:00 PM - 7:00 PM"
-  },
-  {
     name: "Carmen Choo",
     role: "VP Communications",
     imagePath: "/images/executive-images/carmen-choo.png",
@@ -67,7 +56,7 @@ export const executiveInfo = [
     officeHours: "Monday 5:00 PM - 7:00 PM"
   },
   {
-    name: "Jud Kim",
+    name: "Judy Kim",
     role: "VP Finance",
     imagePath: "/images/executive-images/judy-kim.JPG",
     description: "I aim to support science students with grants and subsidies that can aid in various initiatives and alleviate financial burden during the school year. I’m also excited to connect with science students through financial literacy events in collaboration with professionals to increase transparency in student spending and to create financial resources for additional support. If you have any questions or comments related to the available resources within the Finance Portfolio, please feel free to reach out to me at vpfinance@sus.ubc.ca and I would love to hear your thoughts and feedback!",
