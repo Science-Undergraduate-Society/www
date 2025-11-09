@@ -22,12 +22,12 @@ const pastEvents = [
     title: "SUS First Week Events",
     description: "An annual week long series of events to kickoff the first week of classes!",
     images: [
-      { src: "/images/events-images/welcome/fw_main1.png", alt: "First Week 1" },
-      { src: "/images/events-images/welcome/fw_main5.png", alt: "First Week 2" },
-      { src: "/images/events-images/welcome/fw_main6.png", alt: "First Week 6" },
-      { src: "/images/events-images/welcome/fw_main3.JPG", alt: "First Week 3" },
-      { src: "/images/events-images/welcome/fw_main4.png", alt: "First Week 4" },
-      { src: "/images/events-images/welcome/fw_main2.jpg", alt: "First Week 2" },
+      { src: "/images/events-images/fw/fw_main1.png", alt: "First Week 1" },
+      { src: "/images/events-images/fw/fw_main5.png", alt: "First Week 2" },
+      { src: "/images/events-images/fw/fw_main6.png", alt: "First Week 6" },
+      { src: "/images/events-images/fw/fw_main3.JPG", alt: "First Week 3" },
+      { src: "/images/events-images/fw/fw_main4.png", alt: "First Week 4" },
+      { src: "/images/events-images/fw/fw_main2.jpg", alt: "First Week 2" },
     ],
   },
   {
@@ -80,7 +80,7 @@ export default function PastEvents() {
         <HeroContent>
           <HeroTitle>Our Past Events</HeroTitle>
           <HeroSubtitle>
-            Moments that brought us together, made us laugh, and created lasting memories.
+            Moments that brought us together, made us laugh, and created lasting memories!
           </HeroSubtitle>
         </HeroContent>
       </Hero>
