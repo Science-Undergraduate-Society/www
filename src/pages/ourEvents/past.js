@@ -8,6 +8,7 @@ const pastEvents = [
   {
     title: "Science RXN",
     description: "Our flagship welcome event for first year students!",
+    date: "September 13-14, 2025",
     images: [
       { src: "/images/events-images/rxn/5.JPG", alt: "Science RXN 1" },
       { src: "/images/events-images/rxn/4.JPG", alt: "Science RXN 2" },
@@ -21,6 +22,7 @@ const pastEvents = [
   {
     title: "SUS First Week Events",
     description: "An annual week long series of events to kickoff the first week of classes!",
+    date: "September 2-5, 2025",
     images: [
       { src: "/images/events-images/fw/fw_main1.png", alt: "First Week 1" },
       { src: "/images/events-images/fw/fw_main5.png", alt: "First Week 2" },
@@ -43,13 +45,30 @@ const pastEvents = [
       
     ],
   },
+  {
+    title: "Come out for Brunch",
+    description: "A celebration of National Coming Out Day! Hosted by SUS EDI, KUS Pride, and LFSUS.",
+    date: "October 10, 2025",
+    images: [
+      // Add images here when available
+    ],
+  },
+  {
+    title: "FYC Haunted Carnival",
+    description: "A spooky series of Halloween events with costumes, activities, and prizes!",
+    date: "October 30, 2025",
+    images: [
+      // Add images here when available
+    ],
+  },
 ];
 
 // Reusable Event Section
-const EventSection = ({ title, description, images }) => (
+const EventSection = ({ title, description, date, images }) => (
   <Section>
     <SectionHeader>
       <EventTitle>{title}</EventTitle>
+      {date && <EventDate>{date}</EventDate>}
       <EventDescription>{description}</EventDescription>
     </SectionHeader>
 
@@ -91,6 +110,7 @@ export default function PastEvents() {
             key={i}
             title={event.title}
             description={event.description}
+            date={event.date}
             images={event.images}
           />
         ))}
@@ -198,6 +218,13 @@ const SectionHeader = styled.div`
 const EventTitle = styled.h2`
   font-size: 2.5rem;
   color: #222755;
+  margin-bottom: 10px;
+`;
+
+const EventDate = styled.p`
+  font-size: 1.2rem;
+  color: #222755;
+  font-weight: 600;
   margin-bottom: 10px;
 `;
 
