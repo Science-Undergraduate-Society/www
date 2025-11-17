@@ -197,6 +197,17 @@ export default function Events() {
                         <InitiativeButton><strong>Event RSVP Form</strong></InitiativeButton>
                     </a>
                 </EventContainer>  
+
+                {/* Ignite Conference */}
+                <EventContainer>
+                    <EventTitle><b>Ignite <Highlight>Conference</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>November 22, 1:00 - 6:00 PM</strong></EventSubtitle>
+                    <p>Ignite is the Science Undergraduate Society's annual career conference, offering students interactive workshops, industry panels, and networking opportunities with professionals. Join us on November 22 to explore diverse science careers and gain insights to shape your professional journey.</p>
+                
+                    <a href="https://www.instagram.com/susubc/?hl=en" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>Find out more</strong></InitiativeButton>
+                    </a>
+                </EventContainer>  
         
             </TopContainer>
             <Footer/>
