@@ -126,7 +126,7 @@ export default function Bookings() {
                   <ul>
                       <li>Fill out the <strong>booking request Jotform below</strong>.</li>
                       <li>Ensure your request is being submitted within the applicable deadlines (see below).</li>
-                      <li>Remember that the booking includes the time for setup/takedown as managed by your organization. Ensure you are requesting enough time to properly set up and take down the materials needed for your event.</li>
+                      <li><strong>Remember that the booking includes the time for setup/takedown as managed by your organization. Ensure you are requesting enough time to properly set up and take down the materials needed for your event. </strong></li>
                   </ul>
 
                   <StepTitle>After Submitting a Booking Request:</StepTitle>
