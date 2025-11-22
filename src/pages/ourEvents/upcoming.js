@@ -148,6 +148,8 @@ export default function Events() {
 
                     <EventSubtitle>The survey will close on November 24, 2025 at 11:59 PM.</EventSubtitle>
 
+                    <br/>
+
                     <a href="https://ubc.ca1.qualtrics.com/jfe/form/SV_4JwuVlyeHp1BMdo" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Take Survey</strong></InitiativeButton>
                     </a>
