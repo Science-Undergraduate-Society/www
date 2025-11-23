@@ -218,7 +218,7 @@ export default function Events() {
                 <EventContainer>
                     <EventTitle><b>Festive <Highlight>Face Off</Highlight></b></EventTitle>
                     <EventSubtitle><strong>November 27, 7:30 - 10:30 PM</strong></EventSubtitle>
-                    <p>"Come join the SUS Social Committee at Festive Face-Off, happening on November 27th from 7:30-10:30PM at Abdul Ladha! A cozy evening of mini games, a big game of Jeopardy, prizes, pizza, and hot chocolate! Sign up in groups of 3-6 or as an individual (and we'll place you in a team)! RSVP now!"</p>
+                    <p>Come join the SUS Social Committee at Festive Face-Off, happening on November 27th from 7:30-10:30PM at Abdul Ladha! A cozy evening of mini games, a big game of Jeopardy, prizes, pizza, and hot chocolate! Sign up in groups of 3-6 or as an individual (and we`&apos;`ll place you in a team)! RSVP now!</p>
                     <a href="https://forms.gle/X9NFouwdjdwNHjhc8" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP Form</strong></InitiativeButton>
                     </a>
@@ -228,7 +228,7 @@ export default function Events() {
                 <EventContainer>
                     <EventTitle><b>Ball Till You <Highlight>Fall</Highlight></b></EventTitle>
                     <EventSubtitle><strong>November 28, 1:00 - 5:00 PM</strong></EventSubtitle>
-                    <p>SUS Sports is back with another tournament! This time we're hitting the court for a 4v4 Half-Court Basketball Showdown! Bring your squad and make sure to have at least one girl on court at all times. We've got a Competitive bracket (with a $200 prize) and a Just-for-Fun court so sign up accordingly!</p>
+                    <p>SUS Sports is back with another tournament! This time we`&apos;`re hitting the court for a 4v4 Half-Court Basketball Showdown! Bring your squad and make sure to have at least one girl on court at all times. We`&apos;`ve got a Competitive bracket (with a $200 prize) and a Just-for-Fun court so sign up accordingly!</p>
                 
                     <a href="https://www.bouncelife.com/events/6906821deebb2acd35f0b227" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
