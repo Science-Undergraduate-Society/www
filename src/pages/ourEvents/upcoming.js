@@ -192,7 +192,7 @@ export default function Events() {
                     </p>
                 </EventContainer>    */}
                 {/* Pizza N' Profs */}
-                <EventContainer>
+                {/* <EventContainer>
                     <EventTitle><b>Pizza N <Highlight>Profs</Highlight></b></EventTitle>
                     <EventSubtitle><strong>November 17, 5:30 - 7:30 PM</strong></EventSubtitle>
                     <p>Join Pizza N Profs on November 17th, 5:30 to 7:30 PM at Abdul Ladha! Hear professors share their journeys, research, and advice during an interactive panel and Q&A, followed by small-group networking over pizza. Gain insights, ask questions, and connect with professors. RSVP now!</p>
@@ -200,10 +200,10 @@ export default function Events() {
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUQaMu9Kacy2ZQyyosdNY5rJGiGUZbbiVW4cqRRnf5F4Mqig/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP Form</strong></InitiativeButton>
                     </a>
-                </EventContainer>  
+                </EventContainer>   */}
 
                 {/* Ignite Conference */}
-                <EventContainer>
+                {/* <EventContainer>
                     <EventTitle><b>Ignite <Highlight>Conference</Highlight></b></EventTitle>
                     <EventSubtitle><strong>November 22, 1:00 - 6:00 PM</strong></EventSubtitle>
                     <p>Ignite is the Science Undergraduate Society`&apos;`s annual career conference, offering students interactive workshops, industry panels, and networking opportunities with professionals. Join us on November 22 to explore diverse science careers and gain insights to shape your professional journey.</p>
@@ -211,7 +211,30 @@ export default function Events() {
                     <a href="https://www.instagram.com/susubc/?hl=en" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Find out more</strong></InitiativeButton>
                     </a>
+                </EventContainer>   */}
+
+                
+                {/* Festive Face Off */}
+                <EventContainer>
+                    <EventTitle><b>Festive <Highlight>Face Off</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>November 27, 7:30 - 10:30 PM</strong></EventSubtitle>
+                    <p>"Come join the SUS Social Committee at Festive Face-Off, happening on November 27th from 7:30-10:30PM at Abdul Ladha! A cozy evening of mini games, a big game of Jeopardy, prizes, pizza, and hot chocolate! Sign up in groups of 3-6 or as an individual (and we'll place you in a team)! RSVP now!"</p>
+                    <a href="https://forms.gle/X9NFouwdjdwNHjhc8" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>Event RSVP Form</strong></InitiativeButton>
+                    </a>
                 </EventContainer>  
+
+                {/* Ball till you Fall */}
+                <EventContainer>
+                    <EventTitle><b>Ball Till You <Highlight>Fall</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>November 28, 1:00 - 5:00 PM</strong></EventSubtitle>
+                    <p>SUS Sports is back with another tournament! This time we're hitting the court for a 4v4 Half-Court Basketball Showdown! Bring your squad and make sure to have at least one girl on court at all times. We've got a Competitive bracket (with a $200 prize) and a Just-for-Fun court so sign up accordingly!</p>
+                
+                    <a href="https://www.bouncelife.com/events/6906821deebb2acd35f0b227" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
+                    </a>
+                </EventContainer>  
+                
         
             </TopContainer>
             <Footer/>

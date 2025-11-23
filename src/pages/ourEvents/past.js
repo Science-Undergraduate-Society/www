@@ -61,6 +61,22 @@ const pastEvents = [
       // Add images here when available
     ],
   },
+  {
+    title: "Pizza N' Profs",
+    description: "A night where professors share their journeys, research, and advice during an interactive panel and Q&A, followed by small-group networking over pizza. Gain insights, ask questions, and connect with professors.",
+    date: "November 17, 2025",
+    images: [
+      // Add images here when available
+    ],
+  },
+  {
+    title: "Ignite Conference",
+    description: "Ignite is the Science Undergraduate Society's annual career conference, offering students interactive workshops, industry panels, and networking opportunities with professionals. Explore diverse science careers and gain insights to shape your professional journey.",
+    date: "November 22, 2025",
+    images: [
+      // Add images here when available
+    ],
+  },
 ];
 
 // Reusable Event Section
