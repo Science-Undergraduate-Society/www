@@ -139,7 +139,7 @@ export default function Events() {
                 
                 {/* Back2School Survey */}
 
-                <EventContainer>
+                {/* <EventContainer>
                     <EventTitle><b>SUS <Highlight>Back2School Survey</Highlight></b></EventTitle>
 
                     <p>
@@ -153,7 +153,7 @@ export default function Events() {
                     <a href="https://ubc.ca1.qualtrics.com/jfe/form/SV_4JwuVlyeHp1BMdo" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Take Survey</strong></InitiativeButton>
                     </a>
-                </EventContainer>    
+                </EventContainer>     */}
 
                 {/* Survival Guide */}
 
@@ -215,17 +215,17 @@ export default function Events() {
 
                 
                 {/* Festive Face Off */}
-                <EventContainer>
+                {/* <EventContainer>
                     <EventTitle><b>Festive <Highlight>Face Off</Highlight></b></EventTitle>
                     <EventSubtitle><strong>November 27, 7:30 - 10:30 PM</strong></EventSubtitle>
                     <p>Come join the SUS Social Committee at Festive Face-Off, happening on November 27th from 7:30-10:30PM at Abdul Ladha! A cozy evening of mini games, a big game of Jeopardy, prizes, pizza, and hot chocolate! Sign up in groups of 3-6 or as an individual (and we`&apos;`ll place you in a team)! RSVP now!</p>
                     <a href="https://forms.gle/X9NFouwdjdwNHjhc8" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP Form</strong></InitiativeButton>
                     </a>
-                </EventContainer>  
+                </EventContainer>   */}
 
                 {/* Ball till you Fall */}
-                <EventContainer>
+                {/* <EventContainer>
                     <EventTitle><b>Ball Till You <Highlight>Fall</Highlight></b></EventTitle>
                     <EventSubtitle><strong>November 28, 1:00 - 5:00 PM</strong></EventSubtitle>
                     <p>SUS Sports is back with another tournament! This time we`&apos;`re hitting the court for a 4v4 Half-Court Basketball Showdown! Bring your squad and make sure to have at least one girl on court at all times. We`&apos;`ve got a Competitive bracket (with a $200 prize) and a Just-for-Fun court so sign up accordingly!</p>
@@ -233,9 +233,43 @@ export default function Events() {
                     <a href="https://www.bouncelife.com/events/6906821deebb2acd35f0b227" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
                     </a>
+                </EventContainer>   */}
+
+                {/* FYC House Party */}
+                <EventContainer>
+                    <EventTitle><b>FYC House <Highlight>Party</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>January 16th, 7 PM - 10 PM</strong></EventSubtitle>
+                    <p>Attention First Years! FYC is hosting a WHITE LIES themed winter HOUSE PARTY, January 16th, Abdul Ladha Center, 7pm-10pm! Free food and fun vibes. No better way to begin the cold return to campus! Photo Booth, giveaways, and more… RSVP TODAY</p>
+                
+                    <a href=" https://www.bouncelife.com/events/69470e6ec4ce1255cfef0e74" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
+                    </a>
                 </EventContainer>  
                 
-        
+                {/* SCI Week */}
+                <EventContainer>
+                    <EventTitle><b>SCI <Highlight>Week</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>January 12 - 16</strong></EventSubtitle>
+                    <p>Introducing… SCIENCE WEEK 2026! From January 12th to 16th, come join us for a full week of fun! With events ranging from dodgeball, to trivia, to crafts, SCI Week has something for everyone! For more info and to RSVP, check out @susubc on Instagram</p>
+                
+                    <ButtonRow>
+                        <a
+                        href="https://www.bouncelife.com/events/6954513be8b73672d1d4ad12"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                            <InitiativeButton>RSVP: Charcuterie</InitiativeButton>
+                        </a>
+
+                        <a href="https://www.bouncelife.com/events/695323cdbd51a7842448be0a">
+                            <InitiativeButton>RSVP: Bunny Yoga</InitiativeButton>
+                        </a>
+
+                        <a href="/https://doodle.com/sign-up-sheet/participate/2d7b2048-5ab2-45e6-9fb4-f33a60e4bcce/select">
+                            <InitiativeButton>RSVP: Trivia</InitiativeButton>
+                        </a>
+                    </ButtonRow>
+                </EventContainer>          
             </TopContainer>
             <Footer/>
         </>
@@ -295,6 +329,13 @@ const InitiativeButton = styled.button`
         border: 1px solid #0052ff;
     }
 `;
+const ButtonRow = styled.div`
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap; /* allows stacking on small screens */
+`;
+
 
 
 // ====== COLLAGE STYLES ====== //
