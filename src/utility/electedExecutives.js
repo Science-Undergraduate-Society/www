@@ -72,7 +72,7 @@ export const executiveInfo = [
     \nThe Student Life Portfolio is responsible for flagship events such as Science RXN, Science Week, and Science Celebration, as well as the Social, Sports, and First Year Committee events held throughout the school year. We aim to maximize student engagement through planning and executing events that are both FUN and INCLUSIVE for Science students. 
     \nContact me at vpstudentlife@sus.ubc.ca anytime to share event ideas, provide event feedback, or to learn more about the Student Life Portfolio and SUS!`,
     email: "vpstudentlife@sus.ubc.ca",
-    link: "https://calendly.com/anikalaylee/vp-academic-office-hours",
+    link: "https://calendly.com/studentlife-interviews/jenevieve-lee-office-hours",
     officeHours: "Tuesday 4:00 PM - 6:00 PM"
   }
 ];

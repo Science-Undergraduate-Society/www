@@ -265,7 +265,7 @@ export default function Events() {
                             <InitiativeButton>RSVP: Bunny Yoga</InitiativeButton>
                         </a>
 
-                        <a href="/https://doodle.com/sign-up-sheet/participate/2d7b2048-5ab2-45e6-9fb4-f33a60e4bcce/select">
+                        <a href="https://doodle.com/sign-up-sheet/participate/2d7b2048-5ab2-45e6-9fb4-f33a60e4bcce/select">
                             <InitiativeButton>RSVP: Trivia</InitiativeButton>
                         </a>
                     </ButtonRow>
