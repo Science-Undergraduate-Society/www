@@ -31,8 +31,14 @@ const tutors = [
         description: "Hi everyone! My name is Felix and I’m starting my third year in combined chemical physics. I tutored for SUS last year and I found it so rewarding to offer support to first year students. I think this program is important because the adjustment period for first years can be quite tough and there can never be enough resources for them. A fun fact about it me is that I just did a summer abroad at Yonsei University in South Korea. Feel free to ask me about that!",
         koalaLink: "https://koalendar.com/e/felix-chan-sus-tutor"
     },
-    {
-        name: "Rudra Dave",
+    {        
+        name: "Kate Chen",
+        courses: "BIOL 111/112/121, CHEM 121/123, PHYS 100/131, DSCI 100, MATH 101",
+        image: "/images/tutors/Kate_Chen.jpg",
+        description: "Hey! I'm Katherine (or Kate), a second year studying pharmacology. I'm tutoring for SUS because I want to meet new students and help you guys thrive, even in difficult uni classes. I love music and food, so feel free to ask me about either (or both!) and I'll yap for hours ;)",
+        koalaLink: "https://koalendar.com/e/katherine-chen-sus-tutoring"
+    },
+    {        name: "Rudra Dave",
         courses: "DSCI 100",
         image: "/images/tutors/Placeholder.jpg",
         description: "I am currently a third-year CS major at UBC. I am a tutor for SUS because I enjoy helping fellow students succeed and gain confidence in their studies. A fun fact about me is that I am really passionate about playing and watching soccer!",
@@ -44,6 +50,34 @@ const tutors = [
         image: "/images/tutors/Gursimran Garcha.jpg",
         description: "Hi everyone! My name is Gursimran, and I am a second-year CAPS student at UBC. I became a SUS tutor because I believe the transition from high school to university can feel a lot less daunting with a bit of guidance, and I hope to be a friendly face students feel comfortable approaching. Fun fact about me: I've been playing soccer for more than 14 years!",
         koalaLink: "https://koalendar.com/e/gursimran-garcha-sus-tutor"
+    },
+    {
+        name: "Aasha Gill",
+        courses: "BIOL 121, BIOL 112, CHEM 121/141, CHEM 123, PHYS 131, BIOL 260",
+        image: "/images/tutors/Aasha_Gill.jpg",
+        description: "Hi, my name is Aasha, I am a second-year biology student! I am tutoring for SUS to help make fellow students lives a little bit easier by giving them the guidance and support I wish I had when taking difficult classes. I have been playing soccer for most my life and like to spend my free time with friends, listening to music, or being outside.",
+        koalaLink: "https://koalendar.com/e/AashaGill"
+    },
+    {
+        name: "Jisong Han",
+        courses: "PHYS 117/118, BIOL 112",
+        image: "/images/tutors/Jisong_Han.jpg",
+        description: "Hello! I'm Jisong, and I am currently a 2nd year pharmacology student. I am a tutor for SUS because I enjoy tutoring and want to help other students with studying. A fun fact about me is that I like to watch random tv shows.",
+        koalaLink: "https://koalendar.com/e/jisong-han-sus-tutoring"
+    },
+    {
+        name: "Mutsumi Ito",
+        courses: "MATH 100, BIOL 112, BIOL 121, CHEM 123",
+        image: "/images/tutors/Mutsumi_Ito.jpg",
+        description: "Hi, my name is Mutsumi and I'm currently a second year biochemistry student. I became a SUS tutor because I enjoy helping others learn and succeed in their courses. Outside of classes, I enjoy listening to music and practicing flute.",
+        koalaLink: "https://koalendar.com/e/Mutsumi"
+    },
+    {
+        name: "Sheena Jiang",
+        courses: "BIOL 112, BIOL 121, BIOL 200, BIOC 202, MICB 212, CPSC 103, DSCI 100",
+        image: "/images/tutors/Sheena_Jiang.JPG",
+        description: "Hey! I'm a fourth-year Honours CAPS student currently on co-op. I became a SUS tutor because I love communicating science to other students! A fun fact about me is that I LOVE the colour pink",
+        koalaLink: "https://koalendar.com/e/sheena-jiang-sus-tutoring"
     },
     {
         name: "Mehdi Naami",
@@ -74,6 +108,20 @@ const tutors = [
         koalaLink: "https://koalendar.com/e/hamin-park-sus-tutoring"
     },
     {
+        name: "Buvan Bhaskara Reddy",
+        courses: "MATH 100, MATH 101, CPSC 103",
+        image: "/images/tutors/Buvan_Reddy.jpg",
+        description: "Hi! I am a 3rd Year Statistics and Economics student. I'm a tutor because I find teaching rewarding and want to help students with their courses outside the classroom. A fun fact about me is that I have met Manny Pacquiao at Ferrari World.",
+        koalaLink: "https://koalendar.com/e/buvan-bhaskara-reddy-sus-tutoring"
+    },
+    {
+        name: "Tanraj Sekhon",
+        courses: "BIOL 112, BIOL 121",
+        image: "/images/tutors/Tanraj_Sekhon.jpg",
+        description: "Hi! My name is Tanraj, and I'm a second year neuroscience student. I became a SUS Tutor because I love helping others understand challenging concepts. Outside of school, I love to play sports and watch TV shows!",
+        koalaLink: "https://koalendar.com/e/tanraj-sekhon-sus-tutor"
+    },
+    {
         name: "Melody Wu",
         courses: "BIOL 121",
         image: "/images/tutors/Melody Wu.jpg",
@@ -96,7 +144,7 @@ const tutors = [
     },
     {
         name: "Kavi Balsara",
-        courses: "TBD",
+        courses: "BIOL 121/112, CPSC 103",
         image: "/images/tutors/Kavi Balsara.jpg",
         description: "Hi, I am a second year neuroscience student. I became a tutor for SUS because I believe that tutoring can be an excellent way to fully grasp concepts outside of the classroom. I really enjoy playing soccer and watching movies.",
         koalaLink: ""
