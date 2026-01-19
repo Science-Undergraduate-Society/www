@@ -236,7 +236,7 @@ export default function Events() {
                 </EventContainer>   */}
 
                 {/* FYC House Party */}
-                <EventContainer>
+                {/* <EventContainer>
                     <EventTitle><b>FYC House <Highlight>Party</Highlight></b></EventTitle>
                     <EventSubtitle><strong>January 16th, 7 PM - 10 PM</strong></EventSubtitle>
                     <p>Attention First Years! FYC is hosting a WHITE LIES themed winter HOUSE PARTY, January 16th, Abdul Ladha Center, 7pm-10pm! Free food and fun vibes. No better way to begin the cold return to campus! Photo Booth, giveaways, and more… RSVP TODAY</p>
@@ -244,10 +244,10 @@ export default function Events() {
                     <a href=" https://www.bouncelife.com/events/69470e6ec4ce1255cfef0e74" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
                     </a>
-                </EventContainer>  
+                </EventContainer>   */}
                 
                 {/* SCI Week */}
-                <EventContainer>
+                {/* <EventContainer>
                     <EventTitle><b>SCI <Highlight>Week</Highlight></b></EventTitle>
                     <EventSubtitle><strong>January 12 - 16</strong></EventSubtitle>
                     <p>Introducing… SCIENCE WEEK 2026! From January 12th to 16th, come join us for a full week of fun! With events ranging from dodgeball, to trivia, to crafts, SCI Week has something for everyone! For more info and to RSVP, check out @susubc on Instagram</p>
@@ -269,7 +269,42 @@ export default function Events() {
                             <InitiativeButton>RSVP: Trivia</InitiativeButton>
                         </a>
                     </ButtonRow>
-                </EventContainer>          
+                </EventContainer>  */}
+
+                {/* Renew and Reset */}
+                <EventContainer>
+                    <EventTitle><b>Renew and <Highlight>Reset</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>January 26th, 5:30 PM - 7:30 PM</strong></EventSubtitle>
+                    <p>Join us for a night of vision board making and setting goals for the new term alongside Science Peer Academic Coaches and the Academic Integrity Hub! Come for free donuts and hot chocolate!</p>
+                
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYdm1Bapjx1XAexpsnpGM3P9Zr0uaGpwKvV0fKIctSD0abZQ/viewform" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
+                    </a>
+                </EventContainer>  
+
+                {/* Bites and Budgets */}
+                <EventContainer>
+                    <EventTitle><b>Bites and <Highlight>Budgets</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>January 28th, 6-8 PM</strong></EventSubtitle>
+                    <p>Attend SUS's Bites and Budgets on January 28, 6-8PM! Enjoy free food, learn about building credit and investing, and hear from guest speakers from ES Advising. Bring your laptop!</p>
+                
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXpWRWI_wmYBmyBCJp3gfG8zSrqcfYEPOT2YTJzrHvS1xm9g/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
+                    </a>
+                </EventContainer>    
+
+                {/* Ballots and Berveages  */}
+                <EventContainer>
+                    <EventTitle><b>Ballots and <Highlight>Beverages</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>February 5th, 5 - 7 PM</strong></EventSubtitle>
+                    <p>Come out and mingle with your current SUS execs! Learn more about their roles in SUS and get the inside scoop on how to become a candidate in this year's Spring election.</p>
+                
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsRNrqsR21IcnLkuuSdHa7eTAJIfNI2k3k8IIjJFlaoODHBQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
+                    </a>
+                </EventContainer>           
+
+                
             </TopContainer>
             <Footer/>
         </>
