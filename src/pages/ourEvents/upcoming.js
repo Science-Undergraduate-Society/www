@@ -286,7 +286,7 @@ export default function Events() {
                 <EventContainer>
                     <EventTitle><b>Bites and <Highlight>Budgets</Highlight></b></EventTitle>
                     <EventSubtitle><strong>January 28th, 6-8 PM</strong></EventSubtitle>
-                    <p>Attend SUS's Bites and Budgets on January 28, 6-8PM! Enjoy free food, learn about building credit and investing, and hear from guest speakers from ES Advising. Bring your laptop!</p>
+                    <p>Attend SUS`&apos;`s Bites and Budgets on January 28, 6-8PM! Enjoy free food, learn about building credit and investing, and hear from guest speakers from ES Advising. Bring your laptop!</p>
                 
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXpWRWI_wmYBmyBCJp3gfG8zSrqcfYEPOT2YTJzrHvS1xm9g/viewform?usp=header" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
@@ -297,7 +297,7 @@ export default function Events() {
                 <EventContainer>
                     <EventTitle><b>Ballots and <Highlight>Beverages</Highlight></b></EventTitle>
                     <EventSubtitle><strong>February 5th, 5 - 7 PM</strong></EventSubtitle>
-                    <p>Come out and mingle with your current SUS execs! Learn more about their roles in SUS and get the inside scoop on how to become a candidate in this year's Spring election.</p>
+                    <p>Come out and mingle with your current SUS execs! Learn more about their roles in SUS and get the inside scoop on how to become a candidate in this year`&apos;`s Spring election.</p>
                 
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsRNrqsR21IcnLkuuSdHa7eTAJIfNI2k3k8IIjJFlaoODHBQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
