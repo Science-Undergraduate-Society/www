@@ -302,7 +302,18 @@ export default function Events() {
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsRNrqsR21IcnLkuuSdHa7eTAJIfNI2k3k8IIjJFlaoODHBQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
                     </a>
-                </EventContainer>           
+                </EventContainer>    
+
+                {/* Research Conference */}
+                <EventContainer>
+                    <EventTitle><b>SUS <Highlight>Research Exchange</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>March 14th, 9:30 AM - 3:30 PM</strong></EventSubtitle>
+                    <p>Are you new to research and wanting to get involved? Do you wish you had skills to highlight when applying for positions? Join us for SUS Research Exchange ✨ RSVP open until February 9th, 2026.</p>
+                
+                    <a href="https://ubc.ca1.qualtrics.com/jfe/form/SV_4MzlnG0bBGaGDhc" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
+                    </a>
+                </EventContainer>          
 
                 
             </TopContainer>
