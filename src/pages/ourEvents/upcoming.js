@@ -272,7 +272,7 @@ export default function Events() {
                 </EventContainer>  */}
 
                 {/* Renew and Reset */}
-                <EventContainer>
+                {/* <EventContainer>
                     <EventTitle><b>Renew and <Highlight>Reset</Highlight></b></EventTitle>
                     <EventSubtitle><strong>January 26th, 5:30 PM - 7:30 PM</strong></EventSubtitle>
                     <p>Join us for a night of vision board making and setting goals for the new term alongside Science Peer Academic Coaches and the Academic Integrity Hub! Come for free donuts and hot chocolate!</p>
@@ -280,10 +280,10 @@ export default function Events() {
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYdm1Bapjx1XAexpsnpGM3P9Zr0uaGpwKvV0fKIctSD0abZQ/viewform" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
                     </a>
-                </EventContainer>  
+                </EventContainer>   */}
 
                 {/* Bites and Budgets */}
-                <EventContainer>
+                {/* <EventContainer>
                     <EventTitle><b>Bites and <Highlight>Budgets</Highlight></b></EventTitle>
                     <EventSubtitle><strong>January 28th, 6-8 PM</strong></EventSubtitle>
                     <p>Attend SUS&apos;s Bites and Budgets on January 28, 6-8PM! Enjoy free food, learn about building credit and investing, and hear from guest speakers from ES Advising. Bring your laptop!</p>
@@ -291,7 +291,7 @@ export default function Events() {
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXpWRWI_wmYBmyBCJp3gfG8zSrqcfYEPOT2YTJzrHvS1xm9g/viewform?usp=header" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
                     </a>
-                </EventContainer>    
+                </EventContainer>     */}
 
                 {/* Ballots and Berveages  */}
                 <EventContainer>
@@ -313,7 +313,18 @@ export default function Events() {
                     <a href="https://ubc.ca1.qualtrics.com/jfe/form/SV_4MzlnG0bBGaGDhc" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
                     </a>
-                </EventContainer>          
+                </EventContainer>  
+
+                {/* Cupid’s Coasters */}
+                <EventContainer>
+                    <EventTitle><b>Cupid&apos;s <Highlight>Coasters</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>February 11th, 1:00 PM - 3:30 PM</strong></EventSubtitle>
+                    <p>Come to Cupid&apos;s Coasters, hosted by SUS COMME! Enjoy this fun and relaxing event where you will get to paint your own reusable coasters. Refreshments included! Entry via non-perishable food donation.</p>
+                
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmBb2_ml0Vjy8D0Cu-TexwrYsS3_hIlKjcnhT_PNn7YqylQg/viewform?usp=preview" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
+                    </a>
+                </EventContainer>              
 
                 
             </TopContainer>
