@@ -324,7 +324,18 @@ export default function Events() {
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmBb2_ml0Vjy8D0Cu-TexwrYsS3_hIlKjcnhT_PNn7YqylQg/viewform?usp=preview" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
                     </a>
-                </EventContainer>              
+                </EventContainer>       
+
+                {/* Sci Fair */}
+                <EventContainer>
+                    <EventTitle><b>Sci <Highlight>Fair</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>February 27th, 2:00 PM - 6:00 PM</strong></EventSubtitle>
+                    <p>Sci Fair is your opportunity to learn about career, volunteer and academic opportunities! With free admission, you can network with employers and explore post-graduation pathways.</p>
+                
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLw9TO8prZDyUcAzC42yGbdHDAg1UkGdLCiKHVQcCkmvFgvQ/viewform" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
+                    </a>
+                </EventContainer>           
 
                 
             </TopContainer>
