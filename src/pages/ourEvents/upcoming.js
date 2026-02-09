@@ -169,129 +169,17 @@ export default function Events() {
                     </a>
                 </EventContainer>   
 
-                {/* Brunch */}
+                <EventContainer>
+                    <EventTitle><b>Sci <Highlight>Fair</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>February 27th, 2 - 6 PM</strong></EventSubtitle>
+                    <p>Sci Fair is your opportunity to learn about career, volunteer and academic opportunities! With free admission, you can network with employers and explore post-graduation pathways.</p>
 
-                {/* <EventContainer>
-                    <EventTitle><b>Come out for<Highlight> Brunch</Highlight></b></EventTitle>
-                    <EventSubtitle><strong>October 10, 9-12pm</strong></EventSubtitle>
-                    <p>
-                    Join us for brunch to celebrate National Coming Out Day! Hosted by SUS EDI, KUS Pride, and LFSUS, this event is a space to connect with others and enjoy good food. Everyone is welcome! Abdul Ladha Science Student Centre, <strong>October 10th, 9-12PM (drop-in)</strong> For questions, please contact edi@sus.ubc.ca.
-                    </p>
+                    <strong>Abdul Ladha</strong>
 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3QcCV1IR-gurgwHY-9WFi3B7lckYXlBxQ3L7pBVyWAfzVPw/viewform" target="_blank" rel="noopener noreferrer">
-                        <InitiativeButton><strong>Event RSVP Form</strong></InitiativeButton>
-                    </a>
-                </EventContainer>     */}
-
-                {/* FYC Haunted Carnival */}
-                {/* <EventContainer>
-                    <EventTitle><b>FYC<Highlight> Haunted Carnival</Highlight></b></EventTitle>
-                    <EventSubtitle>October 30, 5-9 PM</EventSubtitle>
-                    <p>
-                    First years, do you have any plans this Halloween? Join the FYC at Abdul Ladha on October 30 from 5-9 PM for a spooky series of events! Bring your friends, dress up, and participate to win prizes!
-                    </p>
-                </EventContainer>    */}
-                {/* Pizza N' Profs */}
-                {/* <EventContainer>
-                    <EventTitle><b>Pizza N <Highlight>Profs</Highlight></b></EventTitle>
-                    <EventSubtitle><strong>November 17, 5:30 - 7:30 PM</strong></EventSubtitle>
-                    <p>Join Pizza N Profs on November 17th, 5:30 to 7:30 PM at Abdul Ladha! Hear professors share their journeys, research, and advice during an interactive panel and Q&A, followed by small-group networking over pizza. Gain insights, ask questions, and connect with professors. RSVP now!</p>
-                
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUQaMu9Kacy2ZQyyosdNY5rJGiGUZbbiVW4cqRRnf5F4Mqig/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">
-                        <InitiativeButton><strong>Event RSVP Form</strong></InitiativeButton>
-                    </a>
-                </EventContainer>   */}
-
-                {/* Ignite Conference */}
-                {/* <EventContainer>
-                    <EventTitle><b>Ignite <Highlight>Conference</Highlight></b></EventTitle>
-                    <EventSubtitle><strong>November 22, 1:00 - 6:00 PM</strong></EventSubtitle>
-                    <p>Ignite is the Science Undergraduate Society`&apos;`s annual career conference, offering students interactive workshops, industry panels, and networking opportunities with professionals. Join us on November 22 to explore diverse science careers and gain insights to shape your professional journey.</p>
-                
-                    <a href="https://www.instagram.com/susubc/?hl=en" target="_blank" rel="noopener noreferrer">
-                        <InitiativeButton><strong>Find out more</strong></InitiativeButton>
-                    </a>
-                </EventContainer>   */}
-
-                
-                {/* Festive Face Off */}
-                {/* <EventContainer>
-                    <EventTitle><b>Festive <Highlight>Face Off</Highlight></b></EventTitle>
-                    <EventSubtitle><strong>November 27, 7:30 - 10:30 PM</strong></EventSubtitle>
-                    <p>Come join the SUS Social Committee at Festive Face-Off, happening on November 27th from 7:30-10:30PM at Abdul Ladha! A cozy evening of mini games, a big game of Jeopardy, prizes, pizza, and hot chocolate! Sign up in groups of 3-6 or as an individual (and we`&apos;`ll place you in a team)! RSVP now!</p>
-                    <a href="https://forms.gle/X9NFouwdjdwNHjhc8" target="_blank" rel="noopener noreferrer">
-                        <InitiativeButton><strong>Event RSVP Form</strong></InitiativeButton>
-                    </a>
-                </EventContainer>   */}
-
-                {/* Ball till you Fall */}
-                {/* <EventContainer>
-                    <EventTitle><b>Ball Till You <Highlight>Fall</Highlight></b></EventTitle>
-                    <EventSubtitle><strong>November 28, 1:00 - 5:00 PM</strong></EventSubtitle>
-                    <p>SUS Sports is back with another tournament! This time we`&apos;`re hitting the court for a 4v4 Half-Court Basketball Showdown! Bring your squad and make sure to have at least one girl on court at all times. We`&apos;`ve got a Competitive bracket (with a $200 prize) and a Just-for-Fun court so sign up accordingly!</p>
-                
-                    <a href="https://www.bouncelife.com/events/6906821deebb2acd35f0b227" target="_blank" rel="noopener noreferrer">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLw9TO8prZDyUcAzC42yGbdHDAg1UkGdLCiKHVQcCkmvFgvQ/viewform" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
                     </a>
-                </EventContainer>   */}
-
-                {/* FYC House Party */}
-                {/* <EventContainer>
-                    <EventTitle><b>FYC House <Highlight>Party</Highlight></b></EventTitle>
-                    <EventSubtitle><strong>January 16th, 7 PM - 10 PM</strong></EventSubtitle>
-                    <p>Attention First Years! FYC is hosting a WHITE LIES themed winter HOUSE PARTY, January 16th, Abdul Ladha Center, 7pm-10pm! Free food and fun vibes. No better way to begin the cold return to campus! Photo Booth, giveaways, and more… RSVP TODAY</p>
-                
-                    <a href=" https://www.bouncelife.com/events/69470e6ec4ce1255cfef0e74" target="_blank" rel="noopener noreferrer">
-                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
-                    </a>
-                </EventContainer>   */}
-                
-                {/* SCI Week */}
-                {/* <EventContainer>
-                    <EventTitle><b>SCI <Highlight>Week</Highlight></b></EventTitle>
-                    <EventSubtitle><strong>January 12 - 16</strong></EventSubtitle>
-                    <p>Introducing… SCIENCE WEEK 2026! From January 12th to 16th, come join us for a full week of fun! With events ranging from dodgeball, to trivia, to crafts, SCI Week has something for everyone! For more info and to RSVP, check out @susubc on Instagram</p>
-                
-                    <ButtonRow>
-                        <a
-                        href="https://www.bouncelife.com/events/6954513be8b73672d1d4ad12"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                            <InitiativeButton>RSVP: Charcuterie</InitiativeButton>
-                        </a>
-
-                        <a href="https://www.bouncelife.com/events/695323cdbd51a7842448be0a">
-                            <InitiativeButton>RSVP: Bunny Yoga</InitiativeButton>
-                        </a>
-
-                        <a href="https://doodle.com/sign-up-sheet/participate/2d7b2048-5ab2-45e6-9fb4-f33a60e4bcce/select">
-                            <InitiativeButton>RSVP: Trivia</InitiativeButton>
-                        </a>
-                    </ButtonRow>
-                </EventContainer>  */}
-
-                {/* Renew and Reset */}
-                {/* <EventContainer>
-                    <EventTitle><b>Renew and <Highlight>Reset</Highlight></b></EventTitle>
-                    <EventSubtitle><strong>January 26th, 5:30 PM - 7:30 PM</strong></EventSubtitle>
-                    <p>Join us for a night of vision board making and setting goals for the new term alongside Science Peer Academic Coaches and the Academic Integrity Hub! Come for free donuts and hot chocolate!</p>
-                
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYdm1Bapjx1XAexpsnpGM3P9Zr0uaGpwKvV0fKIctSD0abZQ/viewform" target="_blank" rel="noopener noreferrer">
-                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
-                    </a>
-                </EventContainer>   */}
-
-                {/* Bites and Budgets */}
-                {/* <EventContainer>
-                    <EventTitle><b>Bites and <Highlight>Budgets</Highlight></b></EventTitle>
-                    <EventSubtitle><strong>January 28th, 6-8 PM</strong></EventSubtitle>
-                    <p>Attend SUS&apos;s Bites and Budgets on January 28, 6-8PM! Enjoy free food, learn about building credit and investing, and hear from guest speakers from ES Advising. Bring your laptop!</p>
-                
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXpWRWI_wmYBmyBCJp3gfG8zSrqcfYEPOT2YTJzrHvS1xm9g/viewform?usp=header" target="_blank" rel="noopener noreferrer">
-                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
-                    </a>
-                </EventContainer>     */}
+                </EventContainer>   
 
                 {/* Ballots and Berveages  */}
                 <EventContainer>
