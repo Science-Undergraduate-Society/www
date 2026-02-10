@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useState } from "react";
-import { AmpStateContext } from "next/dist/shared/lib/amp-context.shared-runtime";
 
 export default function Grants() {
 

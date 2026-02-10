@@ -136,24 +136,6 @@ export default function Events() {
                         </a>
                     </MentorshipButtonsContainer>
                 </EventContainer>    
-                
-                {/* Back2School Survey */}
-
-                {/* <EventContainer>
-                    <EventTitle><b>SUS <Highlight>Back2School Survey</Highlight></b></EventTitle>
-
-                    <p>
-                        The SUS Back2School Survey is an annual initiative led by the Academic Portfolio to gather meaningful feedback from UBC Science students. Open to students across all years and majors, it provides critical insights that guide advocacy efforts and help enhance the student experience. This year, our goal is to collect more than <strong>1,750 responses</strong>, ensuring the broadest representation of the science student body. By sharing their perspectives, students help shape programs, resources, and support systems tailored to their needs. To encourage participation, everyone who completes the survey will be entered into a raffle for a variety of exciting prizes.
-                    </p>
-
-                    <EventSubtitle>The survey will close on November 24, 2025 at 11:59 PM.</EventSubtitle>
-
-                    <br/>
-
-                    <a href="https://ubc.ca1.qualtrics.com/jfe/form/SV_4JwuVlyeHp1BMdo" target="_blank" rel="noopener noreferrer">
-                        <InitiativeButton><strong>Take Survey</strong></InitiativeButton>
-                    </a>
-                </EventContainer>     */}
 
                 {/* Survival Guide */}
 
@@ -173,8 +155,6 @@ export default function Events() {
                     <EventTitle><b>Sci <Highlight>Fair</Highlight></b></EventTitle>
                     <EventSubtitle><strong>February 27th, 2 - 6 PM</strong></EventSubtitle>
                     <p>Sci Fair is your opportunity to learn about career, volunteer and academic opportunities! With free admission, you can network with employers and explore post-graduation pathways.</p>
-
-                    <strong>Abdul Ladha</strong>
 
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLw9TO8prZDyUcAzC42yGbdHDAg1UkGdLCiKHVQcCkmvFgvQ/viewform" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
