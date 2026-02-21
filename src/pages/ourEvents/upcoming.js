@@ -116,29 +116,9 @@ export default function Events() {
                             </CollageContainer>
                         </EventContainer>
                     ))}
-                </FlagshipEventsContainer>
-                
-                {/* Back to School Survey */}
-
-                <EventContainer>
-                    <EventTitle><b>SUS <Highlight>Mentorship Program</Highlight></b></EventTitle>
-
-                    <p>
-                        The SUS Mentorship Program helps build a connected and supportive community within UBC Science by bringing together students across different years and disciplines. Mentors are upper-year undergraduates and graduate students who volunteer their time to support newer students. Through one-on-one or small-group pairings, mentors share their experiences while mentees gain guidance and encouragement as they navigate their academic and personal journeys. The program also hosts events and workshops designed to build meaningful connections, professional development, and community building. At the end of the year, both mentors and mentees are celebrated with awards recognizing their growth and contributions.
-                    </p>
-
-                    <MentorshipButtonsContainer>
-                        <a href="https://ubc.ca1.qualtrics.com/jfe/form/SV_51rDLgpIDVTciTY" target="_blank" rel="noopener noreferrer">
-                            <InitiativeButton><strong>Mentee</strong> Sign Up</InitiativeButton>
-                        </a>
-                        <a href="https://ubc.ca1.qualtrics.com/jfe/form/SV_6XqYDjMPrFCHsZE" target="_blank" rel="noopener noreferrer">
-                            <InitiativeButton><strong>Mentor</strong> Sign Up</InitiativeButton>
-                        </a>
-                    </MentorshipButtonsContainer>
-                </EventContainer>    
+                </FlagshipEventsContainer> 
 
                 {/* Survival Guide */}
-
                 <EventContainer>
                     <EventTitle><b>SUS <Highlight>Survival Guide</Highlight></b></EventTitle>
 
@@ -151,49 +131,6 @@ export default function Events() {
                     </a>
                 </EventContainer>   
 
-                <EventContainer>
-                    <EventTitle><b>Sci <Highlight>Fair</Highlight></b></EventTitle>
-                    <EventSubtitle><strong>February 27th, 2 - 6 PM</strong></EventSubtitle>
-                    <p>Sci Fair is your opportunity to learn about career, volunteer and academic opportunities! With free admission, you can network with employers and explore post-graduation pathways.</p>
-
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLw9TO8prZDyUcAzC42yGbdHDAg1UkGdLCiKHVQcCkmvFgvQ/viewform" target="_blank" rel="noopener noreferrer">
-                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
-                    </a>
-                </EventContainer>   
-
-                {/* Ballots and Berveages  */}
-                <EventContainer>
-                    <EventTitle><b>Ballots and <Highlight>Beverages</Highlight></b></EventTitle>
-                    <EventSubtitle><strong>February 5th, 5 - 7 PM</strong></EventSubtitle>
-                    <p>Come out and mingle with your current SUS execs! Learn more about their roles in SUS and get the inside scoop on how to become a candidate in this year&apos;s Spring election.</p>
-                
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsRNrqsR21IcnLkuuSdHa7eTAJIfNI2k3k8IIjJFlaoODHBQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
-                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
-                    </a>
-                </EventContainer>    
-
-                {/* Research Conference */}
-                <EventContainer>
-                    <EventTitle><b>SUS <Highlight>Research Exchange</Highlight></b></EventTitle>
-                    <EventSubtitle><strong>March 14th, 9:30 AM - 3:30 PM</strong></EventSubtitle>
-                    <p>Are you new to research and wanting to get involved? Do you wish you had skills to highlight when applying for positions? Join us for SUS Research Exchange ✨ RSVP open until February 9th, 2026.</p>
-                
-                    <a href="https://ubc.ca1.qualtrics.com/jfe/form/SV_4MzlnG0bBGaGDhc" target="_blank" rel="noopener noreferrer">
-                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
-                    </a>
-                </EventContainer>  
-
-                {/* Cupid’s Coasters */}
-                <EventContainer>
-                    <EventTitle><b>Cupid&apos;s <Highlight>Coasters</Highlight></b></EventTitle>
-                    <EventSubtitle><strong>February 11th, 1:00 PM - 3:30 PM</strong></EventSubtitle>
-                    <p>Come to Cupid&apos;s Coasters, hosted by SUS COMME! Enjoy this fun and relaxing event where you will get to paint your own reusable coasters. Refreshments included! Entry via non-perishable food donation.</p>
-                
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmBb2_ml0Vjy8D0Cu-TexwrYsS3_hIlKjcnhT_PNn7YqylQg/viewform?usp=preview" target="_blank" rel="noopener noreferrer">
-                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
-                    </a>
-                </EventContainer>       
-
                 {/* Sci Fair */}
                 <EventContainer>
                     <EventTitle><b>Sci <Highlight>Fair</Highlight></b></EventTitle>
@@ -203,7 +140,40 @@ export default function Events() {
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLw9TO8prZDyUcAzC42yGbdHDAg1UkGdLCiKHVQcCkmvFgvQ/viewform" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
                     </a>
-                </EventContainer>           
+                </EventContainer>  
+
+                {/* International Women's Day Coffee Chat*/}
+                <EventContainer>
+                    <EventTitle><b>International Women&apos;s Day  <Highlight>Coffee Chat</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>March 10th, 4:00 - 6:00 PM</strong></EventSubtitle>
+                    <p>An International Women&apos;s Day Coffee Chat bringing together women from various STEM fields to share experiences, navigate barriers, and build meaningful connections through conversation and networking.</p>
+                
+                    <a href="https://forms.gle/zypemG1yF4MPfAMe7" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
+                    </a>
+                </EventContainer>        
+
+                {/* Sustainability Week */}
+                <EventContainer>
+                    <EventTitle><b><Highlight>Sustainability Week</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>March 2 - 6</strong></EventSubtitle>
+                    <p>A week of sustainability-themed events including an iREACH lab tour, volunteering at the UBC Farm with lunch, plant pot painting, and a beach cleanup! Check out the SUS Instagram for more details!</p>
+                
+                    <a href="https://l.instagram.com/?u=https%3A%2F%2Flinktr.ee%2Fsusubc%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnzWoqXEz9aqJrovMzjewAc_FO0kUASGRoJOxUBlvR7_C-oMAhxhwNBKt2owQ_aem_Fb8k0popGTFbYqDhzlsfPQ&e=AT0u-82va9pS66dyNnwhnGlL-Gk56IynvBM6HOnnI2dOKNYhTu5zfzckeJPVCBnKty2Lh6P1h0msVbwY4hBwmtSg4Wy0IiMkOclzztIQ6goU6_EZj31Oo1YOkQ" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
+                    </a>
+                </EventContainer>        
+
+                {/* SUS Research Exchange */}
+                <EventContainer>
+                    <EventTitle><b>SUS <Highlight>Research Exchange</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>March 14th, 10:00 AM - 4:00 PM</strong></EventSubtitle>
+                    <p>Last call to sign up for the SUS Research Exchange! Don&apos;t miss this chance to develop your research skills through case competitions, presentations and networking. RSVP by February 24th at midnight.</p>
+                
+                    <a href="https://ubc.ca1.qualtrics.com/jfe/form/SV_4MzlnG0bBGaGDhc" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
+                    </a>
+                </EventContainer>                 
 
                 
             </TopContainer>
