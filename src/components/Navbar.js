@@ -14,7 +14,7 @@ const sections = [
     href: "/joinSus",
     items: [
       { name: "Apply", href: "/joinSus/apply" },
-      { name: "Fall Elections 2025", href: "/joinSus/elections" },
+      { name: "Spring Elections 2026", href: "/joinSus/elections" },
     ],
   },
   {
