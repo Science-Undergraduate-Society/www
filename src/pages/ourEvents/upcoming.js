@@ -131,17 +131,6 @@ export default function Events() {
                     </a>
                 </EventContainer>   
 
-                {/* Sci Fair */}
-                <EventContainer>
-                    <EventTitle><b>Sci <Highlight>Fair</Highlight></b></EventTitle>
-                    <EventSubtitle><strong>February 27th, 2:00 PM - 6:00 PM</strong></EventSubtitle>
-                    <p>Sci Fair is your opportunity to learn about career, volunteer and academic opportunities! With free admission, you can network with employers and explore post-graduation pathways.</p>
-                
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLw9TO8prZDyUcAzC42yGbdHDAg1UkGdLCiKHVQcCkmvFgvQ/viewform" target="_blank" rel="noopener noreferrer">
-                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
-                    </a>
-                </EventContainer>  
-
                 {/* International Women's Day Coffee Chat*/}
                 <EventContainer>
                     <EventTitle><b>International Women&apos;s Day  <Highlight>Coffee Chat</Highlight></b></EventTitle>
@@ -151,18 +140,7 @@ export default function Events() {
                     <a href="https://forms.gle/zypemG1yF4MPfAMe7" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
                     </a>
-                </EventContainer>        
-
-                {/* Sustainability Week */}
-                <EventContainer>
-                    <EventTitle><b><Highlight>Sustainability Week</Highlight></b></EventTitle>
-                    <EventSubtitle><strong>March 2 - 6</strong></EventSubtitle>
-                    <p>A week of sustainability-themed events including an iREACH lab tour, volunteering at the UBC Farm with lunch, plant pot painting, and a beach cleanup! Check out the SUS Instagram for more details!</p>
-                
-                    <a href="https://l.instagram.com/?u=https%3A%2F%2Flinktr.ee%2Fsusubc%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnzWoqXEz9aqJrovMzjewAc_FO0kUASGRoJOxUBlvR7_C-oMAhxhwNBKt2owQ_aem_Fb8k0popGTFbYqDhzlsfPQ&e=AT0u-82va9pS66dyNnwhnGlL-Gk56IynvBM6HOnnI2dOKNYhTu5zfzckeJPVCBnKty2Lh6P1h0msVbwY4hBwmtSg4Wy0IiMkOclzztIQ6goU6_EZj31Oo1YOkQ" target="_blank" rel="noopener noreferrer">
-                        <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
-                    </a>
-                </EventContainer>        
+                </EventContainer>              
 
                 {/* SUS Research Exchange */}
                 <EventContainer>
@@ -173,7 +151,18 @@ export default function Events() {
                     <a href="https://ubc.ca1.qualtrics.com/jfe/form/SV_4MzlnG0bBGaGDhc" target="_blank" rel="noopener noreferrer">
                         <InitiativeButton><strong>Event RSVP</strong></InitiativeButton>
                     </a>
-                </EventContainer>                 
+                </EventContainer>    
+
+                {/* EDI Community Survey*/}
+                <EventContainer>
+                    <EventTitle><b>EDI Community <Highlight>Survey</Highlight></b></EventTitle>
+                    <EventSubtitle><strong>March 1-31</strong></EventSubtitle>
+                    <p>The SUS EDI team has launched a community reflection survey to better understand how our initiatives and events have felt this year. Fill out the survey for a chance to win a $20 Blue Chip gift card!</p>
+                
+                    <a href="https://qualtricsxmg7mjmcft5.qualtrics.com/jfe/form/SV_elCJRUAXO1vszS6" target="_blank" rel="noopener noreferrer">
+                        <InitiativeButton><strong>Survey Link</strong></InitiativeButton>
+                    </a>
+                </EventContainer>               
 
                 
             </TopContainer>
